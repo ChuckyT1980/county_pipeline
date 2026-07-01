@@ -1,0 +1,13 @@
+{
+  "url": "https://mptsweb.co.shasta.ca.us/search.asp",
+  "dns_resolved": false,
+  "tcp_connected": false,
+  "tls_established": false,
+  "http_status": null,
+  "latency_ms": 232,
+  "response_bytes": 0,
+  "redirect_count": 0,
+  "capture_timestamp": "2026-06-25T20:14:48.743573+00:00",
+  "error_stage": "DNS",
+  "error_message": "[Errno 11001] getaddrinfo failed"
+}

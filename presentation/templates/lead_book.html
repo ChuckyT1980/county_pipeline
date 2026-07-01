@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 20px;}
+        .page { 
+            background: white; 
+            max-width: 800px; 
+            margin: 0 auto 20px; 
+            padding: 40px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            page-break-after: always;
+        }
+        @media print {
+            body { background: white; padding: 0;}
+            .page { box-shadow: none; margin: 0; padding: 20px; }
+        }
+        .header { text-align: center; border-bottom: 2px solid #000; padding-bottom: 20px; margin-bottom: 20px; }
+        .title { font-size: 24px; font-weight: bold; letter-spacing: 2px; }
+        .lead-id { font-size: 18px; color: #666; margin-top: 10px; }
+        .section { margin-bottom: 20px; }
+        .section-title { font-size: 14px; color: #888; text-transform: uppercase; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-bottom: 10px; }
+        .data-row { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 16px; }
+        .label { font-weight: bold; color: #333; }
+        .value { text-align: right; max-width: 60%; }
+        .stars { color: #f59e0b; }
+        .check { color: #10b981; font-weight: bold;}
+        .score-box { text-align: center; font-size: 32px; font-weight: bold; margin: 30px 0; border: 2px solid #e5e7eb; padding: 20px; border-radius: 8px;}
+        .notes-box { background: #f3f4f6; padding: 15px; border-left: 4px solid #3b82f6; line-height: 1.5; font-size: 14px;}
+    </style>
+</head>
+<body>
+    {% for lead in leads %}
+    <div class="page">
+        <div class="header">
+            <div class="title">A+ PROPERTY INTELLIGENCE</div>
+            <div class="lead-id">Lead #{{ loop.index }} | APN: {{ lead.apn }}</div>
+        </div>
+        
+        <div class="score-box">
+            Lead Score <br>
+            <span class="stars">★★★★★</span> {{ lead.final_score }}
+        </div>
+
+        <div class="section">
+            <div class="section-title">Property & Owner</div>
+            <div class="data-row"><span class="label">Owner</span><span class="value">{{ lead['Lead Name'] }}</span></div>
+            <div class="data-row"><span class="label">Taxes Behind</span><span class="value font-bold text-red" style="color: #ef4444;">${{ lead.amount_due }}</span></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">County Assessor Details (Megabyte API)</div>
+            <div class="data-row"><span class="label">Physical Address (Situs)</span><span class="value">{{ lead.situs_address if lead.situs_address else 'Pending API Extraction' }}</span></div>
+            <div class="data-row"><span class="label">Total Assessed Value</span><span class="value">{{ '$' + lead.assessed_value|string if lead.assessed_value else 'Pending API Extraction' }}</span></div>
+            <div class="data-row"><span class="label">Land Value</span><span class="value">{{ '$' + lead.land_value|string if lead.land_value else 'Pending API Extraction' }}</span></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Contact Information</div>
+            <div class="data-row"><span class="label">Mailing Address</span><span class="value">{{ lead['Lead Name'].split('|')[-1].strip() if '|' in lead['Lead Name'] else 'Check Assessor File' }} <span class="check">✔</span></span></div>
+            <div class="data-row"><span class="label">Phones</span><span class="value">(***) ***-**** <span class="stars">☆☆☆☆☆</span></span></div>
+            <div class="data-row"><span class="label">Email</span><span class="value">Pending Skip Trace <span class="stars">☆</span></span></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Distress Signals</div>
+            <div class="data-row"><span class="label">Years in Default</span><span class="value font-bold" style="color: #ef4444;">{{ lead.persistence_years }} Years <span class="check" style="color:#ef4444;">⚠</span></span></div>
+            <div class="data-row"><span class="label">Decision Label</span><span class="value"><span class="check">✔</span> {{ lead.decision_label }}</span></div>
+            <div class="data-row"><span class="label">Confidence</span><span class="value"><span class="check">✔</span> {{ lead.confidence_summary }}</span></div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Action Gradient (Notes)</div>
+            <div class="notes-box">
+                <strong>Headline:</strong> {{ lead.headline }}<br><br>
+                <strong>Optimization:</strong> {{ lead['Action Gradient'] }}<br>
+                <strong>Max Theoretical Score:</strong> {{ lead.max_theoretical_score }}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</body>
+</html>

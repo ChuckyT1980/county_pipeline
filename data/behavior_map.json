@@ -1,0 +1,37 @@
+{
+  "shasta": {
+    "vendor_class": "MPTS_HYBRID",
+    "ema_vsi": 0.0,
+    "ema_fme": 0.5,
+    "ema_ste": 0.3,
+    "strategy_used": "COOKIE_BOOTSTRAP"
+  },
+  "tehama": {
+    "vendor_class": "MPTS_HYBRID",
+    "ema_vsi": 0.0,
+    "ema_fme": 0.5,
+    "ema_ste": 0.3,
+    "strategy_used": "HTTP_ONLY"
+  },
+  "san_bernardino": {
+    "vendor_class": "AUMENTUM_STATEFUL",
+    "ema_vsi": 0.0,
+    "ema_fme": 0.5,
+    "ema_ste": 0.3,
+    "strategy_used": "STATEFUL_BROWSER"
+  },
+  "los_angeles": {
+    "vendor_class": "CUSTOM_CMS",
+    "ema_vsi": 0.0,
+    "ema_fme": 0.5,
+    "ema_ste": 0.3,
+    "strategy_used": "COOKIE_BOOTSTRAP"
+  },
+  "riverside": {
+    "vendor_class": "AUMENTUM_STATEFUL",
+    "ema_vsi": 0.0,
+    "ema_fme": 0.5,
+    "ema_ste": 0.3,
+    "strategy_used": "HTTP_ONLY"
+  }
+}

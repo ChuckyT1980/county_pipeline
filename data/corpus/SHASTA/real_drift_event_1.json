@@ -1,0 +1,1 @@
+{"type": "REAL_HISTORICAL", "event_class": "TABLE_SHIFT", "old_dom": "<td>Owner</td><td>SMITH JOHN</td>", "new_dom": "<td>Owner</td><td></td><td>SMITH JOHN</td>", "expected_val": "SMITH JOHN", "extracted_val": "SMITH JOHN", "prs_score": 0.45}

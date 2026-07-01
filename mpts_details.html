@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Main Page | MBC</title>
+    
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="/MBC/Content/Images/favicon.ico">
+
+<!-- Web Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- CSS Files -->
+<link href="/MBC/bundles/bootstrapcss?v=7GsBEsX3kN0WQF8Jw_4hLTIgatCX-wR5fX529E1yt-k1" rel="stylesheet"/>
+
+
+<!-- Font Awesome CSS -->
+<link href="/MBC/Content/Idea/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+<!-- Fontello CSS -->
+<link href="/MBC/Content/Idea/fonts/fontello/css/fontello.css" rel="stylesheet">
+
+<!-- CSS Files -->
+<link href="/MBC/bundles/ideacss?v=0VZLV-UIq319p4ruCoi_vJjKK9NtX6umePQ7MyCYdpg1" rel="stylesheet"/>
+
+
+<!-- Color Scheme (In order to change the color scheme, replace the red.css with the color scheme that you prefer)-->
+<link href="/MBC/bundles/ideabluecss?v=A_NPqLJ61NPAMfeSGISgZLoylustZWr_VBL8DUntpss1" rel="stylesheet"/>
+
+
+<!-- Custom css -->
+<link href="/MBC/bundles/customcss?v=ehYtyM8MjczJpgIG5mef2aEnRti_vN2qjVDA6DUkJzE1" rel="stylesheet"/>
+
+</head>
+<body class="front no-trans">
+
+    <input name="__RequestVerificationToken" type="hidden" value="8ydmQxP_CGoPoP6NeyU9_iKASKPJFt7yjNN5akZ33PTIx8FwwMoMvj9rr2v15jQb9vgb2mJvI6PHTG_e0Y68gBQ1b5x7qOLZDM55SlLfeSY1" />
+
+    <!-- scrollToTop -->
+    <!-- ================ -->
+    <div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+    <!-- page wrapper start -->
+    <!-- ================ -->
+    <div class="page-wrapper">
+        <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+        
+
+<!-- header-top start (Add "dark" class to .header-top in order to enable dark header-top e.g <div class="header-top dark">) -->
+<!-- ================ -->
+<div class="header-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2  col-sm-6">
+                <!-- header-top-first start -->
+                <!-- ================ -->
+                <div class="header-top-first clearfix  hidden-sm hidden-xs">
+                </div>
+                <!-- header-top-first end -->
+            </div>
+            <div class="col-xs-10 col-sm-6">
+                <!-- header-top-second start -->
+                <!-- ================ -->
+                <div id="header-top-second" class="clearfix">
+                    <!-- header top dropdowns start -->
+                    <!-- ================ -->
+                    <div class="header-top-dropdown">
+                        <div class="btn-group dropdown" id="quickSearch">
+                            <button type="button" id="quickSearchDropdownButton" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false" aria-haspopup="dialog" aria-controls="quickSearchDropdown">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                Quick Search
+                            </button>
+                            <div id="quickSearchDropdown" class="dropdown-menu dropdown-menu-right dropdown-animation" aria-labelledby="quickSearchDropdownButton" role="dialog" tabindex="-1">
+                                <form id="quickSearchForm" data-search-url="http://common2.mptsweb.com/MBC/shasta/tax/search">
+                                    <div class="form-group has-feedback">
+                                        <label class="sr-only" for="quickSearchBox">Fee Parcel</label>
+                                        <input type="text" class="form-control" placeholder="Enter FEE PARCEL" id="quickSearchBox" name="quickSearchFeeParcel" maxlength="12" autofocus />
+                                        <i class="fa fa-search form-control-feedback" aria-hidden="true"></i>
+                                    </div>
+                                    <button type="submit" class="btn btn-default btn-sm">Search</button>
+                                    <button type="button" id="quickSearchClose" class="btn btn-primary btn-sm">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                            <div class="btn-group dropdown">
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-label="Cart - 0 items - $0.00" aria-expanded="false">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart <b>(0)($0.00)</b>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right dropdown-animation cart">
+                                    <li>
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th class="quantity">INS</th>
+                                                    <th class="product">Assessment</th>
+                                                    <th class="amount">Amount</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="total-quantity" colspan="2">Total 0 Items</td>
+                                                    <td class="total-amount">$0.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <!--  header top dropdowns end -->
+                </div>
+                <!-- header-top-second end -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- header-top end -->
+<!-- header start classes:
+                fixed: fixed navigation mode (sticky menu) e.g. <header class="header fixed clearfix">
+                 dark: dark header version e.g. <header class="header dark clearfix">
+            ================ -->
+<header class="header clearfix" style="padding: 2px; padding-left: 6px" role="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="row hidden-sm hidden-xs">
+                    <div class="col-md-3" style="padding: 0px">
+                        <div class="header-left clearfix">
+                            <!-- logo -->
+                            <div class="logo">
+                                <a href="https://www.co.shasta.ca.us/index/tc_index.aspx" target="_blank">
+                                    <img id="logoCounty" src="/MBC/Content/CountyData/shasta/headerlogo.png" alt="Shasta County" title="Shasta County">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9" style="padding: 10px">
+                        <div class="site-slogan">
+                            <h1>Shasta County</h1>
+                        </div>
+                        <div class="site-slogan col-lg-offset-3">
+                            California
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="header-right clearfix">
+                    <!-- main-navigation start -->
+                    <!-- ================ -->
+                    <div class="main-navigation animated">
+                        <!-- navbar start -->
+                        <!-- ================ -->
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <!-- Toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <h2 class="navbar-text visible-xs-inline-block visible-sm-inline-block title" style="padding-left:15px">Shasta County</h2>
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" aria-controls="navbar-collapse-1">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="navbar-collapse-1" role="group">
+                                    <menu class="nav navbar-nav navbar-right" role="menubar">
+
+                                                    <li class="dropdown active menu-container" role="presentation">
+                                                        <a id="masterlink0" href="#" class="dropdown-toggle menu-toggler" data-toggle="dropdown" role="menuitem" aria-haspopup="menu" aria-expanded="false">Home</a>
+                                                        <menu class="dropdown-menu" role="menu" aria-labelledby="masterlink0">
+                                                                <li role="menuitem"><a href="
+            https://www.co.shasta.ca.us/index/pubadmin_index.aspx" target="_blank" role="menuitem">Public Administrator</a></li>
+                                                                <li role="menuitem"><a href="https://www.co.shasta.ca.us/index/tc_index.aspx" target="_blank" role="menuitem">Tax Collector</a></li>
+                                                                <li role="menuitem"><a href="https://www.co.shasta.ca.us/index/tr_index.aspx" target="_blank" role="menuitem">Treasurer</a></li>
+                                                        </menu>
+                                                    </li>
+                                                        <li class="dropdown menu-container" role="presentation">
+                                                            <a id="masterlink1" href="#" class="dropdown-toggle menu-toggler" data-toggle="dropdown" role="menuitem" aria-haspopup="menu" aria-expanded="false">Taxes Online</a>
+                                                            <menu class="dropdown-menu" role="menu" aria-labelledby="masterlink1">
+                                                                    <li role="menuitem"><a href="
+            https://www.co.shasta.ca.us/index/tc_index/mbinquiry.aspx" target="_blank" role="menuitem">View/Pay Property Taxes Online</a></li>
+                                                                    <li role="menuitem"><a href="
+            https://www.co.shasta.ca.us/index/tc_index/how_to_pay.aspx" target="_blank" role="menuitem">How to Pay your Taxes</a></li>
+                                                                    <li role="menuitem"><a href="https://www.co.shasta.ca.us/index/tc_index/fee-schedule" target="_blank" role="menuitem">Fee Schedule</a></li>
+                                                                    <li role="menuitem"><a href="
+            https://www.co.shasta.ca.us/index/tc_index/foreclosure_info.aspx" target="_blank" role="menuitem">Foreclosure Information</a></li>
+                                                            </menu>
+                                                        </li>
+                                                        <li class="dropdown menu-container" role="presentation">
+                                                            <a id="masterlink2" href="#" class="dropdown-toggle menu-toggler" data-toggle="dropdown" role="menuitem" aria-haspopup="menu" aria-expanded="false">Property Tax</a>
+                                                            <menu class="dropdown-menu" role="menu" aria-labelledby="masterlink2">
+                                                                    <li role="menuitem"><a href="https://www.co.shasta.ca.us/index/tc_index.aspx" target="_blank" role="menuitem">County Home</a></li>
+                                                                    <li role="menuitem"><a href="https://www.co.shasta.ca.us/index/tc_index/payment-dates" target="_blank" role="menuitem">Payment Dates</a></li>
+                                                                    <li role="menuitem"><a href="
+            https://www.co.shasta.ca.us/index/tc_index/property_taxes.aspx" target="_blank" role="menuitem">Property Taxes</a></li>
+                                                                    <li role="menuitem"><a href="
+            https://www.co.shasta.ca.us/index/tc_index/property_taxes/installment_plan.aspx" target="_blank" role="menuitem">Installment Plans</a></li>
+                                                            </menu>
+                                                        </li>
+                                                        <li class="dropdown menu-container" role="presentation">
+                                                            <a id="masterlink3" href="#" class="dropdown-toggle menu-toggler" data-toggle="dropdown" role="menuitem" aria-haspopup="menu" aria-expanded="false">Publications</a>
+                                                            <menu class="dropdown-menu" role="menu" aria-labelledby="masterlink3">
+                                                                    <li role="menuitem"><a href="
+            https://www.co.shasta.ca.us/index/tc_index/tc_publications.aspx" target="_blank" role="menuitem">Legal Notes and Announcements</a></li>
+                                                                    <li role="menuitem"><a href="https://www.co.shasta.ca.us/index/tc_index/tc_forms.aspx" target="_blank" role="menuitem">Forms and Docs</a></li>
+                                                                    <li role="menuitem"><a href="https://www.co.shasta.ca.us/index/tc_index/tax_auction.aspx" target="_blank" role="menuitem">Tax Auctions</a></li>
+                                                                    <li role="menuitem"><a href="
+            https://www.co.shasta.ca.us/index/tc_index/unclaimed-property-tax-funds" target="_blank" role="menuitem">Unclaimed Property Tax Funds</a></li>
+                                                            </menu>
+                                                        </li>
+                                    </menu>
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- navbar end -->
+                    </div>
+                    <!-- main-navigation end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header end -->
+
+        <div id="content" tabindex="-1">
+            
+
+
+<!-- main-container start -->
+<!-- ================ -->
+<main class="main-container" style="padding-top: 10px">
+
+    <div class="container">
+        <div class="row">
+
+            <!-- main start -->
+            <!-- ================ -->
+            <div class="main col-md-9">
+
+                <!-- page-title start -->
+                <!-- ================ -->
+                <h2 class="page-title margin-top-clear hidden-sm hidden-xs">Tax Details</h2>
+                <div class="separator-2 hidden-sm hidden-xs"></div>
+                    <p class="lead">To pay an item, add it to the cart.  Multiple cart items can be paid at once to avoid multiple debit card fees during checkout.</p>
+                <!-- page-title end -->
+                <!-- product side start -->
+                <div class="alert alert-warning" role="alert" id="UnsecWariningDiv" hidden><unsecmsg>
+  <strong>ATTENTION!</strong> To verify the parcel owner is responsible for this
+    	    unsecured tax bill, please contact the County Tax Collector.
+	</unsecmsg></div>
+                <div class="alert alert-warning" role="alert" id="PriorWariningDiv" hidden>
+                    <strong>ATTENTION!</strong> This is for historical purposes only and is not current data. Please select current roll year for current payment information.
+                    <button type="button" id="currentYearSearch" class="btn btn-sm btn-info">Search for current year taxes</button>
+                </div>
+                <div class="alert alert-warning" role="alert" id="PaymentsWariningDiv" hidden><strong>ATTENTION!</strong> </div>
+                <div class="alert alert-warning" role="alert" id="PaymentsHoldWariningDiv" hidden><strong>ATTENTION!</strong> Payment hold exists on this Assessment, Please contact County Tax Collector Office for more details.</div>
+                <div id="tabsContainer" class="tabs-style-2">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <!--a id="tab1" href="#h2tab1" data-toggle="tab" aria-controls="h2tab1" role="tab"
+                            aria-selected="true" tabindex="0"><i class="fa fa-file-text-o pr-5"></i>Taxes</a-->
+                            <button class="nav-link" id="tab1" type="button" data-target="#h2tab1" data-toggle="tab" aria-controls="h2tab1" role="tab" aria-selected="true" tabindex="0">
+                                <i class="fa fa-file-text-o pr-5"></i>Taxes
+                            </button>
+                        </li>
+                        <li role="presentation">
+                            <!--a id="tab2" href="#h2tab2" data-toggle="tab" aria-controls="h2tab2" role="tab"
+                            aria-selected="false" tabindex="-1"><i class="fa fa-info pr-5"></i>Assessment Info</a-->
+                            <button class="nav-link" id="tab2" type="button" data-target="#h2tab2" data-toggle="tab" aria-controls="h2tab2" role="tab" aria-selected="false" tabindex="-1">
+                                <i class="fa fa-info pr-5"></i>Assessment Info
+                            </button>
+                        </li>
+                        <li role="presentation">
+                            <!--a id="tab3" href="#h2tab3" data-toggle="tab" aria-controls="h2tab3" role="tab"
+                            aria-selected="false" tabindex="-1"><i class="fa fa-star pr-5"></i>Tax Code Info</a-->
+                            <button class="nav-link" id="tab3" type="button" data-target="#h2tab3" data-toggle="tab" aria-controls="h2tab3" role="tab" aria-selected="false" tabindex="-1">
+                                <i class="fa fa-star pr-5"></i>Tax Code Info
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content padding-bottom-clear" tabindex="-1">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div><strong><span class="sr-only">Assessment</span><span aria-hidden="true">ASMT</span></strong></div>
+                                <div>057-120-045-000</div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div><strong>PARCEL</strong></div>
+                                <div id="feeParcel">057-120-045-000</div>
+                            </div>
+                            <div class="col-sm-1">
+                                <div><strong>YEAR</strong></div>
+                                <div>2025</div>
+                            </div>
+                                <div class="col-sm-5">
+                                    <div>
+                                        <a id="taxBillLink" class="text-danger" href="https://apps.mptsweb.com/TaxBillv2/Default.aspx?County=shasta&amp;Asmt=057120045000&amp;TaxYear=2025&amp;RollCat=CS&amp;RollYr=&amp;RollType=S" target="_blank">
+                                                <strong><u>VIEW CURRENT TAX BILL</u></strong>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a id="taxBillLinkAV" class="text-info" href="https://apps.mptsweb.com/TaxBillv2/Default.aspx?County=shasta&amp;Asmt=057120045000&amp;TaxYear=2025&amp;RollCat=CS&amp;RollYr=&amp;RollType=S&amp;DisplayType=HTML" target="_blank">
+                                                <strong><u>VIEW CURRENT TAX BILL (accessible version)</u></strong>
+                                        </a>
+                                    </div>
+                                </div>
+                        </div>
+                        <hr />
+                        <div class="tab-pane fade in active" id="h2tab1" aria-labelledby="tab1" aria-hidden="false" role="tabpanel">
+                            <span class="sr-only">Taxes tab</span>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="h4" style="margin-top: 0px">1<sup>st</sup> Installment</p>
+                                    <div class="separator-2"></div>
+                                    <dl class="dl-horizontal">
+                                        <dt>Paid Status</dt>
+                                        <dd>PAID</dd>
+
+                                            <dt>Paid Date</dt>
+
+                                                <dd>12/4/2025</dd>
+
+                                        <dt>Total Due</dt>
+                                        <dd>$1,128.82</dd>
+                                        <dt>Total Paid</dt>
+                                        <dd>$1,128.82</dd>
+                                        <dt>Balance</dt>
+                                        <dd>$0.00</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="h4" style="margin-top: 0px">2<sup>nd</sup> Installment</p>
+                                    <div class="separator-2"></div>
+                                    <dl class="dl-horizontal">
+                                        <dt>Paid Status</dt>
+                                        <dd>PAID</dd>
+                                            <dt>Paid Date</dt>
+                                                                                        <dd>4/3/2026</dd>
+
+                                        <dt>Total Due</dt>
+                                        <dd>$1,128.82</dd>
+                                        <dt>Total Paid</dt>
+                                        <dd>$1,128.82</dd>
+                                        <dt>Balance</dt>
+                                        <dd>$0.00</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <hr />
+                            <div>
+                                <p class="h4">Totals - 1<sup>st</sup> and 2<sup>nd</sup> Installments</p>
+                                <div class="separator-2"></div>
+                                <dl class="dl-horizontal">
+                                    <dt>Total Due</dt>
+                                    <dd>$2,257.64</dd>
+                                    <dt>Total Paid</dt>
+                                    <dd>$2,257.64</dd>
+                                    <dt>Total Balance</dt>
+                                    <dd>$0.00</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="h2tab2" aria-labelledby="tab2" aria-hidden="true" role="tabpanel">
+                            <span class="sr-only">Assessment Info tab</span>
+                            <dl class="dl-horizontal">
+                                <dt>Assessment</dt>
+                                <dd>057-120-045-000</dd>
+                                <dt>Tax Year</dt>
+                                <dd>2025</dd>
+                                <dt>Parcel Number</dt>
+                                <dd>057-120-045-000</dd>
+                                <dt>Roll Category</dt>
+                                <dd>CS - Current Secured</dd>
+                                <dt>Document Number</dt>
+                                <dd>2024R0024367</dd>
+
+                                        <dt>Address</dt>
+                                        <dd>6444 VISTA DEL SIERRA DR</dd>
+                                        <dt></dt>
+                                        <dd>ANDERSON CA 96007</dd>
+                            </dl>
+                        </div>
+                        <div class="tab-pane fade" id="h2tab3" aria-labelledby="tab3" aria-hidden="true" role="tabpanel">
+                            <span class="sr-only">Tax Code Info tab</span>
+                                <div class="col-md-6">
+                                    <div class="listing-item">
+                                        <div class="listing-item-body clearfix">
+                                            <dl class="dl-horizontal">
+                                                <dt>Tax Code</dt>
+                                                <dd>00001</dd>
+                                                <dt>Description</dt>
+                                                <dd>BASIC TAX RATE</dd>
+                                                <dt>Rate</dt>
+                                                <dd>1.000000</dd>
+                                                <dt>1<sup>st</sup> Installment</dt>
+                                                <dd>$1,047.90</dd>
+                                                <dt>2<sup>nd</sup> Installment</dt>
+                                                <dd>$1,047.90</dd>
+                                                <dt>Total</dt>
+                                                <dd>$2,095.80</dd>
+                                                <dt>Phone</dt>
+                                                <dd></dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="listing-item">
+                                        <div class="listing-item-body clearfix">
+                                            <dl class="dl-horizontal">
+                                                <dt>Tax Code</dt>
+                                                <dd>03251</dd>
+                                                <dt>Description</dt>
+                                                <dd>ANDERSON UNION HSD G O BOND 2012</dd>
+                                                <dt>Rate</dt>
+                                                <dd>0.013100</dd>
+                                                <dt>1<sup>st</sup> Installment</dt>
+                                                <dd>$13.72</dd>
+                                                <dt>2<sup>nd</sup> Installment</dt>
+                                                <dd>$13.72</dd>
+                                                <dt>Total</dt>
+                                                <dd>$27.44</dd>
+                                                <dt>Phone</dt>
+                                                <dd>(530) 378-0568</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="listing-item">
+                                        <div class="listing-item-body clearfix">
+                                            <dl class="dl-horizontal">
+                                                <dt>Tax Code</dt>
+                                                <dd>03651</dd>
+                                                <dt>Description</dt>
+                                                <dd>S T &amp; T JT COMM COLL G O BOND 2002</dd>
+                                                <dt>Rate</dt>
+                                                <dd>0.001400</dd>
+                                                <dt>1<sup>st</sup> Installment</dt>
+                                                <dd>$1.46</dd>
+                                                <dt>2<sup>nd</sup> Installment</dt>
+                                                <dd>$1.46</dd>
+                                                <dt>Total</dt>
+                                                <dd>$2.92</dd>
+                                                <dt>Phone</dt>
+                                                <dd>(530) 242-7525</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="listing-item">
+                                        <div class="listing-item-body clearfix">
+                                            <dl class="dl-horizontal">
+                                                <dt>Tax Code</dt>
+                                                <dd>03653</dd>
+                                                <dt>Description</dt>
+                                                <dd>S T &amp; T JT COMM COLL GOB 2016 SRS A</dd>
+                                                <dt>Rate</dt>
+                                                <dd>0.012500</dd>
+                                                <dt>1<sup>st</sup> Installment</dt>
+                                                <dd>$13.09</dd>
+                                                <dt>2<sup>nd</sup> Installment</dt>
+                                                <dd>$13.09</dd>
+                                                <dt>Total</dt>
+                                                <dd>$26.18</dd>
+                                                <dt>Phone</dt>
+                                                <dd>(530) 242-7525</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="listing-item">
+                                        <div class="listing-item-body clearfix">
+                                            <dl class="dl-horizontal">
+                                                <dt>Tax Code</dt>
+                                                <dd>06150</dd>
+                                                <dt>Description</dt>
+                                                <dd>PACHECO UNION ESD G O BOND 2008</dd>
+                                                <dt>Rate</dt>
+                                                <dd>0.028300</dd>
+                                                <dt>1<sup>st</sup> Installment</dt>
+                                                <dd>$29.65</dd>
+                                                <dt>2<sup>nd</sup> Installment</dt>
+                                                <dd>$29.65</dd>
+                                                <dt>Total</dt>
+                                                <dd>$59.30</dd>
+                                                <dt>Phone</dt>
+                                                <dd>(530) 365-3335</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="listing-item">
+                                        <div class="listing-item-body clearfix">
+                                            <dl class="dl-horizontal">
+                                                <dt>Tax Code</dt>
+                                                <dd>53009</dd>
+                                                <dt>Description</dt>
+                                                <dd>CSA#1 FIRE PROT DIST</dd>
+                                                <dt>Rate</dt>
+                                                <dd>0.000000</dd>
+                                                <dt>1<sup>st</sup> Installment</dt>
+                                                <dd>$10.00</dd>
+                                                <dt>2<sup>nd</sup> Installment</dt>
+                                                <dd>$10.00</dd>
+                                                <dt>Total</dt>
+                                                <dd>$20.00</dd>
+                                                <dt>Phone</dt>
+                                                <dd>(530) 225-2516</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="listing-item">
+                                        <div class="listing-item-body clearfix">
+                                            <dl class="dl-horizontal">
+                                                <dt>Tax Code</dt>
+                                                <dd>59021</dd>
+                                                <dt>Description</dt>
+                                                <dd>MOSQUITO &amp; DISEASE CONTROL</dd>
+                                                <dt>Rate</dt>
+                                                <dd>0.000000</dd>
+                                                <dt>1<sup>st</sup> Installment</dt>
+                                                <dd>$13.00</dd>
+                                                <dt>2<sup>nd</sup> Installment</dt>
+                                                <dd>$13.00</dd>
+                                                <dt>Total</dt>
+                                                <dd>$26.00</dd>
+                                                <dt>Phone</dt>
+                                                <dd>(530) 365-3768</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main end -->
+
+            <aside class="col-md-3">
+                <div class="sidebar">
+                    <div class="portfolio-item side vertical-divider-left" style="margin-left: 0px; padding-left: 20px">
+                        <div class="block clearfix">
+                            <p class="h3 title">Quick Menu</p>
+                            <div class="separator"></div>
+                            <nav>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="/MBC/shasta/tax/search">Search</a></li>
+                                        <li><a href="https://apps.mptsweb.com/TaxBillv2/Default.aspx?County=shasta&amp;Asmt=057120045000&amp;TaxYear=2025&amp;RollCat=CS&amp;RollYr=" target="_blank">View/Print Taxbill</a></li>
+                                                                            <li><a href="/MBC/shasta/tax/cart/showcart">Cart</a></li>
+                                    <li><a href="https://www.co.shasta.ca.us/index/tc_index.aspx" target="_blank">County Home</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="block clearfix" id="searchResultsDiv">
+                            <p class="h3 title margin-top-clear">Last Search</p>
+                            <div class="separator" style="margin-left: 0px"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+
+            <!-- product side end -->
+            <p class="h3">Service Fees</p>
+            <div class="separator-2"></div>
+                <p>
+                    All payments processed on-line will be assessed a service fee.
+                    The Treasurer-Tax Collector's office does not charge a fee to process payments on-line, however, the vendor processing your payments assesses the service fees.
+                    All service fees are assessed by our credit card vendor, not the County.
+                </p>
+
+    </div>
+</main>
+<!-- main-container end -->
+
+
+        </div>
+        
+
+
+<!-- footer start (Add "light" class to #footer in order to enable light footer) -->
+<!-- ================ -->
+<footer id="footer" class="light">
+
+    <!-- .footer start -->
+    <!-- ================ -->
+    <!-- .footer start -->
+    <!-- ================ -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-content">
+                        <div class="logo-footer">
+                            <img id="logo-footer" src="/MBC/Content/CountyData/shasta/footerlogo.png" alt="Shasta County" title="Shasta County">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="col-sm-12">
+                        <ul class="list-icons">
+                            <li><span class="h2">Lori J. Scott</span></li>
+                                    <li>Treasurer - Tax Collector</li>
+                            <li>
+                                <span class="sr-only">Location</span>
+                                <i class="fa fa-map-marker pr-10" aria-hidden="true"></i>
+                                1450 Court Street., Suite 227 Redding, CA. 96001
+                            </li>
+                            <li>
+                                <span class="sr-only">Telephone</span>
+                                <i class="fa fa-phone pr-10" aria-hidden="true"></i>
+                                <phone>
+  <a class="link-dark" href="tel:+1(530)225-5511">530-225-5511</a>
+</phone>
+                            </li>
+                            <li>
+                                <span class="sr-only">Email</span>
+                                <i class="fa fa-envelope-o pr-10" aria-hidden="true"></i>
+                                
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="space-bottom hidden-lg hidden-xs"></div>
+        </div>
+    </div>
+    <!-- .footer end -->
+    <!-- .footer end -->
+    <!-- .subfooter start -->
+    <!-- ================ -->
+    <div class="subfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2026 Megabyte Licensing Corporation. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <strong>For the best experience, use the latest version of Chrome, Edge, or Safari.</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .subfooter end -->
+
+</footer>
+<!-- footer end -->
+
+    </div>
+
+
+
+    
+<!-- JavaScript files placed at the end of the document so the pages load faster
+        ================================================== -->
+<script src="/MBC/bundles/jquery?v=_RVqrN_NjXiaouJ7wbI7I9yghqta-vRrfyV3Z2oIhGY1"></script>
+<script src="/MBC/bundles/bootstrap?v=UAIEmfvhofh9KzlkAmp9zD-8566S-tGBZM-_-ea1zjU1"></script>
+<script src="/MBC/bundles/modernizr?v=JN3pXJ45x0Je-SJ7jPdl6SVnqwsmVh8juF0H9rN7NUc1"></script>
+<script src="/MBC/bundles/SmoothScroll?v=71JmRbbWHdgLN6MCxiwVgy0LHp5uV4X2ZbyhodbcHl81"></script>
+<script src="/MBC/bundles/InitializePlugins?v=Gl4bwkDdzm1mK81y9h3BY6Lv1lAiulVnTLAZkBq01DI1"></script>
+<script src="/MBC/bundles/customscripts?v=VrOFyGdxNeAHHR6fbFdnzMijuS2zLvCboxZ1frPYDxE1"></script>
+<script src="/MBC/bundles/spinJs?v=amB2xYxVR3kgCo_d9iRaYi0lbrFH7Su76w-vFE4Emgw1"></script>
+<script src="/MBC/bundles/AllPagesScript?v=V7lvMYG6I5yn2kZ0Br4v-logZNJEve_XUD-USvPf7W01"></script>
+<script src="/MBC/bundles/scrollIntoView?v=pYifnk1kdd9wnwFSt4B4uKdr2HHhUsqZBKFIxq3BKxQ1"></script>
+
+    
+    <script type="text/template" id="searchResultsTemplate">
+        <div class="listing-item-body clearfix" style="padding-top: 0px; padding-bottom: 0px;">
+            <strong><i class="fa fa-hand-o-right pr-5"></i><a href="{2}">{0}</a></strong>
+            <p>
+                {1}<br />
+            </p>
+        </div>
+    </script>
+
+    <script>
+        $(function () {
+            if (typeof Storage !== "undefined") {
+                if (sessionStorage.getItem('shasta-SearchResults') != null) {
+                    var JResultsData = JSON.parse(sessionStorage.getItem('shasta-SearchResults'));
+                    $.each([].concat(JResultsData.Table.Row), function (i, v) {
+                        var formAsmt = [v.Asmt.slice(0, 3), '-', v.Asmt.slice(3, 6), '-', v.Asmt.slice(6, 9), '-', v.Asmt.slice(9, 12)].join('');
+                        var cardresultsTemplate = $('#searchResultsTemplate').html();
+                        if (typeof v.Situs1 != 'undefined')
+                        {
+                            if (v.Situs1 != null) {
+                                var template = cardresultsTemplate.format(formAsmt, v.Situs1, '/MBC/' + 'shasta' + '/tax/main/' + v.Asmt + '/' + v.Taxyear + '/' + v.RollYear);
+                            }
+                            else {
+                                var template = cardresultsTemplate.format(formAsmt, '', '/MBC/' + 'shasta' + '/tax/main/' + v.Asmt + '/' + v.Taxyear + '/' + v.RollYear);
+                            }
+                        }
+                        else {
+                            var template = cardresultsTemplate.format(formAsmt, v.Owner, '/MBC/' + 'shasta' + '/tax/main/' + v.Asmt + '/' + v.Taxyear + '/' + v.RollYear);
+                        }
+                        $("#searchResultsDiv").append(template);
+                    })
+                }
+                if (sessionStorage.getItem('shasta-SearchByValue') != 'feeparcel') {
+                    //$("#UnsecWariningDiv").hide();
+                }
+
+            }
+        });
+
+        /*  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+              $($(e.target).attr("href")).scrollIntoView(); // activated tab
+          });*/
+        $(function () {
+            $("#txtOtherPayment").change(function () {
+                var max = parseFloat($(this).attr('max'));
+                var min = parseFloat($(this).attr('min'));
+                if ($(this).val() > max) {
+                    $(this).val(max - 0.01);
+                    $("#OtherPayWarning").show();
+                }
+                else if ($(this).val() < min) {
+                    $(this).val(min);
+                    $("#OtherPayWarning").show();
+                }
+                else {
+                    $("#OtherPayWarning").hide();
+                }
+            });
+        });
+
+        $(function () {
+            $("#PayOtherButton").click(function (event) {
+                var hrefO = $("#PayOtherButton").attr('href');
+                if (!isNaN(parseFloat($("#txtOtherPayment").val()))) {
+                    var newCustPayO = hrefO.split('\/O')[0] + "\/O" + $("#txtOtherPayment").val().replace(".", "_");
+                    $("#PayOtherButton").attr('href', newCustPayO);
+                    $("#OtherPayWarning").hide();
+                }
+                else
+                {
+                    $("#OtherPayWarning").show();
+                    event.preventDefault();
+                }
+            });
+        });
+
+        $(function () {
+            var hash = window.location.hash;
+            if (hash && $(hash).length) {
+                var tabLink = $('a[href="' + hash + '"][data-toggle="tab"], button[data-target="' + hash + '"][data-toggle="tab"]');
+                if (tabLink.length) {
+                    $(tabLink).tab('show');
+                }
+            }
+        });
+    </script>
+
+    <script>
+        const tabsContainer = document.getElementById('tabsContainer');
+        const tabLinks = tabsContainer.querySelectorAll('a[data-toggle="tab"], button[data-toggle="tab"]');
+        const firstTabLink = tabLinks[0];
+        const lastTabLink = tabLinks[tabLinks.length - 1];
+
+        tabLinks.forEach(function (tabLink, index) {
+            $(tabLink).on('shown.bs.tab', function (event) {
+                const activatedTab = event.target;
+                const previousTab = event.relatedTarget;
+
+                let activatedTarget = activatedTab.dataset.target;
+                if (!activatedTarget) {
+                    activatedTarget = activatedTab.href;
+                }
+
+                const activatedPaneId = activatedTarget.substring(activatedTarget.indexOf('#') + 1);
+                const activatedPane = document.getElementById(activatedPaneId);
+
+                if (previousTab) {
+                    let previousTarget = previousTab.dataset.target;
+                    if (!activatedTarget) {
+                        previousTarget = previousTab.href;
+                    }
+
+                    const previousPaneId = activatedTarget.substring(activatedTarget.indexOf('#') + 1);
+                    const previousPane = document.getElementById(previousPaneId);
+
+                    previousTab.ariaSelected = 'false';
+                    previousTab.tabIndex = '-1';
+                    previousPane.ariaHidden = 'true';
+                }
+
+                activatedTab.ariaSelected = 'true';
+                activatedTab.tabIndex = '0';
+                activatedPane.ariaHidden = 'false';
+            });
+
+            tabLink.addEventListener('click', function (event) {
+                event.preventDefault();
+                $(tabLink).tab('show');
+            });
+
+            tabLink.addEventListener('keydown', function (event) {
+                switch (event.key) {
+                    case 'Tab':
+                        if (event.shiftKey) {
+                            break;
+                        }
+                        event.preventDefault();
+                    // fall through
+                    case ' ':
+                    case 'ArrowDown':
+                        document.querySelector('.tab-content').focus();
+                        break;
+                    case 'ArrowUp':
+                    // fall through
+                    case 'ArrowLeft':
+                        if (index === 0) {
+                            //lastTabLink.focus();
+                            keyboardNavigateTab(lastTabLink);
+                            break;
+                        }
+                        //$(tabLinks[index - 1]).focus();
+                        keyboardNavigateTab(tabLinks[index - 1]);
+                        break;
+                    case 'ArrowRight':
+                        if (index === tabLinks.length - 1) {
+                            //firstTabLink.focus();
+                            keyboardNavigateTab(firstTabLink);
+                            break;
+                        }
+                        //tabLinks[index + 1].focus();
+                        keyboardNavigateTab(tabLinks[index + 1]);
+                        break;
+                    case 'Home':
+                        //firstTabLink.focus();
+                        keyboardNavigateTab(firstTabLink);
+                        break;
+                    case 'End':
+                        event.preventDefault();
+                        //lastTabLink.focus();
+                        keyboardNavigateTab(lastTabLink);
+                        break;
+                    /*case ' ':
+                        $(tablink).tab('show');
+                        break;*/
+                    default:
+                        break;
+                }
+            });
+        });
+
+        function keyboardNavigateTab(tab) {
+            tab.focus();
+            $(tab).tab('show');
+        }
+
+        const currentYearSearch = document.getElementById('currentYearSearch');
+        currentYearSearch.addEventListener('click', (event) => {
+            const searchUrl = document.getElementById('quickSearchForm').dataset.searchUrl;
+            const feeParcel = document.getElementById('feeParcel').innerText.replaceAll('-', '').substring(0, 12);
+            window.location = `${searchUrl}/${feeParcel}`;
+        });
+    </script>
+
+</body>
+</html>

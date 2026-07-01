@@ -1,0 +1,98 @@
+{
+  "drift.over_time": {
+    "v1": {
+      "function": "drift.over_time",
+      "args": ["metric"],
+      "stable": true,
+      "status": "active"
+    }
+  },
+  "drift.by_field": {
+    "v1": {
+      "function": "drift.by_field",
+      "args": ["field"],
+      "stable": true,
+      "status": "active"
+    }
+  },
+  "drift.composition": {
+    "v1": {
+      "function": "drift.composition",
+      "args": ["run_id"],
+      "stable": true,
+      "status": "active"
+    }
+  },
+  "replay.mismatches": {
+    "v1": {
+      "function": "replay.mismatches",
+      "args": ["run_id"],
+      "stable": true,
+      "status": "active"
+    }
+  },
+  "replay.field_diff": {
+    "v1": {
+      "function": "replay.field_diff",
+      "args": ["run_id", "field"],
+      "stable": true,
+      "status": "active"
+    }
+  },
+  "replay.validate": {
+    "v1": {
+      "function": "replay.validate",
+      "args": ["run_id"],
+      "stable": true,
+      "status": "active"
+    }
+  },
+  "stability.trend": {
+    "v1": {
+      "function": "stability.trend",
+      "args": ["window"],
+      "stable": true,
+      "status": "active"
+    }
+  },
+  "stability.score": {
+    "v1": {
+      "function": "stability.score",
+      "args": [],
+      "stable": true,
+      "status": "active"
+    }
+  },
+  "anomalies.spikes": {
+    "v1": {
+      "function": "anomalies.spikes",
+      "args": ["threshold"],
+      "stable": true,
+      "status": "active"
+    }
+  },
+  "anomalies.regressions": {
+    "v1": {
+      "function": "anomalies.regressions",
+      "args": [],
+      "stable": true,
+      "status": "active"
+    }
+  },
+  "anomalies.outliers": {
+    "v1": {
+      "function": "anomalies.outliers",
+      "args": ["metric"],
+      "stable": true,
+      "status": "active"
+    }
+  },
+  "system.health": {
+    "v1": {
+      "function": "system.health",
+      "args": ["run_id"],
+      "stable": true,
+      "status": "active"
+    }
+  }
+}

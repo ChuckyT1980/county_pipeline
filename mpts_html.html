@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Search | SHASTA County - MBAP</title>
+    <meta name="description" content="wwwroot/images/manifest/icon_512x512.png" />
+    <!-- Mobile Meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="/mbap/favicon.ico">
+
+
+<link rel="stylesheet" href="/mbap/css/site.css" />
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/">
+
+<link rel="preload" href="/mbap/lib/smarty/distp/fonts/flaticon/Flaticon.woff2" as="font" type="font/woff2" crossorigin="">
+
+<!--CSS Files-->
+
+
+<!--CSS Files-->
+<link rel="stylesheet" href="/mbap/lib/smarty/distp/css/core.min.css">
+<link rel="stylesheet" href="/mbap/lib/smarty/distp/css/vendor_bundle.min.css">
+<link rel="stylesheet" href="/mbap/css/custom.css">
+
+
+
+<!-- Web Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+
+
+
+
+
+<link rel="manifest" href="/mbap/images/manifest/manifest.json">
+<meta name="theme-color" content="#377dff">
+
+
+
+
+</head>
+
+<body>
+    <div class="scrollToTop"></div>
+    <a class="sr-only sr-only-focusable" href="#main">Skip to main content</a>
+
+        
+    <!--<div id="cookieConsent" class="alert alert-info alert-dismissible fade show" role="alert">
+        This site uses cookies to make your browsing experience more convenient and personal. Cookies store useful information on your computer to help us improve the efficiency and relevance of our site for you. In some cases, they are essential to making the site work properly. By accessing this site, you consent to the use of cookies.
+        <a asp-page="/Privacy">Learn More</a>.
+        <button type="button" class="accept-policy close" data-dismiss="alert" aria-label="Close" data-cookie-string=".AspNet.Consent=yes; expires=Thu, 24 Jun 2027 22:51:12 GMT; path=/; samesite=strict">
+            <span aria-hidden="true">Accept</span>
+        </button>
+    </div>-->
+    <div id="gdpr" class="hide bg-white rounded-lg shadow-lg w-100 max-w-350 p--30 m-3 position-fixed fixed-bottom right-0 z-index-9999">
+
+        <h3 class="fs--18 mb-4">
+
+            <a href="#" class="close mt-n3" aria-label="close cookie box">
+                <span class="fi fi-close fs--18" aria-hidden="true"></span>
+            </a>
+
+            Cookies
+
+        </h3>
+
+        <hr>
+
+        <p class="lead" style="color:black">
+            This site uses cookies to make your browsing experience more convenient and personal.
+            Cookies store useful information on your computer to help us improve the efficiency and relevance of our site for you.
+            In some cases, they are essential to making the site work properly. By accessing this site, you consent to the use of cookies.
+        </p>
+
+        <div class="form-group">
+            <a href="#" class="btn btn-primary btn-cookie-accept w-100" aria-label="Accept &amp; Continue" data-cookie-string=".AspNet.Consent=yes; expires=Thu, 24 Jun 2027 22:51:12 GMT; path=/; samesite=strict">
+                Accept &amp; Continue
+            </a>
+        </div>
+        <hr class="mt-4 mb-4">
+
+
+        <p class="m-0">
+
+            <span class="d-block">Need to learn more?</span>
+            <a href="https://www.mptsweb.net/cookiepolicy.htm" class="link-muted" aria-label="Cookie Policy" target="_blank">Cookie Policy</a>
+            &nbsp; &nbsp;
+            <a href="https://mptsweb.net/privacy-policy/" class="link-muted" aria-label="Privacy Policy" target="_blank">Privacy Policy</a>
+
+        </p>
+        <!--<p class="m-0">-->
+        <!--</p>-->
+    </div>
+    <script>
+        (function () {
+            var button = document.querySelector("#gdpr a[data-cookie-string]");
+            button.addEventListener("click", function (event) {
+                document.cookie = button.dataset.cookieString;
+            }, false);
+        })();
+    </script>
+
+
+
+
+            
+
+<div class="fixedHeader-floating">
+
+    <div id="wrapper">
+        <!-- HEADER Top-->
+        <header id="header" class="shadow-3d-up">
+            <!--TOP BAR-->
+            <div id="top_bar" class="bg-light fs--14">
+                <div class="container">
+                    <div class="text-nowrap">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-inline-block float-start">
+                            </div>
+
+                            <div class="d-inline-block float-end">
+                                <div class="header-top-dropdown">
+
+                                    <div class="btn-group  dropdown">
+                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="dialog"
+                                                id="QuickSearch"  aria-label="Quick Search" aria-controls="popup">
+                                            <i class="fi fi-search"></i>
+                                            Quick Search
+                                        </button>
+
+                                        <!-- Backdrop -->
+                                        <div id="backdrop" class="backdrop"></div>
+
+                                        <!-- Popup for search form -->
+                                        <div id="popup" class="popup">
+                                            <div class="form-label-group d-flex align-items-center">
+                                                <input type="text" class="form-control fancybox-animated" placeholder="Enter FEE PARCEL" id="quickSearchBox" data-search-url="/mbap/SHASTA/asr" max="20" aria-label="Enter FEEPARCEL" />
+                                                <a href="#" aria-label="Quick Search" style="margin-left:10px;"><i class="fi fi-search"></i></a>
+
+                                                <!-- Cancel Button -->
+                                                <a href="#" id="cancelButton" class="cancel-btn" aria-label="Cancel Search">Cancel</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /TOP BAR-->
+            <!-- header-top end -->
+            <!--Header main starts-->
+                
+            <div class="header" style="padding-top:5px ;padding-bottom:5px" role="banner">
+                <div class="container position-relative">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="row  d-none d-lg-flex">
+                                <div class="col-md-4" style="">
+                                    <!--logo-->
+                                    <div class="logo">
+                                        <a href="https://www.shastacounty.gov/assessor" target="_blank">
+                                            <img id="logoCounty" src="/mbap/images/logo/SHASTAheaderlogo.png" alt="SHASTA County" title="SHASTA County" />
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-8" style="padding-left:20px;padding-top:30px">
+                                    <h1 class="countyNameClass">
+                                        Shasta County Assessor
+                                    </h1>
+                                    <h2 class="col-lg-offset-3 stateNameClass">
+                                        California
+                                    </h2>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                            <!-- header-right start-->
+                            <div class="position-relative">
+                                <!--main-navigation start-->
+                                <!--navbar start-->
+                                <nav class="navbar navbar-expand-lg navbar-light justify-content-lg-between justify-content-md-inherit" role="navigation">
+                                    <div class="align-items-start">
+                                        <!-- mobile menu button : show-->
+                                        <button id="hamburgerBtn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMainNav" aria-controls="navbarMainNav" aria-expanded="false"
+                                                aria-label="Toggle navigation">
+                                            <svg width="25" viewBox="0 0 20 20" role="img" aria-label="Menu" aria-hidden="true">
+                                                <path d="M 19.9876 1.998 L -0.0108 1.998 L -0.0108 -0.0019 L 19.9876 -0.0019 L 19.9876 1.998 Z"></path>
+                                                <path d="M 19.9876 7.9979 L -0.0108 7.9979 L -0.0108 5.9979 L 19.9876 5.9979 L 19.9876 7.9979 Z"></path>
+                                                <path d="M 19.9876 13.9977 L -0.0108 13.9977 L -0.0108 11.9978 L 19.9876 11.9978 L 19.9876 13.9977 Z"></path>
+                                                <path d="M 19.9876 19.9976 L -0.0108 19.9976 L -0.0108 17.9976 L 19.9876 17.9976 L 19.9876 19.9976 Z"></path>
+                                            </svg>
+                                        </button>
+                                        <h1  class="navbar-brand d-lg-none" style="padding-left:30px">Shasta County Assessor</h1>
+                                    </div>
+
+                                    <div class="collapse navbar-collapse navbar-animate-fadein" id="navbarMainNav" role="dialog" aria-labelledby="PopupTitle">
+                                        <!--MOBILE MENU NAVBAR-->
+                                        <div class="navbar-xs d-none">
+                                            <!--.sticky-top-->
+                                            <!--mobile menu button : close-->
+
+                                            <button class="navbar-toggler pt-0" type="button" data-toggle="collapse" data-target="#navbarMainNav" aria-controls="navbarMainNav"
+                                                    aria-expanded="false" aria-label="Toggle navigation" >
+                                                <svg width="20" viewBox="0 0 20 20" role="img" aria-label="Close Menu" >
+                                                    <path d="M 20.7895 0.977 L 19.3752 -0.4364 L 10.081 8.8522 L 0.7869 -0.4364 L -0.6274 0.977 L 8.6668 10.2656 L -0.6274 19.5542 L 0.7869 20.9676 L 10.081 11.679 L 19.3752 20.9676 L 20.7895 19.5542 L 11.4953 10.2656 L 20.7895 0.977 Z"></path>
+                                                </svg>
+                                            </button>
+
+                                            <h1 class="navbar-brand" style="padding-left:15px" id="PopupTitle">Shasta County Assessor</h1>
+
+
+                                        </div>
+
+                                        <ul class="navbar-nav nav-deep-dark" role="menubar" id="mydropdown">
+                                                            <li class="nav-item  dropdown active" role="presentation">
+
+                                                                <a id="navToggle_0" href="#" class="nav-link dropdown-toggle fs--17" data-toggle="dropdown" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-controls="navMenu_0">ASSESSOR APPEAL</a>
+
+                                                                <ul id="navMenu_0" class="dropdown-menu dropdown-menu-clean dropdown-fadeindown" aria-hidden="true" role="menu" aria-labelledby="navToggle_0">
+
+
+                                                                        <li class="dropdown-item" role="presentation">
+                                                                            <a href="https://www.co.shasta.ca.us/index/assessor/assessment-appeal/base-year-value" target="_blank" class="dropdown-link" role="menuitem">BASE YEAR VALUE</a>
+                                                                        </li>
+                                                                        <li class="dropdown-item" role="presentation">
+                                                                            <a href="https://www.co.shasta.ca.us/index/assessor/assessment-appeal/current-assessment" target="_blank" class="dropdown-link" role="menuitem">CURRENT ASSESSMENT</a>
+                                                                        </li>
+                                                                        <li class="dropdown-item" role="presentation">
+                                                                            <a href="https://www.co.shasta.ca.us/index/assessor/assessment-appeal/supplemental-assessment" target="_blank" class="dropdown-link" role="menuitem">SUPPLEMENTAL ASSESSMENT</a>
+                                                                        </li>
+                                                                </ul>
+
+                                                            </li>
+                                                            <li class="nav-item  dropdown active" role="presentation">
+
+                                                                <a id="navToggle_1" href="#" class="nav-link dropdown-toggle fs--17" data-toggle="dropdown" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-controls="navMenu_1">ASSESSMENT ROLL</a>
+
+                                                                <ul id="navMenu_1" class="dropdown-menu dropdown-menu-clean dropdown-fadeindown" aria-hidden="true" role="menu" aria-labelledby="navToggle_1">
+
+
+                                                                        <li class="dropdown-item" role="presentation">
+                                                                            <a href="https://www.co.shasta.ca.us/index/assessor/assessment-roll/ca-assessment-laws" target="_blank" class="dropdown-link" role="menuitem">CA ASSESSMENT LAW</a>
+                                                                        </li>
+                                                                        <li class="dropdown-item" role="presentation">
+                                                                            <a href="https://www.co.shasta.ca.us/index/assessor/assessment-roll/supplemental-assessment-roll" target="_blank" class="dropdown-link" role="menuitem">SUPPLEMENTAL</a>
+                                                                        </li>
+                                                                </ul>
+
+                                                            </li>
+                                                            <li class="nav-item  dropdown active" role="presentation">
+
+                                                                <a id="navToggle_2" href="#" class="nav-link dropdown-toggle fs--17" data-toggle="dropdown" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-controls="navMenu_2">PROPERTY OWNERS</a>
+
+                                                                <ul id="navMenu_2" class="dropdown-menu dropdown-menu-clean dropdown-fadeindown" aria-hidden="true" role="menu" aria-labelledby="navToggle_2">
+
+
+                                                                        <li class="dropdown-item" role="presentation">
+                                                                            <a href="https://www.co.shasta.ca.us/index/assessor/property-owners/change-address" target="_blank" class="dropdown-link" role="menuitem">CHANGE ADDRESS</a>
+                                                                        </li>
+                                                                        <li class="dropdown-item" role="presentation">
+                                                                            <a href="https://www.co.shasta.ca.us/index/assessor/property-owners/disaster-relief" target="_blank" class="dropdown-link" role="menuitem">DISASTER RELIEF</a>
+                                                                        </li>
+                                                                        <li class="dropdown-item" role="presentation">
+                                                                            <a href="https://www.co.shasta.ca.us/index/assessor/property-owners/exemptions" target="_blank" class="dropdown-link" role="menuitem">EXEMPTIONS</a>
+                                                                        </li>
+                                                                </ul>
+
+                                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                </nav>
+                                <!--navbar end-->
+                                <!--main-navigation end-->
+                            </div>
+                            <!--header-right end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- header end -->
+</div>
+
+
+
+
+
+
+    <main id="main" tabindex="-1">
+        
+
+<!-- Main-Section +Result Section+Help Section+Counter Section+Script Section -->
+<!-- Main-Section Starts -->
+
+<section class="bg-theme-color-light overlay-dark overlay-opacity-8 bg-cover lazy" data-loaded="true"
+         style=" background-image: url(https://images.unsplash.com/photo-1533417457911-4ec911485388?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80);">
+
+
+
+
+
+
+
+
+    <div class="container">
+
+        <div class="row  text-center-xs d-middle justify-content-start ">
+
+            <div class="col-12 col-md-6  text-white" data-aos="fade-in" data-aos-delay="0" data-aos-offset="0">
+                <div class="d-none d-lg-inline">
+
+                    <!--Counter Section Starts-->
+                    <div class="container">
+
+                        <p style="text-align:justify;" class="lead">Property taxes are  an essential government funding source that are used to finance education, infrastructure, public safety and other resources (or projects, services, etc.) that benefit the community.</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!--Counter Section Ends-->
+            <!--Search Section Starts-->
+            <div class="col-12 col-lg-6 text-align-end text-center-md text-center-xs aos-init aos-animate" data-aos="fade-in" data-aos-delay="50" data-aos-offset="0">
+
+                <div class="d-inline-block bg-white shadow-primary-xs rounded p-5 p-4-xs w-100 max-w-450 text-align-start" style="border-block-color:darkgray">
+
+                    <h2 class="h5 mb-5">
+                        <i class="fi fi-homeadvisor"></i>
+                        <span class="d-inline-block pl-2 pr-2">Find Property </span>
+                    </h2>
+
+                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8D9mZcDhlk9OvOLrutKq_lseMJx1muo7UXPgHbGjcH7V2f8L-4gvCs1jatkdtJxbXHihTZ3_IGnck-d-lm9b1R_AUZch0RMVktu7IEuEcXFhoFTKXhUpB5_raLTGH3C_sXqza_sQl0cRJCNalY2X9dM" />
+
+                    <form novalidate="" class="bs-validate">
+
+                        <div class="form-group">
+
+                            <label for="SearchVal">SEARCH BY</label>
+                            <select class="form-control" id="SearchVal" name="SearchVal">
+                                <option selected="selected" value="idfeeparcel">FEE PARCEL</option>
+                                <option value="idasmt">ASSESSMENT</option>
+
+
+                                    <option value="idboatcf">BOAT CF#</option>
+
+                                    <option value="idaircrafttail">AIRCRAFT TAIL#</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label id="SearchTerm" for="SearchValue">FEE PARCEL</label>
+                            <input type="text" class="form-control" id="SearchValue" placeholder="SEARCH TERM" value="" aria-describedby="SearchValueError" name="SearchValue" />
+                            <span class="text-danger field-validation-valid" id="SearchValueError" data-valmsg-for="SearchValue" data-valmsg-replace="true"></span>
+                        </div>
+                        <br />
+
+                        <div class="form-group" id="SearchBtnSubmit" style="padding:0px 0px 0px 0px">
+                            <a href="#" class="btn btn-block btn-lg btn-primary bg-gradient-primary" id="Submit" role="button"><i class="fi fi-search"></i>Search</a>
+                        </div>
+
+                        <div class="bs-validate-info hide alert alert-danger" id="lengthWarningDiv" role="alert">
+                            <strong>!</strong>
+                            Minimum 2 character required. Maximum 20.
+                        </div>
+                        <div class="bs-validate-info hide alert alert-danger" id="WrongValueDiv" role="alert">
+                            <strong>!</strong>
+                            Please Check the Search Field Value.
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <!--Search Section Ends-->
+        </div>
+    </div>
+
+</section>
+
+<!-- Main-Section Ends -->
+
+<div class="col-12 col-lg-6 text-align-end text-center-md text-center-xs aos-init aos-animate" data-aos="fade-in" data-aos-delay="50" data-aos-offset="0">
+    <i class="fs--50 fi fi-spin fi-loading-dots text-primary" id="spinner" style=" display:none; top:50px;left:50px; "></i>
+</div>
+
+<!-- Result-Section Start -->
+<section class="main-container hide" id="ResultsSection">
+    <span id="screenReaderSearchStatus" class="sr-only" tabindex="-1" role="status">Searching...</span>
+    <div class="container">
+        <div class="row">
+
+            <div class="main col-md-12">
+                <!-- Search Results start -->
+
+                <div class="row" id="ResultDiv">
+                </div>
+                <!-- Search Results End -->
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Result-Section Ends -->
+<!--Help section start -->
+<!-- ================ -->
+<div class="section" style="padding-top:20px;">
+    <div class="container">
+        <h2><span class="text-primary">Help</span></h2>
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block clearfix">
+                    <h3>Assessment</h3>
+                    <p style="color:black">
+                        To view a "specific" assessment, please enter the assessment number. This feature may not display all outstanding assessments. If you would like a summary of outstanding assessments, use the FEE PARCEL search.
+                    </p>
+                    <h3>Fee Parcel</h3>
+                    <p style="color:black">
+                        To view a "summary" of all current or delinquent fiscal year assessments outstanding or paid during the current fiscal year, please enter the fee parcel number. If you do not have your assessment or fee parcel number, please contact our office
+                    </p>
+                    <p style="color:black">
+                        This information is located on the upper left corner of your property tax bill as shown below.
+                    </p>
+                       <img src="/mbap/Images/MaderaBill.jpg" alt="Sample Tax Bill" title="Sample Tax Bill" style="padding:0px 0px 10px 0px; width:100%;" />
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--Help section end -->
+<!--Script Section-->
+
+    </main>
+       
+        
+
+<!--Footar starts-->
+
+
+<footer id="footer" class="footer-light">
+    <div class="container">
+
+        <div class="row">
+            <div class="bg-distinct col-12 col-md-6 col-lg-4 text-center p-0 py-5">
+                <div class="footer-svg-shape position-absolute absolute-top z-index-2 mt--n70 w-100 overflow-hidden pt--5" >
+                    <svg viewBox="0 0 1440 28" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0 28H1440C1440 28 1154 3.21961e-10 720 1.30487e-09C286 2.28777e-09 0 28 0 28Z"></path>
+                    </svg>
+                </div>
+
+                <div class="footer-content">
+                    <div class="logo-footer">
+                        <img id="logo-footer" src="/mbap/Images/logo/SHASTAfooterlogo.png" alt="SHASTA County">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-8   py-5 text-center-md">
+
+                <h4>Leslie Morgan</h4>
+                <h5>Assessor</h5>
+                <div class="mt--10">
+                    <ul class="list-unstyled m-0">
+                        <li class="list-item py-2">
+                            <i class="fi fi-pin-2 pr--10" aria-hidden="true"></i>
+                            <span class="sr-only">Address: 1450 Court St, Ste 208A Redding,CA 96001-1667 </span>
+                            <span aria-hidden="true">1450 Court St, Ste 208A Redding,CA 96001-1667 </span>
+
+
+                        </li>
+                        <li class="list-item py-2">
+                            <i class="fi fi-phone pr--10" title="Phone" aria-hidden="true"></i>
+                            
+                            <span class="sr-only">Phone: (530) 225-3600</span>
+                            <span aria-hidden="true">(530) 225-3600</span>
+
+                        </li>
+                        <li class="list-item py-2">
+                            <i class="fi fi-envelope-2 pr--10" title="Email" aria-hidden="true"></i>
+                            
+                            <span class="sr-only">Email: scinfo@co.shasta.ca.us</span>
+                            <span aria-hidden="true">scinfo@co.shasta.ca.us</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--Subfooter Starts-->
+    <div class="bg-distinct py-3 clearfix">
+
+        <div class="container clearfix font-weight-dark text-center-xs">
+
+            <div class="fs--14 py-2 float-start float-none-xs m-0-xs" style="padding-right:100px">
+                Copyright &copy; <span id="year">year</span> Megabyte Licensing Corporation. All Rights Reserved.
+            </div>
+            <div class="fs--14 py-2 float-start float-none-xs m-0-xs">
+                <a href="https://www.mptsweb.net/cookiepolicy.htm" class="link-muted" target="_blank">Cookie Policy</a>
+            </div>
+            <div class="fs--14  py-2  float-start float-none-xs m-0-xs" style="padding-left:100px">
+                <a href="https://mptsweb.net/privacy-policy/" class="link-muted" target="_blank">Privacy Policy</a>
+            </div>
+            <div class="fs--14  py-2  float-start float-none-xs m-0-xs" style="padding-left:100px">
+                <a href="https://mptsweb.net/terms-of-use/" class="link-muted" target="_blank">Terms of Use</a>
+            </div>
+        </div>
+
+    </div>
+    <!--Subfootar Ends-->
+</footer>
+
+<!--Footar Ends-->
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        const year = document.querySelector('#year');
+        function getCurrentYearForFooter() {
+            year.innerHTML = new Date().getFullYear();
+        };
+        getCurrentYearForFooter();
+    });
+</script>
+
+
+
+
+
+        
+
+    
+  
+
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script src="/mbap/lib/smarty/distp/js/core.js"></script>
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-34016412-14"></script>
+<script src="/mbap/js/QuicksearchScript.js"></script>
+<script src="/mbap/js/AllPageScript.js"></script>
+
+<script src="/mbap/js/Dropdown.js"></script>
+
+<script src="/mbap/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+
+    
+<script src="/mbap/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+
+
+
+        
+
+    <script type="text/template" id="cardTemplate">
+
+
+        <div class="col-md-3 col-sm-6">
+       
+                <div class="bg-white shadow-md shadow-3d-hover transition-all-ease-250 transition-hover-top rounded show-hover-container p-2 h-100">
+
+                    <span class="title"><a href="{6}">{0}</a></span>
+                    <p>
+                        <strong>{7}  </strong>{1}<br />
+                        <strong>Fee Parcel:  </strong>{2}<br />
+                        <strong><span class="sr-only">T.R.A.</span><span aria-hidden="true">TRA</span>:</strong>{3}<br />
+                        <strong>{8}  </strong>{4}<br />
+                        <strong>{9}  </strong>{5}<br />
+                    </p>
+
+                    <div class="elements-list note-icon-pull-left">
+                        <a href="{6}"><i class="fi fi-arrow-right-full pr-10"></i>View Details</a>
+                    </div>
+
+                </div>
+        </div>
+
+    </script>
+
+    <script>
+        var appFolder = '/mbap/';
+        var countyname = 'SHASTA';
+
+         var jQuickSearchValue = '';
+
+          // $('#WrongValueDiv').hide();
+        $('.counter').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: parseFloat($(this).text().replace(/,/g, ''))
+            }, {
+                duration: 10000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(getRupeesFormat(Math.ceil(now)));
+                }
+            });
+        });
+
+
+        function getRupeesFormat(val) {
+            while (/(\d+)(\d{3})/.test(val.toString())) {
+                val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+            }
+            return val;
+        }
+
+
+    </script>
+    <script src="/mbap/js/Search.js"></script>
+
+        
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,21 @@
+{
+  "drift.over_time": {
+    "v1": {
+      "signature_hash": "A1B2",
+      "output_shape": "list<dict<run_id, metric>>",
+      "behavior_hash": "X91K"
+    },
+    "v2": {
+      "signature_hash": "A1B2",
+      "output_shape": "list<dict<run_id, metric>>",
+      "behavior_hash": "X91K_MOD"
+    }
+  },
+  "stability.trend": {
+    "v1": {
+      "signature_hash": "C3D4",
+      "output_shape": "dict<trend, delta_vector>",
+      "behavior_hash": "Z82L"
+    }
+  }
+}

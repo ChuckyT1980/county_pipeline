@@ -1,0 +1,55 @@
+{
+  "shasta_ca": {
+    "vendor": "MPTS",
+    "vendor_confidence": 0.7,
+    "portal_pattern": "mptsweb.co.shasta.ca.us",
+    "fingerprint_features": [
+      "mptsweb"
+    ],
+    "tax_source": "https://mptsweb.co.shasta.ca.us/search.asp",
+    "assessor_source": "https://www.co.shasta.ca.us/assessor",
+    "data_quality_score": 0.85
+  },
+  "tehama_ca": {
+    "vendor": "MPTS",
+    "vendor_confidence": 0.7,
+    "portal_pattern": "mptsweb.co.tehama.ca.us",
+    "fingerprint_features": [
+      "mptsweb"
+    ],
+    "tax_source": "https://mptsweb.co.tehama.ca.us/taxsearch",
+    "assessor_source": "",
+    "data_quality_score": 0.85
+  },
+  "fake_aumentum_ca": {
+    "vendor": "Aumentum",
+    "vendor_confidence": 0.7,
+    "portal_pattern": "taxes.fakeaumentum.ca.us",
+    "fingerprint_features": [
+      "Aumentum"
+    ],
+    "tax_source": "https://taxes.fakeaumentum.ca.us/Aumentum/search",
+    "assessor_source": "",
+    "data_quality_score": 0.85
+  },
+  "fake_govos_ca": {
+    "vendor": "GovOS",
+    "vendor_confidence": 0.7,
+    "portal_pattern": "search.fakegovos.ca.us",
+    "fingerprint_features": [
+      "GovOS"
+    ],
+    "tax_source": "https://search.fakegovos.ca.us/records",
+    "assessor_source": "",
+    "data_quality_score": 0.85
+  },
+  "unknown_ca": {
+    "vendor": "UNKNOWN",
+    "vendor_confidence": 0.0,
+    "portal_pattern": "",
+    "fingerprint_features": [],
+    "tax_source": "",
+    "assessor_source": "",
+    "data_quality_score": 0.5
+  }
+}

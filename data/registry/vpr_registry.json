@@ -1,0 +1,29 @@
+{
+  "counties": {
+    "shasta": {
+      "vendor_class": "MPTS_HYBRID",
+      "target_url": "https://mptsweb.co.shasta.ca.us/search.asp",
+      "pattern": "tabbed assessor + tax separation"
+    },
+    "tehama": {
+      "vendor_class": "MPTS_HYBRID",
+      "target_url": "https://mptsweb.co.tehama.ca.us/search.asp",
+      "pattern": "older mpts deployment"
+    },
+    "san_bernardino": {
+      "vendor_class": "AUMENTUM_STATEFUL",
+      "target_url": "https://taxes.sbcounty.gov/Aumentum/search",
+      "pattern": "session-heavy workflows"
+    },
+    "los_angeles": {
+      "vendor_class": "CUSTOM_CMS",
+      "target_url": "https://portal.assessor.lacounty.gov/",
+      "pattern": "fragmented subsystems, high WAF"
+    },
+    "riverside": {
+      "vendor_class": "CUSTOM_CMS",
+      "target_url": "https://rivco-hybrid.ca.gov/",
+      "pattern": "hybrid medium-complexity"
+    }
+  }
+}

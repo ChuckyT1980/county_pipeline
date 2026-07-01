@@ -1,0 +1,9 @@
+{
+  "deceased_owner":   25,
+  "trust_entity":     15,
+  "multiple_parties": 10,
+  "time_high":        25,
+  "time_moderate":    15,
+  "time_low":          5,
+  "noise_penalty":   -20
+}

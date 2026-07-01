@@ -1,0 +1,222 @@
+[
+  {
+    "entity_key": "tehama|064050032000",
+    "property_core": {
+      "apn": "064-050-032-000",
+      "apn_normalized": "064050032000",
+      "county": "tehama"
+    },
+    "distress_event": {
+      "apn": "064-050-032-000",
+      "source": "tax_delinquency_notice",
+      "amount_due": 4410.81,
+      "default_year": 2017,
+      "notice_date": "2025-06",
+      "event_type": "impending_default",
+      "raw_owner_signal": "LEMMA FAM REVOC TR OF 2000 | LEMMA, DALE R & BRENDA E | 9180 HWY 99W"
+    },
+    "property_snapshot": {
+      "situs_address": "9180 HWY 99W",
+      "roll_category": "CS",
+      "tax_year": "2025"
+    }
+  },
+  {
+    "entity_key": "tehama|066213013000",
+    "property_core": {
+      "apn": "066-213-013-000",
+      "apn_normalized": "066213013000",
+      "county": "tehama"
+    },
+    "distress_event": {
+      "apn": "066-213-013-000",
+      "source": "tax_delinquency_notice",
+      "amount_due": 1538.64,
+      "default_year": 2017,
+      "notice_date": "2025-06",
+      "event_type": "impending_default",
+      "raw_owner_signal": "ZIEGLER, DANNY R & GLORIA | 25281 S CENTER"
+    },
+    "property_snapshot": {
+      "situs_address": "25281 S CENTER",
+      "roll_category": "CS",
+      "tax_year": "2025"
+    }
+  },
+  {
+    "entity_key": "tehama|009400008000",
+    "property_core": {
+      "apn": "009-400-008-000",
+      "apn_normalized": "009400008000",
+      "county": "tehama"
+    },
+    "distress_event": {
+      "apn": "009-400-008-000",
+      "source": "tax_delinquency_notice",
+      "amount_due": 6708.6,
+      "default_year": 2017,
+      "notice_date": "2025-06",
+      "event_type": "impending_default",
+      "raw_owner_signal": "CONROTTO, GREGORY | 15305 CHINA RAPIDS DR"
+    },
+    "property_snapshot": {
+      "situs_address": "15305 CHINA RAPIDS DR",
+      "roll_category": "CS",
+      "tax_year": "2025"
+    }
+  },
+  {
+    "entity_key": "tehama|060050021000",
+    "property_core": {
+      "apn": "060-050-021-000",
+      "apn_normalized": "060050021000",
+      "county": "tehama"
+    },
+    "distress_event": {
+      "apn": "060-050-021-000",
+      "source": "tax_delinquency_notice",
+      "amount_due": 3547.3,
+      "default_year": 2018,
+      "notice_date": "2025-06",
+      "event_type": "impending_default",
+      "raw_owner_signal": "HANOVER PROPERTIES LLC | 17230 RANCHO TEHAMA RD"
+    },
+    "property_snapshot": {
+      "situs_address": "17230 RANCHO TEHAMA RD",
+      "roll_category": "CS",
+      "tax_year": "2025"
+    }
+  },
+  {
+    "entity_key": "tehama|062300024000",
+    "property_core": {
+      "apn": "062-300-024-000",
+      "apn_normalized": "062300024000",
+      "county": "tehama"
+    },
+    "distress_event": {
+      "apn": "062-300-024-000",
+      "source": "tax_delinquency_notice",
+      "amount_due": 1611.74,
+      "default_year": 2018,
+      "notice_date": "2025-06",
+      "event_type": "impending_default",
+      "raw_owner_signal": "HAYNES, CHRIS M | 16058 QUARTER HORSE CT"
+    },
+    "property_snapshot": {
+      "situs_address": "16058 QUARTER HORSE CT",
+      "roll_category": "CS",
+      "tax_year": "2025"
+    }
+  },
+  {
+    "entity_key": "tehama|007420074000",
+    "property_core": {
+      "apn": "007-420-074-000",
+      "apn_normalized": "007420074000",
+      "county": "tehama"
+    },
+    "distress_event": {
+      "apn": "007-420-074-000",
+      "source": "tax_delinquency_notice",
+      "amount_due": 3359.35,
+      "default_year": 2019,
+      "notice_date": "2025-06",
+      "event_type": "impending_default",
+      "raw_owner_signal": "CHRISLER, JULIE A & TODD W"
+    },
+    "property_snapshot": {
+      "situs_address": "",
+      "roll_category": "CS",
+      "tax_year": "2025"
+    }
+  },
+  {
+    "entity_key": "tehama|021210036000",
+    "property_core": {
+      "apn": "021-210-036-000",
+      "apn_normalized": "021210036000",
+      "county": "tehama"
+    },
+    "distress_event": {
+      "apn": "021-210-036-000",
+      "source": "tax_delinquency_notice",
+      "amount_due": 4323.97,
+      "default_year": 2019,
+      "notice_date": "2025-06",
+      "event_type": "impending_default",
+      "raw_owner_signal": "PRIMEAU, ANDRE | 14175 RED BANK RD"
+    },
+    "property_snapshot": {
+      "situs_address": "14175 RED BANK RD",
+      "roll_category": "CS",
+      "tax_year": "2025"
+    }
+  },
+  {
+    "entity_key": "tehama|060130002000",
+    "property_core": {
+      "apn": "060-130-002-000",
+      "apn_normalized": "060130002000",
+      "county": "tehama"
+    },
+    "distress_event": {
+      "apn": "060-130-002-000",
+      "source": "tax_delinquency_notice",
+      "amount_due": 1458.22,
+      "default_year": 2019,
+      "notice_date": "2025-06",
+      "event_type": "impending_default",
+      "raw_owner_signal": "SOTO, JOSE DANIEL | 17217 ANTELOPE DR"
+    },
+    "property_snapshot": {
+      "situs_address": "17217 ANTELOPE DR",
+      "roll_category": "CS",
+      "tax_year": "2025"
+    }
+  },
+  {
+    "entity_key": "tehama|062460001000",
+    "property_core": {
+      "apn": "062-460-001-000",
+      "apn_normalized": "062460001000",
+      "county": "tehama"
+    },
+    "distress_event": {
+      "apn": "062-460-001-000",
+      "source": "tax_delinquency_notice",
+      "amount_due": 1850.58,
+      "default_year": 2019,
+      "notice_date": "2025-06",
+      "event_type": "impending_default",
+      "raw_owner_signal": "TEWOLDEBERHAN, SARA TSEGAI | 15750 APACHE TRAIL"
+    },
+    "property_snapshot": {
+      "situs_address": "15750 APACHE TRAIL",
+      "roll_category": "CS",
+      "tax_year": "2025"
+    }
+  },
+  {
+    "entity_key": "tehama|062520022000",
+    "property_core": {
+      "apn": "062-520-022-000",
+      "apn_normalized": "062520022000",
+      "county": "tehama"
+    },
+    "distress_event": {
+      "apn": "062-520-022-000",
+      "source": "tax_delinquency_notice",
+      "amount_due": 1090.32,
+      "default_year": 2019,
+      "notice_date": "2025-06",
+      "event_type": "impending_default",
+      "raw_owner_signal": "WALSH, TERRANCE LEE & PAMELA RENEE | 16538 LARIAT LOOP"
+    },
+    "property_snapshot": {
+      "situs_address": "16538 LARIAT LOOP",
+      "roll_category": "CS",
+      "tax_year": "2025"
+    }
+  }
+]

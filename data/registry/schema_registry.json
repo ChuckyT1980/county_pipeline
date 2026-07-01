@@ -1,0 +1,47 @@
+{
+  "schemas": {
+    "MPTS_HYBRID": {
+      "semantic_anchors": [
+        "Parcel Number:",
+        "Owner Name:",
+        "Property Address:",
+        "Assessed Value"
+      ],
+      "expected_dom_depth": 15,
+      "token_density_ratio": 0.4,
+      "stable_selectors": [
+        "table.tax_info",
+        "div.parcel_header"
+      ]
+    },
+    "AUMENTUM_STATEFUL": {
+      "semantic_anchors": [
+        "APN",
+        "Situs Address",
+        "Owner Information",
+        "Tax Bill",
+        "ViewState"
+      ],
+      "expected_dom_depth": 12,
+      "token_density_ratio": 0.5,
+      "stable_selectors": [
+        "form#aspnetForm",
+        "input#__VIEWSTATE"
+      ]
+    },
+    "CUSTOM_CMS": {
+      "semantic_anchors": [
+        "AIN",
+        "Property Location",
+        "Owner",
+        "Roll Value"
+      ],
+      "expected_dom_depth": 18,
+      "token_density_ratio": 0.3,
+      "stable_selectors": [
+        "div.parcel-card",
+        "span.value-tag"
+      ]
+    }
+  }
+}

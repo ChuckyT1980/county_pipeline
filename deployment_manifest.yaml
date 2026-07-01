@@ -1,0 +1,26 @@
+system:
+  name: MAR-1 Phase 4E
+  version: 1.0
+
+runtime:
+  deterministic: true
+  adaptive_learning: false
+  external_feedback: false
+
+observation:
+  mode: append_only_WAL
+  inference: disabled
+  schema_mutation: forbidden
+
+analytics:
+  h6: enabled
+  drtm: enabled
+  cdv: enabled
+
+certification:
+  sdvr1: enabled
+  daf1: enabled
+
+deployment_policy:
+  gating_function: DAF-1
+  feedback_to_runtime: false

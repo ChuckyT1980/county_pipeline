@@ -1,0 +1,15 @@
+4f795c58.html -> 005-090-096-000_assessor.html
+581b3064.html -> 005-090-096-000_parcel.html
+1aa5b6e0.html -> 005-090-096-000_tax.html
+a35df754.html -> 012-004-771-000_assessor.html
+4de8ca1c.html -> 012-004-771-000_parcel.html
+04b692b8.html -> 012-004-771-000_tax.html
+576039e9.html -> 041-330-018-000_assessor.html
+a3bfa907.html -> 041-330-018-000_parcel.html
+033a2a20.html -> 041-330-018-000_tax.html
+6c429f5f.html -> 057-120-045-000_assessor.html
+7f17aabe.html -> 057-120-045-000_parcel.html
+60104dce.html -> 057-120-045-000_tax.html
+b69fb8ab.html -> 068-110-004-000_assessor.html
+4b699753.html -> 068-110-004-000_parcel.html
+1b9878d7.html -> 068-110-004-000_tax.html

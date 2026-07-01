@@ -1,0 +1,142 @@
+[
+  {
+    "apn": "009400008000",
+    "county": "tehama",
+    "score": 117.42,
+    "signals": {
+      "persistence": 8,
+      "amount_due": 6708.6,
+      "equity_proxy": null,
+      "absentee": false,
+      "land_flag": false
+    },
+    "rank_bucket": "A+ (Acquisition Priority)",
+    "raw_owner": "CONROTTO, GREGORY | 15305 CHINA RAPIDS DR"
+  },
+  {
+    "apn": "064050032000",
+    "county": "tehama",
+    "score": 112.82,
+    "signals": {
+      "persistence": 8,
+      "amount_due": 4410.81,
+      "equity_proxy": null,
+      "absentee": false,
+      "land_flag": false
+    },
+    "rank_bucket": "A+ (Acquisition Priority)",
+    "raw_owner": "LEMMA FAM REVOC TR OF 2000 | LEMMA, DALE R & BRENDA E | 9180 HWY 99W"
+  },
+  {
+    "apn": "066213013000",
+    "county": "tehama",
+    "score": 107.08,
+    "signals": {
+      "persistence": 8,
+      "amount_due": 1538.64,
+      "equity_proxy": null,
+      "absentee": false,
+      "land_flag": false
+    },
+    "rank_bucket": "A+ (Acquisition Priority)",
+    "raw_owner": "ZIEGLER, DANNY R & GLORIA | 25281 S CENTER"
+  },
+  {
+    "apn": "060050021000",
+    "county": "tehama",
+    "score": 99.09,
+    "signals": {
+      "persistence": 7,
+      "amount_due": 3547.3,
+      "equity_proxy": null,
+      "absentee": false,
+      "land_flag": false
+    },
+    "rank_bucket": "A+ (Acquisition Priority)",
+    "raw_owner": "HANOVER PROPERTIES LLC | 17230 RANCHO TEHAMA RD"
+  },
+  {
+    "apn": "007420074000",
+    "county": "tehama",
+    "score": 96.72,
+    "signals": {
+      "persistence": 6,
+      "amount_due": 3359.35,
+      "equity_proxy": null,
+      "absentee": true,
+      "land_flag": false
+    },
+    "rank_bucket": "A+ (Acquisition Priority)",
+    "raw_owner": "CHRISLER, JULIE A & TODD W"
+  },
+  {
+    "apn": "062300024000",
+    "county": "tehama",
+    "score": 95.22,
+    "signals": {
+      "persistence": 7,
+      "amount_due": 1611.74,
+      "equity_proxy": null,
+      "absentee": false,
+      "land_flag": false
+    },
+    "rank_bucket": "A+ (Acquisition Priority)",
+    "raw_owner": "HAYNES, CHRIS M | 16058 QUARTER HORSE CT"
+  },
+  {
+    "apn": "021210036000",
+    "county": "tehama",
+    "score": 88.65,
+    "signals": {
+      "persistence": 6,
+      "amount_due": 4323.97,
+      "equity_proxy": null,
+      "absentee": false,
+      "land_flag": false
+    },
+    "rank_bucket": "A+ (Acquisition Priority)",
+    "raw_owner": "PRIMEAU, ANDRE | 14175 RED BANK RD"
+  },
+  {
+    "apn": "062460001000",
+    "county": "tehama",
+    "score": 83.7,
+    "signals": {
+      "persistence": 6,
+      "amount_due": 1850.58,
+      "equity_proxy": null,
+      "absentee": false,
+      "land_flag": false
+    },
+    "rank_bucket": "A+ (Acquisition Priority)",
+    "raw_owner": "TEWOLDEBERHAN, SARA TSEGAI | 15750 APACHE TRAIL"
+  },
+  {
+    "apn": "060130002000",
+    "county": "tehama",
+    "score": 82.92,
+    "signals": {
+      "persistence": 6,
+      "amount_due": 1458.22,
+      "equity_proxy": null,
+      "absentee": false,
+      "land_flag": false
+    },
+    "rank_bucket": "A+ (Acquisition Priority)",
+    "raw_owner": "SOTO, JOSE DANIEL | 17217 ANTELOPE DR"
+  },
+  {
+    "apn": "062520022000",
+    "county": "tehama",
+    "score": 82.18,
+    "signals": {
+      "persistence": 6,
+      "amount_due": 1090.32,
+      "equity_proxy": null,
+      "absentee": false,
+      "land_flag": false
+    },
+    "rank_bucket": "A+ (Acquisition Priority)",
+    "raw_owner": "WALSH, TERRANCE LEE & PAMELA RENEE | 16538 LARIAT LOOP"
+  }
+]

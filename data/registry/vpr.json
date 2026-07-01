@@ -1,0 +1,47 @@
+{
+  "MPTS": {
+    "county_count": 0,
+    "portal_patterns": [
+      "*.mptsweb.com",
+      "mptsweb.co.*.ca.us"
+    ],
+    "auth_pattern": "anonymous",
+    "fetch_pattern": "html_get_FeeParcel",
+    "owner_location": "assessor_tab",
+    "tax_location": "tax_tab",
+    "known_failure_modes": [
+      "403",
+      "session_expiry"
+    ],
+    "apn_format_expected": "XXX-XXX-XXX-000"
+  },
+  "Aumentum": {
+    "county_count": 0,
+    "portal_patterns": [
+      "taxes.*.ca.us/Aumentum"
+    ],
+    "auth_pattern": "anonymous",
+    "fetch_pattern": "html_post_search",
+    "owner_location": "property_details",
+    "tax_location": "bill_history",
+    "known_failure_modes": [
+      "captcha",
+      "timeout"
+    ],
+    "apn_format_expected": "XXXXXXXXXXXX"
+  },
+  "GovOS": {
+    "county_count": 0,
+    "portal_patterns": [
+      "search.*.ca.us/records"
+    ],
+    "auth_pattern": "token_required",
+    "fetch_pattern": "api_json",
+    "owner_location": "json_owner_node",
+    "tax_location": "json_tax_node",
+    "known_failure_modes": [
+      "401_unauthorized"
+    ],
+    "apn_format_expected": "XXX-XXXXX"
+  }
+}
