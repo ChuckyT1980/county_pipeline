@@ -1,0 +1,33 @@
+display_name: Tuolumne County
+collector_names:
+- TUOLUMNE TAX COLLECTOR
+- TUOLUMNE CO TAX COLLR
+- COUNTY OF TUOLUMNE
+assessor:
+  backend: mpts
+  endpoint: https://common1.mptsweb.com/mbap/tuolumne/asr/AsrPrint
+  apn_includes:
+  - 1 Main
+  - 2 Main
+  - 1 Oak
+  - 2 Oak
+  - 1 Pine
+  - 1st
+  - 2nd
+  - 3rd
+  notes: Auto-onboarded by onboard_county.py. MPTS host common1.mptsweb.com slug tuolumne
+  host: https://common1.mptsweb.com
+recorder:
+  backend: county_portal
+  base_url: https://tuolumnecountyca-web.tylerhost.net
+  name_search_id: DOCSEARCH4S1
+  doc_search_id: DOCSEARCH4S2
+  apn_search_id: DOCSEARCH4S5
+  typedate_search_id: DOCSEARCH4S3
+  ajax_headers_required: true
+  notes: discovered automatically
+  endpoint: https://recorder.tuolumne.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

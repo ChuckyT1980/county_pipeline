@@ -1,0 +1,17 @@
+display_name: San Luis Obispo County
+collector_names:
+- SAN LUIS OBISPO TAX COLLECTOR
+- SAN LUIS OBISPO CO TAX COLLR
+- COUNTY OF SAN LUIS OBISPO
+assessor:
+  backend: arcgis
+  notes: no public assessor source discovered yet
+  endpoint: https://gis.slocounty.ca.gov/arcgis/rest/services/Parcels/FeatureServer/0
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.sanluisobispo.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

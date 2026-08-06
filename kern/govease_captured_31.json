@@ -1,0 +1,593 @@
+{
+  "cookies": {
+    "unclassified": [
+      {
+        "category": "unclassified",
+        "domain": "liveauctions.govease.com",
+        "expire": "Session",
+        "purpose": "",
+        "name": "AI_buffer_1",
+        "service_policy_link": null,
+        "tracker_type": "html_session_storage"
+      },
+      {
+        "category": "unclassified",
+        "domain": "view-awesome-table.com",
+        "expire": "Persistent",
+        "purpose": "",
+        "name": "_PROXY_STATUS",
+        "service_policy_link": null,
+        "tracker_type": "html_local_storage"
+      }
+    ],
+    "essential": [
+      {
+        "category": "essential",
+        "domain": ".hubspotusercontent.com",
+        "expire": "30 minutes",
+        "purpose": "Cloudflare places the cookie on end-user devices that access customer sites protected by Bot Management or Bot Fight Mode.",
+        "name": "__cf_bm",
+        "service_policy_link": "https://www.cloudflare.com/privacypolicy/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": "www.govease.com",
+        "expire": "29 days",
+        "purpose": "Protects against hacking and malicious actors.",
+        "name": "csrf_token",
+        "service_policy_link": "https://www.djangoproject.com/foundation/faq/",
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": ".hubspot.com",
+        "expire": "30 minutes",
+        "purpose": "Cloudflare places the cookie on end-user devices that access customer sites protected by Bot Management or Bot Fight Mode.",
+        "name": "__cf_bm",
+        "service_policy_link": "https://www.cloudflare.com/privacypolicy/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": ".hubspotusercontent-na1.net",
+        "expire": "30 minutes",
+        "purpose": "Cloudflare places the cookie on end-user devices that access customer sites protected by Bot Management or Bot Fight Mode.",
+        "name": "__cf_bm",
+        "service_policy_link": "https://www.cloudflare.com/privacypolicy/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": "liveauctions.govease.com",
+        "expire": "Persistent",
+        "purpose": "",
+        "name": "_BEAMER_USER_ID_rcSAhGek5973",
+        "service_policy_link": null,
+        "tracker_type": "html_local_storage"
+      },
+      {
+        "category": "essential",
+        "domain": "testauctions.govease.com",
+        "expire": "Session",
+        "purpose": "Used by Microsoft .NET-based sites to maintain an anonymized user session by the server. This cookie expires at the end of a browsing session which is determined by the application configuration.",
+        "name": "ASP.NET_SessionId",
+        "service_policy_link": "https://privacy.microsoft.com/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": ".govease.com",
+        "expire": "19 minutes",
+        "purpose": "",
+        "name": "_BEAMER_FILTER_BY_URL_rcSAhGek5973",
+        "service_policy_link": null,
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": "liveauctions.govease.com",
+        "expire": "Persistent",
+        "purpose": "",
+        "name": "_BEAMER_HEADER_COLOR_rcSAhGek5973",
+        "service_policy_link": null,
+        "tracker_type": "html_local_storage"
+      },
+      {
+        "category": "essential",
+        "domain": ".hs-analytics.net",
+        "expire": "30 minutes",
+        "purpose": "Cloudflare places the cookie on end-user devices that access customer sites protected by Bot Management or Bot Fight Mode.",
+        "name": "__cf_bm",
+        "service_policy_link": "https://www.cloudflare.com/privacypolicy/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": ".hubapi.com",
+        "expire": "30 minutes",
+        "purpose": "Cloudflare places the cookie on end-user devices that access customer sites protected by Bot Management or Bot Fight Mode.",
+        "name": "__cf_bm",
+        "service_policy_link": "https://www.cloudflare.com/privacypolicy/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": ".hubspot.net",
+        "expire": "30 minutes",
+        "purpose": "Cloudflare places the cookie on end-user devices that access customer sites protected by Bot Management or Bot Fight Mode.",
+        "name": "__cf_bm",
+        "service_policy_link": "https://www.cloudflare.com/privacypolicy/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": "liveauctions.govease.com",
+        "expire": "Persistent",
+        "purpose": "",
+        "name": "_BEAMER_FIRST_VISIT_rcSAhGek5973",
+        "service_policy_link": null,
+        "tracker_type": "html_local_storage"
+      },
+      {
+        "category": "essential",
+        "domain": "liveauctions.govease.com",
+        "expire": "Session",
+        "purpose": "Used by Microsoft .NET-based sites to maintain an anonymized user session by the server. This cookie expires at the end of a browsing session which is determined by the application configuration.",
+        "name": "ASP.NET_SessionId",
+        "service_policy_link": "https://privacy.microsoft.com/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": ".govease.com",
+        "expire": "9 months 26 days",
+        "purpose": "",
+        "name": "_BEAMER_USER_ID_rcSAhGek5973",
+        "service_policy_link": null,
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": ".hs-banner.com",
+        "expire": "30 minutes",
+        "purpose": "Cloudflare places the cookie on end-user devices that access customer sites protected by Bot Management or Bot Fight Mode.",
+        "name": "__cf_bm",
+        "service_policy_link": "https://www.cloudflare.com/privacypolicy/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": "liveauctions.govease.com",
+        "expire": "Persistent",
+        "purpose": "",
+        "name": "_BEAMER_SELECTOR_COLOR_rcSAhGek5973",
+        "service_policy_link": null,
+        "tracker_type": "html_local_storage"
+      },
+      {
+        "category": "essential",
+        "domain": "liveauctions.govease.com",
+        "expire": "Persistent",
+        "purpose": "",
+        "name": "_BEAMER_FILTER_BY_URL_rcSAhGek5973",
+        "service_policy_link": null,
+        "tracker_type": "html_local_storage"
+      },
+      {
+        "category": "essential",
+        "domain": ".liveauctions.govease.com",
+        "expire": "19 minutes",
+        "purpose": "",
+        "name": "_BEAMER_FILTER_BY_URL_rcSAhGek5973",
+        "service_policy_link": null,
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": "testauctions.govease.com",
+        "expire": "29 days",
+        "purpose": "Protects against hacking and malicious actors.",
+        "name": "csrf_token",
+        "service_policy_link": "https://www.djangoproject.com/foundation/faq/",
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": "liveauctions.govease.com",
+        "expire": "29 days",
+        "purpose": "Protects against hacking and malicious actors.",
+        "name": "csrf_token",
+        "service_policy_link": "https://www.djangoproject.com/foundation/faq/",
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": ".govease.com",
+        "expire": "9 months 26 days",
+        "purpose": "",
+        "name": "_BEAMER_FIRST_VISIT_rcSAhGek5973",
+        "service_policy_link": null,
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": "liveauctions.govease.com",
+        "expire": "Session",
+        "purpose": "This is an anti-forgery cookie set by web applications built using ASP.NET MVC technologies. It is designed to stop unauthorised posting of content to a website, known as Cross-Site Request Forgery.",
+        "name": "__RequestVerificationToken",
+        "service_policy_link": "https://privacy.microsoft.com/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": ".linkedin.com",
+        "expire": "30 minutes",
+        "purpose": "Cloudflare places the cookie on end-user devices that access customer sites protected by Bot Management or Bot Fight Mode.",
+        "name": "__cf_bm",
+        "service_policy_link": "https://www.cloudflare.com/privacypolicy/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": "www.govease.com",
+        "expire": "1 year",
+        "purpose": "Used to store visitor's consent result in order to improve performance of the consent banner.",
+        "name": "TERMLY_API_CACHE",
+        "service_policy_link": "https://termly.io/our-privacy-policy/",
+        "tracker_type": "html_local_storage"
+      },
+      {
+        "category": "essential",
+        "domain": ".hsforms.com",
+        "expire": "30 minutes",
+        "purpose": "Cloudflare places the cookie on end-user devices that access customer sites protected by Bot Management or Bot Fight Mode.",
+        "name": "__cf_bm",
+        "service_policy_link": "https://www.cloudflare.com/privacypolicy/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": ".hs-scripts.com",
+        "expire": "30 minutes",
+        "purpose": "Cloudflare places the cookie on end-user devices that access customer sites protected by Bot Management or Bot Fight Mode.",
+        "name": "__cf_bm",
+        "service_policy_link": "https://www.cloudflare.com/privacypolicy/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": ".www.govease.com",
+        "expire": "30 minutes",
+        "purpose": "Cloudflare places the cookie on end-user devices that access customer sites protected by Bot Management or Bot Fight Mode.",
+        "name": "__cf_bm",
+        "service_policy_link": "https://www.cloudflare.com/privacypolicy/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": ".hsadspixel.net",
+        "expire": "30 minutes",
+        "purpose": "Cloudflare places the cookie on end-user devices that access customer sites protected by Bot Management or Bot Fight Mode.",
+        "name": "__cf_bm",
+        "service_policy_link": "https://www.cloudflare.com/privacypolicy/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": ".testauctions.govease.com",
+        "expire": "19 minutes",
+        "purpose": "",
+        "name": "_BEAMER_FILTER_BY_URL_rcSAhGek5973",
+        "service_policy_link": null,
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "essential",
+        "domain": "maps.googleapis.com",
+        "expire": "Session",
+        "purpose": "",
+        "name": "vt",
+        "service_policy_link": null,
+        "tracker_type": "pixel_tracker"
+      },
+      {
+        "category": "essential",
+        "domain": "signthiscontract.com",
+        "expire": null,
+        "purpose": "",
+        "name": "ASP.NET_SessionId",
+        "service_policy_link": "",
+        "tracker_type": "server_cookie"
+      }
+    ],
+    "performance": [
+      {
+        "category": "performance",
+        "domain": "liveauctions.govease.com",
+        "expire": "11 months 30 days",
+        "purpose": "Collects telemetry information and statistical usage for the Microsoft Application Insights software. It is able to recognize users on return visits by storing unique identifiers.",
+        "name": "ai_user",
+        "service_policy_link": "https://privacy.microsoft.com/",
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "performance",
+        "domain": ".www.govease.com",
+        "expire": "Session",
+        "purpose": "This cookie is set by Cloudflare to enhance security and performance. It helps identify trusted web traffic and ensures a secure browsing experience for users.",
+        "name": "_cfuvid",
+        "service_policy_link": "https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "performance",
+        "domain": "liveauctions.govease.com",
+        "expire": "29 minutes",
+        "purpose": "Monitors the performance of the iperceptions portal of applications running on Azure",
+        "name": "ai_session",
+        "service_policy_link": "https://privacy.microsoft.com/",
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "performance",
+        "domain": "testauctions.govease.com",
+        "expire": "Session",
+        "purpose": "This is an anti-forgery cookie set by web applications built using ASP.NET MVC technologies. It is designed to stop unauthorised posting of content to a website, known as Cross-Site Request Forgery.",
+        "name": "__RequestVerificationToken",
+        "service_policy_link": "https://privacy.microsoft.com/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "performance",
+        "domain": "testauctions.govease.com",
+        "expire": "11 months 30 days",
+        "purpose": "Collects telemetry information and statistical usage for the Microsoft Application Insights software. It is able to recognize users on return visits by storing unique identifiers.",
+        "name": "ai_user",
+        "service_policy_link": "https://privacy.microsoft.com/",
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "performance",
+        "domain": "testauctions.govease.com",
+        "expire": "29 minutes",
+        "purpose": "Monitors the performance of the iperceptions portal of applications running on Azure",
+        "name": "ai_session",
+        "service_policy_link": "https://privacy.microsoft.com/",
+        "tracker_type": "http_cookie"
+      }
+    ],
+    "analytics": [
+      {
+        "category": "analytics",
+        "domain": ".govease.com",
+        "expire": "1 year 1 month 4 days",
+        "purpose": "Records a particular ID used to come up with data about website usage by the user",
+        "name": "_ga",
+        "service_policy_link": "https://business.safety.google/privacy/",
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "analytics",
+        "domain": "liveauctions.govease.com",
+        "expire": "Persistent",
+        "purpose": "Gather data regarding site usage and user behavior on the website.",
+        "name": "s7",
+        "service_policy_link": "https://www.adobe.com/uk/privacy/policy.html",
+        "tracker_type": "html_local_storage"
+      },
+      {
+        "category": "analytics",
+        "domain": ".govease.com",
+        "expire": "23 hours 59 minutes",
+        "purpose": "Keeps an entry of unique ID which is then used to come up with statistical data on website usage by visitors. It is a HTTP cookie type and expires after a browsing session.",
+        "name": "_gid",
+        "service_policy_link": "https://business.safety.google/privacy/",
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "analytics",
+        "domain": ".google.com",
+        "expire": "6 months",
+        "purpose": "Set by Google to set a unique user ID to remember user preferences. Persistent cookie that stays for 182 days",
+        "name": "NID",
+        "service_policy_link": "https://business.safety.google/privacy/",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "analytics",
+        "domain": ".linkedin.com",
+        "expire": "2 months 29 days",
+        "purpose": "Gather data regarding site usage and user behavior on the website.",
+        "name": "s7",
+        "service_policy_link": "https://www.adobe.com/uk/privacy/policy.html",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "analytics",
+        "domain": "perf-na1.hsforms.com",
+        "expire": "Session",
+        "purpose": "Gather data regarding site usage and user behavior on the website.",
+        "name": "s7",
+        "service_policy_link": "https://www.adobe.com/uk/privacy/policy.html",
+        "tracker_type": "pixel_tracker"
+      },
+      {
+        "category": "analytics",
+        "domain": "www.govease.com",
+        "expire": "Persistent",
+        "purpose": "Gather data regarding site usage and user behavior on the website.",
+        "name": "s7",
+        "service_policy_link": "https://www.adobe.com/uk/privacy/policy.html",
+        "tracker_type": "html_local_storage"
+      },
+      {
+        "category": "analytics",
+        "domain": ".govease.com",
+        "expire": "5 months 27 days",
+        "purpose": "The main cookie for tracking visitors.",
+        "name": "__hstc",
+        "service_policy_link": "https://legal.hubspot.com/privacy-policy",
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "analytics",
+        "domain": ".govease.com",
+        "expire": "1 month",
+        "purpose": "Gather data regarding site usage and user behavior on the website.",
+        "name": "s7",
+        "service_policy_link": "https://www.adobe.com/uk/privacy/policy.html",
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "analytics",
+        "domain": ".govease.com",
+        "expire": "5 months 27 days",
+        "purpose": "This cookie keeps track of a visitor's identity. It is passed to HubSpot on form submission and used when deduplicating contacts.",
+        "name": "hubspotutk",
+        "service_policy_link": "https://legal.hubspot.com/privacy-policy",
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "analytics",
+        "domain": "track.hubspot.com",
+        "expire": "Session",
+        "purpose": "Records anonymous page view data",
+        "name": "__ptq.gif",
+        "service_policy_link": "https://legal.hubspot.com/privacy-policy",
+        "tracker_type": "pixel_tracker"
+      },
+      {
+        "category": "analytics",
+        "domain": ".govease.com",
+        "expire": "1 year 1 month 4 days",
+        "purpose": "Used to distinguish individual users by means of designation of a randomly generated number as client identifier, which allows calculation of visits and sessions",
+        "name": "_ga_#",
+        "service_policy_link": "https://business.safety.google/privacy/",
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "analytics",
+        "domain": "view-awesome-table.com",
+        "expire": "Persistent",
+        "purpose": "Gather data regarding site usage and user behavior on the website.",
+        "name": "s7",
+        "service_policy_link": "https://www.adobe.com/uk/privacy/policy.html",
+        "tracker_type": "html_local_storage"
+      },
+      {
+        "category": "analytics",
+        "domain": ".govease.com",
+        "expire": "29 minutes",
+        "purpose": "This cookie keeps track of sessions.",
+        "name": "__hssc",
+        "service_policy_link": "https://legal.hubspot.com/privacy-policy",
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "analytics",
+        "domain": ".govease.com",
+        "expire": "less than 1 minute",
+        "purpose": "Used to monitor number of Google Analytics server requests when using Google Tag Manager",
+        "name": "_gat",
+        "service_policy_link": "https://business.safety.google/privacy/",
+        "tracker_type": "http_cookie"
+      },
+      {
+        "category": "analytics",
+        "domain": ".govease.com",
+        "expire": "Session",
+        "purpose": "Whenever HubSpot changes the session cookie, this cookie is also set to determine if the visitor has restarted their browser.",
+        "name": "__hssrc",
+        "service_policy_link": "https://legal.hubspot.com/privacy-policy",
+        "tracker_type": "http_cookie"
+      }
+    ],
+    "advertising": [
+      {
+        "category": "advertising",
+        "domain": "www.govease.com",
+        "expire": "Persistent",
+        "purpose": "Detects how the user reached the website by registering their last URL-address.",
+        "name": "lastExternalReferrer",
+        "service_policy_link": "https://www.facebook.com/privacy/policy/",
+        "tracker_type": "html_local_storage"
+      },
+      {
+        "category": "advertising",
+        "domain": ".linkedin.com",
+        "expire": "11 months 30 days",
+        "purpose": "Used to optimize the range of advertising on Linkedin",
+        "name": "bcookie",
+        "service_policy_link": "https://www.linkedin.com/legal/privacy-policy",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "advertising",
+        "domain": ".linkedin.com",
+        "expire": "30 days",
+        "purpose": "These cookies are associated with a B2B marketing platform, formerly known as Bizo, which is now owned by LinkedIn, the business networking platform. This sub-domain is connected with LinkedIn's marketing services that enable website owners to gain insight into types of users on their site based on LinkedIn profile data, to improve targeting.",
+        "name": "UserMatchHistory",
+        "service_policy_link": "https://www.linkedin.com/legal/privacy-policy",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "advertising",
+        "domain": ".linkedin.com",
+        "expire": "1 day",
+        "purpose": "These cookies are associated with a B2B marketing platform, formerly known as Bizo, which is now owned by LinkedIn, the business networking platform. This sub-domain is connected with LinkedIn's marketing services that enable website owners to gain insight into types of users on their site based on LinkedIn profile data, to improve targeting.",
+        "name": "lidc",
+        "service_policy_link": "https://www.linkedin.com/legal/privacy-policy",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "advertising",
+        "domain": "www.govease.com",
+        "expire": "Persistent",
+        "purpose": "Detects how the user reached the website by registering their last URL-address.",
+        "name": "lastExternalReferrerTime",
+        "service_policy_link": "https://www.facebook.com/privacy/policy/",
+        "tracker_type": "html_local_storage"
+      },
+      {
+        "category": "advertising",
+        "domain": "docs.google.com",
+        "expire": "Session",
+        "purpose": "Used by Google reCAPTCHA to distinguish between humans and bots for fraud prevention and security purposes.",
+        "name": "ri-*",
+        "service_policy_link": "https://policies.google.com/privacy",
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "advertising",
+        "domain": "px.ads.linkedin.com",
+        "expire": "1 month",
+        "purpose": "",
+        "name": "ar_debug",
+        "service_policy_link": null,
+        "tracker_type": "server_cookie"
+      },
+      {
+        "category": "advertising",
+        "domain": ".govease.com",
+        "expire": "2 months 29 days",
+        "purpose": "Facebook tracking pixel used to identify visitors for personalized advertising.",
+        "name": "_fbp",
+        "service_policy_link": "https://www.facebook.com/privacy/policy/",
+        "tracker_type": "http_cookie"
+      }
+    ],
+    "social_networking": [
+      {
+        "category": "social_networking",
+        "domain": ".www.linkedin.com",
+        "expire": "11 months 30 days",
+        "purpose": "Cookie used for Sign-in with Linkedin and/or for Linkedin follow feature on 3rd party websites",
+        "name": "bscookie",
+        "service_policy_link": "https://www.linkedin.com/legal/privacy-policy",
+        "tracker_type": "server_cookie"
+      }
+    ],
+    "prefix": []
+  }
+}

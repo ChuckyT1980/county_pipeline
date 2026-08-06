@@ -1,0 +1,689 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en" style="" class="js flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths ui-mobile"><head><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><base href="https://recordsearch.tehama.gov/web/user/disclaimer">
+<script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/rL1ELiQAg1kPezz6_H9hTZ_i/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-FiH4Svxw0SCoaIzXCuO1Byv6VePIALdCtMytaFdXC2Cw0S1dFnIflK4Up9oFh11S"></script><script async="" type="text/javascript"> var id = ''; 
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<!-- Google Analytics -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+	<title>Self-Service</title>
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<link rel="apple-touch-icon" href="/web/resources/img/county-logo.png"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/css/themes/self-service-jquery-mobile.css?v=2024.1.40">
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/css/themes/jquery.mobile.icons-1.4.5.css">
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/jquery.mobile.structure-1.4.5.css">
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/jtsage-datebox-4.1.0.css">
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/css/materialdesignicons.css?v=2024.1.40">
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/css/context-menu-min.css">
+
+	<link rel="stylesheet" media="all" type="text/css" href="/web/controller/self.service.2024-1-40.css">
+	<link rel="stylesheet" media="all" type="text/css" href="/web/controller/self.service.responsive.2024-1-40.css">
+	<link rel="stylesheet" media="all" type="text/css" href="/web/controller/progress/circularG.2024-1-40.css">
+	<link rel="stylesheet" media="all" type="text/css" href="/web/controller/progress/tylerProgress.2024-1-40.css">
+
+	
+	<link rel="stylesheet" href="/web/controller/customColors.css?v=2024.1.40">
+	<link rel="stylesheet" href="/web/controller/customColors.responsive.css?v=2024.1.40">
+	<link rel="stylesheet" href="/web/controller/facetColors.css?v=2024.1.40">
+	<link rel="stylesheet" href="/web/controller/customColorsLoaders.css?v=2024.1.40">
+	<link rel="stylesheet" href="/web/resources/printjs/print.min.css?v=2024.1.40">
+	<script src="/web/resources/modernizr.custom.03363.js"></script>
+	<script src="/web/resources/jquery-1.11.0.js"></script>
+	<script src="/web/resources/js/moment.min.js"></script>
+	<script src="/web/controller/js/underscore.2024-1-40.js"></script>
+	<script src="/web/controller/js/snap.svg.2024-1-40.js"></script>
+	<script src="/web/controller/js/self.service.2024-1-40.js"></script>
+	<script src="/web/controllerjs/validator.2024-1-40.js"></script>
+	<script src="/web/controllerjs/util.2024-1-40.js"></script>
+	<script src="/web/resources/shoppingCart.js?v=2024.1.40"></script>	
+	<script src="/web/resources/printjs/print.min.js">	</script>
+	<script src="/web/resources/js/context-menu-min.js"></script>
+	
+	<script>
+	$(document).bind( 'mobileinit', function(){
+		$.mobile.loader.prototype.options.html = 	'<div class="cssload-container">\n' +
+			'			<ul class="cssload-loader">\n' +
+			'				<li></li><li></li><li></li><li></li><li></li><li></li>\n' +
+			'			</ul>\n' +
+			'		</div>\n' +
+			'		<div class="modal-overlay"></div>';
+	});
+	</script>
+<!--         When we upgrade to jqm 1.5 remove the jquery tabs override script -->
+	<script src="/web/resources/jquery.mobile-1.4.5.js"></script>
+<!-- 	The following script is to fix a bug with jquery mobile and should be removed when we upgrade to jquerymobile 1.5 -->
+	<script src="/web/resources/js/jqueryTabsOverride.js"></script>
+
+	
+	<script src="/web/controller/messageStrings.js?v=2024.1.40"></script>
+
+	<script src="/web/resources/jquery.mousewheel.js?v=2024.1.40"></script>
+	<script src="/web/resources/jtsage-datebox-4.1.0.js"></script>
+</head>
+<body class="ui-mobile-viewport ui-overlay-a" style="">
+	<div class="ss-page ui-alt-icon ui-nodisc-icon ui-page ui-page-theme-a ui-page-header-fixed ui-page-footer-fixed ui-page-active" data-role="page" id="SelfService-1783889270668-page" data-dom-cache="false" data-url="SelfService-1783889270668-page" tabindex="0" style="padding-top: 96px; padding-bottom: 28px; min-height: 596px;">
+		<script>
+		var selectedLanguage = 'en';
+		</script>
+		<!-- HEADER	-->
+		<div id="ss-header-box" class="ss-header ui-header ui-bar-inherit ui-header-fixed slidedown" data-role="header" data-position="fixed" data-tap-toggle="false" role="banner">
+			<div class="ss-header-stripe-top"></div>
+			<div class="ss-content">
+				
+				
+				<div class="ss-header-title">
+					<div class="ss-header-internal">
+						<h1>
+Tehama County Clerk &amp; Recorder</h1>
+						<h4 class="ss-header">
+Self-Service Web</h4>
+					</div>
+				</div>
+				
+
+				<div class="ss-header-actions">
+					
+
+
+
+
+
+
+
+
+
+
+					<div class="ss-clear"></div>
+				</div>
+				<div class="ss-clear"></div>
+			</div>
+			<div class="ss-header-stripe-bottom">
+				<div class="ss-content">
+					<div id="ss-user-welcome" class="ss-footer-internal-small">
+						
+							
+							
+							
+							
+						
+						<span id="subscriptionTimer" class="ss-footer-internal-small-left-align"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- BODY -->
+		<div data-role="content" class="ui-content" role="main">
+			<div class="ss-content">
+				
+
+
+
+
+<ul class="ss-listview ss-utility-box ui-listview ui-listview-inset ui-corner-all ui-shadow ui-group-theme-a" data-role="listview" data-inset="true" data-theme="a" id="SelfService-1783889270668-disclaimerContent">
+	<li data-role="list-divider" data-theme="a" style="text-align: center;" role="heading" class="ui-li-divider ui-bar-a ui-first-child">Disclaimer Content</li>
+	<li class="ss-listview-internal ui-li-static ui-body-inherit ui-last-child" style="background: none; border: none;">
+		This search site is provided as a service to our customers. All data contained herein is subject to change without notice.<br><br>By using this service, in any form, the user agrees to indemnify and hold harmless the County and anyone involved in storing, retrieving, or displaying this information for any damage of any type that may be caused by retrieving this information over the Internet.<br><br>Users should remember that the index is similar to a library card catalogue; it is a guide to the information contained within the documents referenced and should not be relied upon in making any decision or determination regarding the underlying document.<br><br>The user is advised to search all possible spelling variations of names, as well as other search criteria, to maximize search results.<br><br>If you choose not to accept the conditions stated above, please click the Back button to exit this search application.
+	</li>
+</ul>
+
+	<form class="center" method="POST">	
+		<script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+		<div class="g-recaptcha center" style="display:inline-block" data-sitekey="6LemVGAUAAAAAB_iW1wbaE4_s0Z5SoSakm6GI8St" data-callback="onReturnRecaptchaCallback"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-ogslf1gb93i9" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LemVGAUAAAAAB_iW1wbaE4_s0Z5SoSakm6GI8St&amp;co=aHR0cHM6Ly9yZWNvcmRzZWFyY2gudGVoYW1hLmdvdjo0NDM.&amp;hl=en&amp;v=rL1ELiQAg1kPezz6_H9hTZ_i&amp;size=normal&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=wsh87wk3lp50"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+<!-- 		<button id="submit" type="submit" class="left" style="width:10em;">Submit</button> -->
+	</form>
+	<script type="text/javascript">
+	var onReturnRecaptchaCallback = function(response) { 
+		$.ajax({ 'url' : '/web/checkHuman', 
+			type: "POST",
+			data: {"g-recaptcha-response" : grecaptcha.getResponse()},
+			success: function( data  ) { 		
+				if(data == true){
+	        		$("#submitDisclaimerAccept").prop('disabled', false);					
+				}
+	         } 
+	    }); // end of $.ajax 
+	}; // end of onReturnCallback 
+	</script>
+
+<button id="submitDisclaimerAccept" type="submit" class="center ui-btn ui-shadow ui-corner-all" style="width:10em;" disabled="">I Accept</button>
+<script>
+var disclaimerAcceptButton = $('#submitDisclaimerAccept');
+
+disclaimerAcceptButton.prop('disabled', true);
+
+disclaimerAcceptButton.on('click', function(event) {
+	event.preventDefault();
+	disclaimerAcceptButton.prop('disabled', true);
+	disclaimerAcceptButton.html('Please wait...');
+	$('.ss-validation-messages').empty();
+	var submitUrl = $('#SelfService-1783889270668-disclaimerForm').attr('action');
+	
+		
+		
+			var redirectUrl = '/web/';
+		
+	
+	console.log("Redirect URL: " + redirectUrl);
+
+	$.ajax({
+		type: 'POST',
+		url: submitUrl,
+		dataType: 'json',
+		success: function (response) {
+			disclaimerAcceptButton.prop('disabled', false);
+			disclaimerAcceptButton.html('I Accept');
+			selfservice.redirect(redirectUrl, true);
+		},
+		error: function(jqXHR, textStatus, errorThrown) {}
+	});
+});
+</script>
+			</div>
+		</div>
+
+		<!-- POPUPS	-->
+		
+
+
+
+
+
+
+
+	
+
+
+
+
+
+<div style="display: none;" id="SelfService-1783889270668-passwordChange-popup-placeholder"><!-- placeholder for SelfService-1783889270668-passwordChange-popup --></div>
+
+<script>
+
+var passwordChangeUrl = "/web/user/passwordChange";
+$("#SelfService-1783889270668-passwordChange-popup").on("popupbeforeposition", function() {
+	$("#SelfService-1783889270668-passwordChangeInternal").load(passwordChangeUrl, function() {
+		$("#SelfService-1783889270668-passwordChangeInternal").trigger("create");
+		$("#SelfService-1783889270668-passwordChange-popup").trigger("updatelayout");
+		$.mobile.activePage.trigger("pagecreate");
+	});
+});
+
+$("#SelfService-1783889270668-passwordChange-popup").on("popupafteropen", function() {	
+	$("#SelfService-1783889270668-passwordChange-popup").popup("reposition", "positionTo: window");
+});
+
+$("#SelfService-1783889270668-passwordChange-popup").on("popupafterclose", function() {
+	$("#field_OldPassword").val("");
+	$("#field_NewPassword").val("");
+	$("#field_ConfirmPassword").val("");
+});	
+</script>
+
+		
+		
+
+
+
+
+
+
+<div style="display: none;" id="SelfService-1783889270668-session-popup-placeholder"><!-- placeholder for SelfService-1783889270668-session-popup --></div>
+
+<script>
+
+selfservice.countdown.continueButton = $('#SelfService-1783889270668-session-continue');
+selfservice.countdown.element = $('#remainingTime');
+selfservice.countdown.logoutButton = $('#SelfService-1783889270668-session-logout');
+selfservice.pages.check = '/web/session/checkSession';
+selfservice.pages.home = '/web/';
+selfservice.pages.logout = '/web/user/logout';
+selfservice.pages.ping = '/web/session/pingSession';
+selfservice.session.logoutError = 'An error occurred while logging out. Please try again.';
+selfservice.session.timeoutElement = $('#SelfService-1783889270668-session-popup');
+
+
+selfservice.countdown.continueButton.on('click', function (event) {
+	selfservice.countdown.continueButton.prop('disabled', true);
+	selfservice.countdown.logoutButton.prop('disabled', true);
+
+	selfservice.session.continueSession();
+
+	selfservice.countdown.continueButton.prop('disabled', false);
+	selfservice.countdown.logoutButton.prop('disabled', false);
+
+	selfservice.session.timeoutElement.popup('close');
+});
+
+selfservice.countdown.logoutButton.on('click', function (event) {
+	
+	selfservice.countdown.logoutButton.prop('disabled', true);
+	selfservice.countdown.logoutButton.html('Logging out...');
+	selfservice.countdown.continueButton.prop('disabled', true);
+
+	selfservice.session.logout();
+
+	selfservice.countdown.continueButton.prop('disabled', false);
+	selfservice.countdown.logoutButton.html('No - Start Over');
+	selfservice.countdown.logoutButton.prop('disabled', false);
+});
+
+selfservice.session.timeoutElement.on('popupafterclose', function (event) {
+	
+	selfservice.countdown.endCount();
+});
+</script>
+
+		<!-- PANELS	-->
+		
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<div id="SelfService-1783889270668-cartPanel" class="ss-panel-cart ui-panel ui-panel-position-right ui-panel-display-overlay ui-panel-closed ui-body-inherit ui-panel-fixed ui-panel-animate" data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true">
+	<div class="ui-panel-inner" style="height: 700px;"><div id="SelfService-1783889270668-cartPanelInternal" class="ss-panel-cart-internal" style="height: 100%; max-height: 700px;">
+
+
+
+
+
+
+<form id="SelfService-1783889279244-cart-form" action="/web/cart" style="height:100%;">
+
+<style>
+	ul[id$='savedItemsViewEmbedded'] {
+		margin-top: 0px;
+		max-height: calc(100% - 250px);
+		overflow: auto;
+	}
+
+	ul[id$='shoppingCartView'] {
+		margin-top: 0px;
+		max-height: calc(100% - 250px);
+		overflow: auto;
+	}
+
+	@media ( max-width : 736px) {
+		ul[id$='savedItemsViewEmbedded'] {
+			margin-top: 0px;
+			max-height: calc(100% - 275px);
+			overflow: auto;
+		}
+		ul[id$='shoppingCartView'] {
+			margin-top: 0px;
+			max-height: calc(100% - 275px);
+			overflow: auto;
+		}
+	}
+</style>
+
+ 
+
+
+
+
+
+
+
+
+
+
+<script>
+$(".ss-cart-item-desc").click(function(evt) {
+	if (evt.target.nodeName === "INPUT") {
+		evt.preventDefault();
+		window.setTimeout(function() { $("a").removeClass('ui-btn-active ui-focus'); }, 1);
+	}
+});
+
+	var throttled = _.debounce(function(evt) { updateCartItemNumberOfCopies(evt); }, 500 );
+
+$('.ss-cart-item-desc input[type=number]').change(function(evt) {
+	window["throttled"](evt);
+});
+
+$('.ss-cart-item-desc input[type=number]').keydown(function(evt) {
+	var key = selfservice.determineKeyCodeProperty(evt);
+
+	if (selfservice.userPressedValidKeyForInputNumberTypeBox(key)) {
+		window["throttled"](evt);
+	} else {
+		evt.preventDefault();
+	}
+});
+</script> 
+
+
+
+
+
+	<div style="display: none;" id="SelfService-1783889279244-confirmRemove-placeholder"><!-- placeholder for SelfService-1783889279244-confirmRemove --></div>
+
+	<div style="display: none;" id="SelfService-1783889279244-confirmRemoveFailed-placeholder"><!-- placeholder for SelfService-1783889279244-confirmRemoveFailed --></div>
+	
+	<script>
+	  
+		$('#confirm-remove-from-cart').on('click', function(event) {
+			event.preventDefault();
+			removeConfirmed('SelfService-1783889279244-confirmClearCartEmbed');
+			return false;
+		});
+
+		$('#cancel-remove-from-cart').on('click', function(event) {
+			event.preventDefault();
+			$('#SelfService-1783889279244-confirmClearCartEmbed').popup('close', {
+				transition: 'pop'
+			});
+			return false;
+		});
+
+		$('#confirm-clear-cart-embedded').on('click', function(event) {
+			event.preventDefault();
+			$('#SelfService-1783889279244-confirmClearCartEmbedFailed').popup('close', {
+				transition: 'pop'
+			});
+			return false;
+		});
+
+		$("#SelfService-1783889279244-shoppingCartClearCartButton").on('click', function(event) {
+			event.preventDefault();
+			var cartPanel = $('.ss-panel-cart-internal');
+			confirmClearCart('SelfService-1783889279244-confirmClearCartEmbed', cartPanel);
+		});
+	
+
+	$('#confirm-remove-savedItems').on('click', function(event) {
+		event.preventDefault();
+		removeConfirmed('SelfService-1783889279244-confirmClearSavedItemsEmbed');
+		return false;
+	});
+
+	$('#cancel-remove-savedItems').on('click', function(event) {
+		event.preventDefault();
+		$('#SelfService-1783889279244-confirmClearSavedItemsEmbed').popup('close', {
+			transition: 'pop'
+		});
+		return false;
+	});
+
+	$('#confirm-clear-savedItems-embedded').on('click', function(event) {
+		event.preventDefault();
+		$('#SelfService-1783889279244-confirmClearSavedItemsEmbedFailed').popup('close', {
+			transition: 'pop'
+		});
+		return false;
+		});
+
+	$("#SelfService-1783889279244-shoppingCartClearSavedButton").on('click', function(event) {
+		event.preventDefault();
+		var cartPanel = $('.ss-panel-cart-internal');
+		confirmClearSaveItems('SelfService-1783889279244-confirmClearSavedItemsEmbed', cartPanel);
+});
+
+	$(document.body).on('blur', "input[id$='cartItemQuantity']", function(event) {
+		verifyCartItemQuantity(event.target.id, parseInt(event.target.min), parseInt(event.target.max));
+	});
+
+	$('#shoppingCartProceedToCheckoutButton, #shoppingCartProceedToSavedItems').on('click', function(event) {
+		event.preventDefault();
+		verifyCartItemQuantities(this, 1, 100);
+		return false;
+	});
+
+	$('#wrong-number-of-copies').on('click', function(event) {
+		event.preventDefault();
+		$('#shoppingCartProductQuantityError').popup('close', {
+			transition: 'pop'
+		});
+		return false; 
+	});
+
+	$('.ss-embedded-saved').on('click', function(event) {
+		var target=$(event.target);
+		var cartId = target.closest('.split-cart-button-controller').data('cartid');
+		saveCartItemForLater(target, cartId, false, true);
+	});
+
+	$('.ss-embedded-notsaved').on('click', function(event) {
+		var target=$(event.target);
+		var cartId = target.closest('.split-cart-button-controller').data('cartid');
+		saveCartItemForLater(target, cartId, true, true);
+	});
+	</script>
+</form></div></div>
+</div>
+<script>
+
+$("#SelfService-1783889270668-cartPanel").on("panelcreate", function() {
+	$("#SelfService-1783889270668-cartPanelInternal").data("cartUrl", "/web/cart/embedded?includeButtons=true&request=" + new Date().getTime());
+	$("#SelfService-1783889270668-cartPanelInternal").css("max-height", $( window ).height() -20);
+	reloadShoppingCart($("#SelfService-1783889270668-cartPanelInternal"));
+});
+	
+$("#SelfService-1783889270668-cartPanel").on("panelbeforeopen", function() {
+	$("#SelfService-1783889270668-cartPanelInternal").data("cartUrl", "/web/cart/embedded?includeButtons=true&request=" + new Date().getTime());
+	reloadShoppingCart($("#SelfService-1783889270668-cartPanelInternal"));
+});
+	
+$("#SelfService-1783889270668-cartPanel").on("panelopen", function() {	
+	$("#shoppingCartProceedToCheckoutButton").focus();
+});	
+</script>
+  <br>
+
+  
+
+
+
+
+
+
+<div id="SelfService-1783889270668-loginPanel" class="ss-panel-login ui-panel ui-panel-position-right ui-panel-display-overlay ui-panel-closed ui-body-inherit ui-panel-fixed ui-panel-animate" data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true">
+	<div class="ui-panel-inner"><div id="SelfService-1783889270668-loginPanelInternal" class="ss-panel-login-internal"></div></div>
+</div>
+
+<script>
+
+var loginUrl = "/web/user/login";
+$("#SelfService-1783889270668-loginPanel").on("panelbeforeopen", function() {
+	$("#SelfService-1783889270668-loginPanelInternal").load(loginUrl + "?request=" + new Date().getTime(), function() {
+		$("#SelfService-1783889270668-loginPanelInternal").trigger("create");
+		$("#SelfService-1783889270668-loginPanel").trigger("updatelayout");
+		$.mobile.activePage.trigger("pagecreate");
+		$("#field_ForceLogoff").parent().hide();
+	});
+}).on("panelopen", function() {
+	$("#field_UserId").focus();
+});
+</script>
+  <br>
+
+  
+
+
+
+
+
+
+<div id="SelfService-1783889270668-languagePanel" class="ss-panel-language ui-panel ui-panel-position-right ui-panel-display-overlay ui-panel-closed ui-body-inherit ui-panel-fixed ui-panel-animate" data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true">
+	<div class="ui-panel-inner"><div id="SelfService-1783889270668-languagePanelInternal" class="ss-panel-language-internal"></div></div>
+</div>
+
+<script>
+
+var languageUrl = "/web/user/language";
+$("#SelfService-1783889270668-languagePanel").on("panelbeforeopen", function() {
+	$("#SelfService-1783889270668-languagePanelInternal").load(languageUrl + "?request=" + new Date().getTime(), function() {
+		$("#SelfService-1783889270668-languagePanelInternal").trigger("create");
+		$("#SelfService-1783889270668-languagePanel").trigger("updatelayout");
+		$.mobile.activePage.trigger("pagecreate");
+	});
+}).on("panelopen", function() {
+	$("#language-en").focus();
+});
+</script>
+  <br>
+
+
+		<script>
+		
+		jQuery.cachedScript = function( url, options ) {
+			
+			options = $.extend( options || {}, {
+				dataType: 'script',
+				cache: true,
+				url: url
+			});
+
+			
+			return jQuery.ajax( options );
+		};
+
+		$('#SelfService-1783889270668-page').on('pageinit', function() {
+			
+			selfservice.countdown.timer();
+		});
+
+		$(document.body).on("blur", 'input[data-role="datebox"]', function(event){
+			selfservice.parseDate(event.target);
+		});
+		</script>
+
+		<!-- FOOTER -->
+		<div id="ss-footer-box" class="ss-footer ui-footer ui-bar-inherit ui-footer-fixed slideup" data-role="footer" data-position="fixed" data-tap-toggle="false" role="contentinfo">
+			
+<div class="ss-footer-stripe"></div>
+			<div class="ss-content">
+				<div class="ss-footer-internal-small">
+					©&nbsp;Copyright 2014-2024 Tyler Technologies&nbsp;|&nbsp;Version 2024.1.40
+				</div>
+			</div>
+		</div>
+	<div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="SelfService-1783889270668-passwordChange-popup-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate slide" id="SelfService-1783889270668-passwordChange-popup-popup"><div data-role="popup" id="SelfService-1783889270668-passwordChange-popup" class="ss-password-change-popup ui-content ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all" data-history="false" data-position-to="window" data-transition="slide">
+	<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right ui-link ui-btn ui-icon-delete ui-btn-icon-notext ui-shadow ui-corner-all" role="button">Close</a>
+	<div id="SelfService-1783889270668-passwordChangeInternal" class="ss-password-change-popup-internal"></div>
+</div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-a" id="SelfService-1783889270668-session-popup-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate slide" id="SelfService-1783889270668-session-popup-popup"><div data-role="popup" id="SelfService-1783889270668-session-popup" data-dismissible="false" data-history="false" data-position-to="window" data-overlay-theme="a" class="ui-page-theme-a ui-content ui-alt-icon ui-nodisc-icon ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all" data-transition="slide" style="background: white;">
+	<div data-role="header" class="ss-receipt-width ui-header ui-bar-inherit" style="background-color: #06c; line-height: 1.3; margin: 0.9em;" role="banner">
+		<h1 style="font-size: 1.3em; padding: 1em 1.5em; color: white; font-weight: normal; text-overflow: inherit; overflow: visible;" class="ui-title" role="heading" aria-level="1">Session about to time out</h1> 
+	</div>
+	<div style="padding: 10px; background-color: white;">
+		<h2>Do you need more time? <span id="remainingTime"></span></h2>
+		<button id="SelfService-1783889270668-session-continue" type="button" class="ui-btn ui-btn-b ui-icon-check ui-btn-icon-left ui-shadow ui-corner-all">
+		Yes - Continue
+		</button>
+		<button id="SelfService-1783889270668-session-logout" type="button" class="ui-btn ui-btn-b ui-icon-delete ui-btn-icon-left ui-shadow ui-corner-all">
+		No - Start Over
+		</button>
+	</div>
+</div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="SelfService-1783889279244-confirmRemove-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="SelfService-1783889279244-confirmRemove-popup"><div data-role="popup" id="SelfService-1783889279244-confirmRemove" data-dismissible="false" class="ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all">
+		<div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
+			<h1 class="ui-title" role="heading" aria-level="1">Remove Item?</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<h3 class="ui-title">Are you sure you want to remove this item?</h3>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<a href="#" data-role="button" data-theme="a" onclick="removeConfirmed('SelfService-1783889279244-confirmRemove');" class="ui-link ui-btn ui-btn-a ui-shadow ui-corner-all" role="button">Remove</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="#" data-role="button" data-theme="a" onclick="$('#SelfService-1783889279244-confirmRemove').popup('close', {transition: 'pop'});return false;" class="ui-link ui-btn ui-btn-a ui-shadow ui-corner-all" role="button">Cancel</a>
+				</div>
+			</div>
+		</div>
+	</div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="SelfService-1783889279244-confirmRemoveFailed-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="SelfService-1783889279244-confirmRemoveFailed-popup"><div data-role="popup" id="SelfService-1783889279244-confirmRemoveFailed" data-dismissible="false" class="ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all">
+		<div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
+			<h1 class="ui-title" role="heading" aria-level="1">error</h1>
+		</div>
+		<div role="main" class="ui-content">
+		<h3 class="ui-title">We're sorry. An error occurred while attempting to remove this item.</h3>
+			<div class="ui-grid-solo">
+				<a href="#" data-role="button" data-theme="a" onclick="$('#SelfService-1783889279244-confirmRemoveFailed').popup('close', {transition: 'pop'});return false;" class="ui-link ui-btn ui-btn-a ui-shadow ui-corner-all" role="button">OK</a>
+			</div>
+		</div>
+	</div></div></div>
+	<script>
+	
+	function initializeSessionTimerChecks() {
+		if (selfservice.mode.kioskMode == undefined) {
+			var test = 'false';
+			if (!test) {
+				selfservice.mode.kioskMode = false;
+			} else {
+				selfservice.mode.kioskMode = booleanValue('false');
+			}
+		}
+
+		if (selfservice.session.userLoggedIn == undefined) {
+			selfservice.session.userLoggedIn = booleanValue('false');
+		}
+
+		if (selfservice.url.homePage == undefined) {
+			selfservice.url.homePage = window.location.origin + '/web/';
+		}
+		if(selfservice.setting.showDisclaimer == undefined){
+			selfservice.setting.showDisclaimer = booleanValue('true')
+		}
+	
+		if( selfservice.pages.disclaimer == undefined){
+			 selfservice.pages.disclaimer = '/web/user/disclaimer';
+		}
+	}
+
+	$(document).keydown(function(e) {
+		selfservice.maybeScrollScreen(e);
+	});
+
+	$(document).on('pageinit', function(event) {
+		initializeSessionTimerChecks();
+
+		
+		selfservice.session.continueSession();
+
+		
+			var subscriptionTimerId = $('#subscriptionTimer').attr('id');
+			selfservice.subscriptionTimer.setSubscriptionTime(subscriptionTimerId, '/web/subscription/getSubscriptionTime');
+		});
+
+	$( document ).ajaxComplete(function( event, request, settings ) {
+		if(request.getResponseHeader('isThresholdReached') === "true"){
+			location.reload();
+		}
+	});
+	
+	$.ajaxSetup({
+	    beforeSend: function(xhr) {
+	        xhr.setRequestHeader('ajaxRequest', true);
+	    }
+	});
+
+	function removeDisclaimerCookie(){
+		var context = "/web/";
+		context = context.split('/').join('')
+		document.cookie = "disclaimerAccepted=; Path=/" + context + "; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+	}
+	
+	</script>
+
+<div class="ui-panel-dismiss"></div><div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><div class="cssload-container">
+			<ul class="cssload-loader">
+				<li></li><li></li><li></li><li></li><li></li><li></li>
+			</ul>
+		</div>
+		<div class="modal-overlay"></div></div><div class="ui-panel-dismiss"></div><div class="ui-panel-dismiss"></div><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge expires in two minutes" name="c-ogslf1gb93i9" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=rL1ELiQAg1kPezz6_H9hTZ_i&amp;k=6LemVGAUAAAAAB_iW1wbaE4_s0Z5SoSakm6GI8St&amp;bft=0dAFcWeA6klQBSIetnftF6O4ERVuT0qpjw6ReX8arrs56O5EwwO29zgQkhQ5Eoq4J7ArDahmmi4vrEIgTM6kOQHGa6nwTv8fTTRQ" style="width: 100%; height: 100%;"></iframe></div></div></body></html>

@@ -1,0 +1,33 @@
+display_name: Madera County
+collector_names:
+- MADERA TAX COLLECTOR
+- MADERA CO TAX COLLR
+- COUNTY OF MADERA
+assessor:
+  backend: mpts
+  endpoint: https://common1.mptsweb.com/mbap/madera/asr/AsrPrint
+  apn_includes:
+  - 1 Main
+  - 2 Main
+  - 1 Oak
+  - 2 Oak
+  - 1 Pine
+  - 1st
+  - 2nd
+  - 3rd
+  notes: Auto-onboarded by onboard_county.py. MPTS host common1.mptsweb.com slug madera
+  host: https://common1.mptsweb.com
+recorder:
+  backend: county_portal
+  base_url: https://maderacountyca-web.tylerhost.net
+  name_search_id: DOCSEARCH201S11
+  doc_search_id: DOCSEARCH201S11
+  apn_search_id: DOCSEARCH233S1
+  typedate_search_id: DOCSEARCH201S10
+  ajax_headers_required: true
+  notes: discovered automatically
+  endpoint: https://recorder.madera.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

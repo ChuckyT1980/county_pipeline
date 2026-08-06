@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Flow Systems | California Multi-County Tax Auction Intelligence</title>
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0B132B;
+            --bg-card: #1C2541;
+            --bg-card-hover: #232F52;
+            --accent-cyan: #00F2FE;
+            --accent-blue: #4FACFE;
+            --accent-gold: #FFB800;
+            --accent-red: #FF4B4B;
+            --accent-green: #00E676;
+            --text-main: #F8FAFC;
+            --text-muted: #94A3B8;
+            --border-glass: rgba(255, 255, 255, 0.1);
+            --shadow-glow: 0 0 25px rgba(0, 242, 254, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, .brand-font {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* Glow background elements */
+        .bg-glow-1 {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0, 242, 254, 0.12) 0%, rgba(11, 19, 43, 0) 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .bg-glow-2 {
+            position: absolute;
+            top: 1200px;
+            right: -200px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 184, 0, 0.08) 0%, rgba(11, 19, 43, 0) 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            position: relative;
+            z-index: 10;
+            border-bottom: 1px solid var(--border-glass);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent-cyan);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .btn-glow {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            color: #0B132B;
+            padding: 0.75rem 1.6rem;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-glow:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0, 242, 254, 0.5);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--border-glass);
+            background: rgba(255,255,255,0.05);
+            color: var(--text-main);
+            padding: 0.75rem 1.6rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: var(--accent-cyan);
+        }
+
+        /* Countdown Bar */
+        .countdown-bar {
+            background: linear-gradient(90deg, #1C2541, #232F52);
+            border-bottom: 1px solid var(--accent-cyan);
+            padding: 0.75rem;
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .badge-live {
+            background: rgba(0, 230, 118, 0.15);
+            color: var(--accent-green);
+            border: 1px solid var(--accent-green);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 5rem 5% 4rem;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 242, 254, 0.08);
+            border: 1px solid rgba(0, 242, 254, 0.3);
+            color: var(--accent-cyan);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.15;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(180deg, #FFFFFF 0%, #CBD5E1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 820px;
+            margin: 0 auto 2.5rem;
+            font-weight: 400;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 4rem;
+        }
+
+        /* Hero Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            padding: 2rem;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .stat-card h3 {
+            font-size: 2.2rem;
+            color: var(--accent-cyan);
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .stat-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        /* Section Layouts */
+        .section {
+            padding: 5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 5;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 3.5rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* County Catalog Grid */
+        .county-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.8rem;
+        }
+
+        .county-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .county-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-cyan);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .county-card.active-target {
+            border: 2px solid var(--accent-cyan);
+            background: linear-gradient(180deg, #1C2541 0%, #16203B 100%);
+        }
+
+        .county-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            width: fit-content;
+        }
+
+        .badge-upcoming {
+            background: rgba(0, 242, 254, 0.15);
+            color: var(--accent-cyan);
+            border: 1px solid var(--accent-cyan);
+        }
+
+        .badge-gold {
+            background: rgba(255, 184, 0, 0.15);
+            color: var(--accent-gold);
+            border: 1px solid var(--accent-gold);
+        }
+
+        .badge-demand {
+            background: rgba(79, 172, 254, 0.15);
+            color: var(--accent-blue);
+            border: 1px solid var(--accent-blue);
+        }
+
+        .county-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .county-meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .county-stats {
+            background: rgba(0,0,0,0.25);
+            padding: 0.8rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+        }
+
+        .county-stats span {
+            color: var(--accent-gold);
+            font-weight: 700;
+        }
+
+        /* Case Study Section */
+        .case-study-card {
+            background: linear-gradient(135deg, rgba(28, 37, 65, 0.9), rgba(35, 47, 82, 0.9));
+            border: 1px solid rgba(255, 184, 0, 0.4);
+            border-radius: 16px;
+            padding: 3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .badge-warning {
+            background: rgba(255, 75, 75, 0.15);
+            color: var(--accent-red);
+            border: 1px solid var(--accent-red);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        /* Visual Comparison Section */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .comp-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 2.5rem;
+            border: 1px solid var(--border-glass);
+        }
+
+        .comp-card.highlight {
+            border: 2px solid var(--accent-cyan);
+            box-shadow: var(--shadow-glow);
+            background: linear-gradient(180deg, #1C2541 0%, #151D36 100%);
+        }
+
+        .comp-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .comp-list.old li::before {
+            content: "✕";
+            color: var(--accent-red);
+            font-weight: bold;
+        }
+
+        .comp-list.new li::before {
+            content: "✓";
+            color: var(--accent-green);
+            font-weight: bold;
+        }
+
+        /* Sample Dossier Tabs */
+        .tabs-container {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .tabs-header {
+            display: flex;
+            background: rgba(0,0,0,0.2);
+            border-bottom: 1px solid var(--border-glass);
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 1.2rem;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+
+        .tab-btn.active {
+            color: var(--accent-cyan);
+            border-bottom-color: var(--accent-cyan);
+            background: rgba(0, 242, 254, 0.05);
+        }
+
+        .tab-content {
+            display: none;
+            padding: 2.5rem;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .dossier-preview {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        .metrics-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .metric-box {
+            background: rgba(0,0,0,0.2);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-glass);
+        }
+
+        .metric-box label {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .metric-box val {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* Pricing Section */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            align-items: stretch;
+        }
+
+        .price-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .price-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .price-card.featured {
+            border: 2px solid var(--accent-cyan);
+            box-shadow: var(--shadow-glow);
+            background: linear-gradient(180deg, #1C2541 0%, #17213C 100%);
+        }
+
+        .price-tag {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin: 1rem 0;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .price-tag span {
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .price-features {
+            list-style: none;
+            margin: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            flex-grow: 1;
+        }
+
+        .price-features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .price-features li::before {
+            content: "✓";
+            color: var(--accent-cyan);
+            font-weight: bold;
+        }
+
+        /* Guarantee Section */
+        .guarantee-box {
+            background: linear-gradient(135deg, rgba(0, 230, 118, 0.08), rgba(0, 242, 254, 0.08));
+            border: 1px solid var(--accent-green);
+            border-radius: 16px;
+            padding: 3rem;
+            text-align: center;
+            max-width: 900px;
+            margin: 4rem auto 0;
+        }
+
+        .guarantee-box h3 {
+            color: var(--accent-green);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border-glass);
+            padding: 3rem 5%;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .hero h1 { font-size: 2.4rem; }
+            .stats-grid, .county-grid, .comparison-grid, .pricing-grid, .dossier-preview { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+
+    <!-- Live Auction Countdown Bar -->
+    <div class="countdown-bar">
+        <span class="badge-live">LIVE MONITORING</span>
+        <span>CALIFORNIA TAX AUCTIONS — All 58 Counties Covered Across Bid4Assets, GovEase, MyTaxSale & Realauction</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">
+            LOGIC FLOW <span>INTEL</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#counties">County Catalog</a></li>
+            <li><a href="#how-it-works">Verification Engine</a></li>
+            <li><a href="#case-study">Gridley Catch</a></li>
+            <li><a href="#samples">Sample Dossiers</a></li>
+            <li><a href="#pricing">Pricing Tiers</a></li>
+        </ul>
+        <a href="#counties" class="btn-glow">Select Your County</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-tag">⚡ California's Premier Tax Auction Intelligence Platform</div>
+        <h1>California Tax Sale Leads.<br><span>Live Verified. Pre-Scored.</span></h1>
+        <p>Stop wasting 40+ hours manually researching raw county PDF notices. We cross-reference 6 live county feeds across all 58 California counties to deliver pre-scored dossiers, live redemption status checks, and 70% max safe bid thresholds before auction day.</p>
+        
+        <div class="hero-actions">
+            <a href="#counties" class="btn-glow">Explore County Catalog</a>
+            <a href="#samples" class="btn-outline">View Sample Dossiers</a>
+        </div>
+
+        <!-- Stat Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>58</h3>
+                <p>CA Counties Tracked</p>
+            </div>
+            <div class="stat-card">
+                <h3>6 Feeds</h3>
+                <p>Live Cross-Referenced</p>
+            </div>
+            <div class="stat-card">
+                <h3>70</h3>
+                <p>Fields Per Parcel</p>
+            </div>
+            <div class="stat-card">
+                <h3>100%</h3>
+                <p>Accuracy Guarantee</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multi-County Catalog Section -->
+    <section class="section" id="counties">
+        <div class="section-header">
+            <h2>Select Your County Target</h2>
+            <p>Choose an upcoming auction pack below or request custom intelligence monitoring for any of California's 58 counties.</p>
+        </div>
+
+        <div class="county-grid">
+            <!-- County 1: Butte -->
+            <div class="county-card active-target">
+                <div>
+                    <span class="county-badge badge-gold">★ Live Priority Target</span>
+                    <h3>Butte County</h3>
+                    <div class="county-meta">Aug 7-10, 2026 Re-Offer Auction | Bid4Assets</div>
+                    <div class="county-stats">
+                        <div>Parcels: <span>104 Active</span></div>
+                        <div>Total Default: <span>$5.05M</span></div>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Pre-scored 105-parcel pack. Includes live MPTS redemption checks, CalFire overlays, and assessor land/improvements splits.</p>
+                </div>
+                <a href="mailto:mrt@logicflowsystems.com?subject=Order%20Butte%20County%20Pack%20($500)" class="btn-glow" style="text-align: center;">Get Butte 105 Pack ($500)</a>
+            </div>
+
+            <!-- County 2: Kern -->
+            <div class="county-card">
+                <div>
+                    <span class="county-badge badge-upcoming">Upcoming Fall Sale</span>
+                    <h3>Kern County</h3>
+                    <div class="county-meta">Sep 14-16, 2026 Tax Sale | GovEase</div>
+                    <div class="county-stats">
+                        <div>Platform: <span>GovEase</span></div>
+                        <div>Volume: <span>High Density</span></div>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Major Central Valley investor market. Pre-order pre-scored intelligence pack for the Sep 14 auction window.</p>
+                </div>
+                <a href="mailto:mrt@logicflowsystems.com?subject=Pre-Order%20Kern%20County%20Pack" class="btn-outline" style="text-align: center;">Pre-Order Kern Pack</a>
+            </div>
+
+            <!-- County 3: Fresno -->
+            <div class="county-card">
+                <div>
+                    <span class="county-badge badge-upcoming">Upcoming Fall Sale</span>
+                    <h3>Fresno County</h3>
+                    <div class="county-meta">Sep 10-11, 2026 Tax Sale | Realauction</div>
+                    <div class="county-stats">
+                        <div>Platform: <span>Realauction</span></div>
+                        <div>Vesting: <span>Sep 10</span></div>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">High-margin residential and agricultural land tax deeds. Reserve your pre-scored dossier pack today.</p>
+                </div>
+                <a href="mailto:mrt@logicflowsystems.com?subject=Pre-Order%20Fresno%20County%20Pack" class="btn-outline" style="text-align: center;">Pre-Order Fresno Pack</a>
+            </div>
+
+            <!-- County 4: Riverside -->
+            <div class="county-card">
+                <div>
+                    <span class="county-badge badge-demand">High Demand Market</span>
+                    <h3>Riverside County</h3>
+                    <div class="county-meta">Bid4Assets Platform</div>
+                    <div class="county-stats">
+                        <div>Market: <span>Inland Empire</span></div>
+                        <div>Turnaround: <span>48 Hours</span></div>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Massive flipper and wholesaler activity. Order custom pre-scored intelligence for Riverside tax defaulted lists.</p>
+                </div>
+                <a href="mailto:mrt@logicflowsystems.com?subject=Request%20Riverside%20County%20Build" class="btn-outline" style="text-align: center;">Request Riverside Build</a>
+            </div>
+
+            <!-- County 5: Los Angeles -->
+            <div class="county-card">
+                <div>
+                    <span class="county-badge badge-demand">High Demand Market</span>
+                    <h3>Los Angeles County</h3>
+                    <div class="county-meta">GovEase Platform</div>
+                    <div class="county-stats">
+                        <div>Volume: <span>2,000+ Parcels</span></div>
+                        <div>Turnaround: <span>72 Hours</span></div>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">California's largest tax deed market. Full recorder crawl and distress history scoring per parcel.</p>
+                </div>
+                <a href="mailto:mrt@logicflowsystems.com?subject=Request%20Los%20Angeles%20County%20Build" class="btn-outline" style="text-align: center;">Request LA Build</a>
+            </div>
+
+            <!-- County 6: Any Other County -->
+            <div class="county-card">
+                <div>
+                    <span class="county-badge badge-gold">Custom Build</span>
+                    <h3>Any of 58 CA Counties</h3>
+                    <div class="county-meta">All California Platforms Covered</div>
+                    <div class="county-stats">
+                        <div>Coverage: <span>100% Statewide</span></div>
+                        <div>Turnaround: <span>48-72 Hours</span></div>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Need Shasta, El Dorado, Nevada, San Bernardino, or Ventura? We configure custom pipeline builds on demand.</p>
+                </div>
+                <a href="mailto:mrt@logicflowsystems.com?subject=Custom%20County%20Build%20Request" class="btn-glow" style="text-align: center;">Request Custom County</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section: The Gridley Catch -->
+    <section class="section" id="case-study">
+        <div class="section-header">
+            <h2>The Power of Live Verification</h2>
+            <p>Why standard county PDF lists waste 20+ hours of your research time.</p>
+        </div>
+
+        <div class="case-study-card">
+            <div class="case-study-content">
+                <span class="badge-warning">REAL PIPELINE CATCH</span>
+                <h3>Parcel Redeemed 4 Weeks Ago — Still Listed on County PDF</h3>
+                <p><strong>GRIDLEY BUSINESS TRUST (APN 022-210-078-000)</strong> had $2,459,683 in defaulted taxes — the single largest property on the Aug 7-10 auction notice. On June 29, 2026, the delinquency was paid in full.</p>
+                <p>Generic lead lists still sell this property as their #1 target. Our live pipeline detected the payoff immediately during pack build and flagged it.</p>
+            </div>
+            <div>
+                <ul class="comp-list new">
+                    <li><strong>Live MPTS Fetch:</strong> Scraped live tax portal for payoff verification</li>
+                    <li><strong>Status Parsed:</strong> Redemption status = 'redeemed', date = 2026-06-29</li>
+                    <li><strong>Priority Score Drop:</strong> Dropped priority score from 99.9 to 0.0</li>
+                    <li><strong>Investor Saved:</strong> Prevented wasted comp research & site visits</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Comparison Section -->
+    <section class="section" id="how-it-works">
+        <div class="section-header">
+            <h2>What You See vs. What You Get</h2>
+            <p>The difference between a static 4-page legal publication and a live-verified decision tool.</p>
+        </div>
+
+        <div class="comparison-grid">
+            <div class="comp-card">
+                <h3>County PDF List <span>(Free)</span></h3>
+                <ul class="comp-list old">
+                    <li>5 raw columns (APN, owner, address, min bid, jurisdiction)</li>
+                    <li>Static publication — includes redeemed/paid-off parcels</li>
+                    <li>No assessor valuation or improvement ratios</li>
+                    <li>No recorder document chains or foreclosure history</li>
+                    <li>No fire hazard (CalFire) or flood zone (FEMA) overlays</li>
+                    <li>No bid-to-value margin calculations</li>
+                </ul>
+            </div>
+
+            <div class="comp-card highlight">
+                <h3>Logic Flow Intelligence <span>(70 Fields)</span></h3>
+                <ul class="comp-list new">
+                    <li>70 verified fields per parcel cross-referenced across 6 feeds</li>
+                    <li>Live MPTS redemption verification up to auction day</li>
+                    <li>Assessed land vs. improvements split & net value</li>
+                    <li>Full recorder crawl (deeds, NODs, liens, trustee sales)</li>
+                    <li>CalFire FHSZ & FEMA flood zone environmental mapping</li>
+                    <li>Automated Min Bid, 70% Max Safe Bid & Bid-to-Value ratios</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Sample Dossier Preview -->
+    <section class="section" id="samples">
+        <div class="section-header">
+            <h2>Sample Dossiers</h2>
+            <p>Select a buyer profile below to view exact dossier depth delivered for every parcel.</p>
+        </div>
+
+        <div class="tabs-container">
+            <div class="tabs-header">
+                <button class="tab-btn active" onclick="openTab(event, 'tab1')">Owner-Occupied Fix-and-Flip</button>
+                <button class="tab-btn" onclick="openTab(event, 'tab2')">Heavy Distress History (4 NODs)</button>
+                <button class="tab-btn" onclick="openTab(event, 'tab3')">Out-of-State Absentee Owner</button>
+            </div>
+
+            <!-- Tab 1 -->
+            <div id="tab1" class="tab-content active">
+                <div class="dossier-preview">
+                    <div>
+                        <h4>MACIAS THOMAS C</h4>
+                        <div style="color: var(--text-muted); margin-bottom: 1rem;">APN: 035-143-011-000 | 1845 Elgin St, Oroville CA</div>
+                        
+                        <div class="metrics-row">
+                            <div class="metric-box">
+                                <label>Defaulted Balance</label>
+                                <val>$86,820</val>
+                            </div>
+                            <div class="metric-box">
+                                <label>Minimum Starting Bid</label>
+                                <val>$64,683</val>
+                            </div>
+                            <div class="metric-box">
+                                <label>Max Safe Bid (70%)</label>
+                                <val>$124,343</val>
+                            </div>
+                        </div>
+
+                        <p><strong>Profile Notes:</strong> In-state owner with real house improvements ($107,173 imp vs $66,978 land). Bid-to-value ratio is 36.4%, offering $57K+ of margin room below 70% ARV threshold.</p>
+                    </div>
+                    <div>
+                        <div style="background: rgba(0,0,0,0.3); padding: 1.5rem; border-radius: 8px; font-size: 0.85rem;">
+                            <p style="color: var(--accent-cyan); font-weight: 700; margin-bottom: 8px;">VERIFICATION CHECK</p>
+                            <p>✓ MPTS TaxBill: Still Delinquent</p>
+                            <p>✓ Fire Zone: Unzoned</p>
+                            <p>✓ Flood Zone: X (Low Risk)</p>
+                            <p>✓ Recorded Docs: 1 deed on file</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2 -->
+            <div id="tab2" class="tab-content">
+                <div class="dossier-preview">
+                    <div>
+                        <h4>MARTIN ROBERT TRUSTEE</h4>
+                        <div style="color: var(--text-muted); margin-bottom: 1rem;">APN: 069-190-021-000 | 184 Kokanee Dr, Oroville CA</div>
+                        
+                        <div class="metrics-row">
+                            <div class="metric-box">
+                                <label>Defaulted Balance</label>
+                                <val>$70,766</val>
+                            </div>
+                            <div class="metric-box">
+                                <label>Minimum Starting Bid</label>
+                                <val>$35,147</val>
+                            </div>
+                            <div class="metric-box">
+                                <label>Max Safe Bid (70%)</label>
+                                <val>$45,490</val>
+                            </div>
+                        </div>
+
+                        <p><strong>Profile Notes:</strong> High motivation distress history. Recorder crawl identified 30 total distress signals (4 prior Notices of Default + 1 Trustee Sale). Located in Very High fire hazard zone.</p>
+                    </div>
+                    <div>
+                        <div style="background: rgba(0,0,0,0.3); padding: 1.5rem; border-radius: 8px; font-size: 0.85rem;">
+                            <p style="color: var(--accent-red); font-weight: 700; margin-bottom: 8px;">HIGH DISTRESS</p>
+                            <p>✓ MPTS TaxBill: 11y Power-to-Sell</p>
+                            <p>⚠ Fire Zone: Very High FHSZ</p>
+                            <p>✓ Flood Zone: X</p>
+                            <p>✓ Prior NODs: 4 Recorded</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3 -->
+            <div id="tab3" class="tab-content">
+                <div class="dossier-preview">
+                    <div>
+                        <h4>TACKET BONNIE F</h4>
+                        <div style="color: var(--text-muted); margin-bottom: 1rem;">APN: 035-083-006-000 | 2327 A St, Oroville CA</div>
+                        
+                        <div class="metrics-row">
+                            <div class="metric-box">
+                                <label>Defaulted Balance</label>
+                                <val>$72,797</val>
+                            </div>
+                            <div class="metric-box">
+                                <label>Minimum Starting Bid</label>
+                                <val>$7,235</val>
+                            </div>
+                            <div class="metric-box">
+                                <label>Max Safe Bid (70%)</label>
+                                <val>$15,502</val>
+                            </div>
+                        </div>
+
+                        <p><strong>Profile Notes:</strong> Out-of-state absentee owner (mailing address in Galena, KS). Low minimum bid ($7,235) vs $22,146 assessed value. Ideal candidate for pre-auction acquisition offer.</p>
+                    </div>
+                    <div>
+                        <div style="background: rgba(0,0,0,0.3); padding: 1.5rem; border-radius: 8px; font-size: 0.85rem;">
+                            <p style="color: var(--accent-gold); font-weight: 700; margin-bottom: 8px;">ABSENTEE OWNER</p>
+                            <p>✓ Owner State: Kansas (KS)</p>
+                            <p>✓ Bid-to-Value: 32.7%</p>
+                            <p>✓ Tax Billed: $289/year</p>
+                            <p>✓ Situs Verified: Geocoded</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section" id="pricing">
+        <div class="section-header">
+            <h2>Select Your Intelligence Tier</h2>
+            <p>Delivered instantly as a complete ZIP package (Excel + Combined Dossier PDF + Individual PDFs + Raw CSV + Tax Bill Archive).</p>
+        </div>
+
+        <div class="pricing-grid">
+            <!-- Tier 1 -->
+            <div class="price-card">
+                <h4>Single County Pack</h4>
+                <div class="price-tag">$500 <span>/ single auction</span></div>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Complete pre-scored intelligence delivery for any single California county tax sale.</p>
+                <ul class="price-features">
+                    <li>All Auction Parcels Scored</li>
+                    <li>Individual 2-Page Dossier PDFs</li>
+                    <li>Combined Master Dossier PDF</li>
+                    <li>4-Tab Formatted Excel Workbook</li>
+                    <li>Raw 70-Field CSV Dataset</li>
+                    <li>Tax Bill HTML Archive</li>
+                    <li>Live Redemption Verification Pass</li>
+                </ul>
+                <a href="mailto:mrt@logicflowsystems.com?subject=Order%20Single%20County%20Pack%20($500)" class="btn-outline" style="text-align: center;">Order Single Pack</a>
+            </div>
+
+            <!-- Tier 2 -->
+            <div class="price-card featured">
+                <span style="position: absolute; top: -12px; right: 20px; background: var(--accent-cyan); color: #0B132B; font-weight: 800; font-size: 0.75rem; padding: 2px 10px; border-radius: 12px; text-transform: uppercase;">Most Popular</span>
+                <h4>Founding Subscriber Pass</h4>
+                <div class="price-tag">$500 <span>first pack</span></div>
+                <p style="font-size: 0.85rem; color: var(--accent-cyan); font-weight: 600;">+ $150/month recurring (Grandfathered Rate)</p>
+                <ul class="price-features">
+                    <li>Everything in Single County Pack</li>
+                    <li>Automated Re-Scrapes for Every Auction Cycle</li>
+                    <li>Priority Access to Next County Builds (Kern, LA, Riverside)</li>
+                    <li>Direct Line to Data Engineer for Custom Filters</li>
+                    <li>Grandfathered Rate for Active Subscriptions</li>
+                </ul>
+                <a href="mailto:mrt@logicflowsystems.com?subject=Order%20Founding%20Subscriber%20Pass" class="btn-glow" style="text-align: center;">Claim Founding Pass</a>
+            </div>
+
+            <!-- Tier 3 -->
+            <div class="price-card">
+                <h4>Custom Multi-County Build</h4>
+                <div class="price-tag">Custom <span>/ multi-county</span></div>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Targeting multiple California county auctions or specific buy boxes?</p>
+                <ul class="price-features">
+                    <li>Custom Build for Any of 58 CA Counties</li>
+                    <li>Full Assessor & Recorder Crawl Integration</li>
+                    <li>Custom Motivation Scoring Rules</li>
+                    <li>CSV / CRM Schema Export (Podio, REI Siso)</li>
+                    <li>Dedicated Turnaround (48-72 Hours)</li>
+                </ul>
+                <a href="mailto:mrt@logicflowsystems.com?subject=Request%20Custom%20Multi-County%20Build" class="btn-outline" style="text-align: center;">Request Custom Quote</a>
+            </div>
+        </div>
+
+        <!-- Guarantee -->
+        <div class="guarantee-box">
+            <h3>🛡️ 100% Data Accuracy Refund Guarantee</h3>
+            <p style="color: var(--text-muted); max-width: 750px; margin: 0 auto;">Every lead links directly to the live county tax bill and recorder document number. Verify anything in 30 seconds. If any material field on any parcel is wrong — owner, mailing address, defaulted balance, or redemption status — we refund on that parcel's basis. No questions asked.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Logic Flow Systems | Charles Terrell | Contact: <a href="mailto:mrt@logicflowsystems.com">mrt@logicflowsystems.com</a></p>
+        <p style="margin-top: 8px; font-size: 0.8rem; color: #475569;">Disclaimer: Property intelligence reports are provided for informational and analytical research purposes. Bidders are encouraged to conduct independent due diligence prior to auction bidding.</p>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        function openTab(evt, tabName) {
+            let i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>

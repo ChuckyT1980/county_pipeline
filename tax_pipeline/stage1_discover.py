@@ -1,202 +1,187 @@
 """
-Stage 1: Live Parcel Discovery — JSON API (No Playwright needed)
-Uses the confirmed MBC JSON API directly via requests.
-API: GET /MBC/api/search/{county}/{year}/{searchType}/{term}
-SearchType confirmed: "situs" for street address
+Stage 1: Parcel discovery via feeparcel prefix enumeration.
+Works when situs search is unavailable (or for counties that lack it).
+Enumerates 6-digit APN prefixes (BBBPPP) via the feeparcel JSON API.
 
-Install: pip install requests pandas
-Run:     python stage1_discover.py tehama
+Incremental checkpointing: saves after every book in Phase 2.
+Resume: run again with same output path — skips completed books.
+
+Usage:
+    python stage1_discover.py tehama [output_csv]
+    python stage1_discover.py shasta [output_csv]
 """
-
-import re, sys, time
+import sys, os, json, re, time
 from datetime import datetime
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 import pandas as pd
 from config import COUNTY_CONFIG
 
-# ── Seeds: street suffixes and common Tehama street name fragments
-# All 6+ chars, each returns a different slice of the address index.
-# Combined these cover the full county parcel address space.
-SEEDS = [
-    # Street type suffixes (catch every road/street/etc.)
-    "AVENUE", "STREET", "ROAD ST", "DRIVE", "LANE LN", "PLACE PL",
-    "COURT CT", "CIRCLE", "TRAIL", "HIGHWAY", "FREEWAY", "PARKWAY",
-    "BLVD", "WAY", "LOOP", "RIDGE", "VALLEY", "CREEK", "RANCH",
-    "CANYON", "HOLLOW", "MEADOW", "SPRING", "BRIDGE", "GROVE",
-    # Common Tehama county street name fragments (6+ chars)
-    "MAIN ST", "OAK ST", "ELM ST", "PINE ST", "CEDAR", "WALNUT",
-    "ANTELOPE", "TEHAMA", "CORNING", "GERBER", "FLOURNOY",
-    "PASKENTA", "PAYNES", "HOOKER", "SOLANO", "SALE LANE",
-    "RAWSON", "TOOMES", "DEL PUERTO", "RIO ST", "LASSEN",
-    "SHASTA", "TRINITY", "PLUMAS", "BUTTE ST", "YOLO ST",
-    "ORANGE ST", "THIRD ST", "SECOND", "FOURTH", "FIFTH ST",
-    "SIXTH ST", "SEVENTH", "EIGHTH", "NINTH ST", "TENTH ST",
-    "NORTH ST", "SOUTH ST", "EAST ST", "WEST ST",
-    "SISTER MARY", "COUNTY RD", "MILL ST", "WATER ST",
-    "JACKSON", "LINCOLN", "GRANT ST", "MADISON", "MONROE",
-    "WASHINGTON", "HARRISON", "FRANKLIN", "HAMILTON",
-    "CALIFORNIA", "Sacramento", "PORTLAND", "NEVADA ST",
-    "FOREST", "MOUNTAIN", "RIVER RD", "LAKE RD", "POND RD",
-    "ORCHARD", "VINEYARD", "GARDEN", "MARKET", "CHURCH",
-    "SCHOOL", "COLLEGE", "MISSION", "ADOBE", "RANCHO",
-    "SUNRISE", "SUNSET", "SKYLINE", "HILLTOP", "HILLSIDE",
-    "OAKDALE", "RICCA", "KIMBALL", "MARGUERITE", "RANCHERIA",
-    "BEEGUM", "PLATINA", "MINERAL", "MCCARTHY", "BOWMAN",
-    "HENLEY", "HOOKER CK", "COLD FORK", "BIG BEND",
-    "PONY FARM", "TOMHEAD", "BLACK BEAR", "ELDER CK",
-    "SULPHUR", "WAGON RD", "ADOBE RD", "BALL PARK",
-    "INDUSTRIAL", "COMMERCE", "RAILROAD", "AIRPORT",
-]
+sys.stdout.reconfigure(line_buffering=True)
 
-# Deduplicate seeds
-SEEDS = list(dict.fromkeys(SEEDS))
-
-
-def build_session(cfg: dict) -> requests.Session:
-    s = requests.Session()
-    s.headers.update({
-        "User-Agent":       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-        "Referer":          f"{cfg['host']}{cfg['appFolder']}{cfg['county_slug']}/tax/search",
-        "X-Requested-With": "XMLHttpRequest",
-        "Accept":           "application/json, text/javascript, */*; q=0.01",
-    })
-    return s
-
-
-def search_api(session, cfg: dict, term: str) -> list:
-    """Call the JSON API and return raw result list."""
-    county = cfg["county_slug"]
-    year_api = "0000-CURR" if cfg["tax_year"] == "2025" else cfg["tax_year"]
-    host   = cfg["host"]
-    app    = cfg["appFolder"]
-
-    url = f"{host}{app}api/search/{county}/{year_api}/situs/{requests.utils.quote(term)}"
+def get_parcels(session, api_base, prefix6):
     try:
-        resp = session.get(url, timeout=20)
-        resp.raise_for_status()
-        data = resp.json()
-        
-        # The MBC API sometimes double-encodes the JSON (returns a string containing JSON)
+        r = session.get(api_base + prefix6, timeout=10)
+        if r.status_code != 200:
+            return []
+        data = r.json()
         if isinstance(data, str):
-            import json
-            try:
-                data = json.loads(data)
-            except Exception:
-                pass
-                
-        # API returns either a list directly, or {"Table": {"Row": [...]}}
-        if isinstance(data, list):
-            return data
-        if isinstance(data, dict):
-            # Try common MBC response shapes
-            for key in ["Table", "table", "Results", "results", "data"]:
-                if key in data:
-                    inner = data[key]
-                    if isinstance(inner, list):
-                        return inner
-                    if isinstance(inner, dict):
-                        rows = inner.get("Row") or inner.get("row") or []
-                        return rows if isinstance(rows, list) else [rows]
-        return []
-    except Exception as e:
-        print(f"  [API error] {term}: {e}")
-        return []
+            data = json.loads(data)
+        row = data.get("Table", {}).get("Row", [])
+        if isinstance(row, list) and len(row) > 0 and row[0].get("Asmt") is not None:
+            return row
+    except Exception:
+        pass
+    return []
 
-
-def normalize_row(row: dict, county: str, year: str) -> dict | None:
-    """
-    Normalize a raw API row into our standard schema.
-    MBC API fields observed: Asmt, Situs1, Taxyear, Tra, RollCategory, FeeParcel, RollYear
-    """
-    # Accept various field name casings
+def norm(row, host, county):
     def g(*keys):
         for k in keys:
             v = row.get(k) or row.get(k.lower()) or row.get(k.upper())
-            if v:
-                return str(v).strip()
+            if v: return str(v).strip()
         return ""
-
-    asmt_raw = g("Asmt", "asmt", "ASMT")
-    if not asmt_raw:
+    ac = re.sub(r"\D", "", g("Asmt", "asmt", "ASMT"))
+    if not ac:
         return None
-
-    # Reformat to dashed if not already: 004130006000 -> 004-130-006-000
-    clean = re.sub(r"[^0-9A-Za-z]", "", asmt_raw)
-    if len(clean) == 12 and clean.isdigit():
-        asmt = f"{clean[0:3]}-{clean[3:6]}-{clean[6:9]}-{clean[9:12]}"
-    else:
-        asmt = asmt_raw
-
-    tax_year  = g("Taxyear", "TaxYear", "taxyear") or year
-    roll_year = g("RollYear", "rollyear") or "0000"
-    address   = g("Situs1", "situs1", "Address", "address")
-    tra       = g("Tra", "tra", "TRA")
-    roll_cat  = g("RollCategory", "rollcategory", "RollCat")
-    fee_parcel= g("FeeParcel", "feeparcel", "FeeParcel")
-
-    if fee_parcel and re.match(r'^\d{12}$', fee_parcel):
-        fee_parcel = f"{fee_parcel[0:3]}-{fee_parcel[3:6]}-{fee_parcel[6:9]}-{fee_parcel[9:12]}"
-
+    a = f"{ac[0:3]}-{ac[3:6]}-{ac[6:9]}-{ac[9:12]}" if len(ac) == 12 else ac
+    fp = g("FeeParcel", "feeparcel", "FeeParcel")
+    if fp and re.match(r'^\d{12}$', fp):
+        fp = f"{fp[0:3]}-{fp[3:6]}-{fp[6:9]}-{fp[9:12]}"
     return {
-        "asmt":         asmt,
-        "asmt_raw":     clean,
-        "address":      address,
-        "year":         tax_year,
-        "roll_year":    roll_year,
-        "tra":          tra,
-        "roll_cat":     roll_cat,
-        "fee_parcel":   fee_parcel,
-        "detail_url":   f"https://common1.mptsweb.com/MBC/{county}/tax/main/{clean}/{tax_year}/{roll_year}",
-        "county":       county,
-        "discovered_at": datetime.utcnow().isoformat(),
+        "asmt": a, "asmt_raw": ac, "address": g("Situs1"),
+        "year": "2025", "roll_year": "0000",
+        "tra": g("Tra"), "roll_cat": g("RollCategory"),
+        "fee_parcel": fp,
+        "detail_url": f"{host}/MBC/{county}/tax/main/{ac}/2025/0000",
+        "county": county, "discovered_at": datetime.utcnow().isoformat(),
     }
 
+def discover(county, out_csv):
+    cfg = COUNTY_CONFIG[county]
+    host = cfg["host"]
+    api_base = f"{host}/MBC/api/search/{county}/0000-CURR/feeparcel/"
+    search_url = f"{host}/MBC/{county}/tax/search"
 
-def discover(county: str, output_csv: str):
-    cfg     = COUNTY_CONFIG[county]
-    session = build_session(cfg)
-    parcels = {}  # keyed by (asmt, year) — deduplicates across seeds
+    ckpt_json = out_csv.replace(".csv", "_checkpoint.json")
+    ckpt_csv  = out_csv.replace(".csv", "_partial.csv")
 
-    print(f"[Stage 1] Starting discovery for {county.upper()} — {len(SEEDS)} seeds")
-    print(f"[Stage 1] API base: {cfg['host']}{cfg['appFolder']}api/search/{county}/{cfg['tax_year']}/situs/\n")
+    S = requests.Session()
+    retry_strategy = Retry(
+        total=10, 
+        backoff_factor=2, 
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=["GET", "POST"]
+    )
+    adapter = HTTPAdapter(max_retries=retry_strategy)
+    S.mount("https://", adapter)
+    S.mount("http://", adapter)
 
-    # First, do a warm-up GET on the search page to establish session/cookies
-    try:
-        session.get(
-            f"{cfg['host']}{cfg['appFolder']}{cfg['county_slug']}/tax/search",
-            timeout=15
-        )
-    except:
-        pass
+    S.headers.update({
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "X-Requested-With": "XMLHttpRequest",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+    })
+    S.get(search_url, timeout=15)
+    S.headers["Referer"] = search_url
+    time.sleep(1)
 
-    for i, seed in enumerate(SEEDS):
-        rows = search_api(session, cfg, seed)
-        new_count = 0
+    print(f"\n[{county.upper()} DISCOVERY] -> {out_csv}", flush=True)
+    print(f"  API base: {api_base}", flush=True)
 
-        for row in rows:
-            norm = normalize_row(row, county, cfg["tax_year"])
-            if not norm:
-                continue
-            key = (norm["asmt"], norm["year"])
-            if key not in parcels:
-                parcels[key] = norm
-                new_count += 1
+    # ── Phase 1: find valid books ──
+    valid_books = []
+    if os.path.exists(ckpt_json):
+        with open(ckpt_json) as f:
+            meta = json.load(f)
+            valid_books = meta.get("valid_books", [])
+        if valid_books:
+            print(f"[Resume] Phase 1 already done: {len(valid_books)} books", flush=True)
 
-        status = f"+{new_count} new" if rows else "0 results"
-        print(f"  [{i+1:>3}/{len(SEEDS)}] {seed:<20} -> {status}  (total: {len(parcels)})")
+    if not valid_books:
+        probes = ["050", "150", "250", "350", "450", "550"]
+        seen_books = set()
+        for pv in probes:
+            for book in range(1000):
+                p6 = f"{book:03d}{pv}"
+                rows = get_parcels(S, api_base, p6)
+                if rows:
+                    seen_books.add(book)
+                time.sleep(0.02)
+            print(f"  Probe page={pv}: {len(seen_books)} unique books so far", flush=True)
+        valid_books = sorted(seen_books)
+        with open(ckpt_json, "w") as f:
+            json.dump({"valid_books": valid_books, "completed_books": []}, f)
+        print(f"  Valid books ({len(valid_books)}): {valid_books}", flush=True)
+    else:
+        with open(ckpt_json) as f:
+            meta = json.load(f)
+        completed = set(meta.get("completed_books", []))
+        loaded_asmt = set()
+        loaded_rows = []
+        if os.path.exists(ckpt_csv):
+            pdf = pd.read_csv(ckpt_csv)
+            loaded_asmt = set(pdf["asmt_raw"].dropna().tolist()) if "asmt_raw" in pdf.columns else set()
+            loaded_rows = pdf.to_dict("records")
+            print(f"[Resume] Partial CSV loaded: {len(loaded_rows)} rows, {len(loaded_asmt)} ASMTs", flush=True)
+        else:
+            loaded_rows = []
+        remaining = [b for b in valid_books if b not in completed]
+        if remaining:
+            print(f"[Resume] Skipping {len(completed)} completed books, {len(remaining)} remaining", flush=True)
+        else:
+            print(f"[Resume] All {len(completed)} books already completed", flush=True)
+            if loaded_rows:
+                df = pd.DataFrame(loaded_rows)
+                df.to_csv(out_csv, index=False)
+                print(f"  Final CSV assembled from partial: {len(df)} rows -> {out_csv}", flush=True)
+            return
 
-        # If API returned results, delay politely; skip delay on empty
-        if rows:
-            time.sleep(0.5)
+    # ── Phase 2: scan pages for each valid book ──
+    loaded_asmt = set()
+    loaded_rows = []
+    if os.path.exists(ckpt_csv):
+        pdf = pd.read_csv(ckpt_csv)
+        loaded_asmt = set(pdf["asmt_raw"].dropna().tolist()) if "asmt_raw" in pdf.columns else set()
+        loaded_rows = pdf.to_dict("records")
+        print(f"  Partial CSV: {len(loaded_rows)} rows loaded", flush=True)
 
-    df = pd.DataFrame(list(parcels.values()))
-    df.to_csv(output_csv, index=False)
-    print(f"\n[OK] Stage 1 done — {len(df)} unique parcels -> {output_csv}")
-    return output_csv
+    meta = json.load(open(ckpt_json)) if os.path.exists(ckpt_json) else {"completed_books": []}
+    completed = set(meta.get("completed_books", []))
+    remaining_books = [b for b in valid_books if b not in completed]
 
+    for book in remaining_books:
+        for page in range(0, 1000, 10):
+            p6 = f"{book:03d}{page:03d}"
+            rows = get_parcels(S, api_base, p6)
+            if rows:
+                for r in rows:
+                    aid = r.get("Asmt", "")
+                    if aid and aid not in loaded_asmt:
+                        n = norm(r, host, county)
+                        if n:
+                            loaded_asmt.add(aid)
+                            loaded_rows.append(n)
+                print(f"  {book:03d}-{page:03d}: +{len(rows)} (total: {len(loaded_rows)})", flush=True)
+            time.sleep(0.02)
+
+        pd.DataFrame(loaded_rows).to_csv(ckpt_csv, index=False)
+        completed.add(book)
+        with open(ckpt_json, "w") as f:
+            json.dump({"valid_books": valid_books, "completed_books": sorted(completed)}, f)
+        print(f"  [Checkpoint] Book {book:03d} done. Total: {len(loaded_rows)} rows -> {ckpt_csv}", flush=True)
+
+    df = pd.DataFrame(loaded_rows)
+    df.to_csv(out_csv, index=False)
+    print(f"\nDONE: {len(df)} unique {county} parcels -> {out_csv}", flush=True)
+
+    for cp in [ckpt_json, ckpt_csv]:
+        try:
+            os.remove(cp)
+        except:
+            pass
 
 if __name__ == "__main__":
-    county = sys.argv[1] if len(sys.argv) > 1 else "tehama"
-    ts     = datetime.now().strftime("%Y%m%d_%H%M%S")
-    out    = f"{county}_discovery_{ts}.csv"
-    discover(county, out)
+    county = sys.argv[1].lower() if len(sys.argv) > 1 else "tehama"
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    discover(county, sys.argv[2] if len(sys.argv) > 2 else f"{county}_discovery_{ts}.csv")

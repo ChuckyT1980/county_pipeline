@@ -1,0 +1,23 @@
+display_name: Kern County
+collector_names:
+- KERN TAX COLLECTOR
+- KERN CO TAX COLLR
+- COUNTY OF KERN
+assessor:
+  backend: arcgis
+  notes: no public assessor source discovered yet
+  endpoint: https://gis.kerncounty.com/arcgis/rest/services/Parcels/FeatureServer/0
+recorder:
+  backend: tyler
+  base_url: https://kerncountyca-web.tylerhost.net
+  name_search_id: DOCSEARCH481S4
+  doc_search_id: DOCSEARCH481S4
+  apn_search_id: DOCSEARCH201S9
+  typedate_search_id: DOCSEARCH481S6
+  ajax_headers_required: true
+  notes: discovered automatically
+  endpoint: https://kerncountyca-web.tylerhost.net
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

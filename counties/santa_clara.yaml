@@ -1,0 +1,17 @@
+display_name: Santa Clara County
+collector_names:
+- SANTA CLARA TAX COLLECTOR
+- SANTA CLARA CO TAX COLLR
+- COUNTY OF SANTA CLARA
+assessor:
+  backend: arcgis
+  notes: no public assessor source discovered yet
+  endpoint: https://gis.sccgov.org/arcgis/rest/services/Parcels/FeatureServer/0
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.santaclara.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

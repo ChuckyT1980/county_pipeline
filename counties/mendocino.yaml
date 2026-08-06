@@ -1,0 +1,18 @@
+display_name: Mendocino County
+collector_names:
+- MENDOCINO TAX COLLECTOR
+- MENDOCINO CO TAX COLLR
+- COUNTY OF MENDOCINO
+assessor:
+  backend: mpts
+  notes: no public assessor source discovered yet
+  host: https://common1.mptsweb.com
+  endpoint: https://common1.mptsweb.com/mbap/mendocino/asr/AsrPrint
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.mendocino.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

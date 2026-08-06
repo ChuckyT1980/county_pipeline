@@ -1,0 +1,24 @@
+display_name: Santa Cruz County
+collector_names:
+- SANTA CRUZ TAX COLLECTOR
+- SANTA CRUZ CO TAX COLLR
+- COUNTY OF SANTA CRUZ
+assessor:
+  backend: mpts
+  notes: no public assessor source discovered yet
+  host: https://common1.mptsweb.com
+  endpoint: https://common1.mptsweb.com/mbap/santa_cruz/asr
+recorder:
+  backend: tyler
+  base_url: https://santacruzcountyca-web.tylerhost.net
+  name_search_id: DOCSEARCH201S8
+  doc_search_id: DOCSEARCH201S8
+  apn_search_id: DOCSEARCH201S9
+  typedate_search_id: DOCSEARCH233S1
+  ajax_headers_required: true
+  notes: discovered automatically
+  endpoint: https://santacruzcountyca-web.tylerhost.net
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

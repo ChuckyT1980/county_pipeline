@@ -1,0 +1,111 @@
+[bridge:humboldt] 24,624 doc-bearing parcels to resolve
+[bridge] 250/24624 queried; 204 docs found for 204 parcels
+[bridge] 500/24624 queried; 423 docs found for 219 parcels
+[bridge] 750/24624 queried; 649 docs found for 226 parcels
+[bridge] 1000/24624 queried; 885 docs found for 236 parcels
+[bridge] 1250/24624 queried; 1,093 docs found for 208 parcels
+[bridge] 1500/24624 queried; 1,325 docs found for 232 parcels
+[bridge] 1750/24624 queried; 1,567 docs found for 242 parcels
+[bridge] 2000/24624 queried; 1,806 docs found for 239 parcels
+[bridge] 2250/24624 queried; 2,047 docs found for 241 parcels
+[bridge] 2500/24624 queried; 2,282 docs found for 235 parcels
+[bridge] 2750/24624 queried; 2,525 docs found for 243 parcels
+[bridge] 3000/24624 queried; 2,761 docs found for 236 parcels
+[bridge] 3250/24624 queried; 2,998 docs found for 237 parcels
+[bridge] 3500/24624 queried; 3,239 docs found for 241 parcels
+[bridge] 3750/24624 queried; 3,475 docs found for 236 parcels
+[bridge] 4000/24624 queried; 3,720 docs found for 245 parcels
+[bridge] 4250/24624 queried; 3,948 docs found for 228 parcels
+[bridge] 4500/24624 queried; 4,187 docs found for 239 parcels
+[bridge] 4750/24624 queried; 4,420 docs found for 233 parcels
+[bridge] 5000/24624 queried; 4,660 docs found for 240 parcels
+[bridge] 5250/24624 queried; 4,889 docs found for 229 parcels
+[bridge] 5500/24624 queried; 5,129 docs found for 240 parcels
+[bridge] 5750/24624 queried; 5,371 docs found for 242 parcels
+[bridge] 6000/24624 queried; 5,614 docs found for 243 parcels
+[bridge] 6250/24624 queried; 5,864 docs found for 250 parcels
+[bridge] 6500/24624 queried; 6,105 docs found for 241 parcels
+[bridge] 6750/24624 queried; 6,348 docs found for 243 parcels
+[bridge] 7000/24624 queried; 6,587 docs found for 239 parcels
+[bridge] 7250/24624 queried; 6,827 docs found for 240 parcels
+[bridge] 7500/24624 queried; 7,068 docs found for 241 parcels
+[bridge] 7750/24624 queried; 7,307 docs found for 239 parcels
+[bridge] 8000/24624 queried; 7,545 docs found for 238 parcels
+[bridge] 8250/24624 queried; 7,787 docs found for 242 parcels
+[bridge] 8500/24624 queried; 8,028 docs found for 241 parcels
+[bridge] 8750/24624 queried; 8,262 docs found for 234 parcels
+[bridge] 9000/24624 queried; 8,484 docs found for 222 parcels
+[bridge] 9250/24624 queried; 8,715 docs found for 231 parcels
+[bridge] 9500/24624 queried; 8,942 docs found for 227 parcels
+[bridge] 9750/24624 queried; 9,178 docs found for 236 parcels
+[bridge] 015131040000 FAILED: The read operation timed out
+[bridge] 10000/24624 queried; 9,417 docs found for 239 parcels
+[bridge] 10250/24624 queried; 9,660 docs found for 243 parcels
+[bridge] 10500/24624 queried; 9,902 docs found for 242 parcels
+[bridge] 10750/24624 queried; 10,145 docs found for 243 parcels
+[bridge] 11000/24624 queried; 10,377 docs found for 232 parcels
+[bridge] 017015016000 FAILED: timed out
+[bridge] 11250/24624 queried; 10,604 docs found for 227 parcels
+[bridge] 11500/24624 queried; 10,841 docs found for 237 parcels
+[bridge] 11750/24624 queried; 11,085 docs found for 244 parcels
+[bridge] 12000/24624 queried; 11,323 docs found for 238 parcels
+[bridge] 12250/24624 queried; 11,560 docs found for 237 parcels
+[bridge] 12500/24624 queried; 11,798 docs found for 238 parcels
+[bridge] 12750/24624 queried; 12,040 docs found for 242 parcels
+[bridge] 13000/24624 queried; 12,274 docs found for 234 parcels
+[bridge] 13250/24624 queried; 12,491 docs found for 217 parcels
+[bridge] 13500/24624 queried; 12,713 docs found for 222 parcels
+[bridge] 021073001000 FAILED: The read operation timed out
+[bridge] 13750/24624 queried; 12,950 docs found for 237 parcels
+[bridge] 021164018000 FAILED: The read operation timed out
+[bridge] 14000/24624 queried; 13,176 docs found for 226 parcels
+[bridge] 14250/24624 queried; 13,415 docs found for 239 parcels
+[bridge] 14500/24624 queried; 13,650 docs found for 235 parcels
+[bridge] 14750/24624 queried; 13,876 docs found for 226 parcels
+[bridge] 15000/24624 queried; 14,109 docs found for 233 parcels
+[bridge] 15250/24624 queried; 14,342 docs found for 233 parcels
+[bridge] 15500/24624 queried; 14,580 docs found for 238 parcels
+[bridge] 15750/24624 queried; 14,808 docs found for 228 parcels
+[bridge] 16000/24624 queried; 15,032 docs found for 224 parcels
+[bridge] 16250/24624 queried; 15,256 docs found for 224 parcels
+[bridge] 16500/24624 queried; 15,494 docs found for 238 parcels
+[bridge] 16750/24624 queried; 15,731 docs found for 237 parcels
+[bridge] 040245012000 FAILED: The read operation timed out
+[bridge] 17000/24624 queried; 15,962 docs found for 231 parcels
+[bridge] 17250/24624 queried; 16,193 docs found for 231 parcels
+[bridge] 17500/24624 queried; 16,423 docs found for 230 parcels
+[bridge] 17750/24624 queried; 16,651 docs found for 228 parcels
+[bridge] 052162022000 FAILED: The read operation timed out
+[bridge] 18000/24624 queried; 16,876 docs found for 225 parcels
+[bridge] 18250/24624 queried; 17,119 docs found for 243 parcels
+[bridge] 18500/24624 queried; 17,356 docs found for 237 parcels
+[bridge] 18750/24624 queried; 17,597 docs found for 241 parcels
+[bridge] 19000/24624 queried; 17,827 docs found for 230 parcels
+[bridge] 19250/24624 queried; 18,065 docs found for 238 parcels
+[bridge] 19500/24624 queried; 18,301 docs found for 236 parcels
+[bridge] 095101017000 FAILED: The read operation timed out
+[bridge] 19750/24624 queried; 18,512 docs found for 211 parcels
+[bridge] 20000/24624 queried; 18,732 docs found for 220 parcels
+[bridge] 20250/24624 queried; 18,973 docs found for 241 parcels
+[bridge] 20500/24624 queried; 19,219 docs found for 246 parcels
+[bridge] 20750/24624 queried; 19,453 docs found for 234 parcels
+[bridge] 21000/24624 queried; 19,650 docs found for 197 parcels
+[bridge] 21250/24624 queried; 19,834 docs found for 184 parcels
+[bridge] 21500/24624 queried; 20,070 docs found for 236 parcels
+[bridge] 21750/24624 queried; 20,310 docs found for 240 parcels
+[bridge] 22000/24624 queried; 20,539 docs found for 229 parcels
+[bridge] 107041007000 FAILED: The read operation timed out
+[bridge] 22250/24624 queried; 20,779 docs found for 240 parcels
+[bridge] 22500/24624 queried; 20,980 docs found for 201 parcels
+[bridge] 22750/24624 queried; 21,196 docs found for 216 parcels
+[bridge] 108033022000 FAILED: The read operation timed out
+[bridge] 23000/24624 queried; 21,351 docs found for 155 parcels
+[bridge] 23250/24624 queried; 21,541 docs found for 190 parcels
+[bridge] 23500/24624 queried; 21,773 docs found for 232 parcels
+[bridge] 23750/24624 queried; 22,010 docs found for 237 parcels
+[bridge] 24000/24624 queried; 22,254 docs found for 244 parcels
+[bridge] 109251024000 FAILED: The read operation timed out
+[bridge] 109261023000 FAILED: The read operation timed out
+[bridge] 24250/24624 queried; 22,477 docs found for 223 parcels
+[bridge] 24500/24624 queried; 22,714 docs found for 237 parcels
+[bridge] 24624/24624 queried; 22,832 docs found for 118 parcels

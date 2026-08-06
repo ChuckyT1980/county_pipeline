@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 California Tax Auction Calendar | Free Investor Resource</title>
+    <style>
+        :root {
+            --navy: #1F3A5F;
+            --navy-light: #2E86AB;
+            --orange: #D28228;
+            --bg-light: #E8F1F7;
+            --grey-dark: #3C3C3C;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F4F7FA;
+            color: var(--grey-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            border-bottom: 4px solid var(--orange);
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin: 0;
+            color: var(--orange);
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--navy);
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #CBD5E1;
+            border-radius: 6px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background-color: var(--orange);
+            color: var(--white);
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 0.9rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #b86e1e;
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .features-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.8rem;
+            position: relative;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--orange);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .success-box {
+            display: none;
+            background-color: #DEF7EC;
+            border: 1px solid #31C48D;
+            color: #03543F;
+            padding: 1.2rem;
+            border-radius: 6px;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .success-box a {
+            display: inline-block;
+            margin-top: 0.8rem;
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 0.6rem 1.2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #64748B;
+            font-size: 0.9rem;
+            border-top: 1px solid #E2E8F0;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>California Tax Auction Calendar</h1>
+        <p>2026–2027 Master Schedule Across All 58 Counties</p>
+    </header>
+
+    <div class="container">
+        <!-- Value Prop Side -->
+        <div>
+            <h2>Never Miss a County Tax Sale</h2>
+            <p>Tracking property tax auctions in California is notoriously fragmented across 5 different platforms and 58 county Tax Collectors.</p>
+            <p>Our free 2026 Master Calendar aggregates all upcoming sales into one clean, verified schedule.</p>
+            
+            <ul class="features-list">
+                <li><strong>Complete Coverage:</strong> Bid4Assets, GovEase, MyTaxSale, Realauction & In-Person</li>
+                <li><strong>Verified Dates:</strong> Exact start & end dates for 46+ California counties</li>
+                <li><strong>Priority Alerts:</strong> Flagged high-yield auction windows (e.g. Butte Aug 7-10)</li>
+                <li><strong>Platform Directory:</strong> Direct portal links for every single county</li>
+            </ul>
+
+            <p style="font-size: 0.9rem; color: #64748B; background: #E2E8F0; padding: 0.8rem; border-radius: 6px;">
+                💡 <strong>Targeting a specific county?</strong> We build deep-dive pre-scored investor intelligence packs for every California tax sale.
+            </p>
+        </div>
+
+        <!-- Form Side -->
+        <div class="card">
+            <h3>Download Free Calendar (PDF)</h3>
+            <p style="font-size: 0.9rem; color: #64748B; margin-bottom: 1.5rem;">Instant download. Enter your details below to get immediate access.</p>
+
+            <form id="leadForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" required placeholder="John Smith">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required placeholder="john@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="county">Primary County of Interest</label>
+                    <select id="county" required>
+                        <option value="">Select County...</option>
+                        <option value="Butte">Butte County</option>
+                        <option value="Shasta">Shasta County</option>
+                        <option value="Tehama">Tehama County</option>
+                        <option value="Riverside">Riverside County</option>
+                        <option value="Los Angeles">Los Angeles County</option>
+                        <option value="San Diego">San Diego County</option>
+                        <option value="Kern">Kern County</option>
+                        <option value="Fresno">Fresno County</option>
+                        <option value="San Bernardino">San Bernardino County</option>
+                        <option value="Alameda">Alameda County</option>
+                        <option value="Stanislaus">Stanislaus County</option>
+                        <option value="El Dorado">El Dorado County</option>
+                        <option value="Sacramento">Sacramento County</option>
+                        <option value="All Counties">All 58 CA Counties</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Get Free Calendar PDF →</button>
+            </form>
+
+            <div id="successBox" class="success-box">
+                <h4>✓ Calendar Ready!</h4>
+                <p>Your download is ready below:</p>
+                <a href="california_auction_calendar_2026.pdf" download target="_blank">Download Calendar PDF</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Logic Flow Systems | Charles Terrell | Contact: <a href="mailto:mrt@logicflowsystems.io">mrt@logicflowsystems.io</a></p>
+    </footer>
+
+    <script>
+        // Uses FormSubmit.co -- free, no signup, submissions email directly to mrt@logicflowsystems.io.
+        // First submission requires clicking a one-time activation link that FormSubmit emails.
+        const FORMSUBMIT_ENDPOINT = "https://formsubmit.co/ajax/mrt@logicflowsystems.io";
+
+        document.getElementById('leadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const name = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const county = document.getElementById('county').value;
+            const timestamp = new Date().toISOString();
+
+            const payload = {
+                name: name,
+                email: email,
+                county_of_interest: county,
+                timestamp: timestamp,
+                _subject: `New Calendar Download: ${name} (${county})`,
+                _template: "table",
+                _captcha: "false"
+            };
+
+            try {
+                const resp = await fetch(FORMSUBMIT_ENDPOINT, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify(payload)
+                });
+                if (!resp.ok) throw new Error("submit failed");
+            } catch (err) {
+                // Fallback: open mailto so user still delivers the info directly
+                const body = encodeURIComponent(
+                    `Name: ${name}\nEmail: ${email}\nCounty: ${county}\nTimestamp: ${timestamp}`
+                );
+                window.location.href =
+                    `mailto:mrt@logicflowsystems.io?subject=Calendar Download Request&body=${body}`;
+            }
+
+            // UI feedback (either path)
+            document.getElementById('leadForm').style.display = 'none';
+            document.getElementById('successBox').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

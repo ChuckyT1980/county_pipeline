@@ -1,0 +1,33 @@
+display_name: Tulare County
+collector_names:
+- TULARE TAX COLLECTOR
+- TULARE CO TAX COLLR
+- COUNTY OF TULARE
+assessor:
+  backend: mpts
+  endpoint: https://common1.mptsweb.com/mbap/tulare/asr
+  apn_includes:
+  - 1 Main
+  - 2 Main
+  - 1 Oak
+  - 2 Oak
+  - 1 Pine
+  - 1st
+  - 2nd
+  - 3rd
+  notes: Auto-onboarded by onboard_county.py. MPTS host common1.mptsweb.com slug tulare
+  host: https://common1.mptsweb.com
+recorder:
+  backend: county_portal
+  base_url: https://tularecountyca-web.tylerhost.net
+  name_search_id: DOCSEARCH708S1
+  doc_search_id: null
+  apn_search_id: null
+  typedate_search_id: null
+  ajax_headers_required: true
+  notes: discovered automatically
+  endpoint: https://recorder.tulare.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

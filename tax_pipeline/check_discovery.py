@@ -1,0 +1,10 @@
+import pandas as pd
+df = pd.read_csv("tehama_discovery_20260627_004437.csv")
+print(f"Rows: {len(df)}")
+print(f"Columns: {list(df.columns)}")
+print(f"Addresses: {df['address'].notna().sum()} with address, {df['address'].isna().sum()} without")
+print(f"Unique TRAs: {df['tra'].nunique()}")
+print(f"Roll cats: {df['roll_cat'].value_counts().to_dict()}")
+print()
+print("Sample rows:")
+print(df.head(5).to_string())

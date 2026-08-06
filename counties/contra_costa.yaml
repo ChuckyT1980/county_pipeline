@@ -1,0 +1,17 @@
+display_name: Contra Costa County
+collector_names:
+- CONTRA COSTA TAX COLLECTOR
+- CONTRA COSTA CO TAX COLLR
+- COUNTY OF CONTRA COSTA
+assessor:
+  backend: arcgis
+  notes: no public assessor source discovered yet
+  endpoint: https://gis.cccounty.us/arcgis/rest/services/Parcels/FeatureServer/0
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.contracosta.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

@@ -1,99 +1,73 @@
+"""
+query.py — interrogate the unified county dataset.
+
+    python query.py --county fresno --where "tax_deed='yes'"
+    python query.py --county fresno --sql "SELECT * FROM parcels WHERE values != '' LIMIT 5"
+    python query.py --county fresno --summary
+
+The state store is plain SQLite — any SQL tool works too.
+"""
+import argparse
+import sqlite3
 import sys
-import json
-from analysis.query_plane import QueryPlane
+from pathlib import Path
 
-def coerce_arg(arg: str):
-    if arg.isdigit():
-        return int(arg)
-    try:
-        return float(arg)
-    except ValueError:
-        return arg
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-def load_registry():
-    import os
-    registry_path = os.path.join("analysis", "command_registry.json")
-    with open(registry_path, "r") as f:
-        return json.load(f)
+from core.county import CountyConfig, list_counties
 
-def resolve_command(registry, domain, action, version_override=None):
-    command_key = f"{domain}.{action}"
-    if command_key not in registry:
-        raise ValueError(f"Unknown command namespace: {command_key}")
-        
-    versions = registry[command_key]
-    
-    if version_override:
-        if version_override not in versions:
-            raise ValueError(f"Version {version_override} not found for command {command_key}")
-        target_version = version_override
+
+def main(argv=None):
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--county", required=True, choices=list_counties())
+    ap.add_argument("--sql", default="", help="raw SQL query")
+    ap.add_argument("--where", default="", help="WHERE clause on parcels")
+    ap.add_argument("--summary", action="store_true")
+    ap.add_argument("--limit", type=int, default=50)
+    args = ap.parse_args(argv)
+
+    cfg = CountyConfig.load(args.county)
+    db = cfg.data_dir() / "state.sqlite"
+    if not db.exists():
+        print(f"no state store yet for {cfg.county} — run: pipeline.py --county {cfg.county} --stage source")
+        return
+
+    conn = sqlite3.connect(str(db))
+    conn.row_factory = sqlite3.Row
+
+    if args.summary:
+        cols = conn.execute("PRAGMA table_info(parcels)").fetchall()
+        total = conn.execute("SELECT COUNT(*) FROM parcels").fetchone()[0]
+        print(f"{cfg.county}: {total:,} parcels in state\n")
+        for c in cols:
+            if c["name"].endswith("_known"):
+                f = c["name"][:-6]
+                n = conn.execute(f'SELECT COUNT(*) FROM parcels WHERE "{c["name"]}"=1').fetchone()[0]
+                print(f"  {f:16s} {n:>10,} known ({100*n/total:.0f}%)")
+        # passes log
+        print("\nloop passes:")
+        for row in conn.execute("SELECT * FROM passes ORDER BY id DESC LIMIT 10"):
+            print(f"  {row['ts']}  {row['action']:20s} {row['count']}")
+        conn.close()
+        return
+
+    if args.sql:
+        q = args.sql
+    elif args.where:
+        q = ('SELECT apn, owner, former_owner, tax_deed, "values", '
+             'situs, use, mailing FROM parcels WHERE '
+             + args.where + f" LIMIT {args.limit}")
     else:
-        # Find latest stable
-        stable_versions = [v for v, meta in versions.items() if meta.get("stable") is True]
-        if not stable_versions:
-            raise ValueError(f"No stable version found for command {command_key}")
-        target_version = sorted(stable_versions, reverse=True)[0] # e.g. v2 over v1
-        
-    meta = versions[target_version]
-    if meta.get("status") == "deprecated":
-        # Log to stderr to not corrupt json stdout
-        print(f"[WARNING] Command {command_key} {target_version} is deprecated: {meta.get('notes', '')}", file=sys.stderr)
-        
-    return meta
+        q = ('SELECT apn, owner, former_owner, tax_deed, "values", situs '
+             f"FROM parcels LIMIT {args.limit}")
 
-def main():
-    args_list = sys.argv[1:]
-    
-    if len(args_list) >= 4 and args_list[0] == "compat" and args_list[1] == "compare":
-        # query compat compare <command> <v1> <v2>
-        from analysis.sct_engine import CompatibilityAnalyzer
-        analyzer = CompatibilityAnalyzer()
-        try:
-            result = analyzer.compare(args_list[2], args_list[3], args_list[4])
-            print(json.dumps(result, indent=2))
-        except Exception as e:
-            print(json.dumps({"error": str(e)}, indent=2))
-        sys.exit(0)
-        
-    version = None
-    if len(args_list) >= 2 and args_list[0] == "--version":
-        version = args_list[1]
-        args_list = args_list[2:]
-        
-    if len(args_list) < 2:
-        print(json.dumps({"error": "Usage: python query.py [--version v1] <domain> <action> [args...]\n   or: python query.py compat compare <command> <v1> <v2>"}), indent=2)
-        sys.exit(1)
-        
-    domain = args_list[0]
-    action = args_list[1]
-    raw_args = args_list[2:]
-    args = [coerce_arg(a) for a in raw_args]
-    
-    registry = load_registry()
     try:
-        cmd_meta = resolve_command(registry, domain, action, version)
-    except ValueError as e:
-        print(json.dumps({"error": str(e)}), indent=2)
-        sys.exit(1)
-        
-    query = QueryPlane()
-    
-    # Resolve function: "drift.over_time"
-    func_path = cmd_meta["function"].split(".")
-    obj = query
-    for attr in func_path:
-        obj = getattr(obj, attr)
-    func = obj
-    
-    try:
-        result = func(*args)
-        print(json.dumps(result, indent=2))
-    except TypeError as e:
-        print(json.dumps({"error": f"Invalid arguments for {domain} {action}: {str(e)}"}, indent=2))
-        sys.exit(1)
-    except Exception as e:
-        print(json.dumps({"error": str(e)}, indent=2))
-        sys.exit(1)
+        for row in conn.execute(q):
+            print(" | ".join(f"{k}={row[k]}" for k in row.keys() if row[k] not in (None, "")))
+    except sqlite3.Error as e:
+        print(f"SQL error: {e}")
+    conn.close()
+
 
 if __name__ == "__main__":
     main()

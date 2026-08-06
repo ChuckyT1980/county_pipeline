@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(\\(Get-Item HEALTH_REPORT.md\\) | Select-Object Length, LastWriteTime)",
+      "WebFetch(domain:www.slocounty.ca.gov)",
+      "Bash(python -m surplus.dossier --outdir \"surplus/_smoke_dossiers\" --combined \"surplus/_smoke_all.pdf\" --include-expired)"
+    ]
+  }
+}

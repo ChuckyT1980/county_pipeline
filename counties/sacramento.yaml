@@ -1,0 +1,17 @@
+display_name: Sacramento County
+collector_names:
+- SACRAMENTO TAX COLLECTOR
+- SACRAMENTO CO TAX COLLR
+- COUNTY OF SACRAMENTO
+assessor:
+  backend: socrata
+  notes: no public assessor source discovered yet
+  endpoint: https://data.saccounty.net/resource/assessor.json
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.sacramento.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

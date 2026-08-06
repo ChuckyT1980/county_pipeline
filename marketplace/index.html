@@ -1,0 +1,2468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>California Tax Auction Intelligence Marketplace | Logic Flow Systems</title>
+<meta name="description" content="Verified per-parcel intelligence dossiers for California tax auctions. $99 each. Butte County Aug 7-10 auction inventory now available.">
+<style>
+  :root {
+    --navy: #1F3A5F; --navy-light: #2E86AB; --orange: #D28228;
+    --red: #C03C3C; --grey-dark: #3C3C3C; --grey-mid: #78788C;
+    --bg-light: #E8F1F7; --white: #FFFFFF; --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         margin: 0; background: #F4F7FA; color: var(--grey-dark); line-height: 1.5; }
+  header { background: var(--navy); color: var(--white); padding: 2rem 1.5rem;
+            border-bottom: 4px solid var(--orange); }
+  header .container { max-width: 1200px; margin: 0 auto; }
+  h1 { margin: 0 0 0.5rem 0; font-size: 1.9rem; }
+  header .tagline { margin: 0; color: var(--orange); font-weight: 500; }
+
+  .stats-bar { background: var(--white); padding: 1rem 1.5rem; box-shadow: var(--shadow);
+                border-bottom: 1px solid #E2E8F0; }
+  .stats-bar .container { max-width: 1200px; margin: 0 auto; display: flex; gap: 2rem;
+                            flex-wrap: wrap; align-items: center; }
+  .stat { display: flex; flex-direction: column; }
+  .stat-value { font-size: 1.3rem; font-weight: 700; color: var(--navy); }
+  .stat-label { font-size: 0.8rem; color: var(--grey-mid); text-transform: uppercase;
+                  letter-spacing: 0.5px; }
+
+  .intro { background: var(--bg-light); padding: 1.5rem; border-left: 4px solid var(--navy-light); }
+  .intro .container { max-width: 1200px; margin: 0 auto; }
+  .intro p { margin: 0.5rem 0; }
+  .intro strong { color: var(--navy); }
+
+  main { max-width: 1200px; margin: 2rem auto; padding: 0 1.5rem; }
+  h2 { color: var(--navy); font-size: 1.4rem; margin: 0 0 0.5rem 0; }
+  .county-note { color: var(--grey-mid); font-size: 0.9rem; margin-bottom: 1.5rem; }
+
+  .tile-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+                gap: 1.5rem; }
+
+  .tile { background: var(--white); border-radius: 8px; overflow: hidden;
+           box-shadow: var(--shadow); display: flex; flex-direction: column;
+           transition: transform 0.15s ease, box-shadow 0.15s ease; }
+  .tile:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.12); }
+
+  .tile-thumb { height: 160px; background: #E8E8E8; overflow: hidden; position: relative; }
+  .tile-thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .thumb-placeholder { display: flex; align-items: center; justify-content: center;
+                         height: 100%; color: var(--grey-mid); font-size: 0.9rem;
+                         font-style: italic; }
+
+  .tile-body { padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem; flex: 1; }
+  .tile-header { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.3rem; }
+  .pill { font-size: 0.65rem; font-weight: 700; padding: 3px 8px; border-radius: 3px;
+           color: var(--white); text-transform: uppercase; letter-spacing: 0.5px; }
+  .tile-priority { background: var(--navy-light); color: var(--white); font-size: 0.7rem;
+                     font-weight: 700; padding: 3px 8px; border-radius: 3px; letter-spacing: 0.5px; }
+  .pill-absentee { background: var(--orange); }
+  .pill-distress { background: var(--red); }
+
+  .tile-owner { font-weight: 700; font-size: 1.05rem; color: var(--navy);
+                  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .tile-apn { font-size: 0.8rem; color: var(--grey-mid); font-family: monospace; }
+  .tile-situs { font-size: 0.9rem; color: var(--grey-dark); }
+
+  .tile-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;
+                    margin: 0.5rem 0; padding: 0.5rem 0; border-top: 1px solid #F0F0F0;
+                    border-bottom: 1px solid #F0F0F0; }
+  .metric-label { font-size: 0.7rem; color: var(--grey-mid); text-transform: uppercase;
+                    letter-spacing: 0.5px; }
+  .metric-value { font-size: 1rem; font-weight: 700; color: var(--navy); }
+
+  .order-btn { display: block; background: var(--orange); color: var(--white);
+                text-align: center; padding: 0.7rem; border-radius: 6px;
+                text-decoration: none; font-weight: 700; margin-top: auto;
+                transition: background 0.15s ease; }
+  .order-btn:hover { background: #b06f1e; }
+
+  footer { max-width: 1200px; margin: 3rem auto 1rem; padding: 2rem 1.5rem;
+            border-top: 1px solid #E2E8F0; color: var(--grey-mid); font-size: 0.85rem;
+            text-align: center; }
+  footer a { color: var(--navy); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>California Tax Auction Intelligence Marketplace</h1>
+    <p class="tagline">Verified per-parcel dossiers  |  Public sources  |  Live-verified</p>
+  </div>
+</header>
+
+<div class="stats-bar">
+  <div class="container">
+    <div class="stat"><span class="stat-value">90</span><span class="stat-label">Parcels available</span></div>
+    <div class="stat"><span class="stat-value">$4,560,216</span><span class="stat-label">Total defaulted</span></div>
+    <div class="stat"><span class="stat-value">$99</span><span class="stat-label">Per dossier</span></div>
+    <div class="stat"><span class="stat-value">Aug 7-10</span><span class="stat-label">Auction dates</span></div>
+  </div>
+</div>
+
+<div class="intro">
+  <div class="container">
+    <p><strong>Each dossier includes:</strong> Owner name + mailing + situs + defaulted balance + assessed values + recorder document history + distress signals + fire/flood hazard + aerial view + tax bill archive.</p>
+    <p><strong>How it works:</strong> Click <em>Order Dossier &mdash; $99</em> on any parcel. Your email client will open with a pre-filled order. Chuck will reply with Zelle payment details. You get the PDF within 30 minutes of payment.</p>
+    <p><strong>Guarantee:</strong> If any material field is wrong &mdash; owner, mailing, defaulted balance &mdash; full refund on that parcel. Every field cross-referenced against live county records.</p>
+  </div>
+</div>
+
+<main>
+  <h2>Butte County  |  Aug 7-10, 2026 Auction</h2>
+  <p class="county-note">90 mail-ready parcels sorted by priority score. Fresno &amp; other counties launching Sept 2026.</p>
+
+  <div class="tile-grid">
+    
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/035-143-011-000.png" alt="Aerial 035-143-011-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 83</span>
+          
+          <span class="pill pill-distress">DISTRESS 42</span>
+        </div>
+        <div class="tile-owner">MACIAS THOMAS C</div>
+        <div class="tile-apn">APN 035-143-011-000</div>
+        <div class="tile-situs">Oroville</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$86,820</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$174,151</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 035-143-011-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 035-143-011-000 (MACIAS THOMAS C) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 82</span>
+          
+          <span class="pill pill-distress">DISTRESS 52</span>
+        </div>
+        <div class="tile-owner">REEVES SUSANNE MAY</div>
+        <div class="tile-apn">APN 058-410-029-000</div>
+        <div class="tile-situs">Concow</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$74,938</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$15,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 058-410-029-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 058-410-029-000 (REEVES SUSANNE MAY) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/066-130-036-000.png" alt="Aerial 066-130-036-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 82</span>
+          
+          
+        </div>
+        <div class="tile-owner">CONWAY DONNA L</div>
+        <div class="tile-apn">APN 066-130-036-000</div>
+        <div class="tile-situs">Magalia</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$75,923</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$12,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 066-130-036-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 066-130-036-000 (CONWAY DONNA L) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/035-083-006-000.png" alt="Aerial 035-083-006-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 82</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (KS)</span>
+          <span class="pill pill-distress">DISTRESS 46</span>
+        </div>
+        <div class="tile-owner">TACKET BONNIE F</div>
+        <div class="tile-apn">APN 035-083-006-000</div>
+        <div class="tile-situs">Oroville</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$72,797</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$28,930</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 035-083-006-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 035-083-006-000 (TACKET BONNIE F) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/069-190-021-000.png" alt="Aerial 069-190-021-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 82</span>
+          
+          <span class="pill pill-distress">DISTRESS 53</span>
+        </div>
+        <div class="tile-owner">MARTIN ROBERT TRUSTEE</div>
+        <div class="tile-apn">APN 069-190-021-000</div>
+        <div class="tile-situs">Oroville</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$70,766</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$63,713</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 069-190-021-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 069-190-021-000 (MARTIN ROBERT TRUSTEE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/035-155-019-000.png" alt="Aerial 035-155-019-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 81</span>
+          
+          <span class="pill pill-distress">DISTRESS 42</span>
+        </div>
+        <div class="tile-owner">PURVIS JOHN</div>
+        <div class="tile-apn">APN 035-155-019-000</div>
+        <div class="tile-situs">Oroville</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$63,902</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$18,830</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 035-155-019-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 035-155-019-000 (PURVIS JOHN) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/062-300-077-000.png" alt="Aerial 062-300-077-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 81</span>
+          
+          <span class="pill pill-distress">DISTRESS 41</span>
+        </div>
+        <div class="tile-owner">JOHNSON MYRA</div>
+        <div class="tile-apn">APN 062-300-077-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$63,384</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$51,565</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-300-077-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-300-077-000 (JOHNSON MYRA) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/035-112-009-000.png" alt="Aerial 035-112-009-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 80</span>
+          
+          <span class="pill pill-distress">DISTRESS 44</span>
+        </div>
+        <div class="tile-owner">WHITFIELD SARAH</div>
+        <div class="tile-apn">APN 035-112-009-000</div>
+        <div class="tile-situs">Oroville</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$55,409</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$19,184</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 035-112-009-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 035-112-009-000 (WHITFIELD SARAH) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/055-330-017-000.png" alt="Aerial 055-330-017-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 80</span>
+          
+          
+        </div>
+        <div class="tile-owner">WEATHERS DAVID O</div>
+        <div class="tile-apn">APN 055-330-017-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$52,114</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$30,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 055-330-017-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 055-330-017-000 (WEATHERS DAVID O) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/062-190-029-000.png" alt="Aerial 062-190-029-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 80</span>
+          
+          
+        </div>
+        <div class="tile-owner">DELABY RICHARD J</div>
+        <div class="tile-apn">APN 062-190-029-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$50,124</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$58,752</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-190-029-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-190-029-000 (DELABY RICHARD J) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/051-171-067-000.png" alt="Aerial 051-171-067-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 79</span>
+          
+          
+        </div>
+        <div class="tile-owner">HOLLY ALYSSA ANNE TRUSTEE</div>
+        <div class="tile-apn">APN 051-171-067-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$48,773</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$30,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 051-171-067-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 051-171-067-000 (HOLLY ALYSSA ANNE TRUSTEE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 79</span>
+          
+          
+        </div>
+        <div class="tile-owner">DUNCAN SUNJA</div>
+        <div class="tile-apn">APN 058-260-060-000</div>
+        <div class="tile-situs">Concow</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$48,741</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$41,480</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 058-260-060-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 058-260-060-000 (DUNCAN SUNJA) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/001-081-018-000.png" alt="Aerial 001-081-018-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 77</span>
+          
+          
+        </div>
+        <div class="tile-owner">HONAN GARY</div>
+        <div class="tile-apn">APN 001-081-018-000</div>
+        <div class="tile-situs">Biggs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$44,781</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$25,515</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 001-081-018-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 001-081-018-000 (HONAN GARY) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 76</span>
+          
+          <span class="pill pill-distress">DISTRESS 64</span>
+        </div>
+        <div class="tile-owner">HAYES KEVIN L</div>
+        <div class="tile-apn">APN 031-281-137-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$44,188</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$97,570</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 031-281-137-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 031-281-137-000 (HAYES KEVIN L) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/051-083-079-000.png" alt="Aerial 051-083-079-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 75</span>
+          
+          
+        </div>
+        <div class="tile-owner">GAKLE JOHN R TRUST A</div>
+        <div class="tile-apn">APN 051-083-079-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$42,259</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$35,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 051-083-079-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 051-083-079-000 (GAKLE JOHN R TRUST A) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/059-087-011-000.png" alt="Aerial 059-087-011-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 75</span>
+          
+          
+        </div>
+        <div class="tile-owner">SIMMONS LINDA S</div>
+        <div class="tile-apn">APN 059-087-011-000</div>
+        <div class="tile-situs">Stirling City</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$42,412</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$18,124</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 059-087-011-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 059-087-011-000 (SIMMONS LINDA S) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/050-040-132-000.png" alt="Aerial 050-040-132-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 73</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (OR)</span>
+          
+        </div>
+        <div class="tile-owner">BALDWIN SHIRLEY L</div>
+        <div class="tile-apn">APN 050-040-132-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$38,373</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$35,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 050-040-132-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 050-040-132-000 (BALDWIN SHIRLEY L) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/054-192-095-000.png" alt="Aerial 054-192-095-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 72</span>
+          
+          <span class="pill pill-distress">DISTRESS 42</span>
+        </div>
+        <div class="tile-owner">DEIGAL KENNETH E</div>
+        <div class="tile-apn">APN 054-192-095-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$37,089</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$30,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 054-192-095-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 054-192-095-000 (DEIGAL KENNETH E) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 72</span>
+          
+          <span class="pill pill-distress">DISTRESS 72</span>
+        </div>
+        <div class="tile-owner">ABADIR PERRY</div>
+        <div class="tile-apn">APN 033-232-026-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$36,903</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$50,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 033-232-026-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 033-232-026-000 (ABADIR PERRY) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/054-161-037-000.png" alt="Aerial 054-161-037-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 72</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (NY)</span>
+          <span class="pill pill-distress">DISTRESS 46</span>
+        </div>
+        <div class="tile-owner">MALLOY KRISTY</div>
+        <div class="tile-apn">APN 054-161-037-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$36,594</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$20,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 054-161-037-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 054-161-037-000 (MALLOY KRISTY) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/062-300-078-000.png" alt="Aerial 062-300-078-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 71</span>
+          
+          
+        </div>
+        <div class="tile-owner">KHAN SAHAR</div>
+        <div class="tile-apn">APN 062-300-078-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$35,247</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$51,565</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-300-078-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-300-078-000 (KHAN SAHAR) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/001-081-007-000.png" alt="Aerial 001-081-007-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 70</span>
+          
+          
+        </div>
+        <div class="tile-owner">DEWSNUP KYLE THOMAS</div>
+        <div class="tile-apn">APN 001-081-007-000</div>
+        <div class="tile-situs">Biggs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$33,216</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$11,836</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 001-081-007-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 001-081-007-000 (DEWSNUP KYLE THOMAS) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/066-230-047-000.png" alt="Aerial 066-230-047-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 69</span>
+          
+          
+        </div>
+        <div class="tile-owner">SALA TODD M</div>
+        <div class="tile-apn">APN 066-230-047-000</div>
+        <div class="tile-situs">Magalia</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$31,127</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$12,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 066-230-047-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 066-230-047-000 (SALA TODD M) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/055-130-089-000.png" alt="Aerial 055-130-089-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 68</span>
+          
+          
+        </div>
+        <div class="tile-owner">GLENNON MARGIE J</div>
+        <div class="tile-apn">APN 055-130-089-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$29,430</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$30,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 055-130-089-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 055-130-089-000 (GLENNON MARGIE J) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 67</span>
+          
+          <span class="pill pill-distress">DISTRESS 71</span>
+        </div>
+        <div class="tile-owner">ABADIR PERRY</div>
+        <div class="tile-apn">APN 033-232-022-000</div>
+        <div class="tile-situs">Oroville</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$28,007</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$30,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 033-232-022-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 033-232-022-000 (ABADIR PERRY) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 67</span>
+          
+          <span class="pill pill-distress">DISTRESS 71</span>
+        </div>
+        <div class="tile-owner">ABADIR PERRY</div>
+        <div class="tile-apn">APN 033-232-025-000</div>
+        <div class="tile-situs">Oroville</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$27,662</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$30,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 033-232-025-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 033-232-025-000 (ABADIR PERRY) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/052-040-067-000.png" alt="Aerial 052-040-067-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 66</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (OR)</span>
+          
+        </div>
+        <div class="tile-owner">STORMER SCOTT THOMAS</div>
+        <div class="tile-apn">APN 052-040-067-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$26,013</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$35,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 052-040-067-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 052-040-067-000 (STORMER SCOTT THOMAS) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/062-320-008-000.png" alt="Aerial 062-320-008-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 65</span>
+          
+          
+        </div>
+        <div class="tile-owner">ELLISON LEE ANN</div>
+        <div class="tile-apn">APN 062-320-008-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$24,426</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$45,510</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-320-008-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-320-008-000 (ELLISON LEE ANN) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 65</span>
+          
+          
+        </div>
+        <div class="tile-owner">SOLOMON LEONARD</div>
+        <div class="tile-apn">APN 072-200-034-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$24,507</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$52,493</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 072-200-034-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 072-200-034-000 (SOLOMON LEONARD) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/062-350-024-000.png" alt="Aerial 062-350-024-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 65</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (OR)</span>
+          
+        </div>
+        <div class="tile-owner">TAYLOR GREGORY D</div>
+        <div class="tile-apn">APN 062-350-024-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$24,337</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$24,622</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-350-024-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-350-024-000 (TAYLOR GREGORY D) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 64</span>
+          
+          <span class="pill pill-distress">DISTRESS 70</span>
+        </div>
+        <div class="tile-owner">ABADIR PERRY</div>
+        <div class="tile-apn">APN 033-232-003-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$24,026</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$25,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 033-232-003-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 033-232-003-000 (ABADIR PERRY) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/062-710-019-000.png" alt="Aerial 062-710-019-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 64</span>
+          
+          
+        </div>
+        <div class="tile-owner">FRANCIS GEORGE</div>
+        <div class="tile-apn">APN 062-710-019-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$23,124</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$21,648</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-710-019-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-710-019-000 (FRANCIS GEORGE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/054-260-006-000.png" alt="Aerial 054-260-006-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 64</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (OR)</span>
+          
+        </div>
+        <div class="tile-owner">BROWN SUSAN</div>
+        <div class="tile-apn">APN 054-260-006-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$22,828</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$25,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 054-260-006-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 054-260-006-000 (BROWN SUSAN) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/052-011-094-000.png" alt="Aerial 052-011-094-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 63</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (AZ)</span>
+          
+        </div>
+        <div class="tile-owner">BUCK DONALD GEORGE</div>
+        <div class="tile-apn">APN 052-011-094-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$22,348</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$10,381</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 052-011-094-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 052-011-094-000 (BUCK DONALD GEORGE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 63</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (OR)</span>
+          
+        </div>
+        <div class="tile-owner">SEJ PROPERTIES LLC</div>
+        <div class="tile-apn">APN 071-270-029-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$21,731</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$55,774</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 071-270-029-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 071-270-029-000 (SEJ PROPERTIES LLC) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 63</span>
+          
+          
+        </div>
+        <div class="tile-owner">GIANNUZZI KATIE</div>
+        <div class="tile-apn">APN 062-300-006-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$21,151</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$10,899</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-300-006-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-300-006-000 (GIANNUZZI KATIE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 62</span>
+          
+          
+        </div>
+        <div class="tile-owner">GIANNUZZI KATIE</div>
+        <div class="tile-apn">APN 062-300-005-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$20,281</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$10,899</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-300-005-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-300-005-000 (GIANNUZZI KATIE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 62</span>
+          
+          
+        </div>
+        <div class="tile-owner">MEYERS WAYNE E JR</div>
+        <div class="tile-apn">APN 071-280-038-000</div>
+        <div class="tile-situs">Feather Falls</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$20,213</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$68,997</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 071-280-038-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 071-280-038-000 (MEYERS WAYNE E JR) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/066-050-011-000.png" alt="Aerial 066-050-011-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 62</span>
+          
+          
+        </div>
+        <div class="tile-owner">SORENSEN BONNIE</div>
+        <div class="tile-apn">APN 066-050-011-000</div>
+        <div class="tile-situs">Magalia</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$20,089</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$12,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 066-050-011-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 066-050-011-000 (SORENSEN BONNIE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/062-690-027-000.png" alt="Aerial 062-690-027-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 61</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (NY)</span>
+          
+        </div>
+        <div class="tile-owner">HARMOND SHIRNET</div>
+        <div class="tile-apn">APN 062-690-027-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$18,019</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$78,082</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-690-027-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-690-027-000 (HARMOND SHIRNET) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/066-270-036-000.png" alt="Aerial 066-270-036-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 61</span>
+          
+          
+        </div>
+        <div class="tile-owner">RAZO-ORREGO ARIANA M</div>
+        <div class="tile-apn">APN 066-270-036-000</div>
+        <div class="tile-situs">Magalia</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$18,008</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$12,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 066-270-036-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 066-270-036-000 (RAZO-ORREGO ARIANA M) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/062-750-036-000.png" alt="Aerial 062-750-036-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 61</span>
+          
+          
+        </div>
+        <div class="tile-owner">BYERS JO A</div>
+        <div class="tile-apn">APN 062-750-036-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$17,749</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$24,622</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-750-036-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-750-036-000 (BYERS JO A) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/062-340-018-000.png" alt="Aerial 062-340-018-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 60</span>
+          
+          
+        </div>
+        <div class="tile-owner">TOUPES MICHAEL</div>
+        <div class="tile-apn">APN 062-340-018-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$17,414</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$34,837</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-340-018-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-340-018-000 (TOUPES MICHAEL) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/066-100-010-000.png" alt="Aerial 066-100-010-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 60</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (OR)</span>
+          <span class="pill pill-distress">DISTRESS 46</span>
+        </div>
+        <div class="tile-owner">DAVIDOW TYLER</div>
+        <div class="tile-apn">APN 066-100-010-000</div>
+        <div class="tile-situs">Magalia</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$17,411</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$12,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 066-100-010-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 066-100-010-000 (DAVIDOW TYLER) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 60</span>
+          
+          
+        </div>
+        <div class="tile-owner">FARLEY MICHAEL</div>
+        <div class="tile-apn">APN 058-330-038-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$17,170</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$29,581</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 058-330-038-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 058-330-038-000 (FARLEY MICHAEL) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 60</span>
+          
+          
+        </div>
+        <div class="tile-owner">CRUMMY JEFFREY S</div>
+        <div class="tile-apn">APN 058-330-046-000</div>
+        <div class="tile-situs">Concow</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$16,714</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$33,464</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 058-330-046-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 058-330-046-000 (CRUMMY JEFFREY S) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 60</span>
+          
+          <span class="pill pill-distress">DISTRESS 44</span>
+        </div>
+        <div class="tile-owner">YOUNG JAMES SCOTT</div>
+        <div class="tile-apn">APN 062-150-009-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$15,791</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$2,941</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-150-009-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-150-009-000 (YOUNG JAMES SCOTT) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 60</span>
+          
+          
+        </div>
+        <div class="tile-owner">CHEEK JOEY F</div>
+        <div class="tile-apn">APN 062-150-008-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$15,791</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$2,941</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-150-008-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-150-008-000 (CHEEK JOEY F) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 59</span>
+          
+          
+        </div>
+        <div class="tile-owner">MARTHEWS SARA J TRUSTEE</div>
+        <div class="tile-apn">APN 071-060-025-000</div>
+        <div class="tile-situs">Feather Falls</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$15,741</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$42,901</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 071-060-025-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 071-060-025-000 (MARTHEWS SARA J TRUSTEE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/062-300-044-000.png" alt="Aerial 062-300-044-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 59</span>
+          
+          
+        </div>
+        <div class="tile-owner">PATON DANIEL</div>
+        <div class="tile-apn">APN 062-300-044-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$15,573</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$23,226</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-300-044-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-300-044-000 (PATON DANIEL) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/066-220-001-000.png" alt="Aerial 066-220-001-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 59</span>
+          
+          
+        </div>
+        <div class="tile-owner">TINDALL BRAIN JEFFERY</div>
+        <div class="tile-apn">APN 066-220-001-000</div>
+        <div class="tile-situs">Magalia</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$14,976</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$12,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 066-220-001-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 066-220-001-000 (TINDALL BRAIN JEFFERY) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/062-730-008-000.png" alt="Aerial 062-730-008-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 59</span>
+          
+          
+        </div>
+        <div class="tile-owner">SULLIVAN ARLENE</div>
+        <div class="tile-apn">APN 062-730-008-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$15,049</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$26,016</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-730-008-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-730-008-000 (SULLIVAN ARLENE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 59</span>
+          
+          
+        </div>
+        <div class="tile-owner">WANG YI</div>
+        <div class="tile-apn">APN 072-190-015-000</div>
+        <div class="tile-situs">Oroville</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$14,772</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$122,581</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 072-190-015-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 072-190-015-000 (WANG YI) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 58</span>
+          
+          
+        </div>
+        <div class="tile-owner">MESSA KRISTINE</div>
+        <div class="tile-apn">APN 031-243-024-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$14,102</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$27,046</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 031-243-024-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 031-243-024-000 (MESSA KRISTINE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/041-260-027-000.png" alt="Aerial 041-260-027-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 58</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (FL)</span>
+          
+        </div>
+        <div class="tile-owner">YADIRA PROPERTIES LLC</div>
+        <div class="tile-apn">APN 041-260-027-000</div>
+        <div class="tile-situs">Oroville</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$13,782</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$162,240</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 041-260-027-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 041-260-027-000 (YADIRA PROPERTIES LLC) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/035-073-020-000.png" alt="Aerial 035-073-020-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 58</span>
+          
+          
+        </div>
+        <div class="tile-owner">SEFIC ISMET</div>
+        <div class="tile-apn">APN 035-073-020-000</div>
+        <div class="tile-situs">Oroville</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$13,314</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$17,065</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 035-073-020-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 035-073-020-000 (SEFIC ISMET) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/053-340-041-000.png" alt="Aerial 053-340-041-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 58</span>
+          
+          
+        </div>
+        <div class="tile-owner">BUCKER JEANIE</div>
+        <div class="tile-apn">APN 053-340-041-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$12,998</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$5,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 053-340-041-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 053-340-041-000 (BUCKER JEANIE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 58</span>
+          
+          
+        </div>
+        <div class="tile-owner">HAINES SHANE</div>
+        <div class="tile-apn">APN 061-590-009-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$12,669</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$55,157</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 061-590-009-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 061-590-009-000 (HAINES SHANE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 57</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (MI)</span>
+          
+        </div>
+        <div class="tile-owner">SCHMIDT JESSE</div>
+        <div class="tile-apn">APN 061-610-005-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$11,792</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$23,226</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 061-610-005-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 061-610-005-000 (SCHMIDT JESSE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 57</span>
+          
+          
+        </div>
+        <div class="tile-owner">RODRIGUEZ VALERIE ANN</div>
+        <div class="tile-apn">APN 058-370-027-000</div>
+        <div class="tile-situs">Concow</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$11,635</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$15,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 058-370-027-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 058-370-027-000 (RODRIGUEZ VALERIE ANN) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/053-180-086-000.png" alt="Aerial 053-180-086-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 57</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (MO)</span>
+          
+        </div>
+        <div class="tile-owner">CHABOT ALBERT B TRUSTEE</div>
+        <div class="tile-apn">APN 053-180-086-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$11,625</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$35,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 053-180-086-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 053-180-086-000 (CHABOT ALBERT B TRUSTEE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/052-250-052-000.png" alt="Aerial 052-250-052-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 57</span>
+          
+          
+        </div>
+        <div class="tile-owner">COLUNGA RICHARD</div>
+        <div class="tile-apn">APN 052-250-052-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$11,658</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$35,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 052-250-052-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 052-250-052-000 (COLUNGA RICHARD) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/055-520-085-000.png" alt="Aerial 055-520-085-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 56</span>
+          
+          
+        </div>
+        <div class="tile-owner">FEJES MARY VALERIA</div>
+        <div class="tile-apn">APN 055-520-085-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$10,917</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$40,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 055-520-085-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 055-520-085-000 (FEJES MARY VALERIA) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 56</span>
+          
+          
+        </div>
+        <div class="tile-owner">BROOKS RALPH</div>
+        <div class="tile-apn">APN 061-590-007-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$10,086</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$21,314</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 061-590-007-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 061-590-007-000 (BROOKS RALPH) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/062-310-012-000.png" alt="Aerial 062-310-012-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 56</span>
+          
+          
+        </div>
+        <div class="tile-owner">ENGKVIST KRISTI SUE EXECUTOR</div>
+        <div class="tile-apn">APN 062-310-012-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$10,183</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$13,929</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-310-012-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-310-012-000 (ENGKVIST KRISTI SUE EXECUTOR) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/062-190-025-000.png" alt="Aerial 062-190-025-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 56</span>
+          
+          
+        </div>
+        <div class="tile-owner">BLACK DAVID W</div>
+        <div class="tile-apn">APN 062-190-025-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$9,963</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$10,240</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-190-025-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-190-025-000 (BLACK DAVID W) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/051-280-005-000.png" alt="Aerial 051-280-005-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 56</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (SC)</span>
+          
+        </div>
+        <div class="tile-owner">BUSH ROBERT D</div>
+        <div class="tile-apn">APN 051-280-005-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$9,843</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$35,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 051-280-005-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 051-280-005-000 (BUSH ROBERT D) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/062-300-033-000.png" alt="Aerial 062-300-033-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 56</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (IA)</span>
+          
+        </div>
+        <div class="tile-owner">SORENSEN MICHAEL TRUSTEE</div>
+        <div class="tile-apn">APN 062-300-033-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$9,835</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$9,946</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-300-033-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-300-033-000 (SORENSEN MICHAEL TRUSTEE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 56</span>
+          
+          
+        </div>
+        <div class="tile-owner">GREEN CARROLL K</div>
+        <div class="tile-apn">APN 062-320-029-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$9,669</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$19,930</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-320-029-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-320-029-000 (GREEN CARROLL K) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 56</span>
+          
+          
+        </div>
+        <div class="tile-owner">DOWNING LORIN</div>
+        <div class="tile-apn">APN 071-270-045-000</div>
+        <div class="tile-situs">Feather Falls</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$9,186</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$42,122</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 071-270-045-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 071-270-045-000 (DOWNING LORIN) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/001-081-006-000.png" alt="Aerial 001-081-006-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 56</span>
+          
+          
+        </div>
+        <div class="tile-owner">DEWSNUP KYLE</div>
+        <div class="tile-apn">APN 001-081-006-000</div>
+        <div class="tile-situs">Biggs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$9,218</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$5,800</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 001-081-006-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 001-081-006-000 (DEWSNUP KYLE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 55</span>
+          
+          
+        </div>
+        <div class="tile-owner">YANG YER</div>
+        <div class="tile-apn">APN 061-550-017-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$8,632</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$61,284</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 061-550-017-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 061-550-017-000 (YANG YER) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 55</span>
+          
+          
+        </div>
+        <div class="tile-owner">LOUIE LAVERNA J</div>
+        <div class="tile-apn">APN 062-320-018-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$8,523</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$9,748</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-320-018-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-320-018-000 (LOUIE LAVERNA J) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/052-080-054-000.png" alt="Aerial 052-080-054-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 55</span>
+          
+          
+        </div>
+        <div class="tile-owner">BIRTWELL LESLIE</div>
+        <div class="tile-apn">APN 052-080-054-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$8,155</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$25,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 052-080-054-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 052-080-054-000 (BIRTWELL LESLIE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 55</span>
+          
+          
+        </div>
+        <div class="tile-owner">YANG YER</div>
+        <div class="tile-apn">APN 061-550-018-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$7,795</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$54,078</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 061-550-018-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 061-550-018-000 (YANG YER) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/051-072-071-000.png" alt="Aerial 051-072-071-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 54</span>
+          
+          
+        </div>
+        <div class="tile-owner">SILVERSTEIN ARTHUR</div>
+        <div class="tile-apn">APN 051-072-071-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$6,461</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$40,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 051-072-071-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 051-072-071-000 (SILVERSTEIN ARTHUR) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 54</span>
+          
+          
+        </div>
+        <div class="tile-owner">LAKE MADRONE TRUST</div>
+        <div class="tile-apn">APN 062-140-027-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$6,391</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$3,092</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-140-027-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-140-027-000 (LAKE MADRONE TRUST) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/053-021-067-000.png" alt="Aerial 053-021-067-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 54</span>
+          
+          
+        </div>
+        <div class="tile-owner">MATSON MARIE C</div>
+        <div class="tile-apn">APN 053-021-067-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$6,156</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$9,593</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 053-021-067-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 053-021-067-000 (MATSON MARIE C) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 53</span>
+          
+          
+        </div>
+        <div class="tile-owner">OLSEN JAMES O</div>
+        <div class="tile-apn">APN 071-470-021-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$5,703</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$38,275</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 071-470-021-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 071-470-021-000 (OLSEN JAMES O) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 53</span>
+          
+          
+        </div>
+        <div class="tile-owner">SIMMONS LINDA S</div>
+        <div class="tile-apn">APN 059-087-017-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$5,570</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$15,220</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 059-087-017-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 059-087-017-000 (SIMMONS LINDA S) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/062-320-006-000.png" alt="Aerial 062-320-006-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 53</span>
+          
+          
+        </div>
+        <div class="tile-owner">BUTLER LAURENCE A</div>
+        <div class="tile-apn">APN 062-320-006-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$5,352</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$17,065</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 062-320-006-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 062-320-006-000 (BUTLER LAURENCE A) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 53</span>
+          
+          
+        </div>
+        <div class="tile-owner">LANE ROBIN H</div>
+        <div class="tile-apn">APN 071-240-025-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$5,122</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$31,076</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 071-240-025-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 071-240-025-000 (LANE ROBIN H) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 53</span>
+          
+          
+        </div>
+        <div class="tile-owner">MARTIN JUDITH ELAINE</div>
+        <div class="tile-apn">APN 065-210-023-000</div>
+        <div class="tile-situs">No Situs</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$5,004</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$3,075</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 065-210-023-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 065-210-023-000 (MARTIN JUDITH ELAINE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 53</span>
+          
+          
+        </div>
+        <div class="tile-owner">ROJAS LUIS A</div>
+        <div class="tile-apn">APN 071-150-003-000</div>
+        <div class="tile-situs">Feather Falls</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$4,830</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$27,886</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 071-150-003-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 071-150-003-000 (ROJAS LUIS A) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 53</span>
+          
+          
+        </div>
+        <div class="tile-owner">COONS MANDY MARIE</div>
+        <div class="tile-apn">APN 058-370-023-000</div>
+        <div class="tile-situs">Concow</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$4,768</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$22,752</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 058-370-023-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 058-370-023-000 (COONS MANDY MARIE) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/061-610-009-000.png" alt="Aerial 061-610-009-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 52</span>
+          
+          
+        </div>
+        <div class="tile-owner">ALLARD EDWARD W</div>
+        <div class="tile-apn">APN 061-610-009-000</div>
+        <div class="tile-situs">Berry Creek</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$3,830</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$24,361</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 061-610-009-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 061-610-009-000 (ALLARD EDWARD W) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 52</span>
+          
+          
+        </div>
+        <div class="tile-owner">GREGG DON E</div>
+        <div class="tile-apn">APN 058-370-048-000</div>
+        <div class="tile-situs">Concow</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$3,567</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$15,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 058-370-048-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 058-370-048-000 (GREGG DON E) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/052-290-079-000.png" alt="Aerial 052-290-079-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 52</span>
+          
+          
+        </div>
+        <div class="tile-owner">BISHOP PAUL L ADMINISTRATOR</div>
+        <div class="tile-apn">APN 052-290-079-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$3,124</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$10,000</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 052-290-079-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 052-290-079-000 (BISHOP PAUL L ADMINISTRATOR) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><img src="thumbs/052-290-161-000.png" alt="Aerial 052-290-161-000" loading="lazy" /></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 52</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (AL)</span>
+          
+        </div>
+        <div class="tile-owner">MASON MARY L</div>
+        <div class="tile-apn">APN 052-290-161-000</div>
+        <div class="tile-situs">Paradise</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$2,846</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$10,935</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 052-290-161-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 052-290-161-000 (MASON MARY L) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+
+    <div class="tile">
+      <div class="tile-thumb"><div class="thumb-placeholder">No aerial available</div></div>
+      <div class="tile-body">
+        <div class="tile-header">
+          <span class="tile-priority">PRIORITY 0</span>
+          <span class="pill pill-absentee">OUT-OF-STATE (NV)</span>
+          <span class="pill pill-distress">DISTRESS 64</span>
+        </div>
+        <div class="tile-owner">GRIDLEY BUSINESS TRUST</div>
+        <div class="tile-apn">APN 022-210-078-000</div>
+        <div class="tile-situs">Gridley</div>
+        <div class="tile-metrics">
+          <div class="metric">
+            <div class="metric-label">Defaulted</div>
+            <div class="metric-value">$2,459,683</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Assessed</div>
+            <div class="metric-value">$3,832,194</div>
+          </div>
+        </div>
+        <a class="order-btn" href="mailto:mrt@logicflowsystems.io?subject=Order Dossier - APN 022-210-078-000&body=Hi Chuck,%0D%0A%0D%0AI would like to order the dossier for APN 022-210-078-000 (GRIDLEY BUSINESS TRUST) for $99.%0D%0A%0D%0APlease send Zelle payment details.%0D%0A%0D%0AThanks,%0D%0A">Order Dossier &mdash; $99</a>
+      </div>
+    </div>
+    
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2026 Logic Flow Systems &middot; Charles Terrell &middot; <a href="mailto:mrt@logicflowsystems.io">mrt@logicflowsystems.io</a></p>
+  <p>Data sourced 100% from public county records. No fabricated data. Every parcel verified against live tax collector, assessor, and recorder systems.</p>
+</footer>
+
+</body>
+</html>

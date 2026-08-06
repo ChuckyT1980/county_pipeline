@@ -1,0 +1,2 @@
+Total rows: 100
+Rows with has_affidavit_of_death=True: 0

@@ -1,0 +1,344 @@
+
+=== pdf_jun2006.pdf (1 pages, 463 lines) ===
+  JUNE 2006 AUCTION OF TAX DEFAULTED PROPERTIES
+  SALES AND EXCESS PROCEEDS SUMMARY
+  APN
+  SALE AMT
+  FY 05/06 TX
+  REDEMPTION
+  TOTAL AUCTION
+  RESCISSION
+  STATE
+  DOC
+  EXCESS
+  AMOUNT
+  FEES
+  FEE
+  FEES
+  TRANS TAX
+  PROCEEDS
+  005-480-080-000
+  $           55,000.00
+  1,586.68
+  $
+  42,814.26
+  $
+  1,150.00
+  $
+  11.00
+  $
+  1.50
+  $
+  60.50
+  ... (463 total lines)
+  25,200.00
+  $
+  297.00
+  $
+  42.00
+  $
+  1,468.70
+  $
+  1,110,280.34
+  $
+
+=== pdf_jun2010.pdf (1 pages, 91 lines) ===
+  BUTTE COUNTY TREASURER-TAX COLLECTOR
+  2010 TAX AUCTION SALES AND EXCESS PROCEEDS
+  ASSESSMENT NUMBER
+  MINIMUM BID
+  SALE AMT
+  EXCESS PROCEEDS
+  004-371-018-000
+  $                                  3,501.00  $                                   12,500.00
+  9,094.57
+  $
+  009-201-013-000
+  $                                  5,611.00  $                                   24,100.00
+  18,471.62
+  $
+  010-071-014-000
+  $                                  3,309.00  $                                   35,900.00
+  33,125.80
+  $
+  012-021-008-000
+  $                                  3,954.00  $                                     3,954.00
+  115.31
+  $
+  012-251-016-000
+  $                               15,948.00  $                                   61,200.00
+  45,204.12
+  $
+  013-130-019-000
+  $                                  9,961.00  $                                   42,100.00
+  31,842.48
+  $
+  ... (91 total lines)
+  $
+  073-240-044-000
+  $                                  3,653.00  $                                     3,753.00
+  215.29
+  $
+  $                           137,455.00
+  344,779.00
+  $
+  207,316.20
+  $
+
+=== pdf_jun2016.pdf (13 pages, 1877 lines) ===
+  BUTTE COUNTY PUBLIC AUCTION OF TAX‐DEFAULTED PROPERTIES
+  JUNE 17-20, 2016
+  Updated  6/17/16  8:00 am
+  6/17/2016
+  Fee Parcel
+  Owner
+  Property Address
+  Property Jurisdiction
+  Minimum Bid
+  003-344-012-000
+  HIGGINS DEBBY TERRY (CB DVA) ESTATE
+  369 E LINDO AVE
+  CITY OF CHICO
+  26,056.00
+  $
+  003-362-008-000
+  LEYVA DAVID & CARMEN P MUNOZ
+  562 E 10TH AVE
+  CITY OF CHICO
+  8,680.00
+  $
+  005-386-027-000
+  MOSBY CALVIN C & WILLIE B
+  962 COLORADO ST
+  UNINCORPORATED - CHICO AREA
+  3,835.00
+  $
+  005-395-010-000
+  POLLAK JACOB
+  1323 BOUCHER ST
+  ... (1877 total lines)
+  0 SHINING STAR CT
+  CITY OF OROVILLE
+  19,150.00
+  $
+  079-200-074-000
+  HOLMQUIST FAMILY TRUST ESTATE
+  2655 BROUGHAM DR
+  UNINCORPORATED - OROVILLE AREA
+  15,046.00
+  $
+
+=== pdf_jun2021.pdf (6 pages, 1454 lines) ===
+  BUTTE COUNTY PUBLIC AUCTION OF TAX DEFAULTED PROPERTIES
+  JUNE 11-14, 2021
+  List Updated 6/11/21 at 12:00 pm
+  APN
+  OWNER
+  SITUS ADDRESS
+  LOCATION
+  MINIMUM BID
+  REDEEMED or
+  WITHDRAWN
+  001-024-011-000
+  CASON, CLIFFORD  & RHOADS, EDGAR O
+  4TH ST
+  BIGGS, CA
+  2,243
+  $
+  X
+  001-033-018-000
+  RAMSEY, WILLIAM J & NANCY Y
+  490 D ST
+  BIGGS, CA
+  15,647
+  $
+  X
+  001-150-057-000
+  VANPOOLE, GREGORY L & SYLVIA A
+  NLY 7 HLF FT B ST PTN BLK 5 L 3 PITTS ADD
+  BIGGS, CA
+  2,243
+  $
+  ... (1454 total lines)
+  2,564
+  $
+  X
+  079-310-033-000
+  LADD, BARBARA E
+  NOT DESIGNATED
+  OROVILLE, CA
+  12,536
+  $
+  X
+
+=== pdf_jun2024.pdf (8 pages, 2067 lines) ===
+  APN
+  Owner
+  Property Address
+  Property
+  Jurisdiction
+  Minimum Bid
+  Redeemed  Withdrawn
+  001-032-007-000
+  DUFAULT, DARRELL E & DUFAULT, DOUGLAS E
+  3090 6TH ST
+  BIGGS
+  3,438.00
+  $
+  X
+  001-033-018-000
+  RAMSEY, WILLIAM J & NANCY Y
+  490 D ST
+  BIGGS
+  31,892.00
+  $
+  001-081-006-000
+  DEWSNUP, KYLE
+  485 B ST
+  BIGGS
+  6,773.00
+  $
+  X
+  001-081-007-000
+  DEWSNUP, KYLE THOMAS
+  483 B ST
+  ... (2067 total lines)
+  12,260.00
+  $
+  X
+  079-360-028-000
+  SEFIC ISMET
+  PTN SEC 24 T19N R4E
+  OROVILLE
+  4,263.00
+  $
+  X
+
+=== pdf_sep2024_reoffer.pdf (2 pages, 566 lines) ===
+  APN
+  Owner
+  Property Address
+  Property Jurisdiction
+  Min Bid Amount
+  Redeemed Withdrawn
+  001-033-018-000
+  RAMSEY, WILLIAM J & NANCY Y
+  490 D ST
+  BIGGS
+  32,681
+  $
+  010-124-002-000
+  SIPES TAHOE PROPERTIES LLC
+  110 VIRGINIA ST
+  GRIDLEY
+  32,924
+  $
+  X
+  027-084-026-000
+  CAINE, JESSE & VALARIE
+  0 GRUBBS RD
+  PALERMO
+  4,483
+  $
+  027-240-050-000
+  GORDON, CHIC
+  60 SHELA CT
+  PALERMO
+  56,651
+  ... (566 total lines)
+  0 SANDY SPRINGS LN
+  BERRY CREEK
+  5,243
+  $
+  072-360-014-000
+  LITTLE, SHAWNTE
+  003.30 AC SEC 35 T19N R5E
+  OROVILLE
+  9,101
+  $
+
+=== pdf_sep2021.pdf (1 pages, 136 lines) ===
+  BUTTE COUNTY PUBLIC AUCTION OF TAX DEFAULTED PROPERTIES
+  September 10-13, 2021
+  List Updated 9/20/2021
+  APN
+  OWNER
+  SITUS ADDRESS
+  LOCATION
+  MINIMUM BID
+  027-290-021-000
+  TATUM, FRANK L SS
+  NOT DESIGNATED
+  PALERMO, CA
+  50,000.00
+  $
+  028-220-011-000
+  GOOCH, TOMMY R & LULA L & GOOCH, JUDY L & GOOCH, BARBARA S
+  168 MILLIGAN LN
+  BANGOR, CA
+  14,165.00
+  $
+  SOLD
+  031-171-028-000
+  PETER, GLEN A & DAWN
+  680 SISKIYOU AVE
+  OROVILLE, CA
+  30,000.00
+  $
+  SOLD
+  031-243-024-000
+  MESSA, KRISTINE
+  ... (136 total lines)
+  16,000.00
+  $
+  062-320-004-000
+  NEIDEFFER, DIANA
+  0 SAND CREEK DR
+  BERRY CREEK, CA
+  3,000.00
+  $
+  SOLD
+  Butte County Parcel Data Search - More information on each parcel is available through Butte County's Geographic Information System's website.
+
+=== pdf_sep2017.pdf (1 pages, 144 lines) ===
+  BUTTE COUNTY PUBLIC AUCTION OF TAX DEFAULTED PROPERTIES
+  SEPTEMBER 9-11, 2017 - BID4ASSETS
+  (Reoffer sale for parcels that did not sell in the June 2017 tax auction)
+  APN
+  OWNER
+  PROPERTY ADDRESS
+  JURISDICTION
+  MINIMU
+  M BID
+  012-151-009-000
+  GLOBAL DISCOVERIES LTD
+  1740 HUNTOON ST
+  CITY OF OROVILLE
+  $   1,000
+  Sold
+  026-183-024-000
+  BABCOCK, ELSIE L
+  2110 LUDLUM AVE
+  UNINCORPORATED - PALERMO
+  $   15,458
+  027-300-042-000
+  MCQUEEN, EDWARD ROBERT & PEARL
+  2611 TINY LN
+  UNINCORPORATED - PALERMO
+  $   11,712
+  030-230-103-000
+  KOA DEVELOPMENT IN RETIREMENT TRUST,  ETAL
+  NOT DESIGNATED
+  CITY OF OROVILLE
+  $   50,000
+  ... (144 total lines)
+  NOT DESIGNATED
+  UNINCORPORATED - OROVILLE
+  $   4,072
+  Sold
+  079-040-010-000
+  O-BAR INVESTMENTS INC
+  0 SHINING STAR CT
+  CITY OF OROVILLE
+  $   8,214
+  Sold

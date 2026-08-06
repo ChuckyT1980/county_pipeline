@@ -1,0 +1,17 @@
+display_name: San Bernardino County
+collector_names:
+- SAN BERNARDINO TAX COLLECTOR
+- SAN BERNARDINO CO TAX COLLR
+- COUNTY OF SAN BERNARDINO
+assessor:
+  backend: arcgis
+  notes: no public assessor source discovered yet
+  endpoint: https://open-sbcounty.hub.arcgis.com/datasets/parcels/FeatureServer/0
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.sanbernardino.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

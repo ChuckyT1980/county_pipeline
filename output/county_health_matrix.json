@@ -1,0 +1,295 @@
+{
+  "last_updated": "2026-08-05T05:50:11.668915+00:00",
+  "counties": {
+    "humboldt": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:36:45.500861+00:00"
+    },
+    "butte": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:16:18.191064+00:00"
+    },
+    "fresno": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:36:30.430856+00:00"
+    },
+    "tehama": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T03:15:39.194886+00:00"
+    },
+    "kern": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:47:34.796125+00:00"
+    },
+    "shasta": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T03:15:36.294255+00:00"
+    },
+    "alameda": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:01:50.391699+00:00"
+    },
+    "alpine": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:08:50.447214+00:00"
+    },
+    "amador": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:16:02.526016+00:00"
+    },
+    "calaveras": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:23:33.552226+00:00"
+    },
+    "colusa": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:23:38.064823+00:00"
+    },
+    "contra_costa": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:23:53.984517+00:00"
+    },
+    "del_norte": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:30:44.806039+00:00"
+    },
+    "el_dorado": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:36:12.034179+00:00"
+    },
+    "glenn": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:36:39.851584+00:00"
+    },
+    "imperial": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:42:12.966528+00:00"
+    },
+    "inyo": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:47:30.602188+00:00"
+    },
+    "kings": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:52:59.998803+00:00"
+    },
+    "lake": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T04:58:23.983433+00:00"
+    },
+    "lassen": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T05:03:48.318113+00:00"
+    },
+    "los_angeles": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T05:03:51.656226+00:00"
+    },
+    "madera": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T05:09:21.335134+00:00"
+    },
+    "marin": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T05:50:11.668915+00:00"
+    },
+    "mariposa": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:38:31.172191+00:00"
+    },
+    "mendocino": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:38:35.772000+00:00"
+    },
+    "merced": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:38:40.281516+00:00"
+    },
+    "modoc": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:38:55.273199+00:00"
+    },
+    "mono": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:39:00.452877+00:00"
+    },
+    "monterey": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:39:05.005345+00:00"
+    },
+    "napa": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:39:09.366644+00:00"
+    },
+    "nevada": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:39:13.788294+00:00"
+    },
+    "orange": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:39:17.699047+00:00"
+    },
+    "placer": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:39:22.078192+00:00"
+    },
+    "plumas": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T03:17:59.617627+00:00"
+    },
+    "riverside": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:39:30.979471+00:00"
+    },
+    "sacramento": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:39:35.418674+00:00"
+    },
+    "san_benito": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:39:39.806546+00:00"
+    },
+    "san_bernardino": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:39:43.544794+00:00"
+    },
+    "san_diego": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:39:47.627919+00:00"
+    },
+    "san_francisco": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:39:52.541577+00:00"
+    },
+    "san_joaquin": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:39:57.043406+00:00"
+    },
+    "san_luis_obispo": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:40:02.110620+00:00"
+    },
+    "san_mateo": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:40:06.159398+00:00"
+    },
+    "santa_barbara": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:40:10.935058+00:00"
+    },
+    "santa_clara": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:40:15.183013+00:00"
+    },
+    "santa_cruz": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:40:19.392651+00:00"
+    },
+    "sierra": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:40:29.246677+00:00"
+    },
+    "siskiyou": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:40:35.148649+00:00"
+    },
+    "solano": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:40:39.263650+00:00"
+    },
+    "sonoma": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:40:43.856082+00:00"
+    },
+    "stanislaus": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:40:49.135251+00:00"
+    },
+    "sutter": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:40:53.099887+00:00"
+    },
+    "trinity": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:41:00.665737+00:00"
+    },
+    "tulare": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:41:05.581951+00:00"
+    },
+    "tuolumne": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:41:11.217761+00:00"
+    },
+    "ventura": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:41:15.870096+00:00"
+    },
+    "yolo": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:41:20.626637+00:00"
+    },
+    "yuba": {
+      "status": "HEALTHY",
+      "leg2_status": "COMPLETE",
+      "last_checked": "2026-08-05T02:41:25.627268+00:00"
+    }
+  }
+}

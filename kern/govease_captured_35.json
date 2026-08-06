@@ -1,0 +1,24 @@
+{
+  "backgroundColor": "transparent",
+  "categoryCaption": "insideFilter",
+  "dateFormat": "dd/MM/yyyy",
+  "displayOrder": "{\"d\":\"v\",\"e\":[\"map\",\"filters\",\"chart\"]}",
+  "download": false,
+  "mapHeight": "400px",
+  "pageSize": "51",
+  "source": {
+    "dataRange": "A1:U",
+    "dataSheet": "Datatable",
+    "domain": "revevol.eu",
+    "isPublicSps": true,
+    "name": "spreadsheet",
+    "proxy": "",
+    "spsId": "1Slyxj3HwCgnKv60z8DijQPzgUrIRH1xQNeUKjr5mnYs",
+    "spsUrl": "https://docs.google.com/spreadsheets/d/1Slyxj3HwCgnKv60z8DijQPzgUrIRH1xQNeUKjr5mnYs/gviz/tq?",
+    "templateRange": "A1:F2",
+    "templateSheet": "Template"
+  },
+  "viewName": "GovEase www List",
+  "viewTier": "PLUS",
+  "visualizationType": "MapsWithTable"
+}

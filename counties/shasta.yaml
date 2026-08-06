@@ -1,0 +1,28 @@
+display_name: Shasta County
+collector_names:
+- SHASTA COUNTY TAX COLLECTOR
+- SHASTA CO TAX COLLR
+notes: 'Assessor = ArcGIS OpenData ParcelSitusAddress (proven by shasta_discover.py,
+  ~92k parcels). Recorder = Tyler DOCSEARCH344S4/S5. Auction = GovEase.
+
+  '
+assessor:
+  backend: mpts
+  endpoint: https://common2.mptsweb.com/mbap/shasta/asr/AsrPrint
+  where: 1=1
+  apn_field: ASMT
+  out_fields: ASMT,Situs_Address
+  host: https://common2.mptsweb.com
+recorder:
+  backend: tyler
+  base_url: https://recorderselfservice.shastacounty.gov
+  name_search_id: DOCSEARCH344S4
+  doc_search_id: DOCSEARCH344S5
+  apn_search_id: DOCSEARCH201S9
+  ajax_headers_required: true
+  doc_number_transform: r_to_hyphen
+  endpoint: https://recorderselfservice.shastacounty.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

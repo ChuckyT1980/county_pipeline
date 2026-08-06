@@ -61,6 +61,19 @@ def init_db():
         )
     ''')
     
+    # Table 5: Global Pipeline Cache (prevents re-running stage 2 for the same parcel/year)
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS global_verifications (
+            county TEXT,
+            asmt TEXT,
+            tax_year TEXT,
+            verified_score TEXT,
+            total_balance REAL,
+            verified_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+            PRIMARY KEY (county, asmt, tax_year)
+        )
+    ''')
+    
     conn.commit()
     conn.close()
     print(f"Successfully initialized CPS-1 database at {DB_PATH}")

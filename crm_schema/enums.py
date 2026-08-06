@@ -1,0 +1,61 @@
+# crm_schema/enums.py
+from enum import Enum
+
+
+class OwnershipVerificationStatus(str, Enum):
+    MATCHES_ASSESSOR = "MATCHES_ASSESSOR"
+    RECORDER_SHOWS_NEW_OWNER_HIGH_CONFIDENCE = "RECORDER_SHOWS_NEW_OWNER_HIGH_CONFIDENCE"
+    RECORDER_SHOWS_NEW_OWNER_LOW_CONFIDENCE = "RECORDER_SHOWS_NEW_OWNER_LOW_CONFIDENCE"
+    VESTING_CHANGED_SAME_CONTROL = "VESTING_CHANGED_SAME_CONTROL"
+    AMBIGUOUS_NAME_MATCH = "AMBIGUOUS_NAME_MATCH"
+    NO_RECORDER_HIT = "NO_RECORDER_HIT"
+
+
+class RecorderEventRole(str, Enum):
+    VESTING = "vesting"
+    TRANSFER = "transfer"
+    DEBT = "debt"
+    LIEN = "lien"
+    DEFAULT = "default"
+    RELEASE = "release"
+    OTHER = "other"
+
+
+class EquitySignal(str, Enum):
+    UNKNOWN = "UNKNOWN"
+    LIKELY_POSITIVE = "LIKELY_POSITIVE"
+    LEVERAGED = "LEVERAGED"
+    DISTRESSED = "DISTRESSED"
+
+
+class DistressSignal(str, Enum):
+    NONE = "NONE"
+    LOW = "LOW"
+    MEDIUM = "MEDIUM"
+    HIGH = "HIGH"
+    CRITICAL = "CRITICAL"
+    RESOLVED = "RESOLVED"
+    UNKNOWN = "UNKNOWN"
+
+
+class ManualReviewPriority(str, Enum):
+    LOW = "LOW"
+    MEDIUM = "MEDIUM"
+    HIGH = "HIGH"
+    CRITICAL = "CRITICAL"
+
+
+class CrmStage(str, Enum):
+    NEW_INTEL = "NEW_INTEL"
+    VERIFYING = "VERIFYING"
+    READY_FOR_OUTREACH = "READY_FOR_OUTREACH"
+    CONTACTING = "CONTACTING"
+    ENGAGED = "ENGAGED"
+    QUALIFIED = "QUALIFIED"
+    OFFER_PREP = "OFFER_PREP"
+    OFFER_SENT = "OFFER_SENT"
+    UNDER_CONTRACT = "UNDER_CONTRACT"
+    NURTURE = "NURTURE"
+    BLOCKED = "BLOCKED"
+    CLOSED_WON = "CLOSED_WON"
+    CLOSED_LOST = "CLOSED_LOST"

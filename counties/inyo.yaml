@@ -1,0 +1,18 @@
+display_name: Inyo County
+collector_names:
+- INYO TAX COLLECTOR
+- INYO CO TAX COLLR
+- COUNTY OF INYO
+assessor:
+  backend: mpts
+  notes: no public assessor source discovered yet
+  host: https://common1.mptsweb.com
+  endpoint: https://common1.mptsweb.com/mbap/inyo/asr/AsrPrint
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.inyo.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

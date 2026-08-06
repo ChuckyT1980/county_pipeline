@@ -1,4 +1,5 @@
 from completeness import CompletenessScorer
+from canonical import IntelligenceRecord
 
 class UncertaintyAwareScorer:
     def __init__(self, completeness_scorer: CompletenessScorer):
@@ -98,3 +99,178 @@ class UncertaintyAwareScorer:
             "signals": signals,
             "rank_bucket": bucket
         }
+
+
+def generate_states(record: IntelligenceRecord) -> None:
+    """Populate Layer 3 States from Layer 1 Facts and Layer 2 Signals."""
+    facts = record.facts
+    signals = record.signals
+    states = record.states
+
+    # ownership_complexity: high for deceased/trust/entity/multi
+    complexity = 0.1
+    if signals.deceased_owner:
+        complexity += 0.5
+    if signals.trust_owner:
+        complexity += 0.3
+    if signals.entity_owner:
+        complexity += 0.2
+    if signals.multiple_owners:
+        complexity += 0.15
+    states.ownership_complexity = min(complexity, 1.0)
+
+    # heir_probability: high for deceased, zero otherwise
+    states.heir_probability = 0.9 if signals.deceased_owner else 0.0
+
+    # ownership_stability: inverse of complexity
+    states.ownership_stability = max(0.0, 1.0 - states.ownership_complexity)
+
+    # tax_pressure: based on amount_due and default_date
+    amount = float(facts.amount_due or 0)
+    pressure = min(amount / 10000.0, 1.0) if amount > 0 else 0.0
+    if facts.default_date:
+        pressure += 0.1
+    states.tax_pressure = min(pressure, 1.0)
+
+    # property_utility_score: based on assessed_value, acreage, improved_vs_vacant, access_quality
+    util = 0.0
+    if facts.improved_vs_vacant is True:
+        util += 0.4
+    elif facts.improved_vs_vacant is False:
+        util += 0.1
+
+    if facts.assessed_value and facts.assessed_value > 0:
+        util += min(facts.assessed_value / 500000.0, 1.0) * 0.4
+
+    if facts.acreage and facts.acreage > 0:
+        util += min(facts.acreage / 5.0, 1.0) * 0.2
+
+    access = (facts.access_quality or "").lower()
+    if access in ("excellent", "good"):
+        util += 0.1
+    elif access in ("poor", "very_poor"):
+        util -= 0.1
+
+    states.property_utility_score = max(0.0, min(util, 1.0))
+
+
+def process_record(record: IntelligenceRecord) -> None:
+    """Process an IntelligenceRecord through scoring to produce opportunity and confidence."""
+    generate_states(record)
+
+    facts = record.facts
+    signals = record.signals
+    states = record.states
+
+    # Compute attractiveness score (0-100+)
+    score = 0.0
+
+    # Distress persistence (default_date)
+    if facts.default_date:
+        try:
+            default_year = int(str(facts.default_date).split("-")[0])
+            persistence = max(0, 2025 - default_year)
+        except Exception:
+            persistence = 0
+        score += persistence * 3
+
+    # Financial pressure
+    amount = float(facts.amount_due or 0)
+    score += min(amount / 100.0, 30)
+
+    # Equity proxy
+    if facts.assessed_value and facts.assessed_value > 0:
+        distress_ratio = amount / facts.assessed_value
+        score += min(distress_ratio * 100, 25)
+        if facts.assessed_value < 200000:
+            score += 10
+
+    # Absentee owner bonus
+    if signals.out_of_state_owner and not signals.owner_occupied:
+        score += 15
+    elif not signals.owner_occupied:
+        score += 5
+
+    # Land/vacant bonus (simpler = easier acquisition)
+    if facts.improved_vs_vacant is False:
+        score += 8
+
+    # Motivation signals
+    if signals.deceased_owner:
+        score += 12
+    if signals.trust_owner:
+        score += 8
+
+    # Utility multiplier
+    score = score * (0.5 + 0.5 * states.property_utility_score)
+
+    # Resolution difficulty
+    difficulty = states.ownership_complexity * 0.6 + states.tax_pressure * 0.4
+    if signals.deceased_owner:
+        difficulty += 0.1
+    difficulty = min(difficulty, 1.0)
+
+    # Tier
+    if score >= 70:
+        tier = 1
+    elif score >= 45:
+        tier = 2
+    elif score >= 20:
+        tier = 3
+    else:
+        tier = 4
+
+    # Explanation
+    reasons = []
+    if signals.deceased_owner:
+        reasons.append("deceased owner")
+    if signals.trust_owner:
+        reasons.append("trust ownership")
+    if signals.out_of_state_owner:
+        reasons.append("absentee owner")
+    if amount > 0:
+        reasons.append(f"${amount:,.0f} delinquent")
+    if facts.improved_vs_vacant is False:
+        reasons.append("vacant land")
+    explanation = "; ".join(reasons) if reasons else "low distress signals"
+
+    record.opportunity.attractiveness_score = round(score, 2)
+    record.opportunity.resolution_difficulty = round(difficulty, 2)
+    record.opportunity.tier = tier
+    record.opportunity.record_explanation = explanation
+
+    # Confidence
+    data_conf = 1.0
+    if facts.assessed_value is None:
+        data_conf -= 0.2
+    if facts.acreage is None:
+        data_conf -= 0.1
+    if facts.improved_vs_vacant is None:
+        data_conf -= 0.1
+    if facts.access_quality is None:
+        data_conf -= 0.1
+    if facts.default_date is None:
+        data_conf -= 0.05
+
+    ownership_conf = 1.0
+    if facts.owner.state not in ("VERIFIED", "HIGH_CONFIDENCE"):
+        ownership_conf -= 0.3
+    if not facts.owner.value or len(str(facts.owner.value)) < 5:
+        ownership_conf -= 0.4
+    if facts.mailing_address.state == "UNKNOWN" or not facts.mailing_address.value:
+        ownership_conf -= 0.2
+
+    valuation_conf = 1.0
+    if facts.assessed_value is None or facts.assessed_value <= 0:
+        valuation_conf -= 0.5
+    if facts.improvement_value is None:
+        valuation_conf -= 0.1
+
+    record.confidence.data_confidence = max(0.0, round(data_conf, 2))
+    record.confidence.ownership_confidence = max(0.0, round(ownership_conf, 2))
+    record.confidence.valuation_confidence = max(0.0, round(valuation_conf, 2))
+    record.confidence.overall_confidence = round(
+        (record.confidence.data_confidence +
+         record.confidence.ownership_confidence +
+         record.confidence.valuation_confidence) / 3.0, 2
+    )

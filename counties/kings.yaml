@@ -1,0 +1,33 @@
+display_name: Kings County
+collector_names:
+- KINGS TAX COLLECTOR
+- KINGS CO TAX COLLR
+- COUNTY OF KINGS
+assessor:
+  backend: mpts
+  endpoint: https://common1.mptsweb.com/mbap/kings/asr/AsrPrint
+  apn_includes:
+  - 1 Main
+  - 2 Main
+  - 1 Oak
+  - 2 Oak
+  - 1 Pine
+  - 1st
+  - 2nd
+  - 3rd
+  notes: Auto-onboarded by onboard_county.py. MPTS host common1.mptsweb.com slug kings
+  host: https://common1.mptsweb.com
+recorder:
+  backend: county_portal
+  base_url: https://kingscountyca-web.tylerhost.net
+  name_search_id: DOCSEARCH184S2
+  doc_search_id: DOCSEARCH184S2
+  apn_search_id: null
+  typedate_search_id: DOCSEARCH201S11
+  ajax_headers_required: true
+  notes: discovered automatically
+  endpoint: https://recorder.kings.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

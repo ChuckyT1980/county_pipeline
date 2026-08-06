@@ -1,0 +1,1178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml2/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+	
+<link rel="stylesheet" type="text/css" href="../web/includes/jquery/jquery-ui-1.10.1.custom.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../web/css/base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../web/css/print.css" media="print">
+<link rel="stylesheet" type="text/css" href="../web/css/tooltip.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../web/css/drop3.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../web/includes/modalbox1.6.0/modalbox.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../web/includes/jquery/token-input.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../web/css/custom.css" media="screen">
+<script src="../web/includes/prototype/prototype.js" type="text/javascript"></script>
+<script src="../web/includes/script.aculo.us/scriptaculous.js" type="text/javascript"></script><script type="text/javascript" src="https://eagleweb.co.lassen.ca.us/eweb/web/includes/script.aculo.us/builder.js"></script><script type="text/javascript" src="https://eagleweb.co.lassen.ca.us/eweb/web/includes/script.aculo.us/effects.js"></script><script type="text/javascript" src="https://eagleweb.co.lassen.ca.us/eweb/web/includes/script.aculo.us/dragdrop.js"></script><script type="text/javascript" src="https://eagleweb.co.lassen.ca.us/eweb/web/includes/script.aculo.us/controls.js"></script><script type="text/javascript" src="https://eagleweb.co.lassen.ca.us/eweb/web/includes/script.aculo.us/slider.js"></script><script type="text/javascript" src="https://eagleweb.co.lassen.ca.us/eweb/web/includes/script.aculo.us/sound.js"></script>
+<script src="../web/includes/tooltip-v0.2.js" type="text/javascript"></script>
+<script src="../web/includes/tabbedlayout.js" type="text/javascript"></script>
+<script src="../web/includes/modalbox1.6.0/modalbox.js" type="text/javascript"></script>
+<script src="../web/includes/jquery/jquery.js" type="text/javascript"></script>
+<script src="../web/includes/jquery/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<script src="../web/includes/jquery/jquery.clear.js" type="text/javascript"></script>
+<script src="../web/includes/jquery/tokeninput.js" type="text/javascript"></script>
+
+	
+	<title>Document Search</title>
+</head>
+<body id="PAGE_DOC_SEARCH">
+
+<table id="columns">
+<tbody><tr><td id="header_cell" colspan="2">
+
+<div id="header">
+	
+	
+	
+    <h1>Document Search</h1>
+	
+	<div class="timeout"><p id="timeRemaining" style="display: none"></p></div>
+	
+	
+</div>
+
+
+<span class="preload1"></span>
+<span class="preload2"></span>
+
+<ul class="menu2">
+	<li class="top"><a href="../eagleweb/docSearch.jsp" class="top_link"><span>Document Search</span></a>
+	</li><li class="top"><a href="../web/help.jsp" class="top_link"><span>Help</span></a>
+	</li><li class="top"><a href="../web/about.jsp" class="top_link"><span>About</span></a>
+	</li><li class="top"><a href="../web/logout.jsp" class="top_link"><span>Logout public</span></a>
+</li></ul>
+
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td id="left_column">
+<script type="text/javascript">
+			function toggleTypes() {
+				var accountTypes = document.getElementById('docTypes');
+				if (document.getElementById('allTypesCB').checked){
+					accountTypes.disabled=true;
+					accountTypes.style.display = "none";
+				} else{
+					accountTypes.disabled=false;
+					accountTypes.style.display="";
+				}
+			}
+			
+			function resetFields() {
+				document.location.href="docSearch.jsp";
+			}
+			
+			function disableSearchButtons() {
+				jQuery(':input[type="submit"]').prop('disabled', true);
+				jQuery(':input[type="reset"]').prop('disabled', true);
+				jQuery('form[name="docSearch"]').submit();
+			}
+		
+			if (window.addEventListener) {
+				window.addEventListener("load", toggleTypes, false);
+			} else if (window.attachEvent) {
+				window.attachEvent("onload", toggleTypes);
+			} else if (document.getElementById) {
+				window.onload=toggleTypes;
+			}
+		</script>
+<div id="left">
+	
+	<h1></h1>
+   	Lassen County<br>Clerk-Recorder<br>220 S. Lassen St. Suite 5<br>
+Susanville, CA 96130<br><br>Phone (530) 251-8234<br>
+Fax (530) 257-3480<br><br>
+
+
+Public Office Hours:<br>
+Monday thru Friday<br>
+9:00 a.m. - 4:00 p.m.
+<br><br>
+Recording Hours:<br>
+Monday thru Friday<br>
+9:00 a.m. - 3:00 p.m.<br><br>
+   	
+   	
+   	
+   	
+</div>
+			
+</td>
+<td id="right_column">
+<div id="middle">
+
+	<h1></h1>
+	
+
+	
+
+<p class="error">I see that you're searching by Recording Date.
+
+The maximum range to search over is 5 years. You could also try entering some additional criteria.</p>
+
+
+   	
+   	<form action="../eagleweb/docSearchPOST.jsp" method="post" name="docSearch">
+   	<p>
+		<input class="search" type="submit" value="Search" onclick="disableSearchButtons()">
+		<!-- This reset doesn't seem to work in IE -->
+		<input class="reset" type="reset" value="Clear" onclick="resetFields()">
+	</p>
+	<hr>
+	Enter your search criteria  below.	 		
+	
+	<table cellpadding="5">
+	<tbody><tr valign="top">
+	<td id="searchTable">
+		<p>
+		</p><div id="tab_control_34479">
+<ul id="tabs" class="tabs">
+<li class="active"><a href="#tab_34479_0">Basic</a></li>
+<li><a href="#tab_34479_1">Advanced</a></li>
+</ul>
+<div id="tabcontentcontainer"><div id="tab_34479_0" class="tab_page"><!--Start TableHtmlLayout--><table class="searchTable"><tbody>
+<tr valign="top">
+<td>
+<!--Start TableHtmlLayout--><table class="tableHtmlLayout"><tbody>
+<tr valign="top">
+<th colspan="1">
+Document Number</th>
+</tr>
+<tr valign="top"><td colspan="1">
+<span class="fieldLabel" style="text-align:left;">Document Number</span><br><span class="field" style="text-align:left;"><input class="text" type="text" id="DocNumID" name="DocNumID" value=""></span>
+</td>
+</tr>
+</tbody></table>
+<!--END TableHtmlLayout--></td>
+<td colspan="1">
+<!--Start TableHtmlLayout--><table class="tableHtmlLayout"><tbody>
+<tr valign="top">
+<th colspan="2">
+<div id="b_trigger_34478" style="display: inline" class="trigger">Book Page</div><div id="b_tooltip_34478" class="tooltipv2" style="display: none;">Separate multiple values with a space. Separate ranges with a colon.<br>'1 3 5' will search for 1, 3, or 5 while '1:5' will search for 1 through 5.<br>(Don't include the quotes.)</div><script type="text/javascript">new Tooltip('b_trigger_34478', 'b_tooltip_34478')</script></th>
+</tr>
+<tr valign="top"><td>
+<span class="fieldLabel" style="text-align:left;">Book</span><br><span class="field" style="text-align:left;"><input class="text" type="text" id="BookPageIDBook" name="BookPageIDBook" value=""></span>
+</td>
+<td colspan="1">
+<span class="fieldLabel" style="text-align:left;">Page</span><br><span class="field" style="text-align:left;"><input class="text" type="text" id="BookPageIDPage" name="BookPageIDPage" value=""></span>
+</td>
+</tr>
+</tbody></table>
+<!--END TableHtmlLayout--></td>
+</tr>
+</tbody></table>
+<!--END TableHtmlLayout--><br><!--Start TableHtmlLayout--><table class="searchTable"><tbody>
+<tr valign="top">
+<td>
+<!--Start TableHtmlLayout--><table class="tableHtmlLayout"><tbody>
+<tr valign="top">
+<th colspan="2">
+Recording Date</th>
+</tr>
+<tr valign="top"><td>
+<span class="fieldLabel" style="text-align:left;">Date Start</span><br><span class="field" style="text-align:left;"><script type="text/javascript" src="../web/includes/calendar.js"></script><script type="text/javascript">window.onload = function () {}</script><input class="text calendar" type="text" name="RecDateIDStart" value="07/01/1985" id="RecDateIDStart"><img class="clickable" src="../web/images/calImages/cal.gif" width="16" height="16" border="0" alt="Click Here to Pick a date" onclick="cal.toggleCal(document.getElementsByName('RecDateIDStart')[0]);"></span>
+</td>
+<td colspan="1">
+<span class="fieldLabel" style="text-align:left;">Date End</span><br><span class="field" style="text-align:left;"><script type="text/javascript" src="../web/includes/calendar.js"></script><script type="text/javascript">window.onload = function () {}</script><input class="text calendar" type="text" name="RecDateIDEnd" value="06/18/2026" id="RecDateIDEnd"><img class="clickable" src="../web/images/calImages/cal.gif" width="16" height="16" border="0" alt="Click Here to Pick a date" onclick="cal.toggleCal(document.getElementsByName('RecDateIDEnd')[0]);"></span>
+</td>
+</tr>
+</tbody></table>
+<!--END TableHtmlLayout--></td>
+<td colspan="1">
+<!--Start TableHtmlLayout--><table class="tableHtmlLayout"><tbody>
+<tr valign="top">
+<th colspan="2">
+Grantor</th>
+</tr>
+<tr valign="top"><td>
+<span class="fieldLabel" style="text-align:left;">Grantor</span><br><span class="field" style="text-align:left;"><input class="text" type="text" id="GrantorIDSearchString" name="GrantorIDSearchString" value=""></span>
+</td>
+<td colspan="1">
+<span class="fieldLabel" style="text-align:left;">Basic or Advanced Searching</span><br><span class="field" style="text-align:left;"><select class="combobox" size="1" id="GrantorIDSearchType" name="GrantorIDSearchType">
+      <option value="Basic Searching" selected=""> Basic Searching </option>
+      <option value="Advanced Searching"> Advanced Searching </option>
+      </select></span>
+</td>
+</tr>
+</tbody></table>
+<!--END TableHtmlLayout--></td>
+</tr>
+</tbody></table>
+<!--END TableHtmlLayout--><br><!--Start TableHtmlLayout--><table class="searchTable"><tbody>
+<tr valign="top">
+<td>
+<!--Start TableHtmlLayout--><table class="tableHtmlLayout"><tbody>
+<tr valign="top">
+<th colspan="2">
+Grantee</th>
+</tr>
+<tr valign="top"><td>
+<span class="fieldLabel" style="text-align:left;">Grantee</span><br><span class="field" style="text-align:left;"><input class="text" type="text" id="GranteeIDSearchString" name="GranteeIDSearchString" value=""></span>
+</td>
+<td colspan="1">
+<span class="fieldLabel" style="text-align:left;">Basic or Advanced Searching</span><br><span class="field" style="text-align:left;"><select class="combobox" size="1" id="GranteeIDSearchType" name="GranteeIDSearchType">
+      <option value="Basic Searching" selected=""> Basic Searching </option>
+      <option value="Advanced Searching"> Advanced Searching </option>
+      </select></span>
+</td>
+</tr>
+</tbody></table>
+<!--END TableHtmlLayout--></td>
+<td colspan="1">
+<!--Start TableHtmlLayout--><table class="tableHtmlLayout"><tbody>
+<tr valign="top">
+<th colspan="2">
+Both Names</th>
+</tr>
+<tr valign="top"><td>
+<span class="fieldLabel" style="text-align:left;">Both Names</span><br><span class="field" style="text-align:left;"><input class="text" type="text" id="BothNamesIDSearchString" name="BothNamesIDSearchString" value=""></span>
+</td>
+<td colspan="1">
+<span class="fieldLabel" style="text-align:left;">Basic or Advanced Searching</span><br><span class="field" style="text-align:left;"><select class="combobox" size="1" id="BothNamesIDSearchType" name="BothNamesIDSearchType">
+      <option value="Basic Searching" selected=""> Basic Searching </option>
+      <option value="Advanced Searching"> Advanced Searching </option>
+      </select></span>
+</td>
+</tr>
+</tbody></table>
+<!--END TableHtmlLayout--></td>
+</tr>
+</tbody></table>
+<!--END TableHtmlLayout--><br></div>
+<div id="tab_34479_1" class="tab_page" style="display: none;"><!--Start TableHtmlLayout--><table class="searchTable"><tbody>
+<tr valign="top">
+<td colspan="1">
+<!--Start TableHtmlLayout--><table class="tableHtmlLayout"><tbody>
+<tr valign="top">
+<th colspan="2">
+Legal Description</th>
+</tr>
+<tr valign="top"><td>
+<span class="fieldLabel" style="text-align:left;">Search String</span><br><span class="field" style="text-align:left;"><input class="text" type="text" id="LegalCompositeIDSearchString" name="LegalCompositeIDSearchString" value=""></span>
+</td>
+<td colspan="1">
+<span class="fieldLabel" style="text-align:left;">Search Type</span><br><span class="field" style="text-align:left;"><select class="combobox" size="1" id="LegalCompositeIDSearchType" name="LegalCompositeIDSearchType">
+      <option value="Starts With" selected=""> Starts With </option>
+      <option value="Advanced search"> Advanced search </option>
+      </select></span>
+</td>
+</tr>
+</tbody></table>
+<!--END TableHtmlLayout--></td>
+</tr>
+</tbody></table>
+<!--END TableHtmlLayout--><br></div>
+</div></div>
+<script type="text/javascript">TabControl('tab_control_34479', { current: 'tab_34479_0' });</script>
+<script type="text/javascript" src="../web/includes/calendar.js"></script><script type="text/javascript">window.onload = function () {}</script>
+		<p></p>
+		<p>
+		
+		</p>
+	   	<p>
+			<input class="search" type="submit" value="Search" onclick="disableSearchButtons()">
+			<input class="reset" type="reset" value="Clear" onclick="resetFields()">
+		</p>
+	    
+	</td>
+	<td id="searchDocIds">
+		<p>
+			<label>
+				<input id="allTypesCB" type="checkbox" name="AllDocuments" value="ALL" onclick="toggleTypes()" checked="">
+				Search All Types
+			</label>
+	 		<input type="hidden" name="docTypeTotal" value="418">
+		</p>
+		<p>
+			</p><div id="docTypes" style="display:none">
+				To search over specific document types, uncheck and select the document types from the list. You can use your Shift or Ctrl keys to select multiple document types.<br>
+				
+				<select name="__search_select" size="20" multiple="">
+				
+					<option value="ABAH">Abandon Homestead</option>
+				
+					<option value="ABMC">Abandon Mining Claim</option>
+				
+					<option value="ABRW">Abandon Right of Way</option>
+				
+					<option value="ABA">Abandonment</option>
+				
+					<option value="ABE">Abandonment of Easement</option>
+				
+					<option value="ABATE">Abatement</option>
+				
+					<option value="ABJ">Abstract of Judgment</option>
+				
+					<option value="ABT">Abstract of Trust</option>
+				
+					<option value="ACAPT">Acceptance of Appointment</option>
+				
+					<option value="ACT">Acceptance of Trustee</option>
+				
+					<option value="ADNA">Addendum to Ntc of Assessment</option>
+				
+					<option value="AA">Additional Advance Agreement</option>
+				
+					<option value="AFF">Affidavit</option>
+				
+					<option value="AFDNTC">Affidavit &amp; Ntc of Intent to Hold</option>
+				
+					<option value="AFC">Affidavit Change of Trustee</option>
+				
+					<option value="AFDT">Affidavit Death Trustee</option>
+				
+					<option value="AFCAN">Affidavit of Cancellation</option>
+				
+					<option value="AFD">Affidavit of Death</option>
+				
+					<option value="AFEST">Affidavit of Estate</option>
+				
+					<option value="AFSP">Affidavit of Right of Surviving Spouse</option>
+				
+					<option value="AFSMVA">Affidavit Real Property Small Value</option>
+				
+					<option value="AST">Affidavit Successor Trustee</option>
+				
+					<option value="AGR">Agreement</option>
+				
+					<option value="AGRS">Agreement of Sale</option>
+				
+					<option value="AMART">Amend Articles of Incorporation</option>
+				
+					<option value="AMRL">Amend Assignment Rents/Leases</option>
+				
+					<option value="AMDT">Amend Deed of Trust</option>
+				
+					<option value="AFS">Amend Finance Statement</option>
+				
+					<option value="ALP">Amend Partnership</option>
+				
+					<option value="AMSA">Amend Security Agreement</option>
+				
+					<option value="AAJ">Amended Abstract of Judgment</option>
+				
+					<option value="AMAD">Amended Assessment Diagram</option>
+				
+					<option value="ACOC">Amended Cert of Compliance</option>
+				
+					<option value="ACC">Amended Cert. of Completion</option>
+				
+					<option value="ACR">Amended Certificate of Redemption</option>
+				
+					<option value="AJQT">Amended Judgment Quiet Title</option>
+				
+					<option value="ALCT">Amended Land Conservation Contract</option>
+				
+					<option value="AL">Amended Lease</option>
+				
+					<option value="ALLA">Amended Lot Line Adjustment</option>
+				
+					<option value="AM">Amended Map</option>
+				
+					<option value="AMG">Amended Mortgage</option>
+				
+					<option value="ANML">Amended Notice of Mining Location</option>
+				
+					<option value="AMO">Amended Order</option>
+				
+					<option value="AMEND">Amendment</option>
+				
+					<option value="AMAG">Amendment to Agreement</option>
+				
+					<option value="ACCR">Amendment to CCR</option>
+				
+					<option value="ADECR">Amendment to Decl Restrictions</option>
+				
+					<option value="AE">Amendment to Easement</option>
+				
+					<option value="AT">Amendment to Trust</option>
+				
+					<option value="ANX">Annexation Agreement</option>
+				
+					<option value="MAPANX">Annexation Map</option>
+				
+					<option value="APPL">Application</option>
+				
+					<option value="APH">Application Determine Heirship</option>
+				
+					<option value="APLLLC">Application for Registration LLC</option>
+				
+					<option value="APLPTN">Application Regis Ltd Ptnshp</option>
+				
+					<option value="APTR">Appointment of Trustee</option>
+				
+					<option value="ART">Articles</option>
+				
+					<option value="ARTORG">Articles of Organization</option>
+				
+					<option value="AD">Assessment Diagram</option>
+				
+					<option value="MAPAS">Assessment Map</option>
+				
+					<option value="ASW">Assessment Work-Mining Claim</option>
+				
+					<option value="AAR">Assign Assignment of Rents</option>
+				
+					<option value="ASFS">Assign Finance Statement</option>
+				
+					<option value="AS">Assignment</option>
+				
+					<option value="AAG">Assignment Agreement</option>
+				
+					<option value="ASJ">Assignment Judgment</option>
+				
+					<option value="ASC">Assignment of Contract</option>
+				
+					<option value="ADT">Assignment of Deed of Trust</option>
+				
+					<option value="AFIX">Assignment of Fixture Filing</option>
+				
+					<option value="ASL">Assignment of Lease</option>
+				
+					<option value="ASLR">Assignment of Leases &amp; Rents</option>
+				
+					<option value="AR">Assignment of Rents</option>
+				
+					<option value="ASA">Assignment Security Agmt</option>
+				
+					<option value="ASUM">Assumption</option>
+				
+					<option value="ASAG">Assumption Agreement</option>
+				
+					<option value="ATCH">Attachment</option>
+				
+					<option value="AWARD">Award</option>
+				
+					<option value="BCREC">Bad Check Recorder</option>
+				
+					<option value="BANKR">Bankruptcy</option>
+				
+					<option value="BO">Bankruptcy Order</option>
+				
+					<option value="BVP">Bankruptcy Voluntary Petition</option>
+				
+					<option value="BS">Bill of Sale</option>
+				
+					<option value="BOND">Bond</option>
+				
+					<option value="BLOST">Bond Lost Deed of Trust</option>
+				
+					<option value="BNDMEM">Bond Memorandum</option>
+				
+					<option value="BYL">Bylaws</option>
+				
+					<option value="CAN">Cancellation</option>
+				
+					<option value="CANAGR">Cancellation Agreement</option>
+				
+					<option value="CAND">Cancellation Deed</option>
+				
+					<option value="CANLS">Cancellation of Lease</option>
+				
+					<option value="CLN">Cancellation of Lien</option>
+				
+					<option value="CANREC">Cancellation of Reconveyance</option>
+				
+					<option value="CEMD">Cemetery Deed</option>
+				
+					<option value="CCCAN">Cert of Compliance-Cancellation</option>
+				
+					<option value="CCC">Cert of Compliance-Conditional</option>
+				
+					<option value="CERT">Certificate</option>
+				
+					<option value="CM">Certificate Merger</option>
+				
+					<option value="CERTOCC">Certificate Occupancy</option>
+				
+					<option value="CAM">Certificate of Amendment</option>
+				
+					<option value="CA">Certificate of Authority</option>
+				
+					<option value="CCOMP">Certificate of Completion</option>
+				
+					<option value="CLAFCO">Certificate of Completion-LAFCO</option>
+				
+					<option value="CTFCOM">Certificate of Compliance</option>
+				
+					<option value="CC">Certificate of Correction</option>
+				
+					<option value="CD">Certificate of Delinquency</option>
+				
+					<option value="CTFL">Certificate of Lien</option>
+				
+					<option value="CP">Certificate of Partnership</option>
+				
+					<option value="CRED">Certificate of Redemption</option>
+				
+					<option value="CREG">Certificate of Registration-LLC</option>
+				
+					<option value="CT">Certificate of Trust</option>
+				
+					<option value="CCOMPL">Certification of Completion</option>
+				
+					<option value="CTFT">Certification of Trust</option>
+				
+					<option value="CDP">Comprehensive Development Plan</option>
+				
+					<option value="COND">Condemnation</option>
+				
+					<option value="CCR">Conditions, Covenants, Restrictions</option>
+				
+					<option value="CONSENT">Consent</option>
+				
+					<option value="CR">Consent of Removal</option>
+				
+					<option value="CRO">Consent Owner/Parcel Map Waiver</option>
+				
+					<option value="CUSE">Consent to Use Land</option>
+				
+					<option value="CE">Conservation Easement</option>
+				
+					<option value="CDT">Construction Deed of Trust</option>
+				
+					<option value="CFS">Continuation Finance Stmt</option>
+				
+					<option value="CONTRACT">Contract</option>
+				
+					<option value="CFST">Contract for Sale/timber</option>
+				
+					<option value="COS">Contract of Sale</option>
+				
+					<option value="CORAR">Corr Assignment of Rents</option>
+				
+					<option value="CORDT">Corr Deed of Trust</option>
+				
+					<option value="CWN">Correct Ntc Withdrawal of Nonrenewal</option>
+				
+					<option value="CORACT">Corrected Affidavit of Change of Trustee</option>
+				
+					<option value="CAFD">Corrected Affidavit of Death</option>
+				
+					<option value="CADT">Corrected Assignment Deed Of  Trust</option>
+				
+					<option value="CPTS">Corrected Power to Sell</option>
+				
+					<option value="CTD">Corrected Trustees Deed</option>
+				
+					<option value="CORRD">Correction Deed</option>
+				
+					<option value="DECI">Decision</option>
+				
+					<option value="DEC">Declaration</option>
+				
+					<option value="DLDT">Declaration for Lost Deed of Trust</option>
+				
+					<option value="DECH">Declaration of Homestead</option>
+				
+					<option value="DECR">Declaration of Restrictions</option>
+				
+					<option value="DECT">Declaration of Trust</option>
+				
+					<option value="DECSJT">Declaration Severance Joint Tenancy</option>
+				
+					<option value="DECB">Declaration/Bond Lost Deed Trust</option>
+				
+					<option value="DECREE">Decree</option>
+				
+					<option value="DCTA">Decree Confirming Trust Assets</option>
+				
+					<option value="DISMG">Decree of Dissolution Marriage</option>
+				
+					<option value="DECRD">Decree of Distribution</option>
+				
+					<option value="DED">Dedication</option>
+				
+					<option value="D">Deed</option>
+				
+					<option value="DILF">Deed In Lieu of Foreclosure</option>
+				
+					<option value="DT">Deed of Trust</option>
+				
+					<option value="DOTFIX">Deed of Trust/Fixture Filing</option>
+				
+					<option value="DR">Deed Restriction</option>
+				
+					<option value="DCERT">Default Certification</option>
+				
+					<option value="DBS">Desig Bldg Site</option>
+				
+					<option value="DES">Designation</option>
+				
+					<option value="DTR">Designation Successor Trustee</option>
+				
+					<option value="DA">Development Agreement</option>
+				
+					<option value="DCON">Discharge of Conservator</option>
+				
+					<option value="DL">Discharge of Lien</option>
+				
+					<option value="DISINT">Disclaimer of Interest</option>
+				
+					<option value="DOU">Discontinuance of Use</option>
+				
+					<option value="DISM">Dismissal</option>
+				
+					<option value="DISS">Dissolution</option>
+				
+					<option value="DISSP">Dissolution Ptnshp</option>
+				
+					<option value="DIV">Diversion</option>
+				
+					<option value="DTRQ">Dot/Req Ntc</option>
+				
+					<option value="E">Easement</option>
+				
+					<option value="EA">Easement Agreement</option>
+				
+					<option value="ED">Easement Deed</option>
+				
+					<option value="EMA">Easement Maintenance Agmt</option>
+				
+					<option value="ESTOPP">Estoppel Certificate</option>
+				
+					<option value="EXE">Execution</option>
+				
+					<option value="FARMCT">Farmland Security Zone Contract</option>
+				
+					<option value="FDT">Fictitious Deed of Trust</option>
+				
+					<option value="FIX">Fixture Filing</option>
+				
+					<option value="HAZ">Hazardous Substances Cert/Indemnity</option>
+				
+					<option value="MAPHWY">Highway Map</option>
+				
+					<option value="HRD">Historic Resources Designation</option>
+				
+					<option value="HPAG">Housing Program Maint Agmt</option>
+				
+					<option value="IND">Indenture</option>
+				
+					<option value="IFS">Information Finance Stmt</option>
+				
+					<option value="IDM">Interlocutory Dissolution Marriage</option>
+				
+					<option value="IRRVPET">Irrev Petition Local Assmt Dist</option>
+				
+					<option value="J">Judgment</option>
+				
+					<option value="JH">Judgment Declaring Heirship</option>
+				
+					<option value="JQT">Judgment Quieting Title</option>
+				
+					<option value="LANDCT">Land Conservation Contract</option>
+				
+					<option value="LS">Lease</option>
+				
+					<option value="LSAG">Lease Agreement</option>
+				
+					<option value="LSAM">Lease Amendment</option>
+				
+					<option value="LDA">Legal Document Asst Bond</option>
+				
+					<option value="LET">Letters</option>
+				
+					<option value="LADM">Letters of Administration</option>
+				
+					<option value="LCON">Letters of Conservatorship</option>
+				
+					<option value="LIC">License</option>
+				
+					<option value="LWAT">License for Water Diversion</option>
+				
+					<option value="LN">Lien</option>
+				
+					<option value="LNA">Lien Agreement</option>
+				
+					<option value="LP">Limited Partnership</option>
+				
+					<option value="LLA">Lot Line Adjustment</option>
+				
+					<option value="MI">Matured Installment</option>
+				
+					<option value="MLN">Mechanics Lien</option>
+				
+					<option value="MLB">Mechanics Lien Bond</option>
+				
+					<option value="MEMO">Memorandum</option>
+				
+					<option value="MEMAGR">Memorandum of Agreement</option>
+				
+					<option value="MEMLS">Memorandum of Lease</option>
+				
+					<option value="MOU">Memorandum of Understanding</option>
+				
+					<option value="MERGER">Merger</option>
+				
+					<option value="MOD">Modification</option>
+				
+					<option value="MA">Modification Agreement</option>
+				
+					<option value="MDT">Modification of Deed of Trust</option>
+				
+					<option value="MLS">Modification of Lease</option>
+				
+					<option value="MO">Mortgage</option>
+				
+					<option value="M">Multi Title</option>
+				
+					<option value="NE">Noise Easement</option>
+				
+					<option value="ATA">Non-Disturbance/Attornment Agmt</option>
+				
+					<option value="NB">Notary Bond</option>
+				
+					<option value="N">Notice</option>
+				
+					<option value="NTADAV">Notice Addtl Advance/DT</option>
+				
+					<option value="NAMA">Notice Amended Assessment</option>
+				
+					<option value="NSITE">Notice Closure Solid Waste Site</option>
+				
+					<option value="NIMC">Notice Intent Hold Mining Claim</option>
+				
+					<option value="NLFR">Notice Landfill Use Restrictions</option>
+				
+					<option value="NMHI">Notice Mobilehome Installation</option>
+				
+					<option value="NNR">Notice Non-Responsibility</option>
+				
+					<option value="NNCB">Notice NonCompliance Substandard Bldg</option>
+				
+					<option value="NASS">Notice of Assessment</option>
+				
+					<option value="NAT">Notice of Attachment</option>
+				
+					<option value="NBS">Notice of Bulk Sale</option>
+				
+					<option value="NCAN">Notice of Cancellation</option>
+				
+					<option value="NCES">Notice of Cessation</option>
+				
+					<option value="NC">Notice of Completion</option>
+				
+					<option value="COMPLY">Notice of Compliance</option>
+				
+					<option value="NTCONS">Notice of Consent</option>
+				
+					<option value="ND">Notice of Default</option>
+				
+					<option value="NDA">Notice of Delinquent Assessment</option>
+				
+					<option value="NTENTRY">Notice of Entry of Judgment</option>
+				
+					<option value="NIS">Notice of Intended Sale</option>
+				
+					<option value="NINT">Notice of Intent</option>
+				
+					<option value="NINTM">Notice of Intent Preserve Mineral Rights</option>
+				
+					<option value="NIPE">Notice of Intent to Preserve an Easement</option>
+				
+					<option value="NINTH">Notice of Intent To Preserve Interest</option>
+				
+					<option value="NL">Notice of Levy</option>
+				
+					<option value="NLN">Notice of Lien</option>
+				
+					<option value="NLPT">Notice of Lien Postponed Prop Tax</option>
+				
+					<option value="NLP">Notice of Lis Pendens</option>
+				
+					<option value="NML">Notice of Mining Location</option>
+				
+					<option value="NNC">Notice of Non Compliance</option>
+				
+					<option value="NNRW">Notice of Nonrenewal</option>
+				
+					<option value="NPRW">Notice of Partial Nonrenewal</option>
+				
+					<option value="NPA">Notice of Pending Action</option>
+				
+					<option value="NPTS">Notice of Power To Sell</option>
+				
+					<option value="NR">Notice of Reinstatement</option>
+				
+					<option value="NSJ">Notice of Support Judgment</option>
+				
+					<option value="NTS">Notice of Trustees Sale</option>
+				
+					<option value="NVIO">Notice of Violation</option>
+				
+					<option value="NWNR">Notice of Withdrawal of Nonrenewal</option>
+				
+					<option value="NRP">Notice Redevelopment Project</option>
+				
+					<option value="NUA">Notice Unrecorded Agreement</option>
+				
+					<option value="NIT">Ntc Intend Transfer Alcohol Lic</option>
+				
+					<option value="NIDS">Ntc of Intention Determine Status</option>
+				
+					<option value="OTD">Offer to Dedicate</option>
+				
+					<option value="OPT">Option</option>
+				
+					<option value="OP">Option to Purchase</option>
+				
+					<option value="ORD">Order</option>
+				
+					<option value="ORDA">Order Appointing Conservator</option>
+				
+					<option value="OLN">Order Avoiding Lien</option>
+				
+					<option value="OCS">Order Confirming Sale</option>
+				
+					<option value="OLP">Order Expunge Lis Pendens</option>
+				
+					<option value="ODIS">Order for Final Distribution</option>
+				
+					<option value="ORES">Order for Restitution</option>
+				
+					<option value="ORJ">Order Releasing Judgment</option>
+				
+					<option value="ORL">Order Revoking Water License</option>
+				
+					<option value="OFD">Order Succession Real Property</option>
+				
+					<option value="OQT">Order to Quiet Title</option>
+				
+					<option value="OML">Order to Release Mechanics Lien</option>
+				
+					<option value="ORDV">Order to Vacate</option>
+				
+					<option value="ORDIN">Ordinance</option>
+				
+					<option value="MAPPAR">Parcel Map</option>
+				
+					<option value="PARMER">Parcel Merger</option>
+				
+					<option value="PTREC">Partial Reconveyance</option>
+				
+					<option value="PTREL">Partial Release</option>
+				
+					<option value="PRJ">Partial Release of Judgment</option>
+				
+					<option value="PRLN">Partial Release of Lien</option>
+				
+					<option value="PRTL">Partial Release of Tax Lien</option>
+				
+					<option value="PSAT">Partial Satisfaction Judgment</option>
+				
+					<option value="PTA">Partial Termination Agreement</option>
+				
+					<option value="PART">Partnership</option>
+				
+					<option value="PAT">Patent</option>
+				
+					<option value="PPB">Performance/Payment Bond</option>
+				
+					<option value="PERMIT">Permit</option>
+				
+					<option value="PET">Petition</option>
+				
+					<option value="PB">Photocopier Bond</option>
+				
+					<option value="DEVPMT">Planned Development Permit</option>
+				
+					<option value="PLANS">Plans</option>
+				
+					<option value="POA">Power of Attorney</option>
+				
+					<option value="PSB">Process Server Bond</option>
+				
+					<option value="POL">Proof of Labor</option>
+				
+					<option value="MAPBOU">Proposed Asssmt Dist Boundary Map</option>
+				
+					<option value="QCD">Quit Claim Deed</option>
+				
+					<option value="RCL">Receivers Certificate Lien</option>
+				
+					<option value="REC">Reconveyance</option>
+				
+					<option value="MAPSUR">Record of Survey Map</option>
+				
+					<option value="RED">Redemption</option>
+				
+					<option value="RP">Redevelopment Plan</option>
+				
+					<option value="RLPA">Refunding Lease/Purchase Agmt</option>
+				
+					<option value="REGAGR">Regulatory Agreement</option>
+				
+					<option value="REL">Release</option>
+				
+					<option value="RI">Release and Indemnity</option>
+				
+					<option value="RELAS">Release Assignment</option>
+				
+					<option value="RELAR">Release Assignment of Rents</option>
+				
+					<option value="RELC">Release Consent</option>
+				
+					<option value="RFS">Release Finance Statement</option>
+				
+					<option value="RELS">Release Lease</option>
+				
+					<option value="RELLEVY">Release Levy</option>
+				
+					<option value="RELN">Release Lien</option>
+				
+					<option value="RELML">Release Mechanics Lien</option>
+				
+					<option value="RNV">Release Notice of Violation</option>
+				
+					<option value="RAGR">Release of Agreement</option>
+				
+					<option value="RAL">Release of Assessment Lien</option>
+				
+					<option value="RE">Release of Easement</option>
+				
+					<option value="RELI">Release of Indenture</option>
+				
+					<option value="RELJ">Release of Judgment</option>
+				
+					<option value="RM">Release of Mortgage</option>
+				
+					<option value="RELNA">Release of Notice Of Action</option>
+				
+					<option value="RO">Release of Obligation</option>
+				
+					<option value="RELOB">Release of Obligor</option>
+				
+					<option value="RELQ">Relinquishment</option>
+				
+					<option value="RJ">Renewal Judgment</option>
+				
+					<option value="RLA">Rent Limitation Agreement</option>
+				
+					<option value="REP">Report</option>
+				
+					<option value="REQ">Request</option>
+				
+					<option value="RND">Request for Ntc of Default</option>
+				
+					<option value="RDEL">Request Notice of Deliquency</option>
+				
+					<option value="ROQT">Request Order Quiet Title</option>
+				
+					<option value="RQR">Request Reconveyance-do Not Record!!</option>
+				
+					<option value="RESC">Rescission</option>
+				
+					<option value="RESD">Rescission of Deed</option>
+				
+					<option value="RESND">Rescission of Ntc of Default</option>
+				
+					<option value="RESPTS">Rescission of Power to Sell</option>
+				
+					<option value="RESREC">Rescission of Reconveyance</option>
+				
+					<option value="RESRO">Rescission of Release of Obligation</option>
+				
+					<option value="RESSUB">Rescission of Substitution of Trustee</option>
+				
+					<option value="RTD">Rescission of Tax Deed</option>
+				
+					<option value="RESE">Reservation of Easements</option>
+				
+					<option value="RESIG">Resignation</option>
+				
+					<option value="RTR">Resignation of Trustee</option>
+				
+					<option value="RES">Resolution</option>
+				
+					<option value="RNCH">Resolution of Name Change</option>
+				
+					<option value="RCM">Restrictive Covenant Modification</option>
+				
+					<option value="RC">Restrictive Covenants</option>
+				
+					<option value="RTOD">Revocable TOD Deed</option>
+				
+					<option value="REV">Revocation</option>
+				
+					<option value="REVPA">Revocation of Power of Atty</option>
+				
+					<option value="REVTR">Revocation of Trust</option>
+				
+					<option value="RRTOD">Revocation Revocable TOD Deed</option>
+				
+					<option value="RTOAGR">Right of Occupancy Agreement</option>
+				
+					<option value="ROW">Right of Way</option>
+				
+					<option value="ROWE">Right of Way Easement</option>
+				
+					<option value="RA">Road Maintenance Agreement</option>
+				
+					<option value="ROYL">Royalty</option>
+				
+					<option value="SAT">Satisfaction</option>
+				
+					<option value="SATJ">Satisfaction Judgment</option>
+				
+					<option value="SAAL">Security Agmt to Assign Lease</option>
+				
+					<option value="SA">Security Agreement</option>
+				
+					<option value="SEVAGM">Severance Agreement</option>
+				
+					<option value="SD">Sheriff's Deed</option>
+				
+					<option value="SPO">Spousal Property Order</option>
+				
+					<option value="STMT">Statement</option>
+				
+					<option value="SLLC">Statement Ltd Liability Co</option>
+				
+					<option value="STCOMM">Statement of Commencement</option>
+				
+					<option value="STIP">Stipulation</option>
+				
+					<option value="STPORD">Stipulation &amp; Order</option>
+				
+					<option value="STASN">Sub Trustee/Assignment</option>
+				
+					<option value="MAPSUB">Subdivision Map</option>
+				
+					<option value="SUBLS">Sublease</option>
+				
+					<option value="SLAG">Sublease Agreement</option>
+				
+					<option value="SFS">Subordinate Financing Statement</option>
+				
+					<option value="SUB">Subordination</option>
+				
+					<option value="SUBAGR">Subordination Agreement</option>
+				
+					<option value="SFEL">Subordination Fed Estate Tax Lien</option>
+				
+					<option value="STL">Subordination Federal Tax Lien</option>
+				
+					<option value="STREC">Subst Trustee/Reconveyance</option>
+				
+					<option value="SP">Substitution of Payee</option>
+				
+					<option value="ST">Substitution of Trustee</option>
+				
+					<option value="SI">Supplemental Indenture</option>
+				
+					<option value="TDD">Tax Defaulted Deed</option>
+				
+					<option value="TL">Tax Lien</option>
+				
+					<option value="TLF">Tax Lien (Fed)</option>
+				
+					<option value="TLE">Tax Lien Extension</option>
+				
+					<option value="TLS">Tax Lien-Out of State</option>
+				
+					<option value="TERM">Termination</option>
+				
+					<option value="TCCR">Termination Declaration CC&amp;R</option>
+				
+					<option value="TFS">Termination Finance Stmt</option>
+				
+					<option value="TAGR">Termination of Agreement</option>
+				
+					<option value="TASGN">Termination of Assignment</option>
+				
+					<option value="TML">Termination of Lease</option>
+				
+					<option value="TIMP">Timberland Conversion Permit</option>
+				
+					<option value="TRANS">Transfer</option>
+				
+					<option value="TFPR">Transfer Fee Pymt Required</option>
+				
+					<option value="TR">Trust</option>
+				
+					<option value="TRAGR">Trust Agreement</option>
+				
+					<option value="TRAM">Trust Amendment</option>
+				
+					<option value="TD">Trustees Deed</option>
+				
+					<option value="FS">UCC Finance Statement</option>
+				
+					<option value="UCCSRCH">UCC Search</option>
+				
+					<option value="UFN">Unused File Number</option>
+				
+					<option value="VAC">Vacate Right of Way</option>
+				
+					<option value="VAR">Variance</option>
+				
+					<option value="W">Waiver</option>
+				
+					<option value="WAL">Waiver of Landlord</option>
+				
+					<option value="WDIV">Water Diversion</option>
+				
+					<option value="WL">Water License</option>
+				
+					<option value="WR">Water Rights</option>
+				
+					<option value="WITH">Withdrawal</option>
+				
+					<option value="WINT">Withdrawal Intent to Preserve Interest</option>
+				
+					<option value="WLIEN">Withdrawal of Lien</option>
+				
+					<option value="WLP">Withdrawal of Lis Pendens</option>
+				
+				</select>
+			</div>
+		<p></p>
+		<hr>
+ 		
+	</td></tr>
+	</tbody></table>
+	</form>
+</div>
+
+</td>
+</tr>
+
+
+<tr>
+<td id="footer_cell" colspan="2">
+
+	<table id="footer">
+		<tbody><tr>
+			<td>
+			   	
+				
+			</td>
+			<td class="center">
+			   	Copyright (c) 2004, Tyler Technologies, Inc. All Rights Reserved &nbsp; &nbsp; &nbsp;
+				
+			</td>
+			<td class="right">
+			   	
+				
+			</td>
+		</tr>
+	</tbody></table>
+
+</td>
+</tr>
+</tbody></table>
+
+
+<div id="calendarContainer" style="position: absolute; visibility: hidden; z-index: 99;"></div><div id="calendarContainer" style="position: absolute; visibility: hidden; z-index: 99;"></div><div id="calendarContainer" style="position: absolute; visibility: hidden; z-index: 99;"></div></body></html>

@@ -1,0 +1,33 @@
+display_name: Lake County
+collector_names:
+- LAKE TAX COLLECTOR
+- LAKE CO TAX COLLR
+- COUNTY OF LAKE
+assessor:
+  backend: mpts
+  endpoint: https://common1.mptsweb.com/mbap/lake/asr/AsrPrint
+  apn_includes:
+  - 1 Main
+  - 2 Main
+  - 1 Oak
+  - 2 Oak
+  - 1 Pine
+  - 1st
+  - 2nd
+  - 3rd
+  notes: Auto-onboarded by onboard_county.py. MPTS host common1.mptsweb.com slug lake
+  host: https://common1.mptsweb.com
+recorder:
+  backend: county_portal
+  base_url: https://lakecountyca-web.tylerhost.net
+  name_search_id: DOCSEARCH4S3
+  doc_search_id: DOCSEARCH4S3
+  apn_search_id: DOCSEARCH4S3
+  typedate_search_id: DOCSEARCH4S5
+  ajax_headers_required: true
+  notes: discovered automatically
+  endpoint: https://recorder.lake.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

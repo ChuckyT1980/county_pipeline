@@ -1,0 +1,35 @@
+display_name: Glenn County
+collector_names:
+- GLENN TAX COLLECTOR
+- GLENN CO TAX COLLR
+- COUNTY OF GLENN
+assessor:
+  backend: mpts
+  endpoint: https://common1.mptsweb.com/mbap/glenn/asr/AsrPrint
+  apn_includes:
+  - 1 Main
+  - 2 Main
+  - 1 Oak
+  - 2 Oak
+  - 1 Pine
+  - 1st
+  - 2nd
+  - 3rd
+  notes: Auto-onboarded by onboard_county.py. MPTS host common1.mptsweb.com slug glenn
+  host: https://common1.mptsweb.com
+recorder:
+  backend: county_portal
+  base_url: https://glenncountyca-web.tylerhost.net
+  name_search_id: DOCSEARCH615S1
+  doc_search_id: DOCSEARCH615S2
+  apn_search_id: null
+  typedate_search_id: DOCSEARCH615S3
+  doc_field: field_DocNumID
+  doc_number_transform: r_to_hyphen_raw
+  ajax_headers_required: true
+  notes: discovered automatically (doc format 2022-2373 verified live)
+  endpoint: https://recorder.glenn.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

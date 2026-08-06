@@ -1,0 +1,17 @@
+display_name: San Diego County
+collector_names:
+- SAN DIEGO TAX COLLECTOR
+- SAN DIEGO CO TAX COLLR
+- COUNTY OF SAN DIEGO
+assessor:
+  backend: socrata
+  notes: no public assessor source discovered yet
+  endpoint: https://data.sandiegocounty.gov/resource/parcels.json
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.sandiego.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

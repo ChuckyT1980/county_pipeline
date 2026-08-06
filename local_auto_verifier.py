@@ -12,7 +12,7 @@ COUNTY   = os.getenv("TRIAGE_COUNTY", "tehama")
 
 RECORDER_URLS = {
     "tehama": "https://recordsearch.tehama.gov/web/search/DOCSEARCH4S1",
-    "shasta": "https://eagleweb.co.shasta.ca.us/eaglesoftware/web/search/DOCSEARCH4S1",
+    "shasta": "https://recorderselfservice.shastacounty.gov/web/search/DOCSEARCH4S1",
 }
 LEAD_ID_PREFIX = {
     "tehama": "Tehama_",
@@ -46,7 +46,42 @@ def format_name(name):
         return {"lastName": tokens[0], "firstName": tokens[1]}
     return {"lastName": name, "firstName": ""}
 
-def ensure_search_ready(page):
+def norm(s: str) -> str:
+    return " ".join(str(s or "").upper().replace(",", " ").replace(".", " ").split())
+
+def tokens(s: str) -> set:
+    return {t for t in norm(s).split() if len(t) > 1}
+
+def owner_tokens(name: str):
+    n = norm(name)
+    if "," in str(name):
+        last, rest = [x.strip() for x in str(name).upper().split(",", 1)]
+        first = rest.split()[0] if rest.strip() else ""
+        return last, first, tokens(name)
+    parts = n.split()
+    last = parts[-1] if parts else ""
+    first = parts[0] if parts else ""
+    return last, first, set(parts)
+
+def strong_name_match(target_name: str, candidate_text: str) -> bool:
+    _, _, target_tokens = owner_tokens(target_name)
+    cand_tokens = tokens(candidate_text)
+
+    if not target_tokens or not cand_tokens:
+        return False
+
+    overlap = target_tokens & cand_tokens
+    overlap_ratio = len(overlap) / max(1, len(target_tokens))
+    return overlap_ratio >= 0.75
+
+def likely_related_transfer(owner_name: str, grantee_text: str) -> bool:
+    _, _, owner_tok = owner_tokens(owner_name)
+    grantee_tok = tokens(grantee_text)
+
+    related_markers = {"TRUST", "TRTEE", "TRUSTEE", "REVOCABLE", "FAMILY"}
+    return len(owner_tok & grantee_tok) >= 1 and len(related_markers & grantee_tok) >= 1
+
+def ensure_search_ready(page, target_url):
     for attempt in range(3):
         try:
             if "disclaimer" in page.url.lower():
@@ -59,6 +94,12 @@ def ensure_search_ready(page):
                     time.sleep(1)
                 except Exception:
                     pass
+                    
+            if "DOCSEARCH" not in page.url.upper():
+                page.goto(target_url, timeout=30000)
+                page.wait_for_load_state("networkidle")
+                time.sleep(1)
+
             field = page.locator("#field_BothNamesID")
             if field.count() > 0 and field.is_visible(timeout=3000):
                 return True
@@ -67,65 +108,94 @@ def ensure_search_ready(page):
             time.sleep(2)
     return False
 
-def classify_triage(docs: list, owner_name: str) -> dict:
-    """Pessimistic triage classifier. Defaults to Needs Review."""
+def classify_triage(docs: list, owner_name: str, parcel_level_match: bool = False, recorder_access_blocked: bool = False, detail_snippet: str = "") -> dict:
+    """Recorder-gated pessimistic triage classifier for dashboard verification."""
+
     flags = {
         "ownership_conflict": False,
         "current_owner_candidate": owner_name,
         "active_mortgage": False,
         "estate_flag": False,
         "lien_clear": True,
-        "verification_status": "Needs Review", # Fail-safe default
+        "recorder_hit_exists": bool(docs),
+        "corroborating_deed": False,
+        "parcel_level_match": parcel_level_match,
+        "verification_status": "Needs Review",
         "notes": []
     }
-    
-    if not docs:
-        flags["notes"].append("No recorder documents found. Manual review required.")
+
+    if recorder_access_blocked:
+        flags["verification_status"] = "Needs Review"
+        flags["notes"].append("Needs Review: Recorder index hit found, but detail view was blocked/failed (recorder_results_but_detail_unconfirmed).")
         flags["notes"] = " ".join(flags["notes"])
         return flags
-        
+
+    if not docs:
+        flags["verification_status"] = "Needs Review"
+        flags["notes"].append("Needs Review: No recorder corroboration found (no_recorder_results).")
+        flags["notes"] = " ".join(flags["notes"])
+        return flags
+
     raw_mortgages = 0
     raw_reconveyances = 0
-    latest_deed_date = ""
-
-    search_last = owner_name.split(",")[0].strip().upper()
-    search_first = owner_name.split(",")[1].strip().upper().split()[0] if "," in owner_name else ""
+    latest_conflict_date = ""
+    deed_types = {
+        "DEED", "GRANT DEED", "QUITCLAIM DEED", "QUIT CLAIM DEED",
+        "WARRANTY DEED", "INTERSPOUSAL TRANSFER DEED", "TRUST TRANSFER DEED"
+    }
 
     for d in docs:
-        t = d.get("doc_type", "").upper()
-        if t in ["RECONVEYANCE", "FULL RECONVEYANCE"]: raw_reconveyances += 1
-        if t in ["DEED OF TRUST", "MORTGAGE"]: raw_mortgages += 1
-        if t in ["DEED", "GRANT DEED", "QUITCLAIM DEED", "WARRANTY DEED"]:
-            grantor_text = str(d.get("grantor", "")).upper()
-            grantee_text = str(d.get("grantee", "")).upper()
-            if search_last in grantor_text and (not search_first or search_first in grantor_text):
-                is_related = (search_last in grantee_text or any(w in grantee_text for w in ["TRUST", "LLC", "REVOCABLE", "FAMILY"]))
-                if not (is_related and search_first and search_first in grantee_text):
-                    flags["ownership_conflict"] = True
-                    doc_date = d.get("recording_date", "")
-                    if doc_date >= latest_deed_date:
-                        flags["current_owner_candidate"] = d.get("grantee", "")
-                        latest_deed_date = doc_date
+        t = norm(d.get("doc_type", ""))
+        grantor_text = norm(d.get("grantor", ""))
+        grantee_text = norm(d.get("grantee", ""))
+        doc_date = str(d.get("recording_date", "") or "")
 
-        if "ESTATE" in str(d.get("grantor", "")).upper() or "AFFIDAVIT OF DEATH" in t: flags["estate_flag"] = True
-        if "TAX LIEN" in t and "RELEASE" not in t: flags["lien_clear"] = False
-        if t == "ABSTRACT OF JUDGMENT": flags["lien_clear"] = False
+        if t in {"RECONVEYANCE", "FULL RECONVEYANCE"}:
+            raw_reconveyances += 1
+
+        if t in {"DEED OF TRUST", "MORTGAGE"}:
+            raw_mortgages += 1
+
+        if t in deed_types:
+            if strong_name_match(owner_name, grantee_text):
+                flags["corroborating_deed"] = True
+
+            if strong_name_match(owner_name, grantor_text):
+                if not strong_name_match(owner_name, grantee_text) and not likely_related_transfer(owner_name, grantee_text):
+                    flags["ownership_conflict"] = True
+                    if doc_date >= latest_conflict_date:
+                        flags["current_owner_candidate"] = d.get("grantee", "") or ""
+                        latest_conflict_date = doc_date
+
+        if "ESTATE" in grantor_text or "AFFIDAVIT OF DEATH" in t:
+            flags["estate_flag"] = True
+
+        if ("TAX LIEN" in t and "RELEASE" not in t) or t == "ABSTRACT OF JUDGMENT":
+            flags["lien_clear"] = False
 
     flags["active_mortgage"] = max(0, raw_mortgages - raw_reconveyances) > 0
 
     if flags["ownership_conflict"]:
-        flags["verification_status"] = "Needs Review"
-        flags["notes"].append(f"Ownership Conflict: Transfer detected to {flags['current_owner_candidate']}.")
+        flags["verification_status"] = "Disqualified"
+        flags["notes"].append(
+            f"Disqualified: Ownership conflict in recorder history (possible transfer to {flags['current_owner_candidate']})."
+        )
     elif flags["estate_flag"]:
+        flags["verification_status"] = "Disqualified"
+        flags["notes"].append("Disqualified: Estate/Probate activity detected.")
+    elif not flags["corroborating_deed"]:
         flags["verification_status"] = "Needs Review"
-        flags["notes"].append("Estate/Probate activity detected.")
+        flags["notes"].append("Needs Review: Recorder hit exists but lacks a corroborating deed to the assessor owner.")
+    elif not flags["parcel_level_match"]:
+        flags["verification_status"] = "Needs Review"
+        snippet_text = f" Detail snippet: '{detail_snippet}'" if detail_snippet else ""
+        flags["notes"].append(f"Needs Review: Recorder owner match found, but parcel-level linkage is still weak (recorder_results_but_detail_unconfirmed).{snippet_text}")
     elif not flags["lien_clear"]:
         flags["verification_status"] = "Needs Review"
-        flags["notes"].append("Active non-mortgage liens found.")
+        flags["notes"].append("Needs Review: Active non-mortgage liens found.")
     else:
-        # Only if explicitly clear of all flags AND docs were present
         flags["verification_status"] = "Verified"
-        flags["notes"].append("Clean title, no conflicts detected.")
+        flags["notes"].append("Verified: Assessor owner aligns with recorder deed and parcel-level linkage is present.")
 
     if flags["active_mortgage"]:
         flags["notes"].append("Active mortgage/DOT exists.")
@@ -152,10 +222,11 @@ def log_verification(lead_id, status, notes):
 
 def get_unverified_leads():
     df = pd.read_csv(CSV_PATH)
-    df['apn_fallback'] = df['apn_pdf'].fillna(df['fee_parcel']).astype(str).str.replace(r"\.0$", "", regex=True)
+    df['apn_fallback'] = df.get('apn_pdf', df.get('fee_parcel')).fillna(df.get('fee_parcel')).astype(str).str.replace(r"\.0$", "", regex=True)
     def fmt_apn(a):
         digits = re.sub(r"\D", "", a)
-        return f"{digits[:3]}-{digits[3:6]}-{digits[6:9]}-{digits[9:12]}" if len(digits) == 12 else a
+        digits = digits.zfill(12)
+        return f"{digits[:3]}-{digits[3:6]}-{digits[6:9]}-{digits[9:12]}"
     df['apn_fallback'] = df['apn_fallback'].apply(fmt_apn)
     prefix = LEAD_ID_PREFIX.get(COUNTY, f"{COUNTY.capitalize()}_")
     df['lead_id'] = prefix + df['apn_fallback']
@@ -202,7 +273,7 @@ def main():
 
         for _, row in leads.iterrows():
             lead_id = row['lead_id']
-            owner_name = str(row['assessee_name'])
+            owner_name = str(row.get('assessee_name', row.get('owner_name', '')))
             print(f"Processing {lead_id} ({owner_name})")
 
             parsed = format_name(owner_name)
@@ -212,11 +283,15 @@ def main():
 
             search_str = f"{parsed['lastName']} {parsed['firstName']}".strip()
             docs = []
+            
+            recorder_access_blocked = False
+            detail_snippet = ""
+            parcel_level_match = False
 
             try:
                 recorder_url = RECORDER_URLS.get(COUNTY, RECORDER_URLS["tehama"])
                 page.goto(recorder_url, timeout=60000)
-                if ensure_search_ready(page):
+                if ensure_search_ready(page, recorder_url):
                     try:
                         clear_btn = page.locator("#clearSearchButton")
                         if clear_btn.count() > 0 and clear_btn.is_visible(timeout=2000):
@@ -233,14 +308,15 @@ def main():
                     try: page.wait_for_selector(".ui-li-static", timeout=8000)
                     except Exception: pass
                     
-                    ensure_search_ready(page)
                     soup = BeautifulSoup(page.content(), "html.parser")
+                    lis = soup.find_all("li", class_="ui-li-static")
+                    print(f"    [DEBUG] Found {len(lis)} documents for {search_str}")
 
-                    for li in soup.find_all("li", class_="ui-li-static"):
+                    for li in lis:
                         text = li.text.strip().upper()
-                        dt = "OTHER"
-                        if any(d in text for d in DEED_TYPES): dt = "DEED"
-                        elif any(m in text for m in MORTGAGE_TYPES): dt = "MORTGAGE"
+                        doc_type_match = re.search(r'TYPE:\s*(.+?)\s*(?:RECORDED:|GRANTOR:|$)', text)
+                        dt = doc_type_match.group(1).strip() if doc_type_match else "OTHER"
+                        if any(m in text for m in MORTGAGE_TYPES): dt = "MORTGAGE"
                         elif any(r in text for r in RECONVEYANCE_TYPES): dt = "RECONVEYANCE"
                         elif "NOTICE OF POWER TO SELL" in text: dt = "NOTICE OF POWER TO SELL"
                         elif "AFFIDAVIT OF DEATH" in text: dt = "AFFIDAVIT OF DEATH"
@@ -255,17 +331,64 @@ def main():
                         grantee = text.split("GRANTEE:")[1].strip() if "GRANTEE:" in text else ""
                         dm = re.search(r'(\d{2}/\d{2}/\d{4})', text)
                         
+                        a_tag = li.find("a")
+                        href = a_tag.get("href") if a_tag else None
+                        
                         docs.append({
                             "doc_type": dt,
                             "grantor": grantor,
                             "grantee": grantee,
-                            "recording_date": dm.group(1) if dm else ""
+                            "recording_date": dm.group(1) if dm else "",
+                            "href": href
                         })
+
             except Exception as e:
                 print(f"Error scraping {owner_name}: {e}")
-                continue
+                
+            # Stage 2: Click into best candidate deed for parcel matching
+            if docs:
+                best_deed = None
+                deed_types = {"DEED", "GRANT DEED", "QUITCLAIM DEED", "WARRANTY DEED"}
+                for d in docs:
+                    if d.get("doc_type") in deed_types:
+                        if strong_name_match(owner_name, str(d.get("grantee", ""))):
+                            best_deed = d
+                            break # Take newest strong match
 
-            flags = classify_triage(docs, owner_name)
+                if best_deed and best_deed.get("href"):
+                    detail_url = best_deed["href"]
+                    if detail_url.startswith("/"):
+                        detail_url = "/".join(recorder_url.split("/")[:3]) + detail_url
+                    try:
+                        page.goto(detail_url, timeout=30000)
+                        time.sleep(2)
+                        detail_html = page.content()
+                        soup = BeautifulSoup(detail_html, "html.parser")
+                        text_content = soup.get_text(separator=' ', strip=True)
+                        apn_match = re.search(r'APN[:\s]*([\d\-]+)', text_content, re.IGNORECASE)
+                        
+                        if apn_match:
+                            found_apn = re.sub(r"\D", "", apn_match.group(1))
+                            target_apn = re.sub(r"\D", "", str(row['apn_fallback']))
+                            
+                            if found_apn == target_apn:
+                                parcel_level_match = True
+                                detail_snippet = text_content[:500]
+                                print(f"    [MATCH] APN corroborated exactly: {apn_match.group(1)}")
+                            elif found_apn in target_apn or target_apn in found_apn:
+                                detail_snippet = f"Substring match only: {found_apn} vs target {target_apn}."
+                                print(f"    [MISMATCH] Substring only: Found APN {found_apn} but target is {target_apn}")
+                            else:
+                                detail_snippet = f"Mismatch: {found_apn} vs target {target_apn}."
+                                print(f"    [MISMATCH] Found APN {found_apn} but target is {target_apn}")
+                        else:
+                            detail_snippet = "No APN pattern found in document text."
+                            
+                    except Exception as e:
+                        recorder_access_blocked = True
+                        print(f"    [WARNING] Failed to extract APN detail (access blocked/timed out): {e}")
+
+            flags = classify_triage(docs, owner_name, parcel_level_match=parcel_level_match, recorder_access_blocked=recorder_access_blocked, detail_snippet=detail_snippet)
             log_verification(lead_id, flags["verification_status"], flags["notes"])
             print(f"  -> {flags['verification_status']}: {flags['notes']}")
             

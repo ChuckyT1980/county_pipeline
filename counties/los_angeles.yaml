@@ -1,0 +1,17 @@
+display_name: Los Angeles County
+collector_names:
+- LOS ANGELES TAX COLLECTOR
+- LOS ANGELES CO TAX COLLR
+- COUNTY OF LOS ANGELES
+assessor:
+  backend: socrata
+  notes: no public assessor source discovered yet
+  endpoint: https://data.lacounty.gov/resource/28ee-x3j7.json
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.losangeles.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

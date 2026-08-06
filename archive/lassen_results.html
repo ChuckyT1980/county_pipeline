@@ -1,0 +1,719 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml2/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+	
+<link rel="stylesheet" type="text/css" href="../web/includes/jquery/jquery-ui-1.10.1.custom.min.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../web/css/base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../web/css/print.css" media="print">
+<link rel="stylesheet" type="text/css" href="../web/css/tooltip.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../web/css/drop3.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../web/includes/modalbox1.6.0/modalbox.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../web/includes/jquery/token-input.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../web/css/custom.css" media="screen">
+<script src="../web/includes/prototype/prototype.js" type="text/javascript"></script>
+<script src="../web/includes/script.aculo.us/scriptaculous.js" type="text/javascript"></script><script type="text/javascript" src="https://eagleweb.co.lassen.ca.us/eweb/web/includes/script.aculo.us/builder.js"></script><script type="text/javascript" src="https://eagleweb.co.lassen.ca.us/eweb/web/includes/script.aculo.us/effects.js"></script><script type="text/javascript" src="https://eagleweb.co.lassen.ca.us/eweb/web/includes/script.aculo.us/dragdrop.js"></script><script type="text/javascript" src="https://eagleweb.co.lassen.ca.us/eweb/web/includes/script.aculo.us/controls.js"></script><script type="text/javascript" src="https://eagleweb.co.lassen.ca.us/eweb/web/includes/script.aculo.us/slider.js"></script><script type="text/javascript" src="https://eagleweb.co.lassen.ca.us/eweb/web/includes/script.aculo.us/sound.js"></script>
+<script src="../web/includes/tooltip-v0.2.js" type="text/javascript"></script>
+<script src="../web/includes/tabbedlayout.js" type="text/javascript"></script>
+<script src="../web/includes/modalbox1.6.0/modalbox.js" type="text/javascript"></script>
+<script src="../web/includes/jquery/jquery.js" type="text/javascript"></script>
+<script src="../web/includes/jquery/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<script src="../web/includes/jquery/jquery.clear.js" type="text/javascript"></script>
+<script src="../web/includes/jquery/tokeninput.js" type="text/javascript"></script>
+
+	
+	<title>docSearchResults.title</title>
+</head>
+<body id="PAGE_DOC_SEARCH_RESULTS">
+
+<table id="columns">
+<tbody><tr><td id="header_cell" colspan="2">
+
+<div id="header">
+	
+	
+	
+    <h1>Search Results</h1>
+	
+	<div class="timeout"><p id="timeRemaining" style="display: none"></p></div>
+	
+	
+</div>
+
+
+<span class="preload1"></span>
+<span class="preload2"></span>
+
+<ul class="menu2">
+	<li class="top"><a href="../eagleweb/docSearch.jsp" class="top_link"><span>Document Search</span></a>
+	</li><li class="top"><a href="../web/help.jsp" class="top_link"><span>Help</span></a>
+	</li><li class="top"><a href="../web/about.jsp" class="top_link"><span>About</span></a>
+	</li><li class="top"><a href="../web/logout.jsp" class="top_link"><span>Logout public</span></a>
+</li></ul>
+
+
+</td>
+</tr>
+
+
+<tr>
+<td id="left_column">
+
+
+	<div id="left">
+		
+		<h1>Search Information</h1>
+	   	Options
+   	
+		<script language="JavaScript">
+			function doSort() {
+				var sortField = $('sort_search_results')[$('sort_search_results').selectedIndex].value;
+				var sortField2 = $('sort_search_results_2')[$('sort_search_results_2').selectedIndex].value;
+				var searchId = 0;
+				var changePage = 1;
+				var pageSize = 100;
+				window.location = "docSearchResults.jsp?searchId=" + searchId + "&page="+ changePage + "&pageSize=" + pageSize + "&sort=" + sortField + "&sort2=" + sortField2 + "&dir=asc";
+			}
+			function sortDir(dir) {
+				var searchId = 0;
+				var changePage = 1;
+				var pageSize = 100;
+				window.location = "docSearchResults.jsp?searchId=" + searchId+ "&page="+ changePage + "&pageSize=" + pageSize + "&sort=&sort2=&dir="+dir;
+			}
+			function pageSize(size) {
+				var searchId = 0;
+				var changePage = 1;
+				window.location = "docSearchResults.jsp?searchId=" + searchId+ "&page="+ changePage + "&pageSize=" + size + "&sort=&sort2=&dir=";
+			}
+		</script>
+		
+		<div id="searchControl" class="widget">
+			<h1>Sort By</h1>
+			<select id="sort_search_results" name="sort" onchange="javascript:doSort();">
+			
+				<option value="Document Id">Document  ID</option>
+			
+				<option value="Document Type">Document  Type</option>
+			
+				<option value="Document Relevance" selected="">Document  Relevance</option>
+			
+				<option value="BookPage">Book Page</option>
+			
+				<option value="CalculatedLegalSummary">Calculated Legal Summary</option>
+			
+				<option value="Grantee">Grantee</option>
+			
+				<option value="Grantor">Grantor</option>
+			
+				<option value="Notes">Notes</option>
+			
+				<option value="RecordingDate">Recording Date</option>
+			
+				<option value="RelatedBookPage">Related Book Page</option>
+			
+				<option value="RelatedDocumentNumber">Related Document Number</option>
+			
+				<option value="Remarks">Remarks</option>
+			
+			</select>
+			
+			<h1>Then Sort By</h1>
+			<select id="sort_search_results_2" name="sort2" onchange="javascript:doSort();">
+			<option value="" selected="SELECTED"></option>
+            
+                <option value="Document Id">Document  ID</option>
+            
+                <option value="Document Type">Document  Type</option>
+            
+                <option value="BookPage">Book Page</option>
+            
+                <option value="CalculatedLegalSummary">Calculated Legal Summary</option>
+            
+                <option value="Grantee">Grantee</option>
+            
+                <option value="Grantor">Grantor</option>
+            
+                <option value="Notes">Notes</option>
+            
+                <option value="RecordingDate">Recording Date</option>
+            
+                <option value="RelatedBookPage">Related Book Page</option>
+            
+                <option value="RelatedDocumentNumber">Related Document Number</option>
+            
+                <option value="Remarks">Remarks</option>
+            
+            </select>
+		   	
+			<h1>Sort Order</h1>
+		   	<select onchange="javascript:sortDir(this[this.selectedIndex].value);">
+		   		<option value="asc">Ascending</option>
+		   		<option value="dsc">Descending</option>
+		   	</select>
+		   	
+			<h1>Results Per Page</h1>
+		   	<select onchange="javascript:pageSize(this[this.selectedIndex].value);">
+		   	
+		   				<option value="5">5</option>
+		   				
+		   				<option value="10">10</option>
+		   				
+		   				<option value="20">20</option>
+		   				
+		   				<option value="30">30</option>
+		   				
+		   				<option value="50">50</option>
+		   				
+		   				<option value="100" selected="">100</option>
+		   				
+		   	</select>
+	   	</div>
+	   	
+	   	<div id="recentSearches" class="widget">
+<h1>Recent Searches</h1>
+<ul>
+<li><strong>Search 1:</strong> <strong><a href="../eagleweb/docSearchResults.jsp?searchId=0&amp;c=1" clearsselection="true">*60 results</a></strong></li>
+</ul>
+</div>
+
+	   	   
+   		<script src="../eagleweb/includes/generatePdf.js"></script>
+<script src="../eagleweb/includes/pdfBuilder.js"></script>
+<div id="updateablePdfWidget" class="widget">
+<h1>Images</h1><ul id="pdfBuilder">
+	<li>Unavailable to Public</li>
+</ul>
+</div>
+	   	
+	   	
+	   	
+	   	
+	</div>
+
+
+</td>
+
+<td id="right_column">
+<div id="middle">
+
+
+
+
+
+<p><a class="iconic newSearch" href="../eagleweb/docSearch.jsp">New Search</a><a class="iconic modifySearch" href="../eagleweb/docSearch.jsp?searchId=0">Modify Search</a><a class="iconic print" href="docSearchResults.jsp?searchId=0&amp;printing=true">Printable Version</a></p>
+
+<p style="clear: both;"><strong>You searched for:</strong> RecDateID &gt;= Mon Jul 01 00:00:00 PDT 1985 and  &lt;= Sun Jul 05 00:00:00 PDT 2026 and exact search in BothNamesID for SMITH JOHN</p>
+
+
+	
+		<form action="purchaseDocument.jsp" method="post">
+		    <div class="purchaseLinks">
+			  
+		      <script type="text/javascript">
+				<!--
+				// toggle selected documents		
+				function selectAll() {
+				  //var idsOnPage = '';
+				  $$('input.purchaseCB').each(function(cb) {
+				    cb.checked = 'checked';
+				    //idsOnPage = idsOnPage + cb.value + ',';
+				  });
+				  updateSessionState();
+				}
+				function selectNone() {
+				  $$('input.purchaseCB').each(function(cb) {
+				    cb.checked = '';
+				  });
+				  updateSessionState();
+				}
+		
+				function updateDisplayedCountFields(transport) {
+					$$('span.selectionStatus').each(function(div){
+						div.innerHTML = transport.responseText; 
+					});
+				}
+				
+				// show select all/none links and purchase buttons if there are checkboxes in the results
+				function maybeShowSelectLinks() {
+					if($$('input.purchaseCB').length>0) {
+					  $$('.purchaseButton').each(function(b) {
+					    b.show();
+					  });
+		
+					  //alert($('selectLinks'));
+					  $('selectAllLinks').update("<u class='tableHeaderAction' id='all'>Select All</u> / <u class='tableHeaderAction' id='none'>None</u>");
+					  $('selectAllLinks').addClassName('noWrap');
+					  Event.observe('all', 'click', selectAll);
+					  Event.observe('none', 'click', selectNone);
+					}
+		
+					if($$('a.addPdf').length>0) {
+					  $('imageLinks').update("<u class='tableHeaderAction' id='addAllToPdf'>Add All to Images</u>");
+					  $('imageLinks').addClassName('noWrap');
+					  PdfBuilder.replaceAddAllLink();
+					}
+				}
+		
+				function init() {
+					maybeShowSelectLinks();
+					registerPurchaseCBEvents();
+					// workaround to handle state change that occurred before the event observers were registered
+					updateSessionState();
+				}
+				
+				function registerPurchaseCBEvents() {
+					$$('input.purchaseCB').each(function(input) {
+						input.observe('click', updateSessionState);
+					});
+					// register events that will warn user about clearing their selection
+					$$('#recentSearches a[clearsselection=true]').each(function(a) {
+						a.observe('click', maybeWarnAboutSelectionLoss);
+					});
+				}
+		
+				function maybeWarnAboutSelectionLoss(e) {
+					var statusSpans = $$('span.selectionStatus');
+					if(statusSpans.length>0) {
+						if(statusSpans[0].innerHTML) {
+							if(!confirm("Are you sure you want to leave this page and lose the selected items?")) {
+								e.stop();
+							}
+						}
+					}
+				}
+		
+				function updateSessionState() {
+					  var checkedIds = '';
+					  var uncheckedIds = '';
+					  $$('input.purchaseCB').each(function(cb) {
+					    if(cb.checked) {
+					      checkedIds = checkedIds + cb.value + ',';
+					    } else {
+			              uncheckedIds = uncheckedIds + cb.value + ','; 
+					    }
+					  });
+					  new Ajax.Request('purchaseCheckBoxSelection.jsp', {
+						method: 'post',
+						// remove/add appropriate ids
+						parameters: 'r='+uncheckedIds+'&a='+checkedIds,
+						onSuccess: updateDisplayedCountFields
+					  });
+				}
+		
+				Event.observe(window, 'load', init);
+				-->
+		      </script>
+		    </div>
+		  
+		  
+		  <script src="../eagleweb/includes/clickableRows.js"></script>
+		  
+		  <span class="pagebanner">60 items found, displaying all items.</span><span class="pagelinks"><strong>1</strong></span>
+<table id="searchResultsTable">
+<thead>
+<tr>
+<th>Description</th>
+<th>Summary</th>
+<th><div id="imageLinks"></div></th>
+<th><div id="selectAllLinks"></div></th></tr></thead>
+<tbody>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC183826">Deed<br>
+1995-08520</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC183826"><b> Rec. Date: </b>12/27/1995 08:00:00 AM <b>Book Page: </b>B: 634 P: 26 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH ALICE N, SMITH JOHN F</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> JOHN F &amp; ALICE N SMITH TR, SMITH ALICE N TRUSTEE, SMITH JOHN F TRUSTEE, SMITH JOHN F &amp; ALICE N TR</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1000016">Quit Claim Deed<br>
+1999-04752</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1000016"><b> Rec. Date: </b>07/12/1999 08:30:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN F, SMITH ALICE N, SMITH ALICE GOODYEAR</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH JOHN F TRUSTEE, SMITH ALICE N TRUSTEE, JOHN &amp; ALICE SMITH TR, SMITH JOHN &amp; ALICE TR</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC189133">Subst Trustee/Reconveyance<br>
+1996-05220</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC189133"><b> Rec. Date: </b>07/25/1996 08:00:00 AM <b>Book Page: </b>B: 648 P: 76 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> GOSAVICH ROSALIE, SMITH JOHN PAUL</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> GOSAVICH ROSALIE, SMITH JOHN PAUL, ROBERTS ROBERT G</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1000020">Assignment of Rents<br>
+1999-04754</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1000020"><b> Rec. Date: </b>07/12/1999 08:30:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> BANWARTH KEVIN S, BANWARTH KATHERINE A</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH JOHN F TRUSTEE, SMITH ALICE N TRUSTEE, JOHN F &amp; ALICE SMITH TR, SMITH JOHN F &amp; ALICE N TR</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1000019">Deed of Trust<br>
+1999-04754</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1000019"><b> Rec. Date: </b>07/12/1999 08:30:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> BANWARTH KEVIN S, BANWARTH KATHERINE A</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH JOHN F TRUSTEE, SMITH ALICE N TRUSTEE, JOHN F &amp; ALICE SMITH TR, SMITH JOHN F &amp; ALICE N TR</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1000017">Deed<br>
+1999-04753</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1000017"><b> Rec. Date: </b>07/12/1999 08:30:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN TRUSTEE, SMITH ALICE N TRUSTEE, JOHN &amp; ALICE SMITH TR, SMITH JOHN &amp; ALICE TR</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> BANWARTH KEVIN S, BANWARTH KATHERINE A</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1057646">Resignation of Trustee<br>
+2003-12345</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1057646"><b> Rec. Date: </b>12/04/2003 02:10:00 PM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> GOODYEAR JACK DALE TRUSTEE, JOHN &amp; ALICE SMITH TR, SMITH JOHN &amp; ALICE TR</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> GOODYEAR MICHAEL TIMOTHY TRUSTEE, SMITH JOHN &amp; ALICE TR, JOHN &amp; ALICE SMITH TR</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC180S1728">Substitution of Trustee<br>
+2017-00934</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC180S1728"><b> Rec. Date: </b>03/09/2017 02:52:18 PM <b>Book Page: </b> <b> Related: </b>2009-06721 <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN G TRUSTEE, BENEVENTO SMITH JAN TRUSTEE, JOHN G &amp; JAN BENEVENTO SMITH REVOCABLE TR, SMITH JOHN G &amp; JAN BENEVENTO REVOCABLE TR</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> WELLS FARGO BANK NA</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC180S1729">Reconveyance<br>
+2017-00934</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC180S1729"><b> Rec. Date: </b>03/09/2017 02:52:18 PM <b>Book Page: </b> <b> Related: </b>2009-06721 <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> </td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH JOHN G TRUSTEE, BENEVENTO SMITH JAN TRUSTEE, JOHN G &amp; JAN BENEVENTO SMITH REVOCABLE TR, SMITH JOHN G &amp; JAN BEBEVENTO REVOCABLE TR</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC175911">Abstract of Judgment<br>
+1995-00601</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC175911"><b> Rec. Date: </b>02/01/1995 08:00:00 AM <b>Book Page: </b>B: 611 P: 235 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN PAUL</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> LASSEN COU CHILD SUPPORT SVCS</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC189134">Deed<br>
+1996-05221</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC189134"><b> Rec. Date: </b>07/25/1996 08:00:00 AM <b>Book Page: </b>B: 648 P: 77 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN PAUL</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> GOSOVICH ROSALIE M, BOSENKO LEONARD W</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC164771">Deed<br>
+1993-06971</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC164771"><b> Rec. Date: </b>10/12/1993 08:00:00 AM <b>Book Page: </b>B: 583 P: 787 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> J B SMITH S B TR, SMITH J B, SMITH J B TR, SMITH JOHN A TRUSTEE</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> GLENZER CAROL ANN, GLENZER DAVID A</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC173590">Judgment<br>
+1994-06927</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC173590"><b> Rec. Date: </b>10/11/1994 08:00:00 AM <b>Book Page: </b>B: 605 P: 411 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN EDWARD</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> FRESNO COU CHILD SUPPORT SVC</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC153621">Desig Bldg Site<br>
+1992-04672</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC153621"><b> Rec. Date: </b>07/06/1992 08:00:00 AM <b>Book Page: </b>B: 558 P: 231 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN F</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> </td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC160687">Deed<br>
+1993-02867</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC160687"><b> Rec. Date: </b>05/04/1993 08:00:00 AM <b>Book Page: </b>B: 574 P: 303 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> HANCOCK CARL WAYNE</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH ALICE N, SMITH JOHN F</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC160688">Quit Claim Deed<br>
+1993-02868</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC160688"><b> Rec. Date: </b>05/04/1993 08:00:00 AM <b>Book Page: </b>B: 574 P: 304 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> HANCOCK ORLEAN</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH ALICE N, SMITH JOHN F</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC114487">Agreement of Sale<br>
+1987-03409</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC114487"><b> Rec. Date: </b>06/18/1987 08:00:00 AM <b>Book Page: </b>B: 475 P: 154 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> CALIFORNIA ST DEPT VETERANS AFFAIRS</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH ELIZABETH A H, SMITH JOHN A</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC197370">Decree of Distribution<br>
+1997-04428</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC197370"><b> Rec. Date: </b>07/31/1997 08:00:00 AM <b>Book Page: </b>B: 670 P: 634 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN WESLEY</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH PETER P, SMITH THERESA ROE</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC193500">Matured Installment<br>
+1997-00558</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC193500"><b> Rec. Date: </b>01/28/1997 08:00:00 AM <b>Book Page: </b>B: 659 P: 837 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> LASSEN COU CHILD SUPPORT SVCS</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH JOHN PAUL</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1017050">Quit Claim Deed<br>
+2001-01049</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1017050"><b> Rec. Date: </b>02/21/2001 09:37:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> MONTPELLIER LINDA LOU</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH JOHN  PAUL</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1034468">Deed<br>
+2002-05376</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1034468"><b> Rec. Date: </b>07/19/2002 08:30:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> BANWARTH KEVIN S, BANWARTH KATHERINE A</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH ALICE N TRUSTEE, JOHN &amp; ALICE SMITH TR, SMITH JOHN &amp; ALICE TR</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1034466">Substitution of Trustee<br>
+2002-05375</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1034466"><b> Rec. Date: </b>07/19/2002 08:30:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> BANWARTH KEVIN S, BANWARTH KATHERINE A</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH ALICE N TRUSTEE, JOHN &amp; ALICE SMITH TR, SMITH JOHN &amp; ALICE TR</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1035374">Affidavit Death Trustee<br>
+2002-06055</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1035374"><b> Rec. Date: </b>08/12/2002 01:13:00 PM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN FREDERICK</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> </td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1044408">Deed<br>
+2003-02529</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1044408"><b> Rec. Date: </b>03/25/2003 08:30:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> TOWLER BEVERLY, CHAMBERLIN GLEN</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH JOHN PAUL</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1044410">Deed of Trust<br>
+2003-02530</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1044410"><b> Rec. Date: </b>03/25/2003 08:30:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN PAUL</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> TOWLER BEVERLY, CHAMBERLIN GLEN</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1044411">Assignment of Rents<br>
+2003-02530</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1044411"><b> Rec. Date: </b>03/25/2003 08:30:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN PAUL</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> TOWLER BEVERLY, CHAMBERLIN GLEN</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1035646">Abstract of Judgment<br>
+2002-06278</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1035646"><b> Rec. Date: </b>08/19/2002 09:56:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> LOS ANGELES COU CHILD SUPPORT SVCS</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1064037">Deed<br>
+2004-04121</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1064037"><b> Rec. Date: </b>05/04/2004 08:30:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN PAUL</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> ALLEN JAMES R, ALLEN ANDREW T</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1064033">Release Lien<br>
+2004-04119</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1064033"><b> Rec. Date: </b>05/04/2004 08:30:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> LASSEN COU CHILD SUPPORT SVCS</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH JOHN PAUL</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1064035">Substitution of Trustee<br>
+2004-04120</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1064035"><b> Rec. Date: </b>05/04/2004 08:30:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN PAUL</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> TOWLER BEVERLY, CHAMBERLIN GLEN</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1064036">Reconveyance<br>
+2004-04120</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1064036"><b> Rec. Date: </b>05/04/2004 08:30:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> </td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH JOHN PAUL</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1052744">Deed<br>
+2003-08781</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1052744"><b> Rec. Date: </b>09/02/2003 10:54:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH ALICE N TRUSTEE, JOHN &amp; ALICE SMITH TR, SMITH JOHN &amp; ALICE TR</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> LANNIN ROBERT JAMES</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1106987">Notice of Support Judgment<br>
+2006-10816</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1106987"><b> Rec. Date: </b>11/30/2006 02:47:00 PM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN PAUL</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> LASSEN COU CHILD SUPPORT SVCS</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1075604">Designation Successor Trustee<br>
+2005-00501</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1075604"><b> Rec. Date: </b>01/20/2005 01:21:00 PM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> JOHN &amp; ALICE SMITH TR, SMITH JOHN &amp; ALICE TR, SMITH ALICE GOODYEAR TRUSTEE, GOODYEAR MICHAEL TIMOTHY TRUSTEE</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> </td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1057647">Designation Successor Trustee<br>
+2003-12345</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1057647"><b> Rec. Date: </b>12/04/2003 02:10:00 PM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> JOHN &amp; ALICE SMITH TR, SMITH JOHN &amp; ALICE TR, GOODYEAR MICHAEL TIMOTHY TRUSTEE</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> </td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1087631">Deed<br>
+2005-09401</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1087631"><b> Rec. Date: </b>10/03/2005 11:25:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> CARMICHAEL CHARLES B, STANLEY JEFF</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH JOHN MICHAEL, SMITH VICKIE MARIE</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1087632">Deed of Trust<br>
+2005-09402</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1087632"><b> Rec. Date: </b>10/03/2005 11:25:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN MICHAEL, SMITH VICKIE MARIE</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> MORTGAGE ELECTRONIC REGISTRATION SYSTEM</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC1087633">Deed of Trust<br>
+2005-09403</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC1087633"><b> Rec. Date: </b>10/03/2005 11:25:00 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN MICHAEL, SMITH VICKIE MARIE</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> MORTGAGE ELECTRONIC REGISTRATION SYSTEM</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC127822">Quit Claim Deed<br>
+1989-01573</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC127822"><b> Rec. Date: </b>03/30/1989 08:00:00 AM <b>Book Page: </b>B: 503 P: 37 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> ROBERTS ROBERT G</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH JOHN PAUL</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC128588">Decree of Distribution<br>
+1989-02343</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC128588"><b> Rec. Date: </b>05/05/1989 08:00:00 AM <b>Book Page: </b>B: 504 P: 465 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH PETER P, SMITH THELMA PEARL, SMITH THELMA P</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH JOHN WESLEY</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC130429">Deed<br>
+1989-04201</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC130429"><b> Rec. Date: </b>08/08/1989 08:00:00 AM <b>Book Page: </b>B: 508 P: 391 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> CALIFORNIA ST DEPT VETERANS AFFAIRS</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH ELIZABETH A H, SMITH JOHN A</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC130430">Deed<br>
+1989-04202</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC130430"><b> Rec. Date: </b>08/08/1989 08:00:00 AM <b>Book Page: </b>B: 508 P: 392 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH ELIZABETH A H, SMITH JOHN A</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> BADGER BRUCE G, BADGER MONICA M</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOCC124777">Decree of Distribution<br>
+1988-06105</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOCC124777"><b> Rec. Date: </b>10/21/1988 08:00:00 AM <b>Book Page: </b>B: 496 P: 720 <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> DAVIS ARTHUR JAMES</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> BILLETT BONNIE MAE, SMITH JOHN RAY</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC180S1496">Deed<br>
+2017-00748</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC180S1496"><b> Rec. Date: </b>02/24/2017 02:22:09 PM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JON G TRUSTEE, BENEVENTO SMITH JAN TRUSTEE, SMITH JOHN G &amp; JAN BENEVENTO REVOCABLE TR, JOHN G &amp; JAN BENEVENTO SMITH REVOCABLE TR</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> BOUCHER STEVEN L, BOUCHER HELEN</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC196S147">Notice of Assessment<br>
+2017-02994</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC196S147"><b> Rec. Date: </b>07/24/2017 02:19:54 PM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> ABRAMS GARY M, ABRAMS JULIE A, ADAMS FAMILY TR, AGUIANO JOSE R, ALDEN W PURCELL REVOCABLE TR, ...</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SPALDING COMMUNIY SVCS DIST</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC64S364">Assignment of Deed of Trust<br>
+2012-00493</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC64S364"><b> Rec. Date: </b>01/30/2012 02:49:36 PM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN MICHAEL, SMITH VICKIE MARIE, MORTGAGE ELECTRONIC REGISTRATION SYSTEM</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> BANK OF NEW YORK MELLON TR CO TRUSTEE, RAMP 2005RS9</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC64S511">Substitution of Trustee<br>
+2012-00597</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC64S511"><b> Rec. Date: </b>02/03/2012 02:18:08 PM <b>Book Page: </b> <b> Related: </b>2005-09402 <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN MICHAEL, SMITH VICKIE MARIE</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> EXECUTIVE TRUSTEE SERVICES LLC</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC64S512">Notice of Default<br>
+2012-00598</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC64S512"><b> Rec. Date: </b>02/03/2012 02:18:08 PM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN MICHAEL, SMITH VICKIE MARIE</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> </td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC68S624">Notice of Trustees Sale<br>
+2012-02338</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC68S624"><b> Rec. Date: </b>05/09/2012 02:30:07 PM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN MICHAEL, SMITH VICKIE MARIE</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> </td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC68S1366">Trustees Deed<br>
+2012-02927</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC68S1366"><b> Rec. Date: </b>06/07/2012 02:34:43 PM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> EXECUTIVE TRUSTEE SERVICES LLC, SMITH JOHN MICHAEL, SMITH VICKIE MARIE</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> BANK OF NEW YORK MELLON TR CO TRUSTEE, RAMP 2005RS9</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC168S4">Deed<br>
+2016-03128</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC168S4"><b> Rec. Date: </b>07/13/2016 09:43:02 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> GOODYEAR MICHAEL TIMOTHY TRUSTEE, GOODYEAR PATRICK LEE TRUSTEE, JOHN &amp; ALICE SMITH 1995 LVING TR, SMITH JOHN &amp; ALICE 1995 LVING TR</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> WORLEY ANYEE JUSTINE, WORLEY JAMES FRANKLIN</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC168S3">Affidavit Change of Trustee<br>
+2016-03127</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC168S3"><b> Rec. Date: </b>07/13/2016 09:43:02 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> JOHN &amp; ALICE SMITH 1995 LVING TR, SMITH JOHN &amp; ALICE 1995 LVING TR, SMITH ALICE NEVADA TRUSTEE, SMITH ALICE GOODYEAR TRUSTEE</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> GOODYEAR MICHAEL TIMOTHY TRUSTEE, GOODYEAR PATRICK LEE TRUSTEE</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC200S597">Deed<br>
+2017-04362</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC200S597"><b> Rec. Date: </b>10/10/2017 10:45:39 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JON G TRUSTEE, BENEVENTO SMITH JAN TRUSTEE, JOHN G &amp; JAN BENEVENTO SMITH REVOCABLE TR, SMITH JOHN G &amp; JAN BENEVENTO REVOCABLE TR</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> ADAMS JODEANE MARIE, ADAMS TIMOTHY LEO</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC208S1440">Deed of Trust<br>
+2018-00785</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC208S1440"><b> Rec. Date: </b>03/05/2018 03:12:48 PM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH LINDA , MONTPELLIER LINDA, SMITH JOHN</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> MORTGAGE ELECTRONIC REGISTRATION SYSTEM</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC298S258">Deed<br>
+2020-01926</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC298S258"><b> Rec. Date: </b>05/28/2020 11:25:06 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN MATTHEW</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH MICHELE SURREY</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC352S1009">Deed<br>
+2022-00913</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC352S1009"><b> Rec. Date: </b>02/23/2022 10:30:58 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH LINDA, MONTPELLIER LINDA</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> SMITH LINDA, SMITH JOHN PAUL</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC352S1010">Deed of Trust<br>
+2022-00914</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC352S1010"><b> Rec. Date: </b>02/23/2022 10:30:58 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH LINDA, SMITH JOHN PAUL</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> MORTGAGE ELECTRONIC REGISTRATION SYSTEM</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC358S16">Substitution of Trustee<br>
+2022-01115</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC358S16"><b> Rec. Date: </b>03/07/2022 02:46:40 PM <b>Book Page: </b> <b> Related: </b>2018-00785 <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> MONTPELLIER LINDA, SMITH JOHN, SMITH LINDA</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> ROCKET MORTGAGE LLC</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="odd">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC358S17">Reconveyance<br>
+2022-01115</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC358S17"><b> Rec. Date: </b>03/07/2022 02:46:40 PM <b>Book Page: </b> <b> Related: </b>2018-00785 <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> </td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> MONTPELLIER LINDA, SMITH JOHN, SMITH LINDA</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr>
+<tr class="even">
+<td class="clickable"><strong><a href="../eagleweb/viewDoc.jsp?node=DOC475S3764">Notice of Support Judgment<br>
+2026-01988</a></strong></td>
+<td class="clickable"><a href="../eagleweb/viewDoc.jsp?node=DOC475S3764"><b> Rec. Date: </b>06/23/2026 09:51:52 AM <b>Book Page: </b> <b> Related: </b> <b> Book Page: </b><b> <table cellspacing="0" width="100%">  <tbody><tr> <td width="50%" valign="top" class="clickable"><b>Grantor:</b> SMITH JOHN EARL COLTON</td><td width="50%" valign="top" class="clickable"> <calculatedlegalsummary>&nbsp;</calculatedlegalsummary></td></tr><tr><td valign="top" class="clickable"><b>Grantee:</b> LASSEN COU CHILD SUPPORT SVCS</td><td valign="top" class="clickable"> &nbsp;</td></tr> </tbody></table></b></a></td>
+<td class="clickable"></td>
+<td class="clickable"></td></tr></tbody></table><span class="pagebanner">60 items found, displaying all items.</span><span class="pagelinks"><strong>1</strong></span>
+		  
+		</form>
+		
+		<p><a class="iconic newSearch" href="../eagleweb/docSearch.jsp">New Search</a><a class="iconic modifySearch" href="../eagleweb/docSearch.jsp?searchId=0">Modify Search</a><a class="iconic print" href="docSearchResults.jsp?searchId=0&amp;printing=true">Printable Version</a></p>
+		
+	
+	
+
+
+
+
+</div>
+
+</td>
+</tr>
+
+
+<tr>
+<td id="footer_cell" colspan="2">
+
+	<table id="footer">
+		<tbody><tr>
+			<td>
+			   	
+				
+			</td>
+			<td class="center">
+			   	Copyright (c) 2004, Tyler Technologies, Inc. All Rights Reserved &nbsp; &nbsp; &nbsp;
+				
+			</td>
+			<td class="right">
+			   	
+				
+			</td>
+		</tr>
+	</tbody></table>
+
+</td>
+</tr>
+</tbody></table>
+
+
+</body></html>

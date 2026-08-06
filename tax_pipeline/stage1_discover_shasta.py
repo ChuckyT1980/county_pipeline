@@ -83,16 +83,18 @@ def discover(out_csv):
             print(f"[Resume] Phase 1 already done: {len(valid_books)} books", flush=True)
 
     if not valid_books:
-        probes = ["050", "150", "250"]
+        # Shasta APN books run from 001 to ~996 — scan the full 000-999 range
+        # Multiple probe offsets improve hit rate for sparse books
+        probes = ["050", "150", "250", "350", "450", "550"]
         seen_books = set()
         for pv in probes:
-            for book in range(201):
+            for book in range(1000):  # full range: books 000-999
                 p6 = f"{book:03d}{pv}"
                 rows = get_parcels(p6)
                 if rows:
                     seen_books.add(book)
                 time.sleep(0.02)
-            print(f"  Probe page={pv}: {len(seen_books)} unique books", flush=True)
+            print(f"  Probe page={pv}: {len(seen_books)} unique books so far", flush=True)
         valid_books = sorted(seen_books)
         # Save checkpoint
         with open(ckpt_json, "w") as f:
@@ -141,7 +143,8 @@ def discover(out_csv):
     remaining_books = [b for b in valid_books if b not in completed]
 
     for book in remaining_books:
-        for page in range(0, 1000, 25):
+        # Step by 10 instead of 25 — denser books can have parcels between page offsets
+        for page in range(0, 1000, 10):
             p6 = f"{book:03d}{page:03d}"
             rows = get_parcels(p6)
             if rows:

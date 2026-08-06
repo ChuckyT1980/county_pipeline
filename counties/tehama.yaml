@@ -1,0 +1,41 @@
+display_name: Tehama County
+collector_names:
+- TEHAMA COUNTY TAX COLLECTOR
+- TEHAMA CO TAX COLLR
+- COUNTY OF TEHAMA
+notes: 'Hardest county: no public ArcGIS. Assessor = MPTS per-parcel + situs seed
+  discovery (existing audit CSVs). Recorder = Tyler DOCSEARCH4S1/S2. Auction = GovEase.
+  Excess-proceeds outreach in progress.
+
+  '
+assessor:
+  backend: mpts
+  endpoint: https://common1.mptsweb.com/mbap/tehama/asr/AsrPrint
+  apn_includes:
+  - 1 Main
+  - 2 Main
+  - 3 Main
+  - 1 Oak
+  - 2 Oak
+  - 1 Pine
+  - Red Bluff
+  - Corning
+  - Los Molinos
+  - 1st
+  - 2nd
+  - 3rd
+  notes: per-parcel MPTS; seed-discovery enumeration, then per-APN enrich
+  host: https://common1.mptsweb.com
+recorder:
+  backend: tyler
+  base_url: https://recordsearch.tehama.gov
+  name_search_id: DOCSEARCH4S1
+  doc_search_id: DOCSEARCH4S2
+  apn_search_id: DOCSEARCH201S9
+  ajax_headers_required: true
+  doc_number_transform: r_to_strip
+  endpoint: https://recorder.tehama.ca.us
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

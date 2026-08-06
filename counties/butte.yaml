@@ -1,0 +1,29 @@
+display_name: Butte County
+collector_names:
+- BUTTE COUNTY TAX COLLECTOR
+- BUTTE CO TAX COLLR
+- COUNTY OF BUTTE
+notes: 'Production county baseline. Full roll already built (Stage 1: 14,302 parcels,
+  96.1% doc capture). Assessor = existing authoritative roll. Recorder = Tyler DOCSEARCH481S1/S2.
+  Auction = GovEase. Do NOT regress the working butte/ pipeline.
+
+  '
+assessor:
+  backend: mpts
+  apn_field: asmt
+  endpoint: https://common2.mptsweb.com/mbap/butte/asr/AsrPrint
+  notes: existing authoritative master index
+  host: https://common2.mptsweb.com
+recorder:
+  backend: tyler
+  base_url: https://recorder.buttecounty.net
+  name_search_id: DOCSEARCH481S1
+  doc_search_id: DOCSEARCH481S2
+  apn_search_id: DOCSEARCH201S9
+  ajax_headers_required: true
+  doc_number_transform: r_to_hyphen
+  endpoint: https://recorder.buttecounty.net
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

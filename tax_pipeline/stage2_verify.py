@@ -7,12 +7,17 @@ Install: pip install requests beautifulsoup4 pandas
 Run:     python stage2_verify.py tehama tehama_discovery_YYYYMMDD.csv
 """
 
-import re, sys, time
+import re, sys, time, os
 from datetime import datetime
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
-from config import COUNTY_CONFIG
+try:
+    from tax_pipeline.config import COUNTY_CONFIG
+except ImportError:
+    from config import COUNTY_CONFIG
+
+CHECKPOINT_EVERY = 100
 
 # ── Thresholds
 HOT_BALANCE_FLOOR  = 500.0   # balance > $500 AND/OR delinquent = HOT
@@ -20,7 +25,20 @@ WARM_BALANCE_FLOOR = 0.01    # any balance > $0 = WARM
 
 DELINQUENT_KEYWORDS = {"DELINQUENT", "UNPAID", "PAST DUE", "DEFAULTED", "LATE"}
 
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
 SESSION = requests.Session()
+retry_strategy = Retry(
+    total=10, 
+    backoff_factor=2, 
+    status_forcelist=[429, 500, 502, 503, 504],
+    allowed_methods=["GET", "POST"]
+)
+adapter = HTTPAdapter(max_retries=retry_strategy)
+SESSION.mount("https://", adapter)
+SESSION.mount("http://", adapter)
+
 SESSION.headers.update({
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
     "Accept":     "text/html,application/xhtml+xml",
@@ -64,7 +82,26 @@ def fetch_tax_detail(cfg: dict, asmt: str, year: str) -> dict:
         "v_total_balance":   None,
         "v_delinquent":      False,
         "v_fetch_error":     None,
+        "assessee_name":     None,
     }
+
+    # ── Pull owner name from MBAP AsrPrint (same source as stage4) ──
+    try:
+        asr_url = (f"{cfg['host']}/mbap/{cfg['county_slug']}/asr/AsrPrint/"
+                   f"{re.sub(r'[^0-9]', '', asmt).zfill(12)}")
+        asr_resp = SESSION.get(asr_url, timeout=10)
+        if asr_resp.status_code == 200:
+            asr_soup = BeautifulSoup(asr_resp.text, "html.parser")
+            for tr in asr_soup.find_all("tr"):
+                cells = tr.find_all(["td", "th"])
+                if len(cells) >= 2:
+                    label = cells[0].get_text(strip=True)
+                    value = cells[1].get_text(strip=True)
+                    if label in ("Assessee Name", "Owner", "Assessee", "Owner Name") and value:
+                        out["assessee_name"] = value
+                        break
+    except Exception:
+        pass  # non-fatal — tax data extraction continues below
 
     try:
         resp = SESSION.get(url, timeout=20)
@@ -137,12 +174,48 @@ def score(row: dict) -> tuple:
 
 def verify(county: str, discovery_csv: str):
     cfg = COUNTY_CONFIG[county]
-    df  = pd.read_csv(discovery_csv)
+    df  = pd.read_csv(discovery_csv, dtype={"asmt": str, "asmt_raw": str, "fee_parcel": str, "apn": str})
     print(f"[Stage 2] Verifying {len(df)} parcels for {county}...")
 
+    # ── Global Support & Resume Support ──
+    import sqlite3
+    db_path = os.path.join(os.path.dirname(__file__), "cps1_outcomes.db")
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    # Ensure table exists (safe to run multiple times)
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS global_verifications (
+            county TEXT,
+            asmt TEXT,
+            tax_year TEXT,
+            verified_score TEXT,
+            total_balance REAL,
+            PRIMARY KEY (county, asmt, tax_year)
+        )
+    ''')
+    conn.commit()
+    tax_year = cfg["tax_year"]
+    
+    cursor.execute("SELECT asmt FROM global_verifications WHERE county=? AND tax_year=?", (county, tax_year))
+    global_verified = set(r[0] for r in cursor.fetchall())
+
+    checkpoint_path = discovery_csv.replace(".csv", "_verify_partial.parquet")
+    loaded_asmt = set(global_verified)
     all_rows = []
+    if os.path.exists(checkpoint_path):
+        existing = pd.read_parquet(checkpoint_path)
+        all_rows = existing.to_dict("records")
+        for a in existing.get("asmt", []):
+            loaded_asmt.add(str(a))
+        print(f"[Resume] Loaded {len(existing)} verified parcels from local checkpoint", flush=True)
+    else:
+        print(f"[Start] No existing checkpoint — verifying from scratch", flush=True)
+    print(f"[Global Cache] Found {len(global_verified)} parcels already verified for {county.upper()} ({tax_year}).")
+
     for i, row in df.iterrows():
         asmt = str(row["asmt"])
+        if asmt in loaded_asmt:
+            continue  # already verified in a prior run
         year = str(row.get("year", cfg["tax_year"]))
         print(f"  [{i+1}/{len(df)}] {asmt}", end=" ")
 
@@ -153,12 +226,29 @@ def verify(county: str, discovery_csv: str):
 
         merged = {**row.to_dict(), **detail}
         all_rows.append(merged)
+        loaded_asmt.add(asmt)
 
         status = detail.get("v_total_balance") or detail.get("v_fetch_error") or "?"
         print(f"-> {tier} ({conf:.0%})  balance={status}")
+        
+        # Save to global cache
+        tbal = parse_dollar(detail.get("v_total_balance"))
+        cursor.execute('''
+            INSERT OR REPLACE INTO global_verifications 
+            (county, asmt, tax_year, verified_score, total_balance) 
+            VALUES (?, ?, ?, ?, ?)
+        ''', (county, asmt, tax_year, tier, tbal))
+        conn.commit()
+        
         time.sleep(0.05)  # polite delay
 
-        pass # full run
+        # ── Periodic checkpoint ──
+        if len(all_rows) % CHECKPOINT_EVERY == 0:
+            pd.DataFrame(all_rows).to_parquet(checkpoint_path, index=False)
+            print(f"  [Checkpoint] {len(all_rows)} rows saved", flush=True)
+
+    # Final checkpoint
+    pd.DataFrame(all_rows).to_parquet(checkpoint_path, index=False)
 
     full_df = pd.DataFrame(all_rows)
     ts      = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -172,6 +262,7 @@ def verify(county: str, discovery_csv: str):
     crm_cols = [
         "asmt", "fee_parcel", "address", "county", "year",
         "tra", "roll_cat",
+        "assessee_name",
         "verified_score", "confidence",
         "v_total_due", "v_total_paid", "v_total_balance",
         "v_inst1_status", "v_inst2_status",

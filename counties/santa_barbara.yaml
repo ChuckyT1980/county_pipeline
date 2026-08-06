@@ -1,0 +1,17 @@
+display_name: Santa Barbara County
+collector_names:
+- SANTA BARBARA TAX COLLECTOR
+- SANTA BARBARA CO TAX COLLR
+- COUNTY OF SANTA BARBARA
+assessor:
+  backend: arcgis
+  notes: no public assessor source discovered yet
+  endpoint: https://cosb.maps.arcgis.com/rest/services/Parcels/FeatureServer/0
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.santabarbara.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

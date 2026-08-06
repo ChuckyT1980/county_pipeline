@@ -1,0 +1,22 @@
+{
+  "status": "HALTED",
+  "county": "mariposa",
+  "sample_size": 1,
+  "total_checks": 3,
+  "passed_checks": 1,
+  "pass_ratio": 0.333,
+  "null_ratio": 0.667,
+  "max_null_ratio_allowed": 0.2,
+  "probe_results": [
+    {
+      "apn": "001-000-000-000",
+      "tier": "UNRESOLVED_DORK_ONLY",
+      "owner": null,
+      "situs": null,
+      "verification": "UNRESOLVED",
+      "apn_ok": true,
+      "owner_ok": false,
+      "tier_ok": false
+    }
+  ]
+}

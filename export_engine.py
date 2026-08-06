@@ -1,206 +1,249 @@
-import pandas as pd
-import sqlite3
 import os
-import numpy as np
+import json
+import pandas as pd
+from datetime import datetime
+from pydantic import ValidationError
 
-def load_verified_status(db_path="tax_pipeline/cps1_outcomes.db"):
-    """Load the latest Verification Status and Phone for each lead from the sqlite database."""
-    if not os.path.exists(db_path):
-        return pd.DataFrame(columns=["lead_id", "Verification Status", "best_phone"])
-        
-    conn = sqlite3.connect(db_path)
+from crm_schema.models import (
+    Identity, AssessorSnapshot, OwnerVesting, EncumbranceSummary, 
+    RecorderEvent, PipelineRouting, SellerReadiness, SalesPipeline, 
+    Provenance, Audit, DistressedPropertyProfile, ReviewQueueItem
+)
+from crm_schema.flatten import flatten_profile
+from crm_schema.enums import CrmStage, OwnershipVerificationStatus
+
+def parse_date(date_str):
+    if not date_str or pd.isna(date_str) or str(date_str).strip() == "":
+        return None
     try:
-        # Get latest verification status per lead
-        df_verif = pd.read_sql_query('''
-            SELECT lead_id, verification_status as "Verification Status"
-            FROM verification_events
-            GROUP BY lead_id
-            HAVING event_time = MAX(event_time)
-        ''', conn)
-    except sqlite3.OperationalError:
-        df_verif = pd.DataFrame(columns=["lead_id", "Verification Status"])
-        
+        # Pydantic expects ISO format for dates, convert using pandas
+        dt = pd.to_datetime(str(date_str).strip())
+        return dt.isoformat()
+    except:
+        return None
+
+def summarize_encumbrances(chain_json_str):
     try:
-        df_phone = pd.read_sql_query('''
-            SELECT lead_id, best_phone
-            FROM lead_contacts
-            GROUP BY lead_id
-            HAVING updated_at = MAX(updated_at)
-        ''', conn)
-    except sqlite3.OperationalError:
-        df_phone = pd.DataFrame(columns=["lead_id", "best_phone"])
-        
-    conn.close()
-    
-    if df_verif.empty and df_phone.empty:
-        return pd.DataFrame(columns=["lead_id", "Verification Status", "best_phone"])
-        
-    if df_verif.empty:
-        df_verif = pd.DataFrame(columns=["lead_id", "Verification Status"])
-    if df_phone.empty:
-        df_phone = pd.DataFrame(columns=["lead_id", "best_phone"])
-        
-    df_merged = pd.merge(df_verif, df_phone, on="lead_id", how="outer")
-    return df_merged
+        events = json.loads(chain_json_str or "[]")
+    except Exception:
+        events = []
 
+    total_open_mortgages = 0
+    last_mortgage_date = None
+    active_liens = []
+    notice_of_default = False
+    notice_of_rescission = False
 
-def generate_motivation_text(row):
-    """Generate a human-readable reason for why the lead is being exported."""
-    reasons = []
-    if row.get("has_assignment_of_rents") == True:
-        reasons.append("Distressed Landlord (Assignment of Rents)")
-    if row.get("has_affidavit_of_death") == True:
-        reasons.append("Probate / Estate (Affidavit of Death)")
-    if row.get("is_corporate") == True:
-        reasons.append("Corporate Entity")
-    if row.get("is_trust") == True:
-        reasons.append("Trust / Estate Ownership")
-        
-    if row.get("active_liens", 0) > 0:
-        reasons.append(f"{int(row['active_liens'])} Active Lien(s)")
-        
-    if not reasons:
-        return "No specific motivation flag"
-    return " | ".join(reasons)
+    for evt in events:
+        doc_type = (evt.get("doc_type") or "").upper()
+        role = (evt.get("role") or "").upper()
+        recorded_date = evt.get("recorded_date")
 
+        if "DEED OF TRUST" in doc_type and "RELEASE" not in doc_type:
+            total_open_mortgages += 1
+            if recorded_date:
+                try:
+                    dt = pd.to_datetime(recorded_date)
+                    if not last_mortgage_date or dt > last_mortgage_date:
+                        last_mortgage_date = dt
+                except Exception:
+                    pass
 
-def run_crm_export(input_csv=None, output_csv="crm_ready_leads.csv", county="tehama"):
-    if input_csv is None:
-        input_csv = f"tax_pipeline/{county}_MASTER_leads_with_liens.csv"
-    print(f"Loading master dataset: {input_csv}")
-    if not os.path.exists(input_csv):
-        print("Error: Input CSV not found.")
-        return
+        if "LIEN" in doc_type or "JUDGMENT" in doc_type:
+            active_liens.append(f"{doc_type} ({recorded_date or 'No Date'})")
 
-    df = pd.read_csv(input_csv)
-    
-    # 1. Backfill and Generate Motivation Flags (Same logic as Dashboard)
-    df["mailing_address"] = df.groupby("assessee_name")["mailing_address"].transform(lambda x: x.ffill().bfill())
-    
-    owner_upper = df["assessee_name"].fillna("").astype(str).str.upper()
-    CORPORATE_MARKERS = ["LLC", "INC", "CORP", "CORPORATION", "HOLDINGS", "PROPERTIES", "COMPANY", "CO", "SERVICES", "ASSOCIATION", "PARTNERSHIP", "LP", "LLP"]
-    corporate_pattern = r'\b(?:' + '|'.join(CORPORATE_MARKERS) + r')\b'
-    df["is_corporate"] = owner_upper.str.contains(corporate_pattern, regex=True)
-    
-    TRUST_MARKERS = ["TRUST", "TR", "REVOC", "REVOCABLE", "ESTATE", "FAM", "FAMILY", "TESTAMENTARY", "LIVING", "IRREVOCABLE"]
-    trust_pattern = r'\b(?:' + '|'.join(TRUST_MARKERS) + r')\b'
-    df["is_trust"] = (~df["is_corporate"]) & owner_upper.str.contains(trust_pattern, regex=True)
-    
-    # Fill boolean flags if they don't exist yet from Stage 7
-    for col in ["has_assignment_of_rents", "has_affidavit_of_death"]:
-        if col not in df.columns:
-            df[col] = False
-        else:
-            df[col] = df[col].fillna(False).astype(bool)
-            
-    for col in ["active_liens", "mortgages"]:
-        if col not in df.columns:
-            df[col] = 0
-        else:
-            df[col] = df[col].fillna(0).astype(int)
-            
-    df["ownership_status"] = df.get("ownership_status", pd.Series(["Current"] * len(df))).fillna("Current")
-    
-    # 2. Join Verification Data
-    df_db = load_verified_status()
-    raw_apn = df['apn_pdf'].fillna(df['fee_parcel']).astype(str).str.replace(r"\.0$", "", regex=True)
-    def fmt_apn(a):
-        import re
-        digits = re.sub(r"\D", "", a)
-        return f"{digits[:3]}-{digits[3:6]}-{digits[6:9]}-{digits[9:12]}" if len(digits) == 12 else a
-    df['apn_fallback'] = raw_apn.apply(fmt_apn)
-    prefix = county.capitalize() + "_"
-    df['lead_id'] = prefix + df['apn_fallback'].astype(str)
-    
-    if not df_db.empty:
-        # Drop any pre-existing columns to prevent merge suffix collision
-        df = df.drop(columns=["Verification Status", "best_phone"], errors="ignore")
-        df = pd.merge(df, df_db, on="lead_id", how="left")
+        if "NOTICE OF DEFAULT" in doc_type:
+            notice_of_default = True
+
+        if "NOTICE OF RESCISSION" in doc_type:
+            notice_of_rescission = True
+
+    if notice_of_default:
+        distress_signal = "HIGH"
+    elif active_liens or total_open_mortgages >= 2:
+        distress_signal = "MEDIUM"
     else:
-        df["Verification Status"] = "Unverified"
-        df["best_phone"] = ""
-        
-    if "Verification Status" not in df.columns:
-        df["Verification Status"] = "Unverified"
-    df["Verification Status"] = df["Verification Status"].fillna("Unverified")
-    if "best_phone" not in df.columns:
-        df["best_phone"] = ""
-    df["best_phone"] = df["best_phone"].fillna("")
-    
-    # 3. Apply Export Rules & Tiers
-    # Tier A: Manually marked Verified, not recently transferred, has motivation
-    # Tier B: Passes rules but not manually verified
-    # Tier C: Suppress (recent transfer or no motivation)
-    
-    df["motivation_reason_text"] = df.apply(generate_motivation_text, axis=1)
-    
-    has_meaningful_motivation = (
-        (df["has_assignment_of_rents"] == True) | 
-        (df["has_affidavit_of_death"] == True) | 
-        (df["is_corporate"] == True) | 
-        (df["is_trust"] == True) | 
-        (df["active_liens"] > 0)
+        distress_signal = "NONE"
+
+    if total_open_mortgages == 0 and not active_liens:
+        equity_signal = "LIKELY_POSITIVE"
+    elif total_open_mortgages >= 2 or active_liens:
+        equity_signal = "LEVERAGED"
+    else:
+        equity_signal = "UNKNOWN"
+
+    return {
+        "total_open_mortgages": total_open_mortgages,
+        "last_mortgage_date": last_mortgage_date.isoformat() if last_mortgage_date else None,
+        "active_liens": active_liens,
+        "notice_of_default": notice_of_default,
+        "notice_of_rescission": notice_of_rescission,
+        "equity_signal": equity_signal,
+        "distress_signal": distress_signal,
+        "confidence": None,
+    }
+
+def extract_profile_from_row(row, county: str) -> DistressedPropertyProfile:
+    # 1. Identity
+    identity = Identity(
+        county=county.capitalize(),
+        state="CA",
+        apn=str(row.get("parcel_number", "")),
+        situs_address=str(row.get("address", "")) or "See Assessor",
+        legal_description=str(row.get("legal_description", "")) if "legal_description" in row else None
     )
     
-    is_suppressed = (df["ownership_status"] != "Current") | (~has_meaningful_motivation)
+    # 2. Assessor Snapshot
+    bal_str = str(row.get("v_total_balance", "$0.00")).replace("$", "").replace(",", "").strip()
+    try:
+        tax_bal = float(bal_str) if bal_str else 0.0
+    except:
+        tax_bal = 0.0
+
+    assessor = AssessorSnapshot(
+        assessor_owner_name=str(row.get("owner_name", "")),
+        assessor_mailing_address=None, # Update if mailing is present
+        assessor_transfer_date=None,
+        assessor_transfer_value=None,
+        tax_page_snapshot_date=parse_date(row.get("verified_at")),
+        acquisition_doc_number=str(row.get("v_document_number", "")) if pd.notna(row.get("v_document_number")) else None,
+        default_date=parse_date(row.get("default_date")),
+        years_delinquent=int(row.get("years_delinquent")) if pd.notna(row.get("years_delinquent")) else None,
+        tax_lien_id=str(row.get("v_document_number", "")) if pd.notna(row.get("v_document_number")) else None
+    )
     
-    df["Export_Tier"] = "Tier C — Suppress"
+    # 3. Owner Vesting
+    vesting_raw = json.loads(row.get("owner_vesting", "{}"))
+    status_str = vesting_raw.get("ownership_verification_status", "NO_RECORDER_HIT")
     
-    tier_a_mask = (df["Verification Status"] == "Verified") & (~is_suppressed)
-    tier_b_mask = (df["Verification Status"] != "Verified") & (~is_suppressed)
+    try:
+        v_status = OwnershipVerificationStatus(status_str)
+    except:
+        v_status = OwnershipVerificationStatus.NO_RECORDER_HIT
+
+    vesting = OwnerVesting(
+        primary_name=vesting_raw.get("primary_name"),
+        verified_current_owner_name=vesting_raw.get("verified_current_owner_name"),
+        entity_type=vesting_raw.get("entity_type"),
+        acquisition_date=parse_date(vesting_raw.get("acquisition_date")),
+        acquisition_doc=vesting_raw.get("acquisition_doc"),
+        vesting_doc_type=vesting_raw.get("vesting_doc_type"),
+        ownership_verification_status=v_status,
+        ownership_drift_flag=vesting_raw.get("ownership_drift_flag", True),
+        ownership_drift_reason=vesting_raw.get("ownership_drift_reason"),
+        confidence=vesting_raw.get("confidence", 1.0)
+    )
+
+    # 4. Encumbrance Summary
+    chain_str = row.get("chain_of_title") or row.get("recorder_chain")
+    enc_raw = summarize_encumbrances(chain_str)
+    encumbrance = EncumbranceSummary(
+        total_open_mortgages=enc_raw.get("total_open_mortgages", 0),
+        last_mortgage_date=parse_date(enc_raw.get("last_mortgage_date")),
+        active_liens=enc_raw.get("active_liens", []),
+        notice_of_default=enc_raw.get("notice_of_default", False),
+        notice_of_rescission=enc_raw.get("notice_of_rescission", False),
+        equity_signal=enc_raw.get("equity_signal", "UNKNOWN"),
+        distress_signal=enc_raw.get("distress_signal", "NONE"),
+        confidence=enc_raw.get("confidence", 1.0)
+    )
     
-    df.loc[tier_a_mask, "Export_Tier"] = "Tier A — Verified export"
-    df.loc[tier_b_mask, "Export_Tier"] = "Tier B — Auto-review queue"
+    # 5. Pipeline Routing (Merge Stage 2 and Stage 3 results)
+    s3_status = row.get("final_ownership_status", "PENDING_STAGE3")
+    from crm_schema.enums import ManualReviewPriority
+    routing = PipelineRouting(
+        stage2_result=v_status,
+        stage3_status=s3_status,
+        manual_review_required=row.get("manual_review_required", False),
+        manual_review_priority=ManualReviewPriority.HIGH if row.get("manual_review_required", False) else None,
+        manual_review_reason_codes=[str(row.get("adjudication_reasons", ""))] if pd.notna(row.get("adjudication_reasons")) else []
+    )
+
+    # 6. Seller Readiness
+    is_eligible = (
+        s3_status == "MATCHES_ASSESSOR" or 
+        s3_status == "VESTING_CHANGED_SAME_CONTROL"
+    )
     
-    # 4. Filter out Suppressed leads
-    export_df = df[df["Export_Tier"] != "Tier C — Suppress"].copy()
+    readiness = SellerReadiness(
+        seller_contact_eligible=is_eligible,
+        seller_opportunity_status="QUALIFIED" if is_eligible else "UNQUALIFIED"
+    )
+
+    # 7. Rest of Profile
+    now = datetime.utcnow()
+    return DistressedPropertyProfile(
+        profile_id=f"{county.lower()}_{identity.apn}",
+        created_at=now,
+        updated_at=now,
+        identity=identity,
+        assessor_snapshot=assessor,
+        owner_vesting=vesting,
+        encumbrance_summary=encumbrance,
+        pipeline_routing=routing,
+        seller_readiness=readiness,
+        sales_pipeline=SalesPipeline(),
+        provenance=Provenance(source_county=county.capitalize()),
+        audit=Audit()
+    )
+
+def run_export(input_csv: str, county: str):
+    print(f"Loading Master Adjudicated Dataset: {input_csv}")
+    df = pd.read_csv(input_csv)
     
-    print(f"Total leads before filter: {len(df)}")
-    print(f"Total leads after filter: {len(export_df)}")
-    print(export_df["Export_Tier"].value_counts())
+    success_rows = []
+    failure_rows = []
+    review_queue = []
     
-    if export_df.empty:
-        print("No leads passed the export gate.")
-        return
-        
-    # 5. Format CRM Output
-    export_df["most_recent_deed_date"] = "" # Placeholder until extracted from Stage 7
-    export_df["apn"] = export_df["apn_fallback"]
-    
-    # Secure address compilation (scrub empty strings so fillna works)
-    situs_pdf_clean = export_df.get("situs_pdf", pd.Series([np.nan]*len(export_df))).replace({"": np.nan, "nan": np.nan, "NAN": np.nan, "None": np.nan})
-    address_clean = export_df.get("address", pd.Series([np.nan]*len(export_df))).replace({"": np.nan, "nan": np.nan, "NAN": np.nan, "None": np.nan})
-    export_df["property_address"] = situs_pdf_clean.fillna(address_clean).fillna("See Assessor")
-    export_df["property_address"] = export_df["property_address"].astype(str).str.replace(r'(?i)\s+City\s*$', '', regex=True)
-    
-    crm_cols = [
-        "apn",
-        "assessee_name",
-        "property_address",
-        "mailing_address",
-        "best_phone",
-        "Export_Tier",
-        "motivation_reason_text",
-        "active_liens",
-        "mortgages",
-        "has_assignment_of_rents",
-        "has_affidavit_of_death",
-        "ownership_status",
-        "most_recent_deed_date",
-        "live_total_balance",
-        "net_assessed_value",
-        "Verification Status"
-    ]
-    
-    # Ensure all cols exist
-    for c in crm_cols:
-        if c not in export_df.columns:
-            export_df[c] = ""
+    for i, row in df.iterrows():
+        try:
+            profile = extract_profile_from_row(row, county)
+            flat = flatten_profile(profile)
+            flat["v_delinquent"] = row.get("v_delinquent")
+            flat["v_total_balance"] = row.get("v_total_balance")
+            success_rows.append(flat)
             
-    crm_output = export_df[crm_cols].sort_values(by="Export_Tier")
-    
-    crm_output.to_csv(output_csv, index=False)
-    print(f"Export successful. Saved {len(crm_output)} leads to {output_csv}")
+            # Extract to manual review queue if flagged
+            if profile.pipeline_routing.manual_review_required:
+                rq_item = ReviewQueueItem(
+                    queue_item_id=f"mrq_{profile.profile_id}_{i}",
+                    profile_id=profile.profile_id,
+                    priority=profile.pipeline_routing.manual_review_priority or "HIGH",
+                    reason_codes=profile.pipeline_routing.manual_review_reason_codes,
+                    recommended_action="Review title chain and adjudicate new owner.",
+                    evidence_refs=[]
+                )
+                review_queue.append(rq_item.model_dump())
+                
+        except ValidationError as e:
+            # Catch Pydantic schema validation failures!
+            err_dict = row.to_dict()
+            err_dict["validation_error"] = str(e)
+            failure_rows.append(err_dict)
+            
+    # Write Success Leads
+    if success_rows:
+        out_ready = input_csv.replace(".csv", "_CRM_READY.csv")
+        pd.DataFrame(success_rows).to_csv(out_ready, index=False)
+        print(f"Validated {len(success_rows)} profiles. Saved to {out_ready}")
+        
+    # Write Validation Failures
+    if failure_rows:
+        out_fail = input_csv.replace(".csv", "_VALIDATION_FAILURES.csv")
+        pd.DataFrame(failure_rows).to_csv(out_fail, index=False)
+        print(f"Failed Validation: {len(failure_rows)} profiles. Saved to {out_fail}")
+        
+    # Write Manual Review Queue
+    if review_queue:
+        out_review = input_csv.replace(".csv", "_MANUAL_REVIEW_QUEUE.csv")
+        pd.DataFrame(review_queue).to_csv(out_review, index=False)
+        print(f"Sent {len(review_queue)} properties to Manual Review. Saved to {out_review}")
 
 if __name__ == "__main__":
-    run_crm_export()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("input_csv", nargs="?", default="shasta/shasta_15_percent_sample_ADJUDICATED.csv")
+    parser.add_argument("--county", default="shasta")
+    args = parser.parse_args()
+    
+    run_export(args.input_csv, args.county)

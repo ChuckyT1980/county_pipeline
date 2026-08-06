@@ -1,0 +1,34 @@
+display_name: Humboldt County
+collector_names:
+- HUMBOLDT TAX COLLECTOR
+- HUMBOLDT CO TAX COLLR
+- COUNTY OF HUMBOLDT
+assessor:
+  backend: mpts
+  apn_field: asmt
+  endpoint: https://common1.mptsweb.com/mbap/humboldt/asr/AsrPrint
+  slug: humboldt
+  notes: 'Full roll from old-pipeline authoritative index (72,228 parcels, ASMT +
+    situs). MPTS host common1.mptsweb.com slug humboldt serves AsrPrint/tax-bill enrichment.
+    Recorder = Tyler DOCSEARCH201S5/S7/S8. Rebuild live index from Humboldt GIS when
+    webgis.co.humboldt.us returns. Do NOT regress the working index.
+
+    '
+  host: https://common1.mptsweb.com
+recorder:
+  backend: tyler
+  base_url: https://humboldtcountyca-web.tylerhost.net
+  name_search_id: DOCSEARCH201S5
+  doc_search_id: DOCSEARCH201S7
+  apn_search_id: DOCSEARCH201S9
+  typedate_search_id: DOCSEARCH201S8
+  ajax_headers_required: true
+  doc_number_transform: r_to_hyphen_6
+  notes: "Confirmed live 8/2: S5=name, S7=doc number (field_DocumentNumberID, format\
+    \ 2023-005135, 6-digit zero-pad), S8=typedate radar. S10 is the UCC/business-filing\
+    \ search \u2014 NOT property docs (discovery mistake).\n"
+  endpoint: https://recorder.humboldtgov.org
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

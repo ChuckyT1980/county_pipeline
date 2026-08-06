@@ -1,0 +1,60 @@
+{
+  "website": "https://www.govease.com/",
+  "uid": "6aefb71715",
+  "project_slug": "com",
+  "deleted_at": null,
+  "api_key": "wg_9788b268e29e4a5befe62707560c61e38",
+  "language_from": "en",
+  "language_from_custom_flag": null,
+  "language_from_custom_name": null,
+  "auto_switch": false,
+  "auto_switch_fallback": null,
+  "translation_engine": 3,
+  "excluded_paths": [],
+  "excluded_blocks": [],
+  "dynamics": [],
+  "custom_settings": {
+    "button_style": {
+      "with_name": true,
+      "full_name": true,
+      "is_dropdown": true,
+      "with_flags": false,
+      "flag_type": "rectangle_mat",
+      "custom_css": ""
+    },
+    "switchers": [],
+    "translate_search": false,
+    "loading_bar": true,
+    "hide_switcher": false,
+    "translate_images": false,
+    "subdomain": false,
+    "wait_transition": true,
+    "dynamic": ""
+  },
+  "media_enabled": false,
+  "external_enabled": false,
+  "page_views_enabled": false,
+  "versions": {
+    "translation": 1710154973
+  },
+  "pending_translation_enabled": false,
+  "curl_ssl_check_enabled": true,
+  "languages": [
+    {
+      "language_to": "es",
+      "custom_code": null,
+      "custom_name": null,
+      "custom_local_name": null,
+      "provider": null,
+      "enabled": true,
+      "automatic_translation_enabled": true,
+      "deleted_at": null,
+      "connect_host_destination": null,
+      "custom_flag": null
+    }
+  ],
+  "category": 9,
+  "organization_slug": "w-3cbad1296c",
+  "technology_id": 12,
+  "technology_name": "Other"
+}

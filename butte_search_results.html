@@ -1,0 +1,538 @@
+<!DOCTYPE html><html lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache no-svg no-inlinesvg no-smil no-svgclippaths" style="height: auto;"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search Page | Butte County | MBC</title>
+    
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="/MBC/Content/Images/favicon.ico">
+
+<!-- Web Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- CSS Files -->
+<link href="/MBC/bundles/bootstrapcss?v=7GsBEsX3kN0WQF8Jw_4hLTIgatCX-wR5fX529E1yt-k1" rel="stylesheet">
+
+
+<!-- Font Awesome CSS -->
+<link href="/MBC/Content/Idea/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+<!-- Fontello CSS -->
+<link href="/MBC/Content/Idea/fonts/fontello/css/fontello.css" rel="stylesheet">
+
+<!-- CSS Files -->
+<link href="/MBC/bundles/ideacss?v=0VZLV-UIq319p4ruCoi_vJjKK9NtX6umePQ7MyCYdpg1" rel="stylesheet">
+
+
+<!-- Color Scheme (In order to change the color scheme, replace the red.css with the color scheme that you prefer)-->
+<link href="/MBC/bundles/ideabluecss?v=A_NPqLJ61NPAMfeSGISgZLoylustZWr_VBL8DUntpss1" rel="stylesheet">
+
+
+<!-- Custom css -->
+<link href="/MBC/bundles/customcss?v=ehYtyM8MjczJpgIG5mef2aEnRti_vN2qjVDA6DUkJzE1" rel="stylesheet">
+
+<style type="text/css"></style></head>
+<body class="front">
+
+    <input name="__RequestVerificationToken" type="hidden" value="d1BK7K52COYGatVqooO5xnuFZBYM2du27sjTJ0ZhGsAs5q7Oek0X1sQdatDy50rkqRl_xfDlpwK3RsspVnsO9thx4v7l0e8X9RCKD-uzuEE1">
+
+    <!-- scrollToTop -->
+    <!-- ================ -->
+    <div class="scrollToTop" style="display: block;"><i class="icon-up-open-big"></i></div>
+
+    <!-- page wrapper start -->
+    <!-- ================ -->
+    <div class="page-wrapper">
+        <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+        
+
+<!-- header-top start (Add "dark" class to .header-top in order to enable dark header-top e.g <div class="header-top dark">) -->
+<!-- ================ -->
+<div class="header-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2  col-sm-6">
+                <!-- header-top-first start -->
+                <!-- ================ -->
+                <div class="header-top-first clearfix  hidden-sm hidden-xs">
+                        <ul class="social-links clearfix hidden-xs">
+                                <li class="facebook">
+                                    <a target="_blank" href="https://www.facebook.com/ButteCounty">
+                                        <span class="sr-only">Facebook</span>
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                                                                                            </ul>
+                </div>
+                <!-- header-top-first end -->
+            </div>
+            <div class="col-xs-10 col-sm-6">
+                <!-- header-top-second start -->
+                <!-- ================ -->
+                <div id="header-top-second" class="clearfix">
+                    <!-- header top dropdowns start -->
+                    <!-- ================ -->
+                    <div class="header-top-dropdown">
+                        <div class="btn-group dropdown" id="quickSearch">
+                            <button type="button" id="quickSearchDropdownButton" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false" aria-haspopup="dialog" aria-controls="quickSearchDropdown">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                Quick Search
+                            </button>
+                            <div id="quickSearchDropdown" class="dropdown-menu dropdown-menu-right dropdown-animation" aria-labelledby="quickSearchDropdownButton" role="dialog" tabindex="-1">
+                                <form id="quickSearchForm" data-search-url="http://common2.mptsweb.com/MBC/butte/tax/search">
+                                    <div class="form-group has-feedback">
+                                        <label class="sr-only" for="quickSearchBox">Fee Parcel</label>
+                                        <input type="text" class="form-control" placeholder="Enter FEE PARCEL" id="quickSearchBox" name="quickSearchFeeParcel" maxlength="12" autofocus="">
+                                        <i class="fa fa-search form-control-feedback" aria-hidden="true"></i>
+                                    </div>
+                                    <button type="submit" class="btn btn-default btn-sm">Search</button>
+                                    <button type="button" id="quickSearchClose" class="btn btn-primary btn-sm">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                            <div class="btn-group dropdown">
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-label="Cart - 0 items - $0.00" aria-expanded="false">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart <b>(0)($0.00)</b>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right dropdown-animation cart">
+                                    <li>
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th class="quantity">INS</th>
+                                                    <th class="product">Assessment</th>
+                                                    <th class="amount">Amount</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="total-quantity" colspan="2">Total 0 Items</td>
+                                                    <td class="total-amount">$0.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <!--  header top dropdowns end -->
+                </div>
+                <!-- header-top-second end -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- header-top end -->
+<!-- header start classes:
+                fixed: fixed navigation mode (sticky menu) e.g. <header class="header fixed clearfix">
+                 dark: dark header version e.g. <header class="header dark clearfix">
+            ================ -->
+<header class="header clearfix" style="padding: 2px; padding-left: 6px" role="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="row hidden-sm hidden-xs">
+                    <div class="col-md-3" style="padding: 0px">
+                        <div class="header-left clearfix">
+                            <!-- logo -->
+                            <div class="logo">
+                                <a href="https://www.buttecounty.net/treasurertaxcollector/Home.aspx" target="_blank">
+                                    <img id="logoCounty" src="/MBC/Content/CountyData/butte/headerlogo.png" alt="Butte County" title="Butte County">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9" style="padding: 10px">
+                        <div class="site-slogan">
+                            <h1>Butte County</h1>
+                        </div>
+                        <div class="site-slogan col-lg-offset-3">
+                            California
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="header-right clearfix">
+                    <!-- main-navigation start -->
+                    <!-- ================ -->
+                    <div class="main-navigation animated">
+                        <!-- navbar start -->
+                        <!-- ================ -->
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <!-- Toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <h2 class="navbar-text visible-xs-inline-block visible-sm-inline-block title" style="padding-left:15px">Butte County</h2>
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" aria-controls="navbar-collapse-1">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="navbar-collapse-1" role="group">
+                                    <menu class="nav navbar-nav navbar-right" role="menubar">
+
+                                                    <li class="dropdown active menu-container" role="presentation">
+                                                        <a id="masterlink0" href="#" class="dropdown-toggle menu-toggler" data-toggle="dropdown" role="menuitem" aria-haspopup="menu" aria-expanded="false">HOME</a>
+                                                        <menu class="dropdown-menu" role="menu" aria-labelledby="masterlink0">
+                                                                <li role="menuitem"><a href="https://www.buttecounty.net/" target="_blank" role="menuitem">COUNTY HOME</a></li>
+                                                                <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/Payments.aspx" target="_blank" role="menuitem">PAYMENTS</a></li>
+                                                                <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/Documents.aspx" target="_blank" role="menuitem">FORMS</a></li>
+                                                                <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/PropertyTaxes/PropertyTaxDivision.aspx" target="_blank" role="menuitem">PROPERTY TAXES</a></li>
+                                                                <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/CentralCollectionsDivision.aspx" target="_blank" role="menuitem">CENTRAL COLLECTIONS</a></li>
+                                                                <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/TreasuryDivision.aspx" target="_blank" role="menuitem">TREASURY</a></li>
+                                                                <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/Treasury/AnnualinvestmentPolicy.aspx" target="_blank" role="menuitem">ANNUAL INVESTMENT POLICY</a></li>
+                                                                <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/Treasury/TreasurersInvestmentReports.aspx" target="_blank" role="menuitem">TREASURERS INVESTMENT REPORTS</a></li>
+                                                                <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/Treasury/InvestmentPoolOversightCommittee.aspx" target="_blank" role="menuitem">INVESTMENT POOL OVERSIGHT COMMITTEE</a></li>
+                                                                <li role="menuitem"><a href="https://www.treasurer.ca.gov/pmia-laif/historical/quarterly.asp" target="_blank" role="menuitem">LOCAL AGENCY INVESTMENT FUND (LAIF) HISTORCAL RATES</a></li>
+                                                                <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/Treasury/UnclaimedEstates.aspx" target="_blank" role="menuitem">UNCLAIMED ESTATES</a></li>
+                                                                <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/Treasury/UnclaimedPaymentsorRefunds.aspx" target="_blank" role="menuitem">UNCLAIMED PAYMENTS AND REFUNDS</a></li>
+                                                        </menu>
+                                                    </li>
+                                                        <li class="dropdown menu-container" role="presentation">
+                                                            <a id="masterlink1" href="#" class="dropdown-toggle menu-toggler" data-toggle="dropdown" role="menuitem" aria-haspopup="menu" aria-expanded="false">PAYMENTS</a>
+                                                            <menu class="dropdown-menu" role="menu" aria-labelledby="masterlink1">
+                                                                    <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/Payments/Payments.aspx" target="_blank" role="menuitem">PROPERTY TAX PAYMENT OPTIONS</a></li>
+                                                                    <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/PropertyTaxes/PropertyTaxDueDates.aspx" target="_blank" role="menuitem">PROPERTY TAX DUE DATES</a></li>
+                                                                    <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/PropertyTaxes/TitleCompanyandLenderInstructions.aspx" target="_blank" role="menuitem">TITLE COMPANY AND LENDER INSTRUCTIONS</a></li>
+                                                                    <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/PropertyTaxes/PropertyTaxPaymentPlans.aspx" target="_blank" role="menuitem">PROPERTY TAX PAYMENT PLANS</a></li>
+                                                                    <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/Treasury/UnclaimedPaymentsorRefunds.aspx" target="_blank" role="menuitem">UNCLAIMED PROPERTY TAX REFUNDS</a></li>
+                                                            </menu>
+                                                        </li>
+                                                        <li class="dropdown menu-container" role="presentation">
+                                                            <a id="masterlink2" href="#" class="dropdown-toggle menu-toggler" data-toggle="dropdown" role="menuitem" aria-haspopup="menu" aria-expanded="false">FORMS</a>
+                                                            <menu class="dropdown-menu" role="menu" aria-labelledby="masterlink2">
+                                                                    <li role="menuitem"><a href="https://www.buttecounty.net/Portals/3/MailingAddressChangeRequest.pdf" target="_blank" role="menuitem">ADDRESS CHANGE FORM</a></li>
+                                                                    <li role="menuitem"><a href="https://www.buttecounty.net/Assessor/Lowermyvalue/AssessmentAppeals.aspx" target="_blank" role="menuitem">ASSESSMENT APPEAL FORM</a></li>
+                                                                    <li role="menuitem"><a href="https://www.buttecounty.net/Portals/25/forms/Mobile%20Home%20Tax%20PDFClearance%20Request%2072013.pdf" target="_blank" role="menuitem">MOBILE HOME TAX CLEARANCE REQUEST FORM</a></li>
+                                                                    <li role="menuitem"><a href="https://www.buttecounty.net/Portals/25/forms/APPLICATION%20FOR%20PROPERTY%20TAX%20RELIEF%20FOR%20MILITARY%20PERSONNEL.pdf" target="_blank" role="menuitem">MILITARY TAX RELIEF APPLICATION</a></li>
+                                                                    <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/Treasury/UnclaimedPaymentsorRefunds.aspx" target="_blank" role="menuitem">PROPERTY TAX PAYMENT PLAN CONTRACT</a></li>
+                                                                    <li role="menuitem"><a href="https://www.buttecounty.net/treasurertaxcollector/Treasury/AnnualinvestmentPolicy.aspx" target="_blank" role="menuitem">TREASURY INVESTMENTS</a></li>
+                                                            </menu>
+                                                        </li>
+                                    </menu>
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- navbar end -->
+                    </div>
+                    <!-- main-navigation end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header end -->
+
+        <div id="content" tabindex="-1">
+            
+<!-- main-container start -->
+<!-- ================ -->
+<main class="main-container" style="padding: 0px">
+
+    <div class="container">
+        <div class="row">
+
+            <!-- main start -->
+            <!-- ================ -->
+            <div class="main col-md-12">
+
+                <!-- page-title start -->
+                <!-- ================ -->
+                <h2 class="page-title hidden-sm hidden-xs">Find Property</h2>
+                <div class="separator-2 hidden-sm hidden-xs"></div>
+                <p class="lead">Please provide your search criteria and click the Search button.  Review the Help section below for more information on how to locate your Assessment or Fee Parcel.</p>
+                <!-- page-title end -->
+
+                <div class="sorting-filters" id="SearchDiv">
+                    <form class="form-inline" id="searchForm">
+                        <div class="form-group">
+                            <label for="SelTaxYear">ROLL YEAR</label>
+                            <select class="form-control" id="SelTaxYear">
+                                <option value="0000-CURR" selected="">2026</option>
+                                        <option value="2025">2025 - HISTORICAL</option>
+                                        <option value="2024">2024 - HISTORICAL</option>
+                                        <option value="2023">2023 - HISTORICAL</option>
+                                        <option value="2022">2022 - HISTORICAL</option>
+                                        <option value="2021">2021 - HISTORICAL</option>
+                                        <option value="2020">2020 - HISTORICAL</option>
+                                        <option value="2019">2019 - HISTORICAL</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="SearchVal">SEARCH BY</label>
+                            <select class="form-control" id="SearchVal" name="SearchVal">
+                                <option value="feeparcel" selected="">FEE PARCEL</option>
+                                <option value="asmt">ASSESSMENT</option>
+                                            <option value="situs">STREET ADDRESS</option>
+
+                            </select>
+                        </div>
+                        <div class="form-group form-group-search">
+                            <label id="SearchTerm" for="SearchValue">FEE PARCEL</label>
+                            <input type="text" class="form-control" id="SearchValue" placeholder="SEARCH TERM" value="" maxlength="20">
+                        </div>
+                        <div class="form-group" id="SearchBtnSubmit">
+                            <button type="submit" class="btn btn-default" id="SearchSubmit">Search</button>
+                        </div>
+                    </form>
+                    <div class="alert alert-warning" role="alert" id="PriorWariningDiv" hidden="hidden"><strong>ATTENTION!</strong> This is for historical purposes only and is not current data. Please select current roll year for current payment information.</div>
+                    <div class="alert alert-warning" role="alert" id="lengthWarningDiv" hidden="hidden" style="display: none;"><strong>ATTENTION!</strong> Minimum 6 characters required. Maximum 20.</div>
+                </div>
+
+
+                <div class="clearfix"></div>
+
+
+            </div>
+            <!-- main end -->
+
+        </div>
+    </div>
+</main>
+<!-- main-container end -->
+<!-- main-container start -->
+<!-- ================ -->
+<section class="main-container" id="ResultsSecton" hidden="hidden" style="display: block;">
+    <span id="screenReaderSearchStatus" class="sr-only" tabindex="-1" role="status">Search complete</span>
+    <div class="container">
+        <div class="row">
+            <!-- main start -->
+            <!-- ================ -->
+            <div class="main col-md-12">
+                <!-- Search Results start -->
+                <div class="row" id="ResultDiv">
+        <div class="col-md-3 col-sm-6">
+            <div class="listing-item" style="height: 229px;">
+                <div class="listing-item-body clearfix" style="height: 100%">
+                    <span class="h4 title"><a href="/MBC/butte/tax/main/002271003000/2026/0000">002-271-003-000</a></span>
+                    <p>
+                        <strong>Address : </strong>2240 NOTRE DAME BLVD #3<br>
+                        <strong>Year : </strong>2026<br>
+                        <strong><span class="sr-only">T.R.A.</span><span aria-hidden="true">TRA</span> : </strong>002060<br>
+                        <strong>Roll <span class="sr-only">Category</span><span aria-hidden="true">Cat.</span> : </strong>CS<br>
+                        <strong>Fee Parcel : </strong>002-271-003-000
+                    </p>
+                    <div class="elements-list pull-right">
+                        <a href="/MBC/butte/tax/main/002271003000/2026/0000"><i class="fa fa-hand-o-right pr-10"></i>View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                <!-- Search Results end -->
+            </div>
+            <!-- main end -->
+        </div>
+    </div>
+</section>
+<!-- main-container end -->
+<!-- section start -->
+<!-- ================ -->
+<div class="section" style="padding-top:0px;">
+    <div class="container">
+        <h2>Help</h2>
+        <div class="separator-2"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block clearfix">
+                    <h3>Assessment</h3>
+                    <p>
+                        To view a "specific" assessment, please enter the assessment number. This feature may not display all outstanding assessments. If you would like a summary of outstanding assessments, use the FEE PARCEL search.
+                    </p>
+                    <h3>Fee Parcel</h3>
+                    <p>
+                        To view a "summary" of all current or delinquent fiscal year assessments outstanding or paid during the current fiscal year, please enter the fee parcel number. If you do not have your assessment or fee parcel number, please contact our office
+                    </p>
+                    <p>
+                        This information is located on the upper left corner of your property tax bill as shown below.
+                    </p>
+                    <img src="/MBC/Content/CountyData/butte/sampletaxbill.jpg" onerror="this.src='~/Content/Images/sampletaxbill.jpg'" title="Sample Tax Bill" alt="Sample property tax bill showing boxed property information (assessment number, fee parcel number, owner name and address) and where to find them.">
+                    <div class="sr-only">
+                        <p>
+                            This is the top section of a tax bill depicting Property Information and the mailing address on the left side.
+                            In the upper left corner are 5 fields, assessment number, fee parcel number, physical address location, lien date owner, and tax rate area.
+                        </p>
+                        <p>
+                            The bottom left corner shows with the mailing address visible for the US postal service through a windowed envelope. This could be 3-5 lines in length.
+                            Most formats have a QR Code for returned tax bills which is printed as a small box code to the left of the address, also visible in the windowed envelope.
+                        </p>
+                        <p>
+                            On the right side, the Important Messages box is demonstrated.
+                            Example of these messages could indicate a date range for the tax bill, County website, phone number, and other relevant messages.
+                        </p>
+                    </div>
+                                <h3>Street Address</h3>
+                                <p>
+                                    You may have difficulty searching for your tax bill because your address on the deed may have been recorded with abbreviations.
+                                    <br>
+                                    <i class="fa fa-caret-right"></i> Try entering the address without the Street, Road, Drive, or Lane in the property address search cell.
+                                    <br>
+                                    <i class="fa fa-caret-right"></i> Try entering only the first letter for directional identifiers like <b>N</b> for <b>North</b>, <b>E</b> for <b>East</b>, <b>S</b> for <b>South</b>, <b>W</b> for <b>West</b>
+                                </p>
+                                <p>
+                                    <b>Example Address: </b> 1234 West 32nd Street <br>
+                                    <i class="fa fa-caret-right"></i> Search by 1234 W (do not type out West) and scroll down to find your street name.
+                                    <br>
+                                    <i class="fa fa-caret-right"></i> Search by 1234 W 32nd (do not enter Street or St.) and you should go directly to your property address.
+                                </p>
+                                            <h3>Service Fees</h3>
+                            <p>
+                                All payments processed on-line will be assessed a service fee.
+                                The Treasurer-Tax Collector's office does not charge a fee to process payments on-line, however, the vendor processing your payments assesses the service fees.
+                                All service fees are assessed by our credit card vendor, not the County.
+                            </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- section end -->
+
+
+        </div>
+        
+
+
+<!-- footer start (Add "light" class to #footer in order to enable light footer) -->
+<!-- ================ -->
+<footer id="footer" class="light">
+
+    <!-- .footer start -->
+    <!-- ================ -->
+    <!-- .footer start -->
+    <!-- ================ -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-content">
+                        <div class="logo-footer">
+                            <img id="logo-footer" src="/MBC/Content/CountyData/butte/footerlogo.png" alt="Butte County" title="Butte County">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="col-sm-12">
+                        <ul class="list-icons">
+                            <li><span class="h2">Troy Kidd</span></li>
+                                    <li>Treasurer - Tax Collector</li>
+                            <li>
+                                <span class="sr-only">Location</span>
+                                <i class="fa fa-map-marker pr-10" aria-hidden="true"></i>
+                                25 County Center Drive Suite 125 Oroville, CA 95965
+                            </li>
+                            <li>
+                                <span class="sr-only">Telephone</span>
+                                <i class="fa fa-phone pr-10" aria-hidden="true"></i>
+                                <phone>
+  <a class="link-dark" href="tel:+1(530)552-3720">530-552-3720</a>
+</phone>
+                            </li>
+                            <li>
+                                <span class="sr-only">Email</span>
+                                <i class="fa fa-envelope-o pr-10" aria-hidden="true"></i>
+                                <email>
+  <a class="link-dark" href="mailto:taxes@buttecounty.ca.gov">taxes@buttecounty.ca.gov</a>
+</email>
+                            </li>
+                        </ul>
+
+                            <ul class="social-links circle">
+                                    <li class="facebook">
+                                        <a target="_blank" href="https://www.facebook.com/ButteCounty" aria-label="Facebook">
+                                            <span class="sr-only">Facebook</span>
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+
+
+
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="space-bottom hidden-lg hidden-xs"></div>
+        </div>
+    </div>
+    <!-- .footer end -->
+    <!-- .footer end -->
+    <!-- .subfooter start -->
+    <!-- ================ -->
+    <div class="subfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>© 2026 Megabyte Licensing Corporation. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <strong>For the best experience, use the latest version of Chrome, Edge, or Safari.</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .subfooter end -->
+
+</footer>
+<!-- footer end -->
+
+    </div>
+
+
+
+    
+<!-- JavaScript files placed at the end of the document so the pages load faster
+        ================================================== -->
+<script src="/MBC/bundles/jquery?v=_RVqrN_NjXiaouJ7wbI7I9yghqta-vRrfyV3Z2oIhGY1"></script>
+<script src="/MBC/bundles/bootstrap?v=UAIEmfvhofh9KzlkAmp9zD-8566S-tGBZM-_-ea1zjU1"></script>
+<script src="/MBC/bundles/modernizr?v=JN3pXJ45x0Je-SJ7jPdl6SVnqwsmVh8juF0H9rN7NUc1"></script>
+<script src="/MBC/bundles/SmoothScroll?v=71JmRbbWHdgLN6MCxiwVgy0LHp5uV4X2ZbyhodbcHl81"></script>
+<script src="/MBC/bundles/InitializePlugins?v=Gl4bwkDdzm1mK81y9h3BY6Lv1lAiulVnTLAZkBq01DI1"></script>
+<script src="/MBC/bundles/customscripts?v=VrOFyGdxNeAHHR6fbFdnzMijuS2zLvCboxZ1frPYDxE1"></script>
+<script src="/MBC/bundles/spinJs?v=amB2xYxVR3kgCo_d9iRaYi0lbrFH7Su76w-vFE4Emgw1"></script>
+<script src="/MBC/bundles/AllPagesScript?v=V7lvMYG6I5yn2kZ0Br4v-logZNJEve_XUD-USvPf7W01"></script>
+<script src="/MBC/bundles/scrollIntoView?v=pYifnk1kdd9wnwFSt4B4uKdr2HHhUsqZBKFIxq3BKxQ1"></script>
+
+    
+
+    <script type="text/template" id="cardTemplate">
+        <div class="col-md-3 col-sm-6">
+            <div class="listing-item">
+                <div class="listing-item-body clearfix" style="height: 100%">
+                    <span class="h4 title"><a href="{6}">{0}</a></span>
+                    <p>
+                        <strong>{7} : </strong>{1}<br />
+                        <strong>Year : </strong>{2}<br />
+                        <strong><span class="sr-only">T.R.A.</span><span aria-hidden="true">TRA</span> : </strong>{3}<br />
+                        <strong>Roll <span class="sr-only">Category</span><span aria-hidden="true">Cat.</span> : </strong>{4}<br />
+                        <strong>Fee Parcel : </strong>{5}
+                    </p>
+                    <div class="elements-list pull-right">
+                        <a href="{6}"><i class="fa fa-hand-o-right pr-10"></i>View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script>
+        var appFolder = '/MBC/';
+        var countyname = 'butte';
+        var jQuickSearchValue = '';
+    </script>
+
+    <!-- Search Page Script -->
+    <script src="/MBC/bundles/SearchJS?v=WGllUlHOoEQJCHeEugN6eNbvj7q1QNnD929PPHdFj3s1"></script>
+
+
+
+
+</body></html>

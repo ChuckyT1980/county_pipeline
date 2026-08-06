@@ -1,0 +1,18 @@
+display_name: Sierra County
+collector_names:
+- SIERRA TAX COLLECTOR
+- SIERRA CO TAX COLLR
+- COUNTY OF SIERRA
+assessor:
+  backend: mpts
+  notes: no public assessor source discovered yet
+  host: https://common1.mptsweb.com
+  endpoint: https://common1.mptsweb.com/mbap/sierra/asr/AsrPrint
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.sierra.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

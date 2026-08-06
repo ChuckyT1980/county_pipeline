@@ -1,0 +1,31 @@
+display_name: Fresno County
+collector_names:
+- FRESNO COU TAX COLLR
+- FRESNO COUNTY TAX COLLECTOR
+notes: 'Sept 10-11, 2026 auction (~161 parcels). Assessor = ArcGIS FC_PARCEL_SELECT
+  (proven: 441,690 parcels, 42 fields, ~4 min). Recorder = Tyler. Auction = Realauction
+  (login-backed preview; list not yet published).
+
+  '
+assessor:
+  backend: arcgis
+  endpoint: https://services.arcgis.com/fresno/FeatureServer/0
+  where: APN IS NOT NULL AND APN <> ''
+  apn_field: APN
+  out_fields: '*'
+recorder:
+  backend: tyler
+  base_url: https://fresnocountyca-web.tylerhost.net
+  name_search_id: DOCSEARCH377S1
+  doc_search_id: DOCSEARCH377S2
+  apn_search_id: DOCSEARCH201S9
+  ajax_headers_required: true
+  doc_number_transform: null
+  endpoint: https://fresnocountyca-web.tylerhost.net
+auction:
+  backend: realauction
+  base_url: https://fresnocounty.california.taxdefaultsale.com
+  preview_url: https://fresnocounty.california.taxdefaultsale.com/index.cfm?zaction=AUCTION&Zmethod=PREVIEW&AUCTIONDATE=
+  auction_dates:
+  - 09/10/26
+  - 09/11/26

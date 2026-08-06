@@ -1,0 +1,1858 @@
+
+	
+	<script>
+	
+	function initializeSessionTimerChecks() {
+		if (selfservice.mode.kioskMode == undefined) {
+			var test = 'false';
+			if (!test) {
+				selfservice.mode.kioskMode = false;
+			} else {
+				selfservice.mode.kioskMode = booleanValue('false');
+			}
+		}
+
+		if (selfservice.session.userLoggedIn == undefined) {
+			selfservice.session.userLoggedIn = booleanValue('false');
+		}
+
+		if (selfservice.url.homePage == undefined) {
+			selfservice.url.homePage = window.location.origin + '/web/';
+		}
+		if(selfservice.setting.showDisclaimer == undefined){
+			selfservice.setting.showDisclaimer = booleanValue('true')
+		}
+	
+		if( selfservice.pages.disclaimer == undefined){
+			 selfservice.pages.disclaimer = '/web/user/disclaimer';
+		}
+	}
+
+	$(document).keydown(function(e) {
+		selfservice.maybeScrollScreen(e);
+	});
+
+	$(document).on('pageinit', function(event) {
+		initializeSessionTimerChecks();
+
+		
+		selfservice.session.continueSession();
+
+		
+			var subscriptionTimerId = $('#subscriptionTimer').attr('id');
+			selfservice.subscriptionTimer.setSubscriptionTime(subscriptionTimerId, '/web/subscription/getSubscriptionTime');
+		});
+
+	$( document ).ajaxComplete(function( event, request, settings ) {
+		if(request.getResponseHeader('isThresholdReached') === "true"){
+			location.reload();
+		}
+	});
+	
+	$.ajaxSetup({
+	    beforeSend: function(xhr) {
+	        xhr.setRequestHeader('ajaxRequest', true);
+	    }
+	});
+
+	function removeDisclaimerCookie(){
+		var context = "/web/";
+		context = context.split('/').join('')
+		document.cookie = "disclaimerAccepted=; Path=/" + context + "; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+	}
+	
+	</script>
+
+<div class="ss-page ui-alt-icon ui-nodisc-icon ui-page ui-page-theme-a ui-page-active" data-role="page" id="SelfService-1782944975672-page" data-dom-cache="false" data-url="/web/search/DOCSEARCH344S5" data-external-page="true" tabindex="0" style="min-height: 541px; padding-top: 108px; padding-bottom: 71px;">
+		<script>
+		var selectedLanguage = 'en';
+		</script>
+		<!-- HEADER	-->
+		<div id="ss-header-box" class="ss-header ui-header ui-bar-inherit ui-header-fixed slidedown" data-role="header" data-position="fixed" data-tap-toggle="false" role="banner">
+			<div class="ss-header-stripe-top"></div>
+			<div class="ss-content full-screen">
+				
+				
+				<div class="ss-header-title">
+					<div class="ss-header-internal">
+						<h1>Shasta County Assessor/Recorder</h1>
+						<h4 class="ss-header">Public Web Self Service</h4>
+					</div>
+				</div>
+				
+
+				<div class="ss-header-actions">
+					
+
+
+
+
+
+	
+	
+		
+			<a href="#SelfService-1782944975672-cartPanel" class="ss-header-actions-cart ui-link">
+				<span class="ss-header-labels" id="ss-cart-count-label">
+				
+					
+					&nbsp;
+				
+				</span>
+				<span class="ss-header-labels" id="ss-cart-label">cart</span>
+			</a>
+		
+		
+	
+
+	
+	<a href="/web/" class="ss-header-actions-home ui-link">
+		<span class="ss-header-labels" id="ss-general-label">Home</span>
+	</a>
+
+
+
+
+
+
+	
+	
+	<a href="#SelfService-1782944975672-loginPanel" class="ss-header-actions-user ui-link">
+		<span class="ss-header-labels" id="ss-general-label">
+		
+			
+				Log in
+			
+			
+		
+		</span>
+	</a>
+	
+
+					<div class="ss-clear"></div>
+				</div>
+				<div class="ss-clear"></div>
+			</div>
+			<div class="ss-header-stripe-bottom">
+				<div class="ss-content full-screen">
+					<div id="ss-user-welcome" class="ss-footer-internal-small">
+						
+							
+							
+							
+							
+								Please log in
+							
+						
+						<span id="subscriptionTimer" class="ss-footer-internal-small-left-align"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- BODY -->
+		<div data-role="content" class="ui-content" role="main">
+			<div class="ss-content full-screen">
+				
+
+
+
+
+<link rel="stylesheet" media="all" type="text/css" href="/web/resources/css/self.service.search.css">
+
+
+<div class="ss-validation-messages">
+	
+</div>
+
+
+
+
+<ul class="ss-listview ss-utility-box ui-listview ui-listview-inset ui-corner-all ui-shadow ui-group-theme-a" data-role="listview" data-inset="true" data-theme="a">
+	<li data-role="list-divider" data-theme="a" role="heading" class="ui-li-divider ui-bar-a ui-first-child">Document Number Search - Web</li>
+	
+	<li class="ss-listview-internal ui-li-static ui-body-inherit ui-last-child"><p> Enter the <b>Document Number</b> </p> <ul><li> <b>Document Numbers</b> are twelve (12) digits including a hyphen (i.e. 2014-0035125); no commas or spaces </li><li> <span style="color:#ff0000">Please Remember all MAP records need to be searched for using the Map Book/Page Search</span> </li></ul> </li>
+	
+</ul>
+
+
+<ul class="ss-listview ss-utility-box ui-listview ui-listview-inset ui-corner-all ui-shadow ui-group-theme-b" data-role="listview" data-inset="true" data-theme="b">
+	
+			
+			
+				
+			
+				
+				<li data-role="list-divider" data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child">Recorder Documents are indexed
+ 					
+ 					
+ 						from  Jan 2, 1924
+ 						through  Jun 30, 2026
+ 					
+ 					
+ 					
+				
+			
+			
+			
+	
+	
+		
+		
+			
+			</li><li class="ss-listview-internal ui-li-static ui-body-inherit ui-last-child">
+				<form id="SelfService-1782944975672-search-form" method="post" action="/web/searchPost/DOCSEARCH344S5">
+					<div class="ss-utility-box">
+						
+							<!--Unknown search Presentation Item--><div class="ui-grid-b full-screen"><div class="ui-block-a ui-margins"><label for="field_DocumentNumberID">Document Number</label>
+<div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset"><input autocomplete="off" name="field_DocumentNumberID" id="field_DocumentNumberID" type="text" value=""></div>
+</div>
+<div class="ui-block-b ui-margin-prep"><label for="field_BookPageID">Book Page</label>
+<!--Table Component Renderer calculated 2 columns. Creating renderer of type TwoColumnGridComponentRenderer--><div class="ui-grid-a two-column  full-screen"><div class="ui-block-a ui-margins"><label for="field_BookPageID_DOT_Volume">Volume</label>
+<div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset"><input autocomplete="off" name="field_BookPageID_DOT_Volume" id="field_BookPageID_DOT_Volume" type="text" value=""></div>
+</div>
+<div class="ui-block-b ui-margins"><label for="field_BookPageID_DOT_Page">Page</label>
+<div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset"><input autocomplete="off" name="field_BookPageID_DOT_Page" id="field_BookPageID_DOT_Page" type="text" value=""></div>
+</div>
+</div>
+</div>
+</div>
+
+						
+					</div>
+				</form> 
+				<div style="display: none;" id="UseAdvancedSearch-popup-placeholder"><!-- placeholder for UseAdvancedSearch-popup --></div> 
+				 
+				
+					<div style="display: none;" id="SelfService-1782944975672-recentSearchPopup-placeholder"><!-- placeholder for SelfService-1782944975672-recentSearchPopup --></div>
+				
+				<script>
+				var useAdvancedSearchPopup = $('#UseAdvancedSearch-popup');
+		
+				$('#UseAdvancedSearch-link').on('click', function(event) {
+					event.preventDefault();
+					useAdvancedSearchPopup.popup({
+						beforeposition: function() {
+							$('.ui-popup-container').css('width','60em');
+						}
+					}).popup('open');
+				});
+		
+				$('#SelfService-1782944975672-UseAdvancedSearch-close').on('click', function(event) {
+					event.stopPropagation();
+					event.preventDefault();
+					useAdvancedSearchPopup.popup('close');
+				});
+		
+				$('#field_UseAdvancedSearch').on('change', function(){
+					var show = $('#field_UseAdvancedSearch').is(':checked');
+					showAdvancedSearch(show);
+				});
+		
+				showAdvancedSearch = function(show) {
+					$.each($('a.advancedSearch'), function(index, target) {
+						var fieldId = 'field_' + $(target).data('searchField');
+						var field = $('#' + fieldId);
+						var parent = field.closest('ul');
+						var label = $('label[for=' + fieldId + ']');
+						var button = $('a.advancedSearch');
+						var clearButton =  $('a.ui-input-clear.ui-icon-delete');
+		
+						if (show) {
+							button.fadeIn('fast');
+							clearButton.css("right", "20px");
+						} else {
+							button.hide();
+							clearButton.css("right", "0px");
+						}
+					});
+				};
+				</script>
+		
+				<div class="ss-content full-screen" id="SelfService-1782944975672-search-controls">
+				<a class="ss-left ui-link ui-btn ui-btn-b ui-icon-clock ui-btn-icon-left ui-btn-inline ui-shadow ui-corner-all" id="recentSearchButton" data-role="button" data-inline="true" data-theme="b" data-icon="clock" data-iconpos="left" href="/search/recentSearches" role="button">Recent searches</a><a class="ss-right ui-link ui-btn ui-btn-b ui-icon-search ui-btn-icon-right ui-btn-inline ui-shadow ui-corner-all" id="searchButton" data-role="button" data-inline="true" data-theme="b" data-icon="search" data-iconpos="right" href="/web/searchResults/DOCSEARCH344S5" role="button">Search</a><a class="ss-right ui-link ui-btn ui-btn-b ui-icon-refresh ui-btn-icon-left ui-btn-inline ui-shadow ui-corner-all" id="clearSearchButton" data-role="button" data-inline="true" data-theme="b" data-icon="refresh" data-iconpos="left" role="button">Clear Selections</a><div class="ss-clear" id="SelfService-1782944975672-control-clear"></div>
+				<script>
+			var loadTime = 1700;
+			
+			
+			$('#SelfService-1782944975672-page').on('pageinit', function() {
+			
+		
+			
+				// create and show popup dialog 
+				var recentSearchUrl = '/web/search/recentSearches';
+				$('#SelfService-1782944975672-recentSearchPopup').popup({
+					beforeposition: function() {
+						$('.ui-popup-container').css('width','50em');
+						$.ajax({
+							type: 'POST',
+							url: recentSearchUrl,
+							processData: false,
+							async: false,
+							dataType: 'html',
+							success: function(data) {
+								$('#SelfService-1782944975672-recentSearchPopupInternal').html(data);
+								$('#SelfService-1782944975672-recentSearchPopup').trigger('create');
+								selfservice.truncateText($('.recent-search-query-text'), 80);
+							}, 
+							error: function(jqXHR, textStatus, errorThrown){
+								alert('We&#39;re sorry. An error occurred while saving your search');
+							}
+						});
+					},
+					afterclose: function() {
+						var url = $(window).data('recentSearchUrl');
+						if (url) {
+							$.ajax({
+								type: 'POST',
+								url: url,
+								processData: false,
+								async: false,
+								dataType: 'html',
+								success: function(searchActionId) {
+									var recentSearchUrl = '/web/search/'+searchActionId;
+									window.location=recentSearchUrl;
+								}, 
+								error: function(jqXHR, textStatus, errorThrown){
+									alert('We&#39;re sorry. An error occurred while saving your search');
+								}
+							});
+						}
+					}
+				});
+		
+				$('<a class="ss-left" id="recentSearchButton" data-role="button" data-inline="true" data-theme="b" data-icon="clock" data-iconpos="left" href="/search/recentSearches">Recent searches</a>')
+					.insertBefore('#SelfService-1782944975672-control-clear')
+					.click(function(event) {
+						event.preventDefault();
+						var responseElement = $('#SelfService-1782944975672-search-results');
+						var controlElement = 'SelfService-1782944975672-search-controls';
+						var buttonElement = 'SelfService-1782944975672-search-buttons';
+						var filterUrl = '/web/filterSearchResults/DOCSEARCH344S5';
+		
+						$('#SelfService-1782944975672-recentSearchPopup').popup('open');
+					});
+			
+		
+			var resultsUrl = '/web/searchResults/DOCSEARCH344S5';
+			var responseElement = $('#SelfService-1782944975672-search-results');
+			var buttons = $('#SelfService-1782944975672-search-buttons');
+			var filterUrl = '/web/filterSearchResults/DOCSEARCH344S5';
+			selfservice.search.buildSearchButtons(responseElement, buttons, resultsUrl, filterUrl);
+		
+			$('<a class="ss-right" id="searchButton" data-role="button" data-inline="true" data-theme="b" data-icon="search" data-iconpos="right" href="/web/searchResults/DOCSEARCH344S5">Search</a>')
+				.insertBefore('#SelfService-1782944975672-control-clear')
+				.click(function(event) {
+				event.preventDefault();
+				if(validatePage($('#SelfService-1782944975672-search-form'))) {
+					// If any items are selected, show them a warning that their results will
+					// disappear if they perform a new search
+					var selectedItems = $('ul').find('input.ss-facet-select:checked');
+					if (selectedItems.length > 0) {
+						selfservice.search.openSelectedItemsWarningPopup('selectedItemsWarningNewSearch');
+					} else {
+						executeSearch();
+					}
+				}
+			});
+		
+			$(document).on('keydown', function (event) {
+				// If we don't suppress the enter keydown, we get strange behavior and errors
+				// Don't prevent defaults if the login window is open as enter should work for login submit not search
+				if (((event.which && event.which == 13) || (event.keyCode && event.keyCode == 13)) && $('.ui-panel-open').length < 1) {
+					event.preventDefault();
+					return false;
+				} else if (event.target && event.target.type != undefined && event.target.type.toLowerCase() == 'number') {
+					var key = selfservice.determineKeyCodeProperty(event);
+					if (!selfservice.userPressedValidKeyForInputNumberTypeBox(key)) {
+						event.preventDefault();
+					}
+				}
+			});
+		
+			selfservice.document.handleTab = function (event) {
+				if((selfservice.testvar) && (selfservice.testvar.prop('id') !== $(document.activeElement).prop('id'))) {
+					selfservice.testvar = null;
+					return; 
+				}
+				var acItemSelected = $(document).data('Autocomplete');
+				$(document).data('Autocomplete', false);
+		
+				if ($(document).data('listFieldFocus') || $(event.target).closest("li").hasClass("autoCompleteList")) {
+					event.stopPropagation();
+					event.preventDefault();
+					$(document).data('listFieldFocus', false);
+		
+					// Move focus to the next text field
+					var $input = $(document.activeElement);
+					var inputs = $input.closest('form').find(':input:visible');
+					if (event.shiftKey) {
+						var previousInput = inputs.eq(inputs.index($input) - 1);
+						previousInput.focus();
+					} else {
+						var nextInput = inputs.eq(inputs.index($input) + 1);
+						if (typeof nextInput.prop('id') == 'undefined') {
+							$('#searchButton').focus();
+						} else {
+							$(nextInput).focus();
+						}
+					}
+					return false;
+				}
+				return true;
+			};
+		
+			selfservice.document.rebindOnEvents('keyup', function(e) {
+				// Don't prevent defaults if the login window is open as enter should work for login submit not search
+				var popupOpen = $.mobile.popup.active;
+				var panelOpen =  $('.ui-panel-open').length > 0;
+		
+				if ((e.which && e.which == 9) || (e.keyCode && e.keyCode == 9)) {
+					// This is set when the enter key is handled from an autocomplete (name suggest), read it and clear
+					return selfservice.document.handleTab(e);
+				} else if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+					// This is set when the enter key is handled from an autocomplete (name suggest), read it and clear
+					var acItemSelected = $(document).data('Autocomplete');
+					$(document).data('Autocomplete', false);
+		
+					if (!acItemSelected && $(e.target).closest("li").hasClass("autoCompleteList")) {
+						if($(e.target).val() != ''){
+		
+							$("ul[id$='aclist']").each(function(){
+								$(this).hide()
+							});
+							$input = $(e.target);
+							$input.val('');
+						}
+					}
+					if (acItemSelected) {
+						e.preventDefault();
+						return false;
+					}
+		
+					if (!panelOpen && !popupOpen && !acItemSelected) {
+						if(validatePage($('#SelfService-1782944975672-search-form'))) {
+							// If any items are selected, show them a warning that their results will disappear if they perform a new search
+							var selectedItems = $('ul').find('input.ss-facet-select:checked');
+							if (selectedItems.length > 0) {  
+								selfservice.search.openSelectedItemsWarningPopup('selectedItemsWarningNewSearch');
+							} else {
+								executeSearch();
+							}
+						}
+						e.preventDefault();
+						return false;
+					} else if (popupOpen) {
+						var popup = $('.ui-popup-active').find('[data-role=popup]');
+						var back = popup.find('[data-rel=back]');
+						if (back && back.length > 0) {
+							back[0].click(); // Only call first back button, not all of them
+						} else {
+							popup.popup('close');
+						}
+					}
+				}
+			});
+		
+			$('<a class="ss-right" id="clearSearchButton" data-role="button" data-inline="true" data-theme="b" data-icon="refresh" data-iconpos="left">Clear Selections</a>')
+				.insertBefore('#SelfService-1782944975672-control-clear')
+				.click(function(event) {
+					event.preventDefault();
+					var url = '/web/clearSearchResults/DOCSEARCH344S5';
+					$.ajax({
+						type: 'POST',
+						url: url,
+						success: function() {
+							$('form[id$=search-form] select').each(function() { 
+								$(this).val(''); 
+								$(this).selectmenu('refresh');
+							});
+							location.reload();
+						}, 
+						error: function(jqXHR, textStatus, errorThrown){
+							responseElement.empty();
+							responseElement.append('<h2>We&#39;re sorry. An error occurred while clearing search results</h2>');
+							responseElement.trigger('create');
+						}
+					});
+				});
+				$('#SelfService-1782944975672-search-controls').trigger('create');
+			});
+		
+			var applySearchText = function() {
+				var $input = $(document.activeElement);
+				var searchText = $input.val();
+				if (searchText.length > 0) {
+					var $holder = $("#" + $input.prop('id') + "-holder");
+					var exists = false;
+					$.each($holder.find("li.cblist-input-list"), function(index, value) {
+						if($(value).text() === searchText) {
+							$(value).css("background","lightblue");
+							setTimeout(function() {
+								$(value).css("background","initial");
+							},500);
+							exists = true;
+							return false;
+						}
+					});
+				if(!exists) {
+					selfservice.search.addSearchItem(searchText, searchText, $holder, $input, "-searchInput");
+				}
+				$input.val('');
+					$("#" + $input.prop('id') + "-aclist").empty().hide();
+				}
+			};
+		
+			var responseElement = $('#SelfService-1782944975672-search-results');
+			var resultsUrl = '/web/searchResults/DOCSEARCH344S5';
+			var filterUrl = '/web/filterSearchResults/DOCSEARCH344S5';
+			var buttons = $('#SelfService-1782944975672-search-buttons');
+			selfservice.search.initializeSearchObjects(responseElement, resultsUrl, filterUrl, buttons);
+		
+			var executeSearch = function() {
+				var responseElement = $('#SelfService-1782944975672-search-results');
+				var resultsUrl = '/web/searchResults/DOCSEARCH344S5';
+				var filterUrl = '/web/filterSearchResults/DOCSEARCH344S5';
+				var searchForm = $('#SelfService-1782944975672-search-form');
+				var controls = $('#SelfService-1782944975672-search-controls');
+				var buttons = $('#SelfService-1782944975672-search-buttons');
+				
+				
+				var ae = $(document.activeElement);
+				if (ae.prop('id').substring(0, 6) == 'field_') {
+					$('#searchButton').focus();
+				}
+		
+				$("ul[id$='aclist']").each(function() {
+					$(this).hide()
+				});
+
+				selfservice.search.performSearch(responseElement, resultsUrl, filterUrl, searchForm, controls, buttons);		
+				selfservice.search.closeSelectedItemsWarningPopup('selectedItemsWarningNewSearch');
+			};
+			</script>
+				</div>
+			</li>
+		
+	
+	
+</ul>
+<a id="resultAnchor" class="ui-link"></a>
+<div id="SelfService-1782944975672-search-results" style="min-height:260px;"><div class="ui-grid-a-uneven">
+	<div class="ui-block-a-uneven filter-container">
+		<a data-role="button" class="filter-header ui-link ui-btn ui-shadow ui-corner-all" role="button">Filter Results<span class="mdi mdi-filter"></span></a>
+		<div class="ss-utility-box ss-facet-entry" id="filters">
+
+		
+		
+			
+			
+			
+
+			<h2>Description (1)</h2>
+			
+			<form>
+				<div class="ui-input-search ui-body-inherit ui-corner-all ui-shadow-inset ui-input-has-clear"><input data-type="search" autocomplete="off" id="filterControlgroup-input-Description"><a href="#" tabindex="-1" aria-hidden="true" class="ui-input-clear ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-input-clear-hidden" title="Clear text">Clear text</a></div>
+			</form>
+			
+			<div style="margin:0;" data-role="controlgroup" data-inset="true" data-filter="true" data-mini="true" data-input="#filterControlgroup-input-Description" class="ui-controlgroup ui-controlgroup-vertical ui-corner-all ui-mini"><div class="ui-controlgroup-controls ">
+				
+				
+					
+					<a data-role="button" data-dimension="DocTypeDesc" title="DEED&nbsp;(1)" data-paths="DEED" href="#" class="ss-facet-entry ui-link ui-btn ui-shadow ui-corner-all ui-first-child ui-last-child" role="button"><span class="ss-left">DEED</span> 
+						<span class="ss-right">1</span>
+					</a>
+					 
+					
+				
+				
+			</div></div>
+
+			
+		
+			
+			
+			
+
+			<h2>Grantor (4)</h2>
+			
+			<form>
+				<div class="ui-input-search ui-body-inherit ui-corner-all ui-shadow-inset ui-input-has-clear"><input data-type="search" autocomplete="off" id="filterControlgroup-input-Grantor"><a href="#" tabindex="-1" aria-hidden="true" class="ui-input-clear ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-input-clear-hidden" title="Clear text">Clear text</a></div>
+			</form>
+			
+			<div style="margin:0;" data-role="controlgroup" data-inset="true" data-filter="true" data-mini="true" data-input="#filterControlgroup-input-Grantor" class="ui-controlgroup ui-controlgroup-vertical ui-corner-all ui-mini"><div class="ui-controlgroup-controls ">
+				
+				
+					
+					<a data-role="button" data-dimension="Grantor" title="MIKE AND BRENDA TRAMMELL FAMILY TRUST THE&nbsp;(1)" data-paths="MIKE AND BRENDA TRAMMELL FAMILY TRUST THE" href="#" class="ss-facet-entry ui-link ui-btn ui-shadow ui-corner-all ui-first-child" role="button"><span class="ss-left">MIKE AND BRENDA TRAMMELL FAMILY TRUST THE</span> 
+						<span class="ss-right">1</span>
+					</a>
+					 
+					
+				
+					
+					<a data-role="button" data-dimension="Grantor" title="THE MIKE AND BRENDA TRAMMELL FAMILY TRUST&nbsp;(1)" data-paths="THE MIKE AND BRENDA TRAMMELL FAMILY TRUST" href="#" class="ss-facet-entry ui-link ui-btn ui-shadow ui-corner-all" role="button"><span class="ss-left">THE MIKE AND BRENDA TRAMMELL FAMILY TRUST</span> 
+						<span class="ss-right">1</span>
+					</a>
+					 
+					
+				
+					
+					<a data-role="button" data-dimension="Grantor" title="TRAMMELL, BRENDA S - TR&nbsp;(1)" data-paths="TRAMMELL, BRENDA S - TR" href="#" class="ss-facet-entry ui-link ui-btn ui-shadow ui-corner-all" role="button"><span class="ss-left">TRAMMELL, BRENDA S - TR</span> 
+						<span class="ss-right">1</span>
+					</a>
+					 
+					
+				
+					
+					<a data-role="button" data-dimension="Grantor" title="TRAMMELL, MICHAEL S - TR&nbsp;(1)" data-paths="TRAMMELL, MICHAEL S - TR" href="#" class="ss-facet-entry ui-link ui-btn ui-shadow ui-corner-all ui-last-child" role="button"><span class="ss-left">TRAMMELL, MICHAEL S - TR</span> 
+						<span class="ss-right">1</span>
+					</a>
+					 
+					
+				
+				
+			</div></div>
+
+			
+		
+			
+			
+			
+
+			<h2>Grantee (1)</h2>
+			
+			<form>
+				<div class="ui-input-search ui-body-inherit ui-corner-all ui-shadow-inset ui-input-has-clear"><input data-type="search" autocomplete="off" id="filterControlgroup-input-Grantee"><a href="#" tabindex="-1" aria-hidden="true" class="ui-input-clear ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-input-clear-hidden" title="Clear text">Clear text</a></div>
+			</form>
+			
+			<div style="margin:0;" data-role="controlgroup" data-inset="true" data-filter="true" data-mini="true" data-input="#filterControlgroup-input-Grantee" class="ui-controlgroup ui-controlgroup-vertical ui-corner-all ui-mini"><div class="ui-controlgroup-controls ">
+				
+				
+					
+					<a data-role="button" data-dimension="Grantee" title="GOLDEN YEARS LLC&nbsp;(1)" data-paths="GOLDEN YEARS LLC" href="#" class="ss-facet-entry ui-link ui-btn ui-shadow ui-corner-all ui-first-child ui-last-child" role="button"><span class="ss-left">GOLDEN YEARS LLC</span> 
+						<span class="ss-right">1</span>
+					</a>
+					 
+					
+				
+				
+			</div></div>
+
+			
+		
+		<span style="display: inline-block; width:100%;">
+			
+			<div class="facetFilterButtons" style="float:right; width:100%;">
+				<a data-role="button" href="" title="Apply Filter(s)" class="ui-disabled update-search-results ui-link ui-btn ui-shadow ui-corner-all" role="button">Apply Filter(s)</a> &nbsp;
+			</div>
+		</span>
+		</div>
+	</div>
+	<div class="ui-block-b-uneven">
+
+
+
+	
+	
+	
+
+	
+	<ul class="ss-listview ss-utility-box ui-listview ui-listview-inset ui-corner-all ui-shadow ui-group-theme-a" data-role="listview" data-inset="true" data-theme="a">
+		<li class="ui-li-static ui-body-inherit ui-first-child">
+			<div class="selfServiceSearchResultHeaderLeft">
+				
+					<div class=" ui-checkbox"><input type="checkbox" class="ss-facet-select" id="SelfService-1782944977750-selectAll" style="display: block;"></div>
+				
+			</div>
+			<div class="selfServiceSearchResultHeaderLeft">
+				Showing page 1
+				of 1
+				for 1
+				Total Results
+			</div>
+			<div class="selfServiceSearchResultHeaderLeft">
+			
+			</div>
+			
+				<div class="selfServiceSearchResultHeaderLeft">Document Number Search - Web  Document Number equals 2017-0021298</div>
+			
+			<p class="ui-li-aside ss-selected-result-actions">
+				
+					<a href="#SelfService-1782944977750-export-popup" data-rel="popup" data-position-to="#SelfService-1782944977750-exportSearchResult" id="SelfService-1782944977750-exportSearchResult" class="mdi mdi-printer-settings mdi-24px ui-link" title="Export Search Results" aria-haspopup="true" aria-owns="SelfService-1782944977750-export-popup" aria-expanded="false">
+					</a>
+				
+				<a href="#SelfService-1782944977750-sort-popup" data-rel="popup" data-position-to="#SelfService-1782944977750-sortSearchResult" id="SelfService-1782944977750-sortSearchResult" class="mdi mdi-sort-alphabetical mdi-24px ui-link" title="Sort Search Results" aria-haspopup="true" aria-owns="SelfService-1782944977750-sort-popup" aria-expanded="false">
+				</a>
+				
+					<a href="#" id="SelfService-1782944977750-addSelectedSearchResult" class="mdi mdi-cart-plus mdi-24px ui-link" style="display: none;" title="Add Selected Document(s) to Cart">
+					</a>
+				
+				
+			</p>
+		</li>
+
+			
+			<li class="filtered-by-row ui-li-static ui-body-inherit">
+	
+				
+				
+
+					
+						
+						
+						
+
+						
+						
+						
+				
+
+					
+						
+						
+						
+
+						
+						
+						
+						
+
+						
+						
+						
+						
+
+						
+						
+						
+						
+
+						
+						
+						
+				
+
+					
+						
+						
+						
+
+						
+						
+						
+				
+				
+				</li>
+			
+
+		<li class="ui-li-static ui-body-inherit ui-last-child">
+			<ul id="SelfService-1782944977750-searchResult" class="selfServiceSearchResultList ui-listview ui-listview-inset ui-corner-all ui-shadow" data-role="listview" data-inset="true">
+				
+				
+				<li class="ss-search-row ui-li-static ui-body-inherit ui-first-child ui-last-child" data-href="/web/document/DOCCOR-2680340?search=DOCSEARCH344S5" id="searchRowDOCCOR-2680340" data-documentid="DOCCOR-2680340">
+					<!-- Header -->
+					<div class="selfServiceSearchRowLeft">
+						<a id="searchRowDOCCOR-2680340" class="ui-link"></a><!-- This link is for scrolling to the document row for the document a user just viewed. -->
+						
+							<div class=" ui-checkbox"><input type="checkbox" class="ss-facet-select"></div>
+						
+						<div class="ss-facet-avatar ss-facet-avatar-D">D</div>
+					</div>
+					<div class="selfServiceSearchRowRight">
+					
+						<h1>
+						
+							
+							2017-0021298
+							
+								
+								
+								
+							
+								
+								
+								
+								  &nbsp;•&nbsp;
+								  DEED
+								
+							
+						</h1>
+						<div class="ss-progress">
+							
+							
+							
+						</div>
+					
+					<p class="ui-li-aside ss-search-actions">
+						
+							<a href="#" id="SelfService-1782944977750-printOneSearchResult" class="mdi mdi-printer mdi-24px ui-link" data-function="printOneDocument('DOCCOR-2680340')" title="Print Document">
+							</a>
+						
+						<a href="/web/document/DOCCOR-2680340?search=DOCSEARCH344S5" id="SelfService-1782944977750-viewSearchResult" class="mdi mdi-note-text mdi-24px ui-link" title="View Document">
+						</a>
+						
+							<a href="#" id="SelfService-1782944977750-buyOneSearchResult" class="mdi mdi-cart-plus mdi-24px ui-link" data-function="openCartPopup('DOCCOR-2680340')" title="Add Document to Cart">
+							</a>
+						
+							
+					</p>
+					
+					<!-- Body -->
+					
+						
+						
+						
+						
+					
+					
+						
+							
+							
+								
+							
+						
+						<div class="searchResultThreeColumn">
+							<ul class="selfServiceSearchResultColumn five-line-block-with-text">
+								<li>Recording Date </li>
+								
+									<li class="selfServiceSearchResultCollapsed"><b>07/24/2017 01:56 PM</b></li>
+									
+								
+							</ul>
+						</div>	
+					
+						
+							
+								
+							
+							
+						
+						<div class="searchResultThreeColumn">
+							<ul class="selfServiceSearchResultColumn five-line-block-with-text">
+								<li>Grantor (4)</li>
+								
+									<li class="selfServiceSearchResultCollapsed"><b>TRAMMELL, MICHAEL S - TR</b></li>
+									
+										<li class="selfServiceSearchFullResult"><b>TRAMMELL, BRENDA S - TR</b></li>
+									
+										<li class="selfServiceSearchFullResult"><b>THE MIKE AND BRENDA TRAMMELL FAMILY TRUST</b></li>
+									
+										<li class="selfServiceSearchFullResult"><b>MIKE AND BRENDA TRAMMELL FAMILY TRUST THE</b></li>
+									
+								
+							</ul>
+						</div>	
+					
+						
+							
+							
+								
+							
+						
+						<div class="searchResultThreeColumn">
+							<ul class="selfServiceSearchResultColumn five-line-block-with-text">
+								<li>Grantee </li>
+								
+									<li class="selfServiceSearchResultCollapsed"><b>GOLDEN YEARS LLC</b></li>
+									
+								
+							</ul>
+						</div>	
+					
+					
+					<!-- Placeholder for related search -->
+					<div class="selfServiceSearchFullResult ss-search-related" id="SelfService-1782944977750-relatedData-DOCCOR-2680340" style="display: none;" data-function="showRelatedDocuments('DOCCOR-2680340')">
+					</div>
+					
+					<!-- Navigation link to view documents -->
+					<p class="selfServiceSearchFullResult selfServiceSearchResultNavigation"><span>View</span><span class="mdi mdi-arrow-right mdi-24px"></span></p>
+					</div>
+				</li>
+				
+			</ul>
+	    </li>
+	</ul>
+	<div style="display: none;" id="wip-popup-placeholder"><!-- placeholder for wip-popup --></div>
+	<div style="display: none;" id="closePrintWindowPopup-placeholder"><!-- placeholder for closePrintWindowPopup --></div>
+	
+	
+	<div style="display: none;" id="SelfService-1782944977750-sort-popup-placeholder"><!-- placeholder for SelfService-1782944977750-sort-popup --></div>
+	
+	
+	<div style="display: none;" id="SelfService-1782944977750-export-popup-placeholder"><!-- placeholder for SelfService-1782944977750-export-popup --></div>
+	
+	
+	<div style="display: none;" id="SelfService-1782944977750-cart-popup-placeholder"><!-- placeholder for SelfService-1782944977750-cart-popup --></div>
+	
+	
+	<div style="display: none;" id="selectedItemsWarningNewPage-placeholder"><!-- placeholder for selectedItemsWarningNewPage --></div>
+
+	<script>	
+	
+	$(".filter-header").click(function(){
+		$("#filters").slideToggle()
+	});
+	
+	var windowWidth = $(window).width();
+	window.addEventListener('resize', function(e){
+		if(windowWidth != $(window).width()){
+			 if($(window).width() > 800 ){
+				 $("#filters").slideDown();
+			 }else{
+				 $("#filters").slideUp();
+			 }
+			 windowWidth = $(window).width();
+		}
+	}, true);
+	
+			
+		 $("#SelfService-1782944977750-export-CSV").on('click', function(event) {
+			event.stopPropagation();
+			event.preventDefault();
+			
+			var exportUrl = $(this).prop('href');
+			var selectedDocumentIds = getSelectedDocumentIds();
+			runSearchResultsReport(exportUrl, selectedDocumentIds);
+			 
+			$("#SelfService-1782944977750-export-popup").popup('close');
+		 });
+		 
+		 var runSearchResultsReport = function(exportUrl, selectedDocumentIds) {
+			if (selectedDocumentIds && selectedDocumentIds.length > 0) {
+				exportUrl = exportUrl + '?documentIds=' + selectedDocumentIds;
+			}
+
+			setTimeout(function() {
+				window.location = exportUrl;
+			}, 1000);		 
+		 }	
+	
+	
+	$(".wip").on('click', function(event) {
+		event.stopPropagation();
+		event.preventDefault();
+	  	$("#wip-popup").popup({tolerance:"0, 30, 0, 0"});
+	  	$("#wip-popup").popup("open",{positionTo:event.target, transition:"pop"});
+	});
+	
+	$("#SelfService-1782944977750-sortSearchResult").on("click", function(event) {
+		selfservice.search.openSortPopup(event, "#SelfService-1782944977750-sort-popup",
+				"#SelfService-1782944977750-sortSearchResult");
+	});
+	
+	
+	
+    var cartPopupUrl = "/web/document/addToCartPopup/" + "DOCSEARCH344S5" + "/";
+
+    var openCartPopup = function(documentId) {
+      cartPopupUrl = "/web/document/addToCartPopup/" + "DOCSEARCH344S5" + "/" + documentId;
+      $("#SelfService-1782944977750-cart-popup").popup('open');
+    };
+
+	$('#SelfService-1782944977750-cart-popup').on('popupbeforeposition', function() {
+		$('.ui-popup-container').css('width', '90em');
+
+		var internalCartPopup = $('#SelfService-1782944977750-cart-popup-internal');
+		internalCartPopup.empty();
+		internalCartPopup.load(cartPopupUrl, function() {
+			if (status == 'error') {
+				console.log('Error loading cart popup ' + xhr.status + ' ' + xhr.statusText);
+				internalCartPopup.empty();
+				internalCartPopup.html('<div class="ss-serious-message">An error occurred while processing this request, please try again.</div>');
+			} else {
+				internalCartPopup.trigger('create');
+				$('#SelfService-1782944977750-cart-popup').trigger('updatelayout');
+			}
+		});
+	});
+
+	$('#SelfService-1782944977750-cart-popup').on ('popupafterclose', function() {
+		$('#SelfService-1782944977750-ProductMessage').hide();
+	});
+
+	$('#SelfService-1782944977750-cart-popup').on('popupafteropen', function() {
+		if (!$('#SelfService-1782944977750-cart-popup').data('listenersAdded')) {
+			$('#SelfService-1782944977750-cart-popup > input').on('keydown', function (event) {
+          		// If we don't suppress the enter keydown, we get strange behavior and errors
+          		if ((event.which && event.which == 13) || (event.keyCode && event.keyCode == 13)) {
+					if($('#SelfService-1782944977750-cart-popup').parent().hasClass('ui-popup-active')){
+						event.preventDefault();
+						$('#SelfService-1782944977750-product-close').click();	
+					}
+         		 }
+  			});
+
+			$('#SelfService-1782944977750-cart-popup').data('listenersAdded', true);
+		}
+	}); 
+	
+
+	
+		$('#SelfService-1782944977750-selectAll').on('click', function() {
+			var selected = $(this).is(':checked');
+			$('#SelfService-1782944977750-searchResult').children().each(function() {
+				var li = $(this);
+				var cb = li.find('.ss-facet-select');
+				if (selected) {
+					cb.prop('checked', 'checked');
+					cb.css('display', 'block');
+					li.find('.ss-facet-avatar').css('display', 'none');
+					li.find('.ui-li-aside.ss-search-actions').css('display', 'none');
+				} else {
+					cb.prop('checked', '');
+					cb.css('display', '');
+					li.find('.ss-facet-avatar').css('display', '');
+					li.find('.ui-li-aside.ss-search-actions').css('display', '');
+				}
+			});
+			
+				if (selected) {
+					$('#SelfService-1782944977750-addSelectedSearchResult').show();
+				} else {
+					$('#SelfService-1782944977750-addSelectedSearchResult').hide();
+				}
+			
+			
+		});
+	
+
+	
+		$('#SelfService-1782944977750-printSelectedSearchResult').on('click', function() {
+			var selectedDocumentIds = getSelectedDocumentIds();
+			printSelectedDocuments(selectedDocumentIds);
+		});
+
+		var getSelectedDocumentIds = function() {
+			var selectedDocumentIds = [];
+
+			$("li.ss-search-row").each(function() {
+				var li = $(this);
+				var selected = li.find('.ss-facet-select').is(':checked');
+				if (selected) {
+					var documentId = li.data('documentid');
+					if (documentId) {
+						selectedDocumentIds.push(documentId);
+					}
+				}
+			});
+
+			return selectedDocumentIds;
+		}
+
+		var printOneDocument = function(documentId) {
+			var selectedDocumentIds = [documentId];
+			printSelectedDocuments(selectedDocumentIds);
+		}
+
+		var selectedDocumentIdsforPrint;
+		$(document).ready(function(){
+			$("#closePrintWindowPopup").on("popupafteropen", function(){
+			var documentPrintUrl = '/web/search/printSelectedItems/' + 'DOCSEARCH344S5';
+			var printLoadingUrl = '/web/controller/printLoading';
+			var childWindow = window.open(printLoadingUrl);
+			childWindow.onbeforeunload = function(){
+				setTimeout(function(){ $("#closePrintWindowPopup").popup("close") }, 500);
+        	}
+
+			$.ajax({
+				type: 'POST',
+				url: documentPrintUrl,
+				global: false,
+				data: {'documentIds': selectedDocumentIdsforPrint},
+			    success: function(data) {
+					childWindow.document.write(data);
+					childWindow.document.close();
+					childWindow.focus();
+
+					childWindow.onbeforeunload = function(){
+						setTimeout(function(){ $("#closePrintWindowPopup").popup("close") }, 500);
+					}
+					selectedDocumentIdsforPrint=null;
+				},    
+			    error: function(jqXHR, textStatus, errorThrown) {
+					console.log(errorThrown);
+					alert('Failed to validate cart items');
+				}
+			});
+			});
+		});
+
+		var printSelectedDocuments = function(selectedDocumentIds) {
+			selectedDocumentIdsforPrint = selectedDocumentIds;
+			$("#closePrintWindowPopup").popup();
+			$("#closePrintWindowPopup").popup( "option", "dismissible", false );
+			$("#SelfService-1782944977750-export-popup").popup().popup('close');
+			setTimeout(function(){ $("#closePrintWindowPopup").popup("open").trigger("create") }, 500);
+		}
+	
+
+	
+		var documentPostUrl = '/web/product/createDocumentCartItems/' + 'DOCSEARCH344S5';
+
+		$('#SelfService-1782944977750-addSelectedSearchResult').on('click', function() {
+			var addSelectedCartButton = $(this);
+			var selectedDocumentIds = [];
+
+			$("li.ss-search-row").each(function() {
+				var li = $(this);
+				var selected = li.find('.ss-facet-select').is(':checked');
+				if (selected) {
+					var documentId = li.data('documentid');
+					if (documentId) {
+						selectedDocumentIds.push(documentId);
+					}
+				}
+			});
+
+			if (selectedDocumentIds.length > 0) {
+				$.ajax({
+					type: 'POST',
+					url: documentPostUrl,
+					dataType: 'json',
+					data: {'documentIds': selectedDocumentIds, 'saveForLater': false},
+					success: function(cartItemsData) {
+						if (isNaN(cartItemsData)) {
+							selfservice.validation.addValidationErrors(cartItemsData);
+						} else {
+							if (cartItemsData == 0) {
+								
+								alert('Submission failed, please try again');
+							} else {
+								updateCartIcon(cartItemsData);
+							}
+						}
+
+						$("li.ss-search-row").each(function() {
+							var li = $(this);
+							var selected = li.find('.ss-facet-select');
+							selected.prop('checked', '');
+							selected.css('display', '');
+							li.find('.ss-facet-avatar').css('display', '');
+							li.find('.ui-li-aside.ss-search-actions').css('display', '');
+						});
+
+						addSelectedCartButton.hide();
+						$('#SelfService-1782944977750-saveSelectedSearchResult').hide();
+
+						var selectAll = $("#SelfService-1782944977750-selectAll");
+						selectAll.prop('checked', '');
+
+						$('.ss-panel-cart').panel('open');	
+					},
+					error: function(jqXHR, textStatus, errorThrown) {
+						console.log(errorThrown);
+						alert('Failed to validate cart items');
+					}
+				});
+			}
+		});
+	
+
+	var loadSearchResults = function() {
+		var responseElement = selfservice.search.responseElement;
+		var resultsUrl = selfservice.search.resultsUrl;
+		var currentPage = parseInt('1');
+		var filterUrl = selfservice.search.filterUrl;
+		var buttons = selfservice.search.buttons;
+		var totalPages = parseInt('1');
+
+		if ($('#pageCount').length > 0) {
+			currentPage = parseInt($('#pageCount').attr('data-value'));
+			$('#pageCount').remove();
+		}
+		selfservice.search.loadSearchResults(responseElement, resultsUrl, resultsUrl + '?page=' + currentPage, filterUrl, buttons, currentPage, totalPages, 1000);
+
+		selfservice.search.closeSelectedItemsWarningPopup('selectedItemsWarningNewPage');
+    };
+
+	var showRelatedDocuments = function(documentId) {
+		var thisDiv = $("#SelfService-1782944977750-relatedData-"+documentId);
+
+		var div = $('<div class="searchResultOneColumn"></div>');
+		var ul = $('<ul class="selfServiceSearchResultColumn five-line-block-with-text"></ul>');
+		var li = $('<li class="selfServiceSearchResultExpanded"></li>');
+		li.append('Loading Related Documents...');
+		ul.append(li);
+		div.append(ul);
+		thisDiv.empty();
+		thisDiv.append(div);
+		
+		var relatedDocsUrl = '/web/search/loadRelatedDocuments/'  + 'DOCSEARCH344S5' + '/' + documentId;
+		$.ajax({
+			type: 'POST',
+			url: relatedDocsUrl,
+			async: true,
+			success: function(relatedDocsHtml) {
+				thisDiv.empty();
+				thisDiv.append(relatedDocsHtml);
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				console.log(errorThrown);
+				thisDiv.empty();
+				thisDiv.append('An error has occurred.');
+			}
+		});
+	}    
+
+    
+    
+	var saveDocument = function(documentId) {
+		var documentIds = [];
+		documentIds.push(documentId)
+		var documentPostUrl = '/web/product/createDocumentCartItems/' + 'DOCSEARCH344S5';
+
+		$.ajax({
+			type: 'POST',
+			url: documentPostUrl,
+			dataType: 'json',
+			data: {'documentIds': documentIds, 'saveForLater': true},
+			success: function(cartItemsData) {
+				if (isNaN(cartItemsData)) {
+					selfservice.validation.addValidationErrors(cartItemsData);
+				} 
+
+				$('.ss-panel-cart').panel('open');	
+			},
+			error: function(jqXHR, textStatus, errorThrown) {
+				console.log(errorThrown);
+				alert('Failed to validate cart items');
+			}
+		});
+}
+	</script>
+	
+		</div>
+	</div></div>
+
+
+<div style="display: none;" id="selectedItemsWarningNewSearch-placeholder"><!-- placeholder for selectedItemsWarningNewSearch --></div>
+
+<div id="SelfService-1782944975672-search-buttons"><div class="ss-clear"></div></div>
+
+			</div>
+		</div>
+
+		<!-- POPUPS	-->
+		
+
+
+
+
+
+
+
+	
+
+
+
+
+
+<div style="display: none;" id="SelfService-1782944975672-passwordChange-popup-placeholder"><!-- placeholder for SelfService-1782944975672-passwordChange-popup --></div>
+
+<script>
+
+var passwordChangeUrl = "/web/user/passwordChange";
+$("#SelfService-1782944975672-passwordChange-popup").on("popupbeforeposition", function() {
+	$("#SelfService-1782944975672-passwordChangeInternal").load(passwordChangeUrl, function() {
+		$("#SelfService-1782944975672-passwordChangeInternal").trigger("create");
+		$("#SelfService-1782944975672-passwordChange-popup").trigger("updatelayout");
+		$.mobile.activePage.trigger("pagecreate");
+	});
+});
+
+$("#SelfService-1782944975672-passwordChange-popup").on("popupafteropen", function() {	
+	$("#SelfService-1782944975672-passwordChange-popup").popup("reposition", "positionTo: window");
+});
+
+$("#SelfService-1782944975672-passwordChange-popup").on("popupafterclose", function() {
+	$("#field_OldPassword").val("");
+	$("#field_NewPassword").val("");
+	$("#field_ConfirmPassword").val("");
+});	
+</script>
+
+		
+		
+
+
+
+
+
+
+<div style="display: none;" id="SelfService-1782944975672-session-popup-placeholder"><!-- placeholder for SelfService-1782944975672-session-popup --></div>
+
+<script>
+
+selfservice.countdown.continueButton = $('#SelfService-1782944975672-session-continue');
+selfservice.countdown.element = $('#remainingTime');
+selfservice.countdown.logoutButton = $('#SelfService-1782944975672-session-logout');
+selfservice.pages.check = '/web/session/checkSession';
+selfservice.pages.home = '/web/';
+selfservice.pages.logout = '/web/user/logout';
+selfservice.pages.ping = '/web/session/pingSession';
+selfservice.session.logoutError = 'An error occurred while logging you out. Please try again';
+selfservice.session.timeoutElement = $('#SelfService-1782944975672-session-popup');
+
+
+selfservice.countdown.continueButton.on('click', function (event) {
+	selfservice.countdown.continueButton.prop('disabled', true);
+	selfservice.countdown.logoutButton.prop('disabled', true);
+
+	selfservice.session.continueSession();
+
+	selfservice.countdown.continueButton.prop('disabled', false);
+	selfservice.countdown.logoutButton.prop('disabled', false);
+
+	selfservice.session.timeoutElement.popup('close');
+});
+
+selfservice.countdown.logoutButton.on('click', function (event) {
+	
+	selfservice.countdown.logoutButton.prop('disabled', true);
+	selfservice.countdown.logoutButton.html('Logging out...');
+	selfservice.countdown.continueButton.prop('disabled', true);
+
+	selfservice.session.logout();
+
+	selfservice.countdown.continueButton.prop('disabled', false);
+	selfservice.countdown.logoutButton.html('No - Start Over');
+	selfservice.countdown.logoutButton.prop('disabled', false);
+});
+
+selfservice.session.timeoutElement.on('popupafterclose', function (event) {
+	
+	selfservice.countdown.endCount();
+});
+</script>
+
+		<!-- PANELS	-->
+		
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<div id="SelfService-1782944975672-cartPanel" class="ss-panel-cart ui-panel ui-panel-position-right ui-panel-display-overlay ui-panel-closed ui-body-inherit ui-panel-fixed ui-panel-animate" data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true">
+	<div class="ui-panel-inner" style="height: 700px;"><div id="SelfService-1782944975672-cartPanelInternal" class="ss-panel-cart-internal" style="height: 100%; max-height: 700px;">
+
+
+
+
+
+
+<form id="SelfService-1782944975875-cart-form" action="/web/cart" style="height:100%;">
+
+<style>
+	ul[id$='savedItemsViewEmbedded'] {
+		margin-top: 0px;
+		max-height: calc(100% - 250px);
+		overflow: auto;
+	}
+
+	ul[id$='shoppingCartView'] {
+		margin-top: 0px;
+		max-height: calc(100% - 250px);
+		overflow: auto;
+	}
+
+	@media ( max-width : 736px) {
+		ul[id$='savedItemsViewEmbedded'] {
+			margin-top: 0px;
+			max-height: calc(100% - 275px);
+			overflow: auto;
+		}
+		ul[id$='shoppingCartView'] {
+			margin-top: 0px;
+			max-height: calc(100% - 275px);
+			overflow: auto;
+		}
+	}
+</style>
+
+ 
+
+
+
+
+
+
+<ul class="ss-listview ss-cart-item-table ui-listview ui-group-theme-b" data-role="listview" data-theme="b" style="margin-bottom:0px; border-bottom:none;">
+	<li id="SelfService-1782944975875-shoppingCart" data-role="list-divider" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child">Shopping Cart&nbsp;</li>
+</ul>
+<ul id="SelfService-1782944975875-shoppingCartView" class="ss-listview ss-cart-item-table ui-listview ui-group-theme-b" data-role="listview" data-theme="b">
+	
+	
+	
+		<li class="ui-li-static ui-body-inherit ui-first-child ui-last-child"><em>Your cart is empty.</em></li>
+	
+	
+
+</ul>
+
+
+
+
+
+<script>
+$(".ss-cart-item-desc").click(function(evt) {
+	if (evt.target.nodeName === "INPUT") {
+		evt.preventDefault();
+		window.setTimeout(function() { $("a").removeClass('ui-btn-active ui-focus'); }, 1);
+	}
+});
+
+	var throttled = _.debounce(function(evt) { updateCartItemNumberOfCopies(evt); }, 500 );
+
+$('.ss-cart-item-desc input[type=number]').change(function(evt) {
+	window["throttled"](evt);
+});
+
+$('.ss-cart-item-desc input[type=number]').keydown(function(evt) {
+	var key = selfservice.determineKeyCodeProperty(evt);
+
+	if (selfservice.userPressedValidKeyForInputNumberTypeBox(key)) {
+		window["throttled"](evt);
+	} else {
+		evt.preventDefault();
+	}
+});
+</script> 
+
+
+
+
+
+	<div style="display: none;" id="SelfService-1782944975875-confirmRemove-placeholder"><!-- placeholder for SelfService-1782944975875-confirmRemove --></div>
+
+	<div style="display: none;" id="SelfService-1782944975875-confirmRemoveFailed-placeholder"><!-- placeholder for SelfService-1782944975875-confirmRemoveFailed --></div>
+	
+	<script>
+	  
+		$('#confirm-remove-from-cart').on('click', function(event) {
+			event.preventDefault();
+			removeConfirmed('SelfService-1782944975875-confirmClearCartEmbed');
+			return false;
+		});
+
+		$('#cancel-remove-from-cart').on('click', function(event) {
+			event.preventDefault();
+			$('#SelfService-1782944975875-confirmClearCartEmbed').popup('close', {
+				transition: 'pop'
+			});
+			return false;
+		});
+
+		$('#confirm-clear-cart-embedded').on('click', function(event) {
+			event.preventDefault();
+			$('#SelfService-1782944975875-confirmClearCartEmbedFailed').popup('close', {
+				transition: 'pop'
+			});
+			return false;
+		});
+
+		$("#SelfService-1782944975875-shoppingCartClearCartButton").on('click', function(event) {
+			event.preventDefault();
+			var cartPanel = $('.ss-panel-cart-internal');
+			confirmClearCart('SelfService-1782944975875-confirmClearCartEmbed', cartPanel);
+		});
+	
+
+	$('#confirm-remove-savedItems').on('click', function(event) {
+		event.preventDefault();
+		removeConfirmed('SelfService-1782944975875-confirmClearSavedItemsEmbed');
+		return false;
+	});
+
+	$('#cancel-remove-savedItems').on('click', function(event) {
+		event.preventDefault();
+		$('#SelfService-1782944975875-confirmClearSavedItemsEmbed').popup('close', {
+			transition: 'pop'
+		});
+		return false;
+	});
+
+	$('#confirm-clear-savedItems-embedded').on('click', function(event) {
+		event.preventDefault();
+		$('#SelfService-1782944975875-confirmClearSavedItemsEmbedFailed').popup('close', {
+			transition: 'pop'
+		});
+		return false;
+		});
+
+	$("#SelfService-1782944975875-shoppingCartClearSavedButton").on('click', function(event) {
+		event.preventDefault();
+		var cartPanel = $('.ss-panel-cart-internal');
+		confirmClearSaveItems('SelfService-1782944975875-confirmClearSavedItemsEmbed', cartPanel);
+});
+
+	$(document.body).on('blur', "input[id$='cartItemQuantity']", function(event) {
+		verifyCartItemQuantity(event.target.id, parseInt(event.target.min), parseInt(event.target.max));
+	});
+
+	$('#shoppingCartProceedToCheckoutButton, #shoppingCartProceedToSavedItems').on('click', function(event) {
+		event.preventDefault();
+		verifyCartItemQuantities(this, 1, 100);
+		return false;
+	});
+
+	$('#wrong-number-of-copies').on('click', function(event) {
+		event.preventDefault();
+		$('#shoppingCartProductQuantityError').popup('close', {
+			transition: 'pop'
+		});
+		return false; 
+	});
+
+	$('.ss-embedded-saved').on('click', function(event) {
+		var target=$(event.target);
+		var cartId = target.closest('.split-cart-button-controller').data('cartid');
+		saveCartItemForLater(target, cartId, false, true);
+	});
+
+	$('.ss-embedded-notsaved').on('click', function(event) {
+		var target=$(event.target);
+		var cartId = target.closest('.split-cart-button-controller').data('cartid');
+		saveCartItemForLater(target, cartId, true, true);
+	});
+	</script>
+</form></div></div>
+</div>
+<script>
+
+$("#SelfService-1782944975672-cartPanel").on("panelcreate", function() {
+	$("#SelfService-1782944975672-cartPanelInternal").data("cartUrl", "/web/cart/embedded?includeButtons=true&request=" + new Date().getTime());
+	$("#SelfService-1782944975672-cartPanelInternal").css("max-height", $( window ).height() -20);
+	reloadShoppingCart($("#SelfService-1782944975672-cartPanelInternal"));
+});
+	
+$("#SelfService-1782944975672-cartPanel").on("panelbeforeopen", function() {
+	$("#SelfService-1782944975672-cartPanelInternal").data("cartUrl", "/web/cart/embedded?includeButtons=true&request=" + new Date().getTime());
+	reloadShoppingCart($("#SelfService-1782944975672-cartPanelInternal"));
+});
+	
+$("#SelfService-1782944975672-cartPanel").on("panelopen", function() {	
+	$("#shoppingCartProceedToCheckoutButton").focus();
+});	
+</script>
+  <br>
+
+  
+
+
+
+
+
+
+<div id="SelfService-1782944975672-loginPanel" class="ss-panel-login ui-panel ui-panel-position-right ui-panel-display-overlay ui-panel-closed ui-body-inherit ui-panel-fixed ui-panel-animate" data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true">
+	<div class="ui-panel-inner"><div id="SelfService-1782944975672-loginPanelInternal" class="ss-panel-login-internal"></div></div>
+</div>
+
+<script>
+
+var loginUrl = "/web/user/login";
+$("#SelfService-1782944975672-loginPanel").on("panelbeforeopen", function() {
+	$("#SelfService-1782944975672-loginPanelInternal").load(loginUrl + "?request=" + new Date().getTime(), function() {
+		$("#SelfService-1782944975672-loginPanelInternal").trigger("create");
+		$("#SelfService-1782944975672-loginPanel").trigger("updatelayout");
+		$.mobile.activePage.trigger("pagecreate");
+		$("#field_ForceLogoff").parent().hide();
+	});
+}).on("panelopen", function() {
+	$("#field_UserId").focus();
+});
+</script>
+  <br>
+
+  
+
+
+
+
+
+
+<div id="SelfService-1782944975672-languagePanel" class="ss-panel-language ui-panel ui-panel-position-right ui-panel-display-overlay ui-panel-closed ui-body-inherit ui-panel-fixed ui-panel-animate" data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true">
+	<div class="ui-panel-inner"><div id="SelfService-1782944975672-languagePanelInternal" class="ss-panel-language-internal"></div></div>
+</div>
+
+<script>
+
+var languageUrl = "/web/user/language";
+$("#SelfService-1782944975672-languagePanel").on("panelbeforeopen", function() {
+	$("#SelfService-1782944975672-languagePanelInternal").load(languageUrl + "?request=" + new Date().getTime(), function() {
+		$("#SelfService-1782944975672-languagePanelInternal").trigger("create");
+		$("#SelfService-1782944975672-languagePanel").trigger("updatelayout");
+		$.mobile.activePage.trigger("pagecreate");
+	});
+}).on("panelopen", function() {
+	$("#language-en").focus();
+});
+</script>
+  <br>
+
+
+		<script>
+		
+		jQuery.cachedScript = function( url, options ) {
+			
+			options = $.extend( options || {}, {
+				dataType: 'script',
+				cache: true,
+				url: url
+			});
+
+			
+			return jQuery.ajax( options );
+		};
+
+		$('#SelfService-1782944975672-page').on('pageinit', function() {
+			
+			selfservice.countdown.timer();
+		});
+
+		$(document.body).on("blur", 'input[data-role="datebox"]', function(event){
+			selfservice.parseDate(event.target);
+		});
+		</script>
+
+		<!-- FOOTER -->
+		<div id="ss-footer-box" class="ss-footer ui-footer ui-bar-inherit ui-footer-fixed slideup" data-role="footer" data-position="fixed" data-tap-toggle="false" role="contentinfo">
+			
+
+
+
+
+<div class="ss-footer-stripe" id="SelfService-1782944975672-footer">
+	<div class="ss-content full-screen">
+		<script>
+		
+		
+		
+		$('#SelfService-1782944975672-page').on('pageinit', function () {
+			var sequenceUrl = '';
+			var forwardCheck = '';
+			var reverseUrl = '';
+			var hasPrevious = 'false';
+			
+			if (forwardCheck.length > 0) {
+				$('<a class="ss-right" id="proceedButton" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r" data-iconpos="right">Next</a>')
+					.insertBefore('#SelfService-1782944975672-footer-clear')
+					.click(function () {
+						selfservice.redirect(sequenceUrl, true);
+					});
+
+				if (hasPrevious === 'true') {
+					$('<a class="ss-right" id="goBackButton" data-role="button" data-inline="true" data-icon="arrow-l" data-theme="b" data-iconpos="left">Previous</a>')
+						.insertBefore('#SelfService-1782944975672-footer-clear')
+						.click(function () {
+							selfservice.redirect(reverseUrl, true);
+						});
+				}
+			}
+			$('#SelfService-1782944975672-footer').trigger('create');
+		});
+
+		$('.ss-content').addClass('full-screen');
+		$('.ui-grid-a').addClass('full-screen');
+		$('.ui-grid-b').addClass('full-screen');
+		</script>
+		<a data-role="button" data-inline="true" data-theme="a" data-icon="arrow-l" href="/web/" class="ui-link ui-btn ui-btn-a ui-icon-arrow-l ui-btn-icon-left ui-btn-inline ui-shadow ui-corner-all" role="button">Back</a>
+		<div id="SelfService-1782944975672-footer-clear" class="ss-clear"></div>
+	</div>
+</div>
+			<div class="ss-content full-screen">
+				<div class="ss-footer-internal-small">
+					©&nbsp;Copyright 2014-2024 Tyler Technologies&nbsp;|&nbsp;Version 2024.1.29
+				</div>
+			</div>
+		</div>
+	<div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="UseAdvancedSearch-popup-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="UseAdvancedSearch-popup-popup"><div data-role="popup" id="UseAdvancedSearch-popup" class="ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all">
+					<div data-role="main" class="ss-popup-inner">
+						<div class="advancedSearchInstructions ui-field-contain">
+							<h1>Document Search Help</h1><b>Search Type: Exact Match and Wildcard</b><br>Some search fields have two different types of searching: Exact Match and Wildcard. Exact Match searches will search for a name in the exact order you entered it. You will need to enter Last Name First with no punctuation. For example, if you enter Franklin Benjamin, the system will return documents belonging to Benjamin Franklin but not Franklin Roosevelt.<br><br>Wildcard searches work similar to an Internet search engine. The order of the words doesn't matter. For example, if you enter Franklin Benjamin, the system will return documents belonging to Benjamin Franklin and Franklin Roosevelt and Benjamin Moore. The space between the names acts as an implied OR (i.e. Franklin OR Benjamin).<br><br><b>Wildcard Search Operators</b><br>Performing Advanced searches with no operators will return documents containing any of the words you entered. By using certain modifiers, or operators, you can focus your search.<br><br><b>+ Must Contain</b><br>The + operator tells the system that this word must appear in the document. For example, if you enter Franklin +Benjamin, the system will return documents belonging to Benjamin Franklin, but not Franklin Roosevelt.<br><br><b>- Must NOT Contain</b><br>The - operator tells the system that this word must NOT appear in the document. For example, if you enter Franklin -Benjamin, the system will return documents belonging to Franklin Roosevelt, but not Benjamin Franklin.<br><br><b>$ Sounds Like</b><br>The $ operator tells the system that this word is not spelled correctly but sounds like the typed word. For example, if you enter Franklayn$ , the system will return documents belonging to any name that sounds like Franklin.<br><br><b>? Possible Incorrect Letter</b><br>The ? operator tells the system that a specific letter in the name might not be correct. For example, if you enter Frankl?n, the system will return any documents belonging to Franklin Roosevelt, or Franklyn Roosevelt, but the results returned will not be limited to just those two letter. The ? can be replaced with any letter.<br><br><b>* Starts With</b><br>The * character is a wild card character. It can be used in both Basic searches and Advanced searches. It can be substituted for any other character or characters. For example, if you enter Frank* Ben*, the system will return documents belonging to Benjamin Franklin, Ben Frank, and Bennie Frankenstein. This can be useful if you are unsure about spelling.<br><br><b>Legal Searching Tips</b><br>Using ** allows you to search by any character in the field. For example, *TS* in the Legal Remarks field will return documents which contain TS anywhere in the Legal Remarks field. (TS indicates a timeshare unit.) This feature works only on the Case #, Parcel #, and Legal Remarks fields.<br><br><b>AND/OR</b><br>When searching over multiple legal descriptions, enter a pipe character to separate multiple entries. For example, to search over Section 12 and Section 23 enter 12|23 into the Section field. This will return all documents with a legal description in Section 12 or Section 23.<br><br><b>Grouping Terms</b><br>Use parentheses () to group clauses to form sub queries. To search for either DENVER or COLORADO and MAP use the query (DENVER OR COLORADO) AND MAP. This query requires either DENVER or COLORADO to appear with MAP. Use double-quotes to group words into an exact search. Entering MICKEY MOUSE will return documents with MICKEY MOUSE found in the same field. It will not return documents if the words are separated or do not match exactly (i.e. MICKEY M MOUSE or MICKEY MOUSEHEAD).<br><br><b>Other Options</b><br>A tilde ~ alone performs a fuzzy search. ROAM~ will return words that are similar in spelling to ROAM, such as FOAM or ROAMS. A tilde ~ plus a number performs a proximity search. This can be useful when there are instances of a name being recorded both with and without the middle initial. MARY MAXWELL~1 will return all instances of MARY and MAXWELL being one word away from each other (i.e. MARY L MAXWELL or MARY ELIZABETH MAXWELL). Increase the number to increase the number of words between your search criteria. 
+						</div>
+					</div>
+					<div data-role="footer" class="ss-footer-stripe ui-footer ui-bar-b" data-theme="b" role="contentinfo">
+						<a href="#" class="ss-right ui-link ui-btn ui-icon-check ui-btn-icon-right ui-shadow ui-corner-all" id="SelfService-1782944975672-UseAdvancedSearch-close" data-role="button" data-icon="check" data-iconpos="right" data-rel="back" role="button">OK</a>
+						<div class="ss-clear"></div>
+					</div>
+				</div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="SelfService-1782944975672-recentSearchPopup-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="SelfService-1782944975672-recentSearchPopup-popup"><div id="SelfService-1782944975672-recentSearchPopup" data-role="popup" class="ss-recent-searches popup-center ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all">
+						<div id="SelfService-1782944975672-recentSearchPopupInternal"></div>
+					</div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="selectedItemsWarningNewSearch-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="selectedItemsWarningNewSearch-popup"><div data-role="popup" id="selectedItemsWarningNewSearch" class="selected-items-warning-popup ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all" data-dismissible="false">
+	<div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
+		<h1 class="ui-title" role="heading" aria-level="1">Warning</h1>
+	</div>
+	<div role="main" class="ui-content">
+		<h3 class="ui-title">If you navigate away from this page, you will lose your selected items. Continue?</h3>
+		<div class="ui-grid-a full-screen">
+			<div class="ui-block-a">
+				<a href="#" data-role="button" data-theme="a" onclick="executeSearch();" class="ui-link ui-btn ui-btn-a ui-shadow ui-corner-all" role="button">OK</a>	
+			</div>
+			<div class="ui-block-b">
+				<a href="#" data-role="button" onclick="selfservice.search.closeSelectedItemsWarningPopup('selectedItemsWarningNewSearch');" data-theme="a" class="ui-link ui-btn ui-btn-a ui-shadow ui-corner-all" role="button">Cancel</a>
+			</div>
+			
+		</div>
+	</div>
+</div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="SelfService-1782944975672-passwordChange-popup-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate slide" id="SelfService-1782944975672-passwordChange-popup-popup"><div data-role="popup" id="SelfService-1782944975672-passwordChange-popup" class="ss-password-change-popup ui-content ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all" data-history="false" data-position-to="window" data-transition="slide">
+	<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right ui-link ui-btn ui-icon-delete ui-btn-icon-notext ui-shadow ui-corner-all" role="button">Close</a>
+	<div id="SelfService-1782944975672-passwordChangeInternal" class="ss-password-change-popup-internal"></div>
+</div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-a" id="SelfService-1782944975672-session-popup-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate slide" id="SelfService-1782944975672-session-popup-popup"><div data-role="popup" id="SelfService-1782944975672-session-popup" data-dismissible="false" data-history="false" data-position-to="window" data-overlay-theme="a" class="ui-page-theme-a ui-content ui-alt-icon ui-nodisc-icon ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all" data-transition="slide" style="background: white;">
+	<div data-role="header" class="ss-receipt-width ui-header ui-bar-inherit" style="background-color: #06c; line-height: 1.3; margin: 0.9em;" role="banner">
+		<h1 style="font-size: 1.3em; padding: 1em 1.5em; color: white; font-weight: normal; text-overflow: inherit; overflow: visible;" class="ui-title" role="heading" aria-level="1">Session about to time out</h1> 
+	</div>
+	<div style="padding: 10px; background-color: white;">
+		<h2>Do you need more time? <span id="remainingTime"></span></h2>
+		<button id="SelfService-1782944975672-session-continue" type="button" class="ui-btn ui-btn-b ui-icon-check ui-btn-icon-left ui-shadow ui-corner-all">
+		Yes - Continue
+		</button>
+		<button id="SelfService-1782944975672-session-logout" type="button" class="ui-btn ui-btn-b ui-icon-delete ui-btn-icon-left ui-shadow ui-corner-all">
+		No - Start Over
+		</button>
+	</div>
+</div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="SelfService-1782944975875-confirmRemove-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="SelfService-1782944975875-confirmRemove-popup"><div data-role="popup" id="SelfService-1782944975875-confirmRemove" data-dismissible="false" class="ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all">
+		<div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
+			<h1 class="ui-title" role="heading" aria-level="1">Remove Item?</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<h3 class="ui-title">Are you sure you want to remove this item?</h3>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<a href="#" data-role="button" data-theme="a" onclick="removeConfirmed('SelfService-1782944975875-confirmRemove');" class="ui-link ui-btn ui-btn-a ui-shadow ui-corner-all" role="button">Remove</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="#" data-role="button" data-theme="a" onclick="$('#SelfService-1782944975875-confirmRemove').popup('close', {transition: 'pop'});return false;" class="ui-link ui-btn ui-btn-a ui-shadow ui-corner-all" role="button">Cancel</a>
+				</div>
+			</div>
+		</div>
+	</div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="SelfService-1782944975875-confirmRemoveFailed-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="SelfService-1782944975875-confirmRemoveFailed-popup"><div data-role="popup" id="SelfService-1782944975875-confirmRemoveFailed" data-dismissible="false" class="ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all">
+		<div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
+			<h1 class="ui-title" role="heading" aria-level="1">error</h1>
+		</div>
+		<div role="main" class="ui-content">
+		<h3 class="ui-title">We're sorry. An error occurred while attempting to remove this item.</h3>
+			<div class="ui-grid-solo">
+				<a href="#" data-role="button" data-theme="a" onclick="$('#SelfService-1782944975875-confirmRemoveFailed').popup('close', {transition: 'pop'});return false;" class="ui-link ui-btn ui-btn-a ui-shadow ui-corner-all" role="button">OK</a>
+			</div>
+		</div>
+	</div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="wip-popup-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="wip-popup-popup"><div id="wip-popup" data-role="popup" class="ui-content ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all">
+		<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right ui-link ui-btn ui-icon-delete ui-btn-icon-notext ui-shadow ui-corner-all" role="button"></a>
+		Note: This document is currently being processed, the information displayed is subject to change
+	</div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-a" id="closePrintWindowPopup-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="closePrintWindowPopup-popup"><div id="closePrintWindowPopup" data-role="popup" data-overlay-theme="a" data-theme="a" class="ui-popup ui-body-a ui-overlay-shadow ui-corner-all">
+		<div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
+			<h1 class="ui-title" role="heading" aria-level="1">
+				Notice
+			</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<h3 class="ui-title">
+				Please close the print window to continue.
+			</h3>
+		</div>
+	</div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="SelfService-1782944977750-sort-popup-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="SelfService-1782944977750-sort-popup-popup"><div id="SelfService-1782944977750-sort-popup" data-role="popup" class="ui-content selfServiceSort ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all">
+		<h1>Sort by...</h1>
+		<ul>
+			
+				 
+				
+				
+				
+					
+					
+				
+			
+				<li id="sort-DocId" data-sort-ascending="true" data-sort-id="DocId">
+					Document # <span style="pointer-events: none;" class="mdi mdi-arrow-down mdi-24px"></span>
+				</li>
+			
+				 
+				
+				
+				
+			
+				<li id="sort-BookPage1" data-sort-ascending="true" data-sort-id="BookPage1">
+					Book Page 
+				</li>
+			
+				 
+				
+				
+				
+			
+				<li id="sort-DocTypeDesc" data-sort-ascending="true" data-sort-id="DocTypeDesc">
+					Description 
+				</li>
+			
+				 
+				
+				
+				
+			
+				<li id="sort-RecordingDate" data-sort-ascending="true" data-sort-id="RecordingDate">
+					Recording Date 
+				</li>
+			
+				 
+				
+				
+				
+			
+				<li id="sort-Name1" data-sort-ascending="true" data-sort-id="Name1">
+					Grantor 
+				</li>
+			
+				 
+				
+				
+				
+			
+				<li id="sort-Name2" data-sort-ascending="true" data-sort-id="Name2">
+					Grantee 
+				</li>
+			
+		</ul>
+	</div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="SelfService-1782944977750-export-popup-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="SelfService-1782944977750-export-popup-popup"><div id="SelfService-1782944977750-export-popup" data-role="popup" class="ui-content selfServiceExport ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all">
+		<h1>Print Options</h1>
+		<ul>
+			
+				<li data-export-type="CSV">
+					<a id="SelfService-1782944977750-export-CSV" href="/web/viewSearchResultsReport/DOCSEARCH344S5/CSV" target="_blank" class="ui-link">Export as CSV</a>
+				</li>
+			
+			
+				<li>
+					<a id="SelfService-1782944977750-printSelectedSearchResult" href="#" class="ui-link">Print</a>
+				</li>
+			
+		</ul>
+	</div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="SelfService-1782944977750-cart-popup-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="SelfService-1782944977750-cart-popup-popup"><div id="SelfService-1782944977750-cart-popup" data-role="popup" class="popup-center ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all">
+		<div id="SelfService-1782944977750-cart-popup-internal"></div>
+	</div></div><div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="selectedItemsWarningNewPage-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="selectedItemsWarningNewPage-popup"><div data-role="popup" id="selectedItemsWarningNewPage" class="selected-items-warning-popup ui-popup ui-body-inherit ui-overlay-shadow ui-corner-all" data-dismissible="false">
+		<div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
+			<h1 class="ui-title" role="heading" aria-level="1">Warning</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<h3 class="ui-title">If you navigate away from this page, you will lose your selected items. Continue?</h3>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<a href="#" data-role="button" data-theme="a" onclick="loadSearchResults();" class="ui-link ui-btn ui-btn-a ui-shadow ui-corner-all" role="button">OK</a>	
+				</div>
+				<div class="ui-block-b">
+					<a href="#" data-role="button" onclick="selfservice.search.closeSelectedItemsWarningPopup('selectedItemsWarningNewPage');" data-theme="a" class="ui-link ui-btn ui-btn-a ui-shadow ui-corner-all" role="button">Cancel</a>
+				</div>
+			</div>
+		</div>
+	</div></div></div><div class="ui-panel-dismiss"></div><div class="ui-panel-dismiss"></div><div class="ui-panel-dismiss"></div><div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><div class="cssload-container">
+			<ul class="cssload-loader">
+				<li></li><li></li><li></li><li></li><li></li><li></li>
+			</ul>
+		</div>
+		<div class="modal-overlay"></div></div>

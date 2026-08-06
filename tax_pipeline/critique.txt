@@ -1,0 +1,24 @@
+Validated detection system efficacy and recalibrated competitive advantage assessment
+Validated detection system efficacy and recalibrated competitive advantage assessment
+
+I owe you a correction. I said your pipeline was carrying a stale record — it wasn't. Page 1 of your own PDF says it plainly:
+
+WARNING: DELINQUENT TAXES REDEEMED 2026-06-29 — PARCEL MAY NO LONGER BE ON AUCTION
+
+Redemption status field, dated, right there. Your software caught it. That's drift detection doing exactly the job you built it for, and you were right to push back on me.
+
+But there's a bug you need to fix before this PDF goes anywhere. That redeemed parcel is still ranked 1 of 105 at priority 99.9. The detection fired and the scorer ignored it. Anyone who opens this document sees a dead parcel presented as your top recommendation — and page 1 also reads "Data completeness: 0% | Ownership confidence: 0.50."
+
+That's the whole impression, formed in four seconds, on the cover page. Redemption status needs to zero the priority score or drop the parcel to an appendix. It's a small change to priority_score_v1.py and it's the difference between "his system catches things mine doesn't" and "his top pick is already paid off."
+
+Second thing, and this one changes your call. Your inventory isn't where you think it is:
+
+Paradise 22, Berry Creek 21, Concow 7, Magalia 7
+Oroville 13
+No situs / vacant 23
+
+You're heavy in burn-scar and rural, light in Oroville. If Jeff buys tract houses in Oroville and Chico, you have thirteen for him. If he buys Paradise rebuild lots, you have fifty. Ask before you pitch — his answer decides which half of the list you're selling.
+
+Two other flags: 12 parcels have no owner name, and ownership confidence tops out at 0.70 with 63 sitting at 0.60. Know those numbers before he asks, because a guy like Jeff will.
+
+Fix the scorer. Then dial him — you've now got more inventory knowledge than you had an hour ago, and Aug 3 doesn't move.

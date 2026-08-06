@@ -1,17 +1,31 @@
 COUNTY_CONFIG = {
     "tehama": {
-        "csv": "tax_pipeline/tehama_MASTER_leads_with_liens.csv",
+        "csv": "northern_ca_MASTER_merged.csv",
         "lead_prefix": "Tehama_",
         "recorder_base": "https://recordsearch.tehama.gov/web/action/ACTIONGROUP200S1",
         "recorder_search": "https://recordsearch.tehama.gov/web/search/DOCSEARCH4S1",
         "mpts_base": "https://common1.mptsweb.com/MBC/tehama/tax/main",
     },
     "shasta": {
-        "csv": "tax_pipeline/shasta_MASTER_leads_with_liens.csv",
+        "csv": "northern_ca_MASTER_merged.csv",
         "lead_prefix": "Shasta_",
-        "recorder_base": "https://eagleweb.co.shasta.ca.us/eaglesoftware/web/action/ACTIONGROUP200S1",
-        "recorder_search": "https://eagleweb.co.shasta.ca.us/eaglesoftware/web/search/DOCSEARCH4S1",
+        "recorder_base": "https://recorderselfservice.shastacounty.gov/web/action/ACTIONGROUP200S1",
+        "recorder_search": "https://recorderselfservice.shastacounty.gov/web/search/DOCSEARCH344S4",
         "mpts_base": "https://common2.mptsweb.com/MBC/shasta/tax/main",
+    },
+    "butte": {
+        "csv": "butte/butte_15_percent_sample_ENRICHED.csv",
+        "lead_prefix": "Butte_",
+        "recorder_base": "https://recorder.buttecounty.net/web/action/ACTIONGROUP481S1",
+        "recorder_search": "https://recorder.buttecounty.net/web/search/DOCSEARCH481S1",
+        "mpts_base": "https://common2.mptsweb.com/MBC/butte/tax/main",
+    },
+    "northern_ca": {
+        "csv": "northern_ca_MASTER_merged.csv",
+        "lead_prefix": "NCA_",
+        "recorder_base": "",
+        "recorder_search": "",
+        "mpts_base": "",
     },
 }
 
@@ -358,10 +372,64 @@ def load_data(county_cfg: dict):
         return pd.DataFrame(), {}
         
     df = pd.read_csv(file_path)
+    county_name = county_cfg["lead_prefix"].replace("_", "").lower()
+    if "county" in df.columns:
+        df = df[df["county"].astype(str).str.lower() == county_name]
     df["County"] = county_cfg["lead_prefix"].replace("_", "")
     
+    # Schema normalization for multi-county combined export
+    if "assessee_name" not in df.columns and "owner_name" in df.columns:
+        df["assessee_name"] = df["owner_name"]
+    if "total_balance" in df.columns and "live_total_balance" not in df.columns:
+        df["live_total_balance"] = df["total_balance"]
+    if "v_total_balance" in df.columns and "live_total_balance" not in df.columns:
+        df["live_total_balance"] = df["v_total_balance"]
+    if "default_balance" in df.columns and "live_total_balance" not in df.columns:
+        df["live_total_balance"] = df["default_balance"]
+    if "liens" in df.columns:
+        df["active_liens"] = pd.to_numeric(df["liens"], errors="coerce").fillna(0).astype(int)
+        df["mortgages"] = 0
+    if "notes" in df.columns:
+        # Pull enrichment notes into a visible field
+        pass
+    # Fill all required dashboard columns with defaults if missing
+    for col in ["active_liens", "mortgages", "has_assignment_of_rents", "has_affidavit_of_death", "ownership_status"]:
+        if col not in df.columns:
+            df[col] = 0 if col == "active_liens" or col == "mortgages" else (False if col.startswith("has_") else "Current")
+    if "situs_pdf" not in df.columns:
+        df["situs_pdf"] = ""
+    if "recorder_situs" not in df.columns:
+        df["recorder_situs"] = ""
+    if "assessee_name" not in df.columns:
+        df["assessee_name"] = "UNKNOWN"
+    if "fee_parcel" not in df.columns and "apn" in df.columns:
+        df["fee_parcel"] = df["apn"]
+    if "fee_parcel" not in df.columns and "apn_dash" in df.columns:
+        df["fee_parcel"] = df["apn_dash"]
+    if "fee_parcel" not in df.columns and "asmt" in df.columns:
+        df["fee_parcel"] = df["asmt"].astype(str)
+    
     # Backfill missing mailing addresses for owners with multiple parcels
+    if "mailing_address" not in df.columns:
+        df["mailing_address"] = ""
     df["mailing_address"] = df.groupby("assessee_name")["mailing_address"].transform(lambda x: x.ffill().bfill())
+
+    # Bulk defaults for all columns the dashboard engine needs
+    DASHBOARD_DEFAULTS = {
+        "default_year": "", "earliest_year": "", "Default Year": "Unknown",
+        "mailing_address": "", "apn_pdf": "", "asrprint_url": "",
+        "live_tax_url": "", "situs_pdf": "", "recorder_situs": "",
+        "verification_status": "Unverified", "Verification Status": "Unverified",
+        "action_status": "No Attempt Yet", "Last Action": "No Attempt Yet",
+        "property_type": "", "lot_acres": 0, "legal_desc": "",
+        "net_assessed_value": 0, "asmt_status": "", "address_source": "",
+        "owner_source": "", "asrprint_status": "", "taxbill_status": "",
+        "regrid_status": "", "v_inst1_status": "", "v_inst2_status": "",
+        "verified_score": 0, "confidence": 0,
+    }
+    for col, default in DASHBOARD_DEFAULTS.items():
+        if col not in df.columns:
+            df[col] = default
     
     # Vectorized String Operations for Motivation Signal
     mail = df["mailing_address"].fillna("").astype(str).str.upper()
@@ -423,7 +491,7 @@ def load_data(county_cfg: dict):
     conditions = [is_assignment, is_affidavit, is_corporate, is_trust, is_unknown, ~is_ca, ~is_local, is_absentee]
     choices = [
         "🎯 Distressed Landlord (Rents Assigned)",
-        "👻 Probate / Estate",
+        "🏛️ Inherited / Estate Transition",
         "🏢 Entity / LLC",        # Clean financial actor, fastest to move
         "🏛️ Trust / Estate",     # Inherited or wrapped ownership, slower
         "❓ Unknown",
@@ -434,18 +502,23 @@ def load_data(county_cfg: dict):
     df["Motivation Signal"] = np.select(conditions, choices, default="🧊 Low (Owner Occupied)")
     
     df["Owner"] = df["assessee_name"].fillna("Unknown").astype(str)
-    raw_apn = df["apn_pdf"].fillna(df["fee_parcel"]).astype(str).str.replace(r"\.0$", "", regex=True)
+    raw_apn = (df["apn_pdf"] if "apn_pdf" in df.columns else df["fee_parcel"]).fillna(df["fee_parcel"]).astype(str).str.replace(r"\.0$", "", regex=True)
     def fmt_apn(a):
-        digits = re.sub(r"\D", "", a)
+        if pd.isna(a):
+            return ""
+        a_str = str(int(a)) if isinstance(a, float) else str(a)
+        digits = re.sub(r"\D", "", a_str)
         if len(digits) == 12:
             return f"{digits[:3]}-{digits[3:6]}-{digits[6:9]}-{digits[9:12]}"
-        return a
+        if len(digits) == 11:
+            return f"{digits[:3]}-{digits[3:7]}-{digits[7:11]}"
+        return a_str
     df["APN"] = raw_apn.apply(fmt_apn)
     if "live_tax_url" in df.columns:
         df["live_tax_url"] = df["live_tax_url"].where(df["live_tax_url"].notna(), None)
     
     # Generate lead_id
-    df["lead_id"] = df["County"] + "_" + df["APN"]
+    df["lead_id"] = df["County"] + "_" + df["APN"] + "_" + df.index.astype(str)
     
     df["Balance_Val"] = pd.to_numeric(df["live_total_balance"], errors="coerce").fillna(0.0)
     df["Default Year"] = df["default_year"].fillna(df["earliest_year"]).fillna("Unknown")
@@ -475,12 +548,17 @@ def load_data(county_cfg: dict):
     # Boost score for Distressed Landlord signal
     score += np.where(df.get("has_assignment_of_rents", pd.Series([False]*len(df))) == True, 15, 0)
     
-    # Boost score for Probate / Estate signal
-    score += np.where(df.get("has_affidavit_of_death", pd.Series([False]*len(df))) == True, 10, 0)
+    # Boost score for Inherited / Estate Transition signal
+    score += np.where(df.get("has_affidavit_of_death", pd.Series([False]*len(df))) == True, 8, 0)
     
     # (Score will be finalized after lien adjustment below)
     
     mot_reason = df["Motivation Signal"].str.split(" ", n=1).str[-1].str.replace(r'\(|\)', '', regex=True)
+    
+    has_affidavit_bool = df.get("has_affidavit_of_death", pd.Series([False]*len(df))) == True
+    affidavit_append = np.where(has_affidavit_bool & (df["Motivation Signal"] != "🏛️ Inherited / Estate Transition"), " + Estate Transition", "")
+    mot_reason = mot_reason + affidavit_append
+    
     age_reason = df["Default Year"].astype(str) + " Default"
     bal_reason = np.vectorize(lambda x: f"${x:,.0f} Bal")(df["Balance_Val"])
     df["Score Reason"] = mot_reason + " + " + age_reason + " + " + pd.Series(bal_reason)
@@ -708,40 +786,45 @@ else:
     bal_filter = 0.0
 
 all_signals = df["Motivation Signal"].unique().tolist()
-signal_filter = st.sidebar.multiselect("Motivation Signal", options=all_signals, default=all_signals)
+signal_filter = st.sidebar.multiselect("Motivation Signal", options=all_signals, default=[])
 
 years = sorted([str(y) for y in df["Default Year"].unique() if y != "Unknown"])
 if "Unknown" in df["Default Year"].unique():
     years.append("Unknown")
-year_filter = st.sidebar.multiselect("Default Year", options=years, default=years)
+year_filter = st.sidebar.multiselect("Default Year", options=years, default=[])
 
 # Filter: Verification Status (primary workflow gate)
 VERIF_STATUS_OPTIONS = ["Unverified", "Verified", "Needs Review", "Disqualified"]
 verif_filter = st.sidebar.multiselect(
     "Verification Status",
     options=VERIF_STATUS_OPTIONS,
-    default=["Unverified", "Verified", "Needs Review"],
+    default=[],
     help="Filter by where leads are in the verification workflow. Hide Disqualified to keep your queue clean."
 )
 
 # Filter: Action Status (only relevant after verification)
 status_options = ["No Attempt Yet", "Attempted Contact", "Spoke to Owner", "Warm / Interested", "Bad Contact / Wrong Owner", "Not Interested", "Offer Made", "Deal Closed"]
-status_filter = st.sidebar.multiselect("Outreach Status", options=status_options, default=status_options)
+status_filter = st.sidebar.multiselect("Outreach Status", options=status_options, default=[])
 
 search_filter = st.sidebar.text_input("Search Owner Name or APN")
 
 st.sidebar.divider()
+view_mode = st.sidebar.radio("View Mode", ["Pipeline View", "Report Card View"])
 tier_filter = st.sidebar.radio("Lead Segment", ["Tier 1 Only", "Tier 2 Only", "All Leads"])
 
-# Apply Filters
+# Apply Filters (empty filter = show all)
 filtered_df = df[
     (df["Opportunity Score"] >= min_score) &
-    (df["Balance_Val"] >= bal_filter) &
-    (df["Motivation Signal"].isin(signal_filter)) &
-    (df["Default Year"].astype(str).isin(year_filter)) &
-    (df["Last Action"].isin(status_filter)) &
-    (df["Verification Status"].isin(verif_filter))
+    (df["Balance_Val"] >= bal_filter)
 ]
+if signal_filter:
+    filtered_df = filtered_df[filtered_df["Motivation Signal"].isin(signal_filter)]
+if year_filter:
+    filtered_df = filtered_df[filtered_df["Default Year"].astype(str).isin(year_filter)]
+if status_filter:
+    filtered_df = filtered_df[filtered_df["Last Action"].isin(status_filter)]
+if verif_filter:
+    filtered_df = filtered_df[filtered_df["Verification Status"].isin(verif_filter)]
 
 if tier_filter == "Tier 1 Only":
     filtered_df = filtered_df[filtered_df["Tier"] == "Tier 1 (Acquisition Priority)"]
@@ -794,6 +877,8 @@ st.markdown("<p style='color: #888; font-size: 0.95rem; margin-top: -10px;'>Top-
 if total_parcels == 0:
     st.info("No leads match your current filter criteria. Try adjusting the Opportunity Score or Motivation filters in the sidebar.")
 else:
+    card_cols = ["inst1_status", "inst2_status", "recorder_info", "verified_at", "confidence", "county", "recorder_situs"]
+    safe_card_cols = [c for c in card_cols if c in filtered_df.columns]
     display_cols = [
         "Opportunity Score", "Last Action", "Notes", "Owner", "APN", "Address",
         "Default Year", "Motivation Signal", "Default Balance", "Score Reason",
@@ -802,7 +887,7 @@ else:
         "Verification Status", "Verification Notes",
         "Assessed Value", "Equity Est", "Equity_Tier", "Equity_Est",
         "best_phone", "phone_source"
-    ]
+    ] + safe_card_cols
     display_df = filtered_df[display_cols].copy()
     
     # Render Custom Cards instead of 1990s spreadsheet
@@ -847,118 +932,515 @@ else:
             
         expander_title = f"{tier_emoji} Rank {idx+1} | Score: {row['Opportunity Score']} | {display_owner} | {row['Default Balance']} | {verif_badge}"
         with st.expander(expander_title, expanded=(idx == 0)):
-            if ownership_conflict or possible_transfer:
-                st.error("🚫 **OWNERSHIP CONFLICT:** This owner has conveyed the title. Suppressed from outreach until verified.")
-                
-            parsed_owner = parse_owner_name(str(row.get('assessee_name', '')))
-            direct_url = build_recorder_direct_url(parsed_owner, ACTIVE_COUNTY)
-            wide_urls = build_wide_search_variants(parsed_owner)
-            
-            # Use year from lead if possible, else 2025
-            dy = str(row.get('Default Year', '')).strip()
-            tax_year = dy if dy.isdigit() else "2025"
-            parcel_url = build_parcel_url(row['APN'], tax_year)
-            
-            raw_addr = str(row['Address']).strip()
-            # Clean up the literal " City" artifact from the Tehama assessor portal
-            raw_addr = re.sub(r'(?i)\s+City\s*$', '', raw_addr)
-            
-            has_addr = raw_addr and raw_addr.upper() not in ["NAN", "NONE", "", "SEE ASSESSOR", "SEE ASSESSOR →"]
-            conf_level, conf_reason = compute_confidence(raw_addr if has_addr else None, ownership_conflict, possible_transfer)
-
-            # Top row: 3 Layers
-            layer1, layer2, layer3 = st.columns(3)
-            with layer1:
-                st.markdown("#### 1. Ranked Parcel")
-                if ownership_conflict or possible_transfer:
-                    st.markdown(f"**Former Owner:** `{row['Owner']}`")
-                    if new_owner_candidate:
-                        st.markdown(f"**Current Candidate:** `{new_owner_candidate}`")
+            if view_mode == "Report Card View":
+                # ── Report Card View (investment opportunity report) ───────
+                active_liens = int(row.get("active_liens", 0))
+                mortgages = int(row.get("mortgages", 0))
+                if active_liens > 0:
+                    priority_tag = "🔴 HOT"
+                    priority_color = "#f87171"
+                elif mortgages > 0:
+                    priority_tag = "🟡 WARM"
+                    priority_color = "#fbbf24"
+                elif row.get('ownership_status') == "Sold / Transfer Detected":
+                    priority_tag = "⚫ SOLD / TRANSFERRED"
+                    priority_color = "#6b7280"
                 else:
-                    st.markdown(f"**Owner:** `{row['Owner']}`")
-                
-                parsed_str = ""
-                if parsed_owner.get('first_name'):
-                    parsed_str += f"{parsed_owner['first_name']} "
-                if parsed_owner.get('last_name'):
-                    parsed_str += parsed_owner['last_name']
-                st.markdown(f"**Parsed:** `{parsed_str}`")
-                st.markdown(f"**Default Year:** `{row['Default Year']}`")
-                st.markdown(f"**Original Score:** `{row['Opportunity Score']}`")
-                st.markdown(f"**Signal:** {row['Motivation Signal']}")
-                
+                    priority_tag = "🟢 COLD"
+                    priority_color = "#4ade80"
+
+                county_label = selected_county.capitalize()
+                parcel_fmt = fmt_apn(row.get('APN', ''))
+                raw_addr = str(row['Address']).strip()
+                raw_addr = re.sub(r'(?i)\s+City\s*$', '', raw_addr)
+                display_addr = raw_addr if raw_addr.upper() not in ['NAN','NONE','','SEE ASSESSOR'] else '—'
+
+                inst1 = str(row.get('inst1_status', '')).strip()
+                inst2 = str(row.get('inst2_status', '')).strip()
+                both_late = (inst1.upper() == "LATE" and inst2.upper() == "LATE")
+                inst1_late = (inst1.upper() == "LATE")
+                inst2_late = (inst2.upper() == "LATE")
+
+                lien_count = int(row.get("active_liens", 0))
+                mtg_count = int(row.get("mortgages", 0))
+
+                raw_conf = row.get('confidence', '')
+                conf_pct = ""
+                conf_num = 0
+                if pd.notna(raw_conf):
+                    try:
+                        conf_num = float(raw_conf)
+                        conf_pct = f"{conf_num*100:.0f}%"
+                    except (ValueError, TypeError):
+                        conf_pct = str(raw_conf)
+
+                opportunity_score = row.get('Opportunity Score', '')
+                try:
+                    lead_score = int(float(opportunity_score))
+                except (ValueError, TypeError):
+                    lead_score = '—'
+
+                verified_date = ""
+                raw_vd = row.get('verified_at', '')
+                if pd.notna(raw_vd):
+                    import datetime as dt
+                    try:
+                        d = dt.datetime.strptime(str(raw_vd)[:10], "%Y-%m-%d")
+                        verified_date = d.strftime("%B %d, %Y")
+                    except ValueError:
+                        verified_date = str(raw_vd)[:10]
+
+                # ── Equity Snapshot ─────────────────────────────────────────
+                assessed_raw = row.get('Assessed Value', '')
+                equity_raw = row.get('Equity Est', row.get('Equity_Est', ''))
                 eq_tier = row.get('Equity_Tier', 'unknown')
-                eq_val  = str(row.get('Equity Est', 'N/A')).replace('$', '&#36;')
-                av_val  = str(row.get('Assessed Value', 'N/A')).replace('$', '&#36;')
-                eq_badge_html = {
-                    "strong":   f"<span style='background:#1a4731;color:#4ade80;padding:3px 10px;border-radius:6px;font-weight:700;'>&#x1F4B0; Strong Equity &mdash; {eq_val} est. ({av_val} assessed)</span>",
-                    "moderate": f"<span style='background:#1c3a5e;color:#60a5fa;padding:3px 10px;border-radius:6px;font-weight:700;'>&#x1F4CA; Moderate Equity &mdash; {eq_val} est. ({av_val} assessed)</span>",
-                    "thin":     f"<span style='background:#3b2f0a;color:#fbbf24;padding:3px 10px;border-radius:6px;font-weight:700;'>&#x26A0;&#xFE0F; Thin Equity &mdash; {eq_val} est. ({av_val} assessed)</span>",
-                    "negative": f"<span style='background:#3b0a0a;color:#f87171;padding:3px 10px;border-radius:6px;font-weight:700;'>&#x1F534; Negative Equity &mdash; {eq_val} est. ({av_val} assessed)</span>",
-                    "unknown":  f"<span style='background:#1e1e1e;color:#9ca3af;padding:3px 10px;border-radius:6px;font-weight:700;'>&#x2753; Equity Unknown (no assessed value on file)</span>",
-                }.get(eq_tier, "")
-                st.markdown(eq_badge_html, unsafe_allow_html=True)
+                assessed_str = str(assessed_raw).replace('$', '').replace(',', '').strip()
+                equity_label_txt = "Unknown"
+                equity_color = "#9ca3af"
+                try:
+                    av_num = float(assessed_str) if assessed_str and assessed_str.upper() not in ('NAN','N/A','') else 0
+                except (ValueError, TypeError):
+                    av_num = 0
+                equity_avail = False
+                eq_str_clean = str(equity_raw).replace('$', '').replace(',', '').strip()
+                try:
+                    eq_num = float(eq_str_clean) if eq_str_clean and eq_str_clean.upper() not in ('NAN','N/A','') else 0
+                except (ValueError, TypeError):
+                    eq_num = 0
+                if eq_num > 0:
+                    equity_avail = True
+                if eq_tier == "strong" or (eq_num > 0 and eq_num > av_num * 0.5 and av_num > 0):
+                    equity_label_txt = "High"
+                    equity_color = "#4ade80"
+                elif eq_tier == "moderate" or (eq_num > 0 and av_num > 0):
+                    equity_label_txt = "Moderate"
+                    equity_color = "#60a5fa"
+                elif eq_tier == "thin":
+                    equity_label_txt = "Thin"
+                    equity_color = "#fbbf24"
+                elif eq_tier == "negative":
+                    equity_label_txt = "Negative"
+                    equity_color = "#f87171"
+                equity_pct = ""
+                if equity_avail and av_num > 0 and eq_num > 0:
+                    equity_pct = f"{eq_num/av_num*100:.0f}%"
 
-            with layer2:
-                st.markdown("#### 2. Parcel Facts")
-                st.markdown(f"**APN:** `{row['APN']}`")
-                st.markdown(f"**Address:** `{raw_addr if has_addr else 'Missing'}`")
-                
-                doc_num = row.get("rec_doc_number", "N/A")
-                if pd.isna(doc_num): doc_num = "N/A"
-                st.markdown(f"**Document Number:** `{doc_num}`")
-                st.markdown(f"**Tax Year:** `{tax_year}`")
-                
-                if parcel_url:
-                    st.markdown(f"👉 [**View MPTS Parcel Page**]({parcel_url})")
-                
-                live_tax_url = str(row.get('live_tax_url', '')).strip()
-                if live_tax_url and live_tax_url.lower() not in {"nan", "none", "<na>", ""}:
-                    st.markdown(f"👉 [**Assessor Property Detail**]({live_tax_url})")
+                # ── Acquisition Potential (letter grade) ───────────────────
+                has_high_equity = (equity_label_txt == "High")
+                has_delinquency = (inst1_late or inst2_late)
+                has_distress = (lien_count > 0 or mtg_count > 0)
+                multiple_distress = (lien_count > 1 or (lien_count > 0 and mtg_count > 0))
+                if has_high_equity and has_delinquency and multiple_distress:
+                    acq_potential = "A+"
+                    acq_potential_color = "#4ade80"
+                elif has_high_equity and has_delinquency:
+                    acq_potential = "A"
+                    acq_potential_color = "#60a5fa"
+                elif has_delinquency and has_distress:
+                    acq_potential = "B"
+                    acq_potential_color = "#fbbf24"
+                else:
+                    acq_potential = "C"
+                    acq_potential_color = "#6b7280"
 
-                if has_addr:
-                    map_q = quote_plus(f"{raw_addr}, Tehama County, CA")
-                    st.markdown(f"📍 [**Google Maps**](https://maps.google.com/?q={map_q})")
+                # ── Acquisition Probability ────────────────────────────────
+                acq_prob_score = 0
+                if inst1_late or inst2_late: acq_prob_score += 25
+                if both_late: acq_prob_score += 15
+                if lien_count > 0: acq_prob_score += 20
+                if lien_count > 3: acq_prob_score += 10
+                if mtg_count > 0: acq_prob_score += 10
+                if row.get('ownership_status') == "Current": acq_prob_score += 10
+                sig = str(row.get('Motivation Signal', ''))
+                if "Out-of-State" in sig: acq_prob_score += 10
+                if "Entity" in sig: acq_prob_score += 10
+                if "Trust" in sig: acq_prob_score += 5
+                if acq_prob_score >= 60:
+                    acq_prob = "HIGH"
+                    acq_prob_color = "#4ade80"
+                elif acq_prob_score >= 30:
+                    acq_prob = "MODERATE"
+                    acq_prob_color = "#fbbf24"
+                else:
+                    acq_prob = "LOW"
+                    acq_prob_color = "#6b7280"
 
-            with layer3:
-                st.markdown("#### 3. Recorder Findings")
-                
+                # ── Financial Pressure / Seller Motivation (star rating) ───
+                pressure_score = 0
+                if inst1_late: pressure_score += 1
+                if inst2_late: pressure_score += 1
+                if lien_count > 0: pressure_score += 1
+                if lien_count > 3: pressure_score += 1
+                if mtg_count > 0: pressure_score += 1
+                star_count = min(pressure_score, 5)
+                star_rating = "★" * star_count + "☆" * (5 - star_count)
+                star_color = "#f87171" if star_count >= 4 else "#fbbf24" if star_count >= 2 else "#6b7280"
+
+                evidence_list = []
+                if inst1_late or inst2_late:
+                    evidence_list.append("Current taxes delinquent")
+                if lien_count > 0:
+                    evidence_list.append(f"{lien_count} recorded lien{'s' if lien_count != 1 else ''}")
+                if mtg_count > 0:
+                    evidence_list.append("Active mortgage")
+                if lien_count > 1 or (lien_count > 0 and mtg_count > 0):
+                    evidence_list.append("Multiple encumbrances")
+                if row.get('ownership_status') == "Current":
+                    evidence_list.append("Ownership verified")
+
+                # ── Executive Summary ──────────────────────────────────────
+                equity_desc = ""
+                if equity_avail and av_num > 0:
+                    if eq_num > av_num * 0.5:
+                        equity_desc = "significant estimated equity"
+                    elif eq_num > 0:
+                        equity_desc = "moderate estimated equity"
+                    else:
+                        equity_desc = "limited equity"
+                elif eq_tier == "strong":
+                    equity_desc = "significant estimated equity"
+                elif eq_tier == "moderate":
+                    equity_desc = "moderate estimated equity"
+                else:
+                    equity_desc = "an unknown equity position"
+
+                install_desc = "both property tax installments" if both_late else "property taxes"
+
+                lien_desc = ""
+                parts = []
+                if lien_count > 0:
+                    parts.append(f"{lien_count} recorded encumbrance{'s' if lien_count != 1 else ''}")
+                if mtg_count > 0:
+                    parts.append("an active mortgage")
+                if parts:
+                    lien_desc = "Recorder history shows " + " and ".join(parts) + ", suggesting elevated financial pressure."
+                else:
+                    lien_desc = "No recorded encumbrances found on title."
+
+                action_rec = "Property appears to warrant immediate outreach." if (active_liens > 0 or both_late) else "Property may warrant further investigation."
+
+                exec_summary = f"Owner {display_owner} has {equity_desc} while currently delinquent on {install_desc}. {lien_desc} {action_rec}"
+
+                # ── Opportunity Drivers ────────────────────────────────────
+                opp_drivers = []
+                if has_delinquency:
+                    opp_drivers.append("Current taxes delinquent")
+                if has_high_equity:
+                    opp_drivers.append("Estimated high equity")
+                if multiple_distress:
+                    opp_drivers.append("Multiple recorded liens")
+                if row.get('ownership_status') == "Current":
+                    opp_drivers.append("Ownership verified")
+                if inst1_late or inst2_late:
+                    opp_drivers.append("Current tax status verified")
+
+                # ── Why This Owner May Sell ────────────────────────────────
+                why_sell = []
+                if has_delinquency:
+                    why_sell.append("Current taxes unpaid")
+                if has_high_equity:
+                    why_sell.append("High equity available")
+                if multiple_distress:
+                    why_sell.append("Multiple recorded obligations")
+                if row.get('ownership_status') == "Current":
+                    why_sell.append("Property ownership verified")
+                if has_delinquency:
+                    why_sell.append("Current tax delinquency independently confirmed")
+                financial_pressure_level = "HIGH" if star_count >= 4 else "MODERATE" if star_count >= 2 else "LOW"
+                why_sell.append(f"Estimated financial pressure: {financial_pressure_level}")
+
+                # ── Action Window ──────────────────────────────────────────
+                if active_liens > 0 or both_late:
+                    action_window = "Immediate"
+                    action_window_color = "#f87171"
+                    action_reason = "Current taxes delinquent. Property qualifies for active outreach."
+                elif inst1_late or mtg_count > 0:
+                    action_window = "Short-term"
+                    action_window_color = "#fbbf24"
+                    action_reason = "Some distress signals present. Recommend further research."
+                else:
+                    action_window = "Monitor"
+                    action_window_color = "#6b7280"
+                    action_reason = "No immediate distress signals. Review quarterly."
+
+                # ── Timeline ───────────────────────────────────────────────
+                default_year = str(row.get('Default Year', '')).strip()
+                timeline_items = []
+                if default_year and default_year not in ['', 'Unknown']:
+                    timeline_items.append((default_year, "Property taxes became delinquent"))
+                if verified_date:
+                    timeline_items.append(("Current", "Delinquency independently verified"))
+                if lien_count > 0 or mtg_count > 0:
+                    timeline_items.append(("Various", f"{lien_count + mtg_count} total encumbrance{'s' if lien_count + mtg_count != 1 else ''} recorded (see Recorder)"))
+                chain_note = "Full chain of title timeline available with recorder deed search."
+
+                # ── Suggested Acquisition Workflow ─────────────────────────
+                if active_liens > 0 or both_late:
+                    acq_steps = [
+                        "1. Skip Trace",
+                        "2. Phone",
+                        "3. Direct Mail",
+                        "4. Text",
+                        "5. Follow-up",
+                    ]
+                elif mtg_count > 0 or inst1_late:
+                    acq_steps = [
+                        "1. Skip Trace",
+                        "2. Direct Mail",
+                        "3. Phone",
+                        "4. Follow-up in 30 days",
+                    ]
+                else:
+                    acq_steps = [
+                        "1. Direct Mail",
+                        "2. Monitor quarterly",
+                    ]
+
+                # ── Verification flags ─────────────────────────────────────
+                def verify_icon(ok):
+                    return "✅" if ok else "❌"
+                owner_ok = bool(pd.notna(row.get('Owner')) and str(row.get('Owner', '')).strip() not in ['', 'SKIP_TRACE_REQUIRED', 'NAN'])
+                parcel_ok = bool(pd.notna(row.get('APN')) and str(row.get('APN', '')).strip() not in ['', 'NAN'])
+                tax_ok = (inst1_late or inst2_late)
+                recorder_ok = (lien_count > 0 or mtg_count > 0)
+
+                freshness_sources = []
+                if inst1_late or inst2_late: freshness_sources.append("County Tax Portal")
+                if lien_count > 0 or mtg_count > 0: freshness_sources.append("Recorder")
+                if av_num > 0: freshness_sources.append("Assessor")
+                source_str = ", ".join(freshness_sources) if freshness_sources else "County records"
+
+                # ── Confidence bar ─────────────────────────────────────────
+                bar_fill = int(conf_num * 100) if conf_num > 0 else 0
+                bar_full = "█" * (bar_fill // 10)
+                bar_empty = "░" * (10 - bar_fill // 10) if bar_fill < 100 else ""
+                bar_visual = bar_full + bar_empty
+                bar_color = "#4ade80" if bar_fill >= 80 else "#fbbf24" if bar_fill >= 50 else "#f87171"
+
+                card = f"""<div style='background:#1a1a2e; border:1px solid #333; border-radius:12px; padding:1.8rem; margin-bottom:1rem; color:#e0e0e0; font-family:system-ui,-apple-system,sans-serif; line-height:1.7;'>
+<div style='font-size:1.6rem; font-weight:700; color:{priority_color};'>{priority_tag} LEAD</div>
+
+<div style='display:flex; gap:2rem; margin:1rem 0;'>
+  <div>
+    <div style='color:#888; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em;'>Acquisition Potential</div>
+    <div style='font-size:1.8rem; font-weight:700; color:{acq_potential_color};'>{acq_potential}</div>
+  </div>
+  <div>
+    <div style='color:#888; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em;'>Acquisition Probability</div>
+    <div style='font-size:1.3rem; font-weight:600; color:{acq_prob_color};'>{acq_prob}</div>
+  </div>
+</div>
+<hr style='border-color:#333; margin:0.8rem 0;'>
+
+<h3 style='color:#e0e0e0; margin:0 0 0.6rem 0; font-size:1.0rem; font-weight:600;'>Estimated Opportunity</h3>
+<table style='width:100%; border-collapse:collapse;'>
+<tr><td style='color:#888; width:170px; vertical-align:top; padding:3px 8px 3px 0; font-size:0.9rem;'>Estimated Equity</td><td style='padding:3px 0; font-size:1.1rem; font-weight:700; color:{equity_color};'>{'$' + f'{eq_num:,.0f}' if equity_avail and eq_num > 0 else 'Unavailable'}</td></tr>
+<tr><td style='color:#888; width:170px; vertical-align:top; padding:3px 8px 3px 0; font-size:0.9rem;'>Current Delinquent Taxes</td><td style='padding:3px 0; font-size:1.05rem; font-weight:600; color:#f87171;'>{row['Default Balance']}</td></tr>
+<tr><td style='color:#888; width:170px; vertical-align:top; padding:3px 8px 3px 0; font-size:0.9rem;'>Financial Pressure</td><td style='padding:3px 0; font-size:1.3rem; color:{star_color};'>{star_rating}</td></tr>
+</table>
+<div style='display:flex; justify-content:space-between; align-items:center; margin:0.8rem 0 0 0;'>
+  <div>
+    <div style='color:#888; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em;'>Opportunity Score</div>
+    <div style='font-size:1.6rem; font-weight:700;'>{lead_score}{'' if lead_score == '—' else ' / 100'}</div>
+  </div>
+  <div style='text-align:right;'>
+    <div style='color:#888; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em;'>Verified</div>
+    <div style='font-weight:600;'>{verified_date}</div>
+    <div style='color:#888; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; margin-top:0.3rem;'>Confidence</div>
+    <div style='font-weight:600;'>{conf_pct}</div>
+  </div>
+</div>
+<hr style='border-color:#333; margin:0.8rem 0;'>
+
+<h3 style='color:#e0e0e0; margin:0 0 0.5rem 0; font-size:1.0rem; font-weight:600;'>Why This Lead Matters</h3>
+<div style='color:#ccc; font-size:0.95rem; line-height:1.6;'>{exec_summary}</div>
+<hr style='border-color:#333; margin:0.8rem 0;'>
+
+<h3 style='color:#e0e0e0; margin:0 0 0.5rem 0; font-size:1.0rem; font-weight:600;'>Opportunity Drivers</h3>
+<div style='margin:0.2rem 0;'>{"<br>".join([f"• {d}" for d in opp_drivers]) if opp_drivers else '• Standard scoring model'}</div>
+<hr style='border-color:#333; margin:0.8rem 0;'>
+
+<h3 style='color:#e0e0e0; margin:0 0 0.5rem 0; font-size:1.0rem; font-weight:600;'>Why This Owner May Sell</h3>
+<div style='margin:0.2rem 0;'>{"<br>".join([f"• {w}" for w in why_sell]) if why_sell else '• Insufficient data to determine motivation'}</div>
+<hr style='border-color:#333; margin:0.8rem 0;'>
+
+<h3 style='color:#e0e0e0; margin:0 0 0.5rem 0; font-size:1.0rem; font-weight:600;'>Property</h3>
+<table style='width:100%; border-collapse:collapse;'>
+<tr><td style='color:#888; width:150px; vertical-align:top; padding:2px 8px 2px 0; font-size:0.9rem;'>Owner</td><td style='padding:2px 0; font-weight:500;'>{display_owner}</td></tr>
+<tr><td style='color:#888; width:150px; vertical-align:top; padding:2px 8px 2px 0; font-size:0.9rem;'>County</td><td style='padding:2px 0;'>{county_label} County</td></tr>
+<tr><td style='color:#888; width:150px; vertical-align:top; padding:2px 8px 2px 0; font-size:0.9rem;'>APN</td><td style='padding:2px 0; font-family:monospace;'>{parcel_fmt}</td></tr>
+<tr><td style='color:#888; width:150px; vertical-align:top; padding:2px 8px 2px 0; font-size:0.9rem;'>Address</td><td style='padding:2px 0;'>{display_addr}</td></tr>
+</table>
+<hr style='border-color:#333; margin:0.8rem 0;'>
+
+<h3 style='color:#e0e0e0; margin:0 0 0.5rem 0; font-size:1.0rem; font-weight:600;'>Tax Status</h3>
+<div style='font-size:1rem; font-weight:600; color:#f87171; margin-bottom:0.3rem;'>Delinquent Taxes: {row['Default Balance']}</div>
+<div style='margin:0.2rem 0;'>{'✅ First Installment Delinquent' if inst1_late else ''}</div>
+<div style='margin:0.2rem 0;'>{'✅ Second Installment Delinquent' if inst2_late else ''}</div>
+<hr style='border-color:#333; margin:0.8rem 0;'>
+
+<h3 style='color:#e0e0e0; margin:0 0 0.5rem 0; font-size:1.0rem; font-weight:600;'>Seller Motivation Indicators</h3>
+<div style='font-size:1.4rem; margin:0.3rem 0; color:{star_color};'>{star_rating}</div>
+<div style='margin:0.5rem 0 0.2rem 0; color:#888; font-size:0.85rem;'><strong>Evidence</strong></div>
+<div style='margin:0.2rem 0;'>{"<br>".join([f"• {e}" for e in evidence_list]) if evidence_list else '• No significant distress signals detected'}</div>
+<hr style='border-color:#333; margin:0.8rem 0;'>
+
+<h3 style='color:#e0e0e0; margin:0 0 0.5rem 0; font-size:1.0rem; font-weight:600;'>Equity Snapshot</h3>
+<table style='width:100%; border-collapse:collapse;'>
+<tr><td style='color:#888; width:150px; vertical-align:top; padding:2px 8px 2px 0; font-size:0.9rem;'>Estimated Value</td><td style='padding:2px 0; font-weight:500;'>{assessed_raw if pd.notna(assessed_raw) and str(assessed_raw).upper() not in ['NAN','N/A',''] else 'Unavailable'}</td></tr>
+<tr><td style='color:#888; width:150px; vertical-align:top; padding:2px 8px 2px 0; font-size:0.9rem;'>Debt</td><td style='padding:2px 0;'>{'$' + f'{mtg_count:,}' if mtg_count > 0 else 'None recorded'}</td></tr>
+<tr><td style='color:#888; width:150px; vertical-align:top; padding:2px 8px 2px 0; font-size:0.9rem;'>Estimated Equity</td><td style='padding:2px 0; font-weight:600; color:{equity_color};'>{'$' + f'{eq_num:,.0f}' if equity_avail and eq_num > 0 else 'Unavailable'}</td></tr>
+<tr><td style='color:#888; width:150px; vertical-align:top; padding:2px 8px 2px 0; font-size:0.9rem;'>Estimated Equity %</td><td style='padding:2px 0; font-weight:600; color:{equity_color};'>{equity_pct if equity_pct else 'Unavailable'}</td></tr>
+</table>
+<hr style='border-color:#333; margin:0.8rem 0;'>
+
+<h3 style='color:#e0e0e0; margin:0 0 0.5rem 0; font-size:1.0rem; font-weight:600;'>Timeline</h3>
+<div style='margin:0.2rem 0;'>{"<br>".join([f"<span style='color:#888;'>{year}</span> &mdash; {event}" for year, event in timeline_items]) if timeline_items else '<span style="color:#6b7280;">— Timeline data limited —</span>'}</div>
+<div style='margin:0.4rem 0 0 0; color:#6b7280; font-size:0.85rem;'>{chain_note}</div>
+<hr style='border-color:#333; margin:0.8rem 0;'>
+
+<h3 style='color:#e0e0e0; margin:0 0 0.5rem 0; font-size:1.0rem; font-weight:600;'>Action Window</h3>
+<div style='font-size:1.05rem; font-weight:600; color:{action_window_color};'>{action_window}</div>
+<div style='margin:0.2rem 0; color:#9ca3af; font-size:0.9rem;'>{action_reason}</div>
+<hr style='border-color:#333; margin:0.8rem 0;'>
+
+<h3 style='color:#e0e0e0; margin:0 0 0.5rem 0; font-size:1.0rem; font-weight:600;'>Suggested Acquisition Workflow</h3>
+<div style='margin:0.2rem 0;'>{"<br>".join(acq_steps)}</div>
+<hr style='border-color:#333; margin:0.8rem 0;'>
+
+<div style='background:#1e2940; border:1px solid #3b4a6b; border-radius:8px; padding:1rem; margin:0.8rem 0;'>
+<div style='font-weight:600; margin-bottom:0.5rem; color:#93c5fd;'>Verification Advantage</div>
+<div style='color:#9ca3af; font-size:0.9rem; margin-bottom:0.5rem;'>Unlike static list providers, this lead was refreshed against live county tax records.</div>
+<div style='margin:0.2rem 0;'>✅ Tax status verified</div>
+<div style='margin:0.2rem 0;'>✅ Ownership verified</div>
+<div style='margin:0.2rem 0;'>✅ Recorder verified</div>
+<div style='margin:0.2rem 0;'>✅ Updated {verified_date}</div>
+</div>
+
+<h3 style='color:#e0e0e0; margin:0 0 0.5rem 0; font-size:1.0rem; font-weight:600;'>DATA QUALITY</h3>
+<div style='margin:0.3rem 0; font-size:1.1rem; font-family:monospace; color:{bar_color};'>{bar_visual} {conf_pct}</div>
+<table style='width:100%; border-collapse:collapse; margin-top:0.3rem;'>
+<tr><td style='color:#888; width:150px; vertical-align:top; padding:2px 8px 2px 0; font-size:0.9rem;'>Owner</td><td style='padding:2px 0; font-size:0.9rem;'>{'.'*20} Verified {verify_icon(owner_ok)}</td></tr>
+<tr><td style='color:#888; width:150px; vertical-align:top; padding:2px 8px 2px 0; font-size:0.9rem;'>Tax Portal</td><td style='padding:2px 0; font-size:0.9rem;'>{'.'*20} Verified {verify_icon(tax_ok)}</td></tr>
+<tr><td style='color:#888; width:150px; vertical-align:top; padding:2px 8px 2px 0; font-size:0.9rem;'>Recorder</td><td style='padding:2px 0; font-size:0.9rem;'>{'.'*20} Verified {verify_icon(recorder_ok)}</td></tr>
+<tr><td style='color:#888; width:150px; vertical-align:top; padding:2px 8px 2px 0; font-size:0.9rem;'>Parcel</td><td style='padding:2px 0; font-size:0.9rem;'>{'.'*20} Verified {verify_icon(parcel_ok)}</td></tr>
+<tr><td style='color:#888; width:150px; vertical-align:top; padding:2px 8px 2px 0; font-size:0.9rem;'>Assessor</td><td style='padding:2px 0; font-size:0.9rem;'>{'.'*20} {'Verified ✅' if av_num > 0 else 'Not available'}</td></tr>
+</table>
+</div>"""
+                st.markdown(card, unsafe_allow_html=True)
+            else:
                 if ownership_conflict or possible_transfer:
-                    st.error("🚫 **Ownership Conflict:** Transfer detected")
-                    if new_owner_candidate:
-                        st.markdown(f"**Current owner candidate:** `{new_owner_candidate}`")
-                        new_parsed = parse_owner_name(new_owner_candidate)
-                        new_direct = build_recorder_direct_url(new_parsed, ACTIVE_COUNTY)
-                        if new_direct:
-                            st.markdown(f"👉 [**Recorder Search: Pre-filled for new owner**]({new_direct})")
+                    st.error("🚫 **OWNERSHIP CONFLICT:** This owner has conveyed the title. Suppressed from outreach until verified.")
+                    
+                parsed_owner = parse_owner_name(str(row.get('assessee_name', '')))
+                direct_url = build_recorder_direct_url(parsed_owner, ACTIVE_COUNTY)
+                wide_urls = build_wide_search_variants(parsed_owner)
+                
+                # Use year from lead if possible, else 2025
+                dy = str(row.get('Default Year', '')).strip()
+                tax_year = dy if dy.isdigit() else "2025"
+                parcel_url = build_parcel_url(row['APN'], tax_year)
+                
+                raw_addr = str(row['Address']).strip()
+                # Clean up the literal " City" artifact from the Tehama assessor portal
+                raw_addr = re.sub(r'(?i)\s+City\s*$', '', raw_addr)
+                
+                has_addr = raw_addr and raw_addr.upper() not in ["NAN", "NONE", "", "SEE ASSESSOR", "SEE ASSESSOR →"]
+                conf_level, conf_reason = compute_confidence(raw_addr if has_addr else None, ownership_conflict, possible_transfer)
+
+                # Top row: 3 Layers
+                layer1, layer2, layer3 = st.columns(3)
+                with layer1:
+                    st.markdown("#### 1. Ranked Parcel")
+                    if ownership_conflict or possible_transfer:
+                        st.markdown(f"**Former Owner:** `{row['Owner']}`")
+                        if new_owner_candidate:
+                            st.markdown(f"**Current Candidate:** `{new_owner_candidate}`")
+                    else:
+                        st.markdown(f"**Owner:** `{row['Owner']}`")
+                    
+                    parsed_str = ""
+                    if parsed_owner.get('first_name'):
+                        parsed_str += f"{parsed_owner['first_name']} "
+                    if parsed_owner.get('last_name'):
+                        parsed_str += parsed_owner['last_name']
+                    st.markdown(f"**Parsed:** `{parsed_str}`")
+                    st.markdown(f"**Default Year:** `{row['Default Year']}`")
+                    st.markdown(f"**Original Score:** `{row['Opportunity Score']}`")
+                    st.markdown(f"**Signal:** {row['Motivation Signal']}")
+                    
+                    eq_tier = row.get('Equity_Tier', 'unknown')
+                    eq_val  = str(row.get('Equity Est', 'N/A')).replace('$', '&#36;')
+                    av_val  = str(row.get('Assessed Value', 'N/A')).replace('$', '&#36;')
+                    eq_badge_html = {
+                        "strong":   f"<span style='background:#1a4731;color:#4ade80;padding:3px 10px;border-radius:6px;font-weight:700;'>&#x1F4B0; Strong Equity &mdash; {eq_val} est. ({av_val} assessed)</span>",
+                        "moderate": f"<span style='background:#1c3a5e;color:#60a5fa;padding:3px 10px;border-radius:6px;font-weight:700;'>&#x1F4CA; Moderate Equity &mdash; {eq_val} est. ({av_val} assessed)</span>",
+                        "thin":     f"<span style='background:#3b2f0a;color:#fbbf24;padding:3px 10px;border-radius:6px;font-weight:700;'>&#x26A0;&#xFE0F; Thin Equity &mdash; {eq_val} est. ({av_val} assessed)</span>",
+                        "negative": f"<span style='background:#3b0a0a;color:#f87171;padding:3px 10px;border-radius:6px;font-weight:700;'>&#x1F534; Negative Equity &mdash; {eq_val} est. ({av_val} assessed)</span>",
+                        "unknown":  f"<span style='background:#1e1e1e;color:#9ca3af;padding:3px 10px;border-radius:6px;font-weight:700;'>&#x2753; Equity Unknown (no assessed value on file)</span>",
+                    }.get(eq_tier, "")
+                    st.markdown(eq_badge_html, unsafe_allow_html=True)
+
+                with layer2:
+                    st.markdown("#### 2. Parcel Facts")
+                    st.markdown(f"**APN:** `{row['APN']}`")
+                    st.markdown(f"**Address:** `{raw_addr if has_addr else 'Missing'}`")
+                    
+                    doc_num = row.get("rec_doc_number", "N/A")
+                    if pd.isna(doc_num): doc_num = "N/A"
+                    st.markdown(f"**Document Number:** `{doc_num}`")
+                    st.markdown(f"**Tax Year:** `{tax_year}`")
+                    
+                    if parcel_url:
+                        st.markdown(f"👉 [**View MPTS Parcel Page**]({parcel_url})")
+                    
+                    live_tax_url = str(row.get('live_tax_url', '')).strip()
+                    if live_tax_url and live_tax_url.lower() not in {"nan", "none", "<na>", ""}:
+                        st.markdown(f"👉 [**Assessor Property Detail**]({live_tax_url})")
+
+                    if has_addr:
+                        map_q = quote_plus(f"{raw_addr}, Tehama County, CA")
+                        st.markdown(f"📍 [**Google Maps**](https://maps.google.com/?q={map_q})")
+
+                with layer3:
+                    st.markdown("#### 3. Recorder Findings")
+                    
+                    if ownership_conflict or possible_transfer:
+                        st.error("🚫 **Ownership Conflict:** Transfer detected")
+                        if new_owner_candidate:
+                            st.markdown(f"**Current owner candidate:** `{new_owner_candidate}`")
+                            new_parsed = parse_owner_name(new_owner_candidate)
+                            new_direct = build_recorder_direct_url(new_parsed, ACTIVE_COUNTY)
+                            if new_direct:
+                                st.markdown(f"👉 [**Recorder Search: Pre-filled for new owner**]({new_direct})")
+                            else:
+                                st.markdown(f"👉 [**Recorder Search (Manual Name Entry)**]({ACTIVE_COUNTY['recorder_search']})")
                         else:
                             st.markdown(f"👉 [**Recorder Search (Manual Name Entry)**]({ACTIVE_COUNTY['recorder_search']})")
+                            
+                        with st.expander("Original Owner Links"):
+                            if direct_url:
+                                st.markdown(f"👉 [**Recorder Search (Direct)**]({direct_url})")
+                            if wide_urls:
+                                for v in wide_urls:
+                                    st.markdown(f"🔍 [{v['label']}]({v['url']})")
                     else:
-                        st.markdown(f"👉 [**Recorder Search (Manual Name Entry)**]({ACTIVE_COUNTY['recorder_search']})")
-                        
-                    with st.expander("Original Owner Links"):
+                        if conf_level == "High":
+                            st.success(f"**High Confidence:** {conf_reason}")
+                        elif conf_level == "Medium":
+                            st.warning(f"**Medium Confidence:** {conf_reason}")
+                        else:
+                            st.error(f"**Low Confidence:** {conf_reason}")
+
                         if direct_url:
                             st.markdown(f"👉 [**Recorder Search (Direct)**]({direct_url})")
+                        else:
+                            st.markdown("👉 **Recorder Search:** Unavailable")
+
                         if wide_urls:
-                            for v in wide_urls:
-                                st.markdown(f"🔍 [{v['label']}]({v['url']})")
-                else:
-                    if conf_level == "High":
-                        st.success(f"**High Confidence:** {conf_reason}")
-                    elif conf_level == "Medium":
-                        st.warning(f"**Medium Confidence:** {conf_reason}")
-                    else:
-                        st.error(f"**Low Confidence:** {conf_reason}")
-
-                    if direct_url:
-                        st.markdown(f"👉 [**Recorder Search (Direct)**]({direct_url})")
-                    else:
-                        st.markdown("👉 **Recorder Search:** Unavailable")
-
-                    if wide_urls:
-                        with st.expander("Wide Search Variants"):
-                            for v in wide_urls:
-                                st.markdown(f"🔍 [{v['label']}]({v['url']})")
+                            with st.expander("Wide Search Variants"):
+                                for v in wide_urls:
+                                    st.markdown(f"🔍 [{v['label']}]({v['url']})")
 
                 active_liens = int(row.get("active_liens", 0))
                 mortgages = int(row.get("mortgages", 0))

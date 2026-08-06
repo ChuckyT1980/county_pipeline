@@ -1,0 +1,11 @@
+import pandas as pd
+df = pd.read_csv("tehama_discovery_20260627_004437.csv")
+print(f"Total: {len(df)}")
+print(f"\nRow 4 (index 4):")
+print(df.iloc[4].to_dict())
+print(f"\nRow 4 asmt: [{df.iloc[4]['asmt']}] type={type(df.iloc[4]['asmt'])}")
+print(f"\nRow 4 asmt_raw: [{df.iloc[4]['asmt_raw']}] type={type(df.iloc[4]['asmt_raw'])}")
+print(f"\nRows with NaN asmt: {df['asmt'].isna().sum()}")
+# Check what's at index 3 (the one before the skip)
+print(f"\nRow 3 (index 3):")
+print(df.iloc[3].to_dict())

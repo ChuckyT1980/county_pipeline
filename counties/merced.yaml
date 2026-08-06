@@ -1,0 +1,27 @@
+display_name: Merced County
+collector_names:
+- MERCED TAX COLLECTOR
+- MERCED CO TAX COLLR
+- COUNTY OF MERCED
+assessor:
+  backend: mpts
+  endpoint: https://common1.mptsweb.com/mbap/merced/asr/AsrPrint
+  apn_includes:
+  - 1 Main
+  - 2 Main
+  - 1 Oak
+  - 2 Oak
+  - 1 Pine
+  - 1st
+  - 2nd
+  - 3rd
+  notes: Auto-onboarded by onboard_county.py. MPTS host common1.mptsweb.com slug merced
+  host: https://common1.mptsweb.com
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.merced.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

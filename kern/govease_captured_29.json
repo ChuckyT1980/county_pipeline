@@ -1,0 +1,20 @@
+{
+  "activateAutoRefresh": true,
+  "autoRefreshTimeout": 12000000,
+  "changelogEnabled": true,
+  "defaultSelectorColor": "#00d8a6",
+  "displayPosition": "left-bottom",
+  "enableAutoRefresh": true,
+  "enableFaviconNotification": true,
+  "enableSoundNotification": false,
+  "enableUpdatesListener": true,
+  "enabled": true,
+  "filterByUrl": true,
+  "headerColor": "#2980b9",
+  "lastPostBoostedBackgroundColor": "#e74c3c",
+  "lastPostBoostedTextColor": "#ffffff",
+  "notificationColor": "#ff5a5f",
+  "showLinkInSnippet": false,
+  "topDomain": "govease.com",
+  "updatesDelay": 600000
+}

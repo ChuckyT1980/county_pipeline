@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tehama Distressed Property Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <style>
+        body { background-color: #0f172a; color: #e2e8f0; font-family: 'Inter', sans-serif; }
+        .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter,
+        .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing,
+        .dataTables_wrapper .dataTables_paginate { color: #e2e8f0; }
+        table.dataTable tbody tr { background-color: #1e293b; }
+        table.dataTable tbody tr:hover { background-color: #334155; }
+        table.dataTable thead th, table.dataTable thead td { border-bottom: 1px solid #475569; }
+        table.dataTable.no-footer { border-bottom: 1px solid #475569; }
+        .assessor-link { color: #60a5fa; text-decoration: underline; font-weight: 600; }
+        .assessor-link:hover { color: #93c5fd; text-shadow: 0 0 8px rgba(96,165,250,0.5); }
+    </style>
+</head>
+<body class="p-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-center mb-8">
+            <h1 class="text-3xl font-bold text-white tracking-wider">TEHAMA DISTRESSED PROPERTY INTELLIGENCE</h1>
+            <div class="text-emerald-400 font-semibold border border-emerald-400 px-4 py-2 rounded shadow-[0_0_15px_rgba(52,211,153,0.3)]">
+                40 Total Leads
+            </div>
+        </div>
+        
+        <div class="bg-slate-800 rounded-xl shadow-2xl p-8 border border-slate-700">
+            <table id="leadTable" class="display w-full text-sm">
+                <thead>
+                    <tr>
+                        <th class="text-left text-slate-300">Priority</th>
+                        <th class="text-left text-slate-300">Owner Name</th>
+                        <th class="text-left text-slate-300">APN</th>
+                        <th class="text-left text-slate-300">Property Address</th>
+                        <th class="text-left text-slate-300">Intent Score</th>
+                        <th class="text-left text-slate-300">Distress Signals</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr>
+            <td class="font-bold text-emerald-400">⭐⭐⭐⭐⭐ HOT LEAD</td>
+            <td class="font-bold">HOLDER, CHARLES K & VARGAS</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/037120008000/2025/0000" target="_blank" class="assessor-link">037-120-008-000</a></td>
+            <td>10093 HWY 99W</td>
+            <td class="font-mono text-emerald-400 font-bold">20.5</td>
+            <td class="text-xs text-slate-400">LATE Taxes, Medium Tax Balance ($576.78), 13 Active Liens, H...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-emerald-400">⭐⭐⭐⭐⭐ HOT LEAD</td>
+            <td class="font-bold">PROPERTIES LLC, HANOVER</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/060050021000/2025/0000" target="_blank" class="assessor-link">060-050-021-000</a></td>
+            <td>17230 RANCHO TEHAMA RD</td>
+            <td class="font-mono text-emerald-400 font-bold">13.0</td>
+            <td class="text-xs text-slate-400">High Tax Balance ($7339.25), 9 Active Liens, Has Mortgage, A...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-emerald-400">⭐⭐⭐⭐⭐ HOT LEAD</td>
+            <td class="font-bold">XIONG, BLIA & YANG</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/062180015000/2025/0000" target="_blank" class="assessor-link">062-180-015-000</a></td>
+            <td>7437 QUAIL TRAIL</td>
+            <td class="font-mono text-emerald-400 font-bold">12.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, 8 Active Liens, Has Mortgage, Assignment of Rent...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-emerald-400">⭐⭐⭐⭐ HOT LEAD</td>
+            <td class="font-bold">THAO, EDWARD XENG & XIONG</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/062530005000/2025/0000" target="_blank" class="assessor-link">062-530-005-000</a></td>
+            <td>6900 OX YOKE BEND</td>
+            <td class="font-mono text-emerald-400 font-bold">11.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, 7 Active Liens, Has Mortgage, Assignment of Rent...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-emerald-400">⭐⭐⭐⭐ HOT LEAD</td>
+            <td class="font-bold">BERTOLANO, VIENNA T</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/103050023000/2025/0000" target="_blank" class="assessor-link">103-050-023-000</a></td>
+            <td>21964 BELLOTA ST</td>
+            <td class="font-mono text-emerald-400 font-bold">11.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, 7 Active Liens, Has Mortgage, Assignment of Rent...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-emerald-400">⭐⭐⭐⭐⭐ HOT LEAD</td>
+            <td class="font-bold">SOTO, JOSE DANIEL</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/060130002000/2025/0000" target="_blank" class="assessor-link">060-130-002-000</a></td>
+            <td>17217 ANTELOPE DR</td>
+            <td class="font-mono text-emerald-400 font-bold">13.0</td>
+            <td class="text-xs text-slate-400">8 Active Liens, Assignment of Rents, Affidavit of Death</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐⭐ ACCELERATED</td>
+            <td class="font-bold">ALGER, STEFAN EDWARDS & BROWN</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/062450002000/2025/0000" target="_blank" class="assessor-link">062-450-002-000</a></td>
+            <td>6880 SIOUX CT</td>
+            <td class="font-mono text-emerald-400 font-bold">7.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, 3 Active Liens, Has Mortgage, Assignment of Rent...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐⭐ ACCELERATED</td>
+            <td class="font-bold">TEWOLDEBERHAN, SARA TSEGAI</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/062460001000/2025/0000" target="_blank" class="assessor-link">062-460-001-000</a></td>
+            <td>15750 APACHE TRAIL</td>
+            <td class="font-mono text-emerald-400 font-bold">6.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, 4 Active Liens, Has Mortgage</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐⭐ ACCELERATED</td>
+            <td class="font-bold">HALEY, MICHIEL</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/100050006000/2025/0000" target="_blank" class="assessor-link">100-050-006-000</a></td>
+            <td>19754 LAKE CALIFORNIA DR</td>
+            <td class="font-mono text-emerald-400 font-bold">6.0</td>
+            <td class="text-xs text-slate-400">6 Active Liens</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">LONG, JOANN & BRYAN</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/062120005000/2025/0000" target="_blank" class="assessor-link">062-120-005-000</a></td>
+            <td>16960 ELDER CREEK</td>
+            <td class="font-mono text-emerald-400 font-bold">4.0</td>
+            <td class="text-xs text-slate-400">High Tax Balance ($1242.5), Has Mortgage, Assignment of Rent...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">ALAWAYS, JEREMY & KRISTINE</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/062220004000/2025/0000" target="_blank" class="assessor-link">062-220-004-000</a></td>
+            <td>15760 RANCHO TEHAMA RD</td>
+            <td class="font-mono text-emerald-400 font-bold">4.0</td>
+            <td class="text-xs text-slate-400">High Tax Balance ($1841.58), Has Mortgage, Assignment of Ren...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">GALAZ, CARLA A</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/062240040000/2025/0000" target="_blank" class="assessor-link">062-240-040-000</a></td>
+            <td>16467 STAGECOACH RD</td>
+            <td class="font-mono text-emerald-400 font-bold">4.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, Has Mortgage, Assignment of Rents</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-emerald-400">⭐⭐⭐⭐⭐ HOT LEAD</td>
+            <td class="font-bold">RUVALCABA, JOSE MANUEL & CYNTHIA</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/078270009000/2025/0000" target="_blank" class="assessor-link">078-270-009-000</a></td>
+            <td>24952 LAURIE LN</td>
+            <td class="font-mono text-emerald-400 font-bold">15.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, High Tax Balance ($1889.06), 11 Active Liens, As...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-emerald-400">⭐⭐⭐⭐ HOT LEAD</td>
+            <td class="font-bold">PRIMEAU, ANDRE</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/021210036000/2025/0000" target="_blank" class="assessor-link">021-210-036-000</a></td>
+            <td>14175 RED BANK RD</td>
+            <td class="font-mono text-emerald-400 font-bold">10.5</td>
+            <td class="text-xs text-slate-400">LATE Taxes, Medium Tax Balance ($624.94), 6 Active Liens, Ha...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐⭐⭐ ACCELERATED</td>
+            <td class="font-bold">KNIGHT, CURTIS E & ASHLEY D</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/061400030000/2025/0000" target="_blank" class="assessor-link">061-400-030-000</a></td>
+            <td>15849 PASKENTA RD</td>
+            <td class="font-mono text-emerald-400 font-bold">9.5</td>
+            <td class="text-xs text-slate-400">Medium Tax Balance ($974.39), 6 Active Liens, Has Mortgage, ...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐⭐⭐ ACCELERATED</td>
+            <td class="font-bold">MATHUES, RAYMOND R & ROBERTA</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/047230014000/2025/0000" target="_blank" class="assessor-link">047-230-014-000</a></td>
+            <td>9470 RIVER VIEW AVE</td>
+            <td class="font-mono text-emerald-400 font-bold">9.5</td>
+            <td class="text-xs text-slate-400">LATE Taxes, Medium Tax Balance ($958.84), 5 Active Liens, Ha...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐⭐⭐ ACCELERATED</td>
+            <td class="font-bold">RICE, JAMES</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/024180004000/2025/0000" target="_blank" class="assessor-link">024-180-004-000</a></td>
+            <td>12816 FORTIER RD</td>
+            <td class="font-mono text-emerald-400 font-bold">9.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, 5 Active Liens, Has Mortgage, Assignment of Rent...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐⭐⭐ ACCELERATED</td>
+            <td class="font-bold">BLANCO, JOSE LUIS GALVAN</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/006320006000/2025/0000" target="_blank" class="assessor-link">006-320-006-000</a></td>
+            <td>18261 BOWMAN RD</td>
+            <td class="font-mono text-emerald-400 font-bold">9.0</td>
+            <td class="text-xs text-slate-400">High Tax Balance ($2465.59), 5 Active Liens, Has Mortgage, A...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐⭐ ACCELERATED</td>
+            <td class="font-bold">BERG, ROBERT L</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/062520015000/2025/0000" target="_blank" class="assessor-link">062-520-015-000</a></td>
+            <td>16523 LARIAT LOOP</td>
+            <td class="font-mono text-emerald-400 font-bold">8.5</td>
+            <td class="text-xs text-slate-400">LATE Taxes, Medium Tax Balance ($637.58), 4 Active Liens, Ha...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐⭐ ACCELERATED</td>
+            <td class="font-bold">THAO, CHAO & VANGTHAO</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/062030005000/2025/0000" target="_blank" class="assessor-link">062-030-005-000</a></td>
+            <td>15670 YUBA DR</td>
+            <td class="font-mono text-emerald-400 font-bold">8.5</td>
+            <td class="text-xs text-slate-400">LATE Taxes, Medium Tax Balance ($517.7), 4 Active Liens, Has...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐⭐ ACCELERATED</td>
+            <td class="font-bold">CRAIG, NEWTON & ROBERTA & BADEN</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/043040033000/2025/0000" target="_blank" class="assessor-link">043-040-033-000</a></td>
+            <td>23760 BRAY AVE</td>
+            <td class="font-mono text-emerald-400 font-bold">8.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, High Tax Balance ($1508.52), Has Mortgage, Assig...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐⭐ ACCELERATED</td>
+            <td class="font-bold">JOACHIM, ANTHONY & DEBBIE</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/021230001000/2025/0000" target="_blank" class="assessor-link">021-230-001-000</a></td>
+            <td>SEC 27 T26N R7W</td>
+            <td class="font-mono text-emerald-400 font-bold">8.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, High Tax Balance ($1361.76), 3 Active Liens, Has...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐⭐ ACCELERATED</td>
+            <td class="font-bold">JOACHIM, ANTHONY & KLEINERT</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/021230006000/2025/0000" target="_blank" class="assessor-link">021-230-006-000</a></td>
+            <td>W1/2 SEC 36 T26N R7W</td>
+            <td class="font-mono text-emerald-400 font-bold">8.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, High Tax Balance ($2383.94), 3 Active Liens, Has...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐⭐ ACCELERATED</td>
+            <td class="font-bold">HAYNES, CHRIS M</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/062300024000/2025/0000" target="_blank" class="assessor-link">062-300-024-000</a></td>
+            <td>16058 QUARTER HORSE CT</td>
+            <td class="font-mono text-emerald-400 font-bold">7.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, 3 Active Liens, Has Mortgage, Assignment of Rent...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐⭐ ACCELERATED</td>
+            <td class="font-bold">CALDERON, JAVIER FUENTES</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/071243019000/2025/0000" target="_blank" class="assessor-link">071-243-019-000</a></td>
+            <td>1212 CENTER ST</td>
+            <td class="font-mono text-emerald-400 font-bold">7.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, 3 Active Liens, Has Mortgage, Assignment of Rent...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐⭐ ACCELERATED</td>
+            <td class="font-bold">CALDERON, JAVIER</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/061370007000/2025/0000" target="_blank" class="assessor-link">061-370-007-000</a></td>
+            <td>PCL C PM NO 218</td>
+            <td class="font-mono text-emerald-400 font-bold">7.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, 3 Active Liens, Has Mortgage, Assignment of Rent...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">MCKEAN, MICHAEL & MOLLET</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/007130068000/2025/0000" target="_blank" class="assessor-link">007-130-068-000</a></td>
+            <td>16550 BASLER RD</td>
+            <td class="font-mono text-emerald-400 font-bold">5.5</td>
+            <td class="text-xs text-slate-400">LATE Taxes, Medium Tax Balance ($913.42), 1 Active Liens, Ha...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">NOWAK, CHRISTOPHER PAUL</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/073260053000/2025/0000" target="_blank" class="assessor-link">073-260-053-000</a></td>
+            <td>23430 LOLETA AVE</td>
+            <td class="font-mono text-emerald-400 font-bold">5.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, High Tax Balance ($3382.64), Has Mortgage, Assig...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">HAND, BEVERLY JEAN</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/060090022000/2025/0000" target="_blank" class="assessor-link">060-090-022-000</a></td>
+            <td>7248 PONY PL</td>
+            <td class="font-mono text-emerald-400 font-bold">5.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, 2 Active Liens, Assignment of Rents</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">VANH ERWYN, ROBERT & KINGSLEY</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/075322003000/2025/0000" target="_blank" class="assessor-link">075-322-003-000</a></td>
+            <td>4460 MARY AVE</td>
+            <td class="font-mono text-emerald-400 font-bold">5.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, High Tax Balance ($1585.52), 2 Active Liens, Has...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">CLACK, JASON M</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/087030011000/2025/0000" target="_blank" class="assessor-link">087-030-011-000</a></td>
+            <td>21535 CHITTENDEN RD</td>
+            <td class="font-mono text-emerald-400 font-bold">5.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, High Tax Balance ($1500.32), Has Mortgage, Assig...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">HERRERA, ROBERT</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/079330003000/2025/0000" target="_blank" class="assessor-link">079-330-003-000</a></td>
+            <td>LOT 19 CORNING RANCHES</td>
+            <td class="font-mono text-emerald-400 font-bold">5.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, High Tax Balance ($2053.2), Has Mortgage, Assign...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">PERALTA, NIKAURY</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/013220002000/2025/0000" target="_blank" class="assessor-link">013-220-002-000</a></td>
+            <td>PTN SEC 30 T29N R2E</td>
+            <td class="font-mono text-emerald-400 font-bold">5.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, High Tax Balance ($2938.24), Has Mortgage, Assig...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">PERALTA, NIKAURY</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/013220005000/2025/0000" target="_blank" class="assessor-link">013-220-005-000</a></td>
+            <td>E 1/2 SE 1/4 SEC 30 T29N</td>
+            <td class="font-mono text-emerald-400 font-bold">4.5</td>
+            <td class="text-xs text-slate-400">LATE Taxes, Medium Tax Balance ($677.04), Has Mortgage, Assi...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">PRICE, JOHN JR & LEIPOLD</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/024190004000/2025/0000" target="_blank" class="assessor-link">024-190-004-000</a></td>
+            <td>20892 PEBBLESTONE DR</td>
+            <td class="font-mono text-emerald-400 font-bold">4.5</td>
+            <td class="text-xs text-slate-400">LATE Taxes, Medium Tax Balance ($534.76), Has Mortgage, Assi...</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">HARTFORD, JOHN</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/011390013000/2025/0000" target="_blank" class="assessor-link">011-390-013-000</a></td>
+            <td>22050 ALFALFA HILL RD</td>
+            <td class="font-mono text-emerald-400 font-bold">4.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, High Tax Balance ($2647.02), 2 Active Liens</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">LEIGH, HUGH HUU</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/075250043000/2025/0000" target="_blank" class="assessor-link">075-250-043-000</a></td>
+            <td>24681 DALE RD</td>
+            <td class="font-mono text-emerald-400 font-bold">4.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, High Tax Balance ($2573.0), Assignment of Rents</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">PERALTA, NIKAURY</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/013390059000/2025/0000" target="_blank" class="assessor-link">013-390-059-000</a></td>
+            <td>33407 CESSNA AVE</td>
+            <td class="font-mono text-emerald-400 font-bold">4.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, Has Mortgage, Assignment of Rents</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">POTTER, KATRINA</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/013250002000/2025/0000" target="_blank" class="assessor-link">013-250-002-000</a></td>
+            <td>PTN NE1/4 NE1/4 SEC 29</td>
+            <td class="font-mono text-emerald-400 font-bold">4.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, Has Mortgage, Assignment of Rents</td>
+        </tr>
+        <tr>
+            <td class="font-bold text-amber-400">⭐⭐ ACCELERATED</td>
+            <td class="font-bold">SPARKMAN, JACK H</td>
+            <td><a href="https://common1.mptsweb.com/MBC/tehama/tax/main/013242012000/2025/0000" target="_blank" class="assessor-link">013-242-012-000</a></td>
+            <td>33749 PONDEROSA WAY</td>
+            <td class="font-mono text-emerald-400 font-bold">4.0</td>
+            <td class="text-xs text-slate-400">LATE Taxes, Has Mortgage, Assignment of Rents</td>
+        </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="mt-8 bg-slate-800 rounded-xl shadow-2xl p-6 border border-slate-700">
+            <h2 class="text-xl font-bold text-white mb-4">How to Use</h2>
+            <p class="text-slate-300">Click any <span class="text-blue-400 underline">APN number</span> to open the <strong>Tehama County Assessor Portal</strong> for that property directly. You will see the full tax assessment, property characteristics, and owner information.</p>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('#leadTable').DataTable({
+                "order": [[ 4, "desc" ]],
+                "pageLength": 50,
+                "language": { "search": "Search Leads:" }
+            });
+        });
+    </script>
+</body>
+</html>

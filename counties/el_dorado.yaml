@@ -1,0 +1,28 @@
+display_name: El Dorado County
+collector_names:
+- EL DORADO TAX COLLECTOR
+- EL DORADO CO TAX COLLR
+- COUNTY OF EL DORADO
+assessor:
+  backend: mpts
+  endpoint: https://common1.mptsweb.com/mbap/eldorado/asr/AsrPrint
+  slug: eldorado
+  apn_includes:
+  - 1 Main
+  - 2 Main
+  - 1 Oak
+  - 2 Oak
+  - 1 Pine
+  - 1st
+  - 2nd
+  - 3rd
+  notes: Auto-onboarded by onboard_county.py. MPTS host common1.mptsweb.com slug eldorado
+  host: https://common1.mptsweb.com
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.eldorado.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

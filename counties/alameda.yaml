@@ -1,0 +1,17 @@
+display_name: Alameda County
+collector_names:
+- ALAMEDA TAX COLLECTOR
+- ALAMEDA CO TAX COLLR
+- COUNTY OF ALAMEDA
+assessor:
+  backend: arcgis
+  notes: no public assessor source discovered yet
+  endpoint: https://gis.acgov.org/arcgis/rest/services/Parcels/FeatureServer/0
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.alameda.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

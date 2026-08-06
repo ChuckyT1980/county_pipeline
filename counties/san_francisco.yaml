@@ -1,0 +1,17 @@
+display_name: San Francisco County
+collector_names:
+- SAN FRANCISCO TAX COLLECTOR
+- SAN FRANCISCO CO TAX COLLR
+- COUNTY OF SAN FRANCISCO
+assessor:
+  backend: socrata
+  notes: no public assessor source discovered yet
+  endpoint: https://data.sfgov.org/resource/pabr-t5kh.json
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.sanfrancisco.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

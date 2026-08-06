@@ -19,3 +19,16 @@ debug*.html
 debug*.png
 *.log
 stage4_enrich.log
+.playwright_session/
+
+# Generated outreach letters — fabricated/unverified as of 2026-08-05, regenerated
+# cheaply from source data, not worth 5,857 small files in git history / slow
+# WSL 9p adds. Revisit once outreach_generator.py is fixed and re-verified.
+output/outreach/
+
+# Raw content-addressable scrape cache (data/raw/<county>/<source>/<hash-prefix>/*.bin)
+# — 31,335 files as of 2026-08-05. Real scraped HTML, but a regenerable local
+# cache, not source-controlled material; excluding it is what makes git usable
+# on this 9p-mounted drive at all.
+data/raw/
+*.bin

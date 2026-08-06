@@ -48,6 +48,22 @@ COUNTY_CONFIG = {
         "mbc_slug": "shasta",
         "state": "CA",
         "fips": "06089", # Shasta FIPS
+    },
+    "lassen": {
+        "mbap_host": "https://common1.mptsweb.com",
+        "mbap_slug": "lassen",
+        "mbc_host": "https://common1.mptsweb.com",
+        "mbc_slug": "lassen",
+        "state": "CA",
+        "fips": "06109", # Lassen FIPS
+    },
+    "butte": {
+        "mbap_host": "https://common1.mptsweb.com",
+        "mbap_slug": "butte",
+        "mbc_host": "https://common2.mptsweb.com",
+        "mbc_slug": "butte",
+        "state": "CA",
+        "fips": "06007", # Butte FIPS
     }
 }
 
@@ -113,6 +129,7 @@ def fetch_asr_print(apn: str, county: str) -> dict:
         result["situs_full"]          = data.get("SitusAddr")
         result["asmt_status"]         = data.get("Asmt Status")
         result["net_assessed_value"]  = data.get("Net Assessed Value")
+        result["assessee_name"]       = data.get("Assessee Name") or data.get("Owner Name") or data.get("Owner") or data.get("Assessee")
         result["asrprint_status"]     = "OK"
         
         logging.info(f"AsrPrint OK: {apn} -> doc={result['doc_number']} type={result['property_type']}")
@@ -177,50 +194,18 @@ def fetch_mailing_address(asmt: str, roll_cat: str, county: str) -> dict:
     
     return result
 
-# ─── Regrid Free Lookup ────────────────────────────────────────
-def fetch_regrid_owner(apn: str, state_fips: str = "06103") -> dict:
-    result = {
-        "regrid_owner": None,
-        "regrid_mailing": None,
-        "regrid_status": "PENDING",
-    }
-    url = f"https://app.regrid.com/api/v1/parcel.json"
-    params = {
-        "parcelnumb": apn.zfill(12),
-        "state_fips": "06",
-        "county_fips": state_fips,
-    }
-    headers_regrid = {
-        "User-Agent": "Mozilla/5.0",
-        "Referer": "https://app.regrid.com/",
-    }
-    
-    try:
-        resp = requests.get(url, params=params, headers=headers_regrid, timeout=TIMEOUT)
-        if resp.status_code == 200:
-            data = resp.json()
-            features = data.get("results", {}).get("features", [])
-            if features:
-                props = features[0].get("properties", {}).get("fields", {})
-                result["regrid_owner"]   = props.get("owner")
-                result["regrid_mailing"] = props.get("mailadd")
-                result["regrid_status"]  = "OK"
-            else:
-                result["regrid_status"] = "NO_RESULTS"
-        else:
-            result["regrid_status"] = f"HTTP_{resp.status_code}"
-    except Exception as e:
-        result["regrid_status"] = f"ERROR: {e}"
-    
-    return result
+# ─── Regrid Removed ────────────────────────────────────────
+# Third-party APIs removed to maintain 100% self-reliant county pipeline.
 
 # ─── Main Enrichment Loop ─────────────────────────────────────────────────────
 def main(input_csv: str):
     import os
     basename = os.path.basename(input_csv).lower()
     county = "tehama"
-    if "shasta" in basename:
-        county = "shasta"
+    for candidate in ["shasta", "lassen", "butte"]:
+        if candidate in basename:
+            county = candidate
+            break
     
     logging.info(f"Starting Stage 4 Enrichment for {county.upper()} on {input_csv} | {datetime.now().isoformat()} ===")
     
@@ -228,7 +213,7 @@ def main(input_csv: str):
     logging.info(f"Loaded {len(df)} CRM leads from {input_csv}")
     
     apn_col = None
-    for candidate in ["apn", "fee_parcel", "parcel", "APN", "FEE_PARCEL"]:
+    for candidate in ["apn", "fee_parcel", "parcel", "APN", "FEE_PARCEL", "asmt"]:
         if candidate in df.columns:
             apn_col = candidate
             break
@@ -244,12 +229,12 @@ def main(input_csv: str):
     enriched_rows = []
     
     for i, row in df.iterrows():
-        apn  = str(row[apn_col]).strip().replace(".0", "")
-        if apn.lower() in ("nan", "none", ""):
-            apn = str(row.get("apn_pdf", "")).strip()
+        apn  = str(row[apn_col]).strip().replace(".0", "").zfill(12)
+        if apn.lower() in ("nan", "none", "000000000nan", "00000000none", "000000000000", ""):
+            apn = str(row.get("apn_pdf", "")).strip().zfill(12)
         
-        asmt = str(row[asmt_col]).strip().replace(".0", "") if asmt_col else apn
-        if asmt.lower() in ("nan", "none", ""):
+        asmt = str(row[asmt_col]).strip().replace(".0", "").zfill(12) if asmt_col else apn
+        if asmt.lower() in ("nan", "none", "000000000nan", "00000000none", "000000000000", ""):
             asmt = apn
         
         logging.info(f"[{i+1}/{len(df)}] Processing APN: {apn}")
@@ -261,18 +246,22 @@ def main(input_csv: str):
         bill_data = fetch_mailing_address(asmt, roll_cat, county)
         time.sleep(DELAY)
         
-        regrid_data = fetch_regrid_owner(apn)
-        time.sleep(DELAY)
+        owner_name    = asr_data.get("assessee_name") or "COUNTY_REDACTED_NAME"
+        mailing_addr  = bill_data.get("mailing_address_raw") or "UNKNOWN"
         
-        owner_name    = regrid_data.get("regrid_owner") or "SKIP_TRACE_REQUIRED"
-        mailing_addr  = (
-            regrid_data.get("regrid_mailing")
-            or bill_data.get("mailing_address_raw")
-            or "UNKNOWN"
-        )
+        # Detect out-of-state owner from mailing address
+        out_of_state = False
+        mailing_raw = bill_data.get("mailing_address_raw") or ""
+        # Mailing address format: "NAME | STREET | CITY | ST ZIPCODE"
+        # Check if state abbreviation in the address is not CA
+        state_match = re.search(r'\|\s*([A-Z]{2})\s+\d{5}', mailing_raw)
+        if state_match and state_match.group(1) != "CA":
+            out_of_state = True
         
         enriched_row = {
             **row.to_dict(),
+            "out_of_state": out_of_state,
+            "ownership_status": "out_of_state" if out_of_state else row.get("ownership_status", "Current"),
             "rec_doc_number":     asr_data.get("doc_number"),
             "rec_doc_date":       asr_data.get("doc_date"),
             "property_type":      asr_data.get("property_type"),
@@ -286,14 +275,9 @@ def main(input_csv: str):
             "address_fetch_time": datetime.now().isoformat(),
             "owner_name":         owner_name,
             "mailing_address":    mailing_addr,
-            "owner_source":       (
-                "REGRID" if regrid_data.get("regrid_owner")
-                else "TAXBILL" if bill_data.get("mailing_address_raw")
-                else "NONE"
-            ),
+            "owner_source":       "TAXBILL" if bill_data.get("mailing_address_raw") else "NONE",
             "asrprint_status":    asr_data.get("asrprint_status"),
             "taxbill_status":     bill_data.get("taxbill_status"),
-            "regrid_status":      regrid_data.get("regrid_status"),
         }
         enriched_rows.append(enriched_row)
         

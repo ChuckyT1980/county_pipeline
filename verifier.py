@@ -172,7 +172,21 @@ def _parse_taxes_tab(soup: BeautifulSoup, result: dict):
 # ASSESSMENT TAB PARSER
 # ─────────────────────────────────────────────
 def _parse_assessment_tab(parcel_clean: str, result: dict):
-    pass  
+    """Fetch and parse the assessment info tab for document number, deed info."""
+    try:
+        cfg = get_county_config(result.get("county", "tehama"))
+        host = cfg["host"]
+        slug = cfg["slug"]
+        url = f"https://{host}/MBC/{slug}/tax/assessinfo/{parcel_clean}/2025/0000"
+        resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+        if resp.status_code == 200:
+            soup = BeautifulSoup(resp.text, "html.parser")
+            text = soup.get_text(" ", strip=True)
+            result["document_number"] = _extract_field(text, "Document Number")
+            result["roll_category"]   = _extract_field(text, "Roll Category")
+            result["situs_address"]   = _extract_field(text, "Address")
+    except Exception:
+        pass  # non-fatal — falls back to full-page scrape
 
 def _extract_assessment_from_soup(soup: BeautifulSoup, result: dict):
     """Pull document number, roll category, address from assessment tab."""

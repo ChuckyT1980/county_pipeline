@@ -1,0 +1,454 @@
+{
+  "tally": {
+    "ASSESSOR_HIT_RECORDER_SINGLE_DEED": 0,
+    "ASSESSOR_HIT_RECORDER_MULTIPLE_DEEDS": 0,
+    "ASSESSOR_HIT_RECORDER_NO_DEED": 24,
+    "ASSESSOR_HIT_NO_DOC_NUMBER": 6,
+    "ASSESSOR_MISSING": 0,
+    "ASSESSOR_ERROR": 0
+  },
+  "results": [
+    {
+      "apn": "007-360-005-000",
+      "category": "no_situs_land",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2026R006400",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_situs_address",
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "007-290-055-000",
+      "category": "no_situs_land",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2023R001644",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_situs_address",
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "009-070-048-000",
+      "category": "no_situs_land",
+      "resolution": "ASSESSOR_HIT_NO_DOC_NUMBER",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_situs_address",
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "009-170-022-000",
+      "category": "no_situs_land",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2008R0000008",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_situs_address",
+        "missing_property_type",
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "013-242-009-000",
+      "category": "no_situs_land",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2015R015215",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_assessed_value",
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "019-200-013-000",
+      "category": "no_situs_land",
+      "resolution": "ASSESSOR_HIT_NO_DOC_NUMBER",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_situs_address",
+        "missing_assessed_value",
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "027-040-035-000",
+      "category": "no_situs_land",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2016R013950",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_situs_address",
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "037-250-027-000",
+      "category": "no_situs_land",
+      "resolution": "ASSESSOR_HIT_NO_DOC_NUMBER",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_situs_address",
+        "missing_assessed_value",
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "051-100-003-000",
+      "category": "no_situs_land",
+      "resolution": "ASSESSOR_HIT_NO_DOC_NUMBER",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_situs_address",
+        "missing_assessed_value",
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "057-230-015-000",
+      "category": "no_situs_land",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2019R002575",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_situs_address",
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "061-400-074-000",
+      "category": "no_situs_land",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2013R0015208",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_situs_address",
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "071-115-007-000",
+      "category": "no_situs_land",
+      "resolution": "ASSESSOR_HIT_NO_DOC_NUMBER",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_situs_address",
+        "missing_assessed_value",
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "081-030-007-000",
+      "category": "no_situs_land",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2025R007784",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_situs_address",
+        "missing_property_type",
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "087-100-045-000",
+      "category": "no_situs_land",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2024R003159",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_situs_address",
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "075-080-059-000",
+      "category": "no_situs_land",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2021R016645",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_situs_address",
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "007-490-016-000",
+      "category": "improved_situs",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2026R006490",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "007-170-073-000",
+      "category": "improved_situs",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2024R007135",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "011-150-011-000",
+      "category": "improved_situs",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2002R2198204",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_property_type",
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "024-220-018-000",
+      "category": "improved_situs",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2025R011730",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "029-173-003-000",
+      "category": "improved_situs",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2016R008341",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "031-192-011-000",
+      "category": "improved_situs",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2024R005109",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "035-480-019-000",
+      "category": "improved_situs",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2017R014640",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "041-200-030-000",
+      "category": "improved_situs",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2022010748",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "060-050-004-000",
+      "category": "improved_situs",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2005R2816305",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "062-370-021-000",
+      "category": "improved_situs",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2015R0001764",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "066-211-001-000",
+      "category": "improved_situs",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2012R0006331",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "071-231-014-000",
+      "category": "improved_situs",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2014R0001149",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "078-020-002-000",
+      "category": "improved_situs",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2011R0004484",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "091-040-058-000",
+      "category": "improved_situs",
+      "resolution": "ASSESSOR_HIT_RECORDER_NO_DEED",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "2003R2290503",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_assessee_name"
+      ]
+    },
+    {
+      "apn": "102-020-004-000",
+      "category": "improved_situs",
+      "resolution": "ASSESSOR_HIT_NO_DOC_NUMBER",
+      "owner_name": "NO_ASSESSEE",
+      "doc_number": "",
+      "deed_count": 0,
+      "grantor": "",
+      "grantee": "",
+      "event_type": "",
+      "data_gaps": [
+        "missing_assessee_name"
+      ]
+    }
+  ]
+}

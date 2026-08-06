@@ -158,7 +158,7 @@ def run():
         seeds = ["035-252"] # fallback
 
     # Run for the first few seeds to test the depth explosion
-    for seed in seeds[:3]:
+    for seed in seeds:
         expand(seed)
 
     print("[DONE]")

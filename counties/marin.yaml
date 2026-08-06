@@ -1,0 +1,24 @@
+display_name: Marin County
+collector_names:
+- MARIN TAX COLLECTOR
+- MARIN CO TAX COLLR
+- COUNTY OF MARIN
+assessor:
+  backend: mpts
+  notes: no public assessor source discovered yet
+  host: https://common1.mptsweb.com
+  endpoint: https://common1.mptsweb.com/mbap/marin/asr
+recorder:
+  backend: tyler
+  base_url: https://marincountyca-web.tylerhost.net
+  name_search_id: DOCSEARCH184S2
+  doc_search_id: DOCSEARCH184S2
+  apn_search_id: DOCSEARCH201S9
+  typedate_search_id: DOCSEARCH201S11
+  ajax_headers_required: true
+  notes: discovered automatically
+  endpoint: https://marincountyca-web.tylerhost.net
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

@@ -1,0 +1,18 @@
+display_name: Sutter County
+collector_names:
+- SUTTER TAX COLLECTOR
+- SUTTER CO TAX COLLR
+- COUNTY OF SUTTER
+assessor:
+  backend: mpts
+  notes: no public assessor source discovered yet
+  host: https://common1.mptsweb.com
+  endpoint: https://common1.mptsweb.com/mbap/sutter/asr/AsrPrint
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.sutter.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

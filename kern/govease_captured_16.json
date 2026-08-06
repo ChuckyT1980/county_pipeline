@@ -1,0 +1,25 @@
+{
+  "document_version_id": 67316718,
+  "template_version_id": 7340,
+  "display_style": "banner",
+  "ccpa_do_not_sell": false,
+  "gpc_enabled": false,
+  "tc_string": null,
+  "ac_string": null,
+  "id": "956b2efd-e25a-4770-9831-803635a7e0e6",
+  "create_time": "2026-07-30T04:57:07.937611+00:00",
+  "is_consent_granted_selections": {
+    "performance": true,
+    "analytics": true,
+    "advertising": true,
+    "social_networking": true,
+    "unclassified": true,
+    "essential": true
+  },
+  "visitor": {
+    "id": "915f6012-6f7a-445c-b960-de9018f710bd",
+    "ip": "2600:6c52:0900:1fc9:X:X:X:X",
+    "country": "US",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
+  }
+}

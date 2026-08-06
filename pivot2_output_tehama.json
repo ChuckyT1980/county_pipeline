@@ -1,0 +1,314 @@
+[
+  {
+    "event_id": "2018007697_0",
+    "doc_type": "DEED",
+    "doc_number": "2018007697",
+    "grantor": "BARBEE ELDO I TRUSTEE",
+    "grantee": "HEYREND MANFRED",
+    "source": "recorder_pivot1"
+  },
+  {
+    "event_id": "2025011738_1",
+    "doc_type": "EASEMENT DEED",
+    "doc_number": "2025011738",
+    "grantor": "HEYREND MANFRED",
+    "grantee": "PACIFIC GAS & ELECTRIC COMPANY",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2021009121_2",
+    "doc_type": "ASSIGNMENT DEED OF TRUST",
+    "doc_number": "2021009121",
+    "grantor": "HEYREND MANFRED TRUSTEE",
+    "grantee": "FIRST NATIONAL BANK OF AMERICA",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2018006974_4",
+    "doc_type": "ASSIGNMENT OF RENTS",
+    "doc_number": "2018006974",
+    "grantor": "KASSEL JORDAN F",
+    "grantee": "HEYREND MANFRED TRUSTEE",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2018006974_5",
+    "doc_type": "DEED OF TRUST",
+    "doc_number": "2018006974",
+    "grantor": "KASSEL JORDAN F",
+    "grantee": "HEYREND MANFRED TRUSTEE",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2018006973_6",
+    "doc_type": "DEED",
+    "doc_number": "2018006973",
+    "grantor": "HEYREND MANFRED TRUSTEE",
+    "grantee": "KASSEL JORDAN F",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2018006972_7",
+    "doc_type": "AFFIDAVIT OF SUCCESSOR TRUSTEE",
+    "doc_number": "2018006972",
+    "grantor": "HEYREND FAMILY REVOCABLE TRUST",
+    "grantee": "HEYREND MANFRED TRUSTEE",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2018006972_8",
+    "doc_type": "AFFIDAVIT OF SUCCESSOR TRUSTEE",
+    "doc_number": "2018006972",
+    "grantor": "HEYREND CONNIE TRUSTEE",
+    "grantee": "HEYREND MANFRED TRUSTEE",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2018005600_9",
+    "doc_type": "CANCELLATION NOTICE OF VIOLATION",
+    "doc_number": "2018005600",
+    "grantor": "TEHAMA COUNTY BUILDING & SAFETY",
+    "grantee": "HEYREND MANFRED TR",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2015003045_10",
+    "doc_type": "DEED",
+    "doc_number": "2015003045",
+    "grantor": "CLEGHORN BRIAN CLOYD TRUSTEE",
+    "grantee": "HEYREND MANFRED",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2015001353_11",
+    "doc_type": "RECONVEYANCE",
+    "doc_number": "2015001353",
+    "grantor": "ALL PERSONS",
+    "grantee": "HEYREND MANFRED TRUSTEE",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2015001353_12",
+    "doc_type": "SUBSTITUTION OF TRUSTEE",
+    "doc_number": "2015001353",
+    "grantor": "HEYREND MANFRED TRUSTEE",
+    "grantee": "RABOBANK N A",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2014014466_13",
+    "doc_type": "SUBSTITUTION OF TRUSTEE",
+    "doc_number": "2014014466",
+    "grantor": "HEYREND MANFRED TRUSTEE",
+    "grantee": "RABOBANK N A",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2014014466_14",
+    "doc_type": "RECONVEYANCE",
+    "doc_number": "2014014466",
+    "grantor": "ALL PERSONS",
+    "grantee": "HEYREND MANFRED TRUSTEE",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2014013680_15",
+    "doc_type": "DEED",
+    "doc_number": "2014013680",
+    "grantor": "HEYREND MANFRED TRUSTEE",
+    "grantee": "RODRIGUEZ SHARON LYNN TRUSTEE",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2014013679_16",
+    "doc_type": "AFFIDAVIT OF SUCCESSOR TRUSTEE",
+    "doc_number": "2014013679",
+    "grantor": "HEYREND CONNIE TRUSTEE",
+    "grantee": "HEYREND MANFRED TRUSTEE",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2014013679_17",
+    "doc_type": "AFFIDAVIT OF SUCCESSOR TRUSTEE",
+    "doc_number": "2014013679",
+    "grantor": "HEYREND CONNIE TRUSTEE",
+    "grantee": "HEYREND MANFRED TRUSTEE",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2014012228_18",
+    "doc_type": "NOTICE OF VIOLATION",
+    "doc_number": "2014012228",
+    "grantor": "HEYREND MANFRED TR",
+    "grantee": "TEHAMA COUNTY BUILDING & SAFETY",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2012011234_19",
+    "doc_type": "MODIFIED DEED OF TRUST",
+    "doc_number": "2012011234",
+    "grantor": "HEYREND MANFRED TRUSTEE",
+    "grantee": "RABOBANK N A",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2012011233_20",
+    "doc_type": "DEED",
+    "doc_number": "2012011233",
+    "grantor": "HEYREND MANFRED TRUSTEE",
+    "grantee": "HEYREND MANFRED TRUSTEE",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2011003617_21",
+    "doc_type": "DEED OF TRUST",
+    "doc_number": "2011003617",
+    "grantor": "HEYREND MANFRED TRUSTEE",
+    "grantee": "RABOBANK N A",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2011003616_22",
+    "doc_type": "DEED",
+    "doc_number": "2011003616",
+    "grantor": "HEYREND MANFRED TRUSTEE",
+    "grantee": "HEYREND MANFRED TRUSTEE",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2011003615_23",
+    "doc_type": "DEED",
+    "doc_number": "2011003615",
+    "grantor": "HEYREND CONNIE E",
+    "grantee": "HEYREND MANFRED TRUSTEE",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2011003012_24",
+    "doc_type": "WITHDRAWAL NOTICE OF ACTION",
+    "doc_number": "2011003012",
+    "grantor": "BURT KATHERINE M",
+    "grantee": "HEYREND MANFRED TRUSTEE",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2011002669_25",
+    "doc_type": "WITHDRAWAL NOTICE OF ACTION",
+    "doc_number": "2011002669",
+    "grantor": "BURT MARY L ESTATE",
+    "grantee": "HEYREND MANFRED TRUSTEE",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2011000598_26",
+    "doc_type": "ORDER",
+    "doc_number": "2011000598",
+    "grantor": "BURT KATHERINE",
+    "grantee": "HEYREND MANFRED TRUSTEE",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2007004070_27",
+    "doc_type": "DEED",
+    "doc_number": "2007004070",
+    "grantor": "HEYREND CONNIE",
+    "grantee": "HEYREND MANFRED TR",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2007004069_28",
+    "doc_type": "DEED",
+    "doc_number": "2007004069",
+    "grantor": "HEYREND MANFRED R",
+    "grantee": "HEYREND MANFRED TR",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "2007004068_29",
+    "doc_type": "CERTIFICATE OF TRUST",
+    "doc_number": "2007004068",
+    "grantor": "HEYREND MANFRED",
+    "grantee": "ALL PERSONS",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "017169_30",
+    "doc_type": "CONSENT",
+    "doc_number": "017169",
+    "grantor": "NORTHERN CALIFORNIA FEDERAL L",
+    "grantee": "HEYREND MANFRED R",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "017168_31",
+    "doc_type": "DEED",
+    "doc_number": "017168",
+    "grantor": "KELLY CARMALIA",
+    "grantee": "HEYREND MANFRED R",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "13780_32",
+    "doc_type": "DEED",
+    "doc_number": "13780",
+    "grantor": "HEYREND MANFRED",
+    "grantee": "NINA V KELLY",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "13779_33",
+    "doc_type": "DEED",
+    "doc_number": "13779",
+    "grantor": "CALIFORNIA STATE OF DEPARTMENT OF VETERANS AFFAIRS",
+    "grantee": "HEYREND MANFRED",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "010685_34",
+    "doc_type": "ASSIGNMENT OF RENTS",
+    "doc_number": "010685",
+    "grantor": "HEYREND MANFRED R",
+    "grantee": "KELLY INEZ",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "010685_35",
+    "doc_type": "DEED OF TRUST",
+    "doc_number": "010685",
+    "grantor": "HEYREND MANFRED R",
+    "grantee": "KELLY INEZ",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "010684_36",
+    "doc_type": "DEED",
+    "doc_number": "010684",
+    "grantor": "WHITLOCK RICHARD",
+    "grantee": "HEYREND MANFRED R",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "010525_37",
+    "doc_type": "DEED OF TRUST",
+    "doc_number": "010525",
+    "grantor": "FLETCHER JEFFERY D",
+    "grantee": "HEYREND MANFRED R",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "010523_38",
+    "doc_type": "DEED",
+    "doc_number": "010523",
+    "grantor": "HEYREND MANFRED R",
+    "grantee": "FLETCHER JEFFERY D",
+    "source": "recorder_pivot2"
+  },
+  {
+    "event_id": "000129_39",
+    "doc_type": "RECONVEYANCE",
+    "doc_number": "000129",
+    "grantor": "BK 1671 O R PG 195",
+    "grantee": "HEYREND MANFRED R",
+    "source": "recorder_pivot2"
+  }
+]

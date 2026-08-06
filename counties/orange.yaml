@@ -1,0 +1,17 @@
+display_name: Orange County
+collector_names:
+- ORANGE TAX COLLECTOR
+- ORANGE CO TAX COLLR
+- COUNTY OF ORANGE
+assessor:
+  backend: arcgis
+  notes: no public assessor source discovered yet
+  endpoint: https://gis.ocgov.com/arcgis/rest/services/Parcels/FeatureServer/0
+recorder:
+  backend: county_portal
+  notes: no Tyler portal discovered
+  endpoint: https://recorder.orange.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

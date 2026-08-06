@@ -1,0 +1,578 @@
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<script async type="text/javascript"> var id = '';
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<!-- Google Analytics -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+
+
+	<title>Self-Service</title>
+
+
+
+	<link rel="apple-touch-icon" href="/web/resources/img/county-logo.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/css/themes/self-service-jquery-mobile.css?v=2026.1.5"/>
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/css/themes/jquery.mobile.icons-1.4.5.css"/>
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/jquery.mobile.structure-1.4.5.css"/>
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/jtsage-datebox-4.1.0.css"/>
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/css/materialdesignicons.css?v=2026.1.5"/>
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/css/context-menu-min.css"/>
+
+	<link rel="stylesheet" media="all" type="text/css" href="/web/controller/self.service.2026-1-5.css"/>
+	<link rel="stylesheet" media="all" type="text/css" href="/web/controller/self.service.responsive.2026-1-5.css"/>
+	<link rel="stylesheet" media="all" type="text/css" href="/web/controller/progress/circularG.2026-1-5.css"/>
+	<link rel="stylesheet" media="all" type="text/css" href="/web/controller/progress/tylerProgress.2026-1-5.css"/>
+
+	
+	<link rel="stylesheet" href="/web/controller/customColors.css?v=2026.1.5"/>
+	<link rel="stylesheet" href="/web/controller/customColors.responsive.css?v=2026.1.5"/>
+	<link rel="stylesheet" href="/web/controller/facetColors.css?v=2026.1.5"/>
+	<link rel="stylesheet" href="/web/controller/customColorsLoaders.css?v=2026.1.5"/>
+	<link rel="stylesheet" href="/web/resources/printjs/print.min.css?v=2026.1.5"/>
+	<script src="/web/resources/modernizr.custom.03363.js"></script>
+	<script src="/web/resources/jquery-1.11.0.js"></script>
+	<script src="/web/resources/js/moment.min.js"></script>
+	<script src='/web/controller/js/underscore.2026-1-5.js'></script>
+	<script src='/web/controller/js/snap.svg.2026-1-5.js'></script>
+	<script src='/web/controller/js/self.service.2026-1-5.js'></script>
+	<script src="/web/controllerjs/validator.2026-1-5.js"></script>
+	<script src="/web/controllerjs/util.2026-1-5.js"></script>
+	<script src="/web/resources/shoppingCart.js?v=2026.1.5"></script>
+	<script src="/web/resources/printjs/print.min.js">	</script>
+	<script src="/web/resources/js/context-menu-min.js"></script>
+
+	<script>
+	$(document).bind( 'mobileinit', function(){
+		$.mobile.loader.prototype.options.html = 	'<div class="cssload-container">\n' +
+			'			<ul class="cssload-loader">\n' +
+			'				<li></li><li></li><li></li><li></li><li></li><li></li>\n' +
+			'			</ul>\n' +
+			'		</div>\n' +
+			'		<div class="modal-overlay"></div>';
+	});
+	</script>
+<!--         When we upgrade to jqm 1.5 remove the jquery tabs override script -->
+	<script src="/web/resources/jquery.mobile-1.4.5.js"></script>
+<!-- 	The following script is to fix a bug with jquery mobile and should be removed when we upgrade to jquerymobile 1.5 -->
+	<script src="/web/resources/js/jqueryTabsOverride.js"></script>
+
+	
+	<script src="/web/controller/messageStrings.js?v=2026.1.5"></script>
+
+	<script src="/web/resources/jquery.mousewheel.js?v=2026.1.5"></script>
+	<script src="/web/resources/jtsage-datebox-4.1.0.js"></script>
+	<!-- Accessibility extension for DateBox (must load after vendor) -->
+	<script src="/web/resources/js/overrides/datebox.a11y.extend.js?v=2026.1.5"></script>
+	<!-- Global A11y: announce important messages for SR users -->
+	<script src="/web/resources/js/messageAnnouncement.js?v=2026.1.5"></script>
+</head>
+<body>
+	<div class="ss-page ui-alt-icon ui-nodisc-icon" data-role="page" id="SelfService-1785519877239-page" data-dom-cache="false">
+		<script>
+		var selectedLanguage = 'en';
+		</script>
+		<!-- HEADER	-->
+		<div id="ss-header-box" class="ss-header" data-role="header" data-position="fixed" data-tap-toggle="false">
+			<div class="ss-header-stripe-top"></div>
+			<div class="ss-content">
+				
+				
+				<div class="ss-header-title">
+					<div class="ss-header-internal">
+						<h1><p>
+Fresno County Recorder
+
+</p></h1>
+						
+
+						</div>
+				</div>
+				
+
+				<div class="ss-header-actions">
+					
+
+
+
+
+
+	
+	
+		
+			<a href="#SelfService-1785519877239-cartPanel" class="ss-header-actions-cart">
+				<span class="ss-header-labels" id="ss-cart-count-label">
+				
+					
+					&nbsp;
+				
+				</span>
+				<span class="ss-header-labels" id="ss-cart-label">cart</span>
+			</a>
+		
+		
+	
+
+	
+	<a href="/web/" class="ss-header-actions-home">
+		<span class="ss-header-labels" id="ss-general-label">Home</span>
+	</a>
+
+
+
+
+	<a href="#SelfService-1785519877239-languagePanel" class="ss-header-actions-language">
+		<span class="ss-header-labels" id="ss-general-label">Language</span>
+	</a>
+
+
+
+	
+	
+	<a href="#SelfService-1785519877239-loginPanel" class="ss-header-actions-user">
+		<span class="ss-header-labels" id="ss-general-label">
+		
+			
+				Log in
+			
+			
+		
+		</span>
+	</a>
+	
+
+					<div class="ss-clear"></div>
+				</div>
+				<div class="ss-clear"></div>
+			</div>
+			<div class="ss-header-stripe-bottom">
+				<div class="ss-content">
+					<div id="ss-user-welcome" class="ss-footer-internal-small">
+						
+							
+							
+							
+							
+								Please log in
+							
+						
+						<span id="subscriptionTimer" class="ss-footer-internal-small-left-align"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- BODY -->
+		<div data-role="content">
+			<div class="ss-content">
+				
+
+<html>
+<head>
+	<title>Error</title>
+</head>
+<body>
+<div class="error-box">
+	<div class="error-description" title="Internal Service Error">
+		<span class="error-code">Error 500</span>
+	</div>
+	<div class="error-message">Oops, something went wrong :(</div>
+</div>
+</body>
+</html>
+			</div>
+		</div>
+
+		<!-- POPUPS	-->
+		
+
+
+
+
+
+
+
+	
+
+
+
+
+
+<div data-role="popup" id="SelfService-1785519877239-passwordChange-popup" class="ss-password-change-popup ui-content" data-history="false" data-position-to="window" data-transition="slide" role="dialog" aria-modal="true">
+	<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right" aria-label="Close dialog">Close</a>
+	<div id="SelfService-1785519877239-passwordChangeInternal" class="ss-password-change-popup-internal"></div>
+</div>
+
+<script>
+
+var passwordChangeUrl = "/web/user/passwordChange";
+$("#SelfService-1785519877239-passwordChange-popup").on("popupbeforeposition", function() {
+	$("#SelfService-1785519877239-passwordChangeInternal").load(passwordChangeUrl, function() {
+		$("#SelfService-1785519877239-passwordChangeInternal").trigger("create");
+		$("#SelfService-1785519877239-passwordChange-popup").trigger("updatelayout");
+		$.mobile.activePage.trigger("pagecreate");
+		
+		// A11y: Set aria-labelledby after content is loaded (to avoid broken ARIA reference)
+		if ($('#password-change-dialog-title').length) {
+			$("#SelfService-1785519877239-passwordChange-popup").attr('aria-labelledby', 'password-change-dialog-title');
+		}
+	});
+	// Force container centering on first open as jQM measures before dynamic content settles
+	try {
+		var $c = $("#SelfService-1785519877239-passwordChange-popup").closest(".ui-popup-container");
+		$c.css({ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%,-50%)" });
+	} catch(ign) {}
+});
+
+$("#SelfService-1785519877239-passwordChange-popup").on("popupafteropen", function() {	
+	$("#SelfService-1785519877239-passwordChange-popup").popup("reposition", "positionTo: window");
+	// Re-assert centering after jQM positions
+	try {
+		var $c = $("#SelfService-1785519877239-passwordChange-popup").closest(".ui-popup-container");
+		$c.css({ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%,-50%)" });
+	} catch(ign) {}
+});
+
+$("#SelfService-1785519877239-passwordChange-popup").on("popupafterclose", function() {
+	$("#field_OldPassword").val("");
+	$("#field_NewPassword").val("");
+	$("#field_ConfirmPassword").val("");
+});	
+
+// A11y hooks: announce info text and validation errors without changing UI
+(function(){
+  if (window.__ssChangePwdA11yBound) return; 
+  window.__ssChangePwdA11yBound = true;
+  function norm(txt){ return (txt||'').replace(/\s+/g,' ').trim(); }
+  function polite(t){ if (window.SSAnnounce && t) window.SSAnnounce.polite(t); }
+  function assertive(t){ if (window.SSAnnounce && t) window.SSAnnounce.assertive(t); }
+
+  // Password info button handler - simplified to let passwordChange.body.jsp handle focus
+  // This just ensures proper ARIA attributes are set after messages render
+  $(document).on('click keydown', '.ss-password-change-popup .wip, .ss-password-change-popup .password-info', function(e){
+    var k = e.which || e.keyCode;
+    if (e.type === 'keydown' && k !== 13 && k !== 32) return;
+    // Let the event bubble to the handler in passwordChange.body.jsp
+    // Just ensure the message region gets proper ARIA attributes after render
+    setTimeout(function(){
+      var $vis = $('.ss-passwordValidation-messages:visible');
+      if ($vis.length && $vis.html().trim()) {
+        // Ensure ARIA attributes are set (handler in body.jsp should do this, this is backup)
+        if (!$vis.attr('role')) {
+          $vis.attr({
+            'role': 'region',
+            'aria-label': 'Password requirements',
+            'aria-live': 'polite',
+            'tabindex': '-1'
+          });
+        }
+      }
+    }, 120);
+  });
+
+  // Error announcements are now handled by announcePasswordError() in passwordChange.body.jsp
+  // MutationObserver and multiple tryAnnounce calls removed to prevent CPU spikes
+})();
+</script>
+
+		
+		
+
+
+
+
+
+
+<div id="SelfService-1785519877239-session-popup" class="ss-panel-login" data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true">
+	<button class="close-btn" data-rel="close" aria-label="Close session panel" title="Close session panel" style="float:right !important;width:auto !important;margin-right:15px !important;"><span aria-hidden="true" >?</span></button>
+		<div data-role="header" style="background-color: #06c; line-height: 1.3; margin: 70px 0 0 0 !important;">
+		<h1 style="font-size: 1.3em; padding: 1em 1.5em; color: white; font-weight: normal; text-overflow: inherit; overflow: visible; margin:0 !important; text-align:center !important;">
+		Session about to time out
+		</h1>
+		</div>
+	<div style="padding: 10px; background-color: white;">
+		<h2>Do you need more time? <span id="remainingTime"></span></h2>
+		<button id="SelfService-1785519877239-session-continue" type="button" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">
+		Yes - Continue
+		</button>
+		<button id="SelfService-1785519877239-session-logout" type="button" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-delete">
+		No - Start Over
+		</button>
+	</div>
+</div>
+
+<script>
+
+selfservice.countdown.continueButton = $('#SelfService-1785519877239-session-continue');
+selfservice.countdown.element = $('#remainingTime');
+selfservice.countdown.logoutButton = $('#SelfService-1785519877239-session-logout');
+selfservice.pages.check = '/web/session/checkSession';
+selfservice.pages.home = '/web/';
+selfservice.pages.logout = '/web/user/logout';
+selfservice.pages.ping = '/web/session/pingSession';
+selfservice.session.logoutError = 'An error occurred while logging you out. Please try again';
+selfservice.session.timeoutElement = $('#SelfService-1785519877239-session-popup');
+
+
+selfservice.countdown.continueButton.on('click', function (event) {
+	selfservice.countdown.continueButton.prop('disabled', true);
+	selfservice.countdown.logoutButton.prop('disabled', true);
+
+	selfservice.session.continueSession();
+
+	selfservice.countdown.continueButton.prop('disabled', false);
+	selfservice.countdown.logoutButton.prop('disabled', false);
+
+	selfservice.session.timeoutElement.popup('close');
+});
+
+selfservice.countdown.logoutButton.on('click', function (event) {
+	
+	selfservice.countdown.logoutButton.prop('disabled', true);
+	selfservice.countdown.logoutButton.html('Logging out...');
+	selfservice.countdown.continueButton.prop('disabled', true);
+
+	selfservice.session.logout();
+
+	selfservice.countdown.continueButton.prop('disabled', false);
+	selfservice.countdown.logoutButton.html('No - Start Over');
+	selfservice.countdown.logoutButton.prop('disabled', false);
+});
+
+selfservice.session.timeoutElement.on('popupafterclose', function (event) {
+	
+	selfservice.countdown.endCount();
+});
+</script>
+
+
+		<!-- PANELS	-->
+		
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<div id="SelfService-1785519877239-cartPanel" class="ss-panel-cart" data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true">
+	<div id="SelfService-1785519877239-cartPanelInternal" class="ss-panel-cart-internal" style="height:100%;"></div>
+</div>
+<script>
+
+
+// Calculate available height for cart panel accounting for fixed header and footer
+function calculateCartPanelHeight() {
+	var windowHeight = $(window).height();
+	var headerHeight = $('#ss-header-box').outerHeight() || 0;
+	var footerHeight = $('#ss-footer-box').outerHeight() || 0;
+	// Subtract header, footer, and some padding (20px) for proper fit
+	return windowHeight - headerHeight - footerHeight - 20;
+}
+
+$("#SelfService-1785519877239-cartPanel").on("panelcreate", function() {
+	$("#SelfService-1785519877239-cartPanelInternal").data("cartUrl", "/web/cart/embedded?includeButtons=true&request=" + new Date().getTime());
+	$("#SelfService-1785519877239-cartPanelInternal").css("max-height", calculateCartPanelHeight());
+	reloadShoppingCart($("#SelfService-1785519877239-cartPanelInternal"));
+});
+	
+$("#SelfService-1785519877239-cartPanel").on("panelbeforeopen", function() {
+	$("#SelfService-1785519877239-cartPanelInternal").data("cartUrl", "/web/cart/embedded?includeButtons=true&request=" + new Date().getTime());
+	// Recalculate height each time panel opens to account for any layout changes
+	$("#SelfService-1785519877239-cartPanelInternal").css("max-height", calculateCartPanelHeight());
+	reloadShoppingCart($("#SelfService-1785519877239-cartPanelInternal"));
+});
+	
+$("#SelfService-1785519877239-cartPanel").on("panelopen", function() {	
+    var proceed = document.getElementById('shoppingCartProceedToCheckoutButton');
+    if (proceed) {
+        proceed.setAttribute('role','button');
+        if (!proceed.getAttribute('aria-label')) proceed.setAttribute('aria-label','Proceed to Checkout');
+        proceed.focus();
+    }
+});	
+</script>
+  <br/>
+
+  
+
+
+
+
+
+
+<div id="SelfService-1785519877239-loginPanel" class="ss-panel-login" data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true">
+	<button class="close-btn" data-rel="close" aria-label="Close login panel" style="float:right !important;width:auto !important;margin-right:15px !important;"><span aria-hidden="true" >?</span></button>
+	<div id="SelfService-1785519877239-loginPanelInternal" class="ss-panel-login-internal"></div>
+</div>
+
+<script>
+
+var loginUrl = "/web/user/login";
+$("#SelfService-1785519877239-loginPanel").on("panelbeforeopen", function() {
+	$("#SelfService-1785519877239-loginPanelInternal").load(loginUrl + "?request=" + new Date().getTime(), function() {
+		$("#SelfService-1785519877239-loginPanelInternal").trigger("create");
+		$("#SelfService-1785519877239-loginPanel").trigger("updatelayout");
+		$.mobile.activePage.trigger("pagecreate");
+		$("#field_ForceLogoff").parent().hide();
+	});
+}).on("panelopen", function() {
+	$("#field_UserId").focus();
+});
+</script>
+
+  <br/>
+
+  
+
+
+
+
+
+
+<div id="SelfService-1785519877239-languagePanel" class="ss-panel-language" data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true">
+	<button class="close-btn" data-rel="close" aria-label="Close language panel" type="button" style="float:right !important;width:auto !important;margin-right:5px !important;">
+  <span aria-hidden="true">?</span>
+</button>
+	<div id="SelfService-1785519877239-languagePanelInternal" class="ss-panel-language-internal"></div>
+</div>
+
+<script>
+
+var languageUrl = "/web/user/language";
+$("#SelfService-1785519877239-languagePanel").on("panelbeforeopen", function() {
+	$("#SelfService-1785519877239-languagePanelInternal").load(languageUrl + "?request=" + new Date().getTime(), function() {
+		$("#SelfService-1785519877239-languagePanelInternal").trigger("create");
+		$("#SelfService-1785519877239-languagePanel").trigger("updatelayout");
+		$.mobile.activePage.trigger("pagecreate");
+	});
+}).on("panelopen", function() {
+	$("#language-en").focus();
+});
+
+
+</script>
+
+  <br/>
+
+
+		<script>
+		
+		jQuery.cachedScript = function( url, options ) {
+			
+			options = $.extend( options || {}, {
+				dataType: 'script',
+				cache: true,
+				url: url
+			});
+
+			
+			return jQuery.ajax( options );
+		};
+
+		$('#SelfService-1785519877239-page').on('pageinit', function() {
+			
+			selfservice.countdown.timer();
+		});
+
+		$(document.body).on("blur", 'input[data-role="datebox"]', function(event){
+			selfservice.parseDate(event.target);
+		});
+		</script>
+
+		<!-- FOOTER -->
+		<div id="ss-footer-box" class="ss-footer" data-role="footer" data-position="fixed" data-tap-toggle="false">
+			
+<div class="ss-footer-stripe"></div>
+			<div class="ss-content">
+				<div class="ss-footer-internal-small">
+					&copy;&nbsp;Copyright 2014-2026 Tyler Technologies&nbsp;|&nbsp;Version 2026.1.5
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	
+	function initializeSessionTimerChecks() {
+		if (selfservice.mode.kioskMode == undefined) {
+			var test = 'false';
+			if (!test) {
+				selfservice.mode.kioskMode = false;
+			} else {
+				selfservice.mode.kioskMode = booleanValue('false');
+			}
+		}
+
+		if (selfservice.session.userLoggedIn == undefined) {
+			selfservice.session.userLoggedIn = booleanValue('false');
+		}
+
+		if (selfservice.url.homePage == undefined) {
+			selfservice.url.homePage = window.location.origin + '/web/';
+		}
+		if(selfservice.setting.showDisclaimer == undefined){
+			selfservice.setting.showDisclaimer = booleanValue('true')
+		}
+
+		if( selfservice.pages.disclaimer == undefined){
+			 selfservice.pages.disclaimer = '/web/user/disclaimer';
+		}
+	}
+
+	$(document).keydown(function(e) {
+		selfservice.maybeScrollScreen(e);
+	});
+
+	$(document).on('pageinit', function(event) {
+		initializeSessionTimerChecks();
+
+		
+		selfservice.session.continueSession();
+
+		
+			var subscriptionTimerId = $('#subscriptionTimer').attr('id');
+			selfservice.subscriptionTimer.setSubscriptionTime(subscriptionTimerId, '/web/subscription/getSubscriptionTime');
+		});
+
+	$( document ).ajaxComplete(function( event, request, settings ) {
+		if(request.getResponseHeader('isThresholdReached') === "true"){
+			location.reload();
+		}
+	});
+
+	$.ajaxSetup({
+	    beforeSend: function(xhr) {
+	        xhr.setRequestHeader('ajaxRequest', true);
+	    }
+	});
+
+	function removeDisclaimerCookie(){
+		var context = "/web/";
+		context = context.split('/').join('')
+		document.cookie = "disclaimerAccepted=; Path=/" + context + "; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+	}
+
+	</script>
+</body>
+</html>

@@ -1,4 +1,5 @@
 import requests
+import json as _json
 from bs4 import BeautifulSoup
 from .base import BaseConnector, RawPayload
 
@@ -11,126 +12,71 @@ class TehamaConnector(BaseConnector):
             "Accept": "application/json,text/html"
         }
 
+    def _api_get(self, endpoint: str) -> dict:
+        """Call a JSON API endpoint and return the first row, or empty dict."""
+        url = f"{self.BASE}/api/search/tehama/0000-CURR/{endpoint}"
+        try:
+            r = requests.get(url, headers=self._headers(), timeout=15)
+            if r.status_code != 200:
+                return {}
+            data = r.json()
+            if isinstance(data, str):
+                data = _json.loads(data)
+            rows = data.get("Table", {}).get("Row", [])
+            if isinstance(rows, dict):
+                rows = [rows]
+            return rows[0] if rows else {}
+        except Exception:
+            return {}
+
     def fetch_identity(self, apn: str) -> RawPayload:
         apn_norm = self.normalize_apn(apn)
-        url = f"{self.BASE}/api/search/tehama/0000-CURR/feeparcel/{apn_norm[:11]}"
+        data = self._api_get(f"feeparcel/{apn_norm[:11]}")
+        return RawPayload(apn_raw=apn, data=data, source="feeparcel_api", county=self.county)
 
-        r = requests.get(url, headers=self._headers(), timeout=15)
-        raw_data = {}
-        
-        if r.status_code == 200:
-            try:
-                data = r.json()
-                rows = data.get("Table", {}).get("Row", [])
-                if isinstance(rows, dict):
-                    rows = [rows]
-                raw_data = rows[0] if rows else {}
-            except Exception:
-                pass
-                
-        return RawPayload(
-            apn_raw=apn,
-            data=raw_data,
-            source="feeparcel_api",
-            county=self.county
-        )
+    def fetch_owner(self, apn: str) -> RawPayload:
+        """Direct Owner API endpoint — returns owner name."""
+        apn_norm = self.normalize_apn(apn)
+        data = self._api_get(f"owner/{apn_norm[:11]}")
+        return RawPayload(apn_raw=apn, data=data, source="owner_api", county=self.county)
 
     def fetch_snapshot(self, apn: str) -> RawPayload:
         apn_norm = self.normalize_apn(apn)
 
-        # 1. JSON ASMT Endpoint
-        api_url = f"{self.BASE}/api/search/tehama/0000-CURR/asmt/{apn_norm[:11]}"
-        r = requests.get(api_url, headers=self._headers(), timeout=15)
+        # 1. JSON ASMT Endpoint — identity data (no owner, no balance)
+        asmt = self._api_get(f"asmt/{apn_norm[:11]}")
+        owner = self._api_get(f"owner/{apn_norm[:11]}")
 
-        if r.status_code == 200:
-            try:
-                data = r.json()
-                rows = data.get("Table", {}).get("Row", [])
-                if isinstance(rows, dict):
-                    rows = [rows]
-                raw_data = rows[0] if rows else {}
-                if raw_data:
-                    return RawPayload(
-                        apn_raw=apn,
-                        data=raw_data,
-                        source="asmt_api",
-                        county=self.county
-                    )
-            except Exception:
-                pass
+        merged = {**asmt}
+        if owner.get("Owner"):
+            merged["OwnerName"] = owner["Owner"]
 
         # 2. HTML Fallback — parse actual fields from the MPTS page
         html_url = f"{self.BASE}/tehama/tax/main/{apn_norm}"
-        r = requests.get(html_url, headers=self._headers(), timeout=15)
+        try:
+            r = requests.get(html_url, headers=self._headers(), timeout=15)
+            if r.status_code == 200:
+                soup = BeautifulSoup(r.text, "html.parser")
+                title = soup.title.string if soup.title else ""
+                if "maintenance" not in title.lower():
+                    merged["_html_available"] = True
 
-        raw_data = {}
-        if r.status_code == 200:
-            soup = BeautifulSoup(r.text, "html.parser")
-
-            # --- APN from the ASMT header block ---
-            asmt_div = soup.find("div", string=lambda t: t and "ASMT" in t)
-            if asmt_div:
-                sibling = asmt_div.find_next_sibling("div")
-                if sibling:
-                    raw_data["Asmt"] = sibling.get_text(strip=True)
-
-            # --- Assessment Info tab: dt/dd label-value pairs ---
-            for dt in soup.find_all("dt"):
-                label = dt.get_text(strip=True).lower()
-                dd = dt.find_next_sibling("dd")
-                if not dd:
-                    continue
-                value = dd.get_text(" ", strip=True)
-
-                if label == "assessment":
-                    raw_data.setdefault("Asmt", value)
-                elif label == "roll category":
-                    raw_data["RollCategory"] = value
-                elif label == "address":
-                    # First address dt = situs, second = city/state line
-                    if "Situs1" not in raw_data:
-                        raw_data["Situs1"] = value
-                    elif "Situs2" not in raw_data:
-                        raw_data["Situs2"] = value
-                        # Combine into full situs
-                        raw_data["Situs1"] = f"{raw_data['Situs1']}, {value}"
-
-            # --- Owner from sidebar search results or page owner fields ---
-            owner_tag = soup.find("dd", id="ownerName")
-            if not owner_tag:
-                # Fallback: look for a strong tag near "Owner"
-                for dt in soup.find_all("dt"):
-                    if "owner" in dt.get_text(strip=True).lower():
+                    for dt in soup.find_all("dt"):
+                        label = dt.get_text(strip=True).lower()
                         dd = dt.find_next_sibling("dd")
-                        if dd:
-                            raw_data["OwnerName"] = dd.get_text(strip=True)
-                            break
-            else:
-                raw_data["OwnerName"] = owner_tag.get_text(strip=True)
+                        if not dd:
+                            continue
+                        value = dd.get_text(" ", strip=True)
+                        if label == "total balance":
+                            merged["CurrDue"] = value
+                        elif label == "mailing address" and "MailingAddress" not in merged:
+                            merged["MailingAddress"] = value
+                        elif label == "owner" and "OwnerName" not in merged:
+                            merged["OwnerName"] = value
+                else:
+                    merged["_html_available"] = False
+        except Exception:
+            merged["_html_available"] = False
 
-            # --- Mailing address (separate from situs) ---
-            mailing_dt = None
-            for dt in soup.find_all("dt"):
-                if "mailing" in dt.get_text(strip=True).lower():
-                    mailing_dt = dt
-                    break
-            if mailing_dt:
-                dd = mailing_dt.find_next_sibling("dd")
-                if dd:
-                    raw_data["MailingAddress"] = dd.get_text(" ", strip=True)
-
-            # --- Total Balance from tax totals block ---
-            for dt in soup.find_all("dt"):
-                if "total balance" in dt.get_text(strip=True).lower():
-                    dd = dt.find_next_sibling("dd")
-                    if dd:
-                        raw_data["CurrDue"] = dd.get_text(strip=True)
-                        break
-
-        return RawPayload(
-            apn_raw=apn,
-            data=raw_data,
-            source="html_fallback",
-            county=self.county
-        )
+        return RawPayload(apn_raw=apn, data=merged, source="snapshot", county=self.county)
 

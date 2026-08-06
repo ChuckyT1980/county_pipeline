@@ -1,0 +1,34 @@
+display_name: San Benito County
+collector_names:
+- SAN BENITO TAX COLLECTOR
+- SAN BENITO CO TAX COLLR
+- COUNTY OF SAN BENITO
+assessor:
+  backend: mpts
+  endpoint: https://common1.mptsweb.com/mbap/san_benito/asr/AsrPrint
+  slug: sanbenito
+  apn_includes:
+  - 1 Main
+  - 2 Main
+  - 1 Oak
+  - 2 Oak
+  - 1 Pine
+  - 1st
+  - 2nd
+  - 3rd
+  notes: Auto-onboarded by onboard_county.py. MPTS host common1.mptsweb.com slug sanbenito
+  host: https://common1.mptsweb.com
+recorder:
+  backend: county_portal
+  base_url: https://sanbenitocountyca-web.tylerhost.net
+  name_search_id: DOCSEARCH201S1
+  doc_search_id: DOCSEARCH184S2
+  apn_search_id: DOCSEARCH395S2
+  typedate_search_id: DOCSEARCH201S11
+  ajax_headers_required: true
+  notes: discovered automatically
+  endpoint: https://recorder.sanbenito.ca.gov
+auction:
+  backend: govease
+  base_url: ''
+  preview_url: ''

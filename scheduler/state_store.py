@@ -10,6 +10,7 @@ class StateRepository:
     def _init_db(self):
         with sqlite3.connect(self.db_path) as conn:
             cursor = conn.cursor()
+            cursor.execute("PRAGMA journal_mode=WAL;")
             
             # Runs tracking
             cursor.execute('''
