@@ -83,7 +83,18 @@ def parse_tax_bill(html: str) -> dict:
     improvements = _money(_grab(r"STRUCTURAL IMPROVEMENTS\s+\d+\s+(\d+)"))
     net_taxable = _money(_grab(r"NET TAXABLE VALUE\s+(\d+)"))
     total_due = _money(_grab(r"TOTAL DUE\s*\$?([\d,]+\.?\d*)"))
-    redemption = _grab(r"(REDEEMED|DELINQUENT|PAID)")
+
+    # BUG FIX 2026-08-06: the old `_grab(r"(REDEEMED|DELINQUENT|PAID)")` matched
+    # the generic "1st INSTALLMENT ... DELINQUENT AFTER 12/10/2026" boilerplate
+    # that appears on every single bill (it describes the due-date rule, not
+    # actual default status) — confirmed on a 100-parcel sample: 99/99 falsely
+    # showed "delinquent" while only 4/99 had a real default marker on the page.
+    # The genuine signal is the specific "Prior year delinquent taxes exist"
+    # notice with a default case number and date.
+    default_match = re.search(r"Default #(\S+), default date (\d{2}/\d{2}/\d{4})", text)
+    is_in_default = bool(default_match)
+    default_case_number = default_match.group(1) if default_match else ""
+    default_date = default_match.group(2) if default_match else ""
 
     return {
         "apn": apn,
@@ -94,7 +105,9 @@ def parse_tax_bill(html: str) -> dict:
         "improvements_value": improvements,
         "net_taxable_value": net_taxable,
         "total_due": total_due,
-        "redemption_status": redemption.lower() if redemption else "",
+        "is_in_default": is_in_default,
+        "default_case_number": default_case_number,
+        "default_date": default_date,
     }
 
 
