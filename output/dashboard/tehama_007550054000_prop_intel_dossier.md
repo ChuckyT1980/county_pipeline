@@ -1,9 +1,9 @@
-# Pre-Auction Property Intelligence Dossier: 004-360-007-000
+# Pre-Auction Property Intelligence Dossier: 007-550-054-000
 
 **County**: Tehama County, CA  
-**APN**: `004-360-007-000`  
+**APN**: `007-550-054-000`  
 **Opportunity Tier**: **Level 1 (Prime Opportunity — Top 5%)**  
-**Generated Date**: 2026-08-06 16:43:49  
+**Generated Date**: 2026-08-06 16:43:50  
 
 ---
 
@@ -15,27 +15,27 @@
 | **Seller Intent Score** | **75.0 / 100** |
 | **Estimated Equity Ratio** | **75.0%** |
 | **Lien Risk Tier** | **LOW** |
-| **Minimum Starting Bid** | $148,360.00 |
-| **Net Assessed Total Value** | $593,440.00 |
+| **Minimum Starting Bid** | $33,203.00 |
+| **Net Assessed Total Value** | $132,812.00 |
 | **Predicted Auction Window** | 2027-06-15 |
 
 ---
 
 ## 🏡 Property & Ownership Profile
 
-- **Owner of Record**: **CAHOON DEBRA L TRUSTEE**
-- **Owner Entity Type**: Corporate Entity / Trust
+- **Owner of Record**: **CUEBAS RAUL MENDOZA**
+- **Owner Entity Type**: Individual
 - **Out-of-State Owner**: No
-- **Property Situs Address**: 19265 CAHOON RIDGE RD 19373 EIGHMY RD COTTONWOOD CA 96022
+- **Property Situs Address**: 18450 MORNING DEW RD 18110 PACK SADDLE RD COTTONWOOD CA 96022
 - **Land Use Code**: Standard Real Property
-- **Acreage / Lot Size**: 24.31 acres
+- **Acreage / Lot Size**: 8.46 acres
 - **Tax Delinquency Status**: N/A — not confirmed in source data (Defaulted: 2026)
 
 ---
 
 ## 📄 Recorder & Encumbrance Provenance
 
-- **Last Recorded Doc Number**: `2023R011978` (Recorded: N/A)
+- **Last Recorded Doc Number**: `2015R015400` (Recorded: N/A)
 - **Documentary Transfer Tax**: $N/A *(Calculated Transfer Consideration: $N/A)*
 - **Open Encumbrance Count**: N/A recorded instruments
 - **Notice of Power to Sell / Default**: Standard Default Notice
@@ -51,8 +51,8 @@
 
 ## 📊 Provenance & Data Audit Trail
 
-- **Primary Source Endpoint**: `apps.mptsweb.com/TaxBillv2 (live, verified 2026-08-06, default case DEF260000013) + data/counties/tehama/pre_auction_intel.csv (owner name)`
-- **Data Integrity Status**: PARTIALLY VERIFIED — assessed value and current default status (case DEF260000013, defaulted 06/30/2026) confirmed live against the county tax bill; owner name from local list, not independently recorder-cross-referenced (Tehama's recorder requires solving a Google reCAPTCHA that no free automated method could pass tonight)
+- **Primary Source Endpoint**: `apps.mptsweb.com/TaxBillv2 (live, verified 2026-08-06, default case DEF260000109) + data/counties/tehama/pre_auction_intel.csv (owner name)`
+- **Data Integrity Status**: PARTIALLY VERIFIED — assessed value and current default status (case DEF260000109, defaulted 06/30/2026) confirmed live against the county tax bill; owner name from local list, not independently recorder-cross-referenced (Tehama's recorder requires solving a Google reCAPTCHA that no free automated method could pass tonight)
 - **Data Gap Audit**: None found
 
 ---
