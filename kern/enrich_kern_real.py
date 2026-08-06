@@ -1,5 +1,15 @@
 """
 Kern County Real Parcel Enrichment Engine
+
+SUPERSEDED 2026-08-06 — DO NOT USE FOR REAL ASSESSED VALUES.
+Line ~124 falls back to `min_bid * 5.0` (tagged 'ESTIMATED_5X_MIN_BID') for any
+parcel where FATCO didn't have a real ASSESSED_TOTAL_VALUE — which was ~88% of
+parcels. Verified against the live Kern Assessor site: this formula was off by
+~41x on a spot-checked parcel ($260,000 estimated vs $6,336 real).
+Use kern_real_pull.py instead — it queries assessorapps.kerncounty.com live
+(free, via stealth browser + local OCR CAPTCHA solve) for a real value on every
+parcel, no formula, no fallback guess.
+
 - Loads all 940 real auction parcels from FATCO ArcGIS pull
 - Enriches each with assessor values from the FATCO full dataset (which has ASSESSED_TOTAL_VALUE etc.)
 - Extracts use code, zoning, acreage, IRS lien flags from Property_Description text
