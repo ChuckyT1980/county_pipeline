@@ -3,7 +3,7 @@
 **County**: Tehama County, CA  
 **APN**: `006-120-022-000`  
 **Opportunity Tier**: **Level 1 (Prime Opportunity — Top 5%)**  
-**Generated Date**: 2026-08-06 20:16:20  
+**Generated Date**: 2026-08-06 22:24:09  
 
 **🔔 PRIORITY SIGNAL: No scheduled auction — monitor for a future sale date**
 
@@ -30,7 +30,7 @@
 - **Out-of-State Owner**: No
 - **Property Situs Address**: 18240 ALTA WAY 18240 ALTA WAY COTTONWOOD CA 96022
 - **Land Use Code**: Standard Real Property
-- **Acreage / Lot Size**: N/A acres
+- **Acreage / Lot Size**: 2.50 acres
 - **Tax Delinquency Status**: N/A — not confirmed in source data (Defaulted: 2024)
 
 ---
@@ -54,7 +54,7 @@
 ## 📊 Provenance & Data Audit Trail
 
 - **Primary Source Endpoint**: `apps.mptsweb.com/TaxBillv2 (live, verified 2026-08-06, default case DEF240000041) + data/counties/tehama/pre_auction_intel.csv (owner name)`
-- **Data Integrity Status**: PARTIALLY VERIFIED — assessed value and current default status (case DEF240000041, defaulted 06/30/2024) confirmed live against the county tax bill; owner name from local list, not independently recorder-cross-referenced (Tehama's recorder requires solving a Google reCAPTCHA that no free automated method could pass tonight)
+- **Data Integrity Status**: PARTIALLY VERIFIED — assessed value and current default status (case DEF240000041, defaulted 06/30/2024) confirmed live against the county tax bill; owner name from local list, not independently recorder-cross-referenced
 - **Data Gap Audit**: None found
 
 ---
