@@ -3,7 +3,7 @@
 **County**: Fresno County, CA  
 **APN**: `035-061-21S`  
 **Opportunity Tier**: **UNVERIFIED (Insufficient Source Data)**  
-**Generated Date**: 2026-08-06 18:29:59  
+**Generated Date**: 2026-08-06 19:58:22  
 
 ---
 

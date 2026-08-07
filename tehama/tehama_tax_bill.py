@@ -111,25 +111,27 @@ def parse_tax_bill(html: str) -> dict:
     }
 
 
-def enrich_batch(apns, delay=0.5):
+def enrich_batch(apns, delay=0.5, out_path=None, offset=0):
+    out_path = out_path or OUT_CSV
     results = []
+    total = len(apns)
     for i, apn in enumerate(apns, 1):
         html = fetch_tax_bill(apn)
         if html:
             parsed = parse_tax_bill(html)
             parsed["source_apn"] = apn
             results.append(parsed)
-            print(f"  [{i:4}/{len(apns)}] {apn}  land=${parsed['land_value']:,}  imp=${parsed['improvements_value']:,}  net=${parsed['net_taxable_value']:,}")
+            print(f"  [{offset+i:6}/{offset+total}] {apn}  land=${parsed['land_value']:,}  imp=${parsed['improvements_value']:,}  net=${parsed['net_taxable_value']:,}")
         else:
-            print(f"  [{i:4}/{len(apns)}] {apn}  FAIL")
+            print(f"  [{offset+i:6}/{offset+total}] {apn}  FAIL")
         time.sleep(delay)
     if results:
-        with open(OUT_CSV, "w", newline="", encoding="utf-8") as fp:
+        with open(out_path, "w", newline="", encoding="utf-8") as fp:
             keys = list(results[0].keys())
             w = csv.DictWriter(fp, fieldnames=keys)
             w.writeheader()
             w.writerows(results)
-        print(f"\nSaved {len(results)} rows to {OUT_CSV}")
+        print(f"\nSaved {len(results)} rows to {out_path}")
     return len(results)
 
 
@@ -138,10 +140,18 @@ if __name__ == "__main__":
     p.add_argument("--sample", type=int, default=0)
     p.add_argument("--apns", type=str, default="")
     p.add_argument("--from-master", action="store_true")
+    p.add_argument("--offset", type=int, default=0)
+    p.add_argument("--count", type=int, default=0)
+    p.add_argument("--out", type=str, default="")
     p.add_argument("--delay", type=float, default=0.5)
     args = p.parse_args()
 
-    if args.sample:
+    if args.count:
+        with open(MASTER, encoding="utf-8") as fp:
+            all_apns = [r["parcel_number"] for r in csv.DictReader(fp)]
+        apns = all_apns[args.offset:args.offset + args.count]
+        print(f"Enriching Tehama chunk: offset={args.offset}, count={len(apns)} of {len(all_apns):,} total")
+    elif args.sample:
         with open(MASTER, encoding="utf-8") as fp:
             reader = csv.DictReader(fp)
             apns = [r["parcel_number"] for r in list(reader)[:args.sample]]
@@ -157,4 +167,5 @@ if __name__ == "__main__":
             apns = [r["parcel_number"] for r in list(csv.DictReader(fp))[:5]]
         print(f"No args — testing with 5 samples")
 
-    enrich_batch(apns, delay=args.delay)
+    out_path = Path(args.out) if args.out else (TEHAMA_DIR / f"tehama_tax_bill_offset{args.offset}.csv" if args.count else OUT_CSV)
+    enrich_batch(apns, delay=args.delay, out_path=out_path, offset=args.offset)

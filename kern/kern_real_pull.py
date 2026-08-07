@@ -135,10 +135,11 @@ def fetch_one(page, apn_search: str, max_captcha_tries: int = 8) -> dict | None:
     return parsed
 
 
-def main(limit: int = 25):
+def main(limit: int = 25, offset: int = 0, out_path: str = None):
+    out_path = out_path or OUT
     with open(SRC, encoding="utf-8", errors="replace") as f:
         rows = list(csv.DictReader(f))
-    candidates = rows[:limit]
+    candidates = rows[offset:offset + limit]
 
     results = []
     with Stealth().use_sync(sync_playwright()) as p:
@@ -148,7 +149,7 @@ def main(limit: int = 25):
         for i, row in enumerate(candidates):
             raw_apn = row.get("Parcel_Number") or row.get("APN_1") or ""
             apn_search = to_search_apn(raw_apn)
-            print(f"[{i+1}/{len(candidates)}] {raw_apn} (search: {apn_search}) ...", end=" ")
+            print(f"[{offset+i+1}/{offset+len(candidates)}] {raw_apn} (search: {apn_search}) ...", end=" ")
             parsed = None
             for page_attempt in range(2):  # retry once on a page-load timing miss
                 try:
@@ -182,14 +183,18 @@ def main(limit: int = 25):
         browser.close()
 
     if results:
-        with open(OUT, "w", newline="", encoding="utf-8") as f:
+        with open(out_path, "w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=list(results[0].keys()))
             w.writeheader()
             w.writerows(results)
 
     print(f"\nDone. {len(results)} verified real records out of {len(candidates)} attempted.")
-    print(f"Saved to {OUT}")
+    print(f"Saved to {out_path}")
 
 
 if __name__ == "__main__":
-    main(limit=140)
+    import sys
+    _offset = int(sys.argv[1]) if len(sys.argv) > 1 else 0
+    _limit = int(sys.argv[2]) if len(sys.argv) > 2 else 141
+    _out = f"/tmp/claude-1000/-home-chuck/e8fa5be3-9aea-4fd1-9c7a-07ad25a9bdf2/scratchpad/kern_real_batch_offset{_offset}.csv"
+    main(limit=_limit, offset=_offset, out_path=_out)

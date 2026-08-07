@@ -32,3 +32,8 @@ output/outreach/
 # on this 9p-mounted drive at all.
 data/raw/
 *.bin
+
+# Raw tax-bill HTML cache (tehama/tax_bills/, butte/tax_bills/, etc.) — same
+# reasoning as data/raw/ above: real scraped HTML, regenerable, not source material.
+tax_bills/
+*/tax_bills/

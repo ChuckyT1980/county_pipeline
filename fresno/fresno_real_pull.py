@@ -60,7 +60,7 @@ def fetch_assessed_value(page, apn: str) -> dict | None:
     }
 
 
-def main(limit: int = 40):
+def main(limit: int = 159):
     with open(SRC, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))[:limit]
 

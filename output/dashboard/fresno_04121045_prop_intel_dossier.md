@@ -3,7 +3,7 @@
 **County**: Fresno County, CA  
 **APN**: `041-210-45`  
 **Opportunity Tier**: **UNVERIFIED (Insufficient Source Data)**  
-**Generated Date**: 2026-08-06 18:29:58  
+**Generated Date**: 2026-08-06 19:58:21  
 
 ---
 

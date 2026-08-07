@@ -3,7 +3,7 @@
 **County**: Fresno County, CA  
 **APN**: `075-233-16`  
 **Opportunity Tier**: **UNVERIFIED (Insufficient Source Data)**  
-**Generated Date**: 2026-08-06 18:30:00  
+**Generated Date**: 2026-08-06 19:58:22  
 
 ---
 
