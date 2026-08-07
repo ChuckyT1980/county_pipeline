@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import Any, Optional
 
 from predictive_scorer import score_excess_proceeds, score_property_intelligence
+from signal_priority import get_signal
 
 ROOT = Path(__file__).resolve().parent
 TEMPLATES_DIR = ROOT / "templates"
@@ -127,10 +128,13 @@ def build_property_intelligence_dossier(parcel_data: dict[str, Any], county: str
 
     data_gaps_val = ("Missing: " + ", ".join(missing_fields)) if missing_fields else (parcel_data.get("data_gaps") or "None found")
 
+    signal = get_signal(county)
+
     replacements = {
         "{{county_name}}": county_name,
         "{{generated_date}}": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "{{apn_dash}}": apn_dash,
+        "{{priority_signal}}": signal["priority_label"],
         "{{opportunity_tier}}": scores["opportunity_tier"],
         "{{seller_intent_score}}": str(scores["seller_intent_score"]),
         "{{equity_ratio_pct}}": f"{scores['equity_ratio'] * 100:.1f}",
@@ -177,6 +181,9 @@ def build_property_intelligence_dossier(parcel_data: dict[str, Any], county: str
         "opportunity_tier": scores["opportunity_tier"],
         "seller_intent_score": scores["seller_intent_score"],
         "equity_ratio_pct": replacements["{{equity_ratio_pct}}"],
+        "signal_type": signal["signal_type"],
+        "priority_signal": signal["priority_label"],
+        "days_until_auction": signal["days_until_auction"],
         "report_path": str(out_file.resolve()),
         "timestamp": datetime.now().isoformat(),
     })

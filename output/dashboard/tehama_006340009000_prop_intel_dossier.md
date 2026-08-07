@@ -3,7 +3,9 @@
 **County**: Tehama County, CA  
 **APN**: `006-340-009-000`  
 **Opportunity Tier**: **Level 1 (Prime Opportunity — Top 5%)**  
-**Generated Date**: 2026-08-06 16:43:49  
+**Generated Date**: 2026-08-06 20:16:20  
+
+**🔔 PRIORITY SIGNAL: No scheduled auction — monitor for a future sale date**
 
 ---
 

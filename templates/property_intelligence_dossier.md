@@ -5,6 +5,8 @@
 **Opportunity Tier**: **{{opportunity_tier}}**  
 **Generated Date**: {{generated_date}}  
 
+**🔔 PRIORITY SIGNAL: {{priority_signal}}**
+
 ---
 
 ## 🎯 Executive Opportunity Summary
