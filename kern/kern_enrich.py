@@ -10,7 +10,7 @@ import sys
 sys.path.insert(0, "/mnt/c/Users/chuck/Downloads/county_pipeline")
 import report_builder
 
-BATCH = "/tmp/claude-1000/-home-chuck/e8fa5be3-9aea-4fd1-9c7a-07ad25a9bdf2/scratchpad/kern_real_batch.csv"
+BATCH = "/tmp/claude-1000/-home-chuck/e8fa5be3-9aea-4fd1-9c7a-07ad25a9bdf2/scratchpad/kern_real_batch_merged.csv"
 SOURCE = "/mnt/c/Users/chuck/Downloads/county_pipeline/kern/kern_REAL_AUCTION_PARCELS_CLEAN.csv"
 
 

@@ -4,6 +4,7 @@ Verified-or-excluded, no fake formulas. Replaces the 5x-min-bid estimate
 with the actual net taxable value from assessorapps.kerncounty.com.
 """
 import csv
+import os
 import re
 import subprocess
 import time
@@ -12,9 +13,21 @@ from PIL import Image, ImageFilter
 from playwright.sync_api import sync_playwright
 from playwright_stealth import Stealth
 
-TESS = "/tmp/claude-1000/-home-chuck/e8fa5be3-9aea-4fd1-9c7a-07ad25a9bdf2/scratchpad/localdeps/extracted/usr/bin/tesseract"
+_LOCALDEPS = "/tmp/claude-1000/-home-chuck/e8fa5be3-9aea-4fd1-9c7a-07ad25a9bdf2/scratchpad/localdeps/extracted"
+TESS = f"{_LOCALDEPS}/usr/bin/tesseract"
 SRC = "/mnt/c/Users/chuck/Downloads/county_pipeline/kern/kern_REAL_AUCTION_PARCELS_CLEAN.csv"
 OUT = "/tmp/claude-1000/-home-chuck/e8fa5be3-9aea-4fd1-9c7a-07ad25a9bdf2/scratchpad/kern_real_batch.csv"
+
+# BUG FIX 2026-08-06: previously relied on the shell launcher to export
+# TESSDATA_PREFIX/LD_LIBRARY_PATH. A background run launched without them set
+# had tesseract fail to load its language data on every single call, silently
+# returning "" (subprocess.run's returncode/stderr were never checked) — this
+# looked exactly like "every CAPTCHA failed" / "site now blocking us" but was
+# actually a 100% self-inflicted false negative (0/141 that run). Set these
+# in-process so the script is correct regardless of how it's launched.
+_TESS_ENV = dict(os.environ)
+_TESS_ENV["TESSDATA_PREFIX"] = f"{_LOCALDEPS}/usr/share/tesseract-ocr/5/tessdata"
+_TESS_ENV["LD_LIBRARY_PATH"] = f"{_LOCALDEPS}/usr/lib/x86_64-linux-gnu:" + _TESS_ENV.get("LD_LIBRARY_PATH", "")
 
 
 def solve_captcha(img_path: str, proc_path: str) -> str:
@@ -26,8 +39,11 @@ def solve_captcha(img_path: str, proc_path: str) -> str:
     out = subprocess.run(
         [TESS, proc_path, "stdout", "--psm", "8",
          "-c", "tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"],
-        capture_output=True, text=True,
+        capture_output=True, text=True, env=_TESS_ENV,
     )
+    if out.returncode != 0:
+        print(f"  [tesseract error] {out.stderr.strip()[:200]}")
+        return ""
     return re.sub(r"[^A-Z0-9]", "", out.stdout.strip().upper())
 
 
