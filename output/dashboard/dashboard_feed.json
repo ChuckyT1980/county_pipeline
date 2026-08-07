@@ -2,6 +2,860 @@
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Kern",
+    "apn": "305-123-05-00-3",
+    "owner": "ROSALES MARIA ROSSANA S",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_30512305003_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:16.188700"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "305-122-13-00-9",
+    "owner": "SCOTT WILLIAM T & REBECCA",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_30512213009_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:16.143607"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "302-250-48-00-4",
+    "owner": "CHAN CYRUS JR & DINA",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_30225048004_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:16.097702"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "302-077-17-00-1",
+    "owner": "ASSARIAN LARISA",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "86.8",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_30207717001_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:16.053217"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-360-47-00-5",
+    "owner": "URBAN LORETTA",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29436047005_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:16.011057"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-360-02-00-4",
+    "owner": "PHLEGM ROGERS LAVERNE TRUST",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29436002004_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.968924"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-341-22-00-3",
+    "owner": "HERNANDEZ RAFAEL & ADRIANA",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29434122003_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.920629"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-330-27-00-8",
+    "owner": "WARD RAYMOND C & BLANCHE M",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29433027008_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.876095"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-291-12-00-0",
+    "owner": "CAMARILLO LESLIE L",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29429112000_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.829755"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-282-04-00-1",
+    "owner": "POGUE FAMILY LTD PTP",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29428204001_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.781591"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-233-04-00-3",
+    "owner": "BOLLAND DUANE E",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29423304003_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.737160"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-222-06-00-9",
+    "owner": "HOUSTON ARBELLER M",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29422206009_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.691675"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-201-12-00-3",
+    "owner": "RUELAZ RAUL A & IMELDA H",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29420112003_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.642694"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-181-05-00-8",
+    "owner": "WORKS OF LIFE INTERNAT MINISTRIES INC",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29418105008_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.597590"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-161-19-00-3",
+    "owner": "R PALMA JULIO & GABRIELA",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29416119003_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.547007"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-122-14-00-3",
+    "owner": "BOMBARDA RODOLFO & BIBAT BOMBARDA RAQUEL",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29412214003_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.498515"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-021-05-00-1",
+    "owner": "GIL MARCO ANTONIO & FERNANDEZ GIL EMMA",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29402105001_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.444661"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-021-02-00-2",
+    "owner": "FABRICANTE EDGARDO & LANILLA A",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29402102002_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.394287"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "291-151-14-00-4",
+    "owner": "KALUNA MIRASOL M",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29115114004_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.344541"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "288-192-03-00-7",
+    "owner": "FUJII JAMES N & ETHEL Y",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "10.9",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28819203007_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.290349"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "288-144-04-00-9",
+    "owner": "TIONGSON FAMILY TRUST",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "16.9",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28814404009_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.229679"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "288-092-20-00-7",
+    "owner": "MONTEVIRGEN WILFRED",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28809220007_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.184877"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-202-03-00-2",
+    "owner": "SIMONSEN ROBERT P",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28720203002_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.133398"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-182-27-00-7",
+    "owner": "HERNANDEZ VICTORIA J",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28718227007_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.086923"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-171-15-00-2",
+    "owner": "CARAVALHO CLAUDE ANTHONY",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28717115002_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:15.038182"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-162-30-00-9",
+    "owner": "LIVINGSTON LLOYD & LANG ANNIE",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28716230009_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.997739"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-152-09-00-6",
+    "owner": "ROMERO JUAN & NAVAS ELSA Y",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28715209006_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.954649"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-142-03-00-5",
+    "owner": "CHEN JIN CHAO & LAM CHAN A",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28714203005_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.909103"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-121-36-00-8",
+    "owner": "HOLCOMBE JOHN B & TERESA",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28712136008_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.864187"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-121-35-00-5",
+    "owner": "HAYES TR",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28712135005_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.821173"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-102-08-00-8",
+    "owner": "HOLLOW BRENDA",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28710208008_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.774730"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-072-13-00-4",
+    "owner": "CATELO KATHLEEN A",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28707213004_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.719352"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-072-02-00-2",
+    "owner": "PHAN THIEN",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28707202002_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.672879"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-064-08-00-1",
+    "owner": "RAMIREZ LOUIS E",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28706408001_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.621744"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-063-10-00-9",
+    "owner": "KIMOTO CHARLES T & LEONA E",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28706310009_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.574057"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-063-02-00-6",
+    "owner": "FOSTER JOSEPHINE T",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28706302006_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.520685"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-042-02-00-3",
+    "owner": "LINGOR R S & DRAKE G M ET UX",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28704202003_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.471155"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-021-06-00-2",
+    "owner": "LI YING",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28702106002_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.418370"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "285-193-13-00-2",
+    "owner": "TRUELS TRUST",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28519313002_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.368548"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "285-191-13-00-8",
+    "owner": "BEARD TR",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28519113008_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.316467"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "285-191-11-00-2",
+    "owner": "TURNER CAROL JUNE",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28519111002_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.266913"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "285-191-09-00-7",
+    "owner": "HAWK LYLE L & MELODYE A",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28519109007_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.219630"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "285-153-09-00-9",
+    "owner": "MARTINEZ JOSE R & ANA L",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28515309009_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.178788"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "285-113-13-00-8",
+    "owner": "LAU GERALDINE H TR",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28511313008_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.138983"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "285-112-06-00-1",
+    "owner": "DE ALTONAGA JAIME C & ROSARIO",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28511206001_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.093719"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "285-093-10-00-4",
+    "owner": "FAULKNER GENE A & CARLENA C",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28509310004_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.051005"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "285-062-09-00-6",
+    "owner": "RAO FAMILY TR",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28506209006_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:14.008742"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "285-055-14-00-8",
+    "owner": "MANALO RICARDO B & VIOLA E",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28505514008_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:13.966121"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "285-053-09-00-0",
+    "owner": "WILLIAMSON FAMILY TRUST",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28505309000_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:13.926489"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "285-052-06-00-4",
+    "owner": "MADRID JULIO A & OCTAVIA",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28505206004_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:13.885449"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "284-122-18-00-2",
+    "owner": "VAMENG PROP INV LLC",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28412218002_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:13.843356"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "284-122-10-00-8",
+    "owner": "CHAMBERS TERESA D",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28412210008_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:13.802683"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "284-112-16-00-3",
+    "owner": "APOSTOL PRISCILLA G",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28411216003_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:13.760830"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "284-095-17-00-2",
+    "owner": "CANLAS MELANIE MITCHEL",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28409517002_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:13.717551"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "284-095-16-00-9",
+    "owner": "RONK CHRISTOPHOR TODD",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28409516009_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:13.675257"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "284-071-18-00-1",
+    "owner": "MC NALLY WILLIAM J",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28407118001_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:13.627931"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "284-071-02-00-4",
+    "owner": "BENNETT RANDY A",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28407102004_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:13.581856"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "283-092-02-00-0",
+    "owner": "CAYCO FAMILY LIVING TR",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28309202000_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:13.515139"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "282-301-05-00-5",
+    "owner": "BERKOMPAS GEORGE & GERTRUDE TRUST",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28230105005_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:13.469277"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "282-271-07-00-3",
+    "owner": "KELM ART & JANEEN L",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28227107003_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:13.425402"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "282-262-07-00-7",
+    "owner": "MILLER ROBERT & REGINA TRUST",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 39,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28226207007_prop_intel_dossier.md",
+    "timestamp": "2026-08-06T23:06:13.380831"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
     "apn": "282-243-03-00-6",
     "owner": "HUANG ALLEN",
     "opportunity_tier": "Level 3 (Moderate Potential)",
@@ -11,7 +865,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28224303006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:38.180533"
+    "timestamp": "2026-08-06T23:06:13.284206"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -25,7 +879,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28224214001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:38.140035"
+    "timestamp": "2026-08-06T23:06:13.240925"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -39,7 +893,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28221107005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:38.104826"
+    "timestamp": "2026-08-06T23:06:13.192900"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -53,7 +907,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28220112006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:38.067667"
+    "timestamp": "2026-08-06T23:06:13.146529"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -67,7 +921,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28218112001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:38.031496"
+    "timestamp": "2026-08-06T23:06:13.101524"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -81,7 +935,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28218104008_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.996892"
+    "timestamp": "2026-08-06T23:06:13.049324"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -95,7 +949,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28214109001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.923618"
+    "timestamp": "2026-08-06T23:06:13.007884"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -109,7 +963,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28209206005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.890970"
+    "timestamp": "2026-08-06T23:06:12.966986"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -123,7 +977,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28207304000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.856729"
+    "timestamp": "2026-08-06T23:06:12.924845"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -137,7 +991,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28125022006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.817643"
+    "timestamp": "2026-08-06T23:06:12.879896"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -151,7 +1005,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28125005007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.786507"
+    "timestamp": "2026-08-06T23:06:12.840079"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -165,7 +1019,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28124422001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.754080"
+    "timestamp": "2026-08-06T23:06:12.798590"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -179,7 +1033,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28124213001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.722488"
+    "timestamp": "2026-08-06T23:06:12.755938"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -193,7 +1047,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28123104005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.687868"
+    "timestamp": "2026-08-06T23:06:12.714194"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -207,7 +1061,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28119219005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.651794"
+    "timestamp": "2026-08-06T23:06:12.663669"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -221,7 +1075,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28114305006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.612168"
+    "timestamp": "2026-08-06T23:06:12.622155"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -235,7 +1089,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28113102000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.573929"
+    "timestamp": "2026-08-06T23:06:12.581690"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -249,7 +1103,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28111101001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.535911"
+    "timestamp": "2026-08-06T23:06:12.531764"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -263,7 +1117,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28018106000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.502180"
+    "timestamp": "2026-08-06T23:06:12.487449"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -277,7 +1131,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27910116005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.466767"
+    "timestamp": "2026-08-06T23:06:12.436640"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -291,7 +1145,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27908212005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.425649"
+    "timestamp": "2026-08-06T23:06:12.388958"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -305,7 +1159,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27906107008_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.393432"
+    "timestamp": "2026-08-06T23:06:12.343253"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -319,7 +1173,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27904125004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.362089"
+    "timestamp": "2026-08-06T23:06:12.297428"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -333,7 +1187,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27903108002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.330604"
+    "timestamp": "2026-08-06T23:06:12.248257"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -347,7 +1201,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27903106006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.298441"
+    "timestamp": "2026-08-06T23:06:12.205298"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -361,7 +1215,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27902203001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.256518"
+    "timestamp": "2026-08-06T23:06:12.161721"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -375,7 +1229,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27825410005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.223582"
+    "timestamp": "2026-08-06T23:06:12.112859"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -389,7 +1243,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27823308007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.188550"
+    "timestamp": "2026-08-06T23:06:12.071622"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -403,7 +1257,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27822218006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.112149"
+    "timestamp": "2026-08-06T23:06:11.977323"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -417,7 +1271,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27819209002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.081050"
+    "timestamp": "2026-08-06T23:06:11.938474"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -431,7 +1285,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27818131005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.048251"
+    "timestamp": "2026-08-06T23:06:11.898599"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -445,7 +1299,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27816101002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:37.013237"
+    "timestamp": "2026-08-06T23:06:11.849614"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -459,7 +1313,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27815301003_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.979769"
+    "timestamp": "2026-08-06T23:06:11.810403"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -473,7 +1327,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27815233009_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.946974"
+    "timestamp": "2026-08-06T23:06:11.770800"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -487,7 +1341,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27815102002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.916729"
+    "timestamp": "2026-08-06T23:06:11.731127"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -501,7 +1355,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27812011002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.883855"
+    "timestamp": "2026-08-06T23:06:11.688253"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -515,7 +1369,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27812009007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.850666"
+    "timestamp": "2026-08-06T23:06:11.648006"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -529,7 +1383,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27812008004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.814473"
+    "timestamp": "2026-08-06T23:06:11.609505"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -543,7 +1397,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27811103003_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.781671"
+    "timestamp": "2026-08-06T23:06:11.572355"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -557,7 +1411,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27810230005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.742593"
+    "timestamp": "2026-08-06T23:06:11.535739"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -571,7 +1425,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27810101004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.707256"
+    "timestamp": "2026-08-06T23:06:11.494628"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -585,7 +1439,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27809209003_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.674581"
+    "timestamp": "2026-08-06T23:06:11.458905"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -599,7 +1453,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27809127008_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.640701"
+    "timestamp": "2026-08-06T23:06:11.419062"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -613,7 +1467,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27807203009_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.599913"
+    "timestamp": "2026-08-06T23:06:11.371131"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -627,7 +1481,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27806208001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.556617"
+    "timestamp": "2026-08-06T23:06:11.328700"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -641,7 +1495,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27804415009_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.515648"
+    "timestamp": "2026-08-06T23:06:11.284303"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -655,7 +1509,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27804101007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.483951"
+    "timestamp": "2026-08-06T23:06:11.239604"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -669,7 +1523,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27803326001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.449438"
+    "timestamp": "2026-08-06T23:06:11.196588"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -683,7 +1537,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27803206006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.408784"
+    "timestamp": "2026-08-06T23:06:11.158486"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -697,7 +1551,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27625102007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.368128"
+    "timestamp": "2026-08-06T23:06:11.119687"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -711,7 +1565,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27624311004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.322630"
+    "timestamp": "2026-08-06T23:06:11.081199"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -725,7 +1579,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27623305004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.284700"
+    "timestamp": "2026-08-06T23:06:11.044113"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -739,7 +1593,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27622213007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.250778"
+    "timestamp": "2026-08-06T23:06:11.006006"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -753,7 +1607,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27621408004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.213995"
+    "timestamp": "2026-08-06T23:06:10.973050"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -767,7 +1621,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27620217003_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.181820"
+    "timestamp": "2026-08-06T23:06:10.940072"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -781,7 +1635,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27618109008_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.146807"
+    "timestamp": "2026-08-06T23:06:10.907140"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -795,7 +1649,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27611214008_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.116409"
+    "timestamp": "2026-08-06T23:06:10.867228"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -809,7 +1663,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27520507008_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.083634"
+    "timestamp": "2026-08-06T23:06:10.828555"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -823,7 +1677,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27520201009_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.046992"
+    "timestamp": "2026-08-06T23:06:10.789862"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -837,7 +1691,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27519103006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:36.011984"
+    "timestamp": "2026-08-06T23:06:10.752980"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -851,7 +1705,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27516101001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.977934"
+    "timestamp": "2026-08-06T23:06:10.720258"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -865,7 +1719,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27507214000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.942669"
+    "timestamp": "2026-08-06T23:06:10.685418"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -879,7 +1733,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27506103008_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.910186"
+    "timestamp": "2026-08-06T23:06:10.647253"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -893,7 +1747,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27407013006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.876295"
+    "timestamp": "2026-08-06T23:06:10.613210"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -907,7 +1761,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27314501009_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.837671"
+    "timestamp": "2026-08-06T23:06:10.582415"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -921,7 +1775,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27314411001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.791281"
+    "timestamp": "2026-08-06T23:06:10.551455"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -935,7 +1789,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_27305208003_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.750066"
+    "timestamp": "2026-08-06T23:06:10.517023"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -949,7 +1803,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_26812104006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.706686"
+    "timestamp": "2026-08-06T23:06:10.435658"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -963,7 +1817,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_26802205007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.675631"
+    "timestamp": "2026-08-06T23:06:10.394009"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -977,7 +1831,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_26802202008_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.644111"
+    "timestamp": "2026-08-06T23:06:10.360843"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -991,7 +1845,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_26748204001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.605248"
+    "timestamp": "2026-08-06T23:06:10.327542"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1005,7 +1859,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_26729031000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.560025"
+    "timestamp": "2026-08-06T23:06:10.294364"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1019,7 +1873,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_26716205001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.522364"
+    "timestamp": "2026-08-06T23:06:10.257446"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1033,7 +1887,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_26228119005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.490388"
+    "timestamp": "2026-08-06T23:06:10.219060"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1047,7 +1901,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_26215328007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.456716"
+    "timestamp": "2026-08-06T23:06:10.178880"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1061,7 +1915,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_26102341009_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.424759"
+    "timestamp": "2026-08-06T23:06:10.146490"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1075,7 +1929,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_25918701001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.387796"
+    "timestamp": "2026-08-06T23:06:10.112280"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1089,7 +1943,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_25209108005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.350452"
+    "timestamp": "2026-08-06T23:06:10.077958"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1103,7 +1957,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_24728202001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.319317"
+    "timestamp": "2026-08-06T23:06:10.042818"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1117,7 +1971,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_24727510002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.288405"
+    "timestamp": "2026-08-06T23:06:10.013115"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1131,7 +1985,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_24725615008_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.255867"
+    "timestamp": "2026-08-06T23:06:09.982886"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1145,7 +1999,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_24725519003_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.226157"
+    "timestamp": "2026-08-06T23:06:09.950960"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1159,7 +2013,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_24725415004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.194781"
+    "timestamp": "2026-08-06T23:06:09.922623"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1173,7 +2027,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_24725313001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.160422"
+    "timestamp": "2026-08-06T23:06:09.890894"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1187,7 +2041,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_24720604001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.131145"
+    "timestamp": "2026-08-06T23:06:09.858009"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1201,7 +2055,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_24714515009_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.099386"
+    "timestamp": "2026-08-06T23:06:09.827640"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1215,7 +2069,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_24445214004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.061806"
+    "timestamp": "2026-08-06T23:06:09.789680"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1229,7 +2083,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_23728513001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:35.026950"
+    "timestamp": "2026-08-06T23:06:09.756294"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1243,7 +2097,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_23539002002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.991441"
+    "timestamp": "2026-08-06T23:06:09.726887"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1257,7 +2111,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_23537009007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.959241"
+    "timestamp": "2026-08-06T23:06:09.695882"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1271,7 +2125,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_23528217008_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.929398"
+    "timestamp": "2026-08-06T23:06:09.664114"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1285,7 +2139,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_23211112005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.898040"
+    "timestamp": "2026-08-06T23:06:09.633885"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1299,7 +2153,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_23006118005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.867146"
+    "timestamp": "2026-08-06T23:06:09.599290"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1313,7 +2167,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_22840058005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.830680"
+    "timestamp": "2026-08-06T23:06:09.567637"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1327,7 +2181,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_22832131000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.798455"
+    "timestamp": "2026-08-06T23:06:09.532361"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1341,7 +2195,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_22820065007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.768444"
+    "timestamp": "2026-08-06T23:06:09.494218"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1355,7 +2209,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_22816222014_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.734866"
+    "timestamp": "2026-08-06T23:06:09.461377"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1369,7 +2223,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_22815049007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.699478"
+    "timestamp": "2026-08-06T23:06:09.431984"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1383,7 +2237,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_22813058007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.662010"
+    "timestamp": "2026-08-06T23:06:09.401142"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1397,7 +2251,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_22811053006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.621287"
+    "timestamp": "2026-08-06T23:06:09.370636"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1411,7 +2265,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_22811051000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.580554"
+    "timestamp": "2026-08-06T23:06:09.290636"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1425,7 +2279,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_22530402000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.545723"
+    "timestamp": "2026-08-06T23:06:09.253805"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1439,7 +2293,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_22523120001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.506928"
+    "timestamp": "2026-08-06T23:06:09.212848"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1453,7 +2307,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_22514219000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.475497"
+    "timestamp": "2026-08-06T23:06:09.179597"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1467,7 +2321,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_22457001001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.444243"
+    "timestamp": "2026-08-06T23:06:09.149130"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1481,7 +2335,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21908205007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.407818"
+    "timestamp": "2026-08-06T23:06:09.117346"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1495,7 +2349,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21906302009_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.372146"
+    "timestamp": "2026-08-06T23:06:09.081467"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1509,7 +2363,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21904311009_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.340721"
+    "timestamp": "2026-08-06T23:06:09.044971"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1523,7 +2377,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21836313001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.308566"
+    "timestamp": "2026-08-06T23:06:09.011513"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1537,7 +2391,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21833210006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.276002"
+    "timestamp": "2026-08-06T23:06:08.981225"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1551,7 +2405,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21831302004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.242370"
+    "timestamp": "2026-08-06T23:06:08.945683"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1565,7 +2419,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21831116001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.212069"
+    "timestamp": "2026-08-06T23:06:08.915360"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1579,7 +2433,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21822102004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.172898"
+    "timestamp": "2026-08-06T23:06:08.884799"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1593,7 +2447,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21821301002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.143759"
+    "timestamp": "2026-08-06T23:06:08.854656"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1607,7 +2461,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21821207003_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.105375"
+    "timestamp": "2026-08-06T23:06:08.824384"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1621,7 +2475,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21820119008_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.073192"
+    "timestamp": "2026-08-06T23:06:08.793987"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1635,7 +2489,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21820113000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.043170"
+    "timestamp": "2026-08-06T23:06:08.744835"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1649,7 +2503,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21818243009_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:34.011468"
+    "timestamp": "2026-08-06T23:06:08.712205"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1663,7 +2517,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21818242006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.979726"
+    "timestamp": "2026-08-06T23:06:08.680099"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1677,7 +2531,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21816305000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.941380"
+    "timestamp": "2026-08-06T23:06:08.648016"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1691,7 +2545,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21816207009_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.911418"
+    "timestamp": "2026-08-06T23:06:08.606428"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1705,7 +2559,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21814205007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.877930"
+    "timestamp": "2026-08-06T23:06:08.575314"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1719,7 +2573,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21813106000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.849562"
+    "timestamp": "2026-08-06T23:06:08.536929"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1733,7 +2587,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21809109008_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.818854"
+    "timestamp": "2026-08-06T23:06:08.505953"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1747,7 +2601,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21807244000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.783741"
+    "timestamp": "2026-08-06T23:06:08.475485"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1761,7 +2615,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21807239006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.750045"
+    "timestamp": "2026-08-06T23:06:08.445080"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1775,7 +2629,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21607405007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.718741"
+    "timestamp": "2026-08-06T23:06:08.414043"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1789,7 +2643,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21606204007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.689118"
+    "timestamp": "2026-08-06T23:06:08.378658"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1803,7 +2657,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21204201004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.655172"
+    "timestamp": "2026-08-06T23:06:08.346761"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1817,7 +2671,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21125227004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.622516"
+    "timestamp": "2026-08-06T23:06:08.306372"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1831,7 +2685,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21124313007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.584920"
+    "timestamp": "2026-08-06T23:06:08.265606"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1845,7 +2699,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21124306007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.543836"
+    "timestamp": "2026-08-06T23:06:08.227847"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1859,7 +2713,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21123327005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.504316"
+    "timestamp": "2026-08-06T23:06:08.189209"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1873,7 +2727,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21123326002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.475051"
+    "timestamp": "2026-08-06T23:06:08.155168"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1887,7 +2741,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21122310002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.441068"
+    "timestamp": "2026-08-06T23:06:08.118896"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1901,7 +2755,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21113204002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.409363"
+    "timestamp": "2026-08-06T23:06:08.087133"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1915,7 +2769,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21031022005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.378057"
+    "timestamp": "2026-08-06T23:06:08.055556"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1929,7 +2783,7 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21011209004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.342758"
+    "timestamp": "2026-08-06T23:06:08.024341"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1943,860 +2797,6 @@
     "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
     "days_until_auction": 39,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21004011005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.312838"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-332-05-00-6",
-    "owner": "LEMMONS EDITH",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20933205006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.282928"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-331-18-00-7",
-    "owner": "XIE GUANGYUN & ZHOU MEIXUAN",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20933118007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.252234"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-311-05-00-3",
-    "owner": "PATRIARCA ROMEO G & CYNTHIA A",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20931105003_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.219014"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-301-65-00-4",
-    "owner": "CLOUD ANTHONY",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20930165004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.185362"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-301-57-00-1",
-    "owner": "GORGES MONER SHAE",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20930157001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.155675"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-301-56-00-8",
-    "owner": "LEAL JANET",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "8.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20930156008_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.124762"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-301-21-00-6",
-    "owner": "BARREAU MARY A ET AL",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20930121006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.092764"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-282-10-00-6",
-    "owner": "LEE GINA",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "12.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20928210006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.060745"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-252-14-00-9",
-    "owner": "AMAN ALI SYED & HUMA",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "4.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20925214009_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:33.027251"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-243-09-00-9",
-    "owner": "TECSON AURORA M",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20924309009_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.994609"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-241-02-00-4",
-    "owner": "SELEH RYAN C & PEGAH P",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "24.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20924102004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.959244"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-222-13-00-7",
-    "owner": "VALENTINE RENEE L",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20922213007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.930042"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-222-12-00-4",
-    "owner": "QUIGLEY STEVEN & PIERCE WENDY",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20922212004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.900038"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-201-29-00-1",
-    "owner": "EAST KERN HISTORICAL MUSEUM",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20920129001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.869344"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-142-09-00-3",
-    "owner": "MOHAN JAGANNATHAN",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "14.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20914209003_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.839980"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-132-29-00-8",
-    "owner": "FINER PATRICIA JONES TR",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20913229008_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.808132"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-132-23-00-0",
-    "owner": "BIRGE JACKSON PAUL",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20913223000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.772675"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-132-04-00-5",
-    "owner": "WEAST ELAINE T",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20913204005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.740735"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-131-16-00-3",
-    "owner": "GARCIA RAUL G",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20913116003_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.710946"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-131-06-00-4",
-    "owner": "SHELL FAMILY TRUST",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20913106004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.679818"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-111-08-00-4",
-    "owner": "DURHAM & DURHAM LLC",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20911108004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.649193"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-101-10-00-6",
-    "owner": "ROSS E & M FAMILY TRUST",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20910110006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.619810"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-101-02-00-3",
-    "owner": "MC CUSKER CHARLES & CATHERINE CORMIER",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20910102003_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.589517"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-090-08-00-2",
-    "owner": "SHELL FAMILY TRUST",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20909008002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.560027"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-062-07-00-4",
-    "owner": "RAHMAN MIZANUR",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20906207004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.501148"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-051-04-00-5",
-    "owner": "AMIRI MOHAMMAD W ET AL",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20905104005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.469898"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "209-020-01-00-0",
-    "owner": "RODRIGUEZ FRANK A & LUPE C",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20902001000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.437807"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "207-371-18-00-5",
-    "owner": "EVANS FMLY REV LIV TR",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20737118005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.408287"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "207-362-12-00-1",
-    "owner": "GREENHORN VALLEY LAND LLC",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20736212001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.376694"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "207-361-38-00-0",
-    "owner": "WALTON ETHEL E SEPARATE PROP TRUST",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20736138000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.347388"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "207-361-37-00-7",
-    "owner": "WALTON ETHEL E SEPARATE PROP TRUST",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20736137007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.315434"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "207-361-11-00-1",
-    "owner": "W R III FAMILY TRUST",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20736111001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.284666"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "207-341-03-00-2",
-    "owner": "WONG SUN EI TR",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20734103002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.253874"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "207-334-21-00-2",
-    "owner": "FOSTER KENNETH E",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "6.7",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20733421002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.223953"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "207-273-20-00-5",
-    "owner": "BOVEE BILLY R & FLORENCE L",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20727320005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.190195"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "207-196-05-00-0",
-    "owner": "PINEDA FAMILY TR",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20719605000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.160746"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "207-092-12-00-3",
-    "owner": "MILL CREEK CHRISTIAN CH",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "18.9",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20709212003_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.126789"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "207-092-06-00-6",
-    "owner": "KELLY CHARLES M",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20709206006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.095190"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "207-092-05-00-3",
-    "owner": "KELLY CHARLES M",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20709205003_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.065923"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "207-073-09-00-6",
-    "owner": "OTT CHARLES E",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20707309006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:32.032763"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "204-361-15-00-2",
-    "owner": "COHEN EDMOND",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "2.8",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20436115002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.991591"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "204-353-20-00-7",
-    "owner": "AMAN ALI SYED & HUMA",
-    "opportunity_tier": "Level 2 (High Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "40.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20435320007_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.956970"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "204-344-16-00-0",
-    "owner": "COHEN EDMOND",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "2.8",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20434416000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.925979"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "204-344-10-00-2",
-    "owner": "COHEN EDMOND",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "2.8",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20434410002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.895190"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "204-344-09-00-0",
-    "owner": "COHEN EDMOND",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "2.8",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20434409000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.866221"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "204-313-22-00-1",
-    "owner": "PETERSON ANA L",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20431322001_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.830224"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "204-313-11-00-9",
-    "owner": "HENDERSON FAMILY TRUST",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20431311009_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.799245"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "204-313-10-00-6",
-    "owner": "HENDERSON FAMILY TRUST",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20431310006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.769424"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "204-305-02-00-4",
-    "owner": "AMAN ALI SYED & HUMA",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "35.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20430502004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.737547"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "204-291-17-00-8",
-    "owner": "FRUKTOW NICHOLAS",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "36.2",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20429117008_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.706463"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "204-283-15-00-3",
-    "owner": "ALTAF JAVED & SHADMA",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "35.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20428315003_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.675131"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "204-283-12-00-4",
-    "owner": "ANAYA ROBERTO R & CECILIA",
-    "opportunity_tier": "Level 2 (High Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "40.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20428312004_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.641512"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "204-222-03-00-3",
-    "owner": "MORITA KATSUMI FAMILY TR",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20422203003_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.611644"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "204-181-22-00-0",
-    "owner": "THOMPSON DEWANE F & NANCY C",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "10.1",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20418122000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.576046"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "204-134-08-00-6",
-    "owner": "FERRARO TRUST",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20413408006_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.544919"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "204-091-04-00-2",
-    "owner": "LBJ TRUST",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20409104002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.512715"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "203-271-15-00-9",
-    "owner": "APOSTADIRO NATIVIDAD & C G",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_20327115009_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.481802"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "198-280-51-00-2",
-    "owner": "RICHMAN THOMAS P",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "18.6",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_19828051002_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.450200"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "198-265-29-00-8",
-    "owner": "PETERSON VERNID FAMILY SURVIVORS TRUST",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_19826529008_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.417460"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "198-265-28-00-5",
-    "owner": "SALVATION ARMY",
-    "opportunity_tier": "Level 2 (High Potential)",
-    "seller_intent_score": 65.0,
-    "equity_ratio_pct": "51.7",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_19826528005_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.379651"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "181-390-02-00-0",
-    "owner": "SCARLETT NOEL",
-    "opportunity_tier": "Level 2 (High Potential)",
-    "seller_intent_score": 65.0,
-    "equity_ratio_pct": "53.3",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 39,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_18139002000_prop_intel_dossier.md",
-    "timestamp": "2026-08-06T22:44:31.347218"
+    "timestamp": "2026-08-06T23:06:07.994457"
   }
 ]

@@ -3,7 +3,7 @@
 **County**: Kern County, CA  
 **APN**: `086-272-16-00-6`  
 **Opportunity Tier**: **Level 2 (High Potential)**  
-**Generated Date**: 2026-08-06 22:44:31  
+**Generated Date**: 2026-08-06 23:06:05  
 
 **🔔 PRIORITY SIGNAL: GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)**
 

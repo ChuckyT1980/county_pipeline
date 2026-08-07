@@ -3,7 +3,7 @@
 **County**: Kern County, CA  
 **APN**: `209-062-07-00-4`  
 **Opportunity Tier**: **Level 3 (Moderate Potential)**  
-**Generated Date**: 2026-08-06 22:44:32  
+**Generated Date**: 2026-08-06 23:06:07  
 
 **🔔 PRIORITY SIGNAL: GOING TO AUCTION in 39 days (2026-09-14 - 2026-09-16)**
 
