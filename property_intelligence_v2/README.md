@@ -29,34 +29,57 @@ read-only and must not be wired into any legacy generation path
 etc.) or vice versa. The two trees stay decoupled until an explicit,
 separately-authorized migration step.
 
+## Architecture (Phase 1)
+
+```
+Parcel Master
+  -> Immutable Source Observations
+    -> Reconciliation
+      -> Canonical Property State
+        -> Reconciliation Feedback
+          -> (future) Derived Intelligence
+```
+
+A failure is a valid system output, not an absence of one:
+
+```
+attempt -> observe -> classify -> save evidence -> record outcome
+  -> choose next action -> retry / fallback / quarantine / human_review
+```
+
+Nine entities implement this, in pipeline order: `source_registry`,
+`ingestion_runs`, `raw_evidence`, `observations`, `parcels`,
+`parcel_matches`, `canonical_property_state`, `reconciliation_feedback`,
+`exceptions`. Full field-level documentation lives in
+`contracts/entities.py`'s docstrings and `migrations/001_initial_schema.sql`'s
+comments - both describe the same nine entities and are kept in sync by
+hand (see "Two representations, one shape" below).
+
 ## Subdirectories
 
-- `contracts/` - interface/schema definitions (the "what a valid input/output looks like" layer) - not yet populated.
-- `models/` - canonical domain models (property identity, evidence, observations, lifecycle state) - not yet populated. Distinct from the existing root-level `property_model.py` (Property/PropertyIdentifier/CountySourceConfig) built during the earlier remediation session - that file is legacy-adjacent scaffolding, not part of v2; whether/how it gets superseded or absorbed is a decision for the migration step, not assumed here.
-- `validation/` - validation rules and gates (the v2 equivalent of `release_gate.py`/`lead_status.py`'s state-machine discipline, rebuilt on the new models) - not yet populated.
-- `tests/` - v2's own test suite, independent of the legacy `tests/` directory at the repo root - not yet populated.
-- `docs/` - v2 architecture documentation - not yet populated.
-- `migrations/` - the controlled importer, once authorized (see below) - not yet populated.
+- `contracts/` - `entities.py`: the nine entities as Python dataclasses, plus their supporting enums (statuses, confidence levels, classifications). This is the primary reference for what each entity's fields mean and why.
+- `migrations/` - `001_initial_schema.sql`: the ONE canonical, versioned SQL schema (SQLite now, written to port cleanly to PostgreSQL later). `apply_schema.py` is the one code path (used by both real usage and tests) that applies it. No import/migration of legacy data exists yet - see `migrations/README.md`.
+- `validation/` - `lifecycle.py`: structural transition validity for the four entities that carry a lifecycle status (does a proposed status change make sense at all) - not scoring, ranking, or decision logic about what SHOULD happen, which is out of scope for Phase 1.
+- `tests/` - `test_contracts.py`, `test_schema.py`, `test_lifecycle.py` - v2's own test suite, independent of the legacy `tests/` directory at the repo root. Plain assertions, no pytest dependency, matching the legacy suite's convention. No real or synthetic California data anywhere - every fixture value is an explicit placeholder (`TEST_ONLY_*` prefix in schema tests).
+- `models/` - not populated; see `models/README.md` for why.
+- `docs/` - not yet populated beyond this README.
 
-## Planned importer (future work, not started)
+## Two representations, one shape
 
-```
-legacy Kern / Butte / Lake evidence
-  → raw_evidence records
-  → observations
-  → parcel matches
-  → canonical property state
-```
-
-This pipeline is explicitly **future work** - nothing in `migrations/` has
-been written yet, and no import/migration runs against real legacy data
-until separately authorized. When it is built, it reads legacy evidence
-files read-only and writes only into v2's own canonical store; it does not
-touch the legacy files it reads from.
+`contracts/entities.py` (Python dataclasses) and
+`migrations/001_initial_schema.sql` (SQL DDL) describe the same nine
+entities from two angles - dataclasses for in-process use and
+type-checking, SQL for persistence and its own independent integrity
+enforcement (CHECK constraints, foreign keys, NOT NULL). They are
+maintained by hand as two views of one shape, not generated from each
+other - `tests/test_contracts.py` and `tests/test_schema.py` each prove
+their own side independently.
 
 ## Status
 
-Scaffold only, created 2026-08-08. No contracts, models, validation rules,
-tests, or migration code exist yet. This commit's only job is to establish
-the isolated directory structure and the ground rules above before any
-real v2 code is written.
+Phase 1 data-contract foundation, built 2026-08-08. Contracts, schema,
+lifecycle validation, and tests exist; no scraper, county adapter,
+monitor, dossier, dashboard, export, scoring model, ML model, or
+opportunity ranking has been built, and none is planned until a
+separately-authorized later phase. No real or synthetic California
+county data has been inserted anywhere in this tree.
