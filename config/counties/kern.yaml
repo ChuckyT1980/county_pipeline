@@ -1,0 +1,43 @@
+# Kern County source configuration.
+# Loaded via property_model.load_county_config(). This file is the source
+# of truth for Kern's real endpoints and adapter state - code should read
+# from here, not hardcode these URLs a second time.
+
+county_name: Kern
+county_fips: "029"
+
+assessor_url: "https://assessorapps.kerncounty.com/PropertySearch/Parcels/index.aspx"
+recorder_url: "https://recorderonline.co.kern.ca.us/cgi-bin/Osearchn.mbr/input"
+gis_url: null  # Kern GIS Open Data "Assessor Parcels Land" dataset referenced in prior session notes but never independently confirmed by a live fetch - leave null, not guessed, until verified
+
+# tax_default_source and auction_source are DELIBERATELY separate fields,
+# not one - a parcel can appear on a tax-default/delinquency signal
+# without yet being on a confirmed, current auction list, and the
+# historical snapshot below is NOT the same thing as a live auction
+# roster. The existing 245 Kern dossiers currently say "GOING TO AUCTION
+# in N days" derived from this historical file - that claim has NOT been
+# re-verified against a live, current Sept 2026 list and should be
+# treated as unconfirmed until it is.
+tax_default_source: "kern_REAL_AUCTION_PARCELS_CLEAN.csv (940-row HISTORICAL snapshot - real data, but not confirmed to reflect the live/current sale cycle)"
+auction_source: "GovEase (govease.com) - Sept 14-16, 2026 auction dates CONFIRMED via county public notice; the parcel-level LIST for that specific auction was NOT yet published as of 2026-08-08 (county's own '30 days prior' policy means ~Aug 15-17). Do not treat kern_REAL_AUCTION_PARCELS_CLEAN.csv as that list."
+
+identifier_rules:
+  atn_format: "###-###-##-00-#"  # 5-segment Assessment/Tax Number, e.g. "017-490-06-00-3" - this is what Kern's own tax-default/auction source CSV calls "Parcel_Number". This is NOT the assessor's APN, even though it was previously mislabeled as one throughout the dossier output.
+  assessor_parcel_number_format: "###-###-##"  # the assessor's own, shorter parcel number - what the source CSV's "APN_1" column (a compressed numeric form, e.g. "522210.0" for "005-222-10") actually represents once properly reformatted
+  recorder_document_number_format: "YYYY-NNNNNN"  # e.g. "2026-007963", confirmed real via kern_recorder_by_docnum.py
+  note: >
+    Prior pipeline code (kern/kern_enrich_docnum_verified.py) normalized
+    ATN and assessor_parcel_number through the same digits-only
+    comparison and displayed whichever matched as "APN" - this conflation
+    is the reason identifier_type exists as a first-class field on
+    PropertyIdentifier rather than a single apn string on Property.
+
+refresh_cadence: "auction list refreshes ~2x/year (spring + fall cycles observed); assessor/recorder pages are live/real-time on request"
+
+# BOTH_SITES_VERIFIED reflects that the underlying assessor+recorder
+# verification CAPABILITY is real and proven (kern_recorder_by_docnum.py,
+# document-number search, parcel-tied) - it does NOT mean the current 245
+# dossiers are free of the ATN/APN mislabeling or the auction-confirmation
+# overclaim described above. Those are migration-and-fix targets for
+# phase one, not reasons to downgrade the adapter status itself.
+adapter_status: both_sites_verified

@@ -1,0 +1,37 @@
+# Butte County source configuration - the reference pipeline.
+# Loaded via property_model.load_county_config().
+
+county_name: Butte
+county_fips: "007"
+
+assessor_url: "https://common1.mptsweb.com/mbap/butte/asr/AsrPrint"
+recorder_url: null  # Tyler EagleWeb - real chain data (grantee names, doc numbers) exists in butte_SCORED_AUCTION_MATCHES_CALL_SHEET.csv from a PRIOR session, but the live URL itself was not independently re-confirmed this session. Leave null rather than restate an unverified prior-session URL as current fact; fill in once re-tested live.
+gis_url: null  # not specifically explored
+
+# Unlike Kern, Butte's tax-default and auction signal have historically
+# come from the SAME already-occurred-auction source (the real, corrected
+# 104-parcel batch) rather than two distinguishable sources - both fields
+# point at the same real event for now.
+tax_default_source: "MPTS tax bill system (same system as assessor, common1.mptsweb.com/mbap/butte)"
+auction_source: "Bid4Assets - Aug 7-10, 2026 auction OCCURRED (real, corrected 104-parcel batch in butte/delivery/). The auction has already happened - as with Del Norte, any future work here is properly excess-proceeds/post-auction, not pre-auction, until a NEW Butte auction cycle is confirmed."
+
+identifier_rules:
+  apn_format: "###-###-###"  # standard 3-segment APN, e.g. "022-210-078-000" (the Gridley parcel referenced in the redemption complication below)
+  note: >
+    Butte's source CSVs (butte_auction_all_105_enriched.csv,
+    butte_SCORED_AUCTION_MATCHES_CALL_SHEET.csv) have not shown the
+    ATN-vs-APN conflation found in Kern - Butte's identifiers appear to
+    be single, consistent APNs throughout. This should be reconfirmed
+    directly against a real Butte assessor page during the 10-record
+    migration test, not assumed true just because it looks that way from
+    the CSV alone.
+
+refresh_cadence: "auction is roughly annual; the Aug 7-10 2026 cycle has already concluded"
+
+# Known, real, UNRESOLVED complication carried over from
+# county-name-assessor-data-access-58.csv: the source CSV still contains
+# a redeemed parcel (Gridley, 022-210-078-000) with no redemption field
+# wired into the regen script - regen_butte_dossiers.py should not be
+# bulk-rerun against the full batch without fixing this first, per the
+# existing matrix note. Flagging here so it isn't lost in the migration.
+adapter_status: both_sites_verified
