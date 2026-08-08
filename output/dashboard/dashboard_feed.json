@@ -1,113 +1,5 @@
 [
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Tulare",
-    "apn": "345-294-016-000",
-    "owner": "FUHRMEISTER RONALD & MARY",
-    "excess_amount": 1665.96,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2027-03-03",
-    "urgency_status": "GREEN (207 days left)",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tulare_345294016000_excess_claim.md",
-    "timestamp": "2026-08-07T19:24:32.183762"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Tulare",
-    "apn": "310-100-002-000",
-    "owner": "IRELAN VIRGINIA D (EST OF)",
-    "excess_amount": 12375.22,
-    "recoverability_score": 75.0,
-    "claim_deadline": "2027-03-03",
-    "urgency_status": "GREEN (207 days left)",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tulare_310100002000_excess_claim.md",
-    "timestamp": "2026-08-07T19:24:32.123968"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Tulare",
-    "apn": "310-100-001-000",
-    "owner": "IRELAN VIRGINIA D (EST OF)",
-    "excess_amount": 718.69,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2027-03-03",
-    "urgency_status": "GREEN (207 days left)",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tulare_310100001000_excess_claim.md",
-    "timestamp": "2026-08-07T19:24:32.068502"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Tulare",
-    "apn": "307-100-046-000",
-    "owner": "HOMER RODNEY P (TR FAM BYPASS TR)",
-    "excess_amount": 2765.58,
-    "recoverability_score": 65.0,
-    "claim_deadline": "2027-03-03",
-    "urgency_status": "GREEN (207 days left)",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tulare_307100046000_excess_claim.md",
-    "timestamp": "2026-08-07T19:24:32.010446"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Tulare",
-    "apn": "260-182-016-000",
-    "owner": "CAMPOS VINCENTE",
-    "excess_amount": 2344.21,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2027-03-03",
-    "urgency_status": "GREEN (207 days left)",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tulare_260182016000_excess_claim.md",
-    "timestamp": "2026-08-07T19:24:31.953817"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Tulare",
-    "apn": "247-030-043-000",
-    "owner": "MATHFALLU AMAR SINGH",
-    "excess_amount": 8276.44,
-    "recoverability_score": 65.0,
-    "claim_deadline": "2027-03-03",
-    "urgency_status": "GREEN (207 days left)",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tulare_247030043000_excess_claim.md",
-    "timestamp": "2026-08-07T19:24:31.897719"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Tulare",
-    "apn": "135-104-011-000",
-    "owner": "STRAWN ALEENE",
-    "excess_amount": 1075.58,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2027-03-03",
-    "urgency_status": "GREEN (207 days left)",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tulare_135104011000_excess_claim.md",
-    "timestamp": "2026-08-07T19:24:31.842622"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Tulare",
-    "apn": "094-074-015-000",
-    "owner": "GUTIERREZ ERMINIA R, GUTIERREZ OSCAR A, MOORE ROSA LINDA",
-    "excess_amount": 10016.01,
-    "recoverability_score": 75.0,
-    "claim_deadline": "2027-03-03",
-    "urgency_status": "GREEN (207 days left)",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tulare_094074015000_excess_claim.md",
-    "timestamp": "2026-08-07T19:24:31.789263"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Tulare",
-    "apn": "093-083-020-000",
-    "owner": "STALLINGS L D & JULIE A",
-    "excess_amount": 51465.68,
-    "recoverability_score": 85.0,
-    "claim_deadline": "2027-03-03",
-    "urgency_status": "GREEN (207 days left)",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tulare_093083020000_excess_claim.md",
-    "timestamp": "2026-08-07T19:24:31.733740"
-  },
-  {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
     "apn": "027-360-016-000",
@@ -119,7 +11,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027360016000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:36.130697"
+    "timestamp": "2026-08-07T19:57:42.317806"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -133,7 +25,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027350051000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:36.062878"
+    "timestamp": "2026-08-07T19:57:42.249028"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -147,7 +39,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027340002000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:35.991260"
+    "timestamp": "2026-08-07T19:57:42.181613"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -161,7 +53,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027320022000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:35.927886"
+    "timestamp": "2026-08-07T19:57:42.114311"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -175,7 +67,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027320014000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:35.858766"
+    "timestamp": "2026-08-07T19:57:42.049653"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -189,7 +81,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027320010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:35.803374"
+    "timestamp": "2026-08-07T19:57:41.985225"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -203,7 +95,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027250037000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:35.739132"
+    "timestamp": "2026-08-07T19:57:41.928134"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -217,7 +109,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027232006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:35.665848"
+    "timestamp": "2026-08-07T19:57:41.867602"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -231,7 +123,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027232001000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:35.599131"
+    "timestamp": "2026-08-07T19:57:41.808168"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -245,7 +137,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027220022000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:35.526529"
+    "timestamp": "2026-08-07T19:57:41.739168"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -259,7 +151,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027200009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:35.463480"
+    "timestamp": "2026-08-07T19:57:41.676330"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -273,7 +165,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027190003000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:35.397732"
+    "timestamp": "2026-08-07T19:57:41.613101"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -287,7 +179,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027160005000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:35.327819"
+    "timestamp": "2026-08-07T19:57:41.549711"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -301,7 +193,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027140027000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:35.248518"
+    "timestamp": "2026-08-07T19:57:41.480454"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -315,7 +207,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027140005000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:35.178793"
+    "timestamp": "2026-08-07T19:57:41.411274"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -329,7 +221,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027130013000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:35.104509"
+    "timestamp": "2026-08-07T19:57:41.338127"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -343,7 +235,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027110008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:35.042741"
+    "timestamp": "2026-08-07T19:57:41.272133"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -357,7 +249,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027110007000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:34.976013"
+    "timestamp": "2026-08-07T19:57:41.202887"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -371,7 +263,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027070041000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:34.910447"
+    "timestamp": "2026-08-07T19:57:41.132657"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -385,7 +277,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027060020000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:34.843391"
+    "timestamp": "2026-08-07T19:57:41.067128"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -399,7 +291,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027030017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:34.774798"
+    "timestamp": "2026-08-07T19:57:40.993637"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -413,7 +305,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025190041000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:34.705180"
+    "timestamp": "2026-08-07T19:57:40.923811"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -427,7 +319,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025190039000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:34.630562"
+    "timestamp": "2026-08-07T19:57:40.842420"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -441,7 +333,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025190037000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:34.563125"
+    "timestamp": "2026-08-07T19:57:40.767066"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -455,7 +347,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025190034000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:34.494693"
+    "timestamp": "2026-08-07T19:57:40.693309"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -469,7 +361,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025190020000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:34.424010"
+    "timestamp": "2026-08-07T19:57:40.617746"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -483,7 +375,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025180039000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:34.349839"
+    "timestamp": "2026-08-07T19:57:40.548356"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -497,7 +389,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025160066000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:34.287331"
+    "timestamp": "2026-08-07T19:57:40.476501"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -511,7 +403,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025160065000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:34.224227"
+    "timestamp": "2026-08-07T19:57:40.404488"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -525,7 +417,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025160056000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:34.157537"
+    "timestamp": "2026-08-07T19:57:40.323881"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -539,7 +431,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025150029000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:34.087266"
+    "timestamp": "2026-08-07T19:57:40.249825"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -553,7 +445,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025150022000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:34.017019"
+    "timestamp": "2026-08-07T19:57:40.175343"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -567,7 +459,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025150014000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:33.943651"
+    "timestamp": "2026-08-07T19:57:40.098712"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -581,7 +473,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025150007000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:33.874213"
+    "timestamp": "2026-08-07T19:57:40.023542"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -595,7 +487,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025140025000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:33.807845"
+    "timestamp": "2026-08-07T19:57:39.949643"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -609,7 +501,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025140019000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:33.732554"
+    "timestamp": "2026-08-07T19:57:39.877525"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -623,7 +515,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025100016000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:33.664912"
+    "timestamp": "2026-08-07T19:57:39.800029"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -637,7 +529,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025090023000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:33.593408"
+    "timestamp": "2026-08-07T19:57:39.722253"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -651,7 +543,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025080055000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:33.523963"
+    "timestamp": "2026-08-07T19:57:39.635011"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -665,7 +557,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025080054000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:33.456552"
+    "timestamp": "2026-08-07T19:57:39.562136"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -679,7 +571,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025080053000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:33.390458"
+    "timestamp": "2026-08-07T19:57:39.491796"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -693,7 +585,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025080044000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:33.321479"
+    "timestamp": "2026-08-07T19:57:39.418664"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -707,7 +599,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025080034000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:33.254826"
+    "timestamp": "2026-08-07T19:57:39.338585"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -721,7 +613,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025080026000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:33.183064"
+    "timestamp": "2026-08-07T19:57:39.263772"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -735,7 +627,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025041001000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:33.110770"
+    "timestamp": "2026-08-07T19:57:39.186617"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -749,7 +641,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025020016000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:33.038371"
+    "timestamp": "2026-08-07T19:57:39.117889"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -763,7 +655,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024320036000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:32.970693"
+    "timestamp": "2026-08-07T19:57:39.041943"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -777,7 +669,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024320001000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:32.900322"
+    "timestamp": "2026-08-07T19:57:38.967078"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -791,7 +683,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024280013000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:32.834217"
+    "timestamp": "2026-08-07T19:57:38.893422"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -805,7 +697,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024270075000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:32.766794"
+    "timestamp": "2026-08-07T19:57:38.817756"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -819,7 +711,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024230012000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:32.701616"
+    "timestamp": "2026-08-07T19:57:38.743537"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -833,7 +725,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024230010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:32.631464"
+    "timestamp": "2026-08-07T19:57:38.670945"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -847,7 +739,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024230004000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:32.549503"
+    "timestamp": "2026-08-07T19:57:38.591563"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -861,7 +753,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024200060000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:32.481333"
+    "timestamp": "2026-08-07T19:57:38.513975"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -875,7 +767,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024190004000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:32.415653"
+    "timestamp": "2026-08-07T19:57:38.445541"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -889,7 +781,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024180004000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:32.345043"
+    "timestamp": "2026-08-07T19:57:38.367387"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -903,7 +795,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024170039000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:32.277984"
+    "timestamp": "2026-08-07T19:57:38.288987"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -917,7 +809,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024170010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:32.206266"
+    "timestamp": "2026-08-07T19:57:38.219730"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -931,7 +823,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024170001000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:32.138177"
+    "timestamp": "2026-08-07T19:57:38.144030"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -945,7 +837,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024160043000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:32.066155"
+    "timestamp": "2026-08-07T19:57:38.068959"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -959,7 +851,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024160042000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:32.001457"
+    "timestamp": "2026-08-07T19:57:38.003486"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -973,7 +865,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024130027000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:31.935790"
+    "timestamp": "2026-08-07T19:57:37.931170"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -987,7 +879,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024130017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:31.866619"
+    "timestamp": "2026-08-07T19:57:37.860662"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1001,7 +893,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024120008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:31.800093"
+    "timestamp": "2026-08-07T19:57:37.788667"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1015,7 +907,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024102013000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:31.729830"
+    "timestamp": "2026-08-07T19:57:37.684752"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1029,7 +921,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024090027000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:31.656326"
+    "timestamp": "2026-08-07T19:57:37.618939"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1043,7 +935,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024060006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:31.589770"
+    "timestamp": "2026-08-07T19:57:37.551480"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1057,7 +949,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024050037000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:31.519013"
+    "timestamp": "2026-08-07T19:57:37.483477"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1071,7 +963,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024010054000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:31.452252"
+    "timestamp": "2026-08-07T19:57:37.412120"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1085,7 +977,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024010048000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:31.384643"
+    "timestamp": "2026-08-07T19:57:37.342745"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1099,7 +991,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024010047000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:31.319372"
+    "timestamp": "2026-08-07T19:57:37.275394"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1113,7 +1005,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022490016000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:31.247427"
+    "timestamp": "2026-08-07T19:57:37.207014"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1127,7 +1019,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022390002000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:31.179867"
+    "timestamp": "2026-08-07T19:57:37.141757"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1141,7 +1033,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022350017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:31.102827"
+    "timestamp": "2026-08-07T19:57:37.069869"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1155,7 +1047,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022340038000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:31.035155"
+    "timestamp": "2026-08-07T19:57:37.001741"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1169,7 +1061,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022340037000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:30.965844"
+    "timestamp": "2026-08-07T19:57:36.931154"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1183,7 +1075,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022340024000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:30.898221"
+    "timestamp": "2026-08-07T19:57:36.867252"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1197,7 +1089,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022330008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:30.828659"
+    "timestamp": "2026-08-07T19:57:36.801586"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1211,7 +1103,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022330006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:30.755370"
+    "timestamp": "2026-08-07T19:57:36.731711"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1225,7 +1117,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022310012000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:30.684024"
+    "timestamp": "2026-08-07T19:57:36.661830"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1239,7 +1131,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022300010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:30.610541"
+    "timestamp": "2026-08-07T19:57:36.596077"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1253,7 +1145,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022300005000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:30.535667"
+    "timestamp": "2026-08-07T19:57:36.531226"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1267,7 +1159,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022280030000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:30.473187"
+    "timestamp": "2026-08-07T19:57:36.461594"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1281,7 +1173,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022280023000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:30.357868"
+    "timestamp": "2026-08-07T19:57:36.393717"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1295,7 +1187,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022280014000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:30.269565"
+    "timestamp": "2026-08-07T19:57:36.325359"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1309,7 +1201,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022200039000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:30.199555"
+    "timestamp": "2026-08-07T19:57:36.248424"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1323,7 +1215,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022170062000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:30.126499"
+    "timestamp": "2026-08-07T19:57:36.176328"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1337,7 +1229,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021240022000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:29.992773"
+    "timestamp": "2026-08-07T19:57:36.101815"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1351,7 +1243,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021240015000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:29.924291"
+    "timestamp": "2026-08-07T19:57:36.021640"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1365,7 +1257,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021240014000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:29.848690"
+    "timestamp": "2026-08-07T19:57:35.951114"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1379,7 +1271,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021230006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:29.777905"
+    "timestamp": "2026-08-07T19:57:35.876439"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1393,7 +1285,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021230001000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:29.703060"
+    "timestamp": "2026-08-07T19:57:35.801006"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1407,7 +1299,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021220009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:29.634851"
+    "timestamp": "2026-08-07T19:57:35.729719"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1421,7 +1313,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021210036000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:29.558770"
+    "timestamp": "2026-08-07T19:57:35.658105"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1435,7 +1327,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021210035000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:29.487511"
+    "timestamp": "2026-08-07T19:57:35.584742"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1449,7 +1341,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021210023000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:29.415345"
+    "timestamp": "2026-08-07T19:57:35.510273"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1463,7 +1355,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021210022000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:29.344313"
+    "timestamp": "2026-08-07T19:57:35.440266"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1477,7 +1369,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021210020000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:29.274975"
+    "timestamp": "2026-08-07T19:57:35.364527"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1491,7 +1383,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021200039000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:29.205991"
+    "timestamp": "2026-08-07T19:57:35.291874"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1505,7 +1397,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021200025000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:29.132677"
+    "timestamp": "2026-08-07T19:57:35.218870"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1519,7 +1411,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021170011000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:29.056429"
+    "timestamp": "2026-08-07T19:57:35.144763"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1533,7 +1425,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021160043000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:28.984176"
+    "timestamp": "2026-08-07T19:57:35.007851"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1547,7 +1439,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021160026000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:28.912458"
+    "timestamp": "2026-08-07T19:57:34.936213"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1561,7 +1453,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021160020000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:28.841867"
+    "timestamp": "2026-08-07T19:57:34.870984"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1575,7 +1467,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021150029000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:28.767094"
+    "timestamp": "2026-08-07T19:57:34.800691"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1589,7 +1481,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021050011000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:28.698090"
+    "timestamp": "2026-08-07T19:57:34.729483"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1603,7 +1495,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019240016000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:28.620622"
+    "timestamp": "2026-08-07T19:57:34.662529"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1617,7 +1509,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019240015000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:28.551484"
+    "timestamp": "2026-08-07T19:57:34.588611"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1631,7 +1523,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019240010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:28.475873"
+    "timestamp": "2026-08-07T19:57:34.517734"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1645,7 +1537,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019190030000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:28.397431"
+    "timestamp": "2026-08-07T19:57:34.446731"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1659,7 +1551,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019190018000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:28.328230"
+    "timestamp": "2026-08-07T19:57:34.366986"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1673,7 +1565,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019190015000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:28.253299"
+    "timestamp": "2026-08-07T19:57:34.292668"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1687,7 +1579,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019190013000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:28.179195"
+    "timestamp": "2026-08-07T19:57:34.217447"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1701,7 +1593,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019150011000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:28.107054"
+    "timestamp": "2026-08-07T19:57:34.144376"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1715,7 +1607,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019140024000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:28.041720"
+    "timestamp": "2026-08-07T19:57:34.073506"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1729,7 +1621,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019050017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:27.967413"
+    "timestamp": "2026-08-07T19:57:34.000383"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1743,7 +1635,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019050014000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:27.898001"
+    "timestamp": "2026-08-07T19:57:33.919576"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1757,7 +1649,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019050013000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:27.826940"
+    "timestamp": "2026-08-07T19:57:33.846061"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1771,7 +1663,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019050011000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:27.764090"
+    "timestamp": "2026-08-07T19:57:33.772902"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1785,7 +1677,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_017320003000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:27.693716"
+    "timestamp": "2026-08-07T19:57:33.694103"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1799,7 +1691,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_017310038000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:27.629967"
+    "timestamp": "2026-08-07T19:57:33.621830"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1813,7 +1705,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_017310033000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:27.565522"
+    "timestamp": "2026-08-07T19:57:33.553206"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1827,7 +1719,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_017280052000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:27.492065"
+    "timestamp": "2026-08-07T19:57:33.478528"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1841,7 +1733,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_017280051000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:27.422216"
+    "timestamp": "2026-08-07T19:57:33.406643"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1855,7 +1747,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_017270011000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:27.349622"
+    "timestamp": "2026-08-07T19:57:33.337902"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1869,7 +1761,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_015210056000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:27.284836"
+    "timestamp": "2026-08-07T19:57:33.269353"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1883,7 +1775,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_015210029000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:27.215179"
+    "timestamp": "2026-08-07T19:57:33.198004"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1897,7 +1789,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_015200051000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:27.143535"
+    "timestamp": "2026-08-07T19:57:33.128566"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1911,7 +1803,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_015160010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:27.078459"
+    "timestamp": "2026-08-07T19:57:33.061080"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1925,7 +1817,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_015150027000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:27.007208"
+    "timestamp": "2026-08-07T19:57:32.997084"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1939,7 +1831,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_015130006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:26.936877"
+    "timestamp": "2026-08-07T19:57:32.924665"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1953,7 +1845,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_015080021000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:26.864256"
+    "timestamp": "2026-08-07T19:57:32.859665"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1967,7 +1859,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_015070008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:26.792436"
+    "timestamp": "2026-08-07T19:57:32.789905"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1981,7 +1873,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013450014000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:26.723961"
+    "timestamp": "2026-08-07T19:57:32.727402"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1995,7 +1887,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013440002000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:26.656132"
+    "timestamp": "2026-08-07T19:57:32.663322"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2009,7 +1901,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013410032000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:26.591707"
+    "timestamp": "2026-08-07T19:57:32.593165"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2023,7 +1915,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013410026000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:26.524038"
+    "timestamp": "2026-08-07T19:57:32.523014"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2037,7 +1929,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013410009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:26.453602"
+    "timestamp": "2026-08-07T19:57:32.458646"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2051,7 +1943,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013410006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:26.384368"
+    "timestamp": "2026-08-07T19:57:32.397671"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2065,7 +1957,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013410005000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:26.316683"
+    "timestamp": "2026-08-07T19:57:32.333926"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2079,7 +1971,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013400004000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:26.247926"
+    "timestamp": "2026-08-07T19:57:32.269187"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2093,7 +1985,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013390035000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:26.181379"
+    "timestamp": "2026-08-07T19:57:32.195434"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2107,7 +1999,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013390016000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:26.115022"
+    "timestamp": "2026-08-07T19:57:32.127511"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2121,7 +2013,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013390010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:26.039643"
+    "timestamp": "2026-08-07T19:57:32.055539"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2135,7 +2027,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013390009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:25.957611"
+    "timestamp": "2026-08-07T19:57:31.985284"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2149,7 +2041,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013390008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:25.885703"
+    "timestamp": "2026-08-07T19:57:31.916200"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2163,7 +2055,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380053000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:25.811895"
+    "timestamp": "2026-08-07T19:57:31.848127"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2177,7 +2069,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380047000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:25.740224"
+    "timestamp": "2026-08-07T19:57:31.777222"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2191,7 +2083,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380043000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:25.665541"
+    "timestamp": "2026-08-07T19:57:31.710301"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2205,7 +2097,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380036000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:25.590710"
+    "timestamp": "2026-08-07T19:57:31.642407"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2219,7 +2111,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380030000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:25.519363"
+    "timestamp": "2026-08-07T19:57:31.569602"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2233,7 +2125,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380018000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:25.430498"
+    "timestamp": "2026-08-07T19:57:31.494639"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2247,7 +2139,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:25.359304"
+    "timestamp": "2026-08-07T19:57:31.417134"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2261,7 +2153,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380015000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:25.277884"
+    "timestamp": "2026-08-07T19:57:31.339911"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2275,7 +2167,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380012000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:25.205677"
+    "timestamp": "2026-08-07T19:57:31.265342"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2289,7 +2181,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:25.133677"
+    "timestamp": "2026-08-07T19:57:31.192488"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2303,7 +2195,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:25.057729"
+    "timestamp": "2026-08-07T19:57:31.115663"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2317,7 +2209,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:24.985462"
+    "timestamp": "2026-08-07T19:57:31.038135"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2331,7 +2223,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380007000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:24.902181"
+    "timestamp": "2026-08-07T19:57:30.966269"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2345,7 +2237,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:24.830379"
+    "timestamp": "2026-08-07T19:57:30.891803"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2359,7 +2251,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380004000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:24.758860"
+    "timestamp": "2026-08-07T19:57:30.795249"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2373,7 +2265,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380002000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:24.684589"
+    "timestamp": "2026-08-07T19:57:30.716531"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2387,7 +2279,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013372012000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:24.611556"
+    "timestamp": "2026-08-07T19:57:30.648117"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2401,7 +2293,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013371010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:24.540213"
+    "timestamp": "2026-08-07T19:57:30.578136"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2415,7 +2307,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013371009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:24.469379"
+    "timestamp": "2026-08-07T19:57:30.507812"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2429,7 +2321,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013361010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:24.395617"
+    "timestamp": "2026-08-07T19:57:30.429866"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2443,7 +2335,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013361007000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:24.322512"
+    "timestamp": "2026-08-07T19:57:30.355746"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2457,7 +2349,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013361001000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:24.250046"
+    "timestamp": "2026-08-07T19:57:30.284100"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2471,7 +2363,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013333009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:24.174461"
+    "timestamp": "2026-08-07T19:57:30.211089"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2485,7 +2377,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013302017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:24.097489"
+    "timestamp": "2026-08-07T19:57:30.128108"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2499,7 +2391,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013290050000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:24.026104"
+    "timestamp": "2026-08-07T19:57:30.046683"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2513,7 +2405,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013290035000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:23.947773"
+    "timestamp": "2026-08-07T19:57:29.971519"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2527,7 +2419,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013290013000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:23.877293"
+    "timestamp": "2026-08-07T19:57:29.898705"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2541,7 +2433,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013280025000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:23.801198"
+    "timestamp": "2026-08-07T19:57:29.824321"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2555,7 +2447,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013280024000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:23.727809"
+    "timestamp": "2026-08-07T19:57:29.750469"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2569,7 +2461,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013250021000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:23.644120"
+    "timestamp": "2026-08-07T19:57:29.675826"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2583,7 +2475,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013250020000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:23.574199"
+    "timestamp": "2026-08-07T19:57:29.592532"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2597,7 +2489,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013250019000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:23.499674"
+    "timestamp": "2026-08-07T19:57:29.521266"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2611,7 +2503,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013250017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:23.426140"
+    "timestamp": "2026-08-07T19:57:29.447700"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2625,7 +2517,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013250004000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:23.352446"
+    "timestamp": "2026-08-07T19:57:29.374360"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2639,7 +2531,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013250002000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:23.278467"
+    "timestamp": "2026-08-07T19:57:29.304817"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2653,7 +2545,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013242007000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:23.206979"
+    "timestamp": "2026-08-07T19:57:29.236599"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2667,7 +2559,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013242006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:23.137286"
+    "timestamp": "2026-08-07T19:57:29.154002"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2681,7 +2573,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013242005000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:23.069833"
+    "timestamp": "2026-08-07T19:57:29.087173"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2695,7 +2587,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013242004000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:23.007403"
+    "timestamp": "2026-08-07T19:57:29.010758"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2709,7 +2601,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013242002000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:22.929916"
+    "timestamp": "2026-08-07T19:57:28.938378"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2723,7 +2615,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013210012000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:22.860746"
+    "timestamp": "2026-08-07T19:57:28.860947"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2737,7 +2629,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013150024000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:22.786721"
+    "timestamp": "2026-08-07T19:57:28.794944"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2751,7 +2643,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013150007000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:22.720030"
+    "timestamp": "2026-08-07T19:57:28.734159"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2765,7 +2657,7 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013150006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:22.647073"
+    "timestamp": "2026-08-07T19:57:28.654399"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -2779,6 +2671,132 @@
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013050050000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:21:22.578145"
+    "timestamp": "2026-08-07T19:57:28.521925"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Tehama",
+    "apn": "013-050-046-000",
+    "owner": "UNKNOWN",
+    "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "75.0",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013050046000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T19:57:28.449684"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Tehama",
+    "apn": "013-050-031-000",
+    "owner": "UNKNOWN",
+    "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "75.0",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013050031000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T19:57:28.384125"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Tehama",
+    "apn": "013-050-017-000",
+    "owner": "UNKNOWN",
+    "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "75.0",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013050017000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T19:57:28.317902"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Tehama",
+    "apn": "013-050-016-000",
+    "owner": "UNKNOWN",
+    "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "75.0",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013050016000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T19:57:28.247495"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Tehama",
+    "apn": "013-050-011-000",
+    "owner": "UNKNOWN",
+    "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "75.0",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013050011000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T19:57:28.166278"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Tehama",
+    "apn": "013-040-060-000",
+    "owner": "UNKNOWN",
+    "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "75.0",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013040060000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T19:57:28.096926"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Tehama",
+    "apn": "013-040-056-000",
+    "owner": "UNKNOWN",
+    "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "75.0",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013040056000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T19:57:28.026077"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Tehama",
+    "apn": "011-440-042-000",
+    "owner": "UNKNOWN",
+    "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "75.0",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_011440042000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T19:57:27.959307"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Tehama",
+    "apn": "011-440-034-000",
+    "owner": "UNKNOWN",
+    "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "75.0",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_011440034000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T19:57:27.887925"
   }
 ]

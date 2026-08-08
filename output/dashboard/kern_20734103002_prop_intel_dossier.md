@@ -3,7 +3,7 @@
 **County**: Kern County, CA  
 **APN**: `207-341-03-00-2`  
 **Opportunity Tier**: **Level 3 (Moderate Potential)**  
-**Generated Date**: 2026-08-07 19:06:41  
+**Generated Date**: 2026-08-07 19:56:21  
 
 **🔔 PRIORITY SIGNAL: GOING TO AUCTION in 38 days (2026-09-14 - 2026-09-16)**
 
@@ -19,7 +19,7 @@
 | **Lien Risk Tier** | **HIGH** |
 | **Minimum Starting Bid** | $4,400.00 |
 | **Net Assessed Total Value** | $1,568.00 |
-| **Predicted Auction Window** | 2027-06-15 |
+| **Predicted Auction Window** | 2026-09-14 to 2026-09-16 |
 
 ---
 
@@ -46,7 +46,7 @@
 
 ## 🎯 Active Buyer Match Intelligence
 
-- **Matched Buyer Segment**: N/A — buyer match not run active repeat buyers tracked in Kern
+- **Matched Buyer Segment**: N/A — buyer match not run for Kern
 - **Top Buyer Match**: No Verified Buyer Match *(Score: N/A)*
 
 ---
@@ -55,7 +55,7 @@
 
 - **Primary Source Endpoint**: `assessorapps.kerncounty.com (live, verified 2026-08-06) + kern_REAL_AUCTION_PARCELS_CLEAN.csv (min bid)`
 - **Data Integrity Status**: PARTIALLY VERIFIED — assessed value confirmed live against county assessor; owner name from source list, not independently recorder-cross-referenced; confirmed NOT already transferred (checked against recorded document history as of 2026-08-06)
-- **Data Gap Audit**: None found
+- **Data Gap Audit**: Missing: situs, doc_count, transfer_tax, acreage, buyer_match
 
 ---
 *Generated automatically by CA-UNIFY Engine | Verified Public Source Data*

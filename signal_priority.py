@@ -30,6 +30,14 @@ AUCTION_CALENDAR = {
 EXCESS_PROCEEDS_CLAIM_WINDOW_DAYS = 365  # approximate — real deadline is parcel-specific
 
 
+def get_auction_window_display(county_key: str) -> str:
+    """Real auction window string for a county, or an honest 'not yet scheduled'."""
+    cal = AUCTION_CALENDAR.get(county_key.lower())
+    if not cal:
+        return "Not yet scheduled"
+    return f"{cal['start'].isoformat()} to {cal['end'].isoformat()}"
+
+
 def get_signal(county_key: str, today: date | None = None) -> dict:
     """Return the priority signal for a county as of `today` (defaults to real today)."""
     today = today or date.today()

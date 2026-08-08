@@ -3,7 +3,9 @@
 **County**: Fresno County, CA  
 **APN**: `375-151-08`  
 **Opportunity Tier**: **UNVERIFIED (Insufficient Source Data)**  
-**Generated Date**: 2026-08-06 19:58:23  
+**Generated Date**: 2026-08-07 19:56:47  
+
+**🔔 PRIORITY SIGNAL: GOING TO AUCTION in 34 days (2026-09-10 - 2026-09-11)**
 
 ---
 
@@ -17,7 +19,7 @@
 | **Lien Risk Tier** | **UNKNOWN** |
 | **Minimum Starting Bid** | $5,000.00 |
 | **Net Assessed Total Value** | $22,086.00 |
-| **Predicted Auction Window** | 2027-06-15 |
+| **Predicted Auction Window** | 2026-09-10 to 2026-09-11 |
 
 ---
 
@@ -44,7 +46,7 @@
 
 ## 🎯 Active Buyer Match Intelligence
 
-- **Matched Buyer Segment**: N/A — buyer match not run active repeat buyers tracked in Fresno
+- **Matched Buyer Segment**: N/A — buyer match not run for Fresno
 - **Top Buyer Match**: No Verified Buyer Match *(Score: N/A)*
 
 ---
@@ -53,7 +55,7 @@
 
 - **Primary Source Endpoint**: `Fresno County Board of Supervisors Resolution 26-245 (File 26-0600, item #176, default #19-02656) + assrmaps.co.fresno.ca.us live assessed value (verified 2026-08-06)`
 - **Data Integrity Status**: UNVERIFIED — SOURCE DATA INCOMPLETE
-- **Data Gap Audit**: Missing: owner
+- **Data Gap Audit**: Missing: owner, doc_count, transfer_tax, acreage, buyer_match
 
 ---
 *Generated automatically by CA-UNIFY Engine | Verified Public Source Data*

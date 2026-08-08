@@ -3,7 +3,7 @@
 **County**: Tehama County, CA  
 **APN**: `008-031-001-000`  
 **Opportunity Tier**: **UNVERIFIED (Insufficient Source Data)**  
-**Generated Date**: 2026-08-06 22:24:17  
+**Generated Date**: 2026-08-07 19:57:19  
 
 **🔔 PRIORITY SIGNAL: No scheduled auction — monitor for a future sale date**
 
@@ -19,7 +19,7 @@
 | **Lien Risk Tier** | **UNKNOWN** |
 | **Minimum Starting Bid** | $10,627.00 |
 | **Net Assessed Total Value** | $42,508.00 |
-| **Predicted Auction Window** | 2027-06-15 |
+| **Predicted Auction Window** | Not yet scheduled |
 
 ---
 
@@ -46,7 +46,7 @@
 
 ## 🎯 Active Buyer Match Intelligence
 
-- **Matched Buyer Segment**: N/A — buyer match not run active repeat buyers tracked in Tehama
+- **Matched Buyer Segment**: N/A — buyer match not run for Tehama
 - **Top Buyer Match**: No Verified Buyer Match *(Score: N/A)*
 
 ---
@@ -55,7 +55,7 @@
 
 - **Primary Source Endpoint**: `apps.mptsweb.com/TaxBillv2 (live, verified 2026-08-06, default case DEF230000117)`
 - **Data Integrity Status**: UNVERIFIED — SOURCE DATA INCOMPLETE
-- **Data Gap Audit**: Missing: owner, doc_number
+- **Data Gap Audit**: Missing: owner, doc_number, situs, doc_count, transfer_tax, buyer_match
 
 ---
 *Generated automatically by CA-UNIFY Engine | Verified Public Source Data*

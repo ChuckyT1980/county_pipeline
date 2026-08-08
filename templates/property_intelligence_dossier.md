@@ -46,7 +46,7 @@
 
 ## 🎯 Active Buyer Match Intelligence
 
-- **Matched Buyer Segment**: {{matched_buyers_count}} active repeat buyers tracked in {{county_name}}
+- **Matched Buyer Segment**: {{matched_buyers_count}}
 - **Top Buyer Match**: {{top_matched_buyer}} *(Score: {{top_buyer_score}})*
 
 ---

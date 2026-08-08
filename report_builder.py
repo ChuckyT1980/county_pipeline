@@ -14,7 +14,7 @@ from pathlib import Path
 from typing import Any, Optional
 
 from predictive_scorer import score_excess_proceeds, score_property_intelligence
-from signal_priority import get_signal
+from signal_priority import get_auction_window_display, get_signal
 
 ROOT = Path(__file__).resolve().parent
 TEMPLATES_DIR = ROOT / "templates"
@@ -135,7 +135,26 @@ def build_property_intelligence_dossier(parcel_data: dict[str, Any], county: str
     else:
         verification_status_val = parcel_data.get("verification_status") or "PARTIALLY VERIFIED — SEE DATA GAPS"
 
-    data_gaps_val = ("Missing: " + ", ".join(missing_fields)) if missing_fields else (parcel_data.get("data_gaps") or "None found")
+    # Secondary gaps: don't affect the tier/gate above (those 3 fields are the
+    # ones that make a record untrustworthy as an "opportunity"), but a dossier
+    # missing e.g. situs/doc_count/transfer_tax genuinely has gaps and must not
+    # silently say "None found" just because the 3 gating fields are present.
+    secondary_gap_checks = {
+        "situs": parcel_data.get("situs"),
+        "doc_count": parcel_data.get("recorder_doc_count") or parcel_data.get("doc_count"),
+        "transfer_tax": parcel_data.get("transfer_tax"),
+        "acreage": parcel_data.get("acreage") or parcel_data.get("lot_size"),
+        "buyer_match": parcel_data.get("matched_buyers_count"),
+    }
+    secondary_gaps = [k for k, v in secondary_gap_checks.items() if not v]
+    all_gaps = missing_fields + secondary_gaps
+
+    if parcel_data.get("data_gaps"):
+        data_gaps_val = parcel_data["data_gaps"]
+    elif all_gaps:
+        data_gaps_val = "Missing: " + ", ".join(all_gaps)
+    else:
+        data_gaps_val = "None found"
 
     signal = get_signal(county)
 
@@ -150,7 +169,7 @@ def build_property_intelligence_dossier(parcel_data: dict[str, Any], county: str
         "{{lien_risk}}": scores["lien_risk"],
         "{{min_bid}}": f"{min_bid:,.2f}",
         "{{assessed_value}}": f"{assessed:,.2f}",
-        "{{predicted_auction_window}}": parcel_data.get("predicted_auction_window") or f"{datetime.now().year + 1}-06-15",
+        "{{predicted_auction_window}}": parcel_data.get("predicted_auction_window") or get_auction_window_display(county),
         "{{owner_name}}": owner_str,
         "{{entity_type}}": entity_type,
         "{{is_out_of_state_owner}}": "Yes" if scores["is_out_of_state_owner"] else "No",
@@ -165,7 +184,11 @@ def build_property_intelligence_dossier(parcel_data: dict[str, Any], county: str
         "{{transfer_price}}": parcel_data.get("transfer_price") or "N/A",
         "{{doc_count}}": parcel_data.get("recorder_doc_count") or parcel_data.get("doc_count") or "N/A",
         "{{notice_status}}": "Recorded Notice of Power to Sell Present" if parcel_data.get("notice_of_default_present") else "Standard Default Notice",
-        "{{matched_buyers_count}}": parcel_data.get("matched_buyers_count") or "N/A — buyer match not run",
+        "{{matched_buyers_count}}": (
+            f"{parcel_data['matched_buyers_count']} active repeat buyers tracked in {county_name}"
+            if parcel_data.get("matched_buyers_count")
+            else f"N/A — buyer match not run for {county_name}"
+        ),
         "{{top_matched_buyer}}": parcel_data.get("top_matched_buyer") or "No Verified Buyer Match",
         "{{top_buyer_score}}": parcel_data.get("top_buyer_score") or "N/A",
         "{{source_url_or_file}}": parcel_data.get("source_url") or parcel_data.get("source_file") or "UNKNOWN — SOURCE NOT RECORDED",
