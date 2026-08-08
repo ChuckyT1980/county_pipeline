@@ -3,7 +3,9 @@
 **County**: Butte County, CA  
 **APN**: `061-550-018-000`  
 **Opportunity Tier**: **Level 1 (Prime Opportunity — Top 5%)**  
-**Generated Date**: 2026-08-05 21:58:51  
+**Generated Date**: 2026-08-08 11:25:16  
+
+**🔔 PRIORITY SIGNAL: AUCTION LIVE NOW (through 2026-08-10)**
 
 ---
 
@@ -17,7 +19,7 @@
 | **Lien Risk Tier** | **LOW** |
 | **Minimum Starting Bid** | $5,805.00 |
 | **Net Assessed Total Value** | $55,159.00 |
-| **Predicted Auction Window** | 2027-06-15 |
+| **Predicted Auction Window** | 2026-08-07 to 2026-08-10 |
 
 ---
 
@@ -44,7 +46,7 @@
 
 ## 🎯 Active Buyer Match Intelligence
 
-- **Matched Buyer Segment**: N/A — buyer match not run active repeat buyers tracked in Butte
+- **Matched Buyer Segment**: N/A — buyer match not run for Butte
 - **Top Buyer Match**: No Verified Buyer Match *(Score: N/A)*
 
 ---
@@ -53,7 +55,7 @@
 
 - **Primary Source Endpoint**: `tax_pipeline/butte_auction_all_105_enriched.csv + butte/butte_SCORED_AUCTION_MATCHES_CALL_SHEET.csv`
 - **Data Integrity Status**: PARTIALLY VERIFIED — owner_name_confidence=0.90, verification_score=75
-- **Data Gap Audit**: Missing: doc_number
+- **Data Gap Audit**: Missing: doc_number, transfer_tax, acreage, buyer_match
 
 ---
 *Generated automatically by CA-UNIFY Engine | Verified Public Source Data*

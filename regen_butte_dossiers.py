@@ -38,9 +38,21 @@ def main():
     all_apns = sorted(set(auction) | set(verified))
 
     generated = 0
+    skipped_redeemed = []
     for apn in all_apns:
         a = auction.get(apn, {})
         v = verified.get(apn, {})
+
+        # BUTTE_MONITOR finding (2026-08-08): the call sheet's own
+        # redemption_status field was never wired into this script - a
+        # parcel that redeemed before/after the auction was still being
+        # regenerated as a live opportunity every time this script ran.
+        # Confirmed real: APN 022-210-078-000 (Gridley) carries
+        # redemption_status="redeemed" in the source CSV. Skip anything
+        # marked redeemed rather than silently including it.
+        if str(v.get("redemption_status", "")).strip().lower() == "redeemed":
+            skipped_redeemed.append(v.get("apn") or apn)
+            continue
 
         apn_dash = a.get("apn_dash") or v.get("apn") or apn
         owner = (v.get("verified_current_owner_name") or a.get("owner_name") or "").strip()
@@ -78,6 +90,8 @@ def main():
         generated += 1
 
     print(f"Regenerated {generated} Butte dossiers from real merged source data.")
+    if skipped_redeemed:
+        print(f"Skipped {len(skipped_redeemed)} redeemed parcel(s), excluded from output: {skipped_redeemed}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,26 @@
+{
+  "monitor": "BUTTE_MONITOR",
+  "execution_timestamp": "2026-08-08T11:30:00Z",
+  "entry_point": "python3 regen_butte_dossiers.py",
+  "status": "COMPLETED",
+  "result_count": 104,
+  "excluded_count": 1,
+  "excluded_apns": ["022-210-078-000"],
+  "excluded_reason": "redemption_status=redeemed in source CSV (Gridley parcel) - real bug fixed this run: redemption filtering was not previously wired into regen_butte_dossiers.py, meaning a re-run before this fix would have wrongly regenerated a dossier for an already-redeemed parcel. Fixed by adding an explicit skip-on-redeemed check, proven by actual execution (not code review alone) - see butte_monitor_run.log.",
+  "source_access_condition": "Both source CSVs (tax_pipeline/butte_auction_all_105_enriched.csv, butte/butte_SCORED_AUCTION_MATCHES_CALL_SHEET.csv) read successfully, no access issues.",
+  "live_drift_check": {
+    "method": "8-parcel live HTTP sample against common1.mptsweb.com/mbap/butte/asr/AsrPrint/{apn}",
+    "sample_size": 8,
+    "http_200_count": 8,
+    "real_content_confirmed": true,
+    "log_path": "monitor_runs/butte_live_sample_check.log",
+    "coverage_note": "Sample only, not exhaustive re-verification of all 104 - live-checking all 104 against the assessor was not performed this run; this establishes the assessor source is currently live and returning real data, not that every one of the 104 parcels' current status/ownership is unchanged since original enrichment."
+  },
+  "exceptions": [],
+  "evidence_paths": [
+    "monitor_runs/butte_monitor_run.log",
+    "monitor_runs/butte_live_sample_check.log",
+    "regen_butte_dossiers.py (fix applied)",
+    "output/dashboard/butte_*_prop_intel_dossier.md (104 files, regenerated)"
+  ]
+}

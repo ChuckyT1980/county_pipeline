@@ -1,0 +1,37 @@
+{
+  "monitor": "KERN_MONITOR",
+  "execution_timestamp": "2026-08-08T18:27:40Z",
+  "entry_point_attempted": "kern/kern_enrich_docnum_verified.py (full both-sites re-verification pipeline)",
+  "status": "BLOCKED_PARTIAL",
+  "result_count": 0,
+  "blocker": {
+    "description": "Kern's full live re-verification pipeline requires a stealth browser (Playwright) plus Telerik CAPTCHA OCR-solving (tesseract) on both the assessor and recorder sites. Neither is available in this session's main environment.",
+    "reproducible_evidence": [
+      "$ tesseract --version -> 'bash: tesseract: command not found' (exit 127). Confirmed via dpkg: no tesseract package installed, only two unused .deb files present under /home/chuck (never installed).",
+      "$ python3 -c 'import playwright' -> ModuleNotFoundError: No module named 'playwright' (in the main session environment; a separate scratchpad venv from earlier in this session does have it installed, but was not reused here since standing up a fresh authenticated browser+OCR session was judged out of 'fix only what is necessary' scope for this ticket)."
+    ],
+    "not_attempted": "Installing tesseract/playwright system-wide was NOT done - that is a system-level environment change beyond this ticket's 'fix only what is necessary to permit correct execution' scope, and was not requested. Flagged as the concrete next action instead."
+  },
+  "what_was_actually_run": {
+    "http_reachability_check": {
+      "assessorapps.kerncounty.com": "HTTP 200 (live)",
+      "recorderonline.co.kern.ca.us": "HTTP 200 (live)",
+      "conclusion": "Both real Kern sources are confirmed live and reachable at the network level. This does NOT confirm current per-parcel data (that requires the CAPTCHA-gated form submission, not just reaching the login/search page), so it is not equivalent to a full monitor pass."
+    },
+    "atn_apn_mislabeling_audit": {
+      "method": "exhaustive static scan of every existing Kern dossier's '**APN**:' field against the known 5-segment ATN pattern (###-###-##-##-#)",
+      "total_dossiers_scanned": 245,
+      "mislabeled_count": 245,
+      "mislabeled_percentage": "100%",
+      "finding": "Every single one of the 245 existing Kern dossiers currently displays the ATN (e.g. '017-490-06-00-3') labeled as '**APN**'. This is the exact conflation identified and modeled in property_model.py's PropertyIdentifier (commit fa2c300) - confirmed here to be complete/universal across the current dossier set, not partial.",
+      "not_yet_done": "The dossiers themselves have NOT been relabeled/regenerated with the corrected assessor_parcel_number this run - that requires deciding a regeneration strategy (see DOSSIER_QA report) and was out of this monitor run's scope (verify-and-report, not silently rewrite 245 buyer-facing files without review)."
+    }
+  },
+  "exceptions": [
+    "KERN_TESSERACT_NOT_INSTALLED - blocks full live CAPTCHA-solving re-verification this session",
+    "KERN_ATN_MISLABELED_AS_APN_ALL_245 - confirmed universal, not yet remediated in dossier output"
+  ],
+  "evidence_paths": [
+    "monitor_runs/kern_monitor_run.log"
+  ]
+}
