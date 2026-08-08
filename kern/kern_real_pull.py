@@ -162,7 +162,20 @@ def main(limit: int = 25, offset: int = 0, out_path: str = None):
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
 
+        # BUG FIX 2026-08-07: a single browser page reused across an entire
+        # 141-parcel run degraded hard partway through a run (76/76 real
+        # successes, then 65/65 straight failures — confirmed by re-fetching
+        # one of the "failed" APNs standalone seconds later: it succeeded
+        # instantly with a fresh page/session). Not a site block, not bad
+        # data — the long-lived session/page itself degrades under sustained
+        # load. Recycling the page every RECYCLE_EVERY parcels avoids it.
+        RECYCLE_EVERY = 25
+
         for i, row in enumerate(candidates):
+            if i > 0 and i % RECYCLE_EVERY == 0:
+                page.close()
+                page = browser.new_page()
+
             raw_apn = row.get("Parcel_Number") or row.get("APN_1") or ""
             apn_search = to_search_apn(raw_apn)
             print(f"[{offset+i+1}/{offset+len(candidates)}] {raw_apn} (search: {apn_search}) ...", end=" ")
@@ -175,6 +188,23 @@ def main(limit: int = 25, offset: int = 0, out_path: str = None):
                     parsed = None
                 if parsed:
                     break
+
+            if not parsed:
+                # Recycling the page here too handles mid-run degradation,
+                # not just the periodic schedule above.
+                try:
+                    page.close()
+                except Exception:
+                    pass
+                page = browser.new_page()
+                try:
+                    for retry_attempt in range(2):
+                        parsed = fetch_one(page, apn_search)
+                        if parsed:
+                            break
+                except Exception as e:
+                    print(f"[fresh-page retry ERROR: {e}] ", end="")
+                    parsed = None
 
             if not parsed:
                 print("excluded (no verified value / CAPTCHA failed / not found)")
