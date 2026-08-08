@@ -1,0 +1,2485 @@
+[
+  {
+    "apn": "031-113-480-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "12400.00",
+    "source_situs": "7095 TEHAMA ST NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005668",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:27 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "WALKER BRITTANI LEANN"
+      },
+      {
+        "doc_number": "2025008011",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:16 AM",
+        "grantor": "DANNER DOROTHY M TRUSTEE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "031-113-560-000",
+    "status": "STILL_DEFAULTED_NO_RELEASE_FOUND",
+    "min_bid": "2000.00",
+    "source_situs": "7099 TEHAMA ST NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2025008012",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:16 AM",
+        "grantor": "DANNER DOROTHY M TRUSTEE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "031-113-570-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2000.00",
+    "source_situs": "7092 BUTTE ST NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005669",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:27 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2025008013",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:16 AM",
+        "grantor": "DANNER DOROTHY M TRUSTEE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "031-123-440-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1800.00",
+    "source_situs": "7230 TEHAMA ST NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005858",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 08:57 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2024011452",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "10/30/2024 09:09 AM",
+        "grantor": "BUTLER PERRY",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "031-142-050-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1200.00",
+    "source_situs": "7271 SIERRA ST NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005859",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 08:57 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      }
+    ]
+  },
+  {
+    "apn": "031-151-540-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2800.00",
+    "source_situs": "7125 LIBERTY ST NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005860",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 08:58 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "THE LAND REPUBLIC LLC"
+      }
+    ]
+  },
+  {
+    "apn": "031-172-320-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2400.00",
+    "source_situs": "2810 MERCED ST NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005861",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 08:58 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "RAMOS KRYSTAL"
+      }
+    ]
+  },
+  {
+    "apn": "031-181-380-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2100.00",
+    "source_situs": "2840 LAKEVIEW DR NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005862",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 08:58 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      }
+    ]
+  },
+  {
+    "apn": "031-192-630-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3200.00",
+    "source_situs": "3154 BUCKINGHAM WY NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005863",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 08:59 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "WILLIAMS RHYS"
+      }
+    ]
+  },
+  {
+    "apn": "031-201-060-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "5500.00",
+    "source_situs": "3120 CHERRY ST NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005864",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 08:59 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      }
+    ]
+  },
+  {
+    "apn": "031-213-230-000",
+    "status": "REDEEMED",
+    "min_bid": "2000.00",
+    "source_situs": "3551 YUBA ST NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004460",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:54 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "DUNCAN CLAYTON E"
+      },
+      {
+        "doc_number": "2025008015",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:16 AM",
+        "grantor": "DUNCAN CLAYTON E",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "031-221-310-000",
+    "status": "REDEEMED",
+    "min_bid": "11500.00",
+    "source_situs": "6869 FLOYD WY NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004461",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:54 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "SOLORIO NATHAN"
+      },
+      {
+        "doc_number": "2025008016",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:16 AM",
+        "grantor": "SOLORIO NATHAN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "032-041-280-000",
+    "status": "REDEEMED",
+    "min_bid": "15900.00",
+    "source_situs": "6882 FLOYD WY NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004463",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:54 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "HF ASSETS LLC"
+      },
+      {
+        "doc_number": "2025008018",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:17 AM",
+        "grantor": "HF ASSETS LLC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "032-042-240-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1700.00",
+    "source_situs": "3106 KNOB ST NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005865",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 08:59 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2025008075",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 12:47 PM",
+        "grantor": "LOBAUGH KIMBERLY ANN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "032-042-330-000",
+    "status": "STILL_DEFAULTED_NO_RELEASE_FOUND",
+    "min_bid": "1700.00",
+    "source_situs": "6860 BLACK OAK ST NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2025008076",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 12:47 PM",
+        "grantor": "LOBAUGH KIMBERLY ANN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "032-083-300-000",
+    "status": "REDEEMED",
+    "min_bid": "10300.00",
+    "source_situs": "3590 LAKEVIEW DR NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004464",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:54 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "STRATTON ANTHONY W"
+      },
+      {
+        "doc_number": "2025008077",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 12:48 PM",
+        "grantor": "STRATTON ANTHONY W",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "032-101-250-000",
+    "status": "NO_RECENT_RECORDER_ACTIVITY_FOUND",
+    "min_bid": "24200.00",
+    "source_situs": "6813 SAYRE AVE NICE CA",
+    "docs_json": []
+  },
+  {
+    "apn": "032-301-560-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2000.00",
+    "source_situs": "4360 LAKEVIEW DR NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005670",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:28 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "THE LAND REPUBLIC LLC"
+      },
+      {
+        "doc_number": "2025008078",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 12:48 PM",
+        "grantor": "WU JOHN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "032-332-260-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1800.00",
+    "source_situs": "3423 KNOB ST NICE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005867",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:00 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2025008079",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 12:48 PM",
+        "grantor": "CHANNEL STEVEN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "034-041-050-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2600.00",
+    "source_situs": "6209 ROLAND DR LUCERNE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005868",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:00 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "SKYLINE HERITAGE TRUST"
+      }
+    ]
+  },
+  {
+    "apn": "034-082-130-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "13100.00",
+    "source_situs": "6145 SECOND AVE LUCERNE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005671",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:28 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "MELTZER MARY ANNE"
+      },
+      {
+        "doc_number": "2025008506",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:44 AM",
+        "grantor": "ZEBELEAN JOHN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "034-172-250-000",
+    "status": "REDEEMED",
+    "min_bid": "10900.00",
+    "source_situs": "6282 THIRTEENTH AVE LUCERNE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004435",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:44 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "WATERMAN RYAN MATTHEW"
+      },
+      {
+        "doc_number": "2025008507",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:44 AM",
+        "grantor": "WATERMAN RYAN MATTHEW",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "034-193-200-000",
+    "status": "REDEEMED",
+    "min_bid": "6600.00",
+    "source_situs": "6312 E STATE HWY 20 LUCERNE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004436",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:45 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "ADVENTIST HEALTH CLEARLAKE HOSPITAL INC"
+      },
+      {
+        "doc_number": "2025008508",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:44 AM",
+        "grantor": "ADVENTIST HEALTH CLEAR LAKE HOSPITAL INC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "034-241-190-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2400.00",
+    "source_situs": "6465 E STATE HWY 20 LUCERNE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005672",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:28 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "LAND REPUBLIC LLC"
+      },
+      {
+        "doc_number": "2025008568",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 10:20 AM",
+        "grantor": "CAMPOS MENDOZA ERNESTO",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "034-314-040-000",
+    "status": "REDEEMED",
+    "min_bid": "1900.00",
+    "source_situs": "5980 GROVE ST LUCERNE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005378",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "06/01/2026 08:29 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KUPPINGER SHERRY R"
+      },
+      {
+        "doc_number": "2026004437",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:45 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KUPPINGER SHERRY R"
+      },
+      {
+        "doc_number": "2026002954",
+        "doc_type": "DEED",
+        "recording_date": "03/30/2026 09:51 AM",
+        "grantor": "KUPPINGER SHERRY R",
+        "grantee": "HUMPHREY JACOB THOMAS"
+      },
+      {
+        "doc_number": "2025008102",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 12:57 PM",
+        "grantor": "KUPPINGER SHERRY R",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "034-314-050-000",
+    "status": "REDEEMED",
+    "min_bid": "1900.00",
+    "source_situs": "5990 GROVE ST LUCERNE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005379",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "06/01/2026 08:29 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KUPPINGER SHERRY R"
+      },
+      {
+        "doc_number": "2026004438",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:45 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KUPPINGER SHERRY R"
+      },
+      {
+        "doc_number": "2026002954",
+        "doc_type": "DEED",
+        "recording_date": "03/30/2026 09:51 AM",
+        "grantor": "KUPPINGER SHERRY R",
+        "grantee": "HUMPHREY JACOB THOMAS"
+      },
+      {
+        "doc_number": "2025008103",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 12:57 PM",
+        "grantor": "KUPPINGER SHERRY R",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "034-351-090-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1200.00",
+    "source_situs": "3243 ATHOLL RD LUCERNE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005869",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:00 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "HOFFMAN CAROL"
+      }
+    ]
+  },
+  {
+    "apn": "034-362-310-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2300.00",
+    "source_situs": "6563 E STATE HWY 20 LUCERNE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005673",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:29 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "LAND REPUBLIC LLC"
+      },
+      {
+        "doc_number": "2025008509",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:44 AM",
+        "grantor": "RYSSEMUS H B",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "034-433-070-000",
+    "status": "REDEEMED",
+    "min_bid": "6900.00",
+    "source_situs": "6030 GROVE ST LUCERNE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005380",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "06/01/2026 08:30 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KUPPINGER SHERRY R"
+      },
+      {
+        "doc_number": "2026004439",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:45 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KUPPINGER SHERRY R"
+      },
+      {
+        "doc_number": "2026002954",
+        "doc_type": "DEED",
+        "recording_date": "03/30/2026 09:51 AM",
+        "grantor": "KUPPINGER SHERRY R",
+        "grantee": "HUMPHREY JACOB THOMAS"
+      },
+      {
+        "doc_number": "2025008104",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 12:57 PM",
+        "grantor": "KUPPINGER SHERRY R",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "034-433-100-000",
+    "status": "REDEEMED",
+    "min_bid": "13000.00",
+    "source_situs": "6002 GROVE ST LUCERNE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005381",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "06/01/2026 08:30 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KUPPINGER SHERRY R"
+      },
+      {
+        "doc_number": "2026004440",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:45 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KUPPINGER SHERRY R"
+      },
+      {
+        "doc_number": "2026002954",
+        "doc_type": "DEED",
+        "recording_date": "03/30/2026 09:51 AM",
+        "grantor": "KUPPINGER SHERRY R",
+        "grantee": "HUMPHREY JACOB THOMAS"
+      },
+      {
+        "doc_number": "2025008105",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 12:58 PM",
+        "grantor": "KUPPINGER SHERRY R",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "034-552-380-000",
+    "status": "STILL_DEFAULTED_NO_RELEASE_FOUND",
+    "min_bid": "1700.00",
+    "source_situs": "3932 LAKEVIEW TER LUCERNE CA",
+    "docs_json": [
+      {
+        "doc_number": "2025008107",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 12:58 PM",
+        "grantor": "BERESFORD ERIC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "034-591-310-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1300.00",
+    "source_situs": "3865 LAKEVIEW TER LUCERNE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005674",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:29 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "CHUNG RAYMOND"
+      },
+      {
+        "doc_number": "2024013437",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "12/12/2024 08:37 AM",
+        "grantor": "GRAINGER REYNALDA R",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "034-671-130-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1300.00",
+    "source_situs": "3835 LAKEVIEW TER LUCERNE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005675",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:29 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "CHUNG RAYMOND"
+      }
+    ]
+  },
+  {
+    "apn": "034-671-180-000",
+    "status": "REDEEMED",
+    "min_bid": "15500.00",
+    "source_situs": "6610 LOGAN DR LUCERNE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004441",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:46 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KELLER JAMES R"
+      },
+      {
+        "doc_number": "2025008511",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:44 AM",
+        "grantor": "KELLER JAMES R",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "034-866-170-000",
+    "status": "STILL_DEFAULTED_NO_RELEASE_FOUND",
+    "min_bid": "19600.00",
+    "source_situs": "6623 VICTORIA ST LUCERNE CA",
+    "docs_json": [
+      {
+        "doc_number": "2024011502",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "10/30/2024 09:56 AM",
+        "grantor": "SMITH NICKY DALE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-012-320-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2900.00",
+    "source_situs": "9005 E STATE HWY 20 GLENHAVEN CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005870",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:01 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2026003796",
+        "doc_type": "DEED OF TRUST",
+        "recording_date": "04/20/2026 02:32 PM",
+        "grantor": "RODRIGUEZ BRIGITTE RENE AKA",
+        "grantee": "LOANDEPOT COM LLC"
+      },
+      {
+        "doc_number": "2025007988",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 08:39 AM",
+        "grantor": "RODRIQUEZ BRIGITTE RENE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-052-130-000",
+    "status": "REDEEMED",
+    "min_bid": "7000.00",
+    "source_situs": "9590 E STATE HWY 20 GLENHAVEN CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004451",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:52 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "MILLER TRACY"
+      },
+      {
+        "doc_number": "2025008127",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:10 PM",
+        "grantor": "MILLER TRACY",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-102-310-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1400.00",
+    "source_situs": "12201 WIDGEON WY CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005871",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:01 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "HUSSEIN ABBAS"
+      },
+      {
+        "doc_number": "2024011508",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "10/30/2024 09:57 AM",
+        "grantor": "ARECCO GUIDO B",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-122-500-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1700.00",
+    "source_situs": "12438 WIDGEON WY CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026008109",
+        "doc_type": "DEED",
+        "recording_date": "08/04/2026 09:36 AM",
+        "grantor": "THE LAND REPUBLIC LLC",
+        "grantee": "KAMPAS DAVID JOSEPH"
+      },
+      {
+        "doc_number": "2026005676",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:30 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "LAND REPUBLIC LLC"
+      },
+      {
+        "doc_number": "2025008129",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:11 PM",
+        "grantor": "CARTER ALBERT J TRUST",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-131-160-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1700.00",
+    "source_situs": "12398 OAK ST CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005872",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:01 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "THE LAND REPUBLIC LLC"
+      }
+    ]
+  },
+  {
+    "apn": "035-132-360-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "7500.00",
+    "source_situs": "12577 WIDGEON WY CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005873",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:01 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "PERNICH GARY L"
+      }
+    ]
+  },
+  {
+    "apn": "035-141-260-000",
+    "status": "REDEEMED",
+    "min_bid": "1800.00",
+    "source_situs": "12494 THE PLAZA CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026003179",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "04/03/2026 09:05 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "CHERNOW EDWARD F"
+      },
+      {
+        "doc_number": "2025008130",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:11 PM",
+        "grantor": "CHERNOW EDWARD F",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-152-600-000",
+    "status": "STILL_DEFAULTED_NO_RELEASE_FOUND",
+    "min_bid": "20400.00",
+    "source_situs": "12498 OAK ST CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2025008131",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:12 PM",
+        "grantor": "DETI DAVID L",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-152-650-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "9500.00",
+    "source_situs": "12545 LAKEVIEW DR CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005874",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:01 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "FISHMAN JACOB"
+      }
+    ]
+  },
+  {
+    "apn": "035-172-120-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2300.00",
+    "source_situs": "12871 LAKEVIEW DR CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005875",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:02 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "BERKCRUZ RIVER LLC"
+      }
+    ]
+  },
+  {
+    "apn": "035-261-230-000",
+    "status": "REDEEMED",
+    "min_bid": "17900.00",
+    "source_situs": "11647 LAKEVIEW DR CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005081",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/20/2026 04:07 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "AUSTIN ROBERT III"
+      },
+      {
+        "doc_number": "2026004452",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:52 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "AUSTIN ROBERT III"
+      },
+      {
+        "doc_number": "2025008135",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:12 PM",
+        "grantor": "AUSTIN ROBERT III",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-263-090-000",
+    "status": "REDEEMED",
+    "min_bid": "53600.00",
+    "source_situs": "11651 GARDEN CT CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004453",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:52 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "MASLOWSKI SOPHIE ANN TRUSTEE"
+      },
+      {
+        "doc_number": "2025008136",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:12 PM",
+        "grantor": "MASLOWSKI SOPHIE ANN TRUSTEE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-272-050-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1800.00",
+    "source_situs": "11753 WIDGEON WY CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005876",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:02 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "FISHMAN JACOB"
+      }
+    ]
+  },
+  {
+    "apn": "035-272-090-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1800.00",
+    "source_situs": "11793 WIDGEON WY CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005877",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:02 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "THE LAND REPUBLIC LLC"
+      }
+    ]
+  },
+  {
+    "apn": "035-274-370-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3000.00",
+    "source_situs": "11732 WIDGEON WY CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005878",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:03 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2025008137",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:13 PM",
+        "grantor": "GORDON H ROY III",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-274-380-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "700.00",
+    "source_situs": "11742 WIDGEON WY CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005879",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:03 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2024011518",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "10/30/2024 09:59 AM",
+        "grantor": "GORDON H ROY III",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-274-390-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2600.00",
+    "source_situs": "11752 WIDGEON WY CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005880",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:03 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2025008138",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:13 PM",
+        "grantor": "GORDON H ROY III",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-274-400-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "700.00",
+    "source_situs": "11762 WIDGEON WY CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005881",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:03 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2024011519",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "10/30/2024 09:59 AM",
+        "grantor": "GORDON H ROY III",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-302-320-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1800.00",
+    "source_situs": "11355 WEST WIDGEON WY CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006867",
+        "doc_type": "DEED",
+        "recording_date": "06/30/2026 08:03 AM",
+        "grantor": "THE LAND REPUBLIC LLC",
+        "grantee": "TRAN KENT THANH"
+      },
+      {
+        "doc_number": "2026005677",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:30 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "LAND REPUBLIC LLC"
+      },
+      {
+        "doc_number": "2025008139",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:13 PM",
+        "grantor": "WALDRON BERNICE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-303-040-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3000.00",
+    "source_situs": "11343 TOYON DR CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005678",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:30 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "LAND REPUBLIC LLC"
+      },
+      {
+        "doc_number": "2025008140",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:13 PM",
+        "grantor": "VAN DER LINDEN DENNIS",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-311-060-000",
+    "status": "REDEEMED",
+    "min_bid": "3400.00",
+    "source_situs": "11452 WEST WIDGEON WY CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026003175",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "04/03/2026 09:05 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "LAKEVIEW FAMILY PROPERTIES LLC"
+      }
+    ]
+  },
+  {
+    "apn": "035-311-120-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "6700.00",
+    "source_situs": "11488 WEST WIDGEON WY CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005882",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:04 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "THE LAND REPUBLIC LLC"
+      }
+    ]
+  },
+  {
+    "apn": "035-331-270-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2100.00",
+    "source_situs": "11692 KONOCTI DR CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006225",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "06/16/2026 09:39 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "YOUNG LATONYA"
+      },
+      {
+        "doc_number": "2026005883",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/09/2026 09:04 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "EARTH AND LAND LLC"
+      },
+      {
+        "doc_number": "2025008141",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:13 PM",
+        "grantor": "YOUNG LATONYA",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-332-540-000",
+    "status": "REDEEMED",
+    "min_bid": "9000.00",
+    "source_situs": "11739 KONOCTI DR CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004454",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:53 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "HEIN MARK LEIGH"
+      },
+      {
+        "doc_number": "2025008142",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:13 PM",
+        "grantor": "HEIN MARK LEIGH",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-385-180-000",
+    "status": "STILL_DEFAULTED_NO_RELEASE_FOUND",
+    "min_bid": "16100.00",
+    "source_situs": "345 BUTLER ST CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2025008144",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:14 PM",
+        "grantor": "MCGUIRE JESSE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-385-370-000",
+    "status": "STILL_DEFAULTED_NO_RELEASE_FOUND",
+    "min_bid": "23400.00",
+    "source_situs": "315 BUTLER ST CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2025008145",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:14 PM",
+        "grantor": "MCGUIRE JESSE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "035-413-100-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "9900.00",
+    "source_situs": "13198 FOURTH ST CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005946",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:45 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "PERKETT DUSTY"
+      }
+    ]
+  },
+  {
+    "apn": "035-421-130-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "6000.00",
+    "source_situs": "13092 SIXTH ST CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005947",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:47 AM",
+        "grantor": "HERSMAN ROSE",
+        "grantee": "EGBUJIONUMA MICHAEL"
+      }
+    ]
+  },
+  {
+    "apn": "035-521-050-000",
+    "status": "REDEEMED",
+    "min_bid": "19000.00",
+    "source_situs": "10561 PINGREE RD CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026003178",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "04/03/2026 09:05 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "CHERNOW EDWARD FRANK"
+      },
+      {
+        "doc_number": "2025008146",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:14 PM",
+        "grantor": "CHERNOW EDWARD FRANK",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "036-141-280-000",
+    "status": "REDEEMED",
+    "min_bid": "19400.00",
+    "source_situs": "12010 NORTH DR CLEARLAKE PARK CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005382",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "06/01/2026 08:30 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "DELAROUSSILE JACK E TRUSTEE"
+      },
+      {
+        "doc_number": "2026004457",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:53 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "DELAROUSSILE JACK E TRUSTEE"
+      },
+      {
+        "doc_number": "2026004456",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:53 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "DELAROUSSILE JACK E TRUSTEE"
+      },
+      {
+        "doc_number": "2025008004",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:14 AM",
+        "grantor": "DELAROUSSILE JACK E TRUSTEE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "036-314-420-000",
+    "status": "NO_RECENT_RECORDER_ACTIVITY_FOUND",
+    "min_bid": "2500.00",
+    "source_situs": "2252 SHERWOOD DR CLEARLAKE PARK CA",
+    "docs_json": []
+  },
+  {
+    "apn": "037-031-100-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "6700.00",
+    "source_situs": "2780 CARMEL AVE CLEARLAKE PARK CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005948",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:47 AM",
+        "grantor": "JONES JESSICA",
+        "grantee": "RAMOS CARLOS"
+      },
+      {
+        "doc_number": "2025008513",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:45 AM",
+        "grantor": "JONES JESSICA",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "037-052-260-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "7300.00",
+    "source_situs": "3021 OAK CREST DR CLEARLAKE PARK CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005679",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:30 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "RAMOS CARLOS"
+      },
+      {
+        "doc_number": "2025008514",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:45 AM",
+        "grantor": "KELLY MICHAEL",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-113-270-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2200.00",
+    "source_situs": "2933 ELEVENTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005680",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:31 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2025008371",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/20/2025 11:03 AM",
+        "grantor": "BURKLEY SUSAN JO",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-131-190-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3300.00",
+    "source_situs": "3161 SIXTEENTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005681",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:31 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "EGBUJIONUMA MICHAEL"
+      },
+      {
+        "doc_number": "2025008148",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:14 PM",
+        "grantor": "BLOOMSTRAND CANDIDA G",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-132-390-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3000.00",
+    "source_situs": "3055 FIFTEENTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005949",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:48 AM",
+        "grantor": "OLIVAS HECTOR J",
+        "grantee": "EARTH & LAND LLC"
+      },
+      {
+        "doc_number": "2025008149",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:14 PM",
+        "grantor": "OLIVAS HECTOR J",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-132-490-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2200.00",
+    "source_situs": "3102 SIXTEENTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005682",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:31 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2025008150",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:15 PM",
+        "grantor": "SATTERWHITE ANDRE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-141-590-000",
+    "status": "REDEEMED",
+    "min_bid": "5200.00",
+    "source_situs": "3106 FIFTEENTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004444",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:48 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "CUEVAS CHRISTIAN NOEL"
+      },
+      {
+        "doc_number": "2025008151",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:15 PM",
+        "grantor": "CUEVAS CHRISTIAN NOEL",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-153-160-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1800.00",
+    "source_situs": "3152 NINTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005950",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:48 AM",
+        "grantor": "MAVROUDIS CONSTANTIN T",
+        "grantee": "ZURITA MARIA L"
+      },
+      {
+        "doc_number": "2025013003",
+        "doc_type": "NOTICE OF LIEN",
+        "recording_date": "12/18/2025 10:09 AM",
+        "grantor": "MAVROUDIS CONSTANTIN T",
+        "grantee": "CLEARLAKE CITY"
+      },
+      {
+        "doc_number": "2025008152",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:18 PM",
+        "grantor": "MAVROUDIS CONSTANTIN T",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-153-200-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3000.00",
+    "source_situs": "3192 NINTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005951",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:49 AM",
+        "grantor": "JONES DAVID L",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2025008519",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:45 AM",
+        "grantor": "JONES DAVID L",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-153-240-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1700.00",
+    "source_situs": "3033 EIGHTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026007367",
+        "doc_type": "DEED",
+        "recording_date": "07/14/2026 10:02 AM",
+        "grantor": "EARTH & LAND LLC",
+        "grantee": "HEFFELFINGER BRANDEN G TRUSTEE"
+      },
+      {
+        "doc_number": "2026005952",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:49 AM",
+        "grantor": "GIFFORD CARMEN",
+        "grantee": "EARTH & LAND LLC"
+      },
+      {
+        "doc_number": "2025008520",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:45 AM",
+        "grantor": "GIFFORED CARMEN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-153-530-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2000.00",
+    "source_situs": "3083 EIGHTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005953",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:49 AM",
+        "grantor": "VIZENOR JOHN",
+        "grantee": "SKYLINE HERITAGE TRUST"
+      }
+    ]
+  },
+  {
+    "apn": "038-171-120-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2900.00",
+    "source_situs": "2900 SEVENTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005683",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:31 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "HUDSON MICHAEL TRUSTEE"
+      },
+      {
+        "doc_number": "2025008153",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:18 PM",
+        "grantor": "PETERSEN DEAN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-171-510-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2000.00",
+    "source_situs": "2971 SIXTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005954",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:50 AM",
+        "grantor": "WINCHELL KAREN DENICE",
+        "grantee": "RAMOS DEVELOPMENT LLC"
+      }
+    ]
+  },
+  {
+    "apn": "038-174-170-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3600.00",
+    "source_situs": "2916 FOURTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005955",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:50 AM",
+        "grantor": "PARKMAN GEORGE",
+        "grantee": "CORTES APOLINAR"
+      },
+      {
+        "doc_number": "2024011599",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "10/31/2024 08:50 AM",
+        "grantor": "REID RHODA",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-184-540-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1800.00",
+    "source_situs": "3176 FOURTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005956",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:50 AM",
+        "grantor": "HAMPTON CLIMMIE T TRUSTEE",
+        "grantee": "EARTH & LAND LLC"
+      },
+      {
+        "doc_number": "2025008521",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:46 AM",
+        "grantor": "HAMPTON CLIMMIE T TRUSTEE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-185-580-000",
+    "status": "REDEEMED",
+    "min_bid": "1900.00",
+    "source_situs": "3168 THIRD ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004445",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:48 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KEYES-HARRIS MARCIA ESTHER"
+      },
+      {
+        "doc_number": "2025008522",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:46 AM",
+        "grantor": "KEYES-HARRIS MARCIA ESTHER",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-186-240-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1000.00",
+    "source_situs": "3131 PARK ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005957",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:51 AM",
+        "grantor": "ALLEN BOOKER T",
+        "grantee": "EARTH & LAND LLC"
+      }
+    ]
+  },
+  {
+    "apn": "038-211-360-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2100.00",
+    "source_situs": "3316 TWELFTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005958",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:51 AM",
+        "grantor": "GONZALES ARMANDO",
+        "grantee": "EARTH & LAND LLC"
+      },
+      {
+        "doc_number": "2024011607",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "10/31/2024 08:52 AM",
+        "grantor": "GONZALES ARMANDO",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-214-340-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2900.00",
+    "source_situs": "3273 EIGHTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005959",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:51 AM",
+        "grantor": "ANDERSON LEESZA",
+        "grantee": "JIN JEFFERSON PEIXI"
+      },
+      {
+        "doc_number": "2025008523",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:46 AM",
+        "grantor": "ANDERSON LEESZA",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-214-360-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1500.00",
+    "source_situs": "3292 NINTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005960",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:52 AM",
+        "grantor": "SCHILLING CLAUDIA",
+        "grantee": "BERKCRUZ RIVER LLC"
+      }
+    ]
+  },
+  {
+    "apn": "038-234-400-000",
+    "status": "STILL_DEFAULTED_NO_RELEASE_FOUND",
+    "min_bid": "4400.00",
+    "source_situs": "3355 SEVENTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2025008154",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:18 PM",
+        "grantor": "VARGAS PRESCILIANO",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-271-290-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "7300.00",
+    "source_situs": "13271 COUNTRY CLUB DR CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005961",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:52 AM",
+        "grantor": "WINSTON MELISA FAITH",
+        "grantee": "RAMOS FRUMENCIO"
+      },
+      {
+        "doc_number": "2025008526",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:46 AM",
+        "grantor": "WINSTON MELISA FAITH",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "038-296-220-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3000.00",
+    "source_situs": "3231 PARK ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005962",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:53 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "RALLS CONNIE"
+      }
+    ]
+  },
+  {
+    "apn": "038-296-230-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3000.00",
+    "source_situs": "3241 PARK ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005963",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:53 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "RALLS CONNIE"
+      }
+    ]
+  },
+  {
+    "apn": "038-303-110-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3000.00",
+    "source_situs": "3395 FOURTH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005964",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:54 AM",
+        "grantor": "BONDS BILLIE RAYE TRUSTEE",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      }
+    ]
+  },
+  {
+    "apn": "039-065-230-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "4500.00",
+    "source_situs": "14170 KONOCTI ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005965",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:54 AM",
+        "grantor": "GILLIAM BRET",
+        "grantee": "RAMOS FRUMENCIO"
+      },
+      {
+        "doc_number": "2024011613",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "10/31/2024 08:53 AM",
+        "grantor": "GILLIAM BRET",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "039-077-320-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3000.00",
+    "source_situs": "3515 SONOMA WY CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005966",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:54 AM",
+        "grantor": "ORTEGA FERMIN CEBALLOS",
+        "grantee": "PARRA CESAR"
+      },
+      {
+        "doc_number": "2024011615",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "10/31/2024 08:53 AM",
+        "grantor": "ORTEGA FERMIN CEBALLOS",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "039-085-050-000",
+    "status": "REDEEMED",
+    "min_bid": "4000.00",
+    "source_situs": "3590 SONOMA WY CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004449",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:49 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "WILLIAMS ANNA"
+      },
+      {
+        "doc_number": "2025008532",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:52 AM",
+        "grantor": "WILLIAMS ANNA",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "039-193-130-000",
+    "status": "REDEEMED",
+    "min_bid": "17500.00",
+    "source_situs": "14529 WALNUT AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026007582",
+        "doc_type": "DEED",
+        "recording_date": "07/20/2026 09:20 AM",
+        "grantor": "ALVAREZ JON",
+        "grantee": "LUCIANO MARIANO"
+      },
+      {
+        "doc_number": "2026004450",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/05/2026 01:49 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "LUCIANO MARIANO"
+      },
+      {
+        "doc_number": "2025008534",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:57 AM",
+        "grantor": "LUCIANO MARIANO",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      },
+      {
+        "doc_number": "2024007872",
+        "doc_type": "DEED",
+        "recording_date": "07/31/2024 12:00 PM",
+        "grantor": "ALVAREZ JON",
+        "grantee": "LUCIANO MARIANO"
+      }
+    ]
+  },
+  {
+    "apn": "039-221-090-000",
+    "status": "REDEEMED",
+    "min_bid": "1000.00",
+    "source_situs": "14241 SONOMA WY CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004735",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:09 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "FARR DAN BYRD"
+      }
+    ]
+  },
+  {
+    "apn": "039-266-070-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2000.00",
+    "source_situs": "14095 VILLA WY CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005967",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:55 AM",
+        "grantor": "PALERMO DRIVE LLC",
+        "grantee": "STRATEGIC OASIS CONSULTING LLC"
+      },
+      {
+        "doc_number": "2024007356",
+        "doc_type": "NOTICE OF LIEN",
+        "recording_date": "07/23/2024 12:00 PM",
+        "grantor": "PALERMO DRIVE LLC",
+        "grantee": "CLEARLAKE CITY"
+      }
+    ]
+  },
+  {
+    "apn": "039-392-570-000",
+    "status": "STILL_DEFAULTED_NO_RELEASE_FOUND",
+    "min_bid": "22800.00",
+    "source_situs": "3763 CEDAR AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2025008537",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:58 AM",
+        "grantor": "PALACIOS HELEN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "039-401-350-000",
+    "status": "REDEEMED",
+    "min_bid": "6100.00",
+    "source_situs": "3991 PINE AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004738",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:10 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "LOPEZ GILBERTO F JR"
+      },
+      {
+        "doc_number": "2025008799",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/27/2025 10:13 AM",
+        "grantor": "LOPEZ GILBERTO F JR",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "039-401-400-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "10000.00",
+    "source_situs": "3971 PINE AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005968",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:55 AM",
+        "grantor": "CHAN HING",
+        "grantee": "RAMOS FRUMENCIO"
+      },
+      {
+        "doc_number": "2025013014",
+        "doc_type": "NOTICE OF LIEN",
+        "recording_date": "12/18/2025 10:15 AM",
+        "grantor": "CHAN HING",
+        "grantee": "CLEARLAKE CITY"
+      },
+      {
+        "doc_number": "2025008538",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:58 AM",
+        "grantor": "CHAN HING",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "039-401-410-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "14000.00",
+    "source_situs": "3981 PINE AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005969",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:55 AM",
+        "grantor": "CHAN HING",
+        "grantee": "RAMOS FRUMENCIO"
+      },
+      {
+        "doc_number": "2025008539",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:58 AM",
+        "grantor": "CHAN HING",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "039-403-400-000",
+    "status": "REDEEMED",
+    "min_bid": "2600.00",
+    "source_situs": "3975 OAK AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004739",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:10 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "JIMENEZ OLGA"
+      },
+      {
+        "doc_number": "2025008157",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:19 PM",
+        "grantor": "ORTIZ AARON",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "039-406-690-000",
+    "status": "REDEEMED",
+    "min_bid": "10300.00",
+    "source_situs": "3925 EUREKA AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004740",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:10 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "SAUSE EDWARD J"
+      },
+      {
+        "doc_number": "2025008801",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/27/2025 10:17 AM",
+        "grantor": "SAUSE EDWARD J",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "039-611-070-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2500.00",
+    "source_situs": "3333 TOYON ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005970",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:56 AM",
+        "grantor": "SIMON JOSHUA",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      }
+    ]
+  },
+  {
+    "apn": "039-624-140-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2000.00",
+    "source_situs": "3419 MINT ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005971",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:56 AM",
+        "grantor": "MUSICK PHILLIP G",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2025008543",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:58 AM",
+        "grantor": "MUSICK PHILLIP G",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "039-624-160-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2000.00",
+    "source_situs": "3409 MINT ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005972",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:56 AM",
+        "grantor": "MUSICK PHILLIP G",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2025008563",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 10:20 AM",
+        "grantor": "MUSICK PHILLIP G",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "040-082-060-000",
+    "status": "REDEEMED",
+    "min_bid": "11600.00",
+    "source_situs": "14315 ROBINSON AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004742",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:16 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "BOWDEN STILLMAN"
+      },
+      {
+        "doc_number": "2026003127",
+        "doc_type": "DEED OF TRUST",
+        "recording_date": "04/02/2026 12:09 PM",
+        "grantor": "BOWDEN STILLMAN",
+        "grantee": "CHERNOW EDWARD"
+      },
+      {
+        "doc_number": "2025008164",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:20 PM",
+        "grantor": "BOWDEN STILLMAN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "040-111-210-000",
+    "status": "REDEEMED",
+    "min_bid": "5400.00",
+    "source_situs": "3750 JAGO AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004743",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:16 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "ALVAREZ PENA ARNOLDO"
+      },
+      {
+        "doc_number": "2025008545",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:59 AM",
+        "grantor": "ALVAREZ PENA ARNOLDO",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "040-132-120-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3000.00",
+    "source_situs": "3761 MANCHESTER AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005973",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:57 AM",
+        "grantor": "GLENN KEN",
+        "grantee": "PARRA CESAR"
+      }
+    ]
+  },
+  {
+    "apn": "040-133-120-000",
+    "status": "REDEEMED",
+    "min_bid": "2200.00",
+    "source_situs": "3840 MANCHESTER AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2025013410",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "12/31/2025 01:53 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "GARCIA OSCAR ALBERTO"
+      },
+      {
+        "doc_number": "2025008546",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:59 AM",
+        "grantor": "GARCIA OSCAR ALBERTO",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "040-134-030-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "10200.00",
+    "source_situs": "3720 BUCKEYE ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006226",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "06/16/2026 09:40 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "CORREIA MARY ANN"
+      },
+      {
+        "doc_number": "2026005684",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:31 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "TSUSHIOKA LLC"
+      },
+      {
+        "doc_number": "2025008165",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:20 PM",
+        "grantor": "CORREIA MARY ANN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "040-136-030-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2500.00",
+    "source_situs": "3840 MULLEN AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005685",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:32 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "HURTADO ANA ISABEL MONTANEZ"
+      },
+      {
+        "doc_number": "2025008547",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:59 AM",
+        "grantor": "PINEDA DE JESUS MANUEL",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "040-144-250-000",
+    "status": "REDEEMED",
+    "min_bid": "2800.00",
+    "source_situs": "3995 MANCHESTER AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004744",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:16 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "STEVENS SCOTT"
+      },
+      {
+        "doc_number": "2025008548",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:59 AM",
+        "grantor": "STEVENS SCOTT",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "040-146-040-000",
+    "status": "REDEEMED",
+    "min_bid": "10300.00",
+    "source_situs": "4593 WEST 40TH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2025013409",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "12/31/2025 01:53 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "MUNN CHRISTINE M"
+      },
+      {
+        "doc_number": "2025008166",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:20 PM",
+        "grantor": "MUNN CHRISTINE M",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "040-214-010-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2300.00",
+    "source_situs": "4020 ARNOLD AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005974",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:57 AM",
+        "grantor": "LAVIELLE RAYMOND",
+        "grantee": "WADE JOE"
+      },
+      {
+        "doc_number": "2025008549",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:59 AM",
+        "grantor": "LAVIELLE RAYMOND",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "040-238-260-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "5900.00",
+    "source_situs": "4771 WEST 40TH ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005686",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:32 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "LAKE REALS ESTATE LLC"
+      },
+      {
+        "doc_number": "2025008167",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:21 PM",
+        "grantor": "CROSS JOHN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "040-330-280-000",
+    "status": "STILL_DEFAULTED_NO_RELEASE_FOUND",
+    "min_bid": "2800.00",
+    "source_situs": "4782 YARRINGTON CT CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2025013018",
+        "doc_type": "NOTICE OF LIEN",
+        "recording_date": "12/18/2025 10:17 AM",
+        "grantor": "PALACIOS HELEN",
+        "grantee": "CLEARLAKE CITY"
+      },
+      {
+        "doc_number": "2025008168",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:21 PM",
+        "grantor": "PALACIOS HELEN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "041-033-330-000",
+    "status": "REDEEMED",
+    "min_bid": "12700.00",
+    "source_situs": "4134 WILDER AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004745",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:16 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "RANDALL KEVIN C"
+      },
+      {
+        "doc_number": "2025008550",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:59 AM",
+        "grantor": "RANDALL KEVIN C",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "041-033-410-000",
+    "status": "REDEEMED",
+    "min_bid": "17500.00",
+    "source_situs": "4114 WILDER AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004746",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:16 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "RANDALL KEVIN C"
+      },
+      {
+        "doc_number": "2025008551",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:59 AM",
+        "grantor": "RANDALL KEVIN C",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "041-071-040-000",
+    "status": "NO_RECENT_RECORDER_ACTIVITY_FOUND",
+    "min_bid": "17600.00",
+    "source_situs": "4072 BORIE AVE CLEARLAKE CA",
+    "docs_json": []
+  }
+]

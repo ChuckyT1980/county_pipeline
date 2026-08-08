@@ -1,0 +1,1570 @@
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<script async type="text/javascript"> var id = '';
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<!-- Google Analytics -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+
+	<title>Self-Service: Document Search</title>
+
+
+
+
+	<link rel="apple-touch-icon" href="/web/resources/img/county-logo.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/css/themes/self-service-jquery-mobile.css?v=2026.1.5"/>
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/css/themes/jquery.mobile.icons-1.4.5.css"/>
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/jquery.mobile.structure-1.4.5.css"/>
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/jtsage-datebox-4.1.0.css"/>
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/css/materialdesignicons.css?v=2026.1.5"/>
+	<link rel="stylesheet" media="all" type="text/css" href="/web/resources/css/context-menu-min.css"/>
+
+	<link rel="stylesheet" media="all" type="text/css" href="/web/controller/self.service.2026-1-5.css"/>
+	<link rel="stylesheet" media="all" type="text/css" href="/web/controller/self.service.responsive.2026-1-5.css"/>
+	<link rel="stylesheet" media="all" type="text/css" href="/web/controller/progress/circularG.2026-1-5.css"/>
+	<link rel="stylesheet" media="all" type="text/css" href="/web/controller/progress/tylerProgress.2026-1-5.css"/>
+
+	
+	<link rel="stylesheet" href="/web/controller/customColors.css?v=2026.1.5"/>
+	<link rel="stylesheet" href="/web/controller/customColors.responsive.css?v=2026.1.5"/>
+	<link rel="stylesheet" href="/web/controller/facetColors.css?v=2026.1.5"/>
+	<link rel="stylesheet" href="/web/controller/customColorsLoaders.css?v=2026.1.5"/>
+	<link rel="stylesheet" href="/web/resources/printjs/print.min.css?v=2026.1.5"/>
+	<script src="/web/resources/modernizr.custom.03363.js"></script>
+	<script src="/web/resources/jquery-1.11.0.js"></script>
+	<script src="/web/resources/js/moment.min.js"></script>
+	<script src='/web/controller/js/underscore.2026-1-5.js'></script>
+	<script src='/web/controller/js/snap.svg.2026-1-5.js'></script>
+	<script src='/web/controller/js/self.service.2026-1-5.js'></script>
+	<script src="/web/controllerjs/validator.2026-1-5.js"></script>
+	<script src="/web/controllerjs/util.2026-1-5.js"></script>
+	<script src="/web/resources/shoppingCart.js?v=2026.1.5"></script>
+	<script src="/web/resources/printjs/print.min.js">	</script>
+	<script src="/web/resources/js/context-menu-min.js"></script>
+
+	<script>
+	$(document).bind( 'mobileinit', function(){
+		$.mobile.loader.prototype.options.html = 	'<div class="cssload-container">\n' +
+			'			<ul class="cssload-loader">\n' +
+			'				<li></li><li></li><li></li><li></li><li></li><li></li>\n' +
+			'			</ul>\n' +
+			'		</div>\n' +
+			'		<div class="modal-overlay"></div>';
+	});
+	</script>
+<!--         When we upgrade to jqm 1.5 remove the jquery tabs override script -->
+	<script src="/web/resources/jquery.mobile-1.4.5.js"></script>
+<!-- 	The following script is to fix a bug with jquery mobile and should be removed when we upgrade to jquerymobile 1.5 -->
+	<script src="/web/resources/js/jqueryTabsOverride.js"></script>
+
+	
+	<script src="/web/controller/messageStrings.js?v=2026.1.5"></script>
+
+	<script src="/web/resources/jquery.mousewheel.js?v=2026.1.5"></script>
+	<script src="/web/resources/jtsage-datebox-4.1.0.js"></script>
+	<!-- Accessibility extension for DateBox (must load after vendor) -->
+	<script src="/web/resources/js/overrides/datebox.a11y.extend.js?v=2026.1.5"></script>
+	<!-- Global A11y: announce important messages for SR users -->
+	<script src="/web/resources/js/messageAnnouncement.js?v=2026.1.5"></script>
+</head>
+<body>
+	<div class="ss-page ui-alt-icon ui-nodisc-icon" data-role="page" id="SelfService-1786211110724-page" data-dom-cache="false">
+		<script>
+		var selectedLanguage = 'en';
+		</script>
+		<!-- HEADER	-->
+		<div id="ss-header-box" class="ss-header" data-role="header" data-position="fixed" data-tap-toggle="false">
+			<div class="ss-header-stripe-top"></div>
+			<div class="ss-content">
+				
+				
+				<div class="ss-header-title">
+					<div class="ss-header-internal">
+						<h1>Lake County Assessor-Recorder</h1>
+						
+
+						</div>
+				</div>
+				
+
+				<div class="ss-header-actions">
+					
+
+
+
+
+
+	
+	
+		
+			<a href="#SelfService-1786211110724-cartPanel" class="ss-header-actions-cart">
+				<span class="ss-header-labels" id="ss-cart-count-label">
+				
+					
+					&nbsp;
+				
+				</span>
+				<span class="ss-header-labels" id="ss-cart-label">cart</span>
+			</a>
+		
+		
+	
+
+	
+	<a href="/web/" class="ss-header-actions-home">
+		<span class="ss-header-labels" id="ss-general-label">Home</span>
+	</a>
+
+
+
+
+
+
+	
+	
+	<a href="#SelfService-1786211110724-loginPanel" class="ss-header-actions-user">
+		<span class="ss-header-labels" id="ss-general-label">
+		
+			
+				Log in
+			
+			
+		
+		</span>
+	</a>
+	
+
+					<div class="ss-clear"></div>
+				</div>
+				<div class="ss-clear"></div>
+			</div>
+			<div class="ss-header-stripe-bottom">
+				<div class="ss-content">
+					<div id="ss-user-welcome" class="ss-footer-internal-small">
+						
+							
+							
+							
+							
+								Please log in
+							
+						
+						<span id="subscriptionTimer" class="ss-footer-internal-small-left-align"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- BODY -->
+		<div data-role="content">
+			<div class="ss-content">
+				
+
+
+
+
+<link rel="stylesheet" media="all" type="text/css" href="/web/resources/css/self.service.search.css"/>
+
+
+<div class="ss-validation-messages" role="alert" aria-live="assertive" aria-atomic="true">
+	
+</div>
+
+
+
+
+<ul class="ss-listview ss-utility-box" data-role="listview" data-inset="true" data-theme="a">
+	<li data-role="list-divider" data-theme="a">Advanced Search - Web</li>
+	
+	<li class="ss-listview-internal"> Search one or several fields at a time. <br /> <br /><b>Individual Names</b> should be entered <b>Last First</b> (i.e. Smith James). For a broader search, use only a last name and first initial. <br /> <br /><b>Organizational Names</b> should be entered <b>as they are spelled</b> (i.e. California Bank). <br /></li>
+	
+</ul>
+
+
+<ul class="ss-listview ss-utility-box" data-role="listview" data-inset="true" data-theme="b">
+	
+			
+			
+				
+			
+				
+				<li data-role="list-divider" data-theme="b">Recorder Documents are certified
+ 					
+ 					
+ 						from  Jan 1, 1974
+ 						through  Aug 9, 2026
+ 					
+ 					
+ 					
+				
+			
+			
+			
+	
+	
+		
+		
+			
+			<li class="ss-listview-internal">
+				<form id="SelfService-1786211110724-search-form" method="post" action="/web/searchPost/DOCSEARCH4S5">
+					<div class="ss-utility-box">
+						
+							<!--Unknown search Presentation Item--><div class="ui-grid-b" ><div class="ui-block-a ui-margins" ><label for="field_DocumentNumberID" >Document Number</label>
+<input autocomplete="off" name="field_DocumentNumberID" id="field_DocumentNumberID" type="text" value="" aria-label=" For DocumentNumberID" ></input>
+</div>
+<div class="ui-block-b ui-margin-prep" ><div class="ui-grid-a two-column " ><div class="ui-block-a ui-margins" ><label for="field_RecordingDateID_DOT_StartDate" >Recording Date Start</label>
+<input onblur="selfservice.dateBlurCallback(event)" data-options="{&quot;mode&quot;:&quot;datebox&quot;,&quot;overrideDateFormat&quot;:&quot;%-m/%-d/%Y&quot;,&quot;lockInput&quot;:false,&quot;usePlaceholder&quot;:&quot;mm/dd/yyyy&quot;,&quot;useModal&quot;:false,&quot;overrideSetDateButtonLabel&quot;:&quot;Set Date&quot;,&quot;showInitialValue&quot;:false,&quot;beforeOpenCallback&quot;:&quot;parseDateCallback&quot;}" name="field_RecordingDateID_DOT_StartDate" id="field_RecordingDateID_DOT_StartDate" placeholder="mm/dd/yyyy" type="text" data-role="datebox" value="" ></input>
+</div>
+<div class="ui-block-b ui-margins" ><label for="field_RecordingDateID_DOT_EndDate" >Recording Date End</label>
+<input onblur="selfservice.dateBlurCallback(event)" data-options="{&quot;mode&quot;:&quot;datebox&quot;,&quot;overrideDateFormat&quot;:&quot;%-m/%-d/%Y&quot;,&quot;lockInput&quot;:false,&quot;usePlaceholder&quot;:&quot;mm/dd/yyyy&quot;,&quot;useModal&quot;:false,&quot;overrideSetDateButtonLabel&quot;:&quot;Set Date&quot;,&quot;showInitialValue&quot;:false,&quot;beforeOpenCallback&quot;:&quot;parseDateCallback&quot;}" name="field_RecordingDateID_DOT_EndDate" id="field_RecordingDateID_DOT_EndDate" placeholder="mm/dd/yyyy" type="text" data-role="datebox" value="" ></input>
+</div>
+</div>
+</div>
+<div class="ui-block-c ui-margins" ><label for="field_BothNamesID" >Both Names</label>
+<ul id="field_BothNamesID-holder" class="cblist-input-list" ><li class="autoCompleteList noBorder" ><div ="" ><input autocomplete="off" data-theme="a" name="field_BothNamesID" id="field_BothNamesID" data-type="search" placeholder="Type here to filter..." type="text" ></input>
+<ul data-inset="true" data-filter="true" style="display: none;" id="field_BothNamesID-aclist" data-role="listview" data-filter-reveal="true" data-input="#field_BothNamesID" ></ul>
+<script >
+$(document).on('pagecreate', function() {
+  var url = '/web/search/suggest/BothNamesID';
+selfservice.suggest.autocomplete($('#field_BothNamesID'), $('#field_BothNamesID-aclist'), url, true, false, false);
+selfservice.navigate.registerListNavigation($('#field_BothNamesID'), $('#field_BothNamesID-aclist'));
+});
+</script>
+</div>
+</li>
+</ul>
+</div>
+<div class="ui-block-a ui-margins" ><label for="field_GrantorID" >Grantor</label>
+<ul id="field_GrantorID-holder" class="cblist-input-list" ><li class="autoCompleteList noBorder" ><div ="" ><input autocomplete="off" data-theme="a" name="field_GrantorID" id="field_GrantorID" data-type="search" placeholder="Type here to filter..." type="text" ></input>
+<ul data-inset="true" data-filter="true" style="display: none;" id="field_GrantorID-aclist" data-role="listview" data-filter-reveal="true" data-input="#field_GrantorID" ></ul>
+<script >
+$(document).on('pagecreate', function() {
+  var url = '/web/search/suggest/GrantorID';
+selfservice.suggest.autocomplete($('#field_GrantorID'), $('#field_GrantorID-aclist'), url, true, false, false);
+selfservice.navigate.registerListNavigation($('#field_GrantorID'), $('#field_GrantorID-aclist'));
+});
+</script>
+</div>
+</li>
+</ul>
+</div>
+<div class="ui-block-b ui-margins" ><label for="field_GranteeID" >Grantee</label>
+<ul id="field_GranteeID-holder" class="cblist-input-list" ><li class="autoCompleteList noBorder" ><div ="" ><input autocomplete="off" data-theme="a" name="field_GranteeID" id="field_GranteeID" data-type="search" placeholder="Type here to filter..." type="text" ></input>
+<ul data-inset="true" data-filter="true" style="display: none;" id="field_GranteeID-aclist" data-role="listview" data-filter-reveal="true" data-input="#field_GranteeID" ></ul>
+<script >
+$(document).on('pagecreate', function() {
+  var url = '/web/search/suggest/GranteeID';
+selfservice.suggest.autocomplete($('#field_GranteeID'), $('#field_GranteeID-aclist'), url, true, false, false);
+selfservice.navigate.registerListNavigation($('#field_GranteeID'), $('#field_GranteeID-aclist'));
+});
+</script>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="ui-grid-a two-column " ><div class="ui-block-a ui-margins" ><label for="field_selfservice_documentTypes" >Document Types</label>
+<ul id="field_selfservice_documentTypes-holder" class="cblist-input-list" ><li class="autoCompleteList noBorder" ><div ="" ><input autocomplete="off" data-theme="a" name="field_selfservice_documentTypes" id="field_selfservice_documentTypes" data-type="search" type="text" ></input>
+<ul data-inset="true" data-filter="true" style="display: none;" id="field_selfservice_documentTypes-aclist" data-role="listview" data-filter-reveal="true" data-input="#field_selfservice_documentTypes" ></ul>
+<script >
+$(document).on('pagecreate', function() {
+  var url = '/web/search/documentTypes/DOCSEARCH4S5';
+selfservice.suggest.autocomplete($('#field_selfservice_documentTypes'), $('#field_selfservice_documentTypes-aclist'), url, false, false, true);
+selfservice.navigate.registerListNavigation($('#field_selfservice_documentTypes'), $('#field_selfservice_documentTypes-aclist'));
+});
+</script>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="ui-grid-a two-column " ><div class="ui-block-a ui-margins" ><label for="field_UseAdvancedSearch" >Use Advanced Name Searching</label>
+<input data-theme="a" name="field_UseAdvancedSearch" id="field_UseAdvancedSearch" type="checkbox" data-iconpos="left" ></input>
+</div>
+<div class="ui-block-b ui-margins" ><span >(<a id='UseAdvancedSearch-link' href='#UseAdvancedSearch-popup'>What is Advanced Name Searching?</a>)</span>
+<span id="field_UseAdvancedSearch_link" ></span>
+</div>
+</div>
+
+						
+					</div>
+				</form> 
+				<div data-role="popup" id="UseAdvancedSearch-popup" role="dialog" aria-modal="true">
+					<div data-role="main" class="ss-popup-inner">
+						<div class="advancedSearchInstructions ui-field-contain">
+							<h1>Document Search Help</h1><b>Search Type: Exact Match and Wildcard</b><br />Some search fields have two different types of searching: Exact Match and Wildcard. Exact Match searches will search for a name in the exact order you entered it. You will need to enter Last Name First with no punctuation. For example, if you enter Franklin Benjamin, the system will return documents belonging to Benjamin Franklin but not Franklin Roosevelt.<br /><br />Wildcard searches work similar to an Internet search engine. The order of the words doesn&#39;t matter. For example, if you enter Franklin Benjamin, the system will return documents belonging to Benjamin Franklin and Franklin Roosevelt and Benjamin Moore. The space between the names acts as an implied OR (i.e. Franklin OR Benjamin).<br /><br /><b>Wildcard Search Operators</b><br />Performing Advanced searches with no operators will return documents containing any of the words you entered. By using certain modifiers, or operators, you can focus your search.<br /><br /><b>&#43; Must Contain</b><br />The &#43; operator tells the system that this word must appear in the document. For example, if you enter Franklin &#43;Benjamin, the system will return documents belonging to Benjamin Franklin, but not Franklin Roosevelt.<br /><br /><b>- Must NOT Contain</b><br />The - operator tells the system that this word must NOT appear in the document. For example, if you enter Franklin -Benjamin, the system will return documents belonging to Franklin Roosevelt, but not Benjamin Franklin.<br /><br /><b>$ Sounds Like</b><br />The $ operator tells the system that this word is not spelled correctly but sounds like the typed word. For example, if you enter Franklayn$ , the system will return documents belonging to any name that sounds like Franklin.<br /><br /><b>? Possible Incorrect Letter</b><br />The ? operator tells the system that a specific letter in the name might not be correct. For example, if you enter Frankl?n, the system will return any documents belonging to Franklin Roosevelt, or Franklyn Roosevelt, but the results returned will not be limited to just those two letter. The ? can be replaced with any letter.<br /><br /><b>* Starts With</b><br />The * character is a wild card character. It can be used in both Basic searches and Advanced searches. It can be substituted for any other character or characters. For example, if you enter Frank* Ben*, the system will return documents belonging to Benjamin Franklin, Ben Frank, and Bennie Frankenstein. This can be useful if you are unsure about spelling.<br /><br /><b>Legal Searching Tips</b><br />Using ** allows you to search by any character in the field. For example, *TS* in the Legal Remarks field will return documents which contain TS anywhere in the Legal Remarks field. (TS indicates a timeshare unit.) This feature works only on the Case #, Parcel #, and Legal Remarks fields.<br /><br /><b>AND/OR</b><br />When searching over multiple legal descriptions, enter a pipe character to separate multiple entries. For example, to search over Section 12 and Section 23 enter 12|23 into the Section field. This will return all documents with a legal description in Section 12 or Section 23.<br /><br /><b>Grouping Terms</b><br />Use parentheses () to group clauses to form sub queries. To search for either DENVER or COLORADO and MAP use the query (DENVER OR COLORADO) AND MAP. This query requires either DENVER or COLORADO to appear with MAP. Use double-quotes to group words into an exact search. Entering MICKEY MOUSE will return documents with MICKEY MOUSE found in the same field. It will not return documents if the words are separated or do not match exactly (i.e. MICKEY M MOUSE or MICKEY MOUSEHEAD).<br /><br /><b>Other Options</b><br />A tilde ~ alone performs a fuzzy search. ROAM~ will return words that are similar in spelling to ROAM, such as FOAM or ROAMS. A tilde ~ plus a number performs a proximity search. This can be useful when there are instances of a name being recorded both with and without the middle initial. MARY MAXWELL~1 will return all instances of MARY and MAXWELL being one word away from each other (i.e. MARY L MAXWELL or MARY ELIZABETH MAXWELL). Increase the number to increase the number of words between your search criteria.
+						</div>
+					</div>
+					<div data-role="footer" class="ss-footer-stripe" data-theme="b">
+						<a href="#" class="ss-right" id="SelfService-1786211110724-UseAdvancedSearch-close" data-role="button" data-icon="check" data-iconpos="right"
+							data-rel="back">OK</a>
+						<div class="ss-clear"/></div>
+					</div>
+				</div> 
+				
+					<div id="SelfService-1786211110724-advancedSearchBuilder-popup" data-role="popup">
+						<div id="SelfService-1786211110724-advancedSearchBuilderInternal"></div>
+					</div>
+				 
+				
+					<div id="SelfService-1786211110724-recentSearchPopup" data-role="popup" class="ss-recent-searches popup-center">
+						<div id="SelfService-1786211110724-recentSearchPopupInternal"></div>
+					</div>
+				
+				<script>
+				var useAdvancedSearchPopup = $('#UseAdvancedSearch-popup');
+		
+				$('#UseAdvancedSearch-link').on('click', function(event) {
+					event.preventDefault();
+					useAdvancedSearchPopup.popup({
+						beforeposition: function() {
+							$('.ui-popup-container').css('width','60em');
+						}
+					}).popup('open');
+				});
+		
+				$('#SelfService-1786211110724-UseAdvancedSearch-close').on('click', function(event) {
+					event.stopPropagation();
+					event.preventDefault();
+					useAdvancedSearchPopup.popup('close');
+				});
+		
+				$('#field_UseAdvancedSearch').on('change', function(){
+					var show = $('#field_UseAdvancedSearch').is(':checked');
+					showAdvancedSearch(show);
+				});
+		
+				showAdvancedSearch = function(show) {
+					$.each($('a.advancedSearch'), function(index, target) {
+						var fieldId = 'field_' + $(target).data('searchField');
+						var field = $('#' + fieldId);
+						var parent = field.closest('ul');
+						var label = $('label[for=' + fieldId + ']');
+						var button = $('a.advancedSearch');
+						var clearButton =  $('a.ui-input-clear.ui-icon-delete');
+		
+						if (show) {
+							button.fadeIn('fast');
+							clearButton.css("right", "20px");
+						} else {
+							button.hide();
+							clearButton.css("right", "0px");
+						}
+					});
+				};
+				</script>
+		
+				<div class="ss-content full-screen" id="SelfService-1786211110724-search-controls">
+				<div class="ss-clear" id="SelfService-1786211110724-control-clear"></div>
+				<script>
+			var loadTime = 1700;
+			
+			
+			$('#SelfService-1786211110724-page').on('pageinit', function() {
+			
+				var actionId = 'DOCSEARCH4S5';
+		
+				
+					var searchField = 'GrantorID';
+					var field = $('#field_GrantorID');
+					var parentDiv = field.closest('div');
+					parentDiv.css("position", "relative");
+		
+					var url = '/web/search/advancedSearchPres/DOCSEARCH4S5/GrantorID';
+					var href = '<a class="advancedSearch ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-edit ui-btn-icon-notext"' +
+							' id="advancedSearchButton-' + searchField + '"' +
+							' data-role="button" data-inline="true" data-theme="b" data-icon="edit"' +
+							' data-iconpos="notext" href="' + url + '">' + 'GrantorID</a>';
+					var button = $(href);
+					button.data('searchField', searchField);
+					button.hide(); // Initially hidden, will show when advanced search is turned on
+					button.css('position', 'absolute');
+					button.css('right', '0px');
+					button.css('top', '0px');
+					button.css('margin', '-2px -1px 0px 0px');
+					button.css('background-color', 'transparent');
+					button.css('border', 'none');
+					parentDiv.append(button);
+					parentDiv.parent().trigger('refresh');
+				
+					var searchField = 'GranteeID';
+					var field = $('#field_GranteeID');
+					var parentDiv = field.closest('div');
+					parentDiv.css("position", "relative");
+		
+					var url = '/web/search/advancedSearchPres/DOCSEARCH4S5/GranteeID';
+					var href = '<a class="advancedSearch ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-edit ui-btn-icon-notext"' +
+							' id="advancedSearchButton-' + searchField + '"' +
+							' data-role="button" data-inline="true" data-theme="b" data-icon="edit"' +
+							' data-iconpos="notext" href="' + url + '">' + 'GranteeID</a>';
+					var button = $(href);
+					button.data('searchField', searchField);
+					button.hide(); // Initially hidden, will show when advanced search is turned on
+					button.css('position', 'absolute');
+					button.css('right', '0px');
+					button.css('top', '0px');
+					button.css('margin', '-2px -1px 0px 0px');
+					button.css('background-color', 'transparent');
+					button.css('border', 'none');
+					parentDiv.append(button);
+					parentDiv.parent().trigger('refresh');
+				
+					var searchField = 'BothNamesID';
+					var field = $('#field_BothNamesID');
+					var parentDiv = field.closest('div');
+					parentDiv.css("position", "relative");
+		
+					var url = '/web/search/advancedSearchPres/DOCSEARCH4S5/BothNamesID';
+					var href = '<a class="advancedSearch ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-edit ui-btn-icon-notext"' +
+							' id="advancedSearchButton-' + searchField + '"' +
+							' data-role="button" data-inline="true" data-theme="b" data-icon="edit"' +
+							' data-iconpos="notext" href="' + url + '">' + 'BothNamesID</a>';
+					var button = $(href);
+					button.data('searchField', searchField);
+					button.hide(); // Initially hidden, will show when advanced search is turned on
+					button.css('position', 'absolute');
+					button.css('right', '0px');
+					button.css('top', '0px');
+					button.css('margin', '-2px -1px 0px 0px');
+					button.css('background-color', 'transparent');
+					button.css('border', 'none');
+					parentDiv.append(button);
+					parentDiv.parent().trigger('refresh');
+				
+		
+				$('a.advancedSearch').on('click', function (event) {
+					event.preventDefault();
+					event.stopPropagation();
+					var href=event.target.href;
+					var searchField=$(event.target).data('searchField');
+					// Store the existing value for later use
+					$(event.target).data('searchField', $(searchField).val());
+					var searchDoc = $(window).data('searchDoc.' + searchField);
+					if (!searchDoc) {
+						searchDoc = {'searchField': searchField};
+					}
+					var advancedSearchBuilt=false;
+					$('#SelfService-1786211110724-advancedSearchBuilder-popup').popup({
+						beforeposition: function() {
+							if (!advancedSearchBuilt) {
+								$('.ui-popup-container').css('width','40em');
+								$.ajax({
+									url: href,
+									type: 'POST',
+									data: searchDoc,
+									dataType: 'html',
+									success: function(data) {
+										$('#SelfService-1786211110724-advancedSearchBuilderInternal').html(data);
+										$('#SelfService-1786211110724-advancedSearchBuilder-popup').trigger('create');
+									},
+									error: function(jqXHR, textStatus, errorThrown){
+										$('.ss-validation-messages').clear();
+										$('.ss-validation-messages').append($('<ul><li>We&#39;re sorry. An error occurred opening the dialog</li></ul>'));
+									}
+								});
+								advancedSearchBuilt=true;
+							}
+						},
+						afterclose: function() {
+							var searchText = $(window).data('advancedSearchText');
+							if (searchText) {
+								$('#field_' + searchField).val(searchText);
+								$('#field_' + searchField).focus();
+								applySearchText();
+							}
+						}
+					}).popup('open', {positionTo: 'window', transition: 'pop'});
+				});
+		
+				var show = $('#field_UseAdvancedSearch').is(':checked');
+				showAdvancedSearch(show);
+			
+		
+			
+				// create and show popup dialog 
+				var recentSearchUrl = '/web/search/recentSearches';
+				$('#SelfService-1786211110724-recentSearchPopup').popup({
+					beforeposition: function() {
+						$('.ui-popup-container').css('width','50em');
+						$.ajax({
+							type: 'POST',
+							url: recentSearchUrl,
+							processData: false,
+							async: false,
+							dataType: 'html',
+							success: function(data) {
+								$('#SelfService-1786211110724-recentSearchPopupInternal').html(data);
+								$('#SelfService-1786211110724-recentSearchPopup').trigger('create');
+								selfservice.truncateText($('.recent-search-query-text'), 80);
+							}, 
+							error: function(jqXHR, textStatus, errorThrown){
+								alert('We&#39;re sorry. An error occurred while saving your search');
+							}
+						});
+					},
+					afterclose: function() {
+						var url = $(window).data('recentSearchUrl');
+						if (url) {
+							$.ajax({
+								type: 'POST',
+								url: url,
+								processData: false,
+								async: false,
+								dataType: 'html',
+								success: function(searchActionId) {
+									var recentSearchUrl = '/web/search/'+searchActionId;
+									window.location=recentSearchUrl;
+								}, 
+								error: function(jqXHR, textStatus, errorThrown){
+									alert('We&#39;re sorry. An error occurred while saving your search');
+								}
+							});
+						}
+					}
+				});
+		
+				$('<a class="ss-left" id="recentSearchButton" data-role="button" data-inline="true" data-theme="b" data-icon="clock" data-iconpos="left" href="/search/recentSearches">Recent searches</a>')
+					.insertBefore('#SelfService-1786211110724-control-clear')
+					.click(function(event) {
+						event.preventDefault();
+						var responseElement = $('#SelfService-1786211110724-search-results');
+						var controlElement = 'SelfService-1786211110724-search-controls';
+						var buttonElement = 'SelfService-1786211110724-search-buttons';
+						var filterUrl = '/web/filterSearchResults/DOCSEARCH4S5';
+		
+						$('#SelfService-1786211110724-recentSearchPopup').popup('open');
+					});
+			
+		
+			var resultsUrl = '/web/searchResults/DOCSEARCH4S5';
+			var responseElement = $('#SelfService-1786211110724-search-results');
+			var buttons = $('#SelfService-1786211110724-search-buttons');
+			var filterUrl = '/web/filterSearchResults/DOCSEARCH4S5';
+			selfservice.search.buildSearchButtons(responseElement, buttons, resultsUrl, filterUrl);
+		
+			$('<a class="ss-right" id="searchButton" data-role="button" data-inline="true" data-theme="b" data-icon="search" data-iconpos="right" href="/web/searchResults/DOCSEARCH4S5">Search</a>')
+				.insertBefore('#SelfService-1786211110724-control-clear')
+				.click(function(event) {
+				event.preventDefault();
+				if(validatePage($('#SelfService-1786211110724-search-form'))) {
+					// If any items are selected, show them a warning that their results will
+					// disappear if they perform a new search
+					var selectedItems = $('ul').find('input.ss-facet-select:checked');
+					if (selectedItems.length > 0) {
+					
+						selfservice.search.openSelectedItemsWarningPopup('selectedItemsWarningNewSearch');
+					} else {
+						
+						executeSearch();
+					}
+				}
+			});
+		
+	$(document).on('keydown', function (event) {
+		// If we don't suppress the enter keydown, we get strange behavior and errors
+		// Don't prevent defaults if the login window is open as enter should work for login submit not search
+		var k = event.which || event.keyCode;
+		var $target = $(event.target);
+		
+		// CRITICAL FIX: Check if we're inside a datebox container FIRST
+		var insideDateboxContainer = $target.closest('.ui-datebox-container').length > 0;
+		
+		if (insideDateboxContainer) {
+			// Inside date picker popup - allow ALL keys to work naturally
+			// Do NOT interfere with Tab, Enter, Space, or any other navigation
+			return true; // Let the event bubble naturally
+		}
+		
+		// Check if this is a date picker trigger button (calendar icon)
+		var isDateboxTrigger = false;
+		if ($target.hasClass('ui-btn') || $target.hasClass('ui-datebox-trigger') || $target.closest('a.ui-btn, button.ui-btn').length > 0) {
+			// Check if this button is related to a datebox input
+			isDateboxTrigger = $target.closest('.ui-datebox-input').length > 0 ||
+			                   $target.prev('input[data-role="datebox"]').length > 0 ||
+			                   $target.siblings('input[data-role="datebox"]').length > 0 ||
+			                   $target.parent().find('input[data-role="datebox"]').length > 0;
+		}
+		
+		// Allow Enter/Space on date picker trigger buttons to open calendar
+		if ((k === 13 || k === 32) && isDateboxTrigger) {
+			// Don't prevent default - let the datepicker handle it
+			return true;
+		}
+		
+		// Prevent Enter from triggering search (but only Enter, not Space, and only outside datebox)
+		if (k === 13 && $('.ui-panel-open').length < 1) {
+			event.preventDefault();
+			return false;
+		} else if (event.target && event.target.type != undefined && event.target.type.toLowerCase() == 'number') {
+			var key = selfservice.determineKeyCodeProperty(event);
+			if (!selfservice.userPressedValidKeyForInputNumberTypeBox(key)) {
+				event.preventDefault();
+			}
+		}
+	});
+		
+			selfservice.document.handleTab = function (event) {
+				if((selfservice.testvar) && (selfservice.testvar.prop('id') !== $(document.activeElement).prop('id'))) {
+					selfservice.testvar = null;
+					return; 
+				}
+				var acItemSelected = $(document).data('Autocomplete');
+				$(document).data('Autocomplete', false);
+		
+				if ($(document).data('listFieldFocus') || $(event.target).closest("li").hasClass("autoCompleteList")) {
+					event.stopPropagation();
+					event.preventDefault();
+					$(document).data('listFieldFocus', false);
+		
+					// Move focus to the next text field
+					var $input = $(document.activeElement);
+					var inputs = $input.closest('form').find(':input:visible');
+					if (event.shiftKey) {
+						var previousInput = inputs.eq(inputs.index($input) - 1);
+						previousInput.focus();
+					} else {
+						var nextInput = inputs.eq(inputs.index($input) + 1);
+							if (typeof nextInput.prop('id') == 'undefined') {
+								var recentBtn = $('#recentSearchButton');
+								if (recentBtn.length) {
+									recentBtn.focus();
+								} else {
+									$('#searchButton').focus();
+								}
+						} else {
+							$(nextInput).focus();
+						}
+					}
+					return false;
+				}
+				return true;
+			};
+		
+			selfservice.document.rebindOnEvents('keyup', function(e) {
+				// Don't prevent defaults if the login window is open as enter should work for login submit not search
+				var popupOpen = $.mobile.popup.active;
+				var panelOpen =  $('.ui-panel-open').length > 0;
+		
+				if ((e.which && e.which == 9) || (e.keyCode && e.keyCode == 9)) {
+					// This is set when the enter key is handled from an autocomplete (name suggest), read it and clear
+					return selfservice.document.handleTab(e);
+				} else if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+					// This is set when the enter key is handled from an autocomplete (name suggest), read it and clear
+					var acItemSelected = $(document).data('Autocomplete');
+					$(document).data('Autocomplete', false);
+		
+					if (!acItemSelected && $(e.target).closest("li").hasClass("autoCompleteList")) {
+						if($(e.target).val() != ''){
+		
+							$("ul[id$='aclist']").each(function(){
+								$(this).hide()
+							});
+							$input = $(e.target);
+							$input.val('');
+						}
+					}
+					if (acItemSelected) {
+						e.preventDefault();
+						return false;
+					}
+		
+					if (!panelOpen && !popupOpen && !acItemSelected) {
+						if(validatePage($('#SelfService-1786211110724-search-form'))) {
+							// If any items are selected, show them a warning that their results will disappear if they perform a new search
+							var selectedItems = $('ul').find('input.ss-facet-select:checked');
+							if (selectedItems.length > 0) {  
+								selfservice.search.openSelectedItemsWarningPopup('selectedItemsWarningNewSearch');
+							} else {
+								executeSearch();
+							}
+						}
+						e.preventDefault();
+						return false;
+					} else if (popupOpen) {
+						var popup = $('.ui-popup-active').find('[data-role=popup]');
+						var back = popup.find('[data-rel=back]');
+						if (back && back.length > 0) {
+							back[0].click(); // Only call first back button, not all of them
+						} else {
+							popup.popup('close');
+						}
+					}
+				}
+			});
+		
+			$('<a class="ss-right" id="clearSearchButton" data-role="button" data-inline="true" data-theme="b" data-icon="refresh" data-iconpos="left" href="#" tabindex="0" aria-label="Clear Selections">Clear Selections</a>')
+				.insertBefore('#SelfService-1786211110724-control-clear')
+				.click(function(event) {
+					event.preventDefault();
+					var url = '/web/clearSearchResults/DOCSEARCH4S5';
+					$.ajax({
+						type: 'POST',
+						url: url,
+						success: function() {
+							$('form[id$=search-form] select').each(function() { 
+								$(this).val(''); 
+								$(this).selectmenu('refresh');
+							});
+							location.reload();
+						}, 
+						error: function(jqXHR, textStatus, errorThrown){
+							var responseElement = $('#SelfService-1786211110724-search-results');
+							responseElement.empty().append('<h2>We&#39;re sorry. An error occurred while clearing search results</h2>').trigger('create');
+						}
+					});
+				});
+				// Ensure visual order reflects desired tab sequence:
+				// Recent searches -> Search -> Clear Selections
+				try {
+					var anchor = '#SelfService-1786211110724-control-clear';
+					var clearBtn = $('#clearSearchButton');
+					var searchBtn = $('#searchButton');
+					var recentBtn = $('#recentSearchButton');
+					if (recentBtn.length) { recentBtn.insertBefore(anchor); }
+					if (searchBtn.length) { searchBtn.insertBefore(anchor); }
+					if (clearBtn.length) { clearBtn.insertBefore(anchor); }
+				} catch(e) {}
+
+				$('#SelfService-1786211110724-search-controls').trigger('create');
+				
+				// Enable Space bar on search control buttons (Recent searches, Search, Clear Selections)
+				setTimeout(function() {
+					$('#recentSearchButton, #searchButton, #clearSearchButton').each(function() {
+						var $btn = $(this);
+						if (!$btn.data('control-spacebar-enabled')) {
+							$btn.data('control-spacebar-enabled', true);
+							$btn.on('keydown', function(e) {
+								var k = e.which || e.keyCode;
+								if (k === 32) { // Space bar
+									e.preventDefault();
+									e.stopPropagation();
+									$(this).click();
+								}
+							});
+						}
+					});
+				}, 100);
+			});
+		
+			var applySearchText = function() {
+				var $input = $(document.activeElement);
+				var searchText = $input.val();
+				if (searchText.length > 0) {
+					var $holder = $("#" + $input.prop('id') + "-holder");
+					var exists = false;
+					$.each($holder.find("li.cblist-input-list"), function(index, value) {
+						if($(value).text() === searchText) {
+							$(value).css("background","lightblue");
+							setTimeout(function() {
+								$(value).css("background","initial");
+							},500);
+							exists = true;
+							return false;
+						}
+					});
+				if(!exists) {
+					selfservice.search.addSearchItem(searchText, searchText, $holder, $input, "-searchInput");
+				}
+				$input.val('');
+					$("#" + $input.prop('id') + "-aclist").empty().hide();
+				}
+			};
+		
+			var responseElement = $('#SelfService-1786211110724-search-results');
+			var resultsUrl = '/web/searchResults/DOCSEARCH4S5';
+			var filterUrl = '/web/filterSearchResults/DOCSEARCH4S5';
+			var buttons = $('#SelfService-1786211110724-search-buttons');
+			selfservice.search.initializeSearchObjects(responseElement, resultsUrl, filterUrl, buttons);
+		
+			var executeSearch = function() {
+				var responseElement = $('#SelfService-1786211110724-search-results');
+				var resultsUrl = '/web/searchResults/DOCSEARCH4S5';
+				var filterUrl = '/web/filterSearchResults/DOCSEARCH4S5';
+				var searchForm = $('#SelfService-1786211110724-search-form');
+				var controls = $('#SelfService-1786211110724-search-controls');
+				var buttons = $('#SelfService-1786211110724-search-buttons');
+				
+				
+				var ae = $(document.activeElement);
+				if (ae.prop('id').substring(0, 6) == 'field_') {
+					$('#searchButton').focus();
+				}
+		
+				$("ul[id$='aclist']").each(function() {
+					$(this).hide()
+				});
+				selfservice.search.performSearch(responseElement, resultsUrl, filterUrl, searchForm, controls, buttons);		
+				selfservice.search.closeSelectedItemsWarningPopup('selectedItemsWarningNewSearch');
+			};
+			</script>
+				</div>
+			</li>
+		
+	
+	
+</ul>
+<a id="resultAnchor"></a>
+<style>
+/* SR-only utility (use if we don't already have one) */
+.visually-hidden {
+  position:absolute!important; width:1px!important; height:1px!important;
+  margin:-1px!important; padding:0!important; border:0!important;
+  overflow:hidden!important; clip:rect(0 0 0 0)!important; white-space:nowrap!important;
+}
+</style>
+
+<script>
+(function ($) {
+  function ensureId(el, prefix) {
+    if (!el.id) el.id = prefix + '-' + Math.random().toString(36).slice(2,8);
+    return el.id;
+  }
+
+  // A) Remove redundant tooltip and add useful aria-label on the DateBox trigger button
+  function fixTriggerButtonTitles(ctx) {
+    $(ctx).find("input[data-role='datebox']").each(function () {
+      var $input = $(this);
+      var $btn = $input.closest('.ui-input-text, .ui-field-contain, div')
+                      .find('a.ui-btn, button.ui-btn').first();
+      if ($btn.length) {
+        $btn.removeAttr('title');
+        var labelText = $("label[for='" + $input.attr('id') + "']").text().trim() || 'date field';
+        $btn.attr('aria-label', 'Open date picker for ' + labelText);
+      }
+    });
+  }
+
+  // B) Add accessible labels for Month / Day / Year fields inside the popup
+  function labelPopupFields(root) {
+    $(root || document).find('.ui-datebox-container').each(function () {
+      // DateBox uses 'ui-datebox-dboxin' on the spinner inputs
+      var fields = $(this).find('input.ui-datebox-dboxin').get();
+      var names  = ['Month','Day','Year'];
+      for (var i = 0; i < fields.length && i < 3; i++) {
+        var id = ensureId(fields[i], 'datepart');
+        if (!document.querySelector('label[for="'+id+'"]')) {
+          var lbl = document.createElement('label');
+          lbl.className = 'visually-hidden';
+          lbl.setAttribute('for', id);
+          lbl.textContent = names[i];
+          fields[i].parentNode.insertBefore(lbl, fields[i]);
+        }
+        if (!fields[i].getAttribute('aria-label')) {
+          fields[i].setAttribute('aria-label', names[i]);
+        }
+      }
+    });
+  }
+
+  // C) Normalize headings inside the popup to avoid skipped levels
+  function normalizePopupHeadings(root) {
+    $(root || document)
+      .find('.ui-datebox-container h4, .ui-datebox-container h5, .ui-datebox-container h6')
+      .each(function () {
+        var $h = $(this);
+        var $div = $('<div/>').html($h.html());
+        if ($h.attr('class')) $div.attr('class', $h.attr('class')); else $div.addClass('datebox-heading');
+        if ($h.attr('style')) $div.attr('style', $h.attr('style'));
+        $h.replaceWith($div);
+      });
+  }
+
+  // D) Make calendar trigger buttons respond to Space bar
+  function enableSpaceBarOnTriggers(ctx) {
+    $(ctx || document).find("input[data-role='datebox']").each(function () {
+      var $input = $(this);
+      var $btn = $input.closest('.ui-input-text, .ui-field-contain, div')
+                      .find('a.ui-btn, button.ui-btn').first();
+      if ($btn.length && !$btn.data('spacebar-enabled')) {
+        $btn.data('spacebar-enabled', true);
+        $btn.on('keydown', function(e) {
+          var k = e.which || e.keyCode;
+          if (k === 32) { // Space bar
+            e.preventDefault();
+            $(this).click();
+          }
+        });
+      }
+    });
+  }
+  
+  // E) Make buttons inside datebox popup respond to Space bar using DIRECT event delegation
+  // This captures Space bar at document level BEFORE anything else can interfere
+  // MULTIPLE HANDLERS to ensure we catch all button types
+  
+  // Handler 1: Direct on buttons and links
+  $(document).on('keydown keypress', '.ui-datebox-container a, .ui-datebox-container button, .ui-datebox-container .ui-btn, .ui-datebox-container [role="button"]', function(e) {
+    var k = e.which || e.keyCode;
+    
+    if (k === 32) { // Space bar
+      if (e.type === 'keydown') {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        
+        var btn = this;
+        setTimeout(function() { btn.click(); }, 0);
+        
+        return false;
+      } else if (e.type === 'keypress') {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      }
+    }
+  });
+  
+  // Handler 2: Catch-all for any element inside datebox container that gets focus
+  $(document).on('keydown', '.ui-datebox-container *:focus', function(e) {
+    var k = e.which || e.keyCode;
+    
+    if (k === 32) { // Space bar
+      var $target = $(e.target);
+      
+      if ($target.is('a, button, .ui-btn, [role="button"]')) {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        
+        var btn = this;
+        setTimeout(function() { btn.click(); }, 0);
+        
+        return false;
+      }
+    }
+  });
+  
+  // F) Fix Tab navigation from year field to "Set Date" button
+  $(document).on('keydown', '.ui-datebox-container input[type="text"], .ui-datebox-container input[type="number"]', function(e) {
+    var k = e.which || e.keyCode;
+    
+    if (k === 9 && !e.shiftKey) { // Tab key (forward)
+      var $allInputs = $(this).closest('.ui-datebox-container').find('input[type="text"], input[type="number"]').filter(':visible');
+      var currentIndex = $allInputs.index(this);
+      
+      // If this is the last input field
+      if (currentIndex === $allInputs.length - 1) {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        
+        var $container = $(this).closest('.ui-datebox-container');
+        var $setDateBtn = $container.find('a:contains("Set Date"), button:contains("Set Date")').first();
+        
+        if (!$setDateBtn.length) {
+          $setDateBtn = $container.find('a.ui-btn, button.ui-btn').filter(function() {
+            var text = $(this).text().trim().toLowerCase();
+            return text !== 'cancel' && text !== 'today' && text !== 'clear';
+          }).first();
+        }
+        
+        if ($setDateBtn.length) {
+          setTimeout(function() { $setDateBtn.focus(); }, 10);
+        }
+        
+        return false;
+      }
+    }
+  });
+
+  function applyAll(ctx) {
+    fixTriggerButtonTitles(ctx);
+    labelPopupFields(ctx);
+    normalizePopupHeadings(ctx);
+    enableSpaceBarOnTriggers(ctx);
+  }
+
+  // Bind to lifecycle + DateBox events
+  $(document)
+    .on('pagecreate pagecontainershow', function (e) { 
+      applyAll(e.target);
+    })
+    .on('dateboxaftercreate dateboxopen', function (e) { 
+      applyAll(e.target);
+    })
+    .on('popupafteropen', function(e) {
+      if ($(e.target).find('.ui-datebox-container').length > 0 || 
+          $(e.target).hasClass('ui-datebox-container')) {
+        applyAll(e.target);
+      }
+    });
+
+  // Fallback: observe DOM for injected date picker popups
+  try {
+    new MutationObserver(function (muts) {
+      muts.forEach(function (m) {
+        for (var i = 0; i < (m.addedNodes||[]).length; i++) {
+          var n = m.addedNodes[i];
+          if (n.nodeType !== 1) continue;
+          if (n.classList.contains('ui-datebox-container') ||
+              (n.querySelector && n.querySelector('.ui-datebox-container'))) {
+            applyAll(n);
+          }
+        }
+      });
+    }).observe(document.body, { childList:true, subtree:true });
+  } catch (e) {}
+
+  
+  // ============================================================================
+  // FOCUS MANAGEMENT AFTER DATE PICKER CLOSES (A11y)
+  // When user clicks "Set Date", focus moves to the next form field
+  // ============================================================================
+  
+  (function() {
+    var lastDateboxInputId = null;
+    
+    // Function to get the next field after a datebox input
+    function getNextFieldAfterDatebox(inputId) {
+      if (!inputId) return null;
+      
+      // If it's a StartDate field, next is the EndDate field
+      if (inputId.indexOf('StartDate') > -1) {
+        var endDateId = inputId.replace('StartDate', 'EndDate');
+        var endDateField = document.getElementById(endDateId);
+        if (endDateField) return endDateField;
+      }
+      
+      // If it's an EndDate field, find the Name field
+      if (inputId.indexOf('EndDate') > -1) {
+        var nameField = document.getElementById('field_BothNamesID');
+        if (nameField) return nameField;
+      }
+      
+      return null;
+    }
+    
+    // Capture which datebox input is being opened
+    $(document).on('click', "input[data-role='datebox'], a.ui-btn[href*='#'], button.ui-btn", function() {
+      var $dateInput = $(this);
+      
+      if (!$dateInput.is("input[data-role='datebox']")) {
+        // It's a button - find the associated datebox input
+        $dateInput = $(this).siblings("input[data-role='datebox']").first();
+        if (!$dateInput.length) {
+          $dateInput = $(this).parent().find("input[data-role='datebox']").first();
+        }
+        if (!$dateInput.length) {
+          $dateInput = $(this).closest('.ui-input-text, .ui-field-contain').find("input[data-role='datebox']").first();
+        }
+      }
+      
+      if ($dateInput.length && $dateInput.attr('id')) {
+        lastDateboxInputId = $dateInput.attr('id');
+      }
+    });
+    
+    // Also capture on dateboxopen event
+    $(document).on('dateboxopen', "input[data-role='datebox']", function() {
+      lastDateboxInputId = this.id;
+    });
+    
+    // Handle "Set Date" button click
+    $(document).on('click', '.ui-datebox-controls a, .ui-datebox-controls button', function() {
+      var btnText = ($(this).text() || '').trim().toLowerCase();
+      
+      if (btnText === 'set date' || btnText === 'set' || btnText === 'ok') {
+        var nextField = getNextFieldAfterDatebox(lastDateboxInputId);
+        
+        if (nextField) {
+          // Multiple attempts to set focus after popup closes
+          [100, 200, 350, 500, 750].forEach(function(delay) {
+            setTimeout(function() {
+              try { nextField.focus(); } catch(e) {}
+            }, delay);
+          });
+        }
+      }
+    });
+    
+    // When popup closes, try to focus the next field
+    $(document).on('popupafterclose', function(e) {
+      var $popup = $(e.target);
+      var isDateboxPopup = $popup.find('.ui-datebox-container').length > 0 || 
+                           ($popup.attr('id') && $popup.attr('id').indexOf('datebox') > -1);
+      
+      if (isDateboxPopup && lastDateboxInputId) {
+        var nextField = getNextFieldAfterDatebox(lastDateboxInputId);
+        
+        if (nextField) {
+          // Aggressive focus attempts to override jQuery Mobile's focus restoration
+          [50, 150, 300, 500, 800].forEach(function(delay) {
+            setTimeout(function() {
+              try { nextField.focus(); } catch(e) {}
+            }, delay);
+          });
+        }
+        
+        // Clear after 1 second
+        setTimeout(function() {
+          lastDateboxInputId = null;
+        }, 1000);
+      }
+    });
+  })();
+  
+})(jQuery);
+</script>
+<div id="SelfService-1786211110724-search-results" style="min-height:260px;">
+	
+</div>
+
+
+<div data-role="popup" id="selectedItemsWarningNewSearch" class="selected-items-warning-popup" data-dismissible="false">
+	<div data-role="header" data-theme="a">
+		<h1>Warning</h1>
+	</div>
+	<div role="main" class="ui-content">
+		<!-- WCAG: instruction, not a section heading -->
+		<p class="ui-title ss-instruction">If you navigate away from this page, you will lose your selected items. Continue?</p>
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<a href="#" data-role="button" data-theme="a" onclick="executeSearch();">OK</a>	
+			</div>
+			<div class="ui-block-b">
+				<a href="#" data-role="button" onclick="selfservice.search.closeSelectedItemsWarningPopup('selectedItemsWarningNewSearch');" data-theme="a">Cancel</a>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<div id="SelfService-1786211110724-search-buttons"></div>
+
+			</div>
+		</div>
+
+		<!-- POPUPS	-->
+		
+
+
+
+
+
+
+
+	
+
+
+
+
+
+<div data-role="popup" id="SelfService-1786211110724-passwordChange-popup" class="ss-password-change-popup ui-content" data-history="false" data-position-to="window" data-transition="slide" role="dialog" aria-modal="true">
+	<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right" aria-label="Close dialog">Close</a>
+	<div id="SelfService-1786211110724-passwordChangeInternal" class="ss-password-change-popup-internal"></div>
+</div>
+
+<script>
+
+var passwordChangeUrl = "/web/user/passwordChange";
+$("#SelfService-1786211110724-passwordChange-popup").on("popupbeforeposition", function() {
+	$("#SelfService-1786211110724-passwordChangeInternal").load(passwordChangeUrl, function() {
+		$("#SelfService-1786211110724-passwordChangeInternal").trigger("create");
+		$("#SelfService-1786211110724-passwordChange-popup").trigger("updatelayout");
+		$.mobile.activePage.trigger("pagecreate");
+		
+		// A11y: Set aria-labelledby after content is loaded (to avoid broken ARIA reference)
+		if ($('#password-change-dialog-title').length) {
+			$("#SelfService-1786211110724-passwordChange-popup").attr('aria-labelledby', 'password-change-dialog-title');
+		}
+	});
+	// Force container centering on first open as jQM measures before dynamic content settles
+	try {
+		var $c = $("#SelfService-1786211110724-passwordChange-popup").closest(".ui-popup-container");
+		$c.css({ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%,-50%)" });
+	} catch(ign) {}
+});
+
+$("#SelfService-1786211110724-passwordChange-popup").on("popupafteropen", function() {	
+	$("#SelfService-1786211110724-passwordChange-popup").popup("reposition", "positionTo: window");
+	// Re-assert centering after jQM positions
+	try {
+		var $c = $("#SelfService-1786211110724-passwordChange-popup").closest(".ui-popup-container");
+		$c.css({ position: "fixed", top: "50%", left: "50%", transform: "translate(-50%,-50%)" });
+	} catch(ign) {}
+});
+
+$("#SelfService-1786211110724-passwordChange-popup").on("popupafterclose", function() {
+	$("#field_OldPassword").val("");
+	$("#field_NewPassword").val("");
+	$("#field_ConfirmPassword").val("");
+});	
+
+// A11y hooks: announce info text and validation errors without changing UI
+(function(){
+  if (window.__ssChangePwdA11yBound) return; 
+  window.__ssChangePwdA11yBound = true;
+  function norm(txt){ return (txt||'').replace(/\s+/g,' ').trim(); }
+  function polite(t){ if (window.SSAnnounce && t) window.SSAnnounce.polite(t); }
+  function assertive(t){ if (window.SSAnnounce && t) window.SSAnnounce.assertive(t); }
+
+  // Password info button handler - simplified to let passwordChange.body.jsp handle focus
+  // This just ensures proper ARIA attributes are set after messages render
+  $(document).on('click keydown', '.ss-password-change-popup .wip, .ss-password-change-popup .password-info', function(e){
+    var k = e.which || e.keyCode;
+    if (e.type === 'keydown' && k !== 13 && k !== 32) return;
+    // Let the event bubble to the handler in passwordChange.body.jsp
+    // Just ensure the message region gets proper ARIA attributes after render
+    setTimeout(function(){
+      var $vis = $('.ss-passwordValidation-messages:visible');
+      if ($vis.length && $vis.html().trim()) {
+        // Ensure ARIA attributes are set (handler in body.jsp should do this, this is backup)
+        if (!$vis.attr('role')) {
+          $vis.attr({
+            'role': 'region',
+            'aria-label': 'Password requirements',
+            'aria-live': 'polite',
+            'tabindex': '-1'
+          });
+        }
+      }
+    }, 120);
+  });
+
+  // Error announcements are now handled by announcePasswordError() in passwordChange.body.jsp
+  // MutationObserver and multiple tryAnnounce calls removed to prevent CPU spikes
+})();
+</script>
+
+		
+		
+
+
+
+
+
+
+<div id="SelfService-1786211110724-session-popup" class="ss-panel-login" data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true">
+	<button class="close-btn" data-rel="close" aria-label="Close session panel" title="Close session panel" style="float:right !important;width:auto !important;margin-right:15px !important;"><span aria-hidden="true" >✖</span></button>
+		<div data-role="header" style="background-color: #06c; line-height: 1.3; margin: 70px 0 0 0 !important;">
+		<h1 style="font-size: 1.3em; padding: 1em 1.5em; color: white; font-weight: normal; text-overflow: inherit; overflow: visible; margin:0 !important; text-align:center !important;">
+		Session about to time out
+		</h1>
+		</div>
+	<div style="padding: 10px; background-color: white;">
+		<h2>Do you need more time? <span id="remainingTime"></span></h2>
+		<button id="SelfService-1786211110724-session-continue" type="button" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">
+		Yes - Continue
+		</button>
+		<button id="SelfService-1786211110724-session-logout" type="button" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-delete">
+		No - Start Over
+		</button>
+	</div>
+</div>
+
+<script>
+
+selfservice.countdown.continueButton = $('#SelfService-1786211110724-session-continue');
+selfservice.countdown.element = $('#remainingTime');
+selfservice.countdown.logoutButton = $('#SelfService-1786211110724-session-logout');
+selfservice.pages.check = '/web/session/checkSession';
+selfservice.pages.home = '/web/';
+selfservice.pages.logout = '/web/user/logout';
+selfservice.pages.ping = '/web/session/pingSession';
+selfservice.session.logoutError = 'An error occurred while logging out. Please try again.';
+selfservice.session.timeoutElement = $('#SelfService-1786211110724-session-popup');
+
+
+selfservice.countdown.continueButton.on('click', function (event) {
+	selfservice.countdown.continueButton.prop('disabled', true);
+	selfservice.countdown.logoutButton.prop('disabled', true);
+
+	selfservice.session.continueSession();
+
+	selfservice.countdown.continueButton.prop('disabled', false);
+	selfservice.countdown.logoutButton.prop('disabled', false);
+
+	selfservice.session.timeoutElement.popup('close');
+});
+
+selfservice.countdown.logoutButton.on('click', function (event) {
+	
+	selfservice.countdown.logoutButton.prop('disabled', true);
+	selfservice.countdown.logoutButton.html('Logging out...');
+	selfservice.countdown.continueButton.prop('disabled', true);
+
+	selfservice.session.logout();
+
+	selfservice.countdown.continueButton.prop('disabled', false);
+	selfservice.countdown.logoutButton.html('No - Start Over');
+	selfservice.countdown.logoutButton.prop('disabled', false);
+});
+
+selfservice.session.timeoutElement.on('popupafterclose', function (event) {
+	
+	selfservice.countdown.endCount();
+});
+</script>
+
+
+		<!-- PANELS	-->
+		
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<div id="SelfService-1786211110724-cartPanel" class="ss-panel-cart" data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true">
+	<div id="SelfService-1786211110724-cartPanelInternal" class="ss-panel-cart-internal" style="height:100%;"></div>
+</div>
+<script>
+
+
+// Calculate available height for cart panel accounting for fixed header and footer
+function calculateCartPanelHeight() {
+	var windowHeight = $(window).height();
+	var headerHeight = $('#ss-header-box').outerHeight() || 0;
+	var footerHeight = $('#ss-footer-box').outerHeight() || 0;
+	// Subtract header, footer, and some padding (20px) for proper fit
+	return windowHeight - headerHeight - footerHeight - 20;
+}
+
+$("#SelfService-1786211110724-cartPanel").on("panelcreate", function() {
+	$("#SelfService-1786211110724-cartPanelInternal").data("cartUrl", "/web/cart/embedded?includeButtons=true&request=" + new Date().getTime());
+	$("#SelfService-1786211110724-cartPanelInternal").css("max-height", calculateCartPanelHeight());
+	reloadShoppingCart($("#SelfService-1786211110724-cartPanelInternal"));
+});
+	
+$("#SelfService-1786211110724-cartPanel").on("panelbeforeopen", function() {
+	$("#SelfService-1786211110724-cartPanelInternal").data("cartUrl", "/web/cart/embedded?includeButtons=true&request=" + new Date().getTime());
+	// Recalculate height each time panel opens to account for any layout changes
+	$("#SelfService-1786211110724-cartPanelInternal").css("max-height", calculateCartPanelHeight());
+	reloadShoppingCart($("#SelfService-1786211110724-cartPanelInternal"));
+});
+	
+$("#SelfService-1786211110724-cartPanel").on("panelopen", function() {	
+    var proceed = document.getElementById('shoppingCartProceedToCheckoutButton');
+    if (proceed) {
+        proceed.setAttribute('role','button');
+        if (!proceed.getAttribute('aria-label')) proceed.setAttribute('aria-label','Proceed to Checkout');
+        proceed.focus();
+    }
+});	
+</script>
+  <br/>
+
+  
+
+
+
+
+
+
+<div id="SelfService-1786211110724-loginPanel" class="ss-panel-login" data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true">
+	<button class="close-btn" data-rel="close" aria-label="Close login panel" style="float:right !important;width:auto !important;margin-right:15px !important;"><span aria-hidden="true" >✖</span></button>
+	<div id="SelfService-1786211110724-loginPanelInternal" class="ss-panel-login-internal"></div>
+</div>
+
+<script>
+
+var loginUrl = "/web/user/login";
+$("#SelfService-1786211110724-loginPanel").on("panelbeforeopen", function() {
+	$("#SelfService-1786211110724-loginPanelInternal").load(loginUrl + "?request=" + new Date().getTime(), function() {
+		$("#SelfService-1786211110724-loginPanelInternal").trigger("create");
+		$("#SelfService-1786211110724-loginPanel").trigger("updatelayout");
+		$.mobile.activePage.trigger("pagecreate");
+		$("#field_ForceLogoff").parent().hide();
+	});
+}).on("panelopen", function() {
+	$("#field_UserId").focus();
+});
+</script>
+
+  <br/>
+
+  
+
+
+
+
+
+
+<div id="SelfService-1786211110724-languagePanel" class="ss-panel-language" data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true">
+	<button class="close-btn" data-rel="close" aria-label="Close language panel" type="button" style="float:right !important;width:auto !important;margin-right:5px !important;">
+  <span aria-hidden="true">✖</span>
+</button>
+	<div id="SelfService-1786211110724-languagePanelInternal" class="ss-panel-language-internal"></div>
+</div>
+
+<script>
+
+var languageUrl = "/web/user/language";
+$("#SelfService-1786211110724-languagePanel").on("panelbeforeopen", function() {
+	$("#SelfService-1786211110724-languagePanelInternal").load(languageUrl + "?request=" + new Date().getTime(), function() {
+		$("#SelfService-1786211110724-languagePanelInternal").trigger("create");
+		$("#SelfService-1786211110724-languagePanel").trigger("updatelayout");
+		$.mobile.activePage.trigger("pagecreate");
+	});
+}).on("panelopen", function() {
+	$("#language-en").focus();
+});
+
+
+</script>
+
+  <br/>
+
+
+		<script>
+		
+		jQuery.cachedScript = function( url, options ) {
+			
+			options = $.extend( options || {}, {
+				dataType: 'script',
+				cache: true,
+				url: url
+			});
+
+			
+			return jQuery.ajax( options );
+		};
+
+		$('#SelfService-1786211110724-page').on('pageinit', function() {
+			
+			selfservice.countdown.timer();
+		});
+
+		$(document.body).on("blur", 'input[data-role="datebox"]', function(event){
+			selfservice.parseDate(event.target);
+		});
+		</script>
+
+		<!-- FOOTER -->
+		<div id="ss-footer-box" class="ss-footer" data-role="footer" data-position="fixed" data-tap-toggle="false">
+			
+
+
+
+
+<div class="ss-footer-stripe" id="SelfService-1786211110724-footer">
+	<div class="ss-content">
+		<script>
+		
+		
+		
+		$('#SelfService-1786211110724-page').on('pageinit', function () {
+			var sequenceUrl = '';
+			var forwardCheck = '';
+			var reverseUrl = '';
+			var hasPrevious = 'false';
+			
+			if (forwardCheck.length > 0) {
+				$('<a class="ss-right" id="proceedButton" data-role="button" data-inline="true" data-theme="b" data-icon="arrow-r" data-iconpos="right">Next</a>')
+					.insertBefore('#SelfService-1786211110724-footer-clear')
+					.click(function () {
+						selfservice.redirect(sequenceUrl, true);
+					});
+
+				if (hasPrevious === 'true') {
+					$('<a class="ss-right" id="goBackButton" data-role="button" data-inline="true" data-icon="arrow-l" data-theme="b" data-iconpos="left">Previous</a>')
+						.insertBefore('#SelfService-1786211110724-footer-clear')
+						.click(function () {
+							selfservice.redirect(reverseUrl, true);
+						});
+				}
+			}
+			$('#SelfService-1786211110724-footer').trigger('create');
+		});
+
+		$('.ss-content').addClass('full-screen');
+		$('.ui-grid-a').addClass('full-screen');
+		$('.ui-grid-b').addClass('full-screen');
+		</script>
+		<a data-role="button" data-inline="true" data-theme="a" data-icon="arrow-l" href="/web/search/DOCSEARCH4S3">Back</a>
+		<div id="SelfService-1786211110724-footer-clear" class="ss-clear"></div>
+	</div>
+</div>
+			<div class="ss-content">
+				<div class="ss-footer-internal-small">
+					&copy;&nbsp;Copyright 2014-2026 Tyler Technologies&nbsp;|&nbsp;Version 2026.1.5
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	
+	function initializeSessionTimerChecks() {
+		if (selfservice.mode.kioskMode == undefined) {
+			var test = 'false';
+			if (!test) {
+				selfservice.mode.kioskMode = false;
+			} else {
+				selfservice.mode.kioskMode = booleanValue('false');
+			}
+		}
+
+		if (selfservice.session.userLoggedIn == undefined) {
+			selfservice.session.userLoggedIn = booleanValue('false');
+		}
+
+		if (selfservice.url.homePage == undefined) {
+			selfservice.url.homePage = window.location.origin + '/web/';
+		}
+		if(selfservice.setting.showDisclaimer == undefined){
+			selfservice.setting.showDisclaimer = booleanValue('true')
+		}
+
+		if( selfservice.pages.disclaimer == undefined){
+			 selfservice.pages.disclaimer = '/web/user/disclaimer';
+		}
+	}
+
+	$(document).keydown(function(e) {
+		selfservice.maybeScrollScreen(e);
+	});
+
+	$(document).on('pageinit', function(event) {
+		initializeSessionTimerChecks();
+
+		
+		selfservice.session.continueSession();
+
+		
+			var subscriptionTimerId = $('#subscriptionTimer').attr('id');
+			selfservice.subscriptionTimer.setSubscriptionTime(subscriptionTimerId, '/web/subscription/getSubscriptionTime');
+		});
+
+	$( document ).ajaxComplete(function( event, request, settings ) {
+		if(request.getResponseHeader('isThresholdReached') === "true"){
+			location.reload();
+		}
+	});
+
+	$.ajaxSetup({
+	    beforeSend: function(xhr) {
+	        xhr.setRequestHeader('ajaxRequest', true);
+	    }
+	});
+
+	function removeDisclaimerCookie(){
+		var context = "/web/";
+		context = context.split('/').join('')
+		document.cookie = "disclaimerAccepted=; Path=/" + context + "; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+	}
+
+	</script>
+</body>
+</html>

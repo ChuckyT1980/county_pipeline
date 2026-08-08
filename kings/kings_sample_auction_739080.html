@@ -1,0 +1,1354 @@
+<!doctype html>
+<html lang="en-us">	
+<head>
+    <title>Bid4Assets.com &gt; Auction Detail &gt; (739080) Kings County, CA: APN: 024-270-019-000</title>
+    <meta charset="utf-8">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    
+
+    <script type="text/javascript" src="https://www.bid4assets.com/resources/e30c01250e8baa7776ed16751f040b2bd7f572b640a03"  ></script><script type="text/javascript" src="/lib/jquery/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.bid4assets.com/app/mvc/Content/css/new-style-channel-20190520-1.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.bid4assets.com/app/mvc/Content/css/new-style-auction-2020-09.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdn.bid4assets.com/app/mvc/Content/css/new-style-auction-deposit.css" type="text/css" />
+        <link href="https://cdn.bid4assets.com/app/mvc/Content/new-style-footer-2019-1.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.bid4assets.com/app/mvc/Scripts/modernizr-2.8.3.js"></script>
+    <script type="text/javascript" src="https://cdn.bid4assets.com/app/mvc/Scripts/kendo/2024.4.1112/kendo.all.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bid4assets.com/app/mvc/Scripts/kendo/2024.4.1112/kendo.aspnetmvc.min.js"></script>
+
+    <link href="https://cdn.bid4assets.com/app/mvc/Content/kendo/2024.4.1112/classic-main.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/lib/jquery-migrate/jquery-migrate-3.5.0.min.js"></script>
+
+    
+    <style type="text/css">
+        body.auction-deposit b {
+            font-family: inherit !important;
+        }
+
+        body.auction-deposit strong {
+            font-family: inherit !important;
+        }
+
+        .auction-txt .subtitle {
+            margin: 20px 0;
+        }
+
+        strong.item-specifics-question-label {
+            font-family: "OpenSans-Bold";
+        }
+
+        #bidWindow > iframe {
+            min-height: 755px;
+        }
+    </style>
+    <script type="text/javascript">
+        var globalAuctionID = 739080;
+        var realtimeAuctionDetailStatus = false;
+        var bidInputFieldFocused = false;
+        var notifyInputFieldFocused = false;
+        var bidBoxOpen = false;
+        var realtimeAuctionDetailSessionToken = '';
+        var depositCollectionRequired = false
+
+        $.ajaxSetup ({
+            cache: false
+        });
+
+        $(document).ready(function() {
+            $(window).unload(function() {
+                if ((realtimeAuctionDetailStatus) && (realtimeAuctionDetailSessionToken != "")) {
+                    stopRealtimeAuctionDetail(true);
+                }
+            });
+
+            $(document).keypress(function(e) {
+                if((e.which == 13) && (notifyInputFieldFocused)) {
+                    notifyAuctionWatch();
+                } else if((e.which == 13) && (bidInputFieldFocused) && (!depositCollectionRequired)) {
+                    placeBid(false);
+                }
+            });
+        });
+
+        function mainImageError() {
+
+        }
+
+        function payBidderRegistrationFees()
+        {
+            document.location = "/deposits/bidderregistrationfee/739117";
+        }
+
+        function viewAuctionAnnouncementsPopup()
+        {
+            var auctionAnnouncementsWindow = $("#auctionAnnouncementsWindow").data("kendoWindow");
+            auctionAnnouncementsWindow.content('Loading...');
+            auctionAnnouncementsWindow.refresh({
+                url: "/auction/announcementsWindow/739080?fromLocation=auctionDetail"
+            });
+            
+            announcementsWindowHeight = 750;
+            announcementsWindowWidth = 750;
+
+            if (announcementsWindowWidth > $(window).width()) {
+                announcementsWindowWidth = $(window).width() - 16;
+            }
+            if (announcementsWindowHeight > $(window).height()) {
+                announcementsWindowHeight = $(window).height() - 30;
+            }     
+
+            auctionAnnouncementsWindow.setOptions({
+                width: announcementsWindowWidth,
+                height: announcementsWindowHeight
+            });
+
+            auctionAnnouncementsWindow.center().open();
+
+                   
+        }
+    </script>
+    <script type="text/javascript">
+        function mainImageLoaded(img) {
+            /*
+            docWidth = $(document).width();
+            maxImageWidth = 374;
+            if (docWidth < 424) {
+                maxImageWidth = parseInt(docWidth) - 48;
+            }
+
+            if (img.naturalWidth && img.naturalHeight) {
+                imgAR = parseFloat(img.naturalWidth) / parseFloat(img.naturalHeight);
+                newWidth = 0;
+                newHeight = 0;
+                if (img.naturalWidth >= img.naturalHeight) {
+                    newWidth = maxImageWidth;
+                    newHeight = parseInt(maxImageWidth / imgAR);
+                    if (newHeight > 350) {
+                        newHeight = 350;
+                    }
+                    img.width = newWidth;
+                    img.height = newHeight;
+                    if (newHeight <= 350) {
+                        marginTop = parseInt((350 - newHeight) / 2);
+                        $("#mainImage").css("margin-top", marginTop + "px");
+                    }
+                } else {
+                    newHeight = 290;
+                    newWidth = parseInt(290 * imgAR);
+                    img.width = newWidth;
+                    img.height = newHeight;
+                    marginLeft = parseInt((maxImageWidth - newWidth) / 2);
+                    $("#mainImage").css("margin-left", "0px");
+                    $("#mainImage").css("margin-top", "10px");
+
+                }
+            }
+            */
+        }
+    </script>
+
+
+
+        <script type="text/javascript">
+            var enableMaps = false;
+        </script>
+
+
+
+            <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
+        }({
+            instrumentationKey: "15da35aa-34fa-404b-ae87-916204dcce5d"
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
+
+
+    <script type="text/javascript">
+        var loginUrl = "/myaccount/login";
+    </script>
+    <script type="text/javascript" src="https://cdn.bid4assets.com/app/mvc/Scripts/auction-detail-header-scripts.js"></script>
+
+        <script language="Javascript" type="text/javascript" src="/js/live_visitor.js"></script>
+<script type="text/javascript">
+    var hasAntiForgeryToken = false;
+    function checkLoginAndRedirect(redirectUrl, successFunction) {
+        if ($("#hidden-anti-forgery-container-header").length) { hasAntiForgeryToken = true; } else { hasAntiForgeryToken = false; }
+        $.ajax({
+            type: 'POST',
+            dataType: 'json',
+            url: "/Account/IsUserLoggedIn",
+            data: "T=" + new Date().getTime(),
+            success: function (data) {
+                if (data) {
+                    successFunction();
+                } else {
+                    if (hasAntiForgeryToken) {
+                         $.ajax({
+                            type: 'POST',
+                            dataType: 'html',
+                            url: "https://www.bid4assets.com/account/GetAntiForgeryToken",
+                            data: "T=" + new Date().getTime(),
+                            success: function (html) {
+                                $("#hidden-anti-forgery-container").html(html);
+                                $("#hidden-anti-forgery-container-header").html(html);
+                                displayLoginDialog(successFunction, "");
+                            },
+                            error: function (xhr, err) {
+                                alert("Error validating login");
+                            },
+                            traditional: true
+                        });
+                    } else {
+                        displayLoginDialog(successFunction, "");
+                    }
+                }
+            },
+            error: function (xhr, err) {
+                alert("Error validating login");
+            },
+            traditional: true
+        });
+    }
+</script>
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ5TTXZ');
+    </script>
+    <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ5TTXZ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager -->
+    <script type="text/javascript" async src="/scripts/engagement.js?guidc5188e21-82ea-468c-a107-7092cadc0a62"></script>
+    <script type="text/javascript">
+        var engagementScriptLoaded = false;
+        function didFinishLoadingEnagementScriptCallback() {
+            engagementScriptLoaded = true;
+        }
+
+        function logSiteEngagementAnalytic(auctionID, funcTypeHash, funcNameHash, payload) {
+            if (engagementScriptLoaded) {
+                siteAnalyticsEngagement_LogData(auctionID, funcTypeHash, funcNameHash, payload);
+            }
+        }
+    </script>
+    <!-- end Cookie Popup -->
+    <!-- end Cookie Popup -->
+
+
+    <style type="text/css">
+        .breadcrumbs {
+            margin-top: 0px;
+        }
+    </style>
+    <link href="https://cdn.bid4assets.com/app/mvc/Content/css/responsive-override-2020-09.css" />
+
+</head>
+    
+
+<body class="auction-deposit">
+    <div id="modalAlertDialog"></div>
+<script type="text/javascript">
+    var modalAlertDialogCallbackTemp;
+
+    function onModalAlertDialogClose() {
+        if (modalAlertDialogCallbackTemp != null) {
+            modalAlertDialogCallbackTemp();
+        }
+       // $("#modalAlertDialog").data("kendoDialog").destroy();
+    }
+
+    function showModalAlertDialog(title, text, modalAlertDialogCallback) {
+        console.log(text);
+        var modalAlertDialog = $('#modalAlertDialog');
+        if (modalAlertDialog.data("kendoDialog")) {
+            console.log(modalAlertDialog.data("kendoDialog"));
+            modalAlertDialog.data("kendoDialog").title(title);
+            modalAlertDialog.data("kendoDialog").content(text);
+            modalAlertDialog.data("kendoDialog").open();
+        } else {
+            modalAlertDialogCallbackTemp = modalAlertDialogCallback;
+            modalAlertDialog.kendoDialog({
+                width: "450px",
+                title: title,
+                closable: false,
+                modal: true,
+                content: "<p>" + text + "<p>",
+                actions: [
+                    { text: 'OK', primary: true }
+                ],
+                close: onModalAlertDialogClose
+            });
+        }
+
+    }
+</script>   
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+    :root {
+    --opensans-regular: 'Open Sans', sans-serif;
+    --opensans-semibold: 'Open Sans', sans-serif;
+    }    
+</style>
+<link rel="stylesheet" href="https://cdn.bid4assets.com/app/nextgen/nextgen-new-layout-header.css" />
+<script type="text/javascript" src="https://cdn.bid4assets.com/app/mvc/Scripts/registration-check-v2.js" defer></script>
+<header class="">
+    <div class="logo">
+            <a href="/"><img src="https://cdn.bid4assets.com/app/nextgen/B4A-LOGO-2024-small.png" alt="B4A Logo"></a>
+    </div>
+        <div class="assethoundlogo">
+                <a target="_blank" href="/assethound" aria-label="Asset Hound (opens in new tab)"><img src="https://cdn.bid4assets.com/app/homepage/images/assethoundlogo.png" alt="Asset Hound Logo"></a>
+        </div>
+        <div id="header-right">
+                <div class="follow-us">
+                    <p>Follow us:</p>
+                    <div id="social-icons-top">
+                        <a href="https://www.facebook.com/Bid4Assets" rel="noopener noreferrer" target="_blank" title="Bid4Assets" aria-label="Bid4Assets on Facebook (opens in a new tab)"><div id="facebook-new" class="social-top" role="presentation"></div></a>
+                        <a href="https://twitter.com/#!/bid4assetstweet" rel="noopener noreferrer" target="_blank" title="Twitter" aria-label="Bid4Assets on Twitter (opens in a new tab)"><div id="twitter-new" class="social-top" role="presentation"></div></a>
+                        <a href="http://www.youtube.com/user/bid4assets" rel="noopener noreferrer" target="_blank" title="Youtube!" aria-label="Bid4Assets on YouTube (opens in a new tab)"><div id="youtube-new" class="social-top" role="presentation"></div></a>
+                        <a href="https://www.linkedin.com/company/bid4assets" rel="noopener noreferrer" target="_blank" title="LinkedIn" aria-label="Bid4Assets on LinkedIn (opens in a new tab)"><div id="linkedin-new" class="social-top" role="presentation"></div></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div id="auction-field" style="width:445px;">
+                    <form id="search-form" name="search-form" method="get" action="/search/redirect/get">
+                        <div id="hidden-anti-forgery-container-header" style="display:none;"><input name="__RequestVerificationToken" type="hidden" value="CfDJ8GHXQqMZ8zNMlmIsqVsDFIRRXzHusD1hMZfwDL06q8YEyHjYb93E0AQPKKDb2YxK2nqsa8p1B1_KcHWU3OJ5kbjwwn8Ms9uFClSG-2mOzo6tA9jICBPP65X9B3mYNZV3mUN5H73ZGTxtGpmVzuW5iy4" /></div>
+                        <input type="hidden" name="fuseaction" value="search" />
+                        <div class="form-radio-item-wrapper">
+                            <span class="form-radio-item" style="margin-right: 15px;">
+                                <input type="radio" class="css-checkbox" id="search-keyword" name="Type" value="auctions" checked="checked"  aria-label="Search keyword" />
+                                <label for="search-keyword" class="css-label"> Keyword </label>
+                            </span>
+                            <span class="form-radio-item">
+                                <input type="radio" class="css-checkbox" id="search-auction-id" name="Type" value="auctionID" onclick="this.form.criteria.focus()"  aria-label="Search auction id" />
+                                <label for="search-auction-id" class="css-label"> Auction ID# </label>
+                            </span>
+                        </div>
+                        <input type="text" class="form-textbox" data-type="" id="input_40" name="criteria" size="20" value="" aria-label="Search criteria" />
+                        <button id="" type="button" class="" onclick="$('#hidden-anti-forgery-container-header').remove();this.form.submit()">GO</button>
+                        <div class="clearfix"></div>
+                        <h6><a href="/v5/search">Advanced search</a></h6>
+                    </form>
+                </div><!-- end auction-field -->
+        </div><!-- header right -->
+    <div class="clearfix"></div>
+
+        <div id="nav-line-wrapper">
+                <div id="weekly-email-alerts" style="cursor:pointer" onclick="document.location = '/registration/signup/emailsubscriptions'" role="button" tabindex="0">
+                    Sign up for Weekly Email Alerts
+                </div><!-- end weekly-email-alerts -->
+                <div id='new-menu' style="">
+                    <ul role="navigation" aria-label="Main navigation">
+                        <li><a href="/"><span>HOME</span></a></li>
+                        <li><a href="/listing/ez"><span>SELL</span></a></li>
+                            <li><a href="/registration/signup/step1"><span>SIGN UP</span></a></li>
+                            <li><a href="/myaccount/login?returnUrl=%2Fmyb4a"><span>MY ACCOUNT / LOGIN</span></a></li>
+                            <li class='last'><a href="/help/support/contactus"><span>CONTACT US</span></a></li>
+                    </ul>
+                </div><!-- end new-menu -->
+            <div class="clearfix"></div>
+
+        </div><!-- end nav-line-wrapper -->
+</header>
+
+
+    <main id="auction-content" >
+        <!--
+    PartnerID = 
+-->
+<script type="text/javascript">
+    function customKendoAlert(title, content) {
+    $("<div></div>").kendoAlert({
+        title: title,
+      content: content
+    }).data("kendoAlert").open();
+  }
+
+  function customKendoConfirm(title, content){
+    return $("<div></div>").kendoConfirm({
+      title: title,
+      content: content
+    }).data("kendoConfirm").open().result;
+  }
+
+  function customKendoPrompt(content, defaultValue){
+    return $("<div></div>").kendoPrompt({
+        title: "Bid4Assets.com",
+      value: defaultValue,
+      content: content
+    }).data("kendoPrompt").open().result;
+  }
+</script>
+<script type="text/javascript">
+    var iframeRefreshCount = 0;
+    var originalBidValue = '$1,950';
+    function adjustIframeSize(height, width) {
+        $("#description-iframe").css("height", height + "px");
+        if (width < 1100) {
+            if (width < 600) {
+                width = 600;
+            }
+            $("#description-iframe").css("width", width + "px");
+            margin = (1100 - width) / 2;
+            $("#description-iframe").css("margin-left", margin + "px")
+            $("#description-iframe").css("margin-right", margin + "px");
+            if (iframeRefreshCount == 0) {
+                refreshIframe();
+            }
+        } else {
+            $("#description-iframe").css("width", "100%");
+        }
+    }
+
+    function refreshIframe() {
+        iframeRefreshCount++;
+        document.getElementById("description-iframe").contentDocument.location.reload(true);
+    }
+
+    var isPreBidding = false;
+</script>
+    <script type="text/javascript">
+        function placeBid(buynow, prebidding) {
+            if (prebidding)
+            {
+                document.location = "/myaccount/login?ReturnUrl=%2fauction%2fdetail%2f739080%3fprebidding%3dtrue%26bid%3d" + $("#bid").val();
+            }
+            else
+            {
+                if (buynow) {
+                    document.location = "/myaccount/login?ReturnUrl=%2fauction%2fdetail%2f739080%3fbuyNow%3dTrue";
+                } else {
+                    document.location = "/myaccount/login?ReturnUrl=%2fauction%2fdetail%2f739080%3fbid%3d" + $("#bid").val();
+                }
+            }
+        }
+
+        function toggleRealtimeAuctionDetail() {
+            if (confirm("You must be logged in enable real time auction updates. Login now?")) {
+                document.location = "/myaccount/login?ReturnUrl=%2fauction%2fdetail%2f739080%3fenableRealTimeUpdates%3dTrue";
+            }
+        }
+
+        function askSellerQuestion() {
+            document.location = "/myaccount/login?ReturnUrl=%2fauction%2fdetail%2f739080%3faskSellerQuestion%3dTrue";
+        }
+
+        function toggleAddToWatchList() {
+            document.location = "/myaccount/login?ReturnUrl=%2fauction%2fdetail%2f739080%3ftoggleAddToWatchList%3dTrue";
+        }
+    </script>
+<script type="text/javascript">
+    function enterPrevestingInfo() {
+        document.location = "/deedwizard/prevesting/paddleauction/739117";
+    }
+
+    function redirectUrlFromFrame(url)
+    {
+        document.location = url;
+    }
+
+
+            var paddleRedirectUrl = "/deposits/new/739117";
+        
+            function enterDepositInfo() {
+                document.location = "/myaccount/login?returnUrl=" + encodeURIComponent(paddleRedirectUrl);
+            }
+            
+    function closeDepositWindowWithText(text) {
+        var bidWindow = $("#bidWindow").data("kendoWindow");
+        bidWindow.close();
+        bidBoxOpen = false;
+        showNotificationText(text, "info");
+        showActionWindowWithText("Bid Deposit", text);
+    }
+
+    function placeDepositFinished(text) {
+        var bidWindow = $("#bidWindow").data("kendoWindow");
+        bidWindow.close();
+        bidBoxOpen = false;
+        showNotificationText("Bid Deposit transaction initiated in the amount of " + text, "info");
+        showActionWindowWithText("Bid Deposit", "You have successfully initiated a bid deposit transaction in the amount of " + text + ". Visit myB4A to manage your bid deposit(s).");
+    }
+
+    function promptCancelDeposit() {
+        if (confirm("Are you sure you want to cancel this transaction?")) {
+            var bidWindow = $("#bidWindow").data("kendoWindow");
+            bidWindow.close();
+            bidBoxOpen = false;
+            showNotificationText("Bid Deposit transaction cancelled", "info");
+            showActionWindowWithText("Bid Deposit", "You have cancelled your bid deposit transaction on this auction.");
+        }
+    }
+
+    function maximizeDepositWindowHeight() {
+        var bidWindow = $("#bidWindow").data("kendoWindow");
+        bidWindow.setOptions({
+            height: $(window).height() - 100
+        });
+        bidWindow.center();
+    }
+
+    function loadMyAccount() {
+        if (confirm("Are you sure you want to leave bidding on this auction and go to My Account?")) {
+            document.location = "/myb4a";
+        }
+    }
+
+    function getUserHighBidStatus() {
+        $.ajax({
+            type: 'POST',
+            dataType: 'json',
+            url: "/auction/getuserhighbidstatus",
+            data: "AuctionID=739080",
+            success: function (auctionDetail) {
+                if (auctionDetail.UserHasBid) {
+                    if (auctionDetail.IsHighBidder) {
+                        $("#user-bid-status-block").html("You are the high bidder");
+                    } else {
+                        $("#user-bid-status-block").html("You have been outbid");
+                    }
+                } else {
+                    $("#user-bid-status-block").html("You have not bid yet");
+                }
+                $("#time-remaining-block").html(auctionDetail.TimeRemaining); // 1
+                $("#current-bid-span").html(auctionDetail.CurrentBidString); // 2
+                $("#auction-detail-page-views").html(auctionDetail.PageViews); // 3
+                $("#actual-close-time-block").html(auctionDetail.ActualCloseTimeString); // 4
+                $("#num-bids-block").html(auctionDetail.NumBids); // 5
+
+                if (!bidInputFieldFocused) {
+                    $("#bid").html(auctionDetail.NextValidBidAmountString); // 6
+                }
+                if (auctionDetail.IsInOvertime) { // 7
+                    $("#overtime-image").show();
+                }
+            },
+            error: function (xhr, err) {
+                showNotificationText("Failed to refresh auction detail", "error");
+            },
+            traditional: true
+      });
+    }
+
+    function kendoWindowResized(e) {
+        iframeHeight = e.sender.wrapper.height() - 45;
+        $("#" + e.sender.element[0].id).find(">:first-child").css("min-height", iframeHeight + "px");
+    }
+
+    function reloadAuctionRightPanel(forceReload) {
+        if ((!bidInputFieldFocused) || (forceReload)) {
+            $.ajax({
+                type: 'POST',
+                dataType: 'html',
+                url: "/auction/getauctiondetailrightpanel",
+                data: "AuctionID=739080&RealtimeAuctionDetailStatus=" + realtimeAuctionDetailStatus,
+                success: function (data) {
+                    $("#auction-right-panel").html(data);
+                    // showNotificationText("Auction detail refreshed", "info");
+                },
+                error: function (xhr, err) {
+                    // showNotificationText("Failed to refresh auction detail", "error");
+                },
+                traditional: true
+            });
+        } else {
+            setTimeout("reloadAuctionRightPanel(false)",60000);
+        }
+    }
+
+    function closeReplyWindowNoPrompt() {
+        var askSellerQuestionWindow = $("#askSellerQuestionWindow").data("kendoWindow");
+        askSellerQuestionWindow.close();
+    }
+
+    function closeReplyWindow() {
+        if (confirm("Are you sure you want to cancel?")) {
+            var askSellerQuestionWindow = $("#askSellerQuestionWindow").data("kendoWindow");
+            askSellerQuestionWindow.close();
+        }
+    }
+
+        function notifyAuctionWatch() {
+            if (jQuery.trim($("#txtEmailNotification").val()) == "") {
+                return false;
+            }
+            $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                url: "/auction/subscribeauctionlivenotification",
+                data: "AuctionID=739080&Email=" + encodeURIComponent($("#txtEmailNotification").val()),
+                success: function (data) {
+                    if (data.success) {
+                        $("#notify-me-container").remove();
+                        showActionWindowWithText("Auction Notification", "Subscribed to auction live notification email for AuctionID # 739080");
+                        showNotificationText("Subscribed to auction live notification email for AuctionID # 739080", "info");
+                    } else {
+                        showNotificationText("Failed to subscribe to live notification email for AuctionID # 739080", "error");
+                        showActionWindowWithText("Auction Notification", data.errorMessage);
+                    }
+                },
+                error: function (xhr, err) {
+                    showNotificationText("Failed to subscribe to live notification email for AuctionID # 739080", "error");
+                },
+                traditional: true
+             });
+        }
+        </script>
+
+<div class="breadcrumbs">
+    <a href="/real-estate-auctions">Real Estate</a> &gt; <a href="/other-real-estate-auctions">Other</a> &gt; <a href="/channel/22-real-estate/99-other/00-all">All</a> &gt; <span style="font-size: 1.8em"># 739080</span>
+</div>
+<h1 style="font-family: 'Open Sans';">
+Kings County, CA: APN: 024-270-019-000</h1>
+
+<div class="auction-left" id="auction-detail-left">
+
+
+    <div class="tabs">
+
+        <!-- - - - - - - - - - - - - - Tab - - - - - - - - - - - - - - - - - -->
+        <div class="tab" id="tab1" style="min-height:340px;">
+                <img src="/images/auction/mainImages/739080.jpg" onload="mainImageLoaded(this)" id="mainImage" onerror="mainImageError()" style="width: 96%;" />
+        </div>
+        <!-- - - - - - - - - - - - - - End of Tab - - - - - - - - - - - - - - - - -->
+        <ul class="tabs_nav" role="navigation" aria-label="Auction detail navigation">
+                <li><a href="#due-diligence"><span class="due-diligence"></span>Due Diligence</a></li>
+        </ul>
+    </div><!-- end tabs -->
+
+    <div class="auction-info-summary">
+
+        <table>
+            <tr>
+                <td nowrap="nowrap"><strong>Seller Name:</strong></td>
+                <td style="padding-left: 10px;"><a href="/search/#t=s|s=170009|sc=bidclosetime|so=ASC">Kings County</a></td>
+            </tr>
+            <tr>
+                <td><strong>Rating:</strong></td>
+                <td>
+                        <span style="padding-left:10px;">Not Applicable</span>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Location:</strong></td>
+                <td style="padding-left: 10px;">
+N 1/2 of lots 53 & 54 of Assessor's map #8<br />LEMOORE, CA 93245                </td>
+            </tr>
+        </table>
+
+        <div class="clearfix"></div>
+
+        <div class="share-auction">
+            <p>Share</p>
+            <div class="share-auction-icons">
+                <a href="#"><div class="fa-facebook"></div></a>
+                <a href="#"><div class="fa-twitter"></div></a>
+                <a href="#"><div class="fa-google-plus"></div></a>
+                <a href="#"><div class="fa-envelope"></div></a>
+                <div class="clearfix"></div>
+            </div><!-- end share-auction-icons -->
+            <div class="clearfix"></div>
+        </div><!-- end share-auction -->
+    </div><!-- end auction-info-summary -->
+
+
+</div><!-- end auction-left -->
+
+<div class="auction-right" id="auction-right-panel">
+        <style type="text/css">
+    body.auction-deposit .tooltip_container {
+        display: inline-block;
+        position: relative;
+    }
+
+    /* Visible keyboard focus indicator for the tooltip trigger (WCAG 2.4.7) */
+    body.auction-deposit .tooltip_container:focus,
+    body.auction-deposit .tooltip_container:focus-visible {
+        outline: 2px solid #1a73e8;
+        outline-offset: 2px;
+        border-radius: 3px;
+    }
+
+    body.auction-deposit span.tooltip strong {
+        color: #ffb454;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    body.auction-deposit span.tooltip i {
+        font-style: normal;
+        font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+        font-weight: 700;
+    }
+
+    body.auction-deposit .tooltip {
+        display: block;
+        font-size: 14px;
+        color: #f8fafc !important;
+        font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif !important;
+        white-space: pre-wrap;
+        padding: 14px 16px;
+        position: absolute;
+        background: #1f2933;
+        border: 1px solid #0b1015;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+        width: 300px;
+        max-width: 90vw;
+        line-height: 1.5;
+        z-index: 222;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: -webkit-transform .3s cubic-bezier(.2, 3, 1, 1), visibility .3s ease-out, opacity .3s ease-out;
+        transition: transform .3s cubic-bezier(.2, 3, 1, 1), visibility .3s ease-out, opacity .3s ease-out;
+    }
+
+        body.auction-deposit .tooltip::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-style: solid;
+            border-color: transparent;
+        }
+
+        body.auction-deposit .tooltip.top {
+            bottom: 100%;
+            left: 50%;
+            margin-bottom: 7px;
+            -webkit-transform: translate(-50%, -10px);
+            -ms-transform: translate(-50%, -10px);
+            transform: translate(-50%, -10px);
+        }
+
+            body.auction-deposit .tooltip.top::after {
+                top: 100%;
+                left: 50%;
+                margin-left: -4px;
+                border-width: 0 0 9px 11px;
+                border-left-color: #1f2933;
+            }
+
+        body.auction-deposit .tooltip.right {
+            left: 100%;
+            margin-left: 12px;
+            top: 50%;
+            -webkit-transform: translate(10px, -50%);
+            -ms-transform: translate(10px, -50%);
+            transform: translate(10px, -50%);
+        }
+
+            body.auction-deposit .tooltip.right::after {
+                right: 100%;
+                top: 50%;
+                margin-top: -6px;
+                border-width: 0 0 11px 9px;
+                border-bottom-color: #1f2933;
+            }
+
+        body.auction-deposit .tooltip.left {
+            right: 100%;
+            margin-right: 12px;
+            top: 50%;
+            -webkit-transform: translate(-10px, -50%);
+            -ms-transform: translate(-10px, -50%);
+            transform: translate(-10px, -50%);
+        }
+
+            body.auction-deposit .tooltip.left::after {
+                left: 100%;
+                top: 50%;
+                margin-top: -6px;
+                border-width: 0 9px 11px 0;
+                border-bottom-color: #1f2933;
+            }
+
+        body.auction-deposit .tooltip.bottom {
+            top: 100%;
+            margin-top: 7px;
+            left: 50%;
+            -webkit-transform: translate(-50%, 10px);
+            -ms-transform: translate(-50%, 10px);
+            transform: translate(-50%, 10px);
+        }
+
+            body.auction-deposit .tooltip.bottom::after {
+                bottom: 100%;
+                left: 50%;
+                margin-left: -4px;
+                border-width: 9px 0 0 11px;
+                border-left-color: #1f2933;
+            }
+
+    /* Reveal on hover and on keyboard focus for accessibility (WCAG 2.1.1) */
+    body.auction-deposit .tooltip_container:hover .tooltip,
+    body.auction-deposit .tooltip_container:focus .tooltip,
+    body.auction-deposit .tooltip_container:focus-within .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+
+        body.auction-deposit .tooltip_container:hover .tooltip.top,
+        body.auction-deposit .tooltip_container:focus .tooltip.top,
+        body.auction-deposit .tooltip_container:focus-within .tooltip.top,
+        .tooltip_container:hover .tooltip.bottom,
+        .tooltip_container:focus .tooltip.bottom,
+        .tooltip_container:focus-within .tooltip.bottom {
+            -webkit-transform: translate(-50%, 0px);
+            -ms-transform: translate(-50%, 0px);
+            transform: translate(-50%, 0px);
+        }
+
+        body.auction-deposit .tooltip_container:hover .tooltip.right,
+        body.auction-deposit .tooltip_container:focus .tooltip.right,
+        body.auction-deposit .tooltip_container:focus-within .tooltip.right,
+        body.auction-deposit .tooltip_container:hover .tooltip.left,
+        body.auction-deposit .tooltip_container:focus .tooltip.left,
+        body.auction-deposit .tooltip_container:focus-within .tooltip.left {
+            -webkit-transform: translate(0px, -50%);
+            -ms-transform: translate(0px, -50%);
+            transform: translate(0px, -50%);
+        }
+</style>
+        <div class="place-bid-box" style="padding-left: 20px; border: solid 2px #ff9900; margin-bottom: 5px;">
+            <h2>Asset was sold for $1,900</h2>
+            <div class="clearfix"></div>
+        </div>
+        <br />
+
+
+
+<div class="clearfix"></div>
+
+<div class="auction-data-table">
+        <table>
+                <tr>
+                    <th>Number of Bids:</th>
+                    <td id="num-bids-block">5</td>
+                </tr>
+                    <tr>
+                        <th>
+                            <a href="#" class="tooltip_container">
+                                <span class="tooltip right">This is the final amount the asset was sold for.</span>
+                                <i>Winning Bid:</i>
+                            </a>
+                        </th>
+                        <td>$1,900</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <i>Winner:</i>
+                        </th>
+                        <td>
+                            t***9
+                        </td>
+                    </tr>
+                <tr>
+                    <th>
+                        <a href="#" class="tooltip_container">
+                            <span class="tooltip right">It is the floor at which bidding begins. Our system cannot accept a bid lower than the minimum bid amount.
+                            </span>
+                            <i>Minimum Bid:</i>
+                        </a>
+                    </th>
+                        <td>$1,650</td>
+                </tr>
+            <tr>
+                <th>Your Bid Status:</th>
+                    <td><a href="/myaccount/login?ReturnUrl=%2fauction%2fdetail%2f739080">Log in</a> to view status</td>
+            </tr>
+                <tr>
+                    <th>
+                        <a href="#" class="tooltip_container">
+                            <span class="tooltip right">It is the minimum dollar amount a Seller is willing to accept for an auction. This amount is not disclosed on the Web site, but bidders are notified once the reserve price has been met. Auctions with no reserve price are labeled as "No Reserve" on the auction listing.</span>
+                            <i> Reserve:</i>
+                        </a>
+                    </th>
+                    <td>
+                            <strong>No Reserve!</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Status:</th>
+                    <td>
+Sold                    </td>
+                </tr>
+                <tr>
+                    <th>Auction Started:</th>
+                    <td>03-10-17 11:00 AM ET</td>
+                </tr>
+                <tr>
+                    <th>Auction Closed:</th>
+                    <td id="actual-close-time-block">
+                        <span>
+                            03-14-17 02:15 PM ET
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <th>Bid Increment:</th>
+                            <td>$50</td>
+                        </tr>
+                    <tr>
+                        <th>
+                            <a href="#" class="tooltip_container">
+                                <span class="tooltip right">It is an extension of the auction close time and keeps an auction open as long as there is active bidding. It occurs automatically when a bid is placed within the last few minutes of an auction. The auction will remain open until an entire overtime increment has passed without any bidding. The overtime increment is indicated on the auction listing.</span>
+                                <i>Overtime Period:</i>
+                            </a>
+                        </th>
+                        <td>
+                            5 minutes
+                        </td>
+                    </tr>
+            <tr>
+                <th>Source:</th>
+                <td>Government</td>
+            </tr>
+            <tr>
+                <th>
+                    Deposit Required:
+                </th>
+                <td>
+$5,035                            <br />
+ &mdash; <a href="#AssetDetails">See Instructions</a>
+                            <img width="62" border="0" height="15" alt="Bid Deposit" src="https://s3.amazonaws.com/images-s3.bid4assets.com/images/auction/edeposit_verySmall.gif" style="padding:5px;">
+                </td>
+            </tr>
+            <tr>
+                <th>Page Views:</th>
+                <td id="auction-detail-page-views">7054</td>
+            </tr>
+
+        </table>
+
+</div><!-- end auction-data-table -->
+
+
+
+
+        <div class="seller-info-btt">
+                <a onclick="askSellerQuestion()" href="javascript:void(0)">Ask Seller a question</a>
+            <a href="/search/#t=s|s=170009|sc=bidclosetime|so=ASC">View Seller&#x27;s Other Items</a>
+        </div>
+
+</div><!-- end auction-right -->
+<div class="clearfix"></div>
+
+<a name="AssetDetails" aria-hidden="true"></a>
+<div class="auction-txt">
+    <div class="title">
+        Asset Information
+        <div class="s-line"></div>
+    </div>
+        <br />
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="FONT-SIZE: 10pt; FONT-FAMILY: arial; mso-bidi-font-weight: bold; line-height:120%">      	<tr>      	<td>The <A href="http://www.countyofkings.com/departments/administration/finance-department/tax-collector" target="_blank">Kings County Treasurer-Tax Collector</A> offers tax-defaulted property for auction and encourages bidders to research the property thoroughly using the following information as a starting point.</td>      </tr>      <tr>      	<TD class=b4algArial><BR>Deposit Requirement</td>      </tr>      <tr height="1"><td> </td></tr>      <tr>      	<td><ul type="circle">      		<li>A single $5,000 deposit (plus a $35 processing fee) is required to participate in the Kings County auction.</li>      		<li>Deposits must be received by Bid4Assets no later than 4:00 PM ET (1:00 PM PT) Monday, March 6th.</li>      <li><A href="https://secure.bid4assets.com/biddeposit/?fuseaction=paddleFee&auctionid=739117">Click here</A> to place your deposit.</li>           </ul></td>       </tr>       <tr>       	<TD class=b4algArial><BR>Disclaimers</td>       </tr>       <tr height="1"><td> </td></tr>       <tr>       	<td><ul type="circle">          	<li>Kings County retains the right to reject any and all bids for any reason.</li>              <li>Kings County may withdraw this property from the auction at any time before or during the sale. </li>              <li>Kings County reserves the right to cancel the sale of a property at any time prior to the issuance of the deed.</li></ul></td>        </tr></table> <P> <P> <P> <P>        <div class="clearfix"></div>
+        
+
+    <div class="subtitle">Item Specifics - Parcel Information</div>
+    <div class="item-specifics-table">
+            <table >
+                <tbody>
+                    <tr>
+                        <th colspan="2" scope="colgroup">Parcel Information                           
+                        </th>
+                    </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">APN</strong>
+                                </td>
+                                <td style="padding-right:5px;">024-270-019-000</td>
+                        </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Legal Description </strong>
+                                </td>
+                                <td style="padding-right:5px;">REAL PROPERTY IN THE COUNTY OF KINGS, STATE OF CALIFORNIA, THE NORTH HALF OF THE NORTH HALF OF THE SOUTHEAST QUARTER OF THE SOUTHWEST QUARTER OF SECTION 28, TOWNSHIP 19 SOUTH, RANGE 19 EAST, MOUNT DIABLO BASE AND MERIDIAN, IN THE COUNTY OF KINGS, STATE OF CALIFORNIA, ACCORDING TO GOVERNMENT TOWNSHIP PLAT APPROVED FEBRUARY 28, 1856.</td>
+                        </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Address</strong>
+                                </td>
+                                <td style="padding-right:5px;">N 1/2 of lots 53 & 54 of Assessor's map #8<br />LEMOORE, CA 93245</td>
+                        </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Acreage</strong>
+                                </td>
+                                <td style="padding-right:5px;">2.5</td>
+                        </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Parcel Image</strong>
+                                </td>
+                                <td style="padding-right:5px;"><a target="_blank" href="https://assr.parcelquest.com/ns/mapImg?type=general&county=KIN&apn=024-270-019-000">View Parcel Image</a></td>
+                        </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Parcel Map</strong>
+                                </td>
+                                <td style="padding-right:5px;"><a target="_blank" href="http://www.bid4assets.com/info/sfid999/Maps/M-024-270-019-000.pdf">View Parcel Map</a></td>
+                        </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Add&#x27;l Information</strong>
+                                </td>
+                                <td style="padding-right:5px;">Assessor's Info - <a href="http://www.countyofkings.com/departments/assessor/property-information-and-values-online" target="_blank">Click Here</a></td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="pull-right">
+                <tbody>
+                    <tr>
+                        <th colspan="2" scope="colgroup">Assessed Values                           
+                        </th>
+                    </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Assessed Values From</strong>
+                                </td>
+                                <td style="padding-right:5px;">2016/2017</td>
+                        </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Exemptions</strong>
+                                </td>
+                                <td style="padding-right:5px;">$0.00</td>
+                        </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Fixtures</strong>
+                                </td>
+                                <td style="padding-right:5px;">$0.00</td>
+                        </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Improvements</strong>
+                                </td>
+                                <td style="padding-right:5px;">$0.00</td>
+                        </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Land Value</strong>
+                                </td>
+                                <td style="padding-right:5px;">$4,787.00</td>
+                        </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Personal Property Value</strong>
+                                </td>
+                                <td style="padding-right:5px;">$0.00</td>
+                        </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Total Assessed Values</strong>
+                                </td>
+                                <td style="padding-right:5px;">$4,787.00</td>
+                        </tr>
+                </tbody>
+            </table>
+                <div class="clearfix"></div>
+            <table >
+                <tbody>
+                    <tr>
+                        <th colspan="2" scope="colgroup">Tax Bill                           
+                        </th>
+                    </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Total Tax Bill </strong>
+                                </td>
+                                <td style="padding-right:5px;">$45.96</td>
+                        </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Tax Bill Year</strong>
+                                </td>
+                                <td style="padding-right:5px;">2016-2017</td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="pull-right">
+                <tbody>
+                    <tr>
+                        <th colspan="2" scope="colgroup">Additional Information                           
+                        </th>
+                    </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Tax Rate Area</strong>
+                                </td>
+                                <td style="padding-right:5px;">092 001</td>
+                        </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Tax Rate</strong>
+                                </td>
+                                <td style="padding-right:5px;">0.961566000000000%</td>
+                        </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Zoning Code</strong>
+                                </td>
+                                <td style="padding-right:5px;">AX</td>
+                        </tr>
+                        <tr>
+                                <td><strong style="font-family: 'Open Sans' !important;font-weight: 1000;">Zoning Type</strong>
+                                </td>
+                                <td style="padding-right:5px;">Exclusive Agricultural</td>
+                        </tr>
+                </tbody>
+            </table>
+                <div class="clearfix"></div>
+    </div><!-- end item-specifics-table -->
+
+
+<style type="text/css">
+    @media screen and (max-width: 480px) {
+        body.auction-deposit .item-specifics-table table {
+            width: 100%;
+        }
+    }
+</style>
+<div>
+</div>
+
+
+
+        <div id="due-diligence">
+    <div class="subtitle">All Seller-Related Due Diligence
+&mdash; (<a href="/storefront/view/999">View Related Auctions</a>)     </div>
+    <p>The due diligence items below apply to all related auctions from this seller.</p>
+        <p><strong>General Sale Information</strong></p>
+    <div class="due-diligence-table">
+            <table>
+                    <tr>
+                        <td class="due-diligence-row"><a href="/info/sfid999/366808.pdf" target="_blank" aria-label="California Law Regarding Bidder Non-Payment&#x9; (opens in a new tab)">California Law Regarding Bidder Non-Payment&#x9;</a></td>
+                    </tr>
+                    <tr>
+                        <td class="due-diligence-row"><a href="/info/sfid999/367438.pdf" target="_blank" aria-label="Property List (PDF) (opens in a new tab)">Property List (PDF)</a></td>
+                    </tr>
+            </table>
+            <table>
+                    <tr>
+                        <td class="due-diligence-row"><a href="/info/sfid999/366809.pdf" target="_blank" aria-label="County Terms Of Sale&#x9; (opens in a new tab)">County Terms Of Sale&#x9;</a></td>
+                    </tr>
+                    <tr>
+                        <td class="due-diligence-row"><a href="/info/sfid999/367437.xls" target="_blank" aria-label="Property List (Excel) (opens in a new tab)">Property List (Excel)</a></td>
+                    </tr>
+            </table>
+            <table>
+                    <tr>
+                        <td class="due-diligence-row"><a href="/info/sfid999/366810.pdf" target="_blank" aria-label="Revenue and Taxation Code 3712&#x9; (opens in a new tab)">Revenue and Taxation Code 3712&#x9;</a></td>
+                    </tr>
+            </table>
+        <div class="clearfix"></div>
+    </div><!-- end due-diligence-table -->
+</div>
+<br /><br />
+
+
+    <div class="clearfix"></div>
+<B><SPAN style="FONT-SIZE: 13.5pt; FONT-FAMILY: arial">End of Auction</SPAN></B><BR><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: arial; mso-bidi-font-weight: bold">After the close of the final Kings County listing for auction, all winning bidders are sent detailed instructions via e-mail on settlement procedures and how to provide the county with the necessary deed transfer information.</SPAN>   <P><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: arial; mso-bidi-font-weight: bold">Kings County requires that the winning bidder submit the deed transfer information to Bid4Assets <U>within 48 hours of the close of auction.</U></SPAN> </P>  <P></P> <P> <P>        <div class="clearfix"></div>
+        <div class="subtitle">Bidding Requirements</div>
+        <div>
+                <p>To bid on this auction, all bidders are required to become qualified by placing a deposit. The deposit of the winning bidder is automatically transferred to the seller at the end of the auction. If the winning bidder fails to perform on any auction, the entire BidDeposit will be forfeited to the seller. Non-winning bidder deposit refunds are mailed within ten (10) business days after the close of the auction. This deposit cannot be applied to other auctions. To find out more about the BidDeposit requirement, <a href="/pages/public/content/help/faqsbuyer/buyerbiddeposit">click here.</a></p>
+        </div>
+        <div class="subtitle">Settlement Requirements</div>
+<p>Full payment must be received by Bid4Assets <u>no later than 4:00 PM ET (1:00 PM PT), Friday, March 17, 2017</u>. If the payment policy is not adhered to, the winning bidder will forfeit their deposit to the county and may be banned from future sales.<BR><BR>A California Documentary Transfer Tax will be added to, and collected with, the full purchase price. This tax is calculated at the rate of $.55 for each $500.00 or fractional part thereof. Additionally a $35 per-parcel-won administrative fee will be added to the final Sale Price.</p>        <div class="subtitle">
+        Payment Type
+    </div>
+    <div>
+        <ul>
+                <li>Certified/Cashier&#x27;s Check</li>
+                <li>Wire Transfer</li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+</div><!-- end auction-txt -->
+<div class="k-hidden" id="bidWindow" name="bidWindow">Loading...</div><script>kendo.syncReady(function(){jQuery("#bidWindow").kendoWindow({"resize":kendoWindowResized,"open":kendoWindowResized,"iframe":true,"scrollable":true,"visible":false,"content":null,"actions":["Close"],"title":"Place Bid","modal":true,"height":"700px","width":"700px"});});</script>
+<div class="k-hidden" id="auctionAnnouncementsWindow" name="auctionAnnouncementsWindow">Loading...</div><script>kendo.syncReady(function(){jQuery("#auctionAnnouncementsWindow").kendoWindow({"resize":kendoWindowResized,"open":kendoWindowResized,"iframe":true,"scrollable":true,"visible":false,"content":null,"actions":["Close"],"title":"Action Announcements","modal":true,"height":"750px","width":"750px"});});</script>
+<div class="k-hidden" id="askSellerQuestionWindow" name="askSellerQuestionWindow">Loading...</div><script>kendo.syncReady(function(){jQuery("#askSellerQuestionWindow").kendoWindow({"resize":kendoWindowResized,"open":kendoWindowResized,"iframe":true,"scrollable":true,"visible":false,"content":null,"actions":["Close"],"title":"Ask Seller A Question on Auction #739080","modal":true,"height":"700px","width":"700px"});});</script>
+
+<div id="loadingDialog"></div>
+
+
+
+
+
+
+
+        <div class="k-hidden" id="actionWindow" name="actionWindow"></div><script>kendo.syncReady(function(){jQuery("#actionWindow").kendoWindow({"iframe":true,"scrollable":true,"visible":false,"content":null,"draggable":false,"actions":["Close"],"resizable":false,"title":"","modal":true});});</script>
+        <div class="k-hidden" id="helpWindow" name="helpWindow">Loading...</div><script>kendo.syncReady(function(){jQuery("#helpWindow").kendoWindow({"iframe":true,"scrollable":true,"visible":false,"content":null,"actions":["Close"],"title":"Help","modal":true,"height":"700px","width":"700px"});});</script>
+    </main><!-- end auction-content -->
+
+
+        <div style="border-top: 1px solid #ddd; margin-top: 10px;">
+        <footer>
+            <div id="footer-menu" class="pull-left">
+                <a href="" class="footer-logo"><img src="https://cdn.bid4assets.com/app/nextgen/B4A-LOGO-2024-small2.png" alt=""></a>
+                <ul role="navigation" aria-label="About B4A">
+                    <li><a href="/pages/public/content/b4a">About Us</a></li>
+                    <li><a href="/help/support/contactus">Contact Us</a></li>
+                    <li><a href="/pages/public/content/b4a/jobs">Jobs</a></li>
+                    <li><a href="/pages/public/content/b4a/partners">Courthouse Steps<sup>&reg;</sup></a></li>
+                </ul>
+            </div><!-- end footer-menu -->
+
+            <div id="additional-info-footer" class="pull-right">
+                <div class="col-md-3 pull-left">
+                    <h3>NEED TO KNOW</h3>
+                    <ul role="navigation" aria-label="Need to know">
+                        <li><a href="/pages/public/content/b4a/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/pages/public/content/b4a/terms-of-service">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 pull-left">
+                    <h3>FOR SELLERS</h3>
+                    <ul role="navigation" aria-label="For sellers">
+                        <li><a href="/listing/ez">Sell an Asset</a></li>
+                        <li><a href="/sheriff-sale-government-auctions">Sheriff's Sales</a></li>
+                        <li><a href="/county-government-auctions">County Government Sellers</a></li>
+                        <li><a href="/pages/public/content/help#selling">Seller Help</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 pull-left">
+                    <h3>FOR BUYERS</h3>
+                    <ul role="navigation" aria-label="For buyers">
+                        <li><a href="/registration/signup/emailsubscriptions">Weekly Email Alert</a></li>
+                        <li><a href="/pages/public/content/help/seller-rating-system"> Rate a Seller</a></li>
+                        <li><a href="/pages/public/content/ivids">Video Tutorials</a></li>
+                        <li><a href="/pages/public/content/help">Buyer Help</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 pull-left">
+                    <h3>USEFUL LINKS</h3>
+                    <ul role="navigation" aria-label="Useful links">
+                        <li><a href="/myb4a">My Account/Login</a></li>
+                        <li><a href="/forms/sellyourproperty">Have Property to Sell?</a></li>
+                        <li><a href="/testimonials">Testimonials</a></li>
+                        <li><a href="mailto:testimonials@bid4assets.com?subject=Buyer Testimonial">Submit a Testimonial</a></li>
+                        <li><a href="mailto:feedback@bid4assets.com?subject=Feedback for Bid4Assets">Give Us Your Feedback</a></li>
+                    </ul>
+                </div>
+            </div><!-- end additional-info-footer -->
+
+            <div class="clearfix"></div>
+
+            <div id="footer-bottom">
+                <div class="pull-left col-md-8">
+                    <p>BID4ASSETS.com&reg; is a registered trademark of Bid4Assets, Inc.</p>
+                    <p>Where Great Deals Click&trade;; Bid4Assets&trade;; Copyright &copy; 1999-2026 ALL RIGHTS RESERVED Bid4Assets, Inc.</p>
+                </div>
+                <div class="pull-right col-md-4">
+                    <a href="https://www.bbb.org/washington-dc-eastern-pa/business-reviews/online-auctions/bid4assets-inc-in-silver-spring-md-1036083" rel="noopener noreferrer" aria-label="Bid4Assets Better Business Bureau profile (opens in new tab)"><img src="https://cdn.bid4assets.com/app/mvc/Content/Images/footer/bbb.jpg" class="logo-company" alt="Better Business Bureau Logo"></a>
+                    <img src="https://cdn.bid4assets.com/app/mvc/Content/Images/footer/naa.jpg" class="logo-company" alt="NAA Logo" />
+                    <a href="https://www.gsa.gov/" rel="noopener noreferrer" aria-label="U.S. General Services Administration website (opens in new tab)"><img src="https://cdn.bid4assets.com/app/mvc/Content/Images/footer/gsa.jpg" class="logo-company" alt="GSA Logo"></a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </footer>
+    </div>
+<div id="popupAlertDialog"></div>
+
+
+
+
+
+
+        <script src="https://cdn.bid4assets.com/app/mvc/Scripts/jquery.easytabs.min.js"></script>
+        <script src="/js/auction.plugins.202605.js"></script>
+        <script src="https://cdn.bid4assets.com/app/mvc/Scripts/lightslider.js"></script>
+        <script src="https://cdn.bid4assets.com/app/mvc/Scripts/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+                $("#content-slider").lightSlider({
+                    loop: true,
+                    keyPress: true
+                });
+                $('#image-gallery').lightSlider({
+                    gallery: true,
+                    item: 1,
+                    thumbItem: 9,
+                    slideMargin: 0,
+                    speed: 500,
+                    auto: false,
+                    loop: false,
+                    enableDrag: false,
+                    onSliderLoad: function () {
+                        $('#image-gallery').removeClass('cS-hidden');
+                    }
+                });
+                $('.popup-gallery').magnificPopup({
+                    delegate: 'li',
+                    type: 'image',
+                    tLoading: 'Loading image #%curr%...',
+                    mainClass: 'mfp-img-mobile',
+                    gallery: {
+                        enabled: true,
+                        navigateByImgClick: true,
+                        preload: [0, 1]
+                    },
+                    image: {
+                        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                        titleSrc: function (item) {
+                            return item.el.attr('title');
+                        }
+                    }
+                });
+                $('.overlay').on('click', function () {
+                    $('.popup-gallery').magnificPopup('open');
+                });
+
+            });
+        </script>
+
+    <span id="popupNotification" name="popupNotification"></span><script>kendo.syncReady(function(){jQuery("#popupNotification").kendoNotification({"position":{"pinned":true}});});</script>
+
+        
+    <script type="text/javascript">
+    function customKendoAlert(title, content) {
+    $("<div></div>").kendoAlert({
+        title: title,
+      content: content
+    }).data("kendoAlert").open();
+  }
+
+  function customKendoConfirm(title, content){
+    return $("<div></div>").kendoConfirm({
+      title: title,
+      content: content
+    }).data("kendoConfirm").open().result;
+  }
+
+  function customKendoPrompt(content, defaultValue){
+    return $("<div></div>").kendoPrompt({
+        title: "Bid4Assets.com",
+      value: defaultValue,
+      content: content
+    }).data("kendoPrompt").open().result;
+  }
+</script>
+    <div id="dialogBox">
+    </div>
+
+    <style type="text/css">
+        .pull-left {
+            float: left !important;
+        }
+
+        .pull-right {
+            float: right !important;
+        }
+    </style>
+    
+    <style type="text/css">
+        #additional-info-footer {
+            width: unset !important;
+        }
+        #additional-info-footer div.pull-left {
+            width: 185px !important;
+        }
+    </style>
+</body>
+
+</html>

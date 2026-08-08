@@ -1,0 +1,2631 @@
+[
+  {
+    "apn": "041-115-430-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "62400.00",
+    "source_situs": "15945 45TH AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005975",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:58 AM",
+        "grantor": "WRIGHT GREGORY L SR",
+        "grantee": "CORTES APOLINAR"
+      }
+    ]
+  },
+  {
+    "apn": "041-133-050-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2000.00",
+    "source_situs": "15811 39TH AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005976",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:58 AM",
+        "grantor": "BROOKENS BARRY D",
+        "grantee": "EARTH & LAND LLC"
+      },
+      {
+        "doc_number": "2025008553",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 10:09 AM",
+        "grantor": "BROOKENS BARRY D",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "041-133-390-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2500.00",
+    "source_situs": "15861 39TH AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005977",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:58 AM",
+        "grantor": "HEMMINGER ERIC",
+        "grantee": "MEYERS ELTON"
+      }
+    ]
+  },
+  {
+    "apn": "041-152-460-000",
+    "status": "REDEEMED",
+    "min_bid": "18900.00",
+    "source_situs": "15826 33RD AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004747",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:16 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "SIMPSON MATTHEW"
+      },
+      {
+        "doc_number": "2025008554",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 10:09 AM",
+        "grantor": "SIMPSON MATTHEW",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "041-156-360-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1500.00",
+    "source_situs": "15893 33RD AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005978",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:58 AM",
+        "grantor": "HERBERT SCAIFE A",
+        "grantee": "MEYERS ELTON"
+      },
+      {
+        "doc_number": "2025013020",
+        "doc_type": "NOTICE OF LIEN",
+        "recording_date": "12/18/2025 10:18 AM",
+        "grantor": "HARRIS WILLIAM III",
+        "grantee": "CLEARLAKE CITY"
+      },
+      {
+        "doc_number": "2024011743",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "11/04/2024 08:36 AM",
+        "grantor": "HARRIS WILLIAM JR",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "041-156-530-000",
+    "status": "REDEEMED",
+    "min_bid": "27100.00",
+    "source_situs": "15980 32ND AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004748",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:20 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "MEDLOCK JASON DAVID-LEE"
+      },
+      {
+        "doc_number": "2026002613",
+        "doc_type": "DEED",
+        "recording_date": "03/19/2026 08:01 AM",
+        "grantor": "MEDLOCK JASON DAVID-LEE",
+        "grantee": "GALVEZ ANARBOL LOPEZ"
+      },
+      {
+        "doc_number": "2026000774",
+        "doc_type": "CERTIFICATE OF WATER LIEN",
+        "recording_date": "01/26/2026 04:08 PM",
+        "grantor": "MEDLOCK JASON DAVID LEE",
+        "grantee": "KONOCTI COUNTY WATER DIST"
+      },
+      {
+        "doc_number": "2025008555",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 10:09 AM",
+        "grantor": "MEDLOCK JASON DAVID-LEE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      },
+      {
+        "doc_number": "2024010606",
+        "doc_type": "NOTICE OF LIEN",
+        "recording_date": "10/09/2024 12:24 PM",
+        "grantor": "MEDLOCK JASON DAVID LEE",
+        "grantee": "KONOCTI COUNTY WATER DIST"
+      }
+    ]
+  },
+  {
+    "apn": "041-163-370-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "29900.00",
+    "source_situs": "15790 29TH AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005687",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:32 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "CORTES APOLINAR"
+      },
+      {
+        "doc_number": "2025008171",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:21 PM",
+        "grantor": "MAGILL RONALD A",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "041-191-480-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "17900.00",
+    "source_situs": "16111 32ND AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005688",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:33 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "CORTES APOLINAR"
+      },
+      {
+        "doc_number": "2025008567",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 10:20 AM",
+        "grantor": "BRITE WARREN A",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "041-191-490-000",
+    "status": "REDEEMED",
+    "min_bid": "2700.00",
+    "source_situs": "16056 31ST AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004749",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:20 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "GARCIA ROSALBA PEREZ"
+      },
+      {
+        "doc_number": "2026003597",
+        "doc_type": "CERTIFICATE OF WATER LIEN",
+        "recording_date": "04/14/2026 08:43 AM",
+        "grantor": "PEREZ GERARDO",
+        "grantee": "KONOCTI COUNTY WATER DIST"
+      },
+      {
+        "doc_number": "2025008172",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 04:22 PM",
+        "grantor": "GARCIA ROSALBA PEREZ",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      },
+      {
+        "doc_number": "2024001645",
+        "doc_type": "CERTIFICATE OF WATER LIEN",
+        "recording_date": "02/16/2024 12:00 PM",
+        "grantor": "GARCIA ROSALBA PEREZ",
+        "grantee": "KONOCTI COUNTY WATER DIST"
+      }
+    ]
+  },
+  {
+    "apn": "041-195-100-000",
+    "status": "REDEEMED",
+    "min_bid": "15300.00",
+    "source_situs": "16221 32ND AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004750",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:20 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "ALVAREZ PINA CANDELARIO"
+      },
+      {
+        "doc_number": "2025008019",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:17 AM",
+        "grantor": "ALVAREZ PINA CANDELARIO",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "041-265-470-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2500.00",
+    "source_situs": "16028 43RD AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005979",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:59 AM",
+        "grantor": "GONZALES CLAUDE",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2025008020",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:17 AM",
+        "grantor": "GONZALES CLAUDE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "041-302-300-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3700.00",
+    "source_situs": "5739 CRAWFORD AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005689",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:33 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "LAKE REALS ESTATE LLC"
+      },
+      {
+        "doc_number": "2025008556",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 10:09 AM",
+        "grantor": "HUDSON EDWARD JAMES",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "041-314-110-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2500.00",
+    "source_situs": "5808 CRAWFORD AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005980",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 08:59 AM",
+        "grantor": "STEUBEN GENE E",
+        "grantee": "MEYERS ELTON"
+      }
+    ]
+  },
+  {
+    "apn": "041-341-420-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2000.00",
+    "source_situs": "15398 MASON ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005981",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 09:00 AM",
+        "grantor": "ABERNATHY DAULTON R TRUSTEE",
+        "grantee": "EARTH & LAND LLC"
+      },
+      {
+        "doc_number": "2025008557",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 10:09 AM",
+        "grantor": "ABERNATHY DAULTON R",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "041-351-320-000",
+    "status": "STILL_DEFAULTED_NO_RELEASE_FOUND",
+    "min_bid": "17200.00",
+    "source_situs": "15419 STANYON ST CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2025008558",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 10:09 AM",
+        "grantor": "SUTCH TAMARA J",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "041-384-340-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3000.00",
+    "source_situs": "15783 40TH AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006175",
+        "doc_type": "DEED",
+        "recording_date": "06/15/2026 11:40 AM",
+        "grantor": "ORAM JUSTIN",
+        "grantee": "GARCIA SILVESTRE GUTIERREZ"
+      },
+      {
+        "doc_number": "2026005982",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 09:00 AM",
+        "grantor": "PEREZ TINA MARIE",
+        "grantee": "ORAM JUSTIN"
+      }
+    ]
+  },
+  {
+    "apn": "041-391-210-000",
+    "status": "REDEEMED",
+    "min_bid": "1500.00",
+    "source_situs": "15628 36TH AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004751",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:21 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "FARANDA NICHOLAS GUY"
+      },
+      {
+        "doc_number": "2025008559",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 10:09 AM",
+        "grantor": "FARANDA NICHOLAS GUY",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "042-042-160-000",
+    "status": "REDEEMED",
+    "min_bid": "12000.00",
+    "source_situs": "15245 HIGHLAND AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004752",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:21 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "MODICA DAVID WAYNE"
+      },
+      {
+        "doc_number": "2025008021",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:17 AM",
+        "grantor": "MODICA DAVID WAYNE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "042-164-150-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2600.00",
+    "source_situs": "15908 24TH AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026008287",
+        "doc_type": "DEED",
+        "recording_date": "08/07/2026 10:37 AM",
+        "grantor": "LOPEZ RAMIRO HERNANDEZ",
+        "grantee": "MARTINEZ YESENIA"
+      },
+      {
+        "doc_number": "2026005983",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 09:00 AM",
+        "grantor": "TRANMER DIANA L TRUSTEE",
+        "grantee": "LOPEZ RAMIRO HERNANDEZ"
+      },
+      {
+        "doc_number": "2025008451",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:00 AM",
+        "grantor": "TRANMER DIANA L",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "042-164-160-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2600.00",
+    "source_situs": "15918 24TH AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005984",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 09:01 AM",
+        "grantor": "TRANMER DIANA L TRUSTEE",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2025008452",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:00 AM",
+        "grantor": "TRAMNER DIANA L",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "042-173-280-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2600.00",
+    "source_situs": "15899 20TH AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005985",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 09:01 AM",
+        "grantor": "TRANMER DIANA L TRUSTEE",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2025008022",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:17 AM",
+        "grantor": "TRANMER DIANA L",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "042-175-320-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2600.00",
+    "source_situs": "15973 22ND AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005690",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:33 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "MEYERS ELTON"
+      },
+      {
+        "doc_number": "2025008453",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:01 AM",
+        "grantor": "TRANMER DIANA L",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "042-188-080-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1900.00",
+    "source_situs": "16219 25TH AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005986",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 09:01 AM",
+        "grantor": "MAYER BRIAN",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2025008454",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:01 AM",
+        "grantor": "MAYER BRIAN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "042-206-130-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "8800.00",
+    "source_situs": "16134 18TH AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005691",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:37 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KYRIAKOPOULOS TAKIS"
+      },
+      {
+        "doc_number": "2025008023",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:17 AM",
+        "grantor": "TEAGUE VIVIAN M",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      },
+      {
+        "doc_number": "2024001656",
+        "doc_type": "CERTIFICATE OF WATER LIEN",
+        "recording_date": "02/16/2024 12:00 PM",
+        "grantor": "HILL LINDA ANN",
+        "grantee": "KONOCTI COUNTY WATER DIST"
+      }
+    ]
+  },
+  {
+    "apn": "042-282-380-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2200.00",
+    "source_situs": "16362 19TH AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005692",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:37 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "MEYERS ELTON"
+      },
+      {
+        "doc_number": "2025008456",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:01 AM",
+        "grantor": "J A C HUMPHREY",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "042-291-190-000",
+    "status": "REDEEMED",
+    "min_bid": "3200.00",
+    "source_situs": "16247 17TH AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026003094",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "04/01/2026 02:15 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "HOUCHEN VERONICA R"
+      },
+      {
+        "doc_number": "2025011696",
+        "doc_type": "SUBSTITUTION OF TRUSTEE",
+        "recording_date": "11/12/2025 10:31 AM",
+        "grantor": "HOUCHEN VERONICA R",
+        "grantee": "QUALITY LOAN SERVICES CORP"
+      },
+      {
+        "doc_number": "2025011696",
+        "doc_type": "RECONVEYANCE",
+        "recording_date": "11/12/2025 10:31 AM",
+        "grantor": "QUALITY LOAN SERVICES CORP",
+        "grantee": "HOUCHEN VERONICA R"
+      },
+      {
+        "doc_number": "2025008026",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:18 AM",
+        "grantor": "HOUCHEN VERONICA R",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "042-331-130-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2100.00",
+    "source_situs": "16002 15TH AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005987",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 09:02 AM",
+        "grantor": "OGLETREE STEVEN J",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2025008460",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:02 AM",
+        "grantor": "OGLETREE STEVEN J",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "042-331-140-000",
+    "status": "REDEEMED",
+    "min_bid": "2100.00",
+    "source_situs": "16012 15TH AVE CLEARLAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004754",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:21 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "RIOS BARAJAS DENNIS A"
+      },
+      {
+        "doc_number": "2025008461",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:02 AM",
+        "grantor": "RIOS BARAJAS DENNIS A",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "043-310-250-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "10500.00",
+    "source_situs": "6500 SUNRISE DR LOWER LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005693",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:38 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "PERNICH GARY L"
+      },
+      {
+        "doc_number": "2024011862",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "11/05/2024 09:11 AM",
+        "grantor": "WILLIAMS ANDRE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "043-352-100-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3900.00",
+    "source_situs": "4800 HAWAINA WY KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005694",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:38 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "BERKCRUZ RIVER LLC"
+      },
+      {
+        "doc_number": "2025008028",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:18 AM",
+        "grantor": "CLEVELAND MARK A",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "043-352-110-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3900.00",
+    "source_situs": "4796 HAWAINA WY KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005695",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:38 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "BERKCRUZ RIVER LLC"
+      },
+      {
+        "doc_number": "2025008468",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:03 AM",
+        "grantor": "CLEVELAND MARK A",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "043-391-100-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "27900.00",
+    "source_situs": "11087 FAIRWAY DR KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005696",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:38 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "HUNTER CHRISTINE"
+      },
+      {
+        "doc_number": "2025009790",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "09/22/2025 10:33 AM",
+        "grantor": "LOUDERMILK DANNY J",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "043-433-090-000",
+    "status": "REDEEMED",
+    "min_bid": "1800.00",
+    "source_situs": "10674 EDGEWATER DR KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004756",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:26 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "ENCALADA ANNETTE"
+      },
+      {
+        "doc_number": "2025008469",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:03 AM",
+        "grantor": "ENCALADA ANNETTE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "043-522-040-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3100.00",
+    "source_situs": "5111 CANTERBERRY DR KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005697",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:39 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "COTTON JASON"
+      },
+      {
+        "doc_number": "2025008029",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:19 AM",
+        "grantor": "LAND WEALTH",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "043-551-190-000",
+    "status": "REDEEMED",
+    "min_bid": "29400.00",
+    "source_situs": "9700 STATE HWY 281 KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026007670",
+        "doc_type": "NOTICE",
+        "recording_date": "07/21/2026 01:40 PM",
+        "grantor": "SONOMA PACIFIC HOMEBUILDERS INC",
+        "grantee": "KELSEYVILLE RIVIERA COMM ASSN"
+      },
+      {
+        "doc_number": "2026004757",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:26 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "SONOMA PACIFIC HOME BUILDERS INC"
+      },
+      {
+        "doc_number": "2026004247",
+        "doc_type": "DEED OF TRUST",
+        "recording_date": "04/30/2026 11:00 AM",
+        "grantor": "SONOMA PACIFIC HOMEBUILDERS INC",
+        "grantee": "SANTARELLI MICHAEL"
+      },
+      {
+        "doc_number": "2025008471",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:03 AM",
+        "grantor": "SONOMA PACIFIC HOME BUILDERS INC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "043-651-030-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "4600.00",
+    "source_situs": "11030 WHEELER DR KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005988",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 09:02 AM",
+        "grantor": "BARMORE MATTHEW",
+        "grantee": "POLISHCHUK ANDRII TRUSTEE"
+      },
+      {
+        "doc_number": "2025008472",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:03 AM",
+        "grantor": "BARMORE MATTHEW",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "044-211-160-000",
+    "status": "REDEEMED",
+    "min_bid": "4000.00",
+    "source_situs": "2595 EASTLAKE DR KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004758",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:26 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KERSTAN KAREN"
+      }
+    ]
+  },
+  {
+    "apn": "044-272-220-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3400.00",
+    "source_situs": "3356 SOUTHLAKE CT KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005989",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/10/2026 09:02 AM",
+        "grantor": "ROBBINS DEAN",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2025008030",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:19 AM",
+        "grantor": "ROBBINS DEAN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "044-372-030-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "5200.00",
+    "source_situs": "6978 JUNIPERO AVE KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006032",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:08 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2025008473",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:04 AM",
+        "grantor": "BASDEN ARLEY TRUSTEE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "045-091-100-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "4700.00",
+    "source_situs": "8140 MOUNTAIN CREST DR KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005698",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:39 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "BRUMMELL SANDRA D"
+      },
+      {
+        "doc_number": "2025008031",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:21 AM",
+        "grantor": "MOEN CARLOS DAVID",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "045-133-060-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3400.00",
+    "source_situs": "8395 BROADVIEW DR KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006033",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:08 AM",
+        "grantor": "THE EUCLID AVE LLC",
+        "grantee": "POLISHCHUK ANDRII TRUSTEE"
+      },
+      {
+        "doc_number": "2025008475",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:04 AM",
+        "grantor": "THE EUCLID AVE LLC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "045-142-140-000",
+    "status": "REDEEMED",
+    "min_bid": "6400.00",
+    "source_situs": "2841 RIVIERA HEIGHTS DR KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004759",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:26 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "ORTIZ RUBEN JR"
+      },
+      {
+        "doc_number": "2025008476",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:04 AM",
+        "grantor": "ORTIZ RUBEN JR",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "045-183-150-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "5600.00",
+    "source_situs": "6825 ECHO DR KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006034",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:08 AM",
+        "grantor": "ALVARADO JOSEPH W",
+        "grantee": "COTTON JASON"
+      },
+      {
+        "doc_number": "2024012772",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "11/25/2024 09:49 AM",
+        "grantor": "ALVARADO JOSEPH W",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "045-193-010-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2900.00",
+    "source_situs": "3390 WESTRIDGE DR KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006035",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:09 AM",
+        "grantor": "LANGSTON JOHN MICHAEL SCOFIELD",
+        "grantee": "ABBAS HUSSEIN"
+      },
+      {
+        "doc_number": "2025008032",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:21 AM",
+        "grantor": "LANGSTON JOHN MICHAEL SCOFIELD",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "045-193-030-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2700.00",
+    "source_situs": "3430 WESTRIDGE DR KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006036",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:09 AM",
+        "grantor": "LANGSTON JOHN MICHAEL SCOFIELD",
+        "grantee": "ABBAS HUSSEIN"
+      },
+      {
+        "doc_number": "2025008033",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:21 AM",
+        "grantor": "LANGSTON JOHN MICHAEL SCOFIELD",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "045-233-120-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3900.00",
+    "source_situs": "3208 MARINA VIEW DR KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006037",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:09 AM",
+        "grantor": "INCOME SHELTER CORP",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      }
+    ]
+  },
+  {
+    "apn": "045-234-020-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3100.00",
+    "source_situs": "6940 GRANDE VISTA DR KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006038",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:10 AM",
+        "grantor": "HAYWOOD CARMELLA M",
+        "grantee": "BERKCRUZ RIVER LLC"
+      },
+      {
+        "doc_number": "2025008034",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:22 AM",
+        "grantor": "HAYWOOD CARMELLA M",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "049-122-070-000",
+    "status": "REDEEMED",
+    "min_bid": "25800.00",
+    "source_situs": "16703 ELLEN SPRINGS DR LOWER LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004761",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:27 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "ZAVALA GARY"
+      },
+      {
+        "doc_number": "2025008035",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:22 AM",
+        "grantor": "ZAVALA GARY",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "050-071-070-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3400.00",
+    "source_situs": "10770 FOOTHILL RD LOCH LOMOND CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006039",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:10 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2024013056",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "12/03/2024 03:19 PM",
+        "grantor": "COZZETTE SHARON",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "050-181-230-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3500.00",
+    "source_situs": "16930 WOODLAND TER WHISPERING PINES CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006040",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:10 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "EARTH & LAND LLC"
+      },
+      {
+        "doc_number": "2025008480",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:04 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "050-181-270-000",
+    "status": "NO_RECENT_RECORDER_ACTIVITY_FOUND",
+    "min_bid": "3400.00",
+    "source_situs": "10355 PARKSIDE AVE WHISPERING PINES CA",
+    "docs_json": []
+  },
+  {
+    "apn": "050-182-020-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "900.00",
+    "source_situs": "10230 PARKSIDE AVE WHISPERING PINES CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006041",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:10 AM",
+        "grantor": "KEITH MARGARET P",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      }
+    ]
+  },
+  {
+    "apn": "050-183-080-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "4400.00",
+    "source_situs": "16936 EDGEWOOD WY WHISPERING PINES CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006042",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:11 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2025008485",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:05 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "050-184-010-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3500.00",
+    "source_situs": "16931 EDGEWOOD WY WHISPERING PINES CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006043",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:11 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2025008488",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:05 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "050-191-050-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "5400.00",
+    "source_situs": "16986 CASTLEWOOD RD WHISPERING PINES CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006044",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:11 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2025008489",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:05 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "050-192-010-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3900.00",
+    "source_situs": "16961 CASTLEWOOD RD WHISPERING PINES CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006045",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:12 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "EARTH & LAND LLC"
+      },
+      {
+        "doc_number": "2025008490",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:06 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "050-192-020-000",
+    "status": "STILL_DEFAULTED_NO_RELEASE_FOUND",
+    "min_bid": "3200.00",
+    "source_situs": "16971 CASTLEWOOD RD WHISPERING PINES CA",
+    "docs_json": [
+      {
+        "doc_number": "2025008491",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:06 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "050-193-010-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3400.00",
+    "source_situs": "16965 EDGEWOOD WY WHISPERING PINES CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006046",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:13 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "EARTH & LAND LLC"
+      },
+      {
+        "doc_number": "2025008492",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:06 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "050-194-010-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3400.00",
+    "source_situs": "16990 CASTLEWOOD RD WHISPERING PINES CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006047",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:14 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "EARTH & LAND LLC"
+      },
+      {
+        "doc_number": "2025008493",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:06 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "050-194-020-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3000.00",
+    "source_situs": "16995 CASTLEWOOD RD WHISPERING PINES CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006048",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:14 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2025008494",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:06 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "050-261-010-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "4000.00",
+    "source_situs": "10349 BROOKSIDE DR WHISPERING PINES CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006049",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:14 AM",
+        "grantor": "MECUM PRESTON M",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      }
+    ]
+  },
+  {
+    "apn": "050-261-160-000",
+    "status": "NO_RECENT_RECORDER_ACTIVITY_FOUND",
+    "min_bid": "1000.00",
+    "source_situs": "10337 PINEWOOD WY WHISPERING PINES CA",
+    "docs_json": []
+  },
+  {
+    "apn": "050-404-220-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3800.00",
+    "source_situs": "11680 ANDERSON SPRINGS RD MIDDLETOWN CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005699",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:40 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "GARNHART LINDA TRUSTEE"
+      },
+      {
+        "doc_number": "2024013060",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "12/03/2024 03:19 PM",
+        "grantor": "HACKER ELMER N",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "050-561-150-000",
+    "status": "REDEEMED",
+    "min_bid": "20200.00",
+    "source_situs": "9931 LUKES RD COBB CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004763",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:31 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "SOLLIDAY ELIZABETH A"
+      },
+      {
+        "doc_number": "2025008496",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:06 AM",
+        "grantor": "SOLLIDAY ELIZABETH A",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "050-581-480-000",
+    "status": "REDEEMED",
+    "min_bid": "4900.00",
+    "source_situs": "12350 WESTERN PINE RD LOCH LOMOND CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004764",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:31 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KARP ANNETTE"
+      },
+      {
+        "doc_number": "2025008037",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:22 AM",
+        "grantor": "KARP ANNETTE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      },
+      {
+        "doc_number": "2024008351",
+        "doc_type": "MORTGAGE",
+        "recording_date": "08/13/2024 09:09 AM",
+        "grantor": "KARP ANNETTE",
+        "grantee": "SECRETARY OF HOUSING & URBAN DEVELOPMENT"
+      }
+    ]
+  },
+  {
+    "apn": "050-591-500-000",
+    "status": "REDEEMED",
+    "min_bid": "21500.00",
+    "source_situs": "12618 OBSERVATION RD LOCH LOMOND CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004766",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:31 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KEEL PAUL S"
+      },
+      {
+        "doc_number": "2025008497",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:06 AM",
+        "grantor": "KEEL PAUL S",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "050-733-070-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "4000.00",
+    "source_situs": "16556 COBB BLVD COBB CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006050",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:14 AM",
+        "grantor": "RISCH GARY S TRUSTEE",
+        "grantee": "VAZQUEZ SERGIO"
+      },
+      {
+        "doc_number": "2025008499",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:06 AM",
+        "grantor": "RISCH GARY S TRUSTEE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "050-743-010-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "4000.00",
+    "source_situs": "16570 COBB BLVD COBB CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006051",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:15 AM",
+        "grantor": "RISCH GARY S TRUSTEE",
+        "grantee": "ZURITA MARIA L"
+      },
+      {
+        "doc_number": "2025008500",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:07 AM",
+        "grantor": "RISCH GARY S TRUSTEE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "051-052-020-000",
+    "status": "REDEEMED",
+    "min_bid": "1400.00",
+    "source_situs": "15405 HUMBOLDT DR COBB CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004767",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:31 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "TRIGONIS GEOVCIA"
+      },
+      {
+        "doc_number": "2024011966",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "11/06/2024 09:29 AM",
+        "grantor": "TRIGONIS GEOVCIA",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "051-053-100-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "9700.00",
+    "source_situs": "15287 SUMMIT BLVD COBB CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006052",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:15 AM",
+        "grantor": "STEFFEY HENRI TRUSTEE",
+        "grantee": "RAMOS FRUMENCIO"
+      },
+      {
+        "doc_number": "2025008501",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:07 AM",
+        "grantor": "STEFFEY HENRI",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "051-072-050-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "10000.00",
+    "source_situs": "15225 SUMMIT BLVD COBB CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005700",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:40 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "BAY AREA HOME OPTIONS INC"
+      },
+      {
+        "doc_number": "2025008502",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:07 AM",
+        "grantor": "CLARK MATTHEW",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "051-202-080-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "5300.00",
+    "source_situs": "9334 BLEUSS WY COBB CA",
+    "docs_json": [
+      {
+        "doc_number": "2026008028",
+        "doc_type": "DEED",
+        "recording_date": "07/31/2026 01:18 PM",
+        "grantor": "TOLLS DAVID",
+        "grantee": "TOLLS DAVID BENTLEY TRUSTEE"
+      },
+      {
+        "doc_number": "2026006053",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:15 AM",
+        "grantor": "TOLLS DAVID",
+        "grantee": "BERKCRUZ RIVER LLC"
+      },
+      {
+        "doc_number": "2025008373",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/20/2025 11:03 AM",
+        "grantor": "TOLLS DAVID",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "052-092-020-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "5000.00",
+    "source_situs": "9802 VENTURI DR COBB CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006054",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:16 AM",
+        "grantor": "JOHNSON LAWRENCE LAMONT JR",
+        "grantee": "DRE & I LLC"
+      }
+    ]
+  },
+  {
+    "apn": "052-101-120-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "4300.00",
+    "source_situs": "9754 VENTURI DR COBB CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006055",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:17 AM",
+        "grantor": "ACEVEDO JESUS",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2025008039",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:22 AM",
+        "grantor": "ACEVEDO JESUS",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "052-171-050-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "6600.00",
+    "source_situs": "11264 LOCH LOMOND RD LOCH LOMOND CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006056",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:17 AM",
+        "grantor": "CUTRELL TIM",
+        "grantee": "ZURITA MARIA L"
+      },
+      {
+        "doc_number": "2025008040",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:22 AM",
+        "grantor": "CUTRELL TIM",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "052-172-030-000",
+    "status": "REDEEMED",
+    "min_bid": "10800.00",
+    "source_situs": "11273 LOCH LOMOND RD LOCH LOMOND CA",
+    "docs_json": [
+      {
+        "doc_number": "2026003174",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "04/03/2026 09:02 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "SOLLIDAY ELIZABETH A"
+      },
+      {
+        "doc_number": "2025008041",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:23 AM",
+        "grantor": "SOLLIDAY ELIZABETH A",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "052-253-010-000",
+    "status": "REDEEMED",
+    "min_bid": "4600.00",
+    "source_situs": "11990 LOCH LOMOND RD LOCH LOMOND CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004769",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:35 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "SOLLIDAY ELIZABETH A"
+      },
+      {
+        "doc_number": "2025008375",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/20/2025 11:04 AM",
+        "grantor": "SOLLIDAY ELIZABETH A",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "060-251-040-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2000.00",
+    "source_situs": "12340 CERRITO DR CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026008286",
+        "doc_type": "DEED",
+        "recording_date": "08/07/2026 10:36 AM",
+        "grantor": "LOPEZ RAMIRO HERNANDEZ",
+        "grantee": "LOPEZ JUAN DIEGO"
+      },
+      {
+        "doc_number": "2026006057",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:18 AM",
+        "grantor": "THULIN ROGER H",
+        "grantee": "LOPEZ RAMIRO HERNANDEZ"
+      },
+      {
+        "doc_number": "2025008376",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/20/2025 11:04 AM",
+        "grantor": "THULIN ROGER H",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "062-062-320-000",
+    "status": "REDEEMED",
+    "min_bid": "5900.00",
+    "source_situs": "16715 FOX WY CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004770",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:36 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "JONES BRENDA K"
+      },
+      {
+        "doc_number": "2025009769",
+        "doc_type": "NOTICE OF LIEN",
+        "recording_date": "09/22/2025 08:32 AM",
+        "grantor": "JONES BRENDA",
+        "grantee": "LAKE COUNTY SPECIAL DIST"
+      },
+      {
+        "doc_number": "2025008042",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:23 AM",
+        "grantor": "JONES BRENDA K",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      },
+      {
+        "doc_number": "2024009866",
+        "doc_type": "NOTICE OF LIEN",
+        "recording_date": "09/20/2024 02:59 PM",
+        "grantor": "JONES BRENDA",
+        "grantee": "LAKE COUNTY SPECIAL DIST"
+      }
+    ]
+  },
+  {
+    "apn": "062-511-130-000",
+    "status": "REDEEMED",
+    "min_bid": "25400.00",
+    "source_situs": "2788 SPRING VALLEY RD CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004772",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:36 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KREMIN CANDISE SYLVIA"
+      },
+      {
+        "doc_number": "2026003210",
+        "doc_type": "DEED",
+        "recording_date": "04/03/2026 12:47 PM",
+        "grantor": "SYLVIA CANDISE KREMIN",
+        "grantee": "GOMEZ LOUIE D"
+      },
+      {
+        "doc_number": "2025008378",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/20/2025 11:04 AM",
+        "grantor": "KREMIN CANDISE SYLVIA",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      },
+      {
+        "doc_number": "2024009981",
+        "doc_type": "NOTICE OF LIEN",
+        "recording_date": "09/24/2024 09:04 AM",
+        "grantor": "KREMIN CANDISE",
+        "grantee": "LAKE COUNTY SPECIAL DIST"
+      }
+    ]
+  },
+  {
+    "apn": "062-602-220-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2600.00",
+    "source_situs": "2912 MEADOW CREEK RD CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005701",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:41 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KIRKENDALL ANDREW"
+      },
+      {
+        "doc_number": "2025009733",
+        "doc_type": "NOTICE OF LIEN",
+        "recording_date": "09/22/2025 08:27 AM",
+        "grantor": "WIN WIN INVESTMENT GRP LLC",
+        "grantee": "LAKE COUNTY SPECIAL DIST"
+      },
+      {
+        "doc_number": "2025008043",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:23 AM",
+        "grantor": "WIN/WIN INVESTMENT GROUP LLC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      },
+      {
+        "doc_number": "2024010013",
+        "doc_type": "NOTICE OF LIEN",
+        "recording_date": "09/24/2024 09:59 AM",
+        "grantor": "WIN/WIN INVESTMENT GRP LLC",
+        "grantee": "LAKE COUNTY SPECIAL DIST"
+      }
+    ]
+  },
+  {
+    "apn": "063-132-040-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1500.00",
+    "source_situs": "30375 CREEKSIDE DR LAKE PILLSBURY CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006058",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:18 AM",
+        "grantor": "DROEGER NANCY JOY TRUSTEE",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2025008044",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:23 AM",
+        "grantor": "DROEGER NANCY JOY",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "088-031-040-000",
+    "status": "REDEEMED",
+    "min_bid": "8000.00",
+    "source_situs": "5320 JAMIE LN KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004773",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:36 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "LEUBNER MILOS"
+      },
+      {
+        "doc_number": "2025008379",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/20/2025 11:04 AM",
+        "grantor": "MILOS LEUBNER",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "136-031-410-000",
+    "status": "REDEEMED",
+    "min_bid": "3800.00",
+    "source_situs": "15503 SNAKE RANCH RD MIDDLETOWN CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004774",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:36 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "LYONS TIMOTHY M"
+      },
+      {
+        "doc_number": "2025008380",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/20/2025 11:05 AM",
+        "grantor": "LYONS TIMOTHY M",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "136-071-060-000",
+    "status": "REDEEMED",
+    "min_bid": "7000.00",
+    "source_situs": "22182 JERUSALEM GRADE MIDDLETOWN CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004775",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:36 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "GASTON SUPREEYA"
+      },
+      {
+        "doc_number": "2026003394",
+        "doc_type": "NOTICE OF LIEN",
+        "recording_date": "04/09/2026 10:34 AM",
+        "grantor": "GASTON SUPREEYA",
+        "grantee": "ZADA NORMAN"
+      },
+      {
+        "doc_number": "2025008382",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/20/2025 11:05 AM",
+        "grantor": "GASTON SUPREEYA",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "141-011-040-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "7200.00",
+    "source_situs": "17067 KNOLLVIEW DR HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006059",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:18 AM",
+        "grantor": "US BANK ASSN",
+        "grantee": "ABBAS HUSSEIN"
+      },
+      {
+        "doc_number": "2025008045",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:23 AM",
+        "grantor": "US BANK ASSN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "141-163-050-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "6200.00",
+    "source_situs": "18459 LAKERIDGE CIR HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006060",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:18 AM",
+        "grantor": "SOLANO WOMEN IN MEDICINE",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2025008046",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:23 AM",
+        "grantor": "SOLANO WOMEN IN MEDICINE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "141-163-060-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "6200.00",
+    "source_situs": "18475 LAKERIDGE CIR HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006061",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:19 AM",
+        "grantor": "SOLANO WOMEN IN MEDICINE",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2025008566",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 10:20 AM",
+        "grantor": "SOLANO WOMEN IN MEDICINE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "141-163-070-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "6200.00",
+    "source_situs": "18491 LAKERIDGE CIR HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006062",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:19 AM",
+        "grantor": "SOLANO WOMEN IN MEDICINE",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2025008047",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:24 AM",
+        "grantor": "SOLANO WOMEN IN MEDICINE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "141-451-110-000",
+    "status": "STILL_DEFAULTED_NO_RELEASE_FOUND",
+    "min_bid": "4200.00",
+    "source_situs": "19622 PARK RIDGE DR HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2025008383",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/20/2025 11:05 AM",
+        "grantor": "REILLEY RICHARD R",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "141-501-120-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "800.00",
+    "source_situs": "19577 POWDER HORN RD HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006063",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:19 AM",
+        "grantor": "COPPING DAVID",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      }
+    ]
+  },
+  {
+    "apn": "141-562-010-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3000.00",
+    "source_situs": "20883 POWDER HORN RD HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006064",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:19 AM",
+        "grantor": "NOLAN CONSTRUCTION INC",
+        "grantee": "ABBAS HUSSEIN"
+      },
+      {
+        "doc_number": "2025008384",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/20/2025 11:05 AM",
+        "grantor": "NOLAN CONSTRUCTION INC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      },
+      {
+        "doc_number": "2025007780",
+        "doc_type": "RELEASE OF LIEN",
+        "recording_date": "08/11/2025 03:52 PM",
+        "grantor": "HIDDEN VALLEY LAKE ASSOCIATION",
+        "grantee": "NOLAN CONSTRUCTION INC"
+      }
+    ]
+  },
+  {
+    "apn": "141-731-080-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "6400.00",
+    "source_situs": "19948 MOUNTAIN MEADOW SOUTH HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006065",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:20 AM",
+        "grantor": "ABADALLAH ANTHONY",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2025008385",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/20/2025 11:06 AM",
+        "grantor": "ABADALLAH ANTHONY",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "142-021-100-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "4600.00",
+    "source_situs": "16619 ROUND HILL CT HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006066",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:20 AM",
+        "grantor": "LOBAUGH KIMBERLY ANN",
+        "grantee": "ABBAS HUSSEIN"
+      },
+      {
+        "doc_number": "2025008386",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/20/2025 11:06 AM",
+        "grantor": "LOBAUGH KIMBERLY ANN",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      },
+      {
+        "doc_number": "2024009512",
+        "doc_type": "NOTICE OF LIEN",
+        "recording_date": "09/13/2024 01:20 PM",
+        "grantor": "DUCKFIELD RICHARD",
+        "grantee": "HIDDEN VALLEY LAKE ASSN"
+      }
+    ]
+  },
+  {
+    "apn": "142-035-060-000",
+    "status": "STILL_DEFAULTED_NO_RELEASE_FOUND",
+    "min_bid": "8600.00",
+    "source_situs": "18189 DEER HILL RD HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2025008049",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:24 AM",
+        "grantor": "HATCH HARRY M",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "142-072-030-000",
+    "status": "REDEEMED",
+    "min_bid": "52700.00",
+    "source_situs": "18357 DEER HILL RD HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005072",
+        "doc_type": "DEED OF TRUST",
+        "recording_date": "05/20/2026 02:41 PM",
+        "grantor": "MCDOUGAL DIANNE",
+        "grantee": "HOMEOWNERS FINANCIAL GROUP USA LLC"
+      },
+      {
+        "doc_number": "2026005071",
+        "doc_type": "DEED",
+        "recording_date": "05/20/2026 02:41 PM",
+        "grantor": "AZTEC LION CORP",
+        "grantee": "MCDOUGAL DIANNE"
+      },
+      {
+        "doc_number": "2026001273",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "02/09/2026 04:20 PM",
+        "grantor": "HIDDEN VALLEY LAKE COMMUNITY SERVICES DISTRICT",
+        "grantee": "DAWSON WILLIAM"
+      },
+      {
+        "doc_number": "2026000320",
+        "doc_type": "RELEASE OF LIEN",
+        "recording_date": "01/13/2026 09:22 AM",
+        "grantor": "HIDDEN VALLEY LAKE ASSOC",
+        "grantee": "DAWSON WILLIAM DANIEL II TRUSTEE"
+      },
+      {
+        "doc_number": "2025013413",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "12/31/2025 01:54 PM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "DAWSON WILLIAM DAVID II TRUSTEE"
+      },
+      {
+        "doc_number": "2025012961",
+        "doc_type": "DEED OF TRUST",
+        "recording_date": "12/17/2025 09:45 AM",
+        "grantor": "AZTEC LION CORP",
+        "grantee": "ORCHARD FUNDING"
+      },
+      {
+        "doc_number": "2025012961",
+        "doc_type": "ASSIGNMENT",
+        "recording_date": "12/17/2025 09:45 AM",
+        "grantor": "AZTEC LION CORP",
+        "grantee": "ORCHARD FUNDING"
+      },
+      {
+        "doc_number": "2025012961",
+        "doc_type": "SECURITY AGREEMENT",
+        "recording_date": "12/17/2025 09:45 AM",
+        "grantor": "AZTEC LION CORP",
+        "grantee": "ORCHARD FUNDING"
+      },
+      {
+        "doc_number": "2025012961",
+        "doc_type": "FIXTURE FILING",
+        "recording_date": "12/17/2025 09:45 AM",
+        "grantor": "AZTEC LION CORP",
+        "grantee": "ORCHARD FUNDING"
+      },
+      {
+        "doc_number": "2025012960",
+        "doc_type": "DEED",
+        "recording_date": "12/17/2025 09:45 AM",
+        "grantor": "RANDAZZO CHRISTOPHER GEORGE SR TRUSTEE",
+        "grantee": "AZTEC LION CORP"
+      },
+      {
+        "doc_number": "2025007884",
+        "doc_type": "CERTIFICATE OF WATER LIEN",
+        "recording_date": "08/13/2025 11:20 AM",
+        "grantor": "DAWSON WILLIAM",
+        "grantee": "HIDDEN VALLEY LAKE COMMUNITY SERVICES DISTRICT"
+      },
+      {
+        "doc_number": "2025000184",
+        "doc_type": "CERTIFICATE OF WATER LIEN",
+        "recording_date": "01/08/2025 12:28 PM",
+        "grantor": "DAWSON WILLIAM",
+        "grantee": "HIDDEN VALLEY LAKE COMMUNITY SERVICES DISTRICT"
+      },
+      {
+        "doc_number": "2024012627",
+        "doc_type": "AFFIDAVIT",
+        "recording_date": "11/20/2024 01:37 PM",
+        "grantor": "DAWSON WILLIAM DANIEL II EST",
+        "grantee": "RANDAZZO CHRISTOPHER GEORGE SR TRUSTEE"
+      },
+      {
+        "doc_number": "2024011976",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "11/06/2024 09:36 AM",
+        "grantor": "DAWSON WILLIAM DAVID II",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      },
+      {
+        "doc_number": "2024005436",
+        "doc_type": "CERTIFICATE OF WATER LIEN",
+        "recording_date": "05/30/2024 12:00 PM",
+        "grantor": "DAWSON WILLIAM",
+        "grantee": "HIDDEN VALLEY LAKE COMM SERVICES DIST"
+      },
+      {
+        "doc_number": "2024002363",
+        "doc_type": "TAX LIEN",
+        "recording_date": "03/07/2024 12:00 PM",
+        "grantor": "DAWSON WILLIAM",
+        "grantee": "HIDDEN VALLEY LAKE COMMUNITY SERVICES DIST"
+      }
+    ]
+  },
+  {
+    "apn": "142-192-060-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3900.00",
+    "source_situs": "19153 COYLE SPRINGS RD HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006067",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:20 AM",
+        "grantor": "ACEVEDO JESUS",
+        "grantee": "TERRANOVA STRATEGIES LLC"
+      },
+      {
+        "doc_number": "2025008503",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/21/2025 09:07 AM",
+        "grantor": "ACEVEDO JESUS",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      },
+      {
+        "doc_number": "2025000841",
+        "doc_type": "NOTICE OF LIEN",
+        "recording_date": "01/29/2025 01:52 PM",
+        "grantor": "ACEVEDO JESUS",
+        "grantee": "HIDDEN VALLEY LAKE ASSN"
+      }
+    ]
+  },
+  {
+    "apn": "142-201-110-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "4300.00",
+    "source_situs": "17323 GREENRIDGE RD HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006068",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:20 AM",
+        "grantor": "FONTENOT DEBORAH K",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2025008050",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:24 AM",
+        "grantor": "FONTENOT DEBORAH K",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "142-201-120-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3900.00",
+    "source_situs": "17317 GREENRIDGE RD HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006069",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:21 AM",
+        "grantor": "COFFELT BRYAN L",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2025008051",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:24 AM",
+        "grantor": "COFFELT BRYAN L",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "142-213-170-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3700.00",
+    "source_situs": "17029 GREENRIDGE RD HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006070",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:21 AM",
+        "grantor": "SELZER RICHARD P",
+        "grantee": "SONNY CAPITAL GROUP LLC"
+      },
+      {
+        "doc_number": "2025008052",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:25 AM",
+        "grantor": "SELZER RICHARD P",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "142-272-060-000",
+    "status": "STILL_DEFAULTED_NO_RELEASE_FOUND",
+    "min_bid": "7100.00",
+    "source_situs": "16438 CONESTOGA RD HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2025008053",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:25 AM",
+        "grantor": "TRANMER DIANA L",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "142-322-100-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3800.00",
+    "source_situs": "16523 RIDGECREST CT HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006071",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:21 AM",
+        "grantor": "CLARKE CRISTINA MISHELLE",
+        "grantee": "EGBUJIONUMA MICHAEL"
+      },
+      {
+        "doc_number": "2025008054",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:26 AM",
+        "grantor": "CLARKE CRISTINA MISHELLE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "142-352-040-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3800.00",
+    "source_situs": "16441 EAGLE ROCK RD HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006072",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:21 AM",
+        "grantor": "CLARKE CRISTINA MISHELLE",
+        "grantee": "ABBAS HUSSEIN"
+      },
+      {
+        "doc_number": "2025008055",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:26 AM",
+        "grantor": "CLARKE CRISTINA MISHELLE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "142-391-210-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3600.00",
+    "source_situs": "16017 EAGLE ROCK RD HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006073",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:22 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "ABBAS HUSSEIN"
+      },
+      {
+        "doc_number": "2025008056",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:26 AM",
+        "grantor": "HOLDINGS 22 LLC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "142-402-240-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "3900.00",
+    "source_situs": "15675 EAGLE ROCK RD HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006074",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:22 AM",
+        "grantor": "HANIF RASHEED",
+        "grantee": "ABBAS HUSSEIN"
+      },
+      {
+        "doc_number": "2025008388",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/20/2025 11:06 AM",
+        "grantor": "RASHEED HANIF",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      },
+      {
+        "doc_number": "2024009515",
+        "doc_type": "NOTICE OF LIEN",
+        "recording_date": "09/13/2024 01:22 PM",
+        "grantor": "HANIF RASHEED",
+        "grantee": "HIDDEN VALLEY LAKE ASSN"
+      }
+    ]
+  },
+  {
+    "apn": "142-402-260-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "4000.00",
+    "source_situs": "15723 EAGLE ROCK RD HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006075",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:22 AM",
+        "grantor": "EQUITY POINT REAL ESTATE GROUP LLC",
+        "grantee": "ABBAS HUSSEIN"
+      },
+      {
+        "doc_number": "2025010909",
+        "doc_type": "NOTICE OF LIEN",
+        "recording_date": "10/21/2025 08:54 AM",
+        "grantor": "EQUITY POINT REAL ESTATE GROUP LLC",
+        "grantee": "HIDDEN VALLEY LAKE SUBDIVISION"
+      },
+      {
+        "doc_number": "2025008389",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/20/2025 11:06 AM",
+        "grantor": "EQUITY POINT REAL ESTATE GROUP LLC",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "142-403-010-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "1500.00",
+    "source_situs": "15582 EAGLE ROCK RD HIDDEN VALLEY LAKE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026006076",
+        "doc_type": "DEED TAX",
+        "recording_date": "06/11/2026 08:23 AM",
+        "grantor": "ROBLES EDWARD",
+        "grantee": "LOTS OF REALTY LLC"
+      }
+    ]
+  },
+  {
+    "apn": "430-121-060-000",
+    "status": "REDEEMED",
+    "min_bid": "5900.00",
+    "source_situs": "9519 FAIRWAY DR KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004787",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:57 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "MARTINEZ EDUARDO"
+      },
+      {
+        "doc_number": "2025008392",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/20/2025 11:06 AM",
+        "grantor": "MARTINEZ EDUARDO",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "430-241-070-000",
+    "status": "REDEEMED",
+    "min_bid": "5300.00",
+    "source_situs": "10792 HARBOR RD KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026004788",
+        "doc_type": "RELEASE OF LIEN GOVERNMENT",
+        "recording_date": "05/13/2026 10:57 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "HUDSON CAROLYN K TRUSTEE"
+      },
+      {
+        "doc_number": "2025008058",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:26 AM",
+        "grantor": "HUDSON CAROLYN K TRUSTEE",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "430-243-080-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "2000.00",
+    "source_situs": "10775 HARBOR RD KELSEYVILLE CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005702",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:41 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "ELLIS GRAY LLC"
+      },
+      {
+        "doc_number": "2025008393",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/20/2025 11:06 AM",
+        "grantor": "GAYVORONSKIY MAKSIM",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      }
+    ]
+  },
+  {
+    "apn": "628-090-020-000",
+    "status": "SOLD_AT_AUCTION",
+    "min_bid": "26800.00",
+    "source_situs": "21947 MERIANN DR CLEARLAKE OAKS CA",
+    "docs_json": [
+      {
+        "doc_number": "2026005703",
+        "doc_type": "36 DEED TAX",
+        "recording_date": "06/05/2026 09:41 AM",
+        "grantor": "LAKE COUNTY TAX COLLECTOR",
+        "grantee": "KAL CAPITAL PROPERTIES"
+      },
+      {
+        "doc_number": "2026002049",
+        "doc_type": "TRUSTEES DEED",
+        "recording_date": "03/04/2026 01:32 PM",
+        "grantor": "MID VALLEY TITLE & ESCROW CO",
+        "grantee": "HAMILTON HOPE"
+      },
+      {
+        "doc_number": "2026001176",
+        "doc_type": "NOTICE OF TRUSTEE SALE",
+        "recording_date": "02/06/2026 11:38 AM",
+        "grantor": "PFLUM AARON M",
+        "grantee": null
+      },
+      {
+        "doc_number": "2026001175",
+        "doc_type": "SUBSTITUTION OF TRUSTEE",
+        "recording_date": "02/06/2026 11:38 AM",
+        "grantor": "PFLUM AARON M",
+        "grantee": "MID VALLEY TITLE & ESCROW CO"
+      },
+      {
+        "doc_number": "2025011249",
+        "doc_type": "NOTICE OF DEFAULT",
+        "recording_date": "10/30/2025 12:38 PM",
+        "grantor": "PFLUM AARON M",
+        "grantee": null
+      },
+      {
+        "doc_number": "2025008060",
+        "doc_type": "TAX DEFAULT PROPERTY LIEN",
+        "recording_date": "08/14/2025 10:27 AM",
+        "grantor": "PFLUM AARON M",
+        "grantee": "LAKE COUNTY TAX COLLECTOR"
+      },
+      {
+        "doc_number": "2025006804",
+        "doc_type": "NOTICE OF NON-COMPLIANCE",
+        "recording_date": "07/15/2025 03:30 PM",
+        "grantor": "LAKE COUNTY COMMUNITY DEVELOPMENT",
+        "grantee": "PFLUM AARON"
+      }
+    ]
+  }
+]

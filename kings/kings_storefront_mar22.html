@@ -1,0 +1,963 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <title>Bid4Assets: Kings County, CA Tax Defaulted Properties Auction</title>
+    <meta name="description" content="" />
+
+    <!--Jquery-->
+    <script type="text/javascript" src="https://www.bid4assets.com/resources/e30c01250e8baa7776ed16751f040b2bd7f572b640a03"  ></script><script type="text/javascript" src="/lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script>
+    <script type="text/javascript" src="/lib/jquery-migrate/jquery-migrate-3.5.0.min.js"></script>
+
+    <!--Jquery Validation-->
+    <script src="/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="/lib/jquery-validate-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+   <!--Kendo-->
+   <script type="text/javascript" src="https://cdn.bid4assets.com/app/mvc/Scripts/kendo/2024.4.1112/kendo.all.min.js"></script>
+   <script type="text/javascript" src="https://cdn.bid4assets.com/app/mvc/Scripts/kendo/2024.4.1112/kendo.aspnetmvc.min.js"></script>
+   <link href="https://cdn.bid4assets.com/app/mvc/Content/kendo/2024.4.1112/classic-main.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.bid4assets.com/app/mvc/Scripts/kendo/2021.3.1207/jszip.min.js"></script>
+   
+    <!--BootStrap-->
+        <link rel="stylesheet" href="https://cdn.bid4assets.com/app/mvc/Content/css/style-county-auction-05.css" />
+        <link rel="stylesheet" href="https://cdn.bid4assets.com/app/mvc/Content/css/new-style-channel-20190520-1.css" />
+        <style type="text/css">
+            #new-container-right {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            body {
+                background-color: #ffffff;
+            }
+        </style>
+       <link rel="stylesheet" href="/lib/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+    <!-- Scripts --->
+    <script src="https://cdn.bid4assets.com/app/mvc/Scripts/modernizr-2.8.3.js"></script>
+    <script type="text/javascript" src="https://cdn.bid4assets.com/app/mvc/Scripts/new-menu.js"></script>
+
+   <!--StyleSheets-->
+
+    
+        
+    
+       <link href="/css/new-style-footer-2024-1.css" rel="stylesheet" type="text/css" />
+     
+
+   <link rel="stylesheet" href="https://cdn.bid4assets.com/app/mvc/Content/font-awesome-4.7.0/css/font-awesome.min.css" />
+
+
+
+    
+    <style type="text/css">
+        div.footer-content {
+            width: 1200px;
+        }
+
+        #additional-info-footer {
+            width: 920px;
+        }
+
+        .ac-container input:checked ~ article.ac-echeck-information {
+            height: 750px;
+        }
+    </style>
+        <style type="text/css">
+            .ac-container input:checked ~ article.ac-additional-deposit-information {
+                min-height: 850px;
+            }
+        </style>
+        <style type="text/css">
+            .ac-container input:checked ~ article.ac-researching-property {
+                height: 940px;
+            }
+        </style>
+        <style type="text/css">
+            .ac-container input:checked ~ article.ac-how-to-bid {
+                height: 1330px;
+            }
+        </style>
+        <style type="text/css">
+            .ac-container input:checked ~ article.ac-after-the-auction {
+                height: 950px;
+            }
+        </style>
+
+    
+            <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
+        }({
+            instrumentationKey: "15da35aa-34fa-404b-ae87-916204dcce5d"
+        });
+
+        window.appInsights = appInsights;
+        appInsights.trackPageView();
+    </script>
+
+        <script type="text/javascript">
+            function showActionWindowWithText(title, text) {
+                text += '<br /><br /><input type="button" value="OK" id="bttnWindowOk" class="k-button" onclick="closeActionWindow()"  aria-label="OK" />';
+                var actionWindow = $("#actionWindow").data("kendoWindow");
+                actionWindow.title(title);
+                actionWindow.content('<div style="text-align:center;">' + text + '<br /></div>');
+                actionWindow.center();
+                actionWindow.open();
+            }
+
+            function closeActionWindow() {
+                var actionWindow = $("#actionWindow").data("kendoWindow");
+                actionWindow.close();
+            }
+            var popupNotification;
+
+            function showNotificationText(text, notificationType) {
+                var d = new Date();
+                popupNotification = $("#popupNotification").data("kendoNotification");
+                popupNotification.show(kendo.toString(d, 'h:MM:ss tt') + " " + text, notificationType);
+            }
+
+            function actionKendoWindowResized(e) {
+                iframeHeight = e.sender.wrapper.height() - 45;
+                $("#" + e.sender.element[0].id).find(">:first-child").css("min-height", iframeHeight + "px");
+            }
+
+
+        </script>
+        <script type="text/javascript" src="/js/client/session_helper.js" async=async></script>
+        <script language="Javascript" type="text/javascript" src="/js/live_visitor.js" async></script>
+<script type="text/javascript">
+    var hasAntiForgeryToken = false;
+    function checkLoginAndRedirect(redirectUrl, successFunction) {
+        login_page_options.redirectUrl = redirectUrl;
+        if ($("#hidden-anti-forgery-container-header").length) { hasAntiForgeryToken = true; } else { hasAntiForgeryToken = false; }
+        var ajaxOptions = {
+            type: 'POST',
+            dataType: 'json',
+            url: "/api/authentication/isuserloggedin",
+            data: "T=" + new Date().getTime(),
+            success: function (data) {
+                if (data.statusCode == 200) {
+                    successFunction();
+                } else {
+                    displayLoginDialog(successFunction, "");
+                }
+            },
+            error: function (xhr, err) {
+                displayLoginDialog(successFunction, "");
+            },
+            traditional: true
+        };
+        if (hasAntiForgeryToken) {
+            ajaxOptions.headers = { "X-CSRF-Header-Token": $("#hidden-anti-forgery-container-header input[name='__RequestVerificationToken']").val() };
+        }
+        $.ajax(ajaxOptions);
+    }
+</script>
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KQ5TTXZ');
+    </script>
+    <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ5TTXZ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager -->
+    <script type="text/javascript" async src="https://cdn.bid4assets.com/app/mvc/Scripts/engagement.js"></script>
+    <script type="text/javascript">
+        var engagementScriptLoaded = false;
+        function didFinishLoadingEnagementScriptCallback() {
+            engagementScriptLoaded = true;
+        }
+
+        function logSiteEngagementAnalytic(auctionID, funcTypeHash, funcNameHash, payload) {
+            if (engagementScriptLoaded) {
+                siteAnalyticsEngagement_LogData(auctionID, funcTypeHash, funcNameHash, payload);
+            }
+        }
+    </script>
+<!-- end Cookie Popup -->
+<!-- end Cookie Popup -->
+
+    <link href="https://cdn.bid4assets.com/app/mvc/Content/css/responsive-override-2020-09.css" />
+</head>
+
+<body class="">
+
+    <!-- ------------------------ HEADER ----------------------------- -->
+
+    <div id="modalAlertDialog"></div>
+<script type="text/javascript">
+    var modalAlertDialogCallbackTemp;
+
+    function onModalAlertDialogClose() {
+        if (modalAlertDialogCallbackTemp != null) {
+            modalAlertDialogCallbackTemp();
+        }
+       // $("#modalAlertDialog").data("kendoDialog").destroy();
+    }
+
+    function showModalAlertDialog(title, text, modalAlertDialogCallback) {
+        console.log(text);
+        var modalAlertDialog = $('#modalAlertDialog');
+        if (modalAlertDialog.data("kendoDialog")) {
+            console.log(modalAlertDialog.data("kendoDialog"));
+            modalAlertDialog.data("kendoDialog").title(title);
+            modalAlertDialog.data("kendoDialog").content(text);
+            modalAlertDialog.data("kendoDialog").open();
+        } else {
+            modalAlertDialogCallbackTemp = modalAlertDialogCallback;
+            modalAlertDialog.kendoDialog({
+                width: "450px",
+                title: title,
+                closable: false,
+                modal: true,
+                content: "<p>" + text + "<p>",
+                actions: [
+                    { text: 'OK', primary: true }
+                ],
+                close: onModalAlertDialogClose
+            });
+        }
+
+    }
+</script>   
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+    :root {
+    --opensans-regular: 'Open Sans', sans-serif;
+    --opensans-semibold: 'Open Sans', sans-serif;
+    }    
+</style>
+<link rel="stylesheet" href="https://cdn.bid4assets.com/app/nextgen/nextgen-new-layout-header.css" />
+<script type="text/javascript" src="https://cdn.bid4assets.com/app/mvc/Scripts/registration-check-v2.js" defer></script>
+<header class="county-auction">
+    <div class="logo">
+            <a href="/"><img src="https://cdn.bid4assets.com/app/nextgen/B4A-LOGO-2024-small.png" alt="B4A Logo"></a>
+    </div>
+        <div class="assethoundlogo">
+                <a target="_blank" href="/assethound" aria-label="Asset Hound (opens in new tab)"><img src="https://cdn.bid4assets.com/app/homepage/images/assethoundlogo.png" alt="Asset Hound Logo"></a>
+        </div>
+        <div id="header-right">
+                <div class="follow-us">
+                    <p>Follow us:</p>
+                    <div id="social-icons-top">
+                        <a href="https://www.facebook.com/Bid4Assets" rel="noopener noreferrer" target="_blank" title="Bid4Assets" aria-label="Bid4Assets on Facebook (opens in a new tab)"><div id="facebook-new" class="social-top" role="presentation"></div></a>
+                        <a href="https://twitter.com/#!/bid4assetstweet" rel="noopener noreferrer" target="_blank" title="Twitter" aria-label="Bid4Assets on Twitter (opens in a new tab)"><div id="twitter-new" class="social-top" role="presentation"></div></a>
+                        <a href="http://www.youtube.com/user/bid4assets" rel="noopener noreferrer" target="_blank" title="Youtube!" aria-label="Bid4Assets on YouTube (opens in a new tab)"><div id="youtube-new" class="social-top" role="presentation"></div></a>
+                        <a href="https://www.linkedin.com/company/bid4assets" rel="noopener noreferrer" target="_blank" title="LinkedIn" aria-label="Bid4Assets on LinkedIn (opens in a new tab)"><div id="linkedin-new" class="social-top" role="presentation"></div></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+                <div id="auction-field" style="width:445px;">
+                    <form id="search-form" name="search-form" method="get" action="/search/redirect/get">
+                        <div id="hidden-anti-forgery-container-header" style="display:none;"><input name="__RequestVerificationToken" type="hidden" value="CfDJ8GHXQqMZ8zNMlmIsqVsDFIQ0xZNrzNBUeSSkyd0kN0y7SsoorU5PwQtEG5ncFO6-WBq6p70uonVbIvkQgCOL8_N2h7lfc4HFH9gYidB1LlGIMvnN6Yc5vCF-89DsKTWmtxweLjMiBbiXkEDUBIv7Mik" /></div>
+                        <input type="hidden" name="fuseaction" value="search" />
+                        <div class="form-radio-item-wrapper">
+                            <span class="form-radio-item" style="margin-right: 15px;">
+                                <input type="radio" class="css-checkbox" id="search-keyword" name="Type" value="auctions" checked="checked"  aria-label="Search keyword" />
+                                <label for="search-keyword" class="css-label"> Keyword </label>
+                            </span>
+                            <span class="form-radio-item">
+                                <input type="radio" class="css-checkbox" id="search-auction-id" name="Type" value="auctionID" onclick="this.form.criteria.focus()"  aria-label="Search auction id" />
+                                <label for="search-auction-id" class="css-label"> Auction ID# </label>
+                            </span>
+                        </div>
+                        <input type="text" class="form-textbox" data-type="" id="input_40" name="criteria" size="20" value="" aria-label="Search criteria" />
+                        <button id="" type="button" class="" onclick="$('#hidden-anti-forgery-container-header').remove();this.form.submit()">GO</button>
+                        <div class="clearfix"></div>
+                        <h6><a href="/v5/search">Advanced search</a></h6>
+                    </form>
+                </div><!-- end auction-field -->
+        </div><!-- header right -->
+    <div class="clearfix"></div>
+
+        <div id="nav-line-wrapper">
+                <div id="weekly-email-alerts" style="cursor:pointer" onclick="document.location = '/registration/signup/emailsubscriptions'" role="button" tabindex="0">
+                    Sign up for Weekly Email Alerts
+                </div><!-- end weekly-email-alerts -->
+                <div id='new-menu' style="">
+                    <ul role="navigation" aria-label="Main navigation">
+                        <li><a href="/"><span>HOME</span></a></li>
+                        <li><a href="/listing/ez"><span>SELL</span></a></li>
+                            <li><a href="/registration/signup/step1"><span>SIGN UP</span></a></li>
+                            <li><a href="/myaccount/login?returnUrl=%2Fmyb4a"><span>MY ACCOUNT / LOGIN</span></a></li>
+                            <li class='last'><a href="/help/support/contactus"><span>CONTACT US</span></a></li>
+                    </ul>
+                </div><!-- end new-menu -->
+            <div class="clearfix"></div>
+
+        </div><!-- end nav-line-wrapper -->
+</header>
+
+    <!-- ------------------------ END HEADER ------------------------- -->
+    <!-- ----------------------- NAV LEFT SIDE ----------------------- -->
+
+    <!-- --------------------- END NAV LEFT SIDE --------------------- -->
+    <!-- ------------------------ FORM ------------------------- -->
+<main class="container">
+
+
+    
+<div class="col-md-10 property-auction">
+
+
+    <div class="banner-property-auction">
+        <div class="pull-left bpatext">
+            <h1>County of<br>Kings, California<br></h1><h2>Treasurer-Tax Collector<br>Tax Defaulted Properties Auction</h2><h3>Special Opportunity</h3>
+        </div>
+        <img src="https://s3.amazonaws.com/images-s3.bid4assets.com/storefront/sfmd_11406_10_b185619b067349369677c52660a5a9db.jpg" class="seal pull-right">
+        <div class="clearfix"></div>
+
+    </div><!-- end banner-property-auction -->
+
+
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="dates-auction-wp">
+                <h4 class="panel-title dates-auction">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Important Dates
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="dates-auction-wp">
+                <div class="panel-body">
+
+                    <!-- The Timeline -->
+
+                    <ul class="timeline">
+
+                        <!-- Starts -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="time-label">Starts</span>
+                                    <span class="flag arrow_box">March 11, 2022 at 11:00 AM ET (8:00 AM PT)</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Ends -->
+                        <li>
+                            <div class="direction-r dir-last-child">
+                                <div class="flag-wrapper ends-point">
+                                    <span class="time-label">Ends</span>
+                                    <span class="flag arrow_box">March 15, 2022 <strong>Closing times vary; check <a href="#auctions">Auctions</a> for details.</strong></span>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                        <ul class="timeline2">
+                            <!-- Starts -->
+                            <li>
+                                <div class="direction-r">
+                                    <div class="flag-wrapper">
+                                        <span class="time-label">Deposit Deadline</span>
+                                        <span class="flag arrow_box" style="margin-left: 120px;">March 7, 2022 at 4:00 PM ET (1:00 PM PT)</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Ends -->
+                            <li>
+                                <div class="direction-r dir-last-child">
+                                    <div class="flag-wrapper ends-point">
+                                        <span class="time-label">Settlement Deadline</span>
+                                        <span class="flag arrow_box" style="margin-left: 120px;">March 18, 2022 at 4:00 PM ET (1:00 PM PT)</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="deposit-instructions-wp">
+                    <h4 class="panel-title deposit-instructions">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Deposit Instructions
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="deposit-instructions-wp">
+                    <div class="panel-body">
+                        <div class="col-md-7 pl">
+                            <h5>Kings County, CA Tax Collector is offering 20 parcels for auction online.</h5><h5>Bids start as low as <strong>$2,500.00</strong></h5><p>These are all NO RESERVE auctions! Preview Now!</p><h4>Deposit Requirements</h4><p>A single $5,000 deposit (plus a $35 <span style="color:#181818;font-family:arial;font-size:13.3333px;text-align:justify;background-color:#ffffff;">non-refundable&nbsp;</span>processing fee) is required to participate in the Kings County Tax Sale. <strong><em>**Please note that for Kings County, all perspective bidders MUST fill out their vesting information before they are allowed to access the deposit instructions.**&nbsp; </em></strong>Your deposit must be received by Bid4Assets NO LATER THAN 4:00 PM ET (1:00 PM PT) Monday, March 1st. Please make your deposit well in advance of the auction in order to ensure your eligibility to bid.</p><h4>Deposit Refunds</h4><p>All deposits to non-winning bidders will be refunded via eCheck within 10 business days after the close of this auction. For further details regarding refund and post-auction procedures, please consult the Key Information section below and select the "After the Auction" tab.</p>
+                        </div>
+                        <div class="col-md-5 pull-right video-wp">
+                            <button style="font-size: 20px;" onclick="document.location='/deposits/new/1034283';">Click Here For Deposit Instructions</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="settlement-instructions-wp">
+                    <h4 class="panel-title deposit-instructions">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Settlement Instructions
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="settlement-instructions-wp">
+                    <div class="panel-body">
+                        <div class="col-md-12 pl">
+                            <p>Full payment must be received by Bid4Assets no later than <span style="text-decoration:underline;">4:00 PM ET (1:00 PM PT) on Friday, March 18, 2022</span>.<em> - No exceptions will be made. </em>If the payment policy is not adhered to the winning bidder will forfeit their deposit to Kings County, CA and may be banned from future sales.</p><p>A California documentary transfer tax will be added to, and collected with, the full purchase price. This tax is calculated at the rate of $.55 for each $500.00 or fractional part thereof, if the purchase price exceeds $100.00.&nbsp; Also, a $35 (non-refundable) per-parcel-won administrative fee will be added to the final sale price.</p><p>Only a successful bidder has the opportunity to purchase County assets. If the successful bidder defaults, under California State Law, The County cannot resort to the second highest bidder, and will be required to take APPROPRIATE LEGAL ACTION AGAINST THE BIDDER WHO DEFAULTS.</p><p><span style="box-sizing:border-box;font-weight:700;color:#333333;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:#ffffff;">There is a 10% Buyer's Premium (a $100 minimum) associated with the sale of this parcel. (The Buyer's Premium covers the costs associated with the auction). This amount will be added to the winning bid and will be included in the total purchase price paid by the Buyer to the Seller.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="key-information-wp">
+                <h4 class="panel-title key-information">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Key Information
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="key-information-wp">
+                <div class="panel-body">
+
+                    <section class="ac-container">
+                        <div>
+                            <input id="ac-1" name="accordion-1" type="checkbox" aria-label="Toggle section 1">
+                            <label for="ac-1">Registration</label>
+                            <article class="ac-registration">
+                                <div class="space20"></div>
+                                <p><a href="https://secure.bid4assets.com/mvc/registration/signup/step1" target="_blank" rel="noopener" data-mce-href="https://secure.bid4assets.com/mvc/registration/signup/step1">Create a Bid4Assets account</a> which is required to participate in any county tax sale. The process is quick, free, and easy.</p><p>Already have an account? Proceed to Deposit Instructions</p>
+                                <a href="https://www.youtube.com/watch?v=obgnqB2k8Wg" rel="noopener noreferrer" target="_blank" aria-label="Video Registration Tutorial (opens in a new tab)"><img src="https://cdn.bid4assets.com/app/mvc/Content/img/video.jpg" class="video-registration" alt="Video Tutorial Thumbail Icon" border="0" /></a>
+                                <div class="space20"></div>
+                            </article>
+                        </div>
+                            <div>
+                                <input id="ac-2" name="accordion-1" type="checkbox" aria-label="Toggle section 2">
+                                <label for="ac-2">Additional Deposit Information</label>
+                                <article class="ac-additional-deposit-information">
+                                    <div class="space20"></div>
+                                    <p>Please select the orange “Click Here for Deposit Instructions” link above to submit your deposit. Please review the following additional information on deposits.</p>
+<ol>
+<li>Only one deposit is required to bid on every property available in this tax sale.</li>
+<li>Please reference the deposit ID listed in the instructions, rather than the ID of any individual auction. The deposit ID listed in the instructions is unique to this tax sale. Regardless of which auctions you plan to bid on, please use the deposit ID in the instructions.</li>
+<li>Only certified check/money order or wire transfer are accepted. ACH, direct deposit, credit card, or money transfers will be rejected. Please do NOT deposit funds directly into Bid4Assets’ escrow account.</li>
+<li>There is no limit to the amount you can bid; the bid deposit does not cap your bidding; it is simply a requirement to participate. Please do NOT send more money than the amount required deposit, or your deposit may be rejected.</li>
+
+<li>Please allow up to 48 business hours to acknowledge receipt of your deposit. You will be notified by email and in your message center when you are cleared to bid. Please note, certified checks/money orders may take an additional business day to process.</li>
+<li>For deposits received after the deadline, no guarantees can be made for participation. Bid4Assets’ deposit services team works diligently to clear deposits as quickly as possible, even late ones.</li>
+</ol>
+<div style="margin: 15px;">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/1J1Uz_DAMV0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+                                    <div class="space20"></div>
+                                </article>
+                            </div>
+                        <div>
+                            <input id="ac-3" name="accordion-1" type="checkbox" aria-label="Toggle section 3">
+                            <label for="ac-3">Researching Property</label>
+                            <article class="ac-researching-property">
+                                <div class="space20"></div>
+                                <p>Bid4Assets urges all bidders to examine the title, location and desirability of all properties available in this sale to their own satisfaction prior to bidding. </p>
+<p>If you are unable to discern desired information about a property through independent research, you are encouraged to contact the County in which the property is located. This information can be found in the “Contact Information” section.</p>
+<p>Below you will find a video guide hosted by Bid4Assets CEO providing tips and highlighting best practices for researching tax sale properties prior to bidding for your convenience. </p>
+<div style="margin: 15px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/tyHyxdwc444" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p>You will find an additional video below demonstrating useful navigation tips for this landing page which can help you prepare for the sale prior to bidding.</p>
+<div style="margin: 15px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/hZcGA3cp098" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+                                <div class="space20"></div>
+                            </article>
+                        </div>
+                        <div>
+                            <input id="ac-4" name="accordion-1" type="checkbox" aria-label="Toggle section 4">
+                            <label for="ac-4">How to bid</label>
+                            <article class="ac-how-to-bid">
+                                <div class="space20"></div>
+                                <p>When you are ready to bid click “Place Bid” on the auction page.</p>
+<div class="place-bid-btt">place bid</div>
+<p>Enter your bid amount in the Bid Amount box and be sure to agree to all auction terms. At the bottom of the bid window, you will be prompted to reenter your Bid4Assets password as a security measure.
+A more comprehensive, step-by- step guide to bidding is available by <a href="https://secure.bid4assets.com/Help/index.cfm?fuseAction=howToBid" target="_blank" rel="noopener" data-mce-href="https://secure.bid4assets.com/Help/index.cfm?fuseAction=howToBid">clicking here</a>.
+<h4>Additional Bid information</h4>
+<p><strong>What is an Auto Bid?</strong> An auto bid is a maximum proxy bid which is held in confidence by the system. Bid4Assets will use only as much of the maximum bid as is necessary to maintain the bidder's high bid position or to meet the reserve. Please note: If two bidders place auto bids for identical amounts on the same auction, the earlier bid will take priority.</p>
+<h4>Examples of Auto Bid:</h4>
+<ul><li>1.	If the auction has a minimum bid of $200 and you enter your maximum bid amount of $400, your bid will automatically be placed at $200. Your bid will automatically increase as other bidders participate, up to your $400 maximum bid amount.</li>
+<li>2.	If the auction has a Reserve Price of $20,000 (this amount is hidden from bidders) and you enter an Auto Bid of $18,000, your bid will automatically be placed at $18,000. The Reserve Price has not been met so there will be no winning bidder unless additional bids are placed.</li>
+<li>3.	If the auction has a Reserve Price of $20,000 (this amount is hidden from bidders) and you enter an Auto Bid of $21,000, your bid will automatically be placed at the Reserve Price of $20,000. If another bidder jumps in, your bid will automatically increase until you meet your $21,000 maximum bid.</li>
+</ul>
+<p>
+<strong>What is Overtime?</strong> 
+<br>
+Overtime is the extension of an auction’s close time that keeps the auction open as long as there is active bidding on it. It occurs automatically when a bid is placed within the last few minutes of an auction. The auction will remain open until an entire overtime increment (typically five minutes) has passed without any bidding. The overtime increment for an auction will be indicated on the auction listing.</p>
+<p>
+<strong>How can I Monitor My Auctions?</strong><br> 
+When participating in multiple auctions at once, it is advisable to only actively bid on one property at a time. You can find a list of properties that you have bid on in the “my bid list” tab of your profile. You will also receive confirmations of your placed bids as well as notifications of being out bid in your message center.</p>
+<p>
+<strong>Can I bid on Withdrawn or Postponed Auctions?</strong><br>  
+No. Auctions must be live in order for you to able to place a bid. If a property is withdrawn or postponed by a county for any reason, it is no longer open for bidding. Please note, Bid4Assets does not have knowledge of why a property is withdrawn or postponed.</p>
+<div style="margin: 15px;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5RBzISrq-aE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+                            </article>
+                        </div>
+                        <div>
+                            <input id="ac-5" name="accordion-1" type="checkbox" aria-label="Toggle section 5">
+                            <label for="ac-5">After the Auction</label>
+                            <article class="ac-after-the-auction">
+                                <div class="space20"></div>
+                                <p>At the close of an auction, the highest bidder will be deemed the winner. After all the auctions in the county have closed, winning bidders will be notified in their message center if they have won any auctions. They will also receive details on auction settlement requirements. The winning bidder will see each of the parcels that they won listed as a link to DeedWizard.</p> 
+<p>DeedWizard allows bidders to provide vesting information quickly and easily for any property they have won and access settlement instructions. Any bidder that does not win a parcel or does not participate in the auction after submitting a deposit will receive a refund.</p>
+<h4>Winning Bidders</h4>
+<ul><li>Winning bidders will be notified in their message center after every auction in the tax sale has closed. A DeedWizard link is provided for quick and easy transfer of vesting information.</li>
+<li>Please review the county terms of sale for the payment deadline and make sure you have enough funds on hand to complete the sale within the deadline cited <strong>prior to bidding</strong>.</li>
+<li>When making a settlement payment, please reference the auction IDs for the specific parcels you won.</li>
+<li>Your deed will be transferred by the county within the timeframe specified in the county’s terms of service. Generally, this can be anywhere from three weeks to three months. For questions relating to the timeline on recording the deed, please contact the county.</li>
+</ul>
+<h4>All Other Participants</h4>
+<ul><li>Any bidder who does not win one or more parcels after submitting a deposit will receive a notification after all auctions have closed informing them were an unsuccessful bidder.</li>
+<li>Deposits for unsuccessful bidders will be refunded automatically with no need for request. </li>
+<li>Refund checks will be sent via eCheck shortly after the close of the auction. Bidders will be notified via an additional email when their eCheck refund has been sent.</li>
+<li>Refund eChecks will be sent to the email address associated with a bidder’s profile on Bid4Assets and made out to the name associated with that bidder’s Bid4Assets account. Please ensure this information is up to date before submitting a deposit.</li>
+</ul>
+<div style="margin: 15px;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rc8P9brEEMo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+                                <div class="space20"></div>
+                            </article>
+                        </div>
+                        <div>
+                            <input id="ac-6" name="accordion-1" type="checkbox" aria-label="Toggle section 6">
+                            <label for="ac-6">Contact Information</label>
+                            <article class="ac-contact-information">
+                                <div class="space20"></div>
+                                <p>For questions about the auction and the bidding process, please contact <a href="mailto:service@bid4assets.com" data-mce-href="mailto:service@bid4assets.com">service@bid4assets.com</a><br data-mce-bogus="1"></p><p>Additional county information can be obtained at the <a href="https://www.countyofkings.com/departments/administration/finance-department/tax-collector" target="_blank" rel="noopener" data-mce-href="https://www.countyofkings.com/departments/administration/finance-department/tax-collector">Kings County, CA Tax Collector website</a><br data-mce-bogus="1"></p><p>For questions about the assets and information that is not listed in the auction, please contact the county at <a href="mailto:tax.sale@co.kings.ca.us" data-mce-href="mailto:tax.sale@co.kings.ca.us">tax.sale@co.kings.ca.us</a><br data-mce-bogus="1"></p>
+                                <div class="space20"></div>
+                            </article>
+                        </div>
+                        <div>
+                            <input id="ac-7" name="accordion-1" type="checkbox" aria-label="Toggle section 7">
+                            <label for="ac-7">Disclaimer</label>
+                            <article class="ac-disclaimer">
+                                <div class="space20"></div>
+                                <p><strong>Research and Inspect Thoroughly Before You Bid</strong><br>Prospective purchasers are urged to examine the title, location and desirability of the properties available to their own satisfaction prior to the sale.</p><p><strong>Properties are sold "AS IS"</strong><br>The sale of these properties should not, in any way, be equated to real estate sales by licensed salespeople, brokers or realtors. Kings County makes no guarantee, expressed or implied, relative to the title, location or condition of the properties for sale. Property taxes currently due will be paid from the proceeds of the sale.</p><p><strong>Important Disclaimer</strong><br>Kings County is not liable for the failure of any device that is not owned, operated, and managed by the state or county, that prevents a person from participating in any sale. “Device” includes, but is not limited to, computer hardware, a computer network, a computer software application, and a computer Web site. Kings County assumes no liability for any other possible liens, encumbrances or easements, recorded or not recorded.</p><p><strong>Please Note</strong><br>Prospective purchasers are advised that some bonds or other assessments which are levied by agencies or offices other than the treasurer-tax collector may still be outstanding after the tax sale; in addition, the I.R.S. has the option of redeeming, up until 120 days after the sale, any property on which there is an I.R.S. lien recorded.</p><p><strong>You must be at leaset 18 years old to bid<br>ALL SALES ARE FINAL!</strong></p>
+                                <div class="space20"></div>
+                            </article>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="tax-sale-documents-wp">
+                <h4 class="panel-title tax-sale-documents">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        General Tax Sale Documents
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tax-sale-documents-wp">
+                <div class="panel-body">
+                    <div class="tabel-info">
+                        <div class="tabel-info-head">General Tax Sale Information</div>
+                        <ul>
+                                <li><a target="_blank" href="/storefront/viewduediligence/8538?collectionId=5374&key=e7d732a0-9683-48f8-b605-0410dafa5fb0" aria-label="County Terms Of Sale (opens in a new tab)"><span class="pdf-icon"></span>County Terms Of Sale</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <a name="auctions" aria-hidden="true"></a>
+            <div class="panel-heading" role="tab" id="auction-folders-wp">
+                <h4 class="panel-title auction-folders">
+                    <a class=&quot;collapsed&quot; role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Auction Folders
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="auction-folders-wp" >
+                <div class="panel-body">
+                    <div>
+                        <div class="col-md-7 video-wp" style="padding: 0px; margin-left: 5px; margin-top: 0px;">
+                            <button style="font-size: 15px; margin: 0px;" onclick="propertyListDownloadWindow();">Click Here to Download Property List Spreadsheet</button>
+                        </div>
+                        <div class="clearfix"></div>
+                        <span style="font-size: 9pt;">* Please allow popups from bid4assets.com to download the property list for this sale.</span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="tabel-info">
+                        <div class="tabel-info-head">
+                            Auction Folders
+                        </div>
+                        <section class="ac-container ac-af" id="folderListView" name="folderListView"></section><script>kendo.syncReady(function(){jQuery("#folderListView").kendoListView({"dataBound":folderListViewBound,"tagName":"section","dataSource":{"type":(function(){if(kendo.data.transports['aspnetmvc-ajax']){return 'aspnetmvc-ajax';} else{throw new Error('The kendo.aspnetmvc.min.js script is not included.');}})(),"transport":{"read":{"url":""},"prefix":""},"schema":{"data":"Data","total":"Total","errors":"Errors","model":{"fields":{"PublishedStorefrontCollectionId":{"type":"number"},"StorefrontCollectionId":{"type":"number"},"PublicationLevelId":{"type":"number"},"StorefrontId":{"type":"number"},"ParentStorefrontCollectionId":{"type":"number","defaultValue":null},"CollectionName":{"type":"string"},"CollectionDescription":{"type":"string"},"Index":{"type":"number"}}}},"data":{"Data":[{"PublishedStorefrontCollectionId":7242,"StorefrontCollectionId":5479,"PublicationLevelId":200,"StorefrontId":11406,"ParentStorefrontCollectionId":5374,"CollectionName":"APNs 002-020-055-000 thru 024-140-014-000 - Closing at 11:00 AM  ET (8:00 AM  PT)","CollectionDescription":"Auction Closing Group 1","Index":1},{"PublishedStorefrontCollectionId":7243,"StorefrontCollectionId":5480,"PublicationLevelId":200,"StorefrontId":11406,"ParentStorefrontCollectionId":5374,"CollectionName":"APNs 030-211-025-000 thru 046-260-015-000 - Closing at 11:15 AM  ET (8:15 AM  PT)","CollectionDescription":"Auction Closing Group 2","Index":2}],"Total":2}},"template":kendo.template(jQuery('#folder-template').html())});});</script>
+                        <script type="text/x-kendo-tmpl" id="folder-template">
+                            <div class="bdgrey">
+                                <input id="ac-#=StorefrontCollectionId#" name="accordion-1" type="checkbox" aria-label="Toggle section">
+                                <label class="bsnone pl50" for="ac-#=StorefrontCollectionId#" onclick="loadAuctionsForCollection(#=StorefrontCollectionId#,#=Index#)"><span class="folder-icon"></span>#=CollectionName#</label>
+                                <article class="ac-large" id="cts-auction-display-container-#=StorefrontCollectionId#"></article>
+                            </div>
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div><!-- end property-auction -->
+
+<script type="text/javascript">
+    var collectionArray = [];
+    var collectionOpenState = [];
+    var selectedCollectionId = 0;
+    var selectedCollectionIndex = 0;
+
+collectionOpenState.push(false);collectionOpenState.push(false);
+    function folderListViewBound(e) {
+        $("#folderListView").prop("class", "ac-container ac-af");
+        var folderData = $("#folderListView").data("kendoListView").dataSource.data();
+        collectionArray = [];
+        for (i = 0; i < folderData.length; i++) {
+            collectionArray.push(folderData[i].StorefrontCollectionId);
+        }
+        if (selectedCollectionId > 0) {
+            $("#ac-" + selectedCollectionId).prop("checked", true);
+            loadAuctionsForCollection(selectedCollectionId, selectedCollectionIndex);
+        }
+    }
+
+	function toggleOpenAdditionalDepositInfo(open) {
+		$("#collapseThree").attr("class","panel-collapse collapse in");
+        $("#ac-2").attr("checked", "checked");
+        $("#collapseThree").attr("style", "height: auto");
+	}
+
+    function loadAuctionsForCollection(id, idx) {
+        if (!collectionOpenState[idx-1]) {
+            $.ajax({
+                type: 'GET',
+                dataType: 'html',
+                url: "/storefront/taxsales/getauctiondisplay/11406?storefrontCollectionId=" + id,
+                success: function (data) {
+                    collectionOpenState[idx-1] = true;
+                    $("#cts-auction-display-container-" + id).html(data);
+                    history.pushState('data', '', 'https://www.bid4assets.com/storefront/KingsCAMar22?col=' + id);
+                },
+                error: function (xhr, err) {
+
+                },
+                traditional: true
+            });
+        } else {
+            collectionOpenState[idx-1] = false;
+            $("#cts-auction-display-container-" + id).html("");
+            $("#cts-auction-display-container-" + id).css("height", "0px");
+
+            //$('#auctionGrid-' + id).data('kendoGrid').dataSource.read();
+            //$('#auctionGrid-' + id).data('kendoGrid').refresh();
+        }
+    }
+
+
+    function propertyListDownloadWindow() {
+        checkUserSessionExists($("[name='__RequestVerificationToken']").val(), function (data) {
+            if (data.statusCode == 200) {
+                $("#propertyListDownloadForm").submit();
+            } else {
+                document.location = "/myaccount/login?returnUrl=" + encodeURIComponent("/storefront/KingsCAMar22?propertylistdownload=true");
+            }
+        });
+    }
+
+     $(document).ready(function () {
+        $("#txtSearchKeyword").keypress(function (e) {
+            if (e.which == 13) {
+                document.location = "/v5/search/#sr=1|t=ps|q=" + encodeURIComponent($("#txtSearchKeyword").val()) + "|kt=e|dr=6|as=a|sc=bidclosetime|so=ASC";
+            }
+        });
+
+        $("#txtSearchAuctionID").keypress(function (e) {
+            if (e.which == 13) {
+                document.location = "/v5/search/#t=a%7Cq=" + encodeURIComponent($("#txtSearchAuctionID").val()) + "%7Csc=bidclosetime%7Cso=ASC";
+            }
+        });
+
+        $("#txtSearchAPN").keypress(function (e) {
+            if (e.which == 13) {
+                document.location = "/v5/search/#sr=1|t=ps|q=" + encodeURIComponent($("#txtSearchAPN").val()) + "|kt=e|dr=6|as=a|sc=bidclosetime|so=ASC";
+            }
+        });
+    });
+
+</script>
+
+<div class="col-md-2 sidebar-property-auction">
+
+    <ul role="navigation" aria-label="Auction sidebar navigation">
+        <li><a href="/pages/public/content/help/how-to-participate" target="_blank" aria-label="How to Participate (opens in a new tab)">How to Participate</a></li>
+        <li><a href="/pages/public/content/help/tax-sale-buyer-faqs" target="_blank" aria-label="Tax Sale FAQs (opens in a new tab)">Tax Sale FAQs</a></li>
+        <li><a href="/pages/public/content/help/tax-sale-glossary" target="_blank" aria-label="Tax Sale Glossary (opens in a new tab)">Tax Sale Glossary</a></li>
+        <li><a href="/registration/signup/step1" target="_blank" aria-label="Register It's Free (opens in a new tab)">Register It's Free</a></li>
+        <li><a href="/myb4a/" )" target="_blank" aria-label="View my Account (opens in a new tab)">View my Account</a></li>
+    </ul>
+
+    <div class="search-sidebar">
+        <h4>Search</h4>
+
+        <div>
+            <label for="apn">
+                By APN#
+                <a class="css-tooltip-top color-blue" href="#">
+                    <span>Please remember to enterall of the digits of the APN number including all dashes. If you do not have the full APN number, please download the spreadsheet located below or contact the county.</span>
+                    <img src="https://cdn.bid4assets.com/app/mvc/Content/img/question-mark.png" class="" alt="Question Mark Icon" />
+                </a>
+            </label>
+            <input id="txtSearchAPN" type="search" placeholder="Enter APN" aria-label="Search by APN number" />
+        </div>
+
+        <div>
+            <label for="txtSearchAuctionID">By Auction ID#</label>
+            <input id="txtSearchAuctionID" type="search" placeholder="Enter Auction ID"  aria-label="Enter Auction ID" />
+        </div>
+
+        <div>
+            <label for="txtSearchKeyword">By Keyword</label>
+            <input id="txtSearchKeyword" type="search" placeholder="Enter Keyword"  aria-label="Enter Keyword" />
+        </div>
+    </div>
+
+</div><!-- end sidebar-property-auction-->
+<form id="propertyListDownloadForm" target="_blank" method="post" action="/taxsales/downloadpropertylist/11406">
+    <input type="hidden" name="StorefrontId" value="11406" />
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8GHXQqMZ8zNMlmIsqVsDFIQ0xZNrzNBUeSSkyd0kN0y7SsoorU5PwQtEG5ncFO6-WBq6p70uonVbIvkQgCOL8_N2h7lfc4HFH9gYidB1LlGIMvnN6Yc5vCF-89DsKTWmtxweLjMiBbiXkEDUBIv7Mik" />
+</form>
+
+
+
+    </main>
+    <!-- end new-container-right -->
+
+    <div class="clearfix"></div>
+    <!-- ------------------------ END FORM --------------------------- -->
+    <!-- ------------------------ FOOTER ----------------------------- -->
+
+            <div style="border-top: 1px solid #ddd; margin-top: 10px;">
+        <footer>
+            <div id="footer-menu" class="pull-left">
+                <a href="" class="footer-logo"><img src="https://cdn.bid4assets.com/app/nextgen/B4A-LOGO-2024-small2.png" alt=""></a>
+                <ul role="navigation" aria-label="About B4A">
+                    <li><a href="/pages/public/content/b4a">About Us</a></li>
+                    <li><a href="/help/support/contactus">Contact Us</a></li>
+                    <li><a href="/pages/public/content/b4a/jobs">Jobs</a></li>
+                    <li><a href="/pages/public/content/b4a/partners">Courthouse Steps<sup>&reg;</sup></a></li>
+                </ul>
+            </div><!-- end footer-menu -->
+
+            <div id="additional-info-footer" class="pull-right">
+                <div class="col-md-3 pull-left">
+                    <h3>NEED TO KNOW</h3>
+                    <ul role="navigation" aria-label="Need to know">
+                        <li><a href="/pages/public/content/b4a/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/pages/public/content/b4a/terms-of-service">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 pull-left">
+                    <h3>FOR SELLERS</h3>
+                    <ul role="navigation" aria-label="For sellers">
+                        <li><a href="/listing/ez">Sell an Asset</a></li>
+                        <li><a href="/sheriff-sale-government-auctions">Sheriff's Sales</a></li>
+                        <li><a href="/county-government-auctions">County Government Sellers</a></li>
+                        <li><a href="/pages/public/content/help#selling">Seller Help</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 pull-left">
+                    <h3>FOR BUYERS</h3>
+                    <ul role="navigation" aria-label="For buyers">
+                        <li><a href="/registration/signup/emailsubscriptions">Weekly Email Alert</a></li>
+                        <li><a href="/pages/public/content/help/seller-rating-system"> Rate a Seller</a></li>
+                        <li><a href="/pages/public/content/ivids">Video Tutorials</a></li>
+                        <li><a href="/pages/public/content/help">Buyer Help</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 pull-left">
+                    <h3>USEFUL LINKS</h3>
+                    <ul role="navigation" aria-label="Useful links">
+                        <li><a href="/myb4a">My Account/Login</a></li>
+                        <li><a href="/forms/sellyourproperty">Have Property to Sell?</a></li>
+                        <li><a href="/testimonials">Testimonials</a></li>
+                        <li><a href="mailto:testimonials@bid4assets.com?subject=Buyer Testimonial">Submit a Testimonial</a></li>
+                        <li><a href="mailto:feedback@bid4assets.com?subject=Feedback for Bid4Assets">Give Us Your Feedback</a></li>
+                    </ul>
+                </div>
+            </div><!-- end additional-info-footer -->
+
+            <div class="clearfix"></div>
+
+            <div id="footer-bottom">
+                <div class="pull-left col-md-8">
+                    <p>BID4ASSETS.com&reg; is a registered trademark of Bid4Assets, Inc.</p>
+                    <p>Where Great Deals Click&trade;; Bid4Assets&trade;; Copyright &copy; 1999-2026 ALL RIGHTS RESERVED Bid4Assets, Inc.</p>
+                </div>
+                <div class="pull-right col-md-4">
+                    <a href="https://www.bbb.org/washington-dc-eastern-pa/business-reviews/online-auctions/bid4assets-inc-in-silver-spring-md-1036083" rel="noopener noreferrer" aria-label="Bid4Assets Better Business Bureau profile (opens in new tab)"><img src="https://cdn.bid4assets.com/app/mvc/Content/Images/footer/bbb.jpg" class="logo-company" alt="Better Business Bureau Logo"></a>
+                    <img src="https://cdn.bid4assets.com/app/mvc/Content/Images/footer/naa.jpg" class="logo-company" alt="NAA Logo" />
+                    <a href="https://www.gsa.gov/" rel="noopener noreferrer" aria-label="U.S. General Services Administration website (opens in new tab)"><img src="https://cdn.bid4assets.com/app/mvc/Content/Images/footer/gsa.jpg" class="logo-company" alt="GSA Logo"></a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </footer>
+    </div>
+<div id="popupAlertDialog"></div>
+
+
+        <!-- ------------------------ END FOOTER ------------------------- -->
+<span id="popupNotification" name="popupNotification"></span><script>kendo.syncReady(function(){jQuery("#popupNotification").kendoNotification({"position":{"pinned":true}});});</script>                
+<div class="k-hidden" id="actionWindow" name="actionWindow"></div><script>kendo.syncReady(function(){jQuery("#actionWindow").kendoWindow({"resize":actionKendoWindowResized,"open":actionKendoWindowResized,"iframe":true,"scrollable":true,"visible":false,"content":null,"draggable":false,"actions":["Close"],"resizable":false,"title":"","modal":true});});</script>        <div id="dialogBox">
+        </div>
+                <div id="loginDialog"></div>
+
+<script src="/js/client/session.js?abb6f08d-22b2-4e28-9de0-a4ca0252bc54"></script>
+<script type="text/javascript">
+    var login_page_options = {
+        resendEmailConfirmationToken : "",
+        apiResendEmailConfirmationUrl : "/api/authentication/account/resendconfirmationemail",
+        apiLoginUrl: "/api/authentication/session",
+        apiSingleSignOnUrl: "",
+        requiresCaptcha : false,
+        captchaResponse: "",
+        loginResult: {},
+        redirectUrl: "",
+        singleSignOnToken: "",
+        defaultRedirectUrl: "/myaccount/home",
+        createAuthenticationTicket: true,
+        loginStarted: false,
+        inviteEmailAddress: "",
+        inviteToken: ""
+    };
+
+    var globalLoginCallback;
+    var dialogButtonPressed = false;
+
+    function displayLoginDialog(loginCallback,msg) {
+        globalLoginCallback = loginCallback;
+        var loginDialog = $('#loginDialog');
+        dialogButtonPressed = false;
+
+        loginDialog.kendoDialog({
+            width: "400px",
+            title: "Session expired. Please login.",
+            closable: false,
+            modal: true,
+            content: '<div style="padding-bottom:5px;margin-top:-10px;color:#ff0000;font-weight:bold;display:none;" id="dialogErrorMessage"></div><strong>Please login to continue.</strong><br />Enter your username/email and password below. Then, click LOGIN.<br /><strong style="color:#f00">Important Note</strong>: Passwords are Case-Sensitive.<br /><div id="new-form-style" style="margin: 0px;"><ul><li class="form-line"><label class="form-label-left" for="Username">Username</label><input class="form-textbox" data-val="true" data-val-required="The Username field is required." id="txtDialogUsername" name="Username" value="" type="text" aria-label="Dialog Username"><span id="txtDialogUsernameValidation" class="field-validation-valid" data-valmsg-for="Username" data-valmsg-replace="false">*</span></li><li class="form-line"><label class="form-label-left" for="Password">Password</label><input class="form-textbox" data-val="true" data-val-required="The Password field is required." id="txtDialogPassword" name="Password" type="password" aria-label="Dialog Password"><span id="txtDialogPasswordValidation" class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="false">*</span></li></ul></div>',
+            actions: [
+                { text: 'Forgot my password', action: onDialogForgotPasswordClicked },
+                { text: 'LOGIN', primary: true, action: onDialogLoginClicked }
+            ],
+            close: onDialogLoginClose
+        });
+    }
+
+    function onDialogForgotPasswordClicked(e) {
+        dialogButtonPressed = true;
+        document.location = "/myaccount/forgotpassword";
+    }
+
+    function onDialogLoginClose(e) {
+        if (!dialogButtonPressed) {
+            document.location = "/myaccount/login";
+        }
+    }
+
+    function onDialogLoginClicked(e) {
+        dialogButtonPressed = true;
+        dialogUsernameValid = false;
+        dialogPasswordValid = false;
+
+        if ($("#txtDialogUsername").val() == "") {
+            $("#txtDialogUsernameValidation").prop("class", "field-validation-error");
+        } else {
+            $("#txtDialogUsernameValidation").prop("class", "field-validation-valid");
+            dialogUsernameValid = true;
+        }
+
+        if ($("#txtDialogPassword").val() == "") {
+            $("#txtDialogPasswordValidation").prop("class", "field-validation-error");
+        } else {
+            $("#txtDialogPasswordValidation").prop("class", "field-validation-valid");
+            dialogPasswordValid = true;
+        }
+
+        if (dialogPasswordValid && dialogUsernameValid) {
+            var loginModel = {
+                "apiScope": "/public",
+                "username": $("#txtDialogUsername").val(),
+                "password": $("#txtDialogPassword").val(),
+                "domain": "bid4assets.com",
+                "createSessionCookie": true,
+                "redirectUrl": login_page_options.redirectUrl,
+                "createAuthenticationTicket": login_page_options.createAuthenticationTicket,
+                "inviteEmailAddress": login_page_options.inviteEmailAddress,
+                "inviteToken": login_page_options.inviteToken,
+                "redirectLocationId": 3
+            };
+            userSessionLogin(loginModel, globalLoginCallback);
+        } else {
+            dialogButtonPressed = false;
+        }
+        return false;
+    }
+</script>
+
+
+            <script type="text/javascript" src="/lib/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bid4assets.com/app/mvc/Content/js/main.js"></script>
+        <style type="text/css">
+            footer {
+                width: 1110px;
+                margin: 0px auto 0 auto;
+                background: #ffffff;
+            }
+        </style>
+    <style type="text/css">
+        .pull-left {
+            float: left !important;
+        }
+
+        .pull-right {
+            float: right !important;
+        }
+        .k-button-text
+        {
+            font-size: 10pt !important;
+        }
+        .k-scheduler-cell
+          {
+            font-size: 10pt !important;
+        }
+        .k-dialog-content
+        {
+            font-size: 10pt !important;
+        }
+        .k-dialog-title
+        {
+            font-size: 11pt !important;
+        }
+    </style>
+
+        
+            
+        
+            <link href="/css/design/responsive-layout-update.css" rel="stylesheet" />
+                 
+    <input type="hidden" name="__NextGenRequestVerificationToken" id="__NextGenRequestVerificationToken" />
+</body>
+</html>
+
