@@ -1,0 +1,25 @@
+{
+  "county": "delnorte",
+  "disclaimer_get_status": 200,
+  "disclaimer_get_len": 16331,
+  "disclaimer_get_recaptcha_markers": [],
+  "disclaimer_post_status": 200,
+  "disclaimer_post_len": 4,
+  "disclaimer_post_recaptcha_markers": [],
+  "web_root_status": 200,
+  "web_root_len": 19758,
+  "web_root_redirected_to_disclaimer": false,
+  "web_root_final_url": "https://delnortecountyca-web.tylerhost.net/web/",
+  "search_page_status": 200,
+  "search_page_len": 40698,
+  "search_page_final_url": "https://delnortecountyca-web.tylerhost.net/web/search/DOCSEARCH201S11",
+  "search_page_fields": [
+    "field_BothNamesID",
+    "field_RecordingDateID_DOT_StartDate",
+    "field_RecordingDateID_DOT_EndDate",
+    "field_DocumentNumberID",
+    "field_selfservice_documentTypes",
+    "field_UseAdvancedSearch"
+  ],
+  "search_page_redirected_to_disclaimer": false
+}

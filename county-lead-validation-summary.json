@@ -1,10 +1,10 @@
 {
-  "run_timestamp": "2026-08-08T06:51:45.121555",
+  "run_timestamp": "2026-08-08T10:27:45.004159",
   "as_of_date": "2026-08-08",
   "state_machine_version": "1.1.0",
-  "git_commit_hash": "fa7f98e0edecff5a019c21b24f6cda04bf127d34",
-  "total_dossiers_evaluated": 130,
-  "active_candidate_count": 112,
+  "git_commit_hash": "ec33f4c9053b3b6c8e7dd40b6d336ac1737a78ac",
+  "total_dossiers_evaluated": 139,
+  "active_candidate_count": 121,
   "expired_count": 0,
   "unknown_count": 18,
   "excluded_or_no_dossier_cycles": [
@@ -29,6 +29,7 @@
   "parser_validation_error_count": 0,
   "counts_by_county": {
     "Colusa": 8,
+    "Del Norte": 9,
     "Humboldt": 30,
     "Madera": 25,
     "Nevada": 14,
@@ -39,6 +40,7 @@
   },
   "counts_by_sale_cycle_id": {
     "colusa_2025-09-18_and_11-05_sales": 8,
+    "delnorte_2026-05-15_sale": 9,
     "humboldt_2026-05-29_sale": 30,
     "madera_2026-05-11_to_05-14_sale": 19,
     "madera_2025-08-08_reoffer": 6,
@@ -66,6 +68,7 @@
     "sha256:0b52089645e9a6936f97da892cff8a4aed1e8ea4a53aacbec1f1fe687c397d9b",
     "sha256:4e8e4bd5745f52af4a453cca97398424f831056f484323fd61e2c20dfe5d6189",
     "sha256:56cea126a49ddc6fd1f59b0d3f241523a0a7f0172012c9e0f16d7f7f14044594",
+    "sha256:61427de0098fa2b791218d0761902296d0b2aba811b4b33f338411bbbc7e6218",
     "sha256:7d17a7233f11121455ef2ba0582cfb1b0635ba99499c7d13475ea4096e36c944",
     "sha256:90f407e140bb286021e336804a759d9732106df19b0f1326d1c89920e639f224",
     "sha256:cb1f60fcd380dec53fb0ba7f6adfc2786e8e6089a9a52b32e6d41cd844a8e505",

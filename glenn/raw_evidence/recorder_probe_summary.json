@@ -1,0 +1,24 @@
+{
+  "county": "glenn",
+  "disclaimer_get_status": 200,
+  "disclaimer_get_len": 21541,
+  "disclaimer_get_recaptcha_markers": [
+    "g-recaptcha"
+  ],
+  "disclaimer_post_status": 200,
+  "disclaimer_post_len": 4,
+  "disclaimer_post_recaptcha_markers": [],
+  "web_root_status": 200,
+  "web_root_len": 23684,
+  "web_root_redirected_to_disclaimer": false,
+  "web_root_final_url": "https://glenncountyca-web.tylerhost.net/web/",
+  "search_page_status": 200,
+  "search_page_len": 54881,
+  "search_page_final_url": "https://glenncountyca-web.tylerhost.net/web/search/DOCSEARCH615S2",
+  "search_page_fields": [
+    "field_DocNumID",
+    "field_selfservice_documentTypes",
+    "field_UseAdvancedSearch"
+  ],
+  "search_page_redirected_to_disclaimer": false
+}

@@ -64,18 +64,20 @@ def load_cycle_lookup():
     return lookup, colusa_row
 
 
-MULTIWORD_COUNTY_PREFIXES = ["san_joaquin"]
-
-
 def parse_dossier(path):
     text = path.read_text(encoding="utf-8")
     def grab(pat, default=None):
         m = re.search(pat, text)
         return m.group(1).strip() if m else default
-    county = next(
-        (p for p in MULTIWORD_COUNTY_PREFIXES if path.name.startswith(p + "_")),
-        path.name.split("_")[0],
-    )
+    # Parse the real county name out of the dossier's own "**County**: X
+    # County, California" line rather than guessing from the filename -
+    # filename-splitting on "_" silently mis-parses any multi-word CA
+    # county (San Joaquin -> "san", Del Norte -> "del", Los Angeles,
+    # Santa Clara, Contra Costa, El Dorado, San Diego, ...). This was a
+    # real bug twice (San Joaquin, then Del Norte) before being fixed at
+    # the root instead of patched one county at a time.
+    county_display = grab(r"\*\*County\*\*:\s*([^,]+?)\s+County,")
+    county = county_display.lower().replace(" ", "_") if county_display else path.name.split("_")[0]
     apn = grab(r"\*\*APN\*\*: `([^`]+)`")
     deadline = grab(r"Claim Deadline\*\* \| \*\*([^*]+)\*\*")
     amount = grab(r"Excess Proceeds Available\*\* \| \*\*([^*]+)\*\*")
