@@ -70,26 +70,44 @@ def test_repo_wide_no_reachable_fetch_butte_task1_invocation():
     )
     mentioning_files = [f for f in result.stdout.splitlines() if f]
 
-    # Every mention must be inside a deprecation-context comment/docstring in
-    # fetch_butte_task1.py itself, or a comment in regen_butte_dossiers.py /
-    # ca_unify_dashboard.py explicitly framing it as retired - never a live
-    # subprocess/import invocation.
-    live_invocation_patterns = [
-        'subprocess.run([sys.executable, "fetch_butte_task1.py"]',
-        'subprocess.run(["python', "import fetch_butte_task1\n",  # a bare live import (not inside a comment) would be suspicious
+    # Files legitimately allowed to mention fetch_butte_task1 without being
+    # a "live invocation" for this check's purposes:
+    #   - fetch_butte_task1.py itself (defines the deprecated functions)
+    #   - .md reports/docs (prose, never executed)
+    #   - this test file and test_rendered_output_integrity.py, both of
+    #     which INTENTIONALLY import and call it to prove it fails closed -
+    #     that is the opposite of a bypass, it's the regression coverage
+    #     for the bypass. Checking a test file's own source against a
+    #     substring heuristic like this one is inherently self-referential
+    #     and produces false positives (the pattern list itself contains
+    #     the strings being searched for) - excluded on principle, not
+    #     just for this run.
+    exempt_files = {
+        "fetch_butte_task1.py",
+        "tests/test_rendered_output_integrity.py",
+        "tests/test_dashboard_and_export_integrity.py",
+    }
+    workflow_files = [
+        f for f in mentioning_files
+        if f not in exempt_files and not f.endswith(".md")
     ]
+
     violations = []
-    for f in mentioning_files:
+    for f in workflow_files:
         text = (ROOT / f).read_text(encoding="utf-8", errors="replace")
         for line in text.splitlines():
             stripped = line.strip()
-            if stripped.startswith("#") or '"""' in stripped or stripped.startswith("*"):
+            if stripped.startswith("#"):
                 continue
-            if "fetch_butte_task1" in line and ("subprocess" in line or ("import fetch_butte_task1" in line and f != "fetch_butte_task1.py")):
+            if "fetch_butte_task1" in line and ("subprocess" in line or stripped.startswith("import fetch_butte_task1") or stripped.startswith("from fetch_butte_task1")):
                 violations.append((f, line.strip()))
 
-    assert not violations, f"Live invocation of fetch_butte_task1 found: {violations}"
-    print(f"PASS: {len(mentioning_files)} file(s) mention fetch_butte_task1 (deprecation context only), 0 live invocations: {mentioning_files}")
+    assert not violations, f"Live invocation of fetch_butte_task1 found in a production/workflow file: {violations}"
+    print(
+        f"PASS: {len(mentioning_files)} file(s) mention fetch_butte_task1 total "
+        f"({', '.join(mentioning_files)}); {len(workflow_files)} checked as workflow files "
+        f"(excluding the deprecated file itself, its own regression tests, and .md docs); 0 live invocations"
+    )
 
 
 def test_export_feed_includes_corrected_fields_after_serialization():
