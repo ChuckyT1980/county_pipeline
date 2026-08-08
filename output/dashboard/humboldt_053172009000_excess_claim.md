@@ -1,6 +1,6 @@
 # Excess Proceeds & Heir Claim Summary: Humboldt County
 
-**Generated Date**: 2026-08-07 18:55:46  
+**Generated Date**: 2026-08-07 19:15:22  
 **APN**: `053-172-009-000`  
 **County**: Humboldt County, California  
 

@@ -10,7 +10,7 @@
 
 | Metric | Value |
 |---|---|
-| **Excess Proceeds Available** | **${{excess_amount}}** |
+| **Excess Proceeds Available** | **{{excess_amount}}** |
 | **Owner of Record** | **{{owner_name}}** |
 | **Former Owner** | {{former_owner}} |
 | **Claim Deadline** | **{{claim_deadline}}** |

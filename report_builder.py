@@ -35,11 +35,20 @@ def build_excess_proceeds_report(claim_data: dict[str, Any], county: str) -> Pat
     apn_dash = claim_data.get("apn_dash") or claim_data.get("apn") or ""
     county_name = county.replace("_", " ").title()
 
+    # An amount of exactly None means "genuinely not disclosed by the county"
+    # (e.g. Shasta, which only reveals the figure to an approved claimant
+    # after filing) — this must never render as "$0.00", which would falsely
+    # imply the county confirmed there's nothing to claim.
+    if claim_data.get("excess_proceeds") is None:
+        excess_amount_display = "UNDISCLOSED BY COUNTY (see verification notes)"
+    else:
+        excess_amount_display = f"${scores['excess_amount_clean']:,.2f}"
+
     replacements = {
         "{{county_name}}": county_name,
         "{{generated_date}}": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "{{apn_dash}}": apn_dash,
-        "{{excess_amount}}": f"{scores['excess_amount_clean']:,.2f}",
+        "{{excess_amount}}": excess_amount_display,
         "{{owner_name}}": claim_data.get("owner") or claim_data.get("owner_name") or "UNKNOWN",
         "{{former_owner}}": claim_data.get("former_owner") or "N/A",
         "{{claim_deadline}}": claim_data.get("claim_deadline") or "N/A",
