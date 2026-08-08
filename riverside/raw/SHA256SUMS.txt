@@ -1,0 +1,3 @@
+696bf2d66b1f68780c256c5411bc4278b64aa0b14f9d34ae8cedfd5a2d05aae6  riverside/raw/rc_parcel_list_2026-04.pdf
+c0fa1ffa05d2c86b497e3100d9dbf9b4651d16c4fdd29dafd998afe09980945e  riverside/raw/rc_terms_of_sale_2026-01.pdf
+dade0132e7c67a830cead31aed1d3928f03f775511ead776b991a34f7dbfb041  riverside/raw/rc_parcel_list_2026-04.xlsx

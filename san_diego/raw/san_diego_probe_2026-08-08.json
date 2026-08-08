@@ -1,0 +1,22 @@
+{
+  "probe_date": "2026-08-08",
+  "assessor": {
+    "real_search_ui": "https://www.sdarcc.gov/content/arcc/home/divisions/assessor/secured-assessment-roll-search.html",
+    "real_api_endpoint_confirmed_live": "https://www.sdarcc.gov/bin/cosd/parcel-request?parcelNumber={apn} -> HTTP 200, returns JSON array (tested with placeholder APN 123-456-78, returned [] - endpoint live and functioning, correctly returns empty for non-existent parcel)",
+    "yaml_scaffold_guess_disproven": "https://data.sandiegocounty.gov/resource/parcels.json -> HTTP 404, does not exist. County's Socrata open-data portal (data.sandiegocounty.gov) is real and live but has no parcel/assessor/APN dataset (confirmed via full catalog listing of 610 datasets - none match).",
+    "fields_available": ["Parcel_number","Situs_st_nbr","Situs_fraction","Situs_prfx_dir","Situs_st_name","Situs_st_type","Situs_sffx_dir","Situs_unit_nbr","Situs_Community","Situs_state","Situs_zip","Land_Value","Improvements_Value","Fixtures_value","Personal_property_value","Total_assessed_value","Total_exemptions_value","Net_taxable_value","FacBaseLand","FacBaseImps","FacBaseTotal","VC_Description"],
+    "owner_name_field_present": false,
+    "legal_restriction_confirmed": "Page explicitly states: 'Please note that property ownership information cannot be provided on the internet in accordance with California Government Code section 6254.21.' - same statute cited by Fresno's confirmed permanent owner-lookup restriction (Jan 2025 CA law) already documented in the matrix."
+  },
+  "recorder": {
+    "system": "ARCC Acclaim, arcc-acclaim.sdcounty.ca.gov",
+    "result": "HTTP 403 Access Denied - AkamaiGHost edge block (server-level deny, reference # returned), confirmed via direct curl with browser User-Agent, reproducible",
+    "note": "Per coordinator instruction, did not attempt to bypass this edge block (no stealth browser, no proxy/header evasion attempted beyond a standard browser User-Agent)."
+  },
+  "auction_signal": {
+    "known_2026_auction": "March 13-18, 2026 - 686 properties - CONFIRMED CLOSED as of probe date (2026-08-08, auction ended 5 months ago)",
+    "next_auction": "Per web search of sdttc.mytaxsale.com platform messaging: 'next auction to be announced in 2027' - no live/current parcel list exists right now",
+    "conclusion": "No currently active tax-default/auction signal available for San Diego regardless of assessor/recorder capability."
+  },
+  "taxonomy_classification": "BLOCKED (recorder: Akamai edge Access Denied, no bypass attempted) + owner-name permanently restricted by CA Gov Code 6254.21 on assessor + no live auction cycle currently open (closed March 2026, next 2027)"
+}

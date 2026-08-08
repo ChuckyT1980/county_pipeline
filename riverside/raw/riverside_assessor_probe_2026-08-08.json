@@ -1,0 +1,37 @@
+{
+  "probe_date": "2026-08-08",
+  "assessor_endpoints_confirmed_live": [
+    "https://gis.countyofriverside.us/arcgis_mapping/rest/services/OpenData/Assessor/MapServer/40 (PARCELS, 869058 features, APN+FLAG only)",
+    "https://gis.countyofriverside.us/arcgis_mapping/rest/services/OpenData/Assessor/MapServer/50 (PARCELS_CREST - APN, situs, mail addr, acreage, class code, LAND, STRUCTURES)",
+    "https://gis.countyofriverside.us/arcgis_mapping/rest/services/OpenData/Assessor/MapServer/70 (CREST_GENERAL - no owner field)",
+    "https://gis.countyofriverside.us/arcgis_mapping/rest/services/OpenData/Assessor/MapServer/100 (CREST_TAXYEAR - LAND/STRUCTURES/IS_TAXABLE by tax year, no owner field)"
+  ],
+  "assessor_endpoints_confirmed_down": [
+    "https://gis.countyofriverside.us/arcgis_public/rest/services/OpenData/AssessorTables/MapServer/0/query -> HTTP 400 'Failure to access the DBMS server' (tested twice, ~5s apart, reproducible)",
+    "https://gis.countyofriverside.us/arcgis_mapping/rest/services/OpenData/AssessorTables/MapServer?f=json -> layers:[] tables:[] (service metadata itself broken, same underlying outage)"
+  ],
+  "note": "OpenData/AssessorTables service description explicitly promises 'assessee, general, property characteristics, recorded book, tax year' data - this is the one service that would plausibly carry owner name + recent recorded doc number. It is down, not merely slow: reproducible DBMS-level 500/400 across both public hosting paths.",
+  "probe_apns_from_real_auction_list": [
+    {"apn": "102083027", "situs_from_auction_pdf": "1037 SERFAS CLUB DR CORONA 92882", "assessor_match": true, "land": 174084.0, "structures": 0.0},
+    {"apn": "102361007", "situs_from_auction_pdf": "3190 PUESTA DEL SOL CT UNIT 204 CORONA 92882", "assessor_match": false, "note": "condo unit - not in Parcels/ParcelsCREST layer, needs Condominiums layer, not tested further"},
+    {"apn": "103022040", "situs_from_auction_pdf": "2552 AVENIDA DEL VISTA CORONA 92882", "assessor_match": false, "note": "no match in ParcelsCREST - not investigated further"},
+    {"apn": "107342039", "situs_from_auction_pdf": "2155 BEGLEY CIR CORONA 92881", "assessor_match": true, "land": 153037.0, "structures": 405566.0},
+    {"apn": "126090014", "situs_from_auction_pdf": "2355 CHATTERTON LN NORCO 92860", "assessor_match": true, "land": 167462.0, "structures": 395225.0}
+  ],
+  "owner_name_field_found": false,
+  "recent_doc_number_field_found": false,
+  "recorder_probe": {
+    "system": "Tyler Self-Service (Assessor-County Clerk-Recorder), webselfservice.rivcoacr.org/Web/",
+    "captcha": false,
+    "search_modes": [
+      "Name Search (DOCSEARCH2111S1) - name-only, NOT parcel-tied",
+      "Document Number Search (DOCSEARCH2111S2) - format YYYY-NNNNNN, mechanically identical to Kern's Osearchn.mbr pattern, WOULD be parcel-tied IF fed a parcel-derived doc number",
+      "Document Type Search (DOCSEARCH2111S3)",
+      "Map Type and Book/Page Search (DOCSEARCH2111S4)",
+      "Advanced Search (DOCSEARCH2111S5) - fields: Name, Document Number, Recording Date range, Document Type - NO APN field"
+    ],
+    "apn_searchable": false,
+    "conclusion": "Recorder mechanism is real, live, CAPTCHA-free, and structurally capable of parcel-tied verification via document-number search (same shape as Kern's proven method) - but with no assessor-side channel currently supplying a per-parcel doc number, and no APN field on the recorder side itself, there is no live path from APN -> doc number -> recorder confirmation today."
+  },
+  "taxonomy_classification": "UNKNOWN (compound case: recorder mechanism = RECORDER_FULL-shaped in isolation, but the assessor->docnum link required to invoke it parcel-tied is unavailable due to a real, reproducible AssessorTables DBMS outage, not a CAPTCHA/auth/rate-limit block)"
+}
