@@ -1,10 +1,10 @@
 # Excess Proceeds Opportunity Summary: Sonoma County
 
-**Generated Date**: 2026-08-08 06:01:08  
+**Generated Date**: 2026-08-08 06:51:26  
 **APN**: `070-294-009-000`  
 **County**: Sonoma County, California  
 
-**Status: ACTIVE_CANDIDATE** — Potential excess-proceeds opportunity; public county source; deadline verified; claimant eligibility requires review.
+**Status: EXTRACTED** — SOURCE UNVERIFIED — Source not yet verified (no fetched/hashed artifact) - cannot proceed.
 
 ---
 
@@ -30,7 +30,7 @@
 - **Situs Address**: No Situs Address
 - **Current Document Number**: `N/A`
 - **Assessed Total Value**: $N/A
-- **Verification Receipt**: VERIFIED SALE DATA — real minimum bid ($5,900.00) and real final sale price ($9,900.00) are both from the county's own published results table, not estimated. Excess proceeds amount shown IS AN ESTIMATE (sale price minus minimum bid) — minimum bid approximates amount owed but the exact legal excess-proceeds figure (which subtracts all taxes/penalties/costs) may differ slightly; not yet confirmed by a county-issued excess-proceeds notice. Claim deadline shown is APPROXIMATE (sale date + ~1yr); real deadline is 1yr after deed recordation, not individually published per parcel. (`Sonoma County official auction results table (public, embedded on the county's own auction results page) - sonomacounty.gov Tax-Defaulted Property Auction, November 2025`)
+- **Verification Receipt**: SOURCE ARTIFACT NOT PRESERVED — real minimum bid ($5,900.00) and real final sale price ($9,900.00) were read from the county's own published results table, not estimated, but the results page itself was never saved/hashed to disk, so SOURCE_VERIFIED cannot be established per the lead-status state machine (see release_gate.py). Re-scrape and hash the source page before treating this as active. Excess proceeds amount shown IS ALSO AN ESTIMATE (sale price minus minimum bid) — minimum bid approximates amount owed but the exact legal excess-proceeds figure (which subtracts all taxes/penalties/costs) may differ slightly; not yet confirmed by a county-issued excess-proceeds notice. Claim deadline shown is APPROXIMATE (sale date + ~1yr); real deadline is 1yr after deed recordation, not individually published per parcel. (`Sonoma County official auction results table (public, embedded on the county's own auction results page) - sonomacounty.gov Tax-Defaulted Property Auction, November 2025`)
 
 ---
 

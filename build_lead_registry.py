@@ -31,43 +31,37 @@ CYCLE_REGISTRY = ROOT / "county-sale-cycle-registry.csv"
 SUMMARY_JSON = ROOT / "county-lead-validation-summary.json"
 SUMMARY_TXT = ROOT / "county-lead-validation-summary.txt"
 AS_OF = date(2026, 8, 8)
+SHA256_ID_RE = re.compile(r"^sha256:[0-9a-f]{64}$")
 
-CYCLES = {
-    ("humboldt", None): {"sale_cycle_id": "HUMBOLDT-2026-MAY-SALE",
-                          "source_artifact_id": "sha256:a4f5e8...(humboldt_excess_proceeds_may2026.pdf)",
-                          "source_document_date": "2026-07-09"},
-    ("shasta", None): {"sale_cycle_id": "SHASTA-2026-FEB-MAR-SALE",
-                        "source_artifact_id": "sha256:(shasta_excess_proceeds_notice.pdf)",
-                        "source_document_date": "2026-04-16"},
-    ("tulare", None): {"sale_cycle_id": "TULARE-2026-MAR-SALE",
-                        "source_artifact_id": "sha256:(tulare_excess_proceeds.pdf)",
-                        "source_document_date": "unknown"},
-    ("sonoma", None): {"sale_cycle_id": "SONOMA-2025-NOV-AUCTION",
-                        "source_artifact_id": "scraped_table:(sonoma_nov2025_results.txt)",
-                        "source_document_date": "unknown"},
-    ("san_joaquin", None): {"sale_cycle_id": "SANJOAQUIN-2026-MAR-SALE",
-                             "source_artifact_id": "sha256:(tax-sale-excess-proceeds-list-march-2026-public.pdf)",
-                             "source_document_date": "2026-04-08"},
-    ("colusa", None): {"sale_cycle_id": "COLUSA-2025-SEP-NOV-SALE",
-                        "source_artifact_id": "sha256:0b52089645e9a6936f97da892cff8a4aed1e8ea4a53aacbec1f1fe687c397d9b",
-                        "source_document_date": "2025-12-15"},
-}
-MADERA_CYCLES = {
-    "2027-06-08": {"sale_cycle_id": "MADERA-2026-MAY-SALE",
-                   "source_artifact_id": "sha256:56cea126a49ddc6fd1f59b0d3f241523a0a7f0172012c9e0f16d7f7f14044594",
-                   "source_document_date": "unknown"},
-    "2026-08-27": {"sale_cycle_id": "MADERA-2025-AUG-REOFFER",
-                   "source_artifact_id": "sha256:7d17a7233f11121455ef2ba0582cfb1b0635ba99499c7d13475ea4096e36c944",
-                   "source_document_date": "unknown"},
-}
-NEVADA_CYCLES = {
-    "2025-11-27": {"sale_cycle_id": "NEVADA-2024-NOV-SALE",
-                   "source_artifact_id": "sha256:032081b8da29e9e97da2bc49c769ba1f8dc658271343516addb6ac241bea7e59",
-                   "source_document_date": "2024-12-19"},
-    "2026-12-19": {"sale_cycle_id": "NEVADA-2025-NOV-SALE-2026-JAN-REOFFER",
-                   "source_artifact_id": "sha256:4e8e4bd5745f52af4a453cca97398424f831056f484323fd61e2c20dfe5d6189",
-                   "source_document_date": "2026-03-02"},
-}
+
+def load_cycle_lookup():
+    """
+    Load county-sale-cycle-registry.csv as the SINGLE source of truth for
+    sale-cycle metadata - no hardcoded per-county dict duplicating it here.
+    Keyed by (county_lower, claim_deadline) since that's what a dossier
+    carries; this generically handles counties with multiple distinct
+    cycles (Madera, Nevada) the same way as single-cycle counties. Colusa
+    is per-parcel deadlines, not one cycle-wide date, so it's matched by
+    county alone (single row covers all its parcels).
+    """
+    lookup = {}
+    colusa_row = None
+    if not CYCLE_REGISTRY.exists():
+        return lookup, colusa_row
+    with open(CYCLE_REGISTRY, encoding="utf-8-sig") as f:
+        for row in csv.DictReader(f):
+            county_key = row["county"].lower().replace(" ", "_")
+            cycle = {
+                "sale_cycle_id": row["sale_cycle_id"],
+                "source_artifact_id": row["source_artifact_id"],
+                "source_document_date": row["source_document_date"],
+                "lifecycle_status": row["lifecycle_status"],
+            }
+            if county_key == "colusa":
+                colusa_row = cycle
+                continue
+            lookup[(county_key, row["claim_deadline"])] = cycle
+    return lookup, colusa_row
 
 
 MULTIWORD_COUNTY_PREFIXES = ["san_joaquin"]
@@ -104,20 +98,6 @@ def git_commit_hash():
         return "unknown (git rev-parse failed)"
 
 
-def load_expired_cycle_ids():
-    """Sale cycles the registry already knows are EXPIRED - any dossier
-    tagged with one of these IDs gets cycle_expired=True regardless of
-    its own printed deadline."""
-    expired = set()
-    if not CYCLE_REGISTRY.exists():
-        return expired
-    with open(CYCLE_REGISTRY, encoding="utf-8-sig") as f:
-        for row in csv.DictReader(f):
-            if row.get("lifecycle_status") == "EXPIRED":
-                expired.add(row["sale_cycle_id"])
-    return expired
-
-
 def load_no_dossier_cycles():
     """Cycles in the registry that produced zero lead rows - either
     because they're expired (correctly excluded) or unconfirmed."""
@@ -133,11 +113,12 @@ def load_no_dossier_cycles():
 
 def main():
     run_timestamp = datetime.now().isoformat()
-    expired_cycle_ids = load_expired_cycle_ids()
+    cycle_lookup, colusa_cycle = load_cycle_lookup()
 
     rows = []
     parser_errors = []
     input_artifacts = set()
+    unmatched_dossiers = []
 
     for path in sorted(DASHBOARD.glob("*_excess_claim.md")):
         try:
@@ -146,24 +127,37 @@ def main():
             parser_errors.append({"file": str(path), "error": str(e)})
             continue
 
-        key = (county, None)
-        if county == "madera":
-            cycle = MADERA_CYCLES.get(deadline)
-        elif county == "nevada":
-            cycle = NEVADA_CYCLES.get(deadline)
+        if county == "colusa":
+            cycle = colusa_cycle
         else:
-            cycle = CYCLES.get(key)
+            cycle = cycle_lookup.get((county, deadline))
         if not cycle:
-            cycle = {"sale_cycle_id": f"{county.upper()}-UNKNOWN-CYCLE", "source_artifact_id": "unknown", "source_document_date": "unknown"}
+            # No cycle in the registry matches this county+deadline combo -
+            # do NOT silently invent one. Flag it and skip rather than
+            # guess a sale_cycle_id, per the verified-or-excluded rule.
+            unmatched_dossiers.append({"file": str(path), "county": county, "deadline": deadline})
+            parser_errors.append({
+                "file": str(path),
+                "error": f"No matching sale cycle in county-sale-cycle-registry.csv for county={county!r} deadline={deadline!r} - excluded, not guessed",
+            })
+            continue
         input_artifacts.add(cycle["source_artifact_id"])
+
+        # source_verified means a real, hashable artifact was actually
+        # captured and preserved - not just that a URL was cited. A cycle
+        # whose source_artifact_id isn't a real sha256 (e.g. Sonoma, whose
+        # scraped results page was never saved to disk) has NOT earned
+        # SOURCE_VERIFIED, regardless of how confident the extracted rows
+        # look - this is the state machine's own gate, not a bolt-on.
+        cycle_source_verified = bool(SHA256_ID_RE.match(cycle["source_artifact_id"]))
 
         amount_disclosed = bool(amount) and "UNDISCLOSED" not in (amount or "")
         evaluation = evaluate_lead(
-            source_verified=True,
+            source_verified=cycle_source_verified,
             deadline_raw=deadline,
             run_date=AS_OF,
             amount_disclosed=amount_disclosed,
-            cycle_expired=cycle["sale_cycle_id"] in expired_cycle_ids,
+            cycle_expired=cycle["lifecycle_status"] == "EXPIRED",
         )
         if evaluation.status == LeadStatus.ACTIVE_CANDIDATE:
             simple_status = "ACTIVE_CANDIDATE"

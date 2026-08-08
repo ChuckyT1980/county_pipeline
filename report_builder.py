@@ -50,8 +50,15 @@ def build_excess_proceeds_report(claim_data: dict[str, Any], county: str) -> Pat
     # the Nevada incident (2026-08-08): a record that's source-verified
     # but has an expired deadline must never reach ACTIVE_CANDIDATE, full
     # stop, no code path around it. See lead_status.py.
+    # Default: any non-empty source_file/source_url description counts as
+    # verified (true for every county with a real preserved, hashed
+    # artifact). An enrichment script can override this explicitly via
+    # source_artifact_verified=False when it knows the underlying artifact
+    # itself was never saved/hashed (e.g. Sonoma's scraped results page) -
+    # a descriptive citation string is not the same as a verified artifact.
+    default_source_verified = bool(claim_data.get("source_file") or claim_data.get("source_url"))
     lead_eval = evaluate_lead(
-        source_verified=bool(claim_data.get("source_file") or claim_data.get("source_url")),
+        source_verified=claim_data.get("source_artifact_verified", default_source_verified),
         deadline_raw=claim_data.get("claim_deadline"),
         run_date=datetime.now().date(),
         amount_disclosed=claim_data.get("excess_proceeds") is not None,

@@ -1,0 +1,13 @@
+[report_builder] Saved Excess Proceeds report to /mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/test_county_WIRINGTEST000_excess_claim.md
+PASS: past deadline -> always EXPIRED, never ACTIVE_CANDIDATE
+PASS: future deadline + disclosed amount -> ACTIVE_CANDIDATE via CLAIMABILITY_POSSIBLE
+PASS: future deadline + undisclosed amount -> ACTIVE_CANDIDATE via CLAIMABILITY_UNCONFIRMED
+PASS: missing deadline -> DEADLINE_UNVERIFIABLE, never ACTIVE_CANDIDATE
+PASS: unparseable deadline -> DEADLINE_UNVERIFIABLE, never ACTIVE_CANDIDATE
+PASS: unverified source -> stuck at EXTRACTED, never ACTIVE_CANDIDATE
+PASS: Nevada regression fixture correctly evaluates to EXPIRED
+PASS: cycle_expired=True forces EXPIRED even when the record's own deadline is future-dated
+PASS: report_builder has no status-setting path independent of evaluate_lead()
+PASS: expired deadline renders as EXPIRED, never as an urgency countdown
+
+10/10 passed

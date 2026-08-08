@@ -1,0 +1,48 @@
+{
+  "overall_pass": true,
+  "checks": [
+    {
+      "check": 1,
+      "description": "Every ACTIVE_CANDIDATE has a nonempty sale_cycle_id",
+      "status": "PASS",
+      "failure_count": 0,
+      "details": []
+    },
+    {
+      "check": 2,
+      "description": "Every ACTIVE_CANDIDATE has a real source artifact hash (sha256:<64 hex>)",
+      "status": "PASS",
+      "failure_count": 0,
+      "details": []
+    },
+    {
+      "check": 3,
+      "description": "Every ACTIVE_CANDIDATE has a future, re-parsed claim deadline",
+      "status": "PASS",
+      "failure_count": 0,
+      "details": []
+    },
+    {
+      "check": 4,
+      "description": "Every ACTIVE_CANDIDATE's sale_cycle_id resolves to the correct, active county cycle",
+      "status": "PASS",
+      "failure_count": 0,
+      "details": []
+    },
+    {
+      "check": 5,
+      "description": "No WIRING-TEST / test-fixture identifier appears in dashboard_feed.json",
+      "status": "PASS",
+      "failure_count": 0,
+      "details": []
+    },
+    {
+      "check": 6,
+      "description": "No excluded cycle (madera_2025-05_sale, nevada_2024-11-07_sale, sonoma_2025-11-07_to_11-10_auction) appears in any dossier, feed, lead row, or buyer export",
+      "status": "PASS",
+      "failure_count": 0,
+      "details": []
+    }
+  ],
+  "active_candidate_count": 112
+}

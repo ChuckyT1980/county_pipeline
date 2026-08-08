@@ -55,14 +55,25 @@ def main():
                 "Sonoma County official auction results table (public, embedded on the county's own "
                 "auction results page) - sonomacounty.gov Tax-Defaulted Property Auction, November 2025"
             ),
+            # RELEASE GATE FINDING (2026-08-08): the scraped results page
+            # itself was never saved/hashed as an artifact - only the
+            # extracted rows exist. A citation string is not a verified
+            # artifact, so this must NOT pass SOURCE_VERIFIED until the
+            # source page is re-fetched and hashed. See
+            # county-sale-cycle-registry.csv's Sonoma row and
+            # county-lead-validation-summary.txt's excluded-cycles section.
+            "source_artifact_verified": False,
             "verification": (
-                f"VERIFIED SALE DATA — real minimum bid (${float(r['min_bid']):,.2f}) and real final sale "
-                f"price (${float(r['sold_amount']):,.2f}) are both from the county's own published results "
-                f"table, not estimated. Excess proceeds amount shown IS AN ESTIMATE (sale price minus "
-                f"minimum bid) — minimum bid approximates amount owed but the exact legal excess-proceeds "
-                f"figure (which subtracts all taxes/penalties/costs) may differ slightly; not yet confirmed "
-                f"by a county-issued excess-proceeds notice. Claim deadline shown is APPROXIMATE (sale date "
-                f"+ ~1yr); real deadline is 1yr after deed recordation, not individually published per parcel."
+                f"SOURCE ARTIFACT NOT PRESERVED — real minimum bid (${float(r['min_bid']):,.2f}) and real "
+                f"final sale price (${float(r['sold_amount']):,.2f}) were read from the county's own "
+                f"published results table, not estimated, but the results page itself was never saved/hashed "
+                f"to disk, so SOURCE_VERIFIED cannot be established per the lead-status state machine (see "
+                f"release_gate.py). Re-scrape and hash the source page before treating this as active. Excess "
+                f"proceeds amount shown IS ALSO AN ESTIMATE (sale price minus minimum bid) — minimum bid "
+                f"approximates amount owed but the exact legal excess-proceeds figure (which subtracts all "
+                f"taxes/penalties/costs) may differ slightly; not yet confirmed by a county-issued "
+                f"excess-proceeds notice. Claim deadline shown is APPROXIMATE (sale date + ~1yr); real "
+                f"deadline is 1yr after deed recordation, not individually published per parcel."
             ),
         }
         report_builder.build_excess_proceeds_report(claim_data, "sonoma")
