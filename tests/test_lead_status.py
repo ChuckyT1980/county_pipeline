@@ -4,6 +4,7 @@ Tests for lead_status.py's ACTIVE_CANDIDATE guarantee.
 Run: python3 tests/test_lead_status.py
 (No pytest dependency required - plain assertions, exits non-zero on failure.)
 """
+import json
 import re
 import sys
 from datetime import date
@@ -105,6 +106,86 @@ def test_nevada_regression_fixture():
         f"passes with a non-EXPIRED status, the bug is back."
     )
     print("PASS: Nevada regression fixture correctly evaluates to EXPIRED")
+
+
+def test_expired_sale_cycle_forces_expired_regardless_of_own_deadline():
+    """
+    Requirement #4: a county-level expired sale cycle must prevent EVERY
+    linked dossier from becoming ACTIVE_CANDIDATE - even if that specific
+    record's own printed deadline is (correctly or by error) future-dated.
+    cycle_expired=True must win, unconditionally, checked first.
+    """
+    result = evaluate_lead(
+        source_verified=True,
+        deadline_raw="December 31, 2030",  # deliberately far-future, would normally be ACTIVE_CANDIDATE
+        run_date=RUN_DATE,
+        amount_disclosed=True,
+        cycle_expired=True,
+    )
+    assert result.status == LeadStatus.EXPIRED, (
+        f"A record whose sale cycle is expired must be EXPIRED even with a future-dated deadline, got {result.status}"
+    )
+    assert LeadStatus.ACTIVE_CANDIDATE not in result.history
+    print("PASS: cycle_expired=True forces EXPIRED even when the record's own deadline is future-dated")
+
+
+def test_no_status_can_be_set_outside_the_state_machine():
+    """
+    Requirement #5: report_builder.py must have NO independent path to
+    set a dossier's lead status - it must be 100% derived from
+    evaluate_lead(). Proven here by monkeypatching evaluate_lead to
+    return a forced, distinctive value and confirming the actual
+    generated dossier reflects EXACTLY that value, not something
+    report_builder computed on its own.
+    """
+    import importlib
+    import report_builder
+    import lead_status as ls_module
+
+    original = ls_module.evaluate_lead
+
+    def fake_evaluate_lead(**kwargs):
+        return ls_module.LeadEvaluation(
+            status=ls_module.LeadStatus.EXPIRED,
+            reason="FORCED_BY_TEST_SENTINEL_VALUE",
+            history=[ls_module.LeadStatus.EXTRACTED, ls_module.LeadStatus.EXPIRED],
+        )
+
+    # report_builder imported evaluate_lead by name (`from lead_status import
+    # evaluate_lead`), so the patch target is report_builder's own namespace,
+    # not lead_status's - this is what actually proves report_builder calls
+    # through the imported reference rather than having its own copy.
+    report_builder.evaluate_lead = fake_evaluate_lead
+    try:
+        out_path = report_builder.build_excess_proceeds_report(
+            {
+                "apn_dash": "WIRING-TEST-000",
+                "owner": "WIRING TEST",
+                "excess_proceeds": 1000.0,
+                "claim_deadline": "2099-01-01",  # would normally be far-future ACTIVE_CANDIDATE
+                "source_file": "test",
+                "verification": "test",
+            },
+            "test_county",
+        )
+        content = out_path.read_text(encoding="utf-8")
+        assert "FORCED_BY_TEST_SENTINEL_VALUE" in content, (
+            "report_builder did not use the patched evaluate_lead() - it may have an "
+            "independent status-setting code path outside the state machine"
+        )
+        assert "**Status: EXPIRED**" in content, "report_builder's displayed status did not match the patched evaluate_lead() result"
+    finally:
+        report_builder.evaluate_lead = original
+        out_path.unlink(missing_ok=True)
+        # build_excess_proceeds_report() also appends an entry to
+        # dashboard_feed.json - deleting the .md file alone leaves that
+        # entry behind, polluting the live feed with test data.
+        feed_file = report_builder.FEED_FILE
+        if feed_file.exists():
+            feed = json.loads(feed_file.read_text(encoding="utf-8"))
+            feed = [e for e in feed if e.get("apn") != "WIRING-TEST-000"]
+            feed_file.write_text(json.dumps(feed, indent=2), encoding="utf-8")
+    print("PASS: report_builder has no status-setting path independent of evaluate_lead()")
 
 
 def test_urgency_wording_never_implies_actionable_when_expired():

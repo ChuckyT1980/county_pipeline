@@ -1,0 +1,47 @@
+County Lead Validation Summary
+Run: 2026-08-08T06:28:09.713558  |  As of: 2026-08-08  |  State machine v1.1.0
+Git commit: bca28291c02d6fc463d92900d4ba48fdc44b0903
+
+Total dossiers evaluated: 130
+  ACTIVE_CANDIDATE: 130
+  EXPIRED:          0
+  UNKNOWN:          0
+Excluded / no-dossier sale cycles: 2
+  - Madera / madera_2025-05_sale: HONEST GAP: this sale cycle's document ('2025 FINALIZED EXCESS PROCEEDS - MAY 2025') was seen listed on the county page but never downloaded or read. It was ASSUMED likely-expired based on typical 1yr timing and excluded from extraction - that assumption was never actually verified against the real document. Should be checked before being trusted either way.
+  - Nevada / nevada_2024-11-07_sale: EXPIRED 254+ days ago as of as_of_date. Originally, and incorrectly, reported elsewhere as active due to a sale-cycle mislabeling error (see county-signal-exception-log.csv) - RESOLVED, excluded from all active inventory, 0 records extracted.
+Parser/validation errors: 0
+
+Counts by county:
+  Colusa: 8
+  Humboldt: 30
+  Madera: 25
+  Nevada: 14
+  San Joaquin: 3
+  Shasta: 23
+  Sonoma: 18
+  Tulare: 9
+
+Counts by sale_cycle_id:
+  COLUSA-2025-SEP-NOV-SALE: 8
+  HUMBOLDT-2026-MAY-SALE: 30
+  MADERA-2025-AUG-REOFFER: 6
+  MADERA-2026-MAY-SALE: 19
+  NEVADA-2025-NOV-SALE-2026-JAN-REOFFER: 14
+  SANJOAQUIN-2026-MAR-SALE: 3
+  SHASTA-2026-FEB-MAR-SALE: 23
+  SONOMA-2025-NOV-AUCTION: 18
+  TULARE-2026-MAR-SALE: 9
+
+Nearest upcoming deadline: 2026-08-27 (Madera 029-270-053-000, MADERA-2025-AUG-REOFFER)
+Farthest deadline: 2027-06-08 (Madera 001-052-010-000, MADERA-2026-MAY-SALE)
+
+Input artifact manifest:
+  scraped_table:(sonoma_nov2025_results.txt)
+  sha256:(shasta_excess_proceeds_notice.pdf)
+  sha256:(tax-sale-excess-proceeds-list-march-2026-public.pdf)
+  sha256:(tulare_excess_proceeds.pdf)
+  sha256:0b52089645e9a6936f97da892cff8a4aed1e8ea4a53aacbec1f1fe687c397d9b
+  sha256:4e8e4bd5745f52af4a453cca97398424f831056f484323fd61e2c20dfe5d6189
+  sha256:56cea126a49ddc6fd1f59b0d3f241523a0a7f0172012c9e0f16d7f7f14044594
+  sha256:7d17a7233f11121455ef2ba0582cfb1b0635ba99499c7d13475ea4096e36c944
+  sha256:a4f5e8...(humboldt_excess_proceeds_may2026.pdf)

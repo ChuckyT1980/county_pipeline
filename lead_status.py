@@ -36,6 +36,11 @@ from dataclasses import dataclass, field
 from datetime import date
 from enum import Enum
 
+# Bump this when evaluate_lead()'s logic changes in a way that could alter
+# a previously-computed status - lets a validation summary pin exactly
+# which version of the rules produced it.
+STATE_MACHINE_VERSION = "1.1.0"  # 1.1.0 adds cycle_expired override (2026-08-08)
+
 
 class LeadStatus(str, Enum):
     EXTRACTED = "extracted"
@@ -63,13 +68,32 @@ def evaluate_lead(
     deadline_raw: str | None,
     run_date: date,
     amount_disclosed: bool,
+    cycle_expired: bool = False,
 ) -> LeadEvaluation:
     """
     Evaluate a single extracted record through the state machine.
     Never returns ACTIVE_CANDIDATE unless deadline_raw parses to a real
     date that is strictly after run_date.
+
+    cycle_expired: pass True when the record's SALE CYCLE (not just this
+    one record's own printed deadline) is separately known to be expired
+    - e.g. from county-sale-cycle-registry.csv. This is checked FIRST,
+    before anything else, and forces EXPIRED unconditionally. This
+    guards against a real failure mode: an individual record carrying a
+    stale, wrong, or missing deadline string that would otherwise let it
+    slip past the per-record check even though the cycle it belongs to
+    is already known to be closed.
     """
     history = [LeadStatus.EXTRACTED]
+
+    if cycle_expired:
+        history.append(LeadStatus.EXPIRED)
+        return LeadEvaluation(
+            status=LeadStatus.EXPIRED,
+            reason="Sale cycle is externally known to be EXPIRED (per the sale-cycle registry) - "
+                   "this overrides any per-record deadline, parsed or not.",
+            history=history,
+        )
 
     if not source_verified:
         return LeadEvaluation(

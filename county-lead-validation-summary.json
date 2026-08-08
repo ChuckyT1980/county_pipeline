@@ -1,0 +1,69 @@
+{
+  "run_timestamp": "2026-08-08T06:28:09.713558",
+  "as_of_date": "2026-08-08",
+  "state_machine_version": "1.1.0",
+  "git_commit_hash": "bca28291c02d6fc463d92900d4ba48fdc44b0903",
+  "total_dossiers_evaluated": 130,
+  "active_candidate_count": 130,
+  "expired_count": 0,
+  "unknown_count": 0,
+  "excluded_or_no_dossier_cycles": [
+    {
+      "county": "Madera",
+      "sale_cycle_id": "madera_2025-05_sale",
+      "reason": "HONEST GAP: this sale cycle's document ('2025 FINALIZED EXCESS PROCEEDS - MAY 2025') was seen listed on the county page but never downloaded or read. It was ASSUMED likely-expired based on typical 1yr timing and excluded from extraction - that assumption was never actually verified against the real document. Should be checked before being trusted either way."
+    },
+    {
+      "county": "Nevada",
+      "sale_cycle_id": "nevada_2024-11-07_sale",
+      "reason": "EXPIRED 254+ days ago as of as_of_date. Originally, and incorrectly, reported elsewhere as active due to a sale-cycle mislabeling error (see county-signal-exception-log.csv) - RESOLVED, excluded from all active inventory, 0 records extracted."
+    }
+  ],
+  "excluded_or_no_dossier_count": 2,
+  "parser_validation_errors": [],
+  "parser_validation_error_count": 0,
+  "counts_by_county": {
+    "Colusa": 8,
+    "Humboldt": 30,
+    "Madera": 25,
+    "Nevada": 14,
+    "San Joaquin": 3,
+    "Shasta": 23,
+    "Sonoma": 18,
+    "Tulare": 9
+  },
+  "counts_by_sale_cycle_id": {
+    "COLUSA-2025-SEP-NOV-SALE": 8,
+    "HUMBOLDT-2026-MAY-SALE": 30,
+    "MADERA-2026-MAY-SALE": 19,
+    "MADERA-2025-AUG-REOFFER": 6,
+    "NEVADA-2025-NOV-SALE-2026-JAN-REOFFER": 14,
+    "SANJOAQUIN-2026-MAR-SALE": 3,
+    "SHASTA-2026-FEB-MAR-SALE": 23,
+    "SONOMA-2025-NOV-AUCTION": 18,
+    "TULARE-2026-MAR-SALE": 9
+  },
+  "nearest_upcoming_deadline": {
+    "date": "2026-08-27",
+    "county": "Madera",
+    "apn": "029-270-053-000",
+    "sale_cycle_id": "MADERA-2025-AUG-REOFFER"
+  },
+  "farthest_deadline": {
+    "date": "2027-06-08",
+    "county": "Madera",
+    "apn": "001-052-010-000",
+    "sale_cycle_id": "MADERA-2026-MAY-SALE"
+  },
+  "input_artifact_manifest": [
+    "scraped_table:(sonoma_nov2025_results.txt)",
+    "sha256:(shasta_excess_proceeds_notice.pdf)",
+    "sha256:(tax-sale-excess-proceeds-list-march-2026-public.pdf)",
+    "sha256:(tulare_excess_proceeds.pdf)",
+    "sha256:0b52089645e9a6936f97da892cff8a4aed1e8ea4a53aacbec1f1fe687c397d9b",
+    "sha256:4e8e4bd5745f52af4a453cca97398424f831056f484323fd61e2c20dfe5d6189",
+    "sha256:56cea126a49ddc6fd1f59b0d3f241523a0a7f0172012c9e0f16d7f7f14044594",
+    "sha256:7d17a7233f11121455ef2ba0582cfb1b0635ba99499c7d13475ea4096e36c944",
+    "sha256:a4f5e8...(humboldt_excess_proceeds_may2026.pdf)"
+  ]
+}

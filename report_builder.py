@@ -55,6 +55,7 @@ def build_excess_proceeds_report(claim_data: dict[str, Any], county: str) -> Pat
         deadline_raw=claim_data.get("claim_deadline"),
         run_date=datetime.now().date(),
         amount_disclosed=claim_data.get("excess_proceeds") is not None,
+        cycle_expired=bool(claim_data.get("sale_cycle_expired")),
     )
     LEAD_STATUS_STATEMENTS = {
         LeadStatus.ACTIVE_CANDIDATE: (

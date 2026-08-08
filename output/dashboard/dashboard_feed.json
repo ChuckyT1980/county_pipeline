@@ -2529,33 +2529,5 @@
     "days_until_auction": 37,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_46909116008_prop_intel_dossier.md",
     "timestamp": "2026-08-08T02:21:39.246697"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "430-260-19-00-7",
-    "owner": "DD EQUIP STORAGE LLC",
-    "opportunity_tier": "Level 2 (High Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "45.4",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 37,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_43026019007_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T02:21:39.202960"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "428-211-61-00-3",
-    "owner": "SODHI SULAKHAN",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 65.0,
-    "equity_ratio_pct": "66.1",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 37,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_42821161003_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T02:21:39.157032"
   }
 ]
