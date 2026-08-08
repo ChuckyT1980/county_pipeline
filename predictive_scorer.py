@@ -178,7 +178,14 @@ def score_excess_proceeds(claim: dict[str, Any]) -> dict[str, Any]:
             deadline_dt = datetime.strptime(deadline_str, "%Y-%m-%d")
             now_dt = datetime.now()
             days_left = (deadline_dt - now_dt).days
-            if days_left <= 60:
+            if days_left < 0:
+                # BUG FIX 2026-08-08 (Nevada incident): a negative days_left
+                # was rendering as "EXTREME URGENCY (-255 days left)" -
+                # misleadingly implying it's still actionable, just very
+                # time-pressured. An expired deadline is not urgent, it's
+                # over - say so plainly, don't dress it up as a countdown.
+                urgency_status = f"EXPIRED ({abs(days_left)} days past deadline)"
+            elif days_left <= 60:
                 urgency_status = f"RED 🚨 EXTREME URGENCY ({days_left} days left)"
             elif days_left <= 180:
                 urgency_status = f"YELLOW ⚠️ HIGH URGENCY ({days_left} days left)"

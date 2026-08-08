@@ -1,8 +1,10 @@
-# Excess Proceeds & Heir Claim Summary: Tulare County
+# Excess Proceeds Opportunity Summary: Tulare County
 
-**Generated Date**: 2026-08-07 19:24:32  
+**Generated Date**: 2026-08-08 06:01:08  
 **APN**: `310-100-002-000`  
 **County**: Tulare County, California  
+
+**Status: ACTIVE_CANDIDATE** — Potential excess-proceeds opportunity; public county source; deadline verified; claimant eligibility requires review.
 
 ---
 
@@ -11,10 +13,10 @@
 | Metric | Value |
 |---|---|
 | **Excess Proceeds Available** | **$12,375.22** |
-| **Owner of Record** | **IRELAN VIRGINIA D (EST OF)** |
+| **Named Party (Per County List)** | **IRELAN VIRGINIA D (EST OF)** |
 | **Former Owner** | N/A |
 | **Claim Deadline** | **2027-03-03** |
-| **Urgency Status** | GREEN (207 days left) |
+| **Urgency Status** | GREEN (206 days left) |
 | **Recoverability Score** | **75.0 / 100** |
 | **Heir Locatability Tier** | High (Direct Individual Owner) |
 | **Deed Recordation Date** | N/A |
@@ -32,11 +34,17 @@
 
 ---
 
+## ⚠️ Claimant Eligibility Note
+
+The named party above is who appears on the county's public record for this parcel — it is **not** a confirmation that this party is the one legally entitled to receive funds. California excess-proceeds law (R&T Code §4675) establishes a priority order: lienholders of record first, then titleholders — and real complications are common: assignments, probate/estate proceedings, multiple parties of interest, or liens that reduce or eliminate what a given party can claim. Identity and priority must be independently verified before any outreach or agreement.
+
+---
+
 ## 📋 Recommended Action Plan
 
-1. **Verify Identity / Heirs**: Confirm current residence or estate records for **IRELAN VIRGINIA D (EST OF)**.
-2. **Outreach & Retainer Agreement**: Send recovery claim package offering surplus recovery under statutory contingency guidelines (30–40%).
+1. **Verify Eligibility**: Confirm the named party's current status, priority position among parties of interest, and any competing liens or assignments — do not assume the named party is the final recipient.
+2. **Locate & Contact**: Confirm current residence or estate records for **IRELAN VIRGINIA D (EST OF)** once eligibility is established.
 3. **Submit County Claim Package**: File formal claim with Tulare County Treasurer-Tax Collector prior to **2027-03-03**.
 
 ---
-*Generated automatically by CA-UNIFY Engine | 0% Synthetic Data Guarantee*
+*Generated automatically by CA-UNIFY Engine | Potential excess-proceeds opportunity; public county source; deadline verified; claimant eligibility requires review.*

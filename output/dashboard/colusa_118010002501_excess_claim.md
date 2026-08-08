@@ -1,8 +1,10 @@
-# Excess Proceeds & Heir Claim Summary: Colusa County
+# Excess Proceeds Opportunity Summary: Colusa County
 
-**Generated Date**: 2026-08-08 05:45:57  
+**Generated Date**: 2026-08-08 06:01:11  
 **APN**: `118-010-002-501`  
 **County**: Colusa County, California  
+
+**Status: ACTIVE_CANDIDATE** — Potential excess-proceeds opportunity; public county source; deadline verified; claimant eligibility requires review.
 
 ---
 
@@ -11,7 +13,7 @@
 | Metric | Value |
 |---|---|
 | **Excess Proceeds Available** | **UNDISCLOSED BY COUNTY (see verification notes)** |
-| **Owner of Record** | **LUCILLE MCDANIEL** |
+| **Named Party (Per County List)** | **LUCILLE MCDANIEL** |
 | **Former Owner** | N/A |
 | **Claim Deadline** | **2026-10-02** |
 | **Urgency Status** | RED 🚨 EXTREME URGENCY (54 days left) |
@@ -32,11 +34,17 @@
 
 ---
 
+## ⚠️ Claimant Eligibility Note
+
+The named party above is who appears on the county's public record for this parcel — it is **not** a confirmation that this party is the one legally entitled to receive funds. California excess-proceeds law (R&T Code §4675) establishes a priority order: lienholders of record first, then titleholders — and real complications are common: assignments, probate/estate proceedings, multiple parties of interest, or liens that reduce or eliminate what a given party can claim. Identity and priority must be independently verified before any outreach or agreement.
+
+---
+
 ## 📋 Recommended Action Plan
 
-1. **Verify Identity / Heirs**: Confirm current residence or estate records for **LUCILLE MCDANIEL**.
-2. **Outreach & Retainer Agreement**: Send recovery claim package offering surplus recovery under statutory contingency guidelines (30–40%).
+1. **Verify Eligibility**: Confirm the named party's current status, priority position among parties of interest, and any competing liens or assignments — do not assume the named party is the final recipient.
+2. **Locate & Contact**: Confirm current residence or estate records for **LUCILLE MCDANIEL** once eligibility is established.
 3. **Submit County Claim Package**: File formal claim with Colusa County Treasurer-Tax Collector prior to **2026-10-02**.
 
 ---
-*Generated automatically by CA-UNIFY Engine | 0% Synthetic Data Guarantee*
+*Generated automatically by CA-UNIFY Engine | Potential excess-proceeds opportunity; public county source; deadline verified; claimant eligibility requires review.*

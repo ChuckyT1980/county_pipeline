@@ -13,6 +13,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Optional
 
+from lead_status import LeadStatus, evaluate_lead
 from predictive_scorer import score_excess_proceeds, score_property_intelligence
 from signal_priority import get_auction_window_display, get_signal
 
@@ -44,10 +45,40 @@ def build_excess_proceeds_report(claim_data: dict[str, Any], county: str) -> Pat
     else:
         excess_amount_display = f"${scores['excess_amount_clean']:,.2f}"
 
+    # Run every record through the lead-status state machine before it can
+    # be presented as anything resembling "active" — built directly from
+    # the Nevada incident (2026-08-08): a record that's source-verified
+    # but has an expired deadline must never reach ACTIVE_CANDIDATE, full
+    # stop, no code path around it. See lead_status.py.
+    lead_eval = evaluate_lead(
+        source_verified=bool(claim_data.get("source_file") or claim_data.get("source_url")),
+        deadline_raw=claim_data.get("claim_deadline"),
+        run_date=datetime.now().date(),
+        amount_disclosed=claim_data.get("excess_proceeds") is not None,
+    )
+    LEAD_STATUS_STATEMENTS = {
+        LeadStatus.ACTIVE_CANDIDATE: (
+            "Potential excess-proceeds opportunity; public county source; deadline verified; "
+            "claimant eligibility requires review."
+        ),
+        LeadStatus.EXPIRED: (
+            f"EXPIRED — {lead_eval.reason}. Do not present as active, claimable, open, or actionable."
+        ),
+        LeadStatus.DEADLINE_UNVERIFIABLE: (
+            f"DEADLINE UNVERIFIABLE — {lead_eval.reason}. Requires human review before any status can be assigned."
+        ),
+        LeadStatus.EXTRACTED: (
+            f"SOURCE UNVERIFIED — {lead_eval.reason}."
+        ),
+    }
+    lead_status_statement = LEAD_STATUS_STATEMENTS.get(lead_eval.status, lead_eval.reason)
+
     replacements = {
         "{{county_name}}": county_name,
         "{{generated_date}}": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "{{apn_dash}}": apn_dash,
+        "{{lead_status}}": lead_eval.status.value.upper(),
+        "{{lead_status_statement}}": lead_status_statement,
         "{{excess_amount}}": excess_amount_display,
         "{{owner_name}}": claim_data.get("owner") or claim_data.get("owner_name") or "UNKNOWN",
         "{{former_owner}}": claim_data.get("former_owner") or "N/A",
@@ -83,6 +114,7 @@ def build_excess_proceeds_report(claim_data: dict[str, Any], county: str) -> Pat
         "recoverability_score": scores["recoverability_score"],
         "claim_deadline": replacements["{{claim_deadline}}"],
         "urgency_status": scores["urgency_status"],
+        "lead_status": lead_eval.status.value,
         "report_path": str(out_file.resolve()),
         "timestamp": datetime.now().isoformat(),
     })
