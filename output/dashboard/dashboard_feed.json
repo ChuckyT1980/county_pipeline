@@ -2,7 +2,7 @@
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-360-016-000",
+    "apn": "039-241-019-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -10,13 +10,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027360016000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:42.317806"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_039241019000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:15.039878"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-350-051-000",
+    "apn": "039-232-003-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -24,13 +24,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027350051000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:42.249028"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_039232003000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:14.958493"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-340-002-000",
+    "apn": "039-231-025-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -38,13 +38,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027340002000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:42.181613"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_039231025000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:14.880039"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-320-022-000",
+    "apn": "039-225-016-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -52,13 +52,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027320022000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:42.114311"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_039225016000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:14.795383"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-320-014-000",
+    "apn": "039-224-003-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -66,13 +66,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027320014000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:42.049653"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_039224003000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:14.713466"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-320-010-000",
+    "apn": "039-221-002-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -80,13 +80,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027320010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:41.985225"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_039221002000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:14.631476"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-250-037-000",
+    "apn": "039-190-024-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -94,13 +94,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027250037000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:41.928134"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_039190024000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:14.546511"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-232-006-000",
+    "apn": "039-160-016-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -108,13 +108,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027232006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:41.867602"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_039160016000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:14.461644"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-232-001-000",
+    "apn": "039-090-011-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -122,13 +122,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027232001000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:41.808168"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_039090011000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:14.375691"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-220-022-000",
+    "apn": "039-080-063-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -136,13 +136,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027220022000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:41.739168"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_039080063000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:14.290876"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-200-009-000",
+    "apn": "039-070-012-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -150,13 +150,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027200009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:41.676330"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_039070012000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:14.210119"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-190-003-000",
+    "apn": "039-020-034-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -164,27 +164,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027190003000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:41.613101"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_039020034000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:14.129887"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-160-005-000",
+    "apn": "037-280-029-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 75.0,
+    "seller_intent_score": 65.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027160005000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:41.549711"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037280029000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:14.052069"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-140-027-000",
+    "apn": "037-280-028-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -192,13 +192,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027140027000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:41.480454"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037280028000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:13.963124"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-140-005-000",
+    "apn": "037-280-013-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -206,13 +206,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027140005000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:41.411274"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037280013000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:13.888476"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-130-013-000",
+    "apn": "037-270-035-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -220,13 +220,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027130013000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:41.338127"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037270035000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:13.813664"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-110-008-000",
+    "apn": "037-270-023-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -234,13 +234,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027110008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:41.272133"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037270023000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:13.739455"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-110-007-000",
+    "apn": "037-270-017-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -248,27 +248,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027110007000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:41.202887"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037270017000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:13.664972"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-070-041-000",
+    "apn": "037-270-002-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027070041000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:41.132657"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037270002000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:13.592216"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-060-020-000",
+    "apn": "037-250-037-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -276,27 +276,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027060020000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:41.067128"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037250037000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:13.525184"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "027-030-017-000",
+    "apn": "037-245-022-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_027030017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:40.993637"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037245022000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:13.455989"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-190-041-000",
+    "apn": "037-242-006-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -304,13 +304,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025190041000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:40.923811"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037242006000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:13.381744"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-190-039-000",
+    "apn": "037-242-005-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -318,13 +318,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025190039000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:40.842420"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037242005000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:13.310060"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-190-037-000",
+    "apn": "037-241-015-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -332,27 +332,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025190037000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:40.767066"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037241015000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:13.232261"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-190-034-000",
+    "apn": "037-236-020-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025190034000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:40.693309"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037236020000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:13.158516"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-190-020-000",
+    "apn": "037-236-001-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -360,13 +360,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025190020000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:40.617746"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037236001000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:13.085621"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-180-039-000",
+    "apn": "037-182-006-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -374,13 +374,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025180039000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:40.548356"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037182006000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:13.014992"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-160-066-000",
+    "apn": "037-181-009-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -388,13 +388,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025160066000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:40.476501"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037181009000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:12.945372"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-160-065-000",
+    "apn": "037-150-010-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -402,13 +402,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025160065000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:40.404488"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037150010000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:12.876120"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-160-056-000",
+    "apn": "037-150-002-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -416,27 +416,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025160056000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:40.323881"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037150002000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:12.801131"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-150-029-000",
+    "apn": "037-120-011-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 75.0,
+    "seller_intent_score": 65.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025150029000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:40.249825"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037120011000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:12.720818"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-150-022-000",
+    "apn": "037-120-010-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -444,13 +444,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025150022000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:40.175343"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037120010000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:12.649376"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-150-014-000",
+    "apn": "037-120-008-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -458,13 +458,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025150014000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:40.098712"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037120008000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:12.570686"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-150-007-000",
+    "apn": "037-090-090-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -472,13 +472,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025150007000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:40.023542"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037090090000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:12.490794"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-140-025-000",
+    "apn": "037-090-089-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 65.0,
@@ -486,13 +486,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025140025000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:39.949643"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037090089000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:12.414438"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-140-019-000",
+    "apn": "037-290-001-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -500,55 +500,55 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025140019000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:39.877525"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037290001000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:12.336413"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-100-016-000",
+    "apn": "037-090-083-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 75.0,
+    "seller_intent_score": 65.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025100016000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:39.800029"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037090083000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:12.263721"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-090-023-000",
+    "apn": "037-090-079-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 75.0,
+    "seller_intent_score": 65.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025090023000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:39.722253"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037090079000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:12.188117"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-080-055-000",
+    "apn": "037-090-074-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025080055000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:39.635011"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037090074000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:12.113839"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-080-054-000",
+    "apn": "037-090-070-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -556,13 +556,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025080054000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:39.562136"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037090070000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:12.041398"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-080-053-000",
+    "apn": "037-090-069-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 65.0,
@@ -570,13 +570,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025080053000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:39.491796"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037090069000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:11.968450"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-080-044-000",
+    "apn": "037-090-058-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -584,13 +584,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025080044000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:39.418664"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037090058000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:11.895279"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-080-034-000",
+    "apn": "037-290-003-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -598,41 +598,41 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025080034000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:39.338585"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037290003000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:11.819035"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-080-026-000",
+    "apn": "037-090-036-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025080026000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:39.263772"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037090036000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:11.744646"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-041-001-000",
+    "apn": "037-090-028-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 75.0,
+    "seller_intent_score": 65.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025041001000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:39.186617"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037090028000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:11.671000"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "025-020-016-000",
+    "apn": "037-090-027-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 65.0,
@@ -640,13 +640,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_025020016000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:39.117889"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037090027000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:11.593953"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-320-036-000",
+    "apn": "037-070-031-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 65.0,
@@ -654,13 +654,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024320036000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:39.041943"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037070031000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:11.517640"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-320-001-000",
+    "apn": "037-030-011-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -668,13 +668,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024320001000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:38.967078"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037030011000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:11.383410"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-280-013-000",
+    "apn": "037-030-008-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -682,13 +682,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024280013000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:38.893422"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_037030008000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:11.309749"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-270-075-000",
+    "apn": "035-500-037-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -696,13 +696,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024270075000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:38.817756"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035500037000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:11.229225"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-230-012-000",
+    "apn": "035-500-008-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -710,13 +710,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024230012000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:38.743537"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035500008000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:11.150939"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-230-010-000",
+    "apn": "035-490-053-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -724,13 +724,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024230010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:38.670945"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035490053000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:11.073379"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-230-004-000",
+    "apn": "035-490-026-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -738,13 +738,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024230004000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:38.591563"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035490026000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:10.994233"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-200-060-000",
+    "apn": "035-480-040-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -752,13 +752,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024200060000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:38.513975"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035480040000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:10.922976"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-190-004-000",
+    "apn": "035-460-073-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -766,13 +766,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024190004000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:38.445541"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035460073000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:10.844759"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-180-004-000",
+    "apn": "035-460-070-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -780,13 +780,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024180004000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:38.367387"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035460070000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:10.769910"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-170-039-000",
+    "apn": "035-460-065-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -794,13 +794,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024170039000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:38.288987"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035460065000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:10.695049"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-170-010-000",
+    "apn": "035-460-022-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -808,13 +808,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024170010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:38.219730"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035460022000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:10.622708"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-170-001-000",
+    "apn": "035-440-011-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -822,13 +822,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024170001000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:38.144030"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035440011000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:10.552019"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-160-043-000",
+    "apn": "035-410-021-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -836,27 +836,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024160043000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:38.068959"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035410021000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:10.475737"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-160-042-000",
+    "apn": "035-390-011-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024160042000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:38.003486"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035390011000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:10.402789"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-130-027-000",
+    "apn": "035-380-002-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -864,41 +864,41 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024130027000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:37.931170"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035380002000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:10.324182"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-130-017-000",
+    "apn": "035-320-002-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 75.0,
+    "seller_intent_score": 65.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024130017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:37.860662"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035320002000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:10.248396"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-120-008-000",
+    "apn": "035-290-041-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 75.0,
+    "seller_intent_score": 65.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024120008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:37.788667"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035290041000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:10.167400"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-102-013-000",
+    "apn": "035-290-030-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -906,13 +906,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024102013000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:37.684752"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035290030000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:10.090707"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-090-027-000",
+    "apn": "035-290-019-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -920,13 +920,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024090027000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:37.618939"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035290019000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:10.018233"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-060-006-000",
+    "apn": "035-290-008-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -934,13 +934,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024060006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:37.551480"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035290008000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:09.945693"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-050-037-000",
+    "apn": "035-290-002-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -948,13 +948,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024050037000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:37.483477"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035290002000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:09.870603"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-010-054-000",
+    "apn": "035-272-030-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -962,41 +962,41 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024010054000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:37.412120"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035272030000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:09.794970"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-010-048-000",
+    "apn": "035-272-016-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024010048000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:37.342745"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035272016000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:09.723743"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "024-010-047-000",
+    "apn": "035-271-009-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_024010047000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:37.275394"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035271009000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:09.643123"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "022-490-016-000",
+    "apn": "035-260-020-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1004,13 +1004,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022490016000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:37.207014"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035260020000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:09.569939"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "022-390-002-000",
+    "apn": "035-260-009-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1018,13 +1018,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022390002000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:37.141757"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035260009000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:09.492739"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "022-350-017-000",
+    "apn": "035-251-052-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1032,13 +1032,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022350017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:37.069869"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035251052000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:09.419971"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "022-340-038-000",
+    "apn": "035-240-011-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1046,41 +1046,41 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022340038000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:37.001741"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035240011000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:09.349914"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "022-340-037-000",
+    "apn": "035-222-003-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022340037000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:36.931154"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035222003000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:09.276087"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "022-340-024-000",
+    "apn": "035-222-001-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022340024000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:36.867252"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035222001000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:09.205032"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "022-330-008-000",
+    "apn": "035-210-005-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1088,83 +1088,83 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022330008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:36.801586"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035210005000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:09.127204"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "022-330-006-000",
+    "apn": "035-202-013-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022330006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:36.731711"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035202013000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:09.056968"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "022-310-012-000",
+    "apn": "035-180-021-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 75.0,
+    "seller_intent_score": 65.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022310012000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:36.661830"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035180021000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:08.984563"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "022-300-010-000",
+    "apn": "035-180-011-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 75.0,
+    "seller_intent_score": 65.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022300010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:36.596077"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035180011000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:08.908856"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "022-300-005-000",
+    "apn": "035-170-019-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 75.0,
+    "seller_intent_score": 65.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022300005000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:36.531226"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035170019000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:08.839650"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "022-280-030-000",
+    "apn": "035-170-014-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 75.0,
+    "seller_intent_score": 65.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022280030000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:36.461594"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035170014000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:08.766028"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "022-280-023-000",
+    "apn": "035-170-004-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1172,13 +1172,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022280023000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:36.393717"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035170004000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:08.690361"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "022-280-014-000",
+    "apn": "035-170-003-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1186,27 +1186,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022280014000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:36.325359"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035170003000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:08.616018"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "022-200-039-000",
+    "apn": "035-140-047-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022200039000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:36.248424"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035140047000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:08.539118"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "022-170-062-000",
+    "apn": "035-030-009-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1214,97 +1214,97 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_022170062000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:36.176328"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_035030009000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:08.466793"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-240-022-000",
+    "apn": "033-280-010-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021240022000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:36.101815"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033280010000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:08.395116"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-240-015-000",
+    "apn": "033-260-012-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021240015000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:36.021640"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033260012000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:08.322386"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-240-014-000",
+    "apn": "033-250-072-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021240014000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:35.951114"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033250072000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:08.253162"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-230-006-000",
+    "apn": "033-250-055-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021230006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:35.876439"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033250055000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:08.180220"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-230-001-000",
+    "apn": "033-250-054-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021230001000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:35.801006"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033250054000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:08.109504"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-220-009-000",
+    "apn": "033-240-038-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021220009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:35.729719"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033240038000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:08.032310"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-210-036-000",
+    "apn": "033-240-023-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1312,13 +1312,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021210036000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:35.658105"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033240023000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:07.959426"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-210-035-000",
+    "apn": "033-230-059-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1326,27 +1326,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021210035000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:35.584742"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033230059000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:07.888547"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-210-023-000",
+    "apn": "033-201-012-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021210023000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:35.510273"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033201012000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:07.809474"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-210-022-000",
+    "apn": "033-180-077-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 65.0,
@@ -1354,27 +1354,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021210022000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:35.440266"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033180077000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:07.738846"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-210-020-000",
+    "apn": "033-180-011-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021210020000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:35.364527"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033180011000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:07.667933"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-200-039-000",
+    "apn": "033-170-021-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1382,13 +1382,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021200039000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:35.291874"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033170021000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:07.589649"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-200-025-000",
+    "apn": "033-170-014-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1396,27 +1396,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021200025000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:35.218870"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033170014000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:07.513457"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-170-011-000",
+    "apn": "033-152-003-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021170011000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:35.144763"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033152003000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:07.432999"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-160-043-000",
+    "apn": "033-152-001-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1424,167 +1424,167 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021160043000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:35.007851"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033152001000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:07.355560"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-160-026-000",
+    "apn": "033-120-027-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021160026000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:34.936213"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033120027000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:07.274617"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-160-020-000",
+    "apn": "033-120-026-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 75.0,
+    "seller_intent_score": 65.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021160020000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:34.870984"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033120026000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:07.202577"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-150-029-000",
+    "apn": "033-120-021-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 75.0,
+    "seller_intent_score": 65.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021150029000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:34.800691"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033120021000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:07.123807"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "021-050-011-000",
+    "apn": "033-120-003-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_021050011000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:34.729483"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033120003000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:07.050933"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "019-240-016-000",
+    "apn": "033-120-002-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019240016000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:34.662529"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033120002000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:06.976416"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "019-240-015-000",
+    "apn": "033-113-009-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019240015000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:34.588611"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033113009000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:06.897382"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "019-240-010-000",
+    "apn": "033-113-003-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019240010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:34.517734"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033113003000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:06.826287"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "019-190-030-000",
+    "apn": "033-090-019-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019190030000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:34.446731"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033090019000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:06.757410"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "019-190-018-000",
+    "apn": "033-080-024-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019190018000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:34.366986"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033080024000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:06.689287"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "019-190-015-000",
+    "apn": "033-080-023-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019190015000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:34.292668"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033080023000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:06.616064"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "019-190-013-000",
+    "apn": "033-080-022-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019190013000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:34.217447"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033080022000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:06.549799"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "019-150-011-000",
+    "apn": "033-071-006-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1592,13 +1592,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019150011000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:34.144376"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033071006000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:06.484587"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "019-140-024-000",
+    "apn": "033-071-005-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 65.0,
@@ -1606,41 +1606,41 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019140024000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:34.073506"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033071005000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:06.420581"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "019-050-017-000",
+    "apn": "033-066-008-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019050017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:34.000383"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033066008000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:06.354361"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "019-050-014-000",
+    "apn": "033-063-011-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019050014000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:33.919576"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033063011000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:06.289789"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "019-050-013-000",
+    "apn": "033-063-001-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1648,41 +1648,41 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019050013000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:33.846061"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033063001000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:06.209772"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "019-050-011-000",
+    "apn": "033-062-001-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_019050011000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:33.772902"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033062001000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:06.136579"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "017-320-003-000",
+    "apn": "033-052-015-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_017320003000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:33.694103"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033052015000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:06.064718"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "017-310-038-000",
+    "apn": "033-041-012-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 65.0,
@@ -1690,27 +1690,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_017310038000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:33.621830"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033041012000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:05.984026"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "017-310-033-000",
+    "apn": "033-034-005-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_017310033000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:33.553206"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033034005000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:05.910336"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "017-280-052-000",
+    "apn": "033-031-010-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1718,13 +1718,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_017280052000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:33.478528"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033031010000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:05.831859"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "017-280-051-000",
+    "apn": "033-031-002-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1732,27 +1732,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_017280051000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:33.406643"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_033031002000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:05.753156"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "017-270-011-000",
+    "apn": "031-310-030-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_017270011000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:33.337902"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031310030000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:05.681931"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "015-210-056-000",
+    "apn": "031-310-019-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1760,27 +1760,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_015210056000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:33.269353"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031310019000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:05.599673"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "015-210-029-000",
+    "apn": "031-300-050-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 75.0,
+    "seller_intent_score": 65.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_015210029000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:33.198004"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031300050000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:05.525580"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "015-200-051-000",
+    "apn": "031-270-023-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1788,13 +1788,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_015200051000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:33.128566"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031270023000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:05.441945"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "015-160-010-000",
+    "apn": "031-270-009-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1802,13 +1802,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_015160010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:33.061080"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031270009000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:05.368748"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "015-150-027-000",
+    "apn": "031-260-058-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1816,13 +1816,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_015150027000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:32.997084"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031260058000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:05.290997"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "015-130-006-000",
+    "apn": "031-260-052-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1830,41 +1830,41 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_015130006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:32.924665"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031260052000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:05.211027"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "015-080-021-000",
+    "apn": "031-260-036-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_015080021000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:32.859665"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031260036000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:05.136691"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "015-070-008-000",
+    "apn": "031-250-019-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_015070008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:32.789905"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031250019000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:05.063653"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-450-014-000",
+    "apn": "031-250-006-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1872,41 +1872,41 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013450014000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:32.727402"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031250006000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:04.981822"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-440-002-000",
+    "apn": "031-230-079-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013440002000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:32.663322"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031230079000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:04.907903"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-410-032-000",
+    "apn": "031-230-018-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013410032000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:32.593165"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031230018000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:04.833879"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-410-026-000",
+    "apn": "031-220-025-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1914,27 +1914,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013410026000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:32.523014"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031220025000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:04.761256"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-410-009-000",
+    "apn": "031-202-011-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013410009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:32.458646"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031202011000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:04.680752"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-410-006-000",
+    "apn": "031-192-004-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1942,27 +1942,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013410006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:32.397671"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031192004000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:04.606009"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-410-005-000",
+    "apn": "031-192-002-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013410005000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:32.333926"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031192002000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:04.530006"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-400-004-000",
+    "apn": "031-183-006-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1970,13 +1970,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013400004000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:32.269187"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031183006000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:04.446393"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-390-035-000",
+    "apn": "031-182-007-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1984,13 +1984,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013390035000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:32.195434"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031182007000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:04.374878"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-390-016-000",
+    "apn": "031-181-006-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -1998,13 +1998,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013390016000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:32.127511"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031181006000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:04.302295"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-390-010-000",
+    "apn": "031-176-006-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2012,13 +2012,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013390010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:32.055539"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031176006000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:04.226319"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-390-009-000",
+    "apn": "031-153-012-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2026,13 +2026,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013390009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:31.985284"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031153012000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:04.155788"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-390-008-000",
+    "apn": "031-152-020-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2040,13 +2040,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013390008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:31.916200"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031152020000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:04.081373"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-380-053-000",
+    "apn": "031-151-031-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2054,13 +2054,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380053000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:31.848127"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031151031000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:04.008409"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-380-047-000",
+    "apn": "031-131-024-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2068,13 +2068,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380047000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:31.777222"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031131024000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:03.934413"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-380-043-000",
+    "apn": "031-131-015-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2082,13 +2082,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380043000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:31.710301"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031131015000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:03.859084"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-380-036-000",
+    "apn": "031-112-014-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2096,13 +2096,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380036000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:31.642407"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031112014000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:03.779765"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-380-030-000",
+    "apn": "031-111-022-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2110,13 +2110,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380030000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:31.569602"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031111022000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:03.708503"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-380-018-000",
+    "apn": "031-102-017-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2124,27 +2124,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380018000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:31.494639"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031102017000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:03.638386"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-380-017-000",
+    "apn": "031-093-007-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:31.417134"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031093007000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:03.567051"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-380-015-000",
+    "apn": "031-092-005-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2152,13 +2152,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380015000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:31.339911"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031092005000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:03.494404"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-380-012-000",
+    "apn": "031-092-001-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2166,13 +2166,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380012000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:31.265342"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031092001000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:03.418011"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-380-010-000",
+    "apn": "031-063-003-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2180,13 +2180,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:31.192488"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031063003000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:03.343246"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-380-009-000",
+    "apn": "031-053-014-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2194,13 +2194,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:31.115663"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031053014000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:03.270714"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-380-008-000",
+    "apn": "031-052-006-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2208,13 +2208,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:31.038135"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031052006000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:03.197288"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-380-007-000",
+    "apn": "031-051-009-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2222,13 +2222,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380007000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:30.966269"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031051009000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:03.125062"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-380-006-000",
+    "apn": "031-020-027-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2236,13 +2236,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:30.891803"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_031020027000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:03.048556"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-380-004-000",
+    "apn": "029-422-014-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2250,13 +2250,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380004000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:30.795249"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029422014000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:02.976311"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-380-002-000",
+    "apn": "029-422-012-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2264,27 +2264,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013380002000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:30.716531"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029422012000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:02.897587"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-372-012-000",
+    "apn": "029-421-005-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013372012000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:30.648117"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029421005000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:02.815999"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-371-010-000",
+    "apn": "029-385-032-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2292,13 +2292,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013371010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:30.578136"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029385032000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:02.720745"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-371-009-000",
+    "apn": "029-385-030-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2306,55 +2306,55 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013371009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:30.507812"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029385030000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:02.633986"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-361-010-000",
+    "apn": "029-384-015-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013361010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:30.429866"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029384015000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:02.551408"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-361-007-000",
+    "apn": "029-375-015-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013361007000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:30.355746"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029375015000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:02.477708"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-361-001-000",
+    "apn": "029-375-012-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013361001000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:30.284100"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029375012000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:02.403925"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-333-009-000",
+    "apn": "029-374-007-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2362,13 +2362,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013333009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:30.211089"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029374007000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:02.320659"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-302-017-000",
+    "apn": "029-374-006-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2376,41 +2376,41 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013302017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:30.128108"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029374006000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:02.243270"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-290-050-000",
+    "apn": "029-374-005-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013290050000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:30.046683"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029374005000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:02.169078"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-290-035-000",
+    "apn": "029-371-002-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013290035000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:29.971519"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029371002000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:02.086652"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-290-013-000",
+    "apn": "029-363-011-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2418,41 +2418,41 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013290013000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:29.898705"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029363011000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:02.004822"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-280-025-000",
+    "apn": "029-353-014-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013280025000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:29.824321"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029353014000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:01.930939"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-280-024-000",
+    "apn": "029-353-007-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013280024000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:29.750469"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029353007000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:01.854792"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-250-021-000",
+    "apn": "029-333-007-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2460,13 +2460,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013250021000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:29.675826"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029333007000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:01.780451"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-250-020-000",
+    "apn": "029-332-011-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2474,13 +2474,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013250020000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:29.592532"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029332011000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:01.705278"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-250-019-000",
+    "apn": "029-305-004-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2488,55 +2488,55 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013250019000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:29.521266"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029305004000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:01.629745"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-250-017-000",
+    "apn": "029-304-009-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 75.0,
+    "seller_intent_score": 65.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013250017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:29.447700"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029304009000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:01.554008"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-250-004-000",
+    "apn": "029-303-007-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013250004000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:29.374360"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029303007000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:01.479510"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-250-002-000",
+    "apn": "029-301-001-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013250002000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:29.304817"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029301001000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:01.401157"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-242-007-000",
+    "apn": "029-296-005-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2544,13 +2544,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013242007000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:29.236599"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029296005000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:01.328133"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-242-006-000",
+    "apn": "029-295-002-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2558,13 +2558,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013242006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:29.154002"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029295002000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:01.255096"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-242-005-000",
+    "apn": "029-291-005-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2572,13 +2572,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013242005000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:29.087173"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029291005000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:01.176355"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-242-004-000",
+    "apn": "029-291-004-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2586,13 +2586,13 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013242004000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:29.010758"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029291004000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:01.105876"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-242-002-000",
+    "apn": "029-281-025-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2600,27 +2600,27 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013242002000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:28.938378"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029281025000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:01.026328"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-210-012-000",
+    "apn": "029-270-033-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
-    "equity_ratio_pct": "75.0",
+    "seller_intent_score": 60.0,
+    "equity_ratio_pct": "0.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013210012000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:28.860947"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029270033000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:00.950726"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-150-024-000",
+    "apn": "029-264-010-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2628,41 +2628,41 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013150024000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:28.794944"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029264010000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:00.877192"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-150-007-000",
+    "apn": "029-256-009-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013150007000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:28.734159"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029256009000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:00.802606"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-150-006-000",
+    "apn": "029-243-001-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013150006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:28.654399"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029243001000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:00.715369"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-050-050-000",
+    "apn": "029-232-013-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2670,125 +2670,125 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013050050000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:28.521925"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029232013000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:00.637804"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-050-046-000",
+    "apn": "029-224-011-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013050046000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:28.449684"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029224011000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:00.552595"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-050-031-000",
+    "apn": "029-224-009-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013050031000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:28.384125"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029224009000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:00.427448"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-050-017-000",
+    "apn": "029-222-008-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013050017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:28.317902"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029222008000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:00.358481"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-050-016-000",
+    "apn": "029-214-012-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013050016000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:28.247495"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029214012000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:00.292989"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-050-011-000",
+    "apn": "029-214-004-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013050011000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:28.166278"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029214004000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:00.224724"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-040-060-000",
+    "apn": "029-211-016-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013040060000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:28.096926"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029211016000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:00.158303"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "013-040-056-000",
+    "apn": "029-211-001-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 65.0,
+    "seller_intent_score": 75.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_013040056000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:28.026077"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029211001000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:00.086308"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "011-440-042-000",
+    "apn": "029-183-014-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
-    "seller_intent_score": 75.0,
+    "seller_intent_score": 65.0,
     "equity_ratio_pct": "75.0",
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_011440042000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:27.959307"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029183014000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:27:00.015257"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
     "county": "Tehama",
-    "apn": "011-440-034-000",
+    "apn": "029-182-001-000",
     "owner": "UNKNOWN",
     "opportunity_tier": "UNVERIFIED (Insufficient Source Data)",
     "seller_intent_score": 75.0,
@@ -2796,7 +2796,7 @@
     "signal_type": "NO_SCHEDULED_AUCTION",
     "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
     "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_011440034000_prop_intel_dossier.md",
-    "timestamp": "2026-08-07T19:57:27.887925"
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/tehama_029182001000_prop_intel_dossier.md",
+    "timestamp": "2026-08-07T21:26:59.947487"
   }
 ]
