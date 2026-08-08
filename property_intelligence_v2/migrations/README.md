@@ -14,9 +14,32 @@ values).
 `apply_schema.py` is the one code path that applies migrations - both
 real usage and tests call the same `apply_schema(conn)` function against
 the same files in this directory. Future schema changes get their own
-numbered file (`002_...sql`) and an entry in `apply_schema.py`'s
-`MIGRATIONS` list; existing migration files are never edited in place
-once applied anywhere.
+numbered file and an entry in `apply_schema.py`'s `MIGRATIONS` list;
+existing migration files are never edited in place once applied
+anywhere.
+
+`002_integrity_hardening.sql` (proposed, not yet reviewed/accepted) adds,
+on top of 001: unconditional SQLite triggers blocking UPDATE/DELETE on
+`raw_evidence` and `observations` (real enforcement, not the unenforced
+`immutable` flag column 001 shipped with); a `supersedes_observation_id`
+column replacing 001's `superseded_by_observation_id` (the new row points
+backward at INSERT time, instead of requiring the old row to be mutated
+- which the new immutability triggers would otherwise block); a typed,
+immutable `observation_identifiers` table replacing 001's untyped
+`observations.source_identifier_type`/`source_identifier_value` columns
+(removed, not left running alongside the new table - see the migration's
+own comments for why); an append-only `evidence_disposition` table plus
+`v_evidence_current_disposition` view implementing ACTIVE/QUARANTINED
+evidence status without requiring `raw_evidence` itself to be mutable;
+and a `canonical_property_state.verification_status` column plus
+normalized `canonical_state_support` table gating VERIFIED/
+HUMAN_CONFIRMED status on active-evidence-backed support and a confirmed
+parcel match. Each test in
+`property_intelligence_v2/tests/test_schema.py` that pre-dates 002 is
+pinned to `apply_schema(conn, target_version=1)` deliberately, so it
+keeps testing 001's shape in isolation regardless of what later
+migrations add or remove - `test_schema_hardening.py` is what tests 001
+and 002 applied together.
 
 SQLite now, written to be mechanically portable to PostgreSQL later (see
 the portability notes at the top of `001_initial_schema.sql`) - no cloud

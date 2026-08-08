@@ -25,15 +25,27 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "migrations"))
 
-from apply_schema import CURRENT_SCHEMA_VERSION, apply_schema, get_applied_version  # noqa: E402
+from apply_schema import apply_schema, get_applied_version  # noqa: E402
 
 NOW = datetime(2026, 1, 1, tzinfo=timezone.utc).isoformat()
 
 
 def _fresh_conn() -> sqlite3.Connection:
+    """
+    Pinned to target_version=1 deliberately: this file tests migration
+    001's schema shape in isolation, independent of whatever later
+    migrations exist. Migration 002 (integrity hardening) removes/renames
+    some of the columns this file's fixtures use (source_identifier_type,
+    source_identifier_value, superseded_by_observation_id) - calling
+    apply_schema(conn) with no target_version here would silently apply
+    002 as well once it exists, and break these fixtures. Pinning is the
+    fix, not rewriting this file's fixtures to match 002 - that's what
+    test_schema_hardening.py is for, and keeping this file pinned to
+    version 1 is what makes each migration independently testable.
+    """
     conn = sqlite3.connect(":memory:")
     conn.execute("PRAGMA foreign_keys = ON")
-    apply_schema(conn)
+    apply_schema(conn, target_version=1)
     return conn
 
 
@@ -41,8 +53,8 @@ def _fresh_conn() -> sqlite3.Connection:
 
 def test_schema_applies_and_records_its_own_version():
     conn = _fresh_conn()
-    assert get_applied_version(conn) == CURRENT_SCHEMA_VERSION
-    print(f"PASS: migrations/001_initial_schema.sql applies cleanly to an in-memory db, version={CURRENT_SCHEMA_VERSION}")
+    assert get_applied_version(conn) == 1, "this file is pinned to migration 001 in isolation - see _fresh_conn()'s docstring"
+    print("PASS: migrations/001_initial_schema.sql applies cleanly to an in-memory db, version=1 (pinned)")
 
 
 def test_foreign_keys_are_enforced():
@@ -67,10 +79,10 @@ def test_all_nine_entity_tables_exist():
 
 def test_apply_schema_is_idempotent():
     conn = _fresh_conn()
-    apply_schema(conn)  # second call must not error or duplicate the migration row
+    apply_schema(conn, target_version=1)  # second call, same pinned version - must not error or duplicate the migration row
     rows = conn.execute("SELECT version FROM schema_migrations").fetchall()
     assert len(rows) == 1, f"schema_migrations should have exactly 1 row for version 1, got {len(rows)}"
-    print("PASS: re-applying the schema is idempotent")
+    print("PASS: re-applying the schema (pinned to version 1) is idempotent")
 
 
 # ── Valid round trip (establishes a baseline before the rejection tests) ─

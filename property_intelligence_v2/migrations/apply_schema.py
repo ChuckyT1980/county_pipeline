@@ -29,6 +29,9 @@ MIGRATIONS_DIR = Path(__file__).resolve().parent
 # migrations are added. Each filename must exist in this directory.
 MIGRATIONS: list[tuple[int, str, str]] = [
     (1, "001_initial_schema.sql", "Phase 1: nine core contract tables (source_registry through exceptions)"),
+    (2, "002_integrity_hardening.sql", "Phase 1 hardening: evidence/observation immutability triggers, typed "
+                                        "observation_identifiers, evidence_disposition quarantine model, "
+                                        "canonical_state_support + verification_status gating"),
 ]
 
 CURRENT_SCHEMA_VERSION = MIGRATIONS[-1][0]
