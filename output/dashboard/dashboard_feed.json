@@ -1,6 +1,42 @@
 [
   {
     "type": "EXCESS_PROCEEDS",
+    "county": "San Joaquin",
+    "apn": "149-170-110-000",
+    "owner": "OWP PHASE II LP",
+    "excess_amount": 732.77,
+    "recoverability_score": 50.0,
+    "claim_deadline": "2027-03-12",
+    "urgency_status": "GREEN (215 days left)",
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/san_joaquin_149170110000_excess_claim.md",
+    "timestamp": "2026-08-08T05:26:00.810006"
+  },
+  {
+    "type": "EXCESS_PROCEEDS",
+    "county": "San Joaquin",
+    "apn": "147-220-110-000",
+    "owner": "STRONG CAPITAL V LP",
+    "excess_amount": 48617.04,
+    "recoverability_score": 75.0,
+    "claim_deadline": "2027-03-12",
+    "urgency_status": "GREEN (215 days left)",
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/san_joaquin_147220110000_excess_claim.md",
+    "timestamp": "2026-08-08T05:26:00.769731"
+  },
+  {
+    "type": "EXCESS_PROCEEDS",
+    "county": "San Joaquin",
+    "apn": "027-134-130-000",
+    "owner": "LODUCA, SHANNON TR",
+    "excess_amount": 394583.34,
+    "recoverability_score": 85.0,
+    "claim_deadline": "2027-03-12",
+    "urgency_status": "GREEN (215 days left)",
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/san_joaquin_027134130000_excess_claim.md",
+    "timestamp": "2026-08-08T05:26:00.731547"
+  },
+  {
+    "type": "EXCESS_PROCEEDS",
     "county": "Sonoma",
     "apn": "156-530-001-000",
     "owner": "HABE CORPORATION",
@@ -2720,47 +2756,5 @@
     "days_until_auction": 37,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21122310002_prop_intel_dossier.md",
     "timestamp": "2026-08-08T02:21:30.503193"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "211-132-04-00-2",
-    "owner": "CASTELLANOS LUIS ARMANDO",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 37,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21113204002_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T02:21:30.452281"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "210-310-22-00-5",
-    "owner": "LI XIU WEI",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 37,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21031022005_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T02:21:30.403163"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Kern",
-    "apn": "210-040-11-00-5",
-    "owner": "MC ADAMS EDWIN A TR",
-    "opportunity_tier": "Level 3 (Moderate Potential)",
-    "seller_intent_score": 50.0,
-    "equity_ratio_pct": "0.0",
-    "signal_type": "PRE_AUCTION_PRIORITY_1",
-    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
-    "days_until_auction": 37,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_21004011005_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T02:21:30.348669"
   }
 ]
