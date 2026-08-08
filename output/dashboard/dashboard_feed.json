@@ -1,6 +1,230 @@
 [
   {
     "type": "PROPERTY_INTELLIGENCE",
+    "county": "Lake",
+    "apn": "142-272-060-000",
+    "owner": "TRANMER DIANA L",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "76.3",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_142272060000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:07:33.690202"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Lake",
+    "apn": "142-035-060-000",
+    "owner": "HATCH HARRY M",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "71.3",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_142035060000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:07:33.632577"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Lake",
+    "apn": "141-451-110-000",
+    "owner": "REILLEY RICHARD R",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "58.2",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_141451110000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:07:33.582348"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Lake",
+    "apn": "050-192-020-000",
+    "owner": "HOLDINGS 22 LLC",
+    "opportunity_tier": "Level 2 (High Potential)",
+    "seller_intent_score": 60.0,
+    "equity_ratio_pct": "22.5",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_050192020000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:07:33.532468"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Lake",
+    "apn": "041-351-320-000",
+    "owner": "SUTCH TAMARA J",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "76.3",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_041351320000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:07:33.481151"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Lake",
+    "apn": "040-330-280-000",
+    "owner": "PALACIOS HELEN",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "77.6",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_040330280000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:07:33.429953"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Lake",
+    "apn": "039-392-570-000",
+    "owner": "PALACIOS HELEN",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "85.2",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_039392570000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:07:33.380316"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Lake",
+    "apn": "038-234-400-000",
+    "owner": "VARGAS PRESCILIANO",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "74.0",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_038234400000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:07:33.332720"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Lake",
+    "apn": "035-385-370-000",
+    "owner": "MCGUIRE JESSE",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "87.6",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_035385370000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:07:33.285685"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Lake",
+    "apn": "035-385-180-000",
+    "owner": "MCGUIRE JESSE",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "82.7",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_035385180000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:07:33.236145"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Lake",
+    "apn": "035-152-600-000",
+    "owner": "DETI DAVID L",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "71.3",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_035152600000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:07:33.190113"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Lake",
+    "apn": "034-866-170-000",
+    "owner": "SMITH NICKY DALE",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "82.7",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_034866170000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:07:33.145374"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Lake",
+    "apn": "034-552-380-000",
+    "owner": "BERESFORD ERIC",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "65.8",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_034552380000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:07:33.093129"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Lake",
+    "apn": "031-113-560-000",
+    "owner": "DANNER DOROTHY M TRUSTEE",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "77.8",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_031113560000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:07:33.044144"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Lake",
+    "apn": "006-462-150-000",
+    "owner": "BONFIGLIO LAURETTA H",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "74.3",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_006462150000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:07:32.981327"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Lake",
+    "apn": "005-012-300-000",
+    "owner": "COBLE JOYCE A TRUSTEE",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 75.0,
+    "equity_ratio_pct": "88.6",
+    "signal_type": "NO_SCHEDULED_AUCTION",
+    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
+    "days_until_auction": null,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_005012300000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:07:32.893044"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
     "county": "Butte",
     "apn": "072-200-034-000",
     "owner": "SOLOMON LEONARD",
@@ -11,7 +235,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_072200034000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:20.019163"
+    "timestamp": "2026-08-08T12:06:51.198966"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -25,7 +249,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_072190015000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:19.936947"
+    "timestamp": "2026-08-08T12:06:51.133006"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -39,7 +263,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_071470021000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:19.855973"
+    "timestamp": "2026-08-08T12:06:51.063269"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -53,7 +277,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_071320003000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:19.777714"
+    "timestamp": "2026-08-08T12:06:50.997253"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -67,7 +291,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_071280038000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:19.700654"
+    "timestamp": "2026-08-08T12:06:50.932184"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -81,7 +305,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_071270045000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:19.615564"
+    "timestamp": "2026-08-08T12:06:50.862920"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -95,7 +319,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_071270029000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:19.537909"
+    "timestamp": "2026-08-08T12:06:50.796702"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -109,7 +333,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_071240025000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:19.460683"
+    "timestamp": "2026-08-08T12:06:50.731939"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -123,7 +347,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_071150003000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:19.386566"
+    "timestamp": "2026-08-08T12:06:50.666595"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -137,7 +361,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_071060025000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:19.291820"
+    "timestamp": "2026-08-08T12:06:50.609343"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -151,7 +375,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_071060021000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:19.205389"
+    "timestamp": "2026-08-08T12:06:50.544381"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -165,7 +389,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_069190021000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:19.124993"
+    "timestamp": "2026-08-08T12:06:50.449565"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -179,7 +403,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_066420011000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:19.045470"
+    "timestamp": "2026-08-08T12:06:50.356572"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -193,7 +417,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_066270036000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:18.952237"
+    "timestamp": "2026-08-08T12:06:50.269892"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -207,7 +431,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_066230047000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:18.869276"
+    "timestamp": "2026-08-08T12:06:50.170906"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -221,7 +445,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_066220001000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:18.784914"
+    "timestamp": "2026-08-08T12:06:50.092659"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -235,7 +459,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_066130036000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:18.697992"
+    "timestamp": "2026-08-08T12:06:50.027145"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -249,7 +473,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_066100010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:18.598975"
+    "timestamp": "2026-08-08T12:06:49.968503"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -263,7 +487,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_066050011000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:18.490501"
+    "timestamp": "2026-08-08T12:06:49.912273"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -277,7 +501,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_065210023000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:18.401563"
+    "timestamp": "2026-08-08T12:06:49.813977"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -291,7 +515,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062750036000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:18.308625"
+    "timestamp": "2026-08-08T12:06:49.751867"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -305,7 +529,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062730008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:18.222042"
+    "timestamp": "2026-08-08T12:06:49.704085"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -319,7 +543,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062710019000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:18.140274"
+    "timestamp": "2026-08-08T12:06:49.649757"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -333,7 +557,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062690027000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:18.060925"
+    "timestamp": "2026-08-08T12:06:49.594023"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -347,7 +571,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062350024000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:17.966997"
+    "timestamp": "2026-08-08T12:06:49.538156"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -361,7 +585,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062340018000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:17.879658"
+    "timestamp": "2026-08-08T12:06:49.483814"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -375,7 +599,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062320029000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:17.806029"
+    "timestamp": "2026-08-08T12:06:49.420389"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -389,7 +613,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062320018000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:17.726478"
+    "timestamp": "2026-08-08T12:06:49.339303"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -403,7 +627,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062320008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:17.652076"
+    "timestamp": "2026-08-08T12:06:49.204696"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -417,7 +641,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062320006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:17.582118"
+    "timestamp": "2026-08-08T12:06:49.139021"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -431,7 +655,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062310012000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:17.509206"
+    "timestamp": "2026-08-08T12:06:49.072395"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -445,7 +669,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062300078000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:17.433711"
+    "timestamp": "2026-08-08T12:06:49.005794"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -459,7 +683,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062300077000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:17.353105"
+    "timestamp": "2026-08-08T12:06:48.935736"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -473,7 +697,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062300044000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:17.269877"
+    "timestamp": "2026-08-08T12:06:48.857426"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -487,7 +711,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062300033000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:17.198297"
+    "timestamp": "2026-08-08T12:06:48.784954"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -501,7 +725,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062300007000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:17.118934"
+    "timestamp": "2026-08-08T12:06:48.714680"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -515,7 +739,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062300006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:17.010402"
+    "timestamp": "2026-08-08T12:06:48.624318"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -529,7 +753,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062300005000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:16.926109"
+    "timestamp": "2026-08-08T12:06:48.541309"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -543,7 +767,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062190029000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:16.836148"
+    "timestamp": "2026-08-08T12:06:48.473700"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -557,7 +781,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062190025000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:16.745759"
+    "timestamp": "2026-08-08T12:06:48.391000"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -571,7 +795,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062150009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:16.651566"
+    "timestamp": "2026-08-08T12:06:48.301439"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -585,7 +809,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062150008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:16.571280"
+    "timestamp": "2026-08-08T12:06:48.218046"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -599,7 +823,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_062140027000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:16.491694"
+    "timestamp": "2026-08-08T12:06:48.126805"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -613,7 +837,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_061610009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:16.421385"
+    "timestamp": "2026-08-08T12:06:48.051162"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -627,7 +851,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_061610005000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:16.314870"
+    "timestamp": "2026-08-08T12:06:47.982372"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -641,7 +865,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_061590009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:16.236474"
+    "timestamp": "2026-08-08T12:06:47.908541"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -655,7 +879,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_061590007000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:16.167221"
+    "timestamp": "2026-08-08T12:06:47.834049"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -669,7 +893,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_061550018000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:16.101911"
+    "timestamp": "2026-08-08T12:06:47.755946"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -683,7 +907,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_061550017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:16.042513"
+    "timestamp": "2026-08-08T12:06:47.667598"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -697,7 +921,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_059092008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:15.989927"
+    "timestamp": "2026-08-08T12:06:47.578343"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -711,7 +935,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_059087017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:15.933395"
+    "timestamp": "2026-08-08T12:06:47.493278"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -725,7 +949,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_059087011000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:15.877640"
+    "timestamp": "2026-08-08T12:06:47.399113"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -739,7 +963,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_058430019000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:15.821524"
+    "timestamp": "2026-08-08T12:06:47.290936"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -753,7 +977,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_058410029000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:15.759658"
+    "timestamp": "2026-08-08T12:06:47.201739"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -767,7 +991,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_058370048000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:15.700689"
+    "timestamp": "2026-08-08T12:06:46.995529"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -781,7 +1005,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_058370027000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:15.646162"
+    "timestamp": "2026-08-08T12:06:46.835344"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -795,7 +1019,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_058370023000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:15.583130"
+    "timestamp": "2026-08-08T12:06:46.682628"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -809,7 +1033,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_058330046000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:15.522282"
+    "timestamp": "2026-08-08T12:06:46.501088"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -823,7 +1047,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_058330038000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:15.448813"
+    "timestamp": "2026-08-08T12:06:46.360086"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -837,7 +1061,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_058260060000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:15.386232"
+    "timestamp": "2026-08-08T12:06:46.205694"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -851,7 +1075,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_056400019000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:15.315640"
+    "timestamp": "2026-08-08T12:06:46.069395"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -865,7 +1089,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_055520085000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:15.239630"
+    "timestamp": "2026-08-08T12:06:45.966465"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -879,7 +1103,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_055330017000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:15.170078"
+    "timestamp": "2026-08-08T12:06:45.725835"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -893,7 +1117,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_055130089000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:15.096787"
+    "timestamp": "2026-08-08T12:06:45.619521"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -907,7 +1131,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_054260006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:15.025367"
+    "timestamp": "2026-08-08T12:06:45.561337"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -921,7 +1145,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_054192095000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:14.964684"
+    "timestamp": "2026-08-08T12:06:45.500334"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -935,7 +1159,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_054161037000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:14.899063"
+    "timestamp": "2026-08-08T12:06:45.441648"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -949,7 +1173,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_053340041000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:14.833716"
+    "timestamp": "2026-08-08T12:06:45.395647"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -963,7 +1187,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_053180086000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:14.751040"
+    "timestamp": "2026-08-08T12:06:45.348727"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -977,7 +1201,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_053021067000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:14.680713"
+    "timestamp": "2026-08-08T12:06:45.301956"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -991,7 +1215,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_052290161000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:14.612340"
+    "timestamp": "2026-08-08T12:06:45.244895"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1005,7 +1229,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_052290079000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:14.524613"
+    "timestamp": "2026-08-08T12:06:45.202431"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1019,7 +1243,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_052250052000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:14.448970"
+    "timestamp": "2026-08-08T12:06:45.162427"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1033,7 +1257,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_052080054000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:14.382784"
+    "timestamp": "2026-08-08T12:06:45.116730"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1047,7 +1271,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_052040067000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:14.312781"
+    "timestamp": "2026-08-08T12:06:45.075315"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1061,7 +1285,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_052031040000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:14.244324"
+    "timestamp": "2026-08-08T12:06:45.032375"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1075,7 +1299,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_052011094000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:14.179563"
+    "timestamp": "2026-08-08T12:06:44.995819"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1089,7 +1313,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_051280005000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:14.108172"
+    "timestamp": "2026-08-08T12:06:44.957973"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1103,7 +1327,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_051171067000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:14.038449"
+    "timestamp": "2026-08-08T12:06:44.921410"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1117,7 +1341,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_051083079000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:13.978803"
+    "timestamp": "2026-08-08T12:06:44.890206"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1131,7 +1355,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_051072071000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:13.914751"
+    "timestamp": "2026-08-08T12:06:44.859142"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1145,7 +1369,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_050120121000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:13.847499"
+    "timestamp": "2026-08-08T12:06:44.826230"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1159,7 +1383,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_050040132000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:13.783688"
+    "timestamp": "2026-08-08T12:06:44.794781"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1173,7 +1397,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_041260027000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:13.711990"
+    "timestamp": "2026-08-08T12:06:44.760317"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1187,7 +1411,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_035191010000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:13.644760"
+    "timestamp": "2026-08-08T12:06:44.720899"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1201,7 +1425,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_035155019000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:13.578539"
+    "timestamp": "2026-08-08T12:06:44.687735"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1215,7 +1439,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_035143011000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:13.500395"
+    "timestamp": "2026-08-08T12:06:44.655026"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1229,7 +1453,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_035112009000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:13.388207"
+    "timestamp": "2026-08-08T12:06:44.623143"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1243,7 +1467,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_035098011000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:13.327052"
+    "timestamp": "2026-08-08T12:06:44.588270"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1257,7 +1481,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_035083006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:13.264449"
+    "timestamp": "2026-08-08T12:06:44.557580"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1271,7 +1495,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_035073020000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:13.206381"
+    "timestamp": "2026-08-08T12:06:44.523495"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1285,7 +1509,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_033232026000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:13.146800"
+    "timestamp": "2026-08-08T12:06:44.490576"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1299,7 +1523,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_033232025000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:13.083291"
+    "timestamp": "2026-08-08T12:06:44.457364"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1313,7 +1537,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_033232022000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:13.028417"
+    "timestamp": "2026-08-08T12:06:44.425595"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1327,7 +1551,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_033232003000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:12.971980"
+    "timestamp": "2026-08-08T12:06:44.386089"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1341,7 +1565,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_033067003000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:12.921642"
+    "timestamp": "2026-08-08T12:06:44.352976"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1355,7 +1579,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_031281137000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:12.858239"
+    "timestamp": "2026-08-08T12:06:44.321180"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1369,7 +1593,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_031243024000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:12.803030"
+    "timestamp": "2026-08-08T12:06:44.289372"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1383,7 +1607,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_027290021000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:12.750844"
+    "timestamp": "2026-08-08T12:06:44.253849"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1397,7 +1621,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_027120038000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:12.700684"
+    "timestamp": "2026-08-08T12:06:44.222230"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1411,7 +1635,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_026111008000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:12.649149"
+    "timestamp": "2026-08-08T12:06:44.180221"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1425,7 +1649,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_001081018000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:12.599863"
+    "timestamp": "2026-08-08T12:06:44.142266"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1439,7 +1663,7 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_001081007000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:12.551558"
+    "timestamp": "2026-08-08T12:06:44.110263"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
@@ -1453,1273 +1677,1112 @@
     "priority_signal": "AUCTION LIVE NOW (through 2026-08-10)",
     "days_until_auction": 0,
     "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/butte_001081006000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:25:12.499797"
+    "timestamp": "2026-08-08T12:06:44.076726"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "142-272-060-000",
-    "owner": "TRANMER DIANA L",
+    "county": "Kern",
+    "apn": "520-060-19-00-5",
+    "owner": "MELENDEZ ZEUS JR",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "14.2",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_52006019005_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:57.137027"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "488-275-02-00-6",
+    "owner": "BRAVO JOSE SALOMAN",
     "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
     "seller_intent_score": 75.0,
-    "equity_ratio_pct": "76.3",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_142272060000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:05:08.515029"
+    "equity_ratio_pct": "94.6",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_48827502006_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:57.076957"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "142-035-060-000",
-    "owner": "HATCH HARRY M",
+    "county": "Kern",
+    "apn": "487-113-02-00-8",
+    "owner": "CONTRERAS DANIEL RIOS",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_48711302008_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:57.017108"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "486-172-28-00-8",
+    "owner": "MENDEZ ENRQIUE BERNAL SR",
     "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "71.3",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_142035060000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:05:08.482014"
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "70.1",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_48617228008_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:56.956075"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "141-451-110-000",
-    "owner": "REILLEY RICHARD R",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "58.2",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_141451110000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:05:08.440234"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "050-192-020-000",
-    "owner": "HOLDINGS 22 LLC",
+    "county": "Kern",
+    "apn": "478-081-16-00-1",
+    "owner": "BOWLAY WILLIAMS KYLE",
     "opportunity_tier": "Level 2 (High Potential)",
     "seller_intent_score": 60.0,
-    "equity_ratio_pct": "22.5",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_050192020000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:05:08.403217"
+    "equity_ratio_pct": "15.5",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_47808116001_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:56.891102"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "041-351-320-000",
-    "owner": "SUTCH TAMARA J",
+    "county": "Kern",
+    "apn": "477-110-08-00-2",
+    "owner": "GB REALTY GRP LLC",
     "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "76.3",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_041351320000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:05:08.364588"
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "70.9",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_47711008002_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:56.834629"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "040-330-280-000",
-    "owner": "PALACIOS HELEN",
+    "county": "Kern",
+    "apn": "475-172-15-00-0",
+    "owner": "MACK FERRIS B EXTR",
     "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "77.6",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_040330280000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:05:08.326195"
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "65.2",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_47517215000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:56.780323"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "039-392-570-000",
-    "owner": "PALACIOS HELEN",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "85.2",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_039392570000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:05:08.288001"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "038-234-400-000",
-    "owner": "VARGAS PRESCILIANO",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "74.0",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_038234400000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:05:08.250096"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "035-385-370-000",
-    "owner": "MCGUIRE JESSE",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "87.6",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_035385370000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:05:08.208934"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "035-385-180-000",
-    "owner": "MCGUIRE JESSE",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "82.7",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_035385180000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:05:08.171336"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "035-152-600-000",
-    "owner": "DETI DAVID L",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "71.3",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_035152600000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:05:08.133214"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "034-866-170-000",
-    "owner": "SMITH NICKY DALE",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "82.7",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_034866170000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:05:08.096101"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "034-552-380-000",
-    "owner": "BERESFORD ERIC",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "65.8",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_034552380000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:05:08.057634"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "031-113-560-000",
-    "owner": "DANNER DOROTHY M TRUSTEE",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "77.8",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_031113560000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:05:08.016310"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "006-462-150-000",
-    "owner": "BONFIGLIO LAURETTA H",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "74.3",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_006462150000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:05:07.976825"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "005-012-300-000",
-    "owner": "COBLE JOYCE A TRUSTEE",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "88.6",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_005012300000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:05:07.936109"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "142-272-060-000",
-    "owner": "TRANMER DIANA L",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "76.3",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_142272060000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:04:31.591941"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "142-035-060-000",
-    "owner": "HATCH HARRY M",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "71.3",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_142035060000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:04:31.560813"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "141-451-110-000",
-    "owner": "REILLEY RICHARD R",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "58.2",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_141451110000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:04:31.527649"
-  },
-  {
-    "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "050-192-020-000",
-    "owner": "HOLDINGS 22 LLC",
+    "county": "Kern",
+    "apn": "475-150-14-00-7",
+    "owner": "MARTIN BARBARA D TR",
     "opportunity_tier": "Level 2 (High Potential)",
-    "seller_intent_score": 60.0,
-    "equity_ratio_pct": "22.5",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_050192020000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:04:31.496694"
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "58.4",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_47515014007_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:56.711079"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "041-351-320-000",
-    "owner": "SUTCH TAMARA J",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "76.3",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_041351320000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:04:31.463479"
+    "county": "Kern",
+    "apn": "473-130-18-00-9",
+    "owner": "HARRIS HENRY D",
+    "opportunity_tier": "Level 2 (High Potential)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "54.6",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_47313018009_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:56.656248"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "040-330-280-000",
-    "owner": "PALACIOS HELEN",
+    "county": "Kern",
+    "apn": "469-091-17-00-1",
+    "owner": "WILSON EARL J TR",
     "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "77.6",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_040330280000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:04:31.429441"
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "73.1",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_46909117001_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:56.581230"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "039-392-570-000",
-    "owner": "PALACIOS HELEN",
+    "county": "Kern",
+    "apn": "469-091-16-00-8",
+    "owner": "WILSON EARL J TR",
     "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "85.2",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_039392570000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:04:31.397819"
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "73.1",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_46909116008_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:56.498260"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "038-234-400-000",
-    "owner": "VARGAS PRESCILIANO",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "74.0",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_038234400000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:04:31.366069"
+    "county": "Kern",
+    "apn": "430-260-19-00-7",
+    "owner": "DD EQUIP STORAGE LLC",
+    "opportunity_tier": "Level 2 (High Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "45.4",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_43026019007_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:56.410055"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "035-385-370-000",
-    "owner": "MCGUIRE JESSE",
+    "county": "Kern",
+    "apn": "428-211-61-00-3",
+    "owner": "SODHI SULAKHAN",
     "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "87.6",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_035385370000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:04:31.334804"
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "66.1",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_42821161003_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:56.341643"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "035-385-180-000",
-    "owner": "MCGUIRE JESSE",
+    "county": "Kern",
+    "apn": "427-100-01-00-3",
+    "owner": "MOORE WILLARD",
     "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "82.7",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_035385180000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:04:31.302489"
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "88.7",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_42710001003_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:56.280901"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "035-152-600-000",
-    "owner": "DETI DAVID L",
+    "county": "Kern",
+    "apn": "425-182-05-00-9",
+    "owner": "JANOWICZ ANTHONY",
     "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "71.3",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_035152600000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:04:31.271991"
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "62.4",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_42518205009_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:56.215272"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "034-866-170-000",
-    "owner": "SMITH NICKY DALE",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "82.7",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_034866170000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:04:31.239034"
+    "county": "Kern",
+    "apn": "375-102-07-00-7",
+    "owner": "VARGAS WILFREDO",
+    "opportunity_tier": "Level 2 (High Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "43.1",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_37510207007_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:56.162242"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "034-552-380-000",
-    "owner": "BERESFORD ERIC",
-    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "65.8",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_034552380000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:04:31.207074"
+    "county": "Kern",
+    "apn": "374-171-14-00-4",
+    "owner": "SEGUNDO JUAN ALBERTO",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_37417114004_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:56.108249"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "031-113-560-000",
-    "owner": "DANNER DOROTHY M TRUSTEE",
+    "county": "Kern",
+    "apn": "374-150-03-00-9",
+    "owner": "PANIAGUA SALLY JANE NAVARRO",
     "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "77.8",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_031113560000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:04:31.175340"
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "62.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_37415003009_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:56.056011"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "006-462-150-000",
-    "owner": "BONFIGLIO LAURETTA H",
+    "county": "Kern",
+    "apn": "374-042-33-00-8",
+    "owner": "MIRANDA ROMAN",
     "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
-    "seller_intent_score": 75.0,
-    "equity_ratio_pct": "74.3",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_006462150000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:04:31.141872"
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "63.2",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_37404233008_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.993854"
   },
   {
     "type": "PROPERTY_INTELLIGENCE",
-    "county": "Lake",
-    "apn": "005-012-300-000",
-    "owner": "COBLE JOYCE A TRUSTEE",
+    "county": "Kern",
+    "apn": "374-041-35-00-7",
+    "owner": "MARES GABRIEL TR",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "70.8",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_37404135007_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.939880"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "359-323-31-00-9",
+    "owner": "PRATT JERALDINE",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "69.7",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_35932331009_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.854609"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "359-323-15-00-3",
+    "owner": "G M E PROP INC",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "66.7",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_35932315003_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.792143"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "358-121-15-00-4",
+    "owner": "SALAZAR GABRIEL ROJAS",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "81.9",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_35812115004_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.720483"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "350-151-21-00-4",
+    "owner": "EARTH & LAND LLC",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_35015121004_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.659663"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "346-240-37-00-9",
+    "owner": "CENTURY DEV CORP",
+    "opportunity_tier": "Level 2 (High Potential)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "59.4",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_34624037009_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.575788"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "346-162-16-00-9",
+    "owner": "HOME EQUITY OPTIONS LLC",
+    "opportunity_tier": "Level 2 (High Potential)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "59.8",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_34616216009_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.511735"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "341-310-29-00-1",
+    "owner": "RAYO JUAN A",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "66.5",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_34131029001_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.455014"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "341-154-06-00-6",
+    "owner": "VIGE JOSEPH G",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "64.4",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_34115406006_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.397316"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "341-083-24-00-1",
+    "owner": "COOLEY SCOTT",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "76.7",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_34108324001_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.343130"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "334-152-08-00-6",
+    "owner": "NAIRN INVS",
+    "opportunity_tier": "Level 2 (High Potential)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "50.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_33415208006_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.287065"
+  },
+  {
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "332-151-20-00-9",
+    "owner": "M & W PORTER PROP LLC",
     "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
     "seller_intent_score": 75.0,
-    "equity_ratio_pct": "88.6",
-    "signal_type": "NO_SCHEDULED_AUCTION",
-    "priority_signal": "No scheduled auction \u2014 monitor for a future sale date",
-    "days_until_auction": null,
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/lake_005012300000_prop_intel_dossier.md",
-    "timestamp": "2026-08-08T11:04:31.107626"
+    "equity_ratio_pct": "85.9",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_33215120009_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.238602"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Del Norte",
-    "apn": "141-202-006-000",
-    "owner": "TRAN JUDITH",
-    "excess_amount": 636.3,
-    "recoverability_score": 65.0,
-    "claim_deadline": "2027-05-27",
-    "urgency_status": "GREEN (291 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/del_norte_141202006000_excess_claim.md",
-    "timestamp": "2026-08-08T10:10:06.358209"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "325-133-01-00-0",
+    "owner": "TESAR ADA S TR",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "71.1",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_32513301000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.187851"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Del Norte",
-    "apn": "141-214-014-000",
-    "owner": "TORRES ARNEL J",
-    "excess_amount": 1281.88,
-    "recoverability_score": 65.0,
-    "claim_deadline": "2027-05-27",
-    "urgency_status": "GREEN (291 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/del_norte_141214014000_excess_claim.md",
-    "timestamp": "2026-08-08T10:10:06.313121"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "322-084-08-00-3",
+    "owner": "ROMANO RAYMOND",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "60.8",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_32208408003_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.122445"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Del Norte",
-    "apn": "141-214-015-000",
-    "owner": "TORRES ARNEL J",
-    "excess_amount": 1285.31,
-    "recoverability_score": 65.0,
-    "claim_deadline": "2027-05-27",
-    "urgency_status": "GREEN (291 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/del_norte_141214015000_excess_claim.md",
-    "timestamp": "2026-08-08T10:10:06.269989"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "321-130-39-00-2",
+    "owner": "HENDERSON RICHARD E TR",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "35.4",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_32113039002_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.054553"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Del Norte",
-    "apn": "141-202-016-000",
-    "owner": "LAVALLEE MICHELLE LISE",
-    "excess_amount": 2187.42,
-    "recoverability_score": 65.0,
-    "claim_deadline": "2027-05-27",
-    "urgency_status": "GREEN (291 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/del_norte_141202016000_excess_claim.md",
-    "timestamp": "2026-08-08T10:10:06.229329"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "310-281-13-00-7",
+    "owner": "GB REALTY GRP LLC",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_31028113007_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:55.000643"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Del Norte",
-    "apn": "140-103-007-000",
-    "owner": "THOMPSON KEITH/JERI ANNE TRUST; CRIVELLI LAWRENCE; CRIVELLI MARK E; CRIVELLI SIMINI",
-    "excess_amount": 2745.94,
-    "recoverability_score": 80.0,
-    "claim_deadline": "2027-05-27",
-    "urgency_status": "GREEN (291 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/del_norte_140103007000_excess_claim.md",
-    "timestamp": "2026-08-08T10:10:06.184977"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "310-134-05-00-1",
+    "owner": "INGHRAM FRANK SR TR",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_31013405001_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:54.950276"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Del Norte",
-    "apn": "140-101-003-000",
-    "owner": "CRIVELLI SECONDO JR; CRIVELLI DOROTHY E; CRIVELLI HAZEL; CRIVELLI LAWRENCE",
-    "excess_amount": 3939.21,
-    "recoverability_score": 80.0,
-    "claim_deadline": "2027-05-27",
-    "urgency_status": "GREEN (291 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/del_norte_140101003000_excess_claim.md",
-    "timestamp": "2026-08-08T10:10:06.143721"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "310-114-09-00-7",
+    "owner": "PAIK JOHN",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_31011409007_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:54.897068"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Del Norte",
-    "apn": "140-101-013-000",
-    "owner": "CRIVELLI SECONDO JR; CRIVELLI DOROTHY E; CRIVELLI HAZEL; CRIVELLI LAWRENCE",
-    "excess_amount": 5293.53,
-    "recoverability_score": 80.0,
-    "claim_deadline": "2027-05-27",
-    "urgency_status": "GREEN (291 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/del_norte_140101013000_excess_claim.md",
-    "timestamp": "2026-08-08T10:10:06.100292"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "310-081-06-00-9",
+    "owner": "CONN JEFFREY V TR",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_31008106009_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:54.834464"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Del Norte",
-    "apn": "116-031-014-000",
-    "owner": "CHAVEZ SARAH M",
-    "excess_amount": 5351.47,
-    "recoverability_score": 80.0,
-    "claim_deadline": "2027-05-27",
-    "urgency_status": "GREEN (291 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/del_norte_116031014000_excess_claim.md",
-    "timestamp": "2026-08-08T10:10:06.057429"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "310-033-04-00-2",
+    "owner": "STEWART LUZVIMINDA LAURIO",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "37.7",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_31003304002_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:54.772485"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Del Norte",
-    "apn": "110-221-025-000",
-    "owner": "HARTWICK GARY; HARTWICK TODD",
-    "excess_amount": 47157.89,
-    "recoverability_score": 90.0,
-    "claim_deadline": "2027-05-27",
-    "urgency_status": "GREEN (291 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/del_norte_110221025000_excess_claim.md",
-    "timestamp": "2026-08-08T10:10:06.016895"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "307-211-27-00-3",
+    "owner": "SEVILLA VAN E",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_30721127003_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:54.714777"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "156-530-001-000",
-    "owner": "HABE CORPORATION",
-    "excess_amount": 175700.0,
-    "recoverability_score": 85.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_156530001000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.890027"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "307-193-12-00-8",
+    "owner": "CARTER ALAN R TR",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_30719312008_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:54.654712"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "137-350-020-000",
-    "owner": "FLETCHER RONI N",
-    "excess_amount": 508000.0,
-    "recoverability_score": 85.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_137350020000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.854953"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "307-193-09-00-0",
+    "owner": "ALARCON MICAELA",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_30719309000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:54.604234"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "125-501-015-000",
-    "owner": "PASEO VISTA INC",
-    "excess_amount": 225100.0,
-    "recoverability_score": 85.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_125501015000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.819823"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "307-192-09-00-3",
+    "owner": "WONG ELIZABETH",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_30719209003_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:54.551010"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "107-150-023-000",
-    "owner": "CALIFORNIA RECEIVERSHIP GROUP INC RCVR",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_107150023000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.784244"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "307-111-06-00-3",
+    "owner": "CRUZ MARTA VARGAS",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_30711106003_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:54.498840"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "095-160-015-000",
-    "owner": "DEMONCHY DIANNE & DIANNE",
-    "excess_amount": 20500.0,
-    "recoverability_score": 75.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_095160015000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.754355"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "307-063-16-00-2",
+    "owner": "VELASCO MARTIN",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_30706316002_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:54.442734"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "094-051-007-000",
-    "owner": "DAUGHERTY CAROL J ET AL",
-    "excess_amount": 1800.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_094051007000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.721768"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "306-191-04-00-4",
+    "owner": "BROCK ERNEST",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_30619104004_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:54.371759"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "081-230-010-000",
-    "owner": "ANDERSON ERIK",
-    "excess_amount": 50600.0,
-    "recoverability_score": 85.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_081230010000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.687580"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "306-151-03-00-9",
+    "owner": "FERNANDEZ ROLANDO I",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_30615103009_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:54.315094"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "081-162-051-000",
-    "owner": "YATES GREGORY D",
-    "excess_amount": 1700.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_081162051000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.657328"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "305-123-05-00-3",
+    "owner": "MOON VALLEY LAND LLC",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_30512305003_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:54.252201"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "081-100-009-000",
-    "owner": "LUND MARK S",
-    "excess_amount": 127000.0,
-    "recoverability_score": 85.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_081100009000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.623623"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "305-122-13-00-9",
+    "owner": "MOON VALLEY LAND LLC",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_30512213009_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:54.194001"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "075-181-002-000",
-    "owner": "BERMUDEZ JOSE R",
-    "excess_amount": 13100.0,
-    "recoverability_score": 75.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_075181002000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.592332"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "302-077-17-00-1",
+    "owner": "BARTOUMIAN ARSHAK",
+    "opportunity_tier": "Level 1 (Prime Opportunity \u2014 Top 5%)",
+    "seller_intent_score": 65.0,
+    "equity_ratio_pct": "86.8",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_30207717001_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:54.126638"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "072-180-040-000",
-    "owner": "HOEG GEORGE & ADDISON BELLE",
-    "excess_amount": 22800.0,
-    "recoverability_score": 75.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_072180040000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.558687"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-360-47-00-5",
+    "owner": "URBAN LORETTA",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29436047005_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:54.023324"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "072-180-037-000",
-    "owner": "HOEG GEORGE & ADDISON BELLE",
-    "excess_amount": 9600.0,
-    "recoverability_score": 65.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_072180037000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.525567"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-360-02-00-4",
+    "owner": "PHLEGM ROGERS LAVERNE TRUST",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29436002004_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.954660"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "072-180-031-000",
-    "owner": "HOEG GEORGE",
-    "excess_amount": 3898.0,
-    "recoverability_score": 65.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_072180031000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.486717"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-291-12-00-0",
+    "owner": "CAMARILLO LESLIE L",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29429112000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.883428"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "072-173-030-000",
-    "owner": "NEUBERGER MARTIN ERIC",
-    "excess_amount": 14500.0,
-    "recoverability_score": 75.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_072173030000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.454258"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-233-04-00-3",
+    "owner": "BOLLAND DUANE E",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29423304003_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.820028"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "072-160-038-000",
-    "owner": "VICK DEBRA MOLLY EST OF",
-    "excess_amount": 9400.0,
-    "recoverability_score": 65.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_072160038000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.422384"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-181-05-00-8",
+    "owner": "WORKS OF LIFE INTERNAT MINISTRIES INC",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29418105008_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.738977"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "070-294-009-000",
-    "owner": "DEAL RANDAL P",
-    "excess_amount": 4000.0,
-    "recoverability_score": 65.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_070294009000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.392705"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-122-14-00-3",
+    "owner": "BOMBARDA RODOLFO",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29412214003_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.661809"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "035-272-002-000",
-    "owner": "HATCHER SHEILA",
-    "excess_amount": 162900.0,
-    "recoverability_score": 85.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_035272002000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.360007"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-021-05-00-1",
+    "owner": "GIL MARCO ANTONIO",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29402105001_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.603891"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Sonoma",
-    "apn": "019-620-008-000",
-    "owner": "COON CAROLYNE",
-    "excess_amount": 623300.0,
-    "recoverability_score": 85.0,
-    "claim_deadline": "2026-11-10",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (93 days left)",
-    "lead_status": "extracted",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/sonoma_019620008000_excess_claim.md",
-    "timestamp": "2026-08-08T06:51:26.323947"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "294-021-02-00-2",
+    "owner": "FABRICANTE EDGARDO",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29402102002_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.544725"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Nevada",
-    "apn": "062-090-012-000",
-    "owner": "GOLDEN SIERRA INC",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-12-19",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (132 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/nevada_062090012000_excess_claim.md",
-    "timestamp": "2026-08-08T06:05:11.760073"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "291-151-14-00-4",
+    "owner": "KALUNA MIRASOL M",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_29115114004_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.485335"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Nevada",
-    "apn": "062-070-007-000",
-    "owner": "GOLDEN SIERRA INC",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-12-19",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (132 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/nevada_062070007000_excess_claim.md",
-    "timestamp": "2026-08-08T06:05:11.730542"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "288-144-04-00-9",
+    "owner": "PILPA TIONGSON RUTH TR",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "16.9",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28814404009_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.436700"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Nevada",
-    "apn": "062-070-006-000",
-    "owner": "GOLDEN SIERRA INC",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-12-19",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (132 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/nevada_062070006000_excess_claim.md",
-    "timestamp": "2026-08-08T06:05:11.698980"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "288-092-20-00-7",
+    "owner": "MONTEVIRGEN WILFRED",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28809220007_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.385910"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Nevada",
-    "apn": "052-360-058-000",
-    "owner": "RONALD T. & BONITA E. SILVA",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-12-19",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (132 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/nevada_052360058000_excess_claim.md",
-    "timestamp": "2026-08-08T06:05:11.668254"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-202-03-00-2",
+    "owner": "SIMONSEN ROBERT P",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28720203002_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.330142"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Nevada",
-    "apn": "038-190-011-000",
-    "owner": "DAYNE BRAZZELL",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-12-19",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (132 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/nevada_038190011000_excess_claim.md",
-    "timestamp": "2026-08-08T06:05:11.633693"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-171-15-00-2",
+    "owner": "CARAVALHO CLAUDE ANTHONY",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28717115002_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.280648"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Nevada",
-    "apn": "028-070-017-000",
-    "owner": "ROBERT E WHITTINGTON",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-12-19",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (132 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/nevada_028070017000_excess_claim.md",
-    "timestamp": "2026-08-08T06:05:11.600136"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-152-09-00-6",
+    "owner": "ROMERO JUAN",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28715209006_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.225899"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Nevada",
-    "apn": "024-370-002-000",
-    "owner": "ALTA NEVADA LLC",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-12-19",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (132 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/nevada_024370002000_excess_claim.md",
-    "timestamp": "2026-08-08T06:05:11.564362"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-142-03-00-5",
+    "owner": "CHEN JIN CHAO",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28714203005_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.173995"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Nevada",
-    "apn": "024-320-005-000",
-    "owner": "DOUGLAS WILSON",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-12-19",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (132 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/nevada_024320005000_excess_claim.md",
-    "timestamp": "2026-08-08T06:05:11.531017"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-102-08-00-8",
+    "owner": "HOLLOW BRENDA",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28710208008_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.119236"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Nevada",
-    "apn": "024-290-008-000",
-    "owner": "ALTA NEVADA LLC",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-12-19",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (132 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/nevada_024290008000_excess_claim.md",
-    "timestamp": "2026-08-08T06:05:11.498998"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-072-13-00-4",
+    "owner": "CATELO KATHLEEN A",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28707213004_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.061122"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Nevada",
-    "apn": "023-590-016-000",
-    "owner": "ALTA NEVADA LLC",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-12-19",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (132 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/nevada_023590016000_excess_claim.md",
-    "timestamp": "2026-08-08T06:05:11.464657"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-072-02-00-2",
+    "owner": "PHAN THIEN",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28707202002_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:53.005339"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Nevada",
-    "apn": "013-250-013-510",
-    "owner": "BALTIC CONSOLIDATED TRUST DATED SEP. 8, 1997",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-12-19",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (132 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/nevada_013250013510_excess_claim.md",
-    "timestamp": "2026-08-08T06:05:11.427509"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-063-02-00-6",
+    "owner": "FOSTER JOSEPHINE T",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28706302006_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:52.948637"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Nevada",
-    "apn": "013-250-012-530",
-    "owner": "BALTIC CONSOLIDATED TRUST DATED SEP. 8, 1997",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-12-19",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (132 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/nevada_013250012530_excess_claim.md",
-    "timestamp": "2026-08-08T06:05:11.394526"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-042-02-00-3",
+    "owner": "DRAKE GEORGE M",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28704202003_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:52.892858"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Nevada",
-    "apn": "012-730-038-000",
-    "owner": "HILTON KUYKENDALL",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-12-19",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (132 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/nevada_012730038000_excess_claim.md",
-    "timestamp": "2026-08-08T06:05:11.362685"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "287-021-06-00-2",
+    "owner": "LI YING",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28702106002_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:52.832579"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Nevada",
-    "apn": "002-450-012-000",
-    "owner": "KANG MANDEEP",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-12-19",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (132 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/nevada_002450012000_excess_claim.md",
-    "timestamp": "2026-08-08T06:05:11.327866"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "285-193-13-00-2",
+    "owner": "STIMPSON TRUEL P TR",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28519313002_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:52.710252"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Colusa",
-    "apn": "118-010-002-501",
-    "owner": "LUCILLE MCDANIEL",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-10-02",
-    "urgency_status": "RED \ud83d\udea8 EXTREME URGENCY (54 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/colusa_118010002501_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:11.341168"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "285-055-14-00-8",
+    "owner": "MANALO RICARDO B",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28505514008_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:52.636393"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Colusa",
-    "apn": "018-020-010-000",
-    "owner": "CECIL PETRAY",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-10-06",
-    "urgency_status": "RED \ud83d\udea8 EXTREME URGENCY (58 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/colusa_018020010000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:11.302732"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "285-053-09-00-0",
+    "owner": "WILLIAMSON GERARD W TR",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28505309000_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:52.588701"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Colusa",
-    "apn": "015-330-049-000",
-    "owner": "OLEND DEE CRABTREE SR",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-10-07",
-    "urgency_status": "RED \ud83d\udea8 EXTREME URGENCY (59 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/colusa_015330049000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:11.271164"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "285-052-06-00-4",
+    "owner": "MADRID JULIO A",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28505206004_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:52.537632"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Colusa",
-    "apn": "012-025-003-000",
-    "owner": "SEANA KATHLEEN HOGAN",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-10-06",
-    "urgency_status": "RED \ud83d\udea8 EXTREME URGENCY (58 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/colusa_012025003000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:11.239460"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "284-122-18-00-2",
+    "owner": "VAMENG PROP INV LLC",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28412218002_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:52.483500"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Colusa",
-    "apn": "010-310-019-000",
-    "owner": "CHARLES WAYNE REDMOND",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-11-17",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (100 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/colusa_010310019000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:11.207295"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "284-122-10-00-8",
+    "owner": "CHAMBERS TERESA D",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28412210008_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:52.433385"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Colusa",
-    "apn": "010-280-050-000",
-    "owner": "THOMAS SANDELLE CLARK",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-10-07",
-    "urgency_status": "RED \ud83d\udea8 EXTREME URGENCY (59 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/colusa_010280050000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:11.174381"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "284-112-16-00-3",
+    "owner": "APOSTOL PRISCILLA G",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28411216003_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:52.381107"
   },
   {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Colusa",
-    "apn": "005-320-011-000",
-    "owner": "AMBER MENDEZ KESTERSON",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-10-23",
-    "urgency_status": "YELLOW \u26a0\ufe0f HIGH URGENCY (75 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/colusa_005320011000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:11.135119"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Colusa",
-    "apn": "001-133-009-000",
-    "owner": "ANNIE MITCHELL",
-    "excess_amount": 0.0,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-10-06",
-    "urgency_status": "RED \ud83d\udea8 EXTREME URGENCY (58 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/colusa_001133009000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:11.097840"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Madera",
-    "apn": "093-480-038-000",
-    "owner": "BAKER TREVOR LAWSON",
-    "excess_amount": 6935.41,
-    "recoverability_score": 65.0,
-    "claim_deadline": "2026-08-27",
-    "urgency_status": "RED \ud83d\udea8 EXTREME URGENCY (18 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/madera_093480038000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:10.707945"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Madera",
-    "apn": "064-100-036-000",
-    "owner": "CLARK LOUISE M",
-    "excess_amount": 16124.93,
-    "recoverability_score": 75.0,
-    "claim_deadline": "2026-08-27",
-    "urgency_status": "RED \ud83d\udea8 EXTREME URGENCY (18 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/madera_064100036000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:10.673510"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Madera",
-    "apn": "060-441-020-000",
-    "owner": "TURNER MARTIN TRUSTEE",
-    "excess_amount": 6545.41,
-    "recoverability_score": 65.0,
-    "claim_deadline": "2026-08-27",
-    "urgency_status": "RED \ud83d\udea8 EXTREME URGENCY (18 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/madera_060441020000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:10.640723"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Madera",
-    "apn": "060-130-034-000",
-    "owner": "SCHMIDT KIMBERLEY RENAY",
-    "excess_amount": 704.19,
-    "recoverability_score": 50.0,
-    "claim_deadline": "2026-08-27",
-    "urgency_status": "RED \ud83d\udea8 EXTREME URGENCY (18 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/madera_060130034000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:10.609966"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Madera",
-    "apn": "054-132-022-000",
-    "owner": "ROGERS CLARENCE W",
-    "excess_amount": 76845.9,
-    "recoverability_score": 85.0,
-    "claim_deadline": "2026-08-27",
-    "urgency_status": "RED \ud83d\udea8 EXTREME URGENCY (18 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/madera_054132022000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:10.576364"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Madera",
-    "apn": "029-270-053-000",
-    "owner": "MILLER CAROLYN",
-    "excess_amount": 96235.49,
-    "recoverability_score": 85.0,
-    "claim_deadline": "2026-08-27",
-    "urgency_status": "RED \ud83d\udea8 EXTREME URGENCY (18 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/madera_029270053000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:10.537014"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Madera",
-    "apn": "093-520-006-000",
-    "owner": "BOZORGNIA MEHRIN ADMR",
-    "excess_amount": 15723.11,
-    "recoverability_score": 75.0,
-    "claim_deadline": "2027-06-08",
-    "urgency_status": "GREEN (303 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/madera_093520006000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:10.502608"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Madera",
-    "apn": "093-310-018-000",
-    "owner": "JIMENEZ MANUEL",
-    "excess_amount": 9159.71,
-    "recoverability_score": 65.0,
-    "claim_deadline": "2027-06-08",
-    "urgency_status": "GREEN (303 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/madera_093310018000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:10.469744"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Madera",
-    "apn": "092-270-010-000",
-    "owner": "BOZORGNIA MEHRIN ADMR",
-    "excess_amount": 5326.55,
-    "recoverability_score": 65.0,
-    "claim_deadline": "2027-06-08",
-    "urgency_status": "GREEN (303 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/madera_092270010000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:10.438154"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Madera",
-    "apn": "066-420-007-000",
-    "owner": "HAMBY BARBARA",
-    "excess_amount": 10677.1,
-    "recoverability_score": 75.0,
-    "claim_deadline": "2027-06-08",
-    "urgency_status": "GREEN (303 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/madera_066420007000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:10.407240"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Madera",
-    "apn": "066-420-006-000",
-    "owner": "HAMBY BARBARA",
-    "excess_amount": 16280.77,
-    "recoverability_score": 75.0,
-    "claim_deadline": "2027-06-08",
-    "urgency_status": "GREEN (303 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/madera_066420006000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:10.374616"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Madera",
-    "apn": "061-470-021-000",
-    "owner": "BURROUGHS CYRUS",
-    "excess_amount": 11329.56,
-    "recoverability_score": 75.0,
-    "claim_deadline": "2027-06-08",
-    "urgency_status": "GREEN (303 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/madera_061470021000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:10.337810"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Madera",
-    "apn": "061-450-018-000",
-    "owner": "BURROUGHS CYRUS & CYRUS ETAL",
-    "excess_amount": 11155.78,
-    "recoverability_score": 75.0,
-    "claim_deadline": "2027-06-08",
-    "urgency_status": "GREEN (303 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/madera_061450018000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:10.297392"
-  },
-  {
-    "type": "EXCESS_PROCEEDS",
-    "county": "Madera",
-    "apn": "061-450-017-000",
-    "owner": "BURROUGHS CYRUS & CYRUS ETAL",
-    "excess_amount": 85889.24,
-    "recoverability_score": 85.0,
-    "claim_deadline": "2027-06-08",
-    "urgency_status": "GREEN (303 days left)",
-    "lead_status": "active_candidate",
-    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/madera_061450017000_excess_claim.md",
-    "timestamp": "2026-08-08T06:01:10.262615"
+    "type": "PROPERTY_INTELLIGENCE",
+    "county": "Kern",
+    "apn": "284-095-17-00-2",
+    "owner": "CANLAS MELANIE MITCHEL",
+    "opportunity_tier": "Level 3 (Moderate Potential)",
+    "seller_intent_score": 50.0,
+    "equity_ratio_pct": "0.0",
+    "signal_type": "PRE_AUCTION_PRIORITY_1",
+    "priority_signal": "GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)",
+    "days_until_auction": 37,
+    "report_path": "/mnt/c/Users/chuck/Downloads/county_pipeline/output/dashboard/kern_28409517002_prop_intel_dossier.md",
+    "timestamp": "2026-08-08T12:02:52.310986"
   }
 ]

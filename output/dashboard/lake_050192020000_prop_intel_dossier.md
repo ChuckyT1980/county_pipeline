@@ -1,11 +1,13 @@
 # Pre-Auction Property Intelligence Dossier: 050-192-020-000
 
 **County**: Lake County, CA  
-**APN**: `050-192-020-000`  
+**Source Identifier**: `050-192-020-000` (APN (from source list))  
+**Assessor APN**: `050-192-020-000`  
+**Assessor APN Verification Status**: NOT_VERIFIED — matches expected assessor APN format from the source list; not independently re-confirmed by reading the assessor's own displayed APN field this run  
 **Opportunity Tier**: **Level 2 (High Potential)**  
-**Generated Date**: 2026-08-08 11:05:08  
+**Generated Date**: 2026-08-08 12:07:33  
 
-**🔔 PRIORITY SIGNAL: No scheduled auction — monitor for a future sale date**
+**🔔 PUBLIC-RECORD SIGNAL: No scheduled auction — monitor for a future sale date**
 
 ---
 
@@ -16,10 +18,12 @@
 | **Opportunity Tier** | **Level 2 (High Potential)** |
 | **Seller Intent Score** | **60.0 / 100** |
 | **Estimated Equity Ratio** | **22.5%** |
-| **Lien Risk Tier** | **MEDIUM** |
+| **Equity / Assessed-Value Indicator** | **MEDIUM** |
 | **Minimum Starting Bid** | $3,200.00 |
 | **Net Assessed Total Value** | $4,131.00 |
 | **Predicted Auction Window** | Not yet scheduled |
+
+> ⚠️ The Equity / Assessed-Value Indicator above is derived from available valuation and recorded amount data only. It is **not** a title search, lien-priority analysis, encumbrance review, or legal conclusion.
 
 ---
 

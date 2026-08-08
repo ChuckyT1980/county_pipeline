@@ -1,11 +1,13 @@
 # Pre-Auction Property Intelligence Dossier: {{apn_dash}}
 
 **County**: {{county_name}} County, CA  
-**APN**: `{{apn_dash}}`  
+**Source Identifier**: `{{source_identifier}}` ({{source_identifier_type}})  
+**Assessor APN**: `{{assessor_apn}}`  
+**Assessor APN Verification Status**: {{assessor_apn_verification_status}}  
 **Opportunity Tier**: **{{opportunity_tier}}**  
 **Generated Date**: {{generated_date}}  
 
-**🔔 PRIORITY SIGNAL: {{priority_signal}}**
+**🔔 PUBLIC-RECORD SIGNAL: {{priority_signal}}**
 
 ---
 
@@ -16,10 +18,12 @@
 | **Opportunity Tier** | **{{opportunity_tier}}** |
 | **Seller Intent Score** | **{{seller_intent_score}} / 100** |
 | **Estimated Equity Ratio** | **{{equity_ratio_pct}}%** |
-| **Lien Risk Tier** | **{{lien_risk}}** |
+| **Equity / Assessed-Value Indicator** | **{{equity_signal}}** |
 | **Minimum Starting Bid** | ${{min_bid}} |
 | **Net Assessed Total Value** | ${{assessed_value}} |
 | **Predicted Auction Window** | {{predicted_auction_window}} |
+
+> ⚠️ The Equity / Assessed-Value Indicator above is derived from available valuation and recorded amount data only. It is **not** a title search, lien-priority analysis, encumbrance review, or legal conclusion.
 
 ---
 

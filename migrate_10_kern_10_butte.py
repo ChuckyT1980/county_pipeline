@@ -17,6 +17,8 @@ from property_model import (
     IdentifierType,
     Property,
     PropertyIdentifier,
+    apn1_cross_check_digits as apn1_cross_check,
+    atn_to_assessor_parcel_number,
     make_ca_property_id,
 )
 
@@ -26,38 +28,6 @@ TODAY = date(2026, 8, 8)
 
 def norm(a: str | None) -> str:
     return (a or "").replace("-", "").strip()
-
-
-def atn_to_assessor_parcel_number(atn_raw: str) -> str | None:
-    """
-    The assessor parcel number is the ATN's own first three dash-separated
-    segments (e.g. "017-490-06" from ATN "017-490-06-00-3") - the ATN IS
-    structurally "APN + tax-system suffix" for Kern, confirmed by the
-    Power-to-Sell/tax-roll source itself, not inferred.
-
-    NOTE ON A BUG CAUGHT DURING THIS MIGRATION: the first version of this
-    function instead reformatted the CSV's separate APN_1 column (e.g.
-    "1749006.0") on the assumption it was a clean 7-digit compressed
-    encoding. It isn't - APN_1 is that same number with its LEADING ZERO
-    SILENTLY STRIPPED by CSV/Excel's numeric-type round-tripping (real
-    "01749006" became "1749006.0"), so reformatting it directly produced
-    a shifted, wrong result ("174-900-6" instead of "017-490-06"). Caught
-    by cross-checking against the ATN's own segments before trusting the
-    output - exactly the kind of silent-but-wrong bug this whole model
-    exists to prevent, and it happened while building the model itself.
-    Kept APN_1 only as a redundant cross-check, not the primary source.
-    """
-    parts = atn_raw.strip().split("-")
-    if len(parts) < 3:
-        return None
-    return "-".join(parts[:3])
-
-
-def apn1_cross_check(apn1_raw: str, assessor_parcel_number: str) -> bool:
-    """True if APN_1 (leading-zero-stripped) is consistent with the ATN-derived assessor_parcel_number."""
-    apn1_digits = re.sub(r"\D", "", apn1_raw.split(".")[0])
-    expected_digits = re.sub(r"\D", "", assessor_parcel_number).lstrip("0") or "0"
-    return apn1_digits == expected_digits
 
 
 def migrate_kern(n: int = 10) -> list[tuple[Property, list[PropertyIdentifier]]]:

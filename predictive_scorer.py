@@ -107,21 +107,29 @@ def score_property_intelligence(parcel: dict[str, Any]) -> dict[str, Any]:
     else:
         tier = "Level 5 (Discard / High Risk)"
 
-    # Lien Risk Matrix
+    # Equity / Assessed-Value Indicator - NOT a lien, title, or encumbrance
+    # review. Renamed 2026-08-08 from "Lien Risk Tier" / "lien_risk": that
+    # name and its HIGH/MEDIUM/LOW values (computed purely from
+    # equity_ratio) implied a real lien/title review had been performed,
+    # which it had not - a DOSSIER_QA finding, remediated here. Values now
+    # read in the natural direction of the metric itself (higher equity
+    # ratio -> "HIGH" equity signal), not inverted risk semantics, since
+    # the old inversion (low equity -> "HIGH" risk) would read backwards
+    # under an honest "equity signal" name.
     if not has_financial_data:
-        lien_risk = "UNKNOWN"
-    elif equity_ratio < 0.20:
-        lien_risk = "HIGH"
-    elif equity_ratio < 0.50:
-        lien_risk = "MEDIUM"
+        equity_signal = "UNKNOWN"
+    elif equity_ratio >= 0.50:
+        equity_signal = "HIGH"
+    elif equity_ratio >= 0.20:
+        equity_signal = "MEDIUM"
     else:
-        lien_risk = "LOW"
+        equity_signal = "LOW"
 
     return {
         "opportunity_tier": tier,
         "seller_intent_score": intent_score,
         "equity_ratio": equity_ratio,
-        "lien_risk": lien_risk,
+        "equity_signal": equity_signal,
         "is_out_of_state_owner": is_out_of_state,
         "assessed_val_clean": assessed_val,
         "min_bid_clean": min_bid,

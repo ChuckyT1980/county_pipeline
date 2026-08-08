@@ -1,11 +1,13 @@
 # Pre-Auction Property Intelligence Dossier: 071-320-003-000
 
 **County**: Butte County, CA  
-**APN**: `071-320-003-000`  
+**Source Identifier**: `071-320-003-000` (APN (from source list))  
+**Assessor APN**: `071-320-003-000`  
+**Assessor APN Verification Status**: NOT_VERIFIED — matches expected assessor APN format from the source list; not independently re-confirmed by reading the assessor's own displayed APN field this run  
 **Opportunity Tier**: **UNVERIFIED (Insufficient Source Data)**  
-**Generated Date**: 2026-08-08 11:25:19  
+**Generated Date**: 2026-08-08 12:06:50  
 
-**🔔 PRIORITY SIGNAL: AUCTION LIVE NOW (through 2026-08-10)**
+**🔔 PUBLIC-RECORD SIGNAL: AUCTION LIVE NOW (through 2026-08-10)**
 
 ---
 
@@ -16,10 +18,12 @@
 | **Opportunity Tier** | **UNVERIFIED (Insufficient Source Data)** |
 | **Seller Intent Score** | **75.0 / 100** |
 | **Estimated Equity Ratio** | **75.0%** |
-| **Lien Risk Tier** | **UNKNOWN** |
+| **Equity / Assessed-Value Indicator** | **UNKNOWN** |
 | **Minimum Starting Bid** | $2,169.00 |
 | **Net Assessed Total Value** | $0.00 |
 | **Predicted Auction Window** | 2026-08-07 to 2026-08-10 |
+
+> ⚠️ The Equity / Assessed-Value Indicator above is derived from available valuation and recorded amount data only. It is **not** a title search, lien-priority analysis, encumbrance review, or legal conclusion.
 
 ---
 

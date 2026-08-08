@@ -1,11 +1,13 @@
 # Pre-Auction Property Intelligence Dossier: 154-250-43-00-0
 
 **County**: Kern County, CA  
-**APN**: `154-250-43-00-0`  
+**Source Identifier**: `154-250-43-00-0` (ATN (Assessment/Tax Number, Kern tax-roll identifier))  
+**Assessor APN**: `154-250-43`  
+**Assessor APN Verification Status**: NOT_VERIFIED — derived from the ATN's own structure (first 3 segments) and cross-checked against the source list's separate APN_1 column ('15425043.0', digits match); NOT independently confirmed by reading the assessor's own displayed APN field this run  
 **Opportunity Tier**: **Level 1 (Prime Opportunity — Top 5%)**  
-**Generated Date**: 2026-08-08 02:21:28  
+**Generated Date**: 2026-08-08 12:02:42  
 
-**🔔 PRIORITY SIGNAL: GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)**
+**🔔 PUBLIC-RECORD SIGNAL: Tax-default / Power-to-Sell public-record indicator; parcel-specific auction status not verified (county auction window confirmed 2026-09-14 to 2026-09-16, but this parcel's presence on the current, official parcel-level auction list has not been independently confirmed)**
 
 ---
 
@@ -16,10 +18,12 @@
 | **Opportunity Tier** | **Level 1 (Prime Opportunity — Top 5%)** |
 | **Seller Intent Score** | **65.0 / 100** |
 | **Estimated Equity Ratio** | **62.1%** |
-| **Lien Risk Tier** | **LOW** |
+| **Equity / Assessed-Value Indicator** | **HIGH** |
 | **Minimum Starting Bid** | $900.00 |
 | **Net Assessed Total Value** | $2,373.00 |
 | **Predicted Auction Window** | 2026-09-14 to 2026-09-16 |
+
+> ⚠️ The Equity / Assessed-Value Indicator above is derived from available valuation and recorded amount data only. It is **not** a title search, lien-priority analysis, encumbrance review, or legal conclusion.
 
 ---
 
@@ -54,7 +58,7 @@
 ## 📊 Provenance & Data Audit Trail
 
 - **Primary Source Endpoint**: `assessorapps.kerncounty.com (live, verified 2026-08-06/07) + recorderonline.co.kern.ca.us document-number search (live, verified 2026-08-08, doc #204127842)`
-- **Data Integrity Status**: VERIFIED — BOTH SITES. Assessed value and tax-default status confirmed live against the county assessor. Owner of record confirmed via the recorder's document-number search on the exact recorded document (Deed - Quitclaim, 06/03/2004) already captured for this specific parcel — tied to this APN, not a name-only match. NOTE: this corrects a stale name from the original source list ("MC INTYRE LIV TR") — the property has a more recent recorded transfer to "MC INTYRE GEORGE TR" that the source list predates.
+- **Data Integrity Status**: VERIFIED — BOTH SITES (assessed value/tax-default status and recorder document/owner only - the assessor parcel number itself is NOT independently verified, see Assessor APN Verification Status above). Assessed value and tax-default status confirmed live against the county assessor. Owner of record confirmed via the recorder's document-number search on the exact recorded document (Deed - Quitclaim, 06/03/2004) already captured for this specific parcel — tied to this parcel's ATN-identified record, not a name-only match. NOTE: this corrects a stale name from the original source list ("MC INTYRE LIV TR") — the property has a more recent recorded transfer to "MC INTYRE GEORGE TR" that the source list predates.
 - **Data Gap Audit**: Missing: situs, doc_count, transfer_tax, acreage, buyer_match
 
 ---

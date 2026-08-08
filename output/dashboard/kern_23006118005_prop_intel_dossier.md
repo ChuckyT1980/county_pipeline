@@ -1,11 +1,13 @@
 # Pre-Auction Property Intelligence Dossier: 230-061-18-00-5
 
 **County**: Kern County, CA  
-**APN**: `230-061-18-00-5`  
+**Source Identifier**: `230-061-18-00-5` (ATN (Assessment/Tax Number, Kern tax-roll identifier))  
+**Assessor APN**: `230-061-18`  
+**Assessor APN Verification Status**: NOT_VERIFIED — derived from the ATN's own structure (first 3 segments) and cross-checked against the source list's separate APN_1 column ('23006118.0', digits match); NOT independently confirmed by reading the assessor's own displayed APN field this run  
 **Opportunity Tier**: **Level 2 (High Potential)**  
-**Generated Date**: 2026-08-08 02:21:32  
+**Generated Date**: 2026-08-08 12:02:48  
 
-**🔔 PRIORITY SIGNAL: GOING TO AUCTION in 37 days (2026-09-14 - 2026-09-16)**
+**🔔 PUBLIC-RECORD SIGNAL: Tax-default / Power-to-Sell public-record indicator; parcel-specific auction status not verified (county auction window confirmed 2026-09-14 to 2026-09-16, but this parcel's presence on the current, official parcel-level auction list has not been independently confirmed)**
 
 ---
 
@@ -16,10 +18,12 @@
 | **Opportunity Tier** | **Level 2 (High Potential)** |
 | **Seller Intent Score** | **65.0 / 100** |
 | **Estimated Equity Ratio** | **59.3%** |
-| **Lien Risk Tier** | **LOW** |
+| **Equity / Assessed-Value Indicator** | **HIGH** |
 | **Minimum Starting Bid** | $1,600.00 |
 | **Net Assessed Total Value** | $3,931.00 |
 | **Predicted Auction Window** | 2026-09-14 to 2026-09-16 |
+
+> ⚠️ The Equity / Assessed-Value Indicator above is derived from available valuation and recorded amount data only. It is **not** a title search, lien-priority analysis, encumbrance review, or legal conclusion.
 
 ---
 
@@ -54,7 +58,7 @@
 ## 📊 Provenance & Data Audit Trail
 
 - **Primary Source Endpoint**: `assessorapps.kerncounty.com (live, verified 2026-08-06/07) + recorderonline.co.kern.ca.us document-number search (live, verified 2026-08-08, doc #226087031)`
-- **Data Integrity Status**: VERIFIED — BOTH SITES. Assessed value and tax-default status confirmed live against the county assessor. Owner of record confirmed via the recorder's document-number search on the exact recorded document (Deed, 07/29/2026) already captured for this specific parcel — tied to this APN, not a name-only match. NOTE: this corrects a stale name from the original source list ("JOHNSTON BRIAN & VALERIE") — the property has a more recent recorded transfer to "PEREZ KAREN ANGELINA" that the source list predates.
+- **Data Integrity Status**: VERIFIED — BOTH SITES (assessed value/tax-default status and recorder document/owner only - the assessor parcel number itself is NOT independently verified, see Assessor APN Verification Status above). Assessed value and tax-default status confirmed live against the county assessor. Owner of record confirmed via the recorder's document-number search on the exact recorded document (Deed, 07/29/2026) already captured for this specific parcel — tied to this parcel's ATN-identified record, not a name-only match. NOTE: this corrects a stale name from the original source list ("JOHNSTON BRIAN & VALERIE") — the property has a more recent recorded transfer to "PEREZ KAREN ANGELINA" that the source list predates.
 - **Data Gap Audit**: Missing: situs, doc_count, transfer_tax, acreage, buyer_match
 
 ---

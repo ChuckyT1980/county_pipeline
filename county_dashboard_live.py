@@ -68,12 +68,25 @@ def parse_prop_intel(path: Path) -> dict:
     return {
         "kind": "Pre-Auction Intel",
         "county": county,
-        "apn": _grab(t, r"\*\*APN\*\*: `([^`]+)`"),
+        # Prefer the new, explicit Assessor APN field; fall back to the old
+        # "**APN**:" line for any not-yet-regenerated dossier (e.g. excess-
+        # proceeds dossiers, which use a different template and still have
+        # this line), then the H1 title's {{apn_dash}} as a last resort.
+        "apn": (
+            _grab(t, r"\*\*Assessor APN\*\*: `([^`]+)`")
+            or _grab(t, r"\*\*APN\*\*: `([^`]+)`")
+            or _grab(t, r"# Pre-Auction Property Intelligence Dossier: (\S+)")
+        ),
         "tier": _grab(t, r"\*\*Opportunity Tier\*\*: \*\*([^*]+)\*\*"),
-        "signal": _grab(t, r"PRIORITY SIGNAL: (.+?)\*\*"),
+        "signal": _grab(t, r"(?:PRIORITY|PUBLIC-RECORD) SIGNAL: (.+?)\*\*"),
         "score": float(_grab(t, r"Seller Intent Score\*\* \| \*\*([\d.]+)", "0") or 0),
         "equity_pct": float(_grab(t, r"Estimated Equity Ratio\*\* \| \*\*([\d.]+)%", "0") or 0),
-        "lien_risk": _grab(t, r"Lien Risk Tier\*\* \| \*\*([^*]+)\*\*"),
+        # Prefer the new, honestly-labeled field; fall back to the old name
+        # for any not-yet-regenerated dossier.
+        "lien_risk": (
+            _grab(t, r"Equity / Assessed-Value Indicator\*\* \| \*\*([^*]+)\*\*")
+            or _grab(t, r"Lien Risk Tier\*\* \| \*\*([^*]+)\*\*")
+        ),
         "min_bid": _money(_grab(t, r"Minimum Starting Bid\*\* \| \$([\d,.]+)")),
         "assessed": _money(_grab(t, r"Net Assessed Total Value\*\* \| \$([\d,.]+)")),
         "owner": _grab(t, r"Owner of Record\*\*: \*\*([^*]+)\*\*"),
@@ -166,7 +179,7 @@ def render_prop_card(row):
 <tr><td style='color:#888; width:150px; padding:2px 8px 2px 0; font-size:0.9rem;'>Assessed Value</td><td style='padding:2px 0; font-weight:600;'>{money(row['assessed'])}</td></tr>
 <tr><td style='color:#888; width:150px; padding:2px 8px 2px 0; font-size:0.9rem;'>Minimum Bid</td><td style='padding:2px 0;'>{money(row['min_bid'])}</td></tr>
 <tr><td style='color:#888; width:150px; padding:2px 8px 2px 0; font-size:0.9rem;'>Equity Ratio</td><td style='padding:2px 0;'>{row['equity_pct']:.1f}%</td></tr>
-<tr><td style='color:#888; width:150px; padding:2px 8px 2px 0; font-size:0.9rem;'>Lien Risk</td><td style='padding:2px 0;'>{row['lien_risk'] or '—'}</td></tr>
+<tr><td style='color:#888; width:150px; padding:2px 8px 2px 0; font-size:0.9rem;' title='Derived from valuation/recorded-amount data only - not a title search, lien-priority analysis, encumbrance review, or legal conclusion'>Equity Signal</td><td style='padding:2px 0;'>{row['lien_risk'] or '—'}</td></tr>
 </table>
 <hr style='border-color:#2a2f36; margin:0.7rem 0;'>
 

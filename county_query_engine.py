@@ -174,7 +174,7 @@ def query_county_data(
                             "opportunity_tier": scores["opportunity_tier"],
                             "seller_intent_score": scores["seller_intent_score"],
                             "equity_ratio": scores["equity_ratio"],
-                            "lien_risk": scores["lien_risk"],
+                            "equity_signal": scores["equity_signal"],
                             "situs": row.get("situs") or row.get("address") or row.get("SITEADDRESS1") or row.get("situs_address") or "No Situs Address",
                             "raw_row": row,
                         }

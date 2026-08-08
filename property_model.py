@@ -21,6 +21,7 @@ separating two things that had been merged.
 """
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 from datetime import date
 from enum import Enum
@@ -132,3 +133,37 @@ def make_ca_property_id(county_fips: str, primary_identifier_digits: str, disamb
     """
     digits = primary_identifier_digits.replace("-", "")
     return f"CA-{county_fips}-{digits}-{disambiguator}"
+
+
+def atn_to_assessor_parcel_number(atn_raw: str) -> str | None:
+    """
+    The assessor parcel number is the ATN's own first three dash-separated
+    segments (e.g. "017-490-06" from ATN "017-490-06-00-3") - the ATN IS
+    structurally "APN + tax-system suffix" for Kern, confirmed by the
+    Power-to-Sell/tax-roll source itself, not inferred.
+
+    Moved here from migrate_10_kern_10_butte.py (2026-08-08) so
+    kern_enrich_docnum_verified.py and any future caller share the exact
+    same derivation instead of re-implementing it - a prior version of
+    this logic (reformatting a separate, lossy numeric CSV column
+    directly) silently dropped a leading zero and produced a shifted,
+    wrong parcel number despite parsing without error. See
+    docs/kern_butte_migration_test.md for the full incident writeup.
+
+    Returns None (never guesses) if the ATN has fewer than 3 segments.
+    """
+    parts = atn_raw.strip().split("-")
+    if len(parts) < 3:
+        return None
+    return "-".join(parts[:3])
+
+
+def apn1_cross_check_digits(apn1_raw: str, assessor_parcel_number: str) -> bool:
+    """True if a county's separate lossy numeric identifier column (e.g.
+    Kern's APN_1, which drops leading zeros via CSV/Excel numeric
+    round-tripping) is digit-consistent with the ATN-derived
+    assessor_parcel_number. A secondary cross-check only - never the
+    primary source for the derivation itself."""
+    apn1_digits = re.sub(r"\D", "", apn1_raw.split(".")[0])
+    expected_digits = re.sub(r"\D", "", assessor_parcel_number).lstrip("0") or "0"
+    return apn1_digits == expected_digits

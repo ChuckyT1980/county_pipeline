@@ -32,6 +32,16 @@ def load_call_sheet():
         return {norm_apn(r["apn"]): r for r in csv.DictReader(f)}
 
 
+def is_redeemed(verified_row: dict) -> bool:
+    """
+    True if the call sheet's own redemption_status field marks this parcel
+    redeemed. Extracted as its own function (2026-08-08 remediation) so it
+    can be unit-tested directly - see tests/test_butte_redemption_filter.py
+    - rather than only being exercisable via a full end-to-end run.
+    """
+    return str(verified_row.get("redemption_status", "")).strip().lower() == "redeemed"
+
+
 def main():
     auction = load_auction_enriched()
     verified = load_call_sheet()
@@ -50,7 +60,7 @@ def main():
         # Confirmed real: APN 022-210-078-000 (Gridley) carries
         # redemption_status="redeemed" in the source CSV. Skip anything
         # marked redeemed rather than silently including it.
-        if str(v.get("redemption_status", "")).strip().lower() == "redeemed":
+        if is_redeemed(v):
             skipped_redeemed.append(v.get("apn") or apn)
             continue
 

@@ -144,6 +144,27 @@ def build_property_intelligence_dossier(parcel_data: dict[str, Any], county: str
     apn_dash = parcel_data.get("apn_dash") or parcel_data.get("apn") or ""
     county_name = county.replace("_", " ").title()
 
+    # Identifier integrity (DOSSIER_QA finding, 2026-08-08): a raw source
+    # identifier must never be silently displayed as an "APN" unless it has
+    # actually been independently verified as the assessor's own parcel
+    # number. Kern's source data conflates an ATN (Assessment/Tax Number,
+    # 5-segment format e.g. "017-490-06-00-3") with the assessor's real,
+    # shorter parcel number ("017-490-06") - see property_model.py. A
+    # caller can pass these explicitly (Kern's enrichment script does);
+    # otherwise, default to treating apn_dash as the identifier at face
+    # value, honestly labeled as not independently re-verified this run
+    # rather than silently upgraded to "confirmed."
+    source_identifier = parcel_data.get("source_identifier") or apn_dash
+    source_identifier_type = parcel_data.get("source_identifier_type") or "APN (from source list)"
+    assessor_apn = parcel_data.get("assessor_apn")
+    assessor_apn_verification_status = parcel_data.get("assessor_apn_verification_status")
+    if assessor_apn is None:
+        assessor_apn = apn_dash
+        assessor_apn_verification_status = assessor_apn_verification_status or (
+            "NOT_VERIFIED — matches expected assessor APN format from the source list; "
+            "not independently re-confirmed by reading the assessor's own displayed APN field this run"
+        )
+
     # Use the scorer's own assessed_val_clean — it already checks every known
     # field-name variant (net_taxable_value, net_assessed_value, values,
     # assessed_total, TOTAL_ASSESSED_VALUE, ...). Recomputing from a narrower
@@ -170,7 +191,7 @@ def build_property_intelligence_dossier(parcel_data: dict[str, Any], county: str
 
     if "owner" in missing_fields or "assessed_value" in missing_fields:
         scores["opportunity_tier"] = "UNVERIFIED (Insufficient Source Data)"
-        scores["lien_risk"] = "UNKNOWN"
+        scores["equity_signal"] = "UNKNOWN"
         verification_status_val = "UNVERIFIED — SOURCE DATA INCOMPLETE"
     else:
         verification_status_val = parcel_data.get("verification_status") or "PARTIALLY VERIFIED — SEE DATA GAPS"
@@ -198,15 +219,38 @@ def build_property_intelligence_dossier(parcel_data: dict[str, Any], county: str
 
     signal = get_signal(county)
 
+    # Auction-confirmation wording (DOSSIER_QA finding, 2026-08-08): the
+    # county-level auction CALENDAR (signal_priority.AUCTION_CALENDAR) only
+    # confirms a county-wide auction DATE, not that any specific parcel is
+    # actually on that auction's real, current, published parcel list.
+    # Kern's dossiers were stating "GOING TO AUCTION in N days" for every
+    # parcel from a historical snapshot, before the real Sept 2026 list was
+    # even published - overclaiming parcel-specific confirmation. Only
+    # display the auction-imminent wording when the caller explicitly
+    # confirms this exact parcel was matched against a real, current,
+    # official parcel-level auction list.
+    if signal["signal_type"] == "PRE_AUCTION_PRIORITY_1" and not parcel_data.get("auction_list_membership_verified"):
+        priority_signal_display = (
+            "Tax-default / Power-to-Sell public-record indicator; parcel-specific auction status not verified "
+            f"(county auction window confirmed {get_auction_window_display(county)}, but this parcel's presence "
+            "on the current, official parcel-level auction list has not been independently confirmed)"
+        )
+    else:
+        priority_signal_display = signal["priority_label"]
+
     replacements = {
         "{{county_name}}": county_name,
         "{{generated_date}}": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "{{apn_dash}}": apn_dash,
-        "{{priority_signal}}": signal["priority_label"],
+        "{{source_identifier}}": source_identifier,
+        "{{source_identifier_type}}": source_identifier_type,
+        "{{assessor_apn}}": assessor_apn,
+        "{{assessor_apn_verification_status}}": assessor_apn_verification_status or "NOT_VERIFIED",
+        "{{priority_signal}}": priority_signal_display,
         "{{opportunity_tier}}": scores["opportunity_tier"],
         "{{seller_intent_score}}": str(scores["seller_intent_score"]),
         "{{equity_ratio_pct}}": f"{scores['equity_ratio'] * 100:.1f}",
-        "{{lien_risk}}": scores["lien_risk"],
+        "{{equity_signal}}": scores["equity_signal"],
         "{{min_bid}}": f"{min_bid:,.2f}",
         "{{assessed_value}}": f"{assessed:,.2f}",
         "{{predicted_auction_window}}": parcel_data.get("predicted_auction_window") or get_auction_window_display(county),

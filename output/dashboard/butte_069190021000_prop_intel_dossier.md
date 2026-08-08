@@ -1,11 +1,13 @@
 # Pre-Auction Property Intelligence Dossier: 069-190-021-000
 
 **County**: Butte County, CA  
-**APN**: `069-190-021-000`  
+**Source Identifier**: `069-190-021-000` (APN (from source list))  
+**Assessor APN**: `069-190-021-000`  
+**Assessor APN Verification Status**: NOT_VERIFIED — matches expected assessor APN format from the source list; not independently re-confirmed by reading the assessor's own displayed APN field this run  
 **Opportunity Tier**: **Level 2 (High Potential)**  
-**Generated Date**: 2026-08-08 11:25:19  
+**Generated Date**: 2026-08-08 12:06:50  
 
-**🔔 PRIORITY SIGNAL: AUCTION LIVE NOW (through 2026-08-10)**
+**🔔 PUBLIC-RECORD SIGNAL: AUCTION LIVE NOW (through 2026-08-10)**
 
 ---
 
@@ -16,10 +18,12 @@
 | **Opportunity Tier** | **Level 2 (High Potential)** |
 | **Seller Intent Score** | **60.0 / 100** |
 | **Estimated Equity Ratio** | **45.9%** |
-| **Lien Risk Tier** | **MEDIUM** |
+| **Equity / Assessed-Value Indicator** | **MEDIUM** |
 | **Minimum Starting Bid** | $35,147.00 |
 | **Net Assessed Total Value** | $64,986.00 |
 | **Predicted Auction Window** | 2026-08-07 to 2026-08-10 |
+
+> ⚠️ The Equity / Assessed-Value Indicator above is derived from available valuation and recorded amount data only. It is **not** a title search, lien-priority analysis, encumbrance review, or legal conclusion.
 
 ---
 
