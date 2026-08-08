@@ -1,11 +1,44 @@
-import requests
-from bs4 import BeautifulSoup
+"""
+DEPRECATED 2026-08-08 - DO NOT USE FOR DOSSIER GENERATION.
+
+This script was found (release-integrity audit, commit 27c6cd4) to be a
+reachable, unguarded bypass of the redemption-lifecycle filter: it wrote
+directly into the real output/dashboard/ directory via
+report_builder.build_property_intelligence_dossier() with no
+redemption_status check at all - the same class of bug fixed in
+regen_butte_dossiers.py (the redeemed Gridley parcel, 022-210-078-000).
+
+The canonical, filtered Butte generation path is regen_butte_dossiers.py
+(specifically regen_butte_dossiers.main(), which calls is_redeemed() on
+every candidate parcel before generating a dossier). Use that instead -
+directly (`python3 regen_butte_dossiers.py`), or via
+ca_unify_dashboard.py's "Generate Butte Dossiers" button, which now
+calls regen_butte_dossiers.main() in-process rather than shelling out to
+this file.
+
+task1c() below is now a hard, unconditional fail-closed guard - it
+raises before generating anything, whether this file is run directly or
+imported and called as a function. task1a()/task1b() are left
+functionally unchanged (data-gathering only, no output/dashboard writes)
+purely as an audit trail of what this path used to do - they are never
+reachable from __main__ anymore either.
+"""
+import sys
+
 import csv
 from datetime import datetime, timezone
 import os
 import time
 
 def task1a():
+    # Lazy imports: requests/bs4 are only needed if this (now-unreachable
+    # from __main__) function is actually called directly - keeping them
+    # out of module level means the deprecation guard below can always
+    # run and print its message, even in an environment where these
+    # optional scraping dependencies were never installed.
+    import requests
+    from bs4 import BeautifulSoup
+
     out_dir = "data/counties/butte"
     os.makedirs(out_dir, exist_ok=True)
     out_csv = os.path.join(out_dir, "auction_list_live_2026-08-07.csv")
@@ -123,20 +156,30 @@ def task1b(in_csv):
         
     return out_csv
 
+DEPRECATION_MESSAGE = (
+    "fetch_butte_task1.py is DEPRECATED and DISABLED for dossier generation.\n"
+    "It bypassed redemption-lifecycle validation (no is_redeemed() check) - the same\n"
+    "bug class fixed for the redeemed Gridley parcel (022-210-078-000) in\n"
+    "regen_butte_dossiers.py.\n\n"
+    "Use the canonical, filtered Butte generation path instead:\n"
+    "  python3 regen_butte_dossiers.py\n"
+    "or the \"Generate Butte Dossiers\" button in ca_unify_dashboard.py, which now\n"
+    "calls regen_butte_dossiers.main() directly.\n"
+)
+
+
 def task1c(enriched_csv):
-    import report_builder
-    with open(enriched_csv, "r", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            report_builder.build_property_intelligence_dossier(row, "butte")
+    """
+    Hard fail-closed guard: this function must never generate output,
+    regardless of whether it's reached via __main__ or called directly
+    after an import - both are real, previously-reachable paths. Raises
+    unconditionally before doing anything else, including opening
+    enriched_csv, so it cannot write to output/dashboard/ under any
+    calling convention.
+    """
+    raise RuntimeError(DEPRECATION_MESSAGE)
+
 
 if __name__ == "__main__":
-    print("Starting Task 1...")
-    csv_1a, apns = task1a()
-    csv_1b = task1b(csv_1a)
-    print("Enrichment done.")
-    try:
-        task1c(csv_1b)
-        print("Dossiers generated.")
-    except Exception as e:
-        print("Report builder error:", e)
+    print(DEPRECATION_MESSAGE, file=sys.stderr)
+    sys.exit(1)

@@ -459,16 +459,29 @@ with left:
 
     with col_b:
         if st.button("📋 Generate Butte Dossiers", key="run_butte"):
-            if (ROOT / "fetch_butte_task1.py").exists():
-                with st.spinner("Fetching live Butte list + enriching via MPTS..."):
-                    result = subprocess.run(
-                        [sys.executable, "fetch_butte_task1.py"],
-                        capture_output=True, text=True, cwd=str(ROOT), timeout=300
-                    )
-                    st.code(result.stdout[-1500:] if result.stdout else result.stderr[-500:])
-                    st.cache_data.clear()
-            else:
-                st.warning("fetch_butte_task1.py not found.")
+            # Canonical path only. Prior versions of this button shelled out
+            # to fetch_butte_task1.py, which wrote directly into output/
+            # dashboard/ with no redemption-lifecycle check (release-integrity
+            # audit finding, 2026-08-08 - see fetch_butte_task1.py's own
+            # deprecation docstring, and regen_butte_dossiers.py's
+            # is_redeemed()). This button now calls
+            # regen_butte_dossiers.run_canonical_generation_captured() - a
+            # thin, Streamlit-free wrapper around the same main() used by
+            # BUTTE_MONITOR - so there is exactly one code path that can
+            # produce Butte dossier output, it lives in a plain module
+            # (no streamlit import needed), and it is independently
+            # unit-tested in tests/test_dashboard_canonical_path.py without
+            # needing a running Streamlit session or streamlit installed.
+            sys.path.insert(0, str(ROOT))
+            import regen_butte_dossiers
+
+            with st.spinner("Regenerating Butte dossiers via the canonical, redemption-filtered path..."):
+                try:
+                    output = regen_butte_dossiers.run_canonical_generation_captured()
+                    st.code(output[-1500:])
+                except Exception as e:
+                    st.error(f"regen_butte_dossiers canonical generation failed: {e}")
+                st.cache_data.clear()
 
     col_c, col_d = st.columns(2)
     with col_c:

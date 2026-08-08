@@ -288,17 +288,30 @@ def build_property_intelligence_dossier(parcel_data: dict[str, Any], county: str
     out_file = OUTPUT_DASHBOARD / f"{county.lower()}_{clean_apn}_prop_intel_dossier.md"
     out_file.write_text(content, encoding="utf-8")
 
-    # Update dashboard feed
+    # Update dashboard feed. Uses the SAME corrected values as the rendered
+    # dossier (priority_signal_display, scores["equity_signal"], the new
+    # identifier fields) - a prior version of this call serialized the raw,
+    # uncorrected signal["priority_label"] here and omitted the identifier/
+    # equity fields entirely, meaning the feed/export surface could still
+    # carry "GOING TO AUCTION" even after the rendered .md dossier was
+    # fixed. Found during release-integrity remediation (2026-08-08) via
+    # the requirement that export-facing fields use the corrected language,
+    # not just dossier-facing ones - fixed here, not left as a gap.
     _update_dashboard_feed({
         "type": "PROPERTY_INTELLIGENCE",
         "county": county_name,
         "apn": apn_dash,
+        "source_identifier": source_identifier,
+        "source_identifier_type": source_identifier_type,
+        "assessor_apn": assessor_apn,
+        "assessor_apn_verification_status": assessor_apn_verification_status or "NOT_VERIFIED",
         "owner": replacements["{{owner_name}}"],
         "opportunity_tier": scores["opportunity_tier"],
         "seller_intent_score": scores["seller_intent_score"],
         "equity_ratio_pct": replacements["{{equity_ratio_pct}}"],
+        "equity_signal": scores["equity_signal"],
         "signal_type": signal["signal_type"],
-        "priority_signal": signal["priority_label"],
+        "priority_signal": priority_signal_display,
         "days_until_auction": signal["days_until_auction"],
         "report_path": str(out_file.resolve()),
         "timestamp": datetime.now().isoformat(),

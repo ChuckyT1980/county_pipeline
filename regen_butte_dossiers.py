@@ -104,5 +104,25 @@ def main():
         print(f"Skipped {len(skipped_redeemed)} redeemed parcel(s), excluded from output: {skipped_redeemed}")
 
 
+def run_canonical_generation_captured() -> str:
+    """
+    Thin, Streamlit-free wrapper around main() that captures its stdout
+    and returns it as a string - built specifically so callers like
+    ca_unify_dashboard.py's "Generate Butte Dossiers" button have exactly
+    one canonical function to call (no second copy of the redemption-
+    filter logic, no shelling out to a second script), and so that
+    resolution can be unit-tested (tests/test_dashboard_canonical_path.py)
+    without needing streamlit installed or a running Streamlit session -
+    this module has no streamlit dependency at all.
+    """
+    import contextlib
+    import io
+
+    buf = io.StringIO()
+    with contextlib.redirect_stdout(buf):
+        main()
+    return buf.getvalue()
+
+
 if __name__ == "__main__":
     main()
