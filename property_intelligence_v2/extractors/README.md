@@ -120,3 +120,39 @@ fully synthetic inline HTML fixtures - no database, no importer call.
 `tests/test_del_norte_asrprint_pipeline.py` tests the driver against a
 temporary in-memory SQLite database and a temporary external artifact
 root - never `del_norte/`'s real files, never the real repository.
+
+## Recorder pipeline (Phase 4F) - `del_norte_recorder_result_pipeline.py`
+
+A second, separate thin pipeline for Del Norte's Tyler Self-Service
+recorder document-number search, distinct from the AsrPrint assessor
+pipeline above. Sits between `del_norte_recorder_live_client.py`
+(`importers/`, the HTTP layer) and `del_norte_recorder_result.py` (the
+Phase 4D pure parser, unchanged by this phase).
+
+- **One-result gate**: calls `import_evidence_record()` only when the live
+  client succeeds, the parser returns success, exactly one row was parsed,
+  and that row's document number matches the query. Any other outcome
+  returns `RecorderPipelineNotImported` - no artifact, no database write.
+- **Byte-for-byte evidence**: the persisted `raw_content` is always the
+  live client's own response bytes, unmodified - never a re-encoded copy of
+  the string decoded separately for the parser.
+- **Confidence**: `'confirmed'`, not `'carried_forward'` - this data is
+  read from a live source during the current run, unlike AsrPrint's
+  archived-file evidence.
+- **Party ordering**: `recorder_grantor_name_1..N` /
+  `recorder_grantee_name_1..N` (1-indexed) preserve the parser's exact
+  source order and repeats - no deduplication.
+- **APN/book-page**: persisted only when the parser reports the field both
+  present and non-blank.
+- **Permanent rules inherited unchanged from Phase 4D**: `detail_link_path`
+  is stored as opaque text only, never fetched by this or any module
+  without its own separate authorization; party fields are never named
+  `owner`/`current_owner`; no title/lien/legal-status conclusion is ever
+  drawn here.
+- **Run lifecycle**: takes `ingestion_run_id` as a caller-supplied
+  parameter and never creates/finalizes a run or writes `exceptions` -
+  deferred to a future batch orchestrator, mirroring the AsrPrint pipeline.
+- **Tests**: `tests/test_del_norte_recorder_live_client.py` (client, fully
+  mocked transport, no real HTTP) and
+  `tests/test_del_norte_recorder_result_pipeline.py` (pipeline, synthetic
+  HTML + temporary in-memory database + temporary external artifact root).

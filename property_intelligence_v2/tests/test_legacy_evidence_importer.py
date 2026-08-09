@@ -506,6 +506,260 @@ def test_unrelated_integrity_error_is_not_treated_as_dedup():
     print("PASS: an unrelated integrity error (invalid confidence) rolls back the whole transaction and raises ImportTransactionError, never treated as dedup")
 
 
+# ── import_evidence_record: raw_content route (Phase 4F Option A) ────────
+
+def test_raw_content_import_succeeds_and_writes_content_addressed_artifact():
+    """Non-TEST_ONLY_ synthetic content, same convention as the legacy-path
+    happy-path test above - proves the raw_content route is a first-class
+    alternative to legacy_path, not a degraded one."""
+    conn = _fresh_conn()
+    _seed_source(conn)
+    conn.execute(
+        "INSERT INTO ingestion_runs (run_id, source_id, started_at, status) VALUES (?,?,?,?)",
+        ("TEST_ONLY_RUN_1", "TEST_ONLY_SRC_1", NOW_ISO, "attempted"),
+    )
+    conn.commit()
+    with _TempLayout() as t:
+        content = b"<html>raw_content fixture body</html>"
+
+        result = import_evidence_record(
+            conn, ingestion_run_id="TEST_ONLY_RUN_1", source_id="TEST_ONLY_SRC_1",
+            county="EXAMPLE_COUNTY", raw_content=content,
+            source_url_or_identifier="https://example.invalid/live/1", content_type="text/html",
+            observation_fields=(ObservationFieldInput("owner_name", "EXAMPLE OWNER", "confirmed"),),
+            artifact_root=t.artifact_root, now=NOW,
+        )
+
+        assert result.artifact_written is True
+        assert result.deduplicated is False
+        assert result.artifact_path.read_bytes() == content
+        expected_hash = hashlib.sha256(content).hexdigest()
+        assert result.artifact_path == content_addressed_path(t.artifact_root, "EXAMPLE_COUNTY", expected_hash, "text/html")
+        assert result.artifact_path.is_relative_to(t.artifact_root)
+
+        ev_row = conn.execute(
+            "SELECT source_id, content_type, source_url_or_identifier FROM raw_evidence WHERE evidence_id = ?",
+            (result.evidence_id,),
+        ).fetchone()
+        assert ev_row == ("TEST_ONLY_SRC_1", "text/html", "https://example.invalid/live/1")
+    print("PASS: raw_content import succeeds and writes a content-addressed external artifact byte-for-byte identical to the supplied bytes")
+
+
+def test_raw_content_import_never_calls_validate_legacy_input_path():
+    """Monkeypatches validate_legacy_input_path to raise if called at all -
+    a technique that would fail this test immediately if the raw_content
+    route ever reached that check, rather than merely asserting on the
+    (already-proven-successful) outcome alone."""
+    conn = _fresh_conn()
+    _seed_source(conn)
+    conn.execute(
+        "INSERT INTO ingestion_runs (run_id, source_id, started_at, status) VALUES (?,?,?,?)",
+        ("TEST_ONLY_RUN_1", "TEST_ONLY_SRC_1", NOW_ISO, "attempted"),
+    )
+    conn.commit()
+
+    def _poisoned_validate_legacy_input_path(*args, **kwargs):
+        raise AssertionError("validate_legacy_input_path must never be called for the raw_content route")
+
+    original = importer.validate_legacy_input_path
+    importer.validate_legacy_input_path = _poisoned_validate_legacy_input_path
+    try:
+        with _TempLayout() as t:
+            content = b"<html>poison-check fixture</html>"
+            result = import_evidence_record(
+                conn, ingestion_run_id="TEST_ONLY_RUN_1", source_id="TEST_ONLY_SRC_1",
+                county="EXAMPLE_COUNTY", raw_content=content,
+                source_url_or_identifier="https://example.invalid/live/2", content_type="text/html",
+                artifact_root=t.artifact_root, now=NOW,
+            )
+            assert result.deduplicated is False
+    finally:
+        importer.validate_legacy_input_path = original
+    print("PASS: the raw_content route never calls validate_legacy_input_path (poisoned-function technique, not just outcome inspection)")
+
+
+def test_both_legacy_path_and_raw_content_supplied_fails_before_any_mutation():
+    conn = _fresh_conn()
+    _seed_source(conn)
+    conn.execute(
+        "INSERT INTO ingestion_runs (run_id, source_id, started_at, status) VALUES (?,?,?,?)",
+        ("TEST_ONLY_RUN_1", "TEST_ONLY_SRC_1", NOW_ISO, "attempted"),
+    )
+    conn.commit()
+    with _TempLayout() as t:
+        fixture = t.fake_repo / "kern" / "doc.html"
+        fixture.write_bytes(b"<html>fixture</html>")
+        try:
+            import_evidence_record(
+                conn, ingestion_run_id="TEST_ONLY_RUN_1", source_id="TEST_ONLY_SRC_1",
+                county="EXAMPLE_COUNTY", legacy_path=fixture, raw_content=b"<html>also supplied</html>",
+                source_url_or_identifier="https://example.invalid/both", content_type="text/html",
+                artifact_root=t.artifact_root, repo_root=t.fake_repo, now=NOW,
+            )
+            raise AssertionError("Expected ImporterInputError")
+        except ImporterInputError:
+            pass
+        assert conn.execute("SELECT COUNT(*) FROM raw_evidence").fetchone()[0] == 0
+        assert not any(t.artifact_root.rglob("*")), "no artifact should be written when both inputs are supplied"
+    print("PASS: supplying both legacy_path and raw_content fails with ImporterInputError before any artifact/DB mutation")
+
+
+def test_neither_legacy_path_nor_raw_content_supplied_fails_before_any_mutation():
+    conn = _fresh_conn()
+    _seed_source(conn)
+    conn.execute(
+        "INSERT INTO ingestion_runs (run_id, source_id, started_at, status) VALUES (?,?,?,?)",
+        ("TEST_ONLY_RUN_1", "TEST_ONLY_SRC_1", NOW_ISO, "attempted"),
+    )
+    conn.commit()
+    with _TempLayout() as t:
+        try:
+            import_evidence_record(
+                conn, ingestion_run_id="TEST_ONLY_RUN_1", source_id="TEST_ONLY_SRC_1",
+                county="EXAMPLE_COUNTY",
+                source_url_or_identifier="https://example.invalid/neither", content_type="text/html",
+                artifact_root=t.artifact_root, now=NOW,
+            )
+            raise AssertionError("Expected ImporterInputError")
+        except ImporterInputError:
+            pass
+        assert conn.execute("SELECT COUNT(*) FROM raw_evidence").fetchone()[0] == 0
+        assert not any(t.artifact_root.rglob("*")), "no artifact should be written when neither input is supplied"
+    print("PASS: supplying neither legacy_path nor raw_content fails with ImporterInputError before any artifact/DB mutation")
+
+
+def test_empty_raw_content_fails_before_any_mutation():
+    conn = _fresh_conn()
+    _seed_source(conn)
+    conn.execute(
+        "INSERT INTO ingestion_runs (run_id, source_id, started_at, status) VALUES (?,?,?,?)",
+        ("TEST_ONLY_RUN_1", "TEST_ONLY_SRC_1", NOW_ISO, "attempted"),
+    )
+    conn.commit()
+    with _TempLayout() as t:
+        try:
+            import_evidence_record(
+                conn, ingestion_run_id="TEST_ONLY_RUN_1", source_id="TEST_ONLY_SRC_1",
+                county="EXAMPLE_COUNTY", raw_content=b"",
+                source_url_or_identifier="https://example.invalid/empty", content_type="text/html",
+                artifact_root=t.artifact_root, now=NOW,
+            )
+            raise AssertionError("Expected ImporterInputError")
+        except ImporterInputError:
+            pass
+        assert conn.execute("SELECT COUNT(*) FROM raw_evidence").fetchone()[0] == 0
+        assert not any(t.artifact_root.rglob("*")), "no artifact should be written for empty raw_content"
+    print("PASS: empty raw_content fails with ImporterInputError before any artifact/DB mutation")
+
+
+def test_non_bytes_raw_content_fails_before_any_mutation():
+    conn = _fresh_conn()
+    _seed_source(conn)
+    conn.execute(
+        "INSERT INTO ingestion_runs (run_id, source_id, started_at, status) VALUES (?,?,?,?)",
+        ("TEST_ONLY_RUN_1", "TEST_ONLY_SRC_1", NOW_ISO, "attempted"),
+    )
+    conn.commit()
+    with _TempLayout() as t:
+        for bad_value in ("a plain str, not bytes", bytearray(b"a bytearray, not bytes"), 12345):
+            try:
+                import_evidence_record(
+                    conn, ingestion_run_id="TEST_ONLY_RUN_1", source_id="TEST_ONLY_SRC_1",
+                    county="EXAMPLE_COUNTY", raw_content=bad_value,
+                    source_url_or_identifier="https://example.invalid/non-bytes", content_type="text/html",
+                    artifact_root=t.artifact_root, now=NOW,
+                )
+                raise AssertionError(f"Expected ImporterInputError for {type(bad_value).__name__}")
+            except ImporterInputError:
+                pass
+        assert conn.execute("SELECT COUNT(*) FROM raw_evidence").fetchone()[0] == 0
+        assert not any(t.artifact_root.rglob("*")), "no artifact should be written for a non-bytes raw_content"
+    print("PASS: non-bytes raw_content (str, bytearray, int) fails cleanly with ImporterInputError before any artifact/DB mutation")
+
+
+def test_raw_content_test_only_marker_still_rejected():
+    conn = _fresh_conn()
+    _seed_source(conn)
+    conn.execute(
+        "INSERT INTO ingestion_runs (run_id, source_id, started_at, status) VALUES (?,?,?,?)",
+        ("TEST_ONLY_RUN_1", "TEST_ONLY_SRC_1", NOW_ISO, "attempted"),
+    )
+    conn.commit()
+    with _TempLayout() as t:
+        try:
+            import_evidence_record(
+                conn, ingestion_run_id="TEST_ONLY_RUN_1", source_id="TEST_ONLY_SRC_1",
+                county="TEST_ONLY_COUNTY", raw_content=b"<html>TEST_ONLY_ marker inside raw content</html>",
+                source_url_or_identifier="https://example.invalid/marker", content_type="text/html",
+                artifact_root=t.artifact_root, now=NOW,
+            )
+            raise AssertionError("Expected ImporterIdentityError")
+        except ImporterIdentityError:
+            pass
+        assert conn.execute("SELECT COUNT(*) FROM raw_evidence").fetchone()[0] == 0
+        assert not any(t.artifact_root.rglob("*")), "no artifact should be written when raw_content contains the TEST_ONLY_ marker"
+    print("PASS: TEST_ONLY_ rejection still applies to raw_content, exactly as it does for legacy_path content")
+
+
+def test_raw_content_reimport_same_identity_is_deduplicated_not_duplicated():
+    conn = _fresh_conn()
+    _seed_source(conn)
+    conn.execute(
+        "INSERT INTO ingestion_runs (run_id, source_id, started_at, status) VALUES (?,?,?,?)",
+        ("TEST_ONLY_RUN_1", "TEST_ONLY_SRC_1", NOW_ISO, "attempted"),
+    )
+    conn.commit()
+    with _TempLayout() as t:
+        kwargs = dict(
+            ingestion_run_id="TEST_ONLY_RUN_1", source_id="TEST_ONLY_SRC_1", county="EXAMPLE_COUNTY",
+            raw_content=b"<html>raw_content dedup fixture</html>",
+            source_url_or_identifier="https://example.invalid/live/dedup",
+            content_type="text/html", artifact_root=t.artifact_root, now=NOW,
+        )
+        first = import_evidence_record(conn, **kwargs)
+        second = import_evidence_record(conn, **kwargs)
+        assert first.deduplicated is False
+        assert second.deduplicated is True
+        assert first.evidence_id == second.evidence_id
+        count = conn.execute("SELECT COUNT(*) FROM raw_evidence").fetchone()[0]
+        assert count == 1, "a raw_content re-import with the identical identity triple must not create a second row"
+    print("PASS: re-importing identical raw_content under the same identity is deduplicated, not duplicated - same guarantee as the legacy_path route")
+
+
+def test_raw_content_unrelated_integrity_error_rolls_back_and_raises():
+    """Same guarantee as test_unrelated_integrity_error_is_not_treated_as_dedup
+    above, exercised through the raw_content route instead of legacy_path -
+    proves the shared transactional path (unchanged for both routes) still
+    rolls back correctly and reports the orphaned artifact path."""
+    conn = _fresh_conn()
+    _seed_source(conn)
+    conn.execute(
+        "INSERT INTO ingestion_runs (run_id, source_id, started_at, status) VALUES (?,?,?,?)",
+        ("TEST_ONLY_RUN_1", "TEST_ONLY_SRC_1", NOW_ISO, "attempted"),
+    )
+    conn.commit()
+    with _TempLayout() as t:
+        try:
+            import_evidence_record(
+                conn, ingestion_run_id="TEST_ONLY_RUN_1", source_id="TEST_ONLY_SRC_1", county="EXAMPLE_COUNTY",
+                raw_content=b"<html>raw_content bad confidence fixture</html>",
+                source_url_or_identifier="https://example.invalid/live/bad-confidence",
+                content_type="text/html",
+                observation_fields=(ObservationFieldInput("owner_name", "EXAMPLE OWNER", "NOT_A_REAL_CONFIDENCE_LEVEL"),),
+                artifact_root=t.artifact_root, now=NOW,
+            )
+            raise AssertionError("Expected ImportTransactionError")
+        except ImportTransactionError as exc:
+            assert exc.artifact_path is not None
+            assert exc.artifact_path.exists(), "the artifact write happens before the DB transaction, so it must remain on disk (orphaned) after rollback"
+        count = conn.execute(
+            "SELECT COUNT(*) FROM raw_evidence WHERE source_url_or_identifier = ?",
+            ("https://example.invalid/live/bad-confidence",),
+        ).fetchone()[0]
+        assert count == 0, "the whole transaction, including raw_evidence, must roll back on an unrelated failure"
+    print("PASS: an unrelated integrity error on the raw_content route rolls back the transaction and reports the orphaned artifact path, same as the legacy_path route")
+
+
 # ── run_legacy_import: Phase A/B/C lifecycle + failure audit trail ────────
 
 def test_run_legacy_import_phase_a_c_lifecycle_and_orphan_artifact_audit():

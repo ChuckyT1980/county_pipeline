@@ -190,7 +190,8 @@ class ImporterConfigError(LegacyEvidenceImporterError):
 
 
 class ImporterInputError(LegacyEvidenceImporterError):
-    """The legacy input path is outside the allowed manifest."""
+    """The evidence input is invalid: rejected legacy_path, missing/both
+    legacy_path/raw_content inputs, or invalid raw_content."""
 
 
 class ImporterIdentityError(LegacyEvidenceImporterError):
@@ -358,7 +359,8 @@ def import_evidence_record(
     ingestion_run_id: str,
     source_id: str,
     county: str,
-    legacy_path: Path,
+    legacy_path: Path | None = None,
+    raw_content: bytes | None = None,
     source_url_or_identifier: str,
     content_type: str,
     artifact_root: Path,
@@ -367,9 +369,23 @@ def import_evidence_record(
     now: datetime | None = None,
     _test_only_race_hook: Callable[[], None] | None = None,
 ) -> ImportResult:
-    """Phase B: import exactly one legacy evidence file into raw_evidence +
+    """Phase B: import exactly one evidence record into raw_evidence +
     evidence_disposition + observations, in one transaction. Raises without
-    persisting anything if the input path, a value, or the source is rejected.
+    persisting anything if the input mode, an input value, or the source is
+    rejected.
+
+    Exactly one of legacy_path or raw_content must be supplied - never both,
+    never neither. legacy_path (the original route) is validated through
+    validate_legacy_input_path() exactly as before and its bytes are read
+    from that validated path. raw_content (new) is used directly as the
+    evidence bytes - validate_legacy_input_path() is never called, no file
+    path is ever constructed, and no file is read or written for the source
+    content itself; raw_content must be a genuine bytes object and must not
+    be empty. Everything downstream of obtaining the content bytes -
+    hashing, content-addressed artifact writing, artifact-root validation,
+    the transaction, raw_evidence/disposition/observation insertion,
+    duplicate detection, and TEST_ONLY rejection - is identical for both
+    routes; only how the bytes are obtained differs.
 
     _test_only_race_hook is never passed by production code (run_legacy_import
     never passes it). It exists solely so tests/test_legacy_evidence_importer.py
@@ -384,23 +400,49 @@ def import_evidence_record(
     # module's "## Artifact-root enforcement" docstring section.
     artifact_root = validate_artifact_root(artifact_root)
 
-    validated_path = validate_legacy_input_path(legacy_path, repo_root=repo_root)
+    # Input-mode validation, before any other check or side effect - exactly
+    # one of legacy_path/raw_content, and if raw_content, it must be a real,
+    # non-empty bytes object. This runs before validate_legacy_input_path()
+    # is even reached, so a bad raw_content call never touches that check.
+    if legacy_path is not None and raw_content is not None:
+        raise ImporterInputError("exactly one of legacy_path or raw_content must be supplied, got both")
+    if legacy_path is None and raw_content is None:
+        raise ImporterInputError("exactly one of legacy_path or raw_content must be supplied, got neither")
+    if raw_content is not None and not isinstance(raw_content, bytes):
+        raise ImporterInputError(f"raw_content must be bytes, got {type(raw_content).__name__}")
+    if raw_content is not None and len(raw_content) == 0:
+        raise ImporterInputError("raw_content must not be empty")
 
-    reject_test_only(
-        county=county,
-        source_url_or_identifier=source_url_or_identifier,
-        content_type=content_type,
-        legacy_path=str(validated_path),
-        **{f"observation_field_name[{i}]": f.field_name for i, f in enumerate(observation_fields)},
-        **{f"observation_field_value[{i}]": f.field_value for i, f in enumerate(observation_fields)},
-    )
+    if legacy_path is not None:
+        # Unchanged legacy-file route.
+        validated_path = validate_legacy_input_path(legacy_path, repo_root=repo_root)
+        reject_test_only(
+            county=county,
+            source_url_or_identifier=source_url_or_identifier,
+            content_type=content_type,
+            legacy_path=str(validated_path),
+            **{f"observation_field_name[{i}]": f.field_name for i, f in enumerate(observation_fields)},
+            **{f"observation_field_value[{i}]": f.field_value for i, f in enumerate(observation_fields)},
+        )
+    else:
+        # New raw_content route - validate_legacy_input_path() is never
+        # called, and no file path is ever constructed for the source content.
+        validated_path = None
+        reject_test_only(
+            county=county,
+            source_url_or_identifier=source_url_or_identifier,
+            content_type=content_type,
+            **{f"observation_field_name[{i}]": f.field_name for i, f in enumerate(observation_fields)},
+            **{f"observation_field_value[{i}]": f.field_value for i, f in enumerate(observation_fields)},
+        )
 
     _require_known_source(conn, source_id)
 
-    content = validated_path.read_bytes()
+    content = validated_path.read_bytes() if validated_path is not None else raw_content
     if TEST_ONLY_MARKER.encode("utf-8") in content:
         raise ImporterIdentityError(
-            f"refusing to persist file content containing {TEST_ONLY_MARKER!r}: {validated_path}"
+            f"refusing to persist content containing {TEST_ONLY_MARKER!r}"
+            + (f": {validated_path}" if validated_path is not None else " (raw_content route)")
         )
 
     content_hash = hashlib.sha256(content).hexdigest()
