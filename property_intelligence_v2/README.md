@@ -58,9 +58,10 @@ hand (see "Two representations, one shape" below).
 ## Subdirectories
 
 - `contracts/` - `entities.py`: the nine entities as Python dataclasses, plus their supporting enums (statuses, confidence levels, classifications). This is the primary reference for what each entity's fields mean and why.
-- `migrations/` - `001_initial_schema.sql`: the ONE canonical, versioned SQL schema (SQLite now, written to port cleanly to PostgreSQL later). `apply_schema.py` is the one code path (used by both real usage and tests) that applies it. No import/migration of legacy data exists yet - see `migrations/README.md`.
+- `migrations/` - `001_initial_schema.sql` + `002_integrity_hardening.sql` + `003_evidence_identity_unique.sql`: the versioned SQL schema (SQLite now, written to port cleanly to PostgreSQL later). `apply_schema.py` is the one code path (used by both real usage and tests) that applies them - see `migrations/README.md`.
+- `importers/` - `legacy_evidence_importer.py` (Phase 2): the controlled importer from a legacy evidence file (kern/, butte/, lake/, del_norte/ only) into `raw_evidence`/`evidence_disposition`/`observations`. Does not parse document fields (callers supply already-extracted observation fields), match parcels, or create canonical state - see the module's own docstring and `importers/README.md`. Tested against synthetic fixtures only; not yet run against real legacy data.
 - `validation/` - `lifecycle.py`: structural transition validity for the four entities that carry a lifecycle status (does a proposed status change make sense at all) - not scoring, ranking, or decision logic about what SHOULD happen, which is out of scope for Phase 1.
-- `tests/` - `test_contracts.py`, `test_schema.py`, `test_lifecycle.py` - v2's own test suite, independent of the legacy `tests/` directory at the repo root. Plain assertions, no pytest dependency, matching the legacy suite's convention. No real or synthetic California data anywhere - every fixture value is an explicit placeholder (`TEST_ONLY_*` prefix in schema tests).
+- `tests/` - v2's own test suite, independent of the legacy `tests/` directory at the repo root. Plain assertions, no pytest dependency, matching the legacy suite's convention. No real or synthetic California data anywhere - every fixture value is an explicit placeholder (`TEST_ONLY_*` prefix), except a small, explicitly-documented set of importer happy-path tests that use RFC 2606 `example.invalid` values instead, specifically to test the code path that runs when no `TEST_ONLY_` marker is present - see `tests/test_legacy_evidence_importer.py`'s module docstring.
 - `models/` - not populated; see `models/README.md` for why.
 - `docs/` - not yet populated beyond this README.
 
@@ -78,8 +79,18 @@ their own side independently.
 ## Status
 
 Phase 1 data-contract foundation, built 2026-08-08. Contracts, schema,
-lifecycle validation, and tests exist; no scraper, county adapter,
-monitor, dossier, dashboard, export, scoring model, ML model, or
-opportunity ranking has been built, and none is planned until a
-separately-authorized later phase. No real or synthetic California
-county data has been inserted anywhere in this tree.
+lifecycle validation, and tests exist.
+
+Phase 2, built 2026-08-08: a migration (`003_evidence_identity_unique.sql`)
+enforcing raw_evidence's evidence-identity key, and the controlled legacy
+evidence importer (`importers/legacy_evidence_importer.py`) that turns one
+allowed legacy file into `raw_evidence` + `evidence_disposition` +
+`observations`, transactionally. It has been run only against synthetic
+test fixtures, never against real legacy county data.
+
+Still not built, and not planned until a separately-authorized later
+phase: legacy-document field extraction/parsing, parcel matching,
+canonical-state creation, any scraper, county adapter, monitor, dossier,
+dashboard, export, scoring model, ML model, or opportunity ranking. No
+real or synthetic California county data has been inserted anywhere in
+this tree.

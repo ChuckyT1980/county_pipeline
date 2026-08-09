@@ -41,27 +41,48 @@ keeps testing 001's shape in isolation regardless of what later
 migrations add or remove - `test_schema_hardening.py` is what tests 001
 and 002 applied together.
 
+`003_evidence_identity_unique.sql` (Phase 2) adds one UNIQUE index -
+`idx_raw_evidence_identity` on `raw_evidence(source_id, content_hash,
+source_url_or_identifier)` - the evidence-identity/deduplication key for
+the Phase 2 legacy evidence importer. Byte-identical content from the same
+source but a different `source_url_or_identifier` is a distinct record,
+not a duplicate (see `importers/legacy_evidence_importer.py`'s module
+docstring for the full decision and its schema evidence). Applying this
+migration is preflighted by `apply_schema.py`'s `_preflight_003()`, which
+raises a clear `RuntimeError` naming how many duplicate groups exist if
+`raw_evidence` already violates the new constraint - necessary because
+SQLite's `RAISE()` only works inside a trigger body, not in a plain script
+statement, so 003's own `.sql` file cannot raise a custom message itself.
+
 SQLite now, written to be mechanically portable to PostgreSQL later (see
 the portability notes at the top of `001_initial_schema.sql`) - no cloud
 database, credentials, or external service involved at this phase.
 
-## Data import (future work, not started)
+## Data import
 
-Separate from schema migrations above: the controlled importer that will
-eventually populate these tables from legacy evidence -
+`importers/legacy_evidence_importer.py` (Phase 2) is the controlled
+importer -
 
 ```
-legacy Kern / Butte / Lake evidence
-  -> raw_evidence records
-  -> observations
-  -> parcel matches
-  -> canonical property state
+legacy Kern / Butte / Lake / Del Norte evidence file
+  -> raw_evidence + evidence_disposition (ACTIVE) + observations
 ```
 
-This is application code, not a numbered schema migration, and doesn't
-exist yet. It has not been designed, let alone built, and nothing in
-Phase 1 runs it against real legacy data. When it is built, it must read
-legacy evidence files read-only and write only into v2's own store -
-never back into any legacy county folder, dossier, monitor, dashboard,
-export, or output. See the top-level `property_intelligence_v2/README.md`
-for the full isolation rule.
+Application code, not a numbered schema migration - built on top of the
+`idx_raw_evidence_identity` constraint above. It reads legacy evidence
+files read-only (restricted to `kern/`, `butte/`, `lake/`, `del_norte/`;
+`monitor_runs/`, `output/`, dashboards, and exports are rejected) and
+writes only into v2's own store, configured exclusively through the
+`PIV2_ARTIFACT_ROOT` environment variable (must be an absolute path
+outside the repository) - never back into any legacy county folder,
+dossier, monitor, dashboard, export, or output. See the top-level
+`property_intelligence_v2/README.md` for the full isolation rule.
+
+Deliberately not yet built, and out of scope for this importer: parsing a
+legacy document's actual field values (callers supply already-extracted
+observation fields), parcel matching, and canonical-state creation - see
+the module's own docstring for the exact write boundary. It has been
+tested against synthetic fixtures only (`tests/
+test_legacy_evidence_importer.py`, `tests/
+test_evidence_identity_migration.py`) and has not been run against real
+legacy county data.

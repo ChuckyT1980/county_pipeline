@@ -1,0 +1,31 @@
+-- property_intelligence_v2 - migration 003: evidence-identity uniqueness (Phase 2).
+--
+-- Adds a UNIQUE index enforcing the raw_evidence identity/deduplication key
+-- established for the Phase 2 legacy evidence importer:
+--     (source_id, content_hash, source_url_or_identifier)
+--
+-- Evidence-identity decision (full writeup in property_intelligence_v2/
+-- importers/legacy_evidence_importer.py's module docstring):
+-- byte-identical content (content_hash) retrieved from the same source_id
+-- but a DIFFERENT source_url_or_identifier is a DISTINCT evidence record,
+-- not a duplicate. source_url_or_identifier is NOT NULL in
+-- 001_initial_schema.sql and exists specifically to record which
+-- document/location a given piece of evidence was retrieved from;
+-- collapsing across it would silently discard that provenance. Re-running
+-- the importer against the SAME (source_id, content_hash,
+-- source_url_or_identifier) triple - the actual re-import/idempotency
+-- case - is the only situation this index treats as a duplicate.
+--
+-- Preflight: SQLite's RAISE() is only valid inside a trigger body, not in a
+-- bare script statement, so this file contains no preflight statement of
+-- its own. The clear-failure preflight instead runs in Python, in
+-- migrations/apply_schema.py's _preflight_003(), immediately before this
+-- file is executed - it queries for existing duplicate groups and raises
+-- RuntimeError with a specific count if any are found. Without that
+-- preflight, this CREATE UNIQUE INDEX statement would still fail on
+-- duplicate data (SQLite enforces the constraint directly), just with a
+-- less specific sqlite3.IntegrityError instead of a purpose-written
+-- message naming how many groups collide.
+
+CREATE UNIQUE INDEX idx_raw_evidence_identity
+    ON raw_evidence(source_id, content_hash, source_url_or_identifier);

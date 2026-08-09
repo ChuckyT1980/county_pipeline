@@ -11,6 +11,12 @@ read-only audit of commit d741447 are now backed by real SQL enforcement
 - not to re-prove what tests/test_schema.py already covers for migration
 001 alone.
 
+Pinned to target_version=2 (same reasoning as test_schema.py's pin to
+target_version=1): migration 003 adds a UNIQUE index this file's fixtures
+don't need to exercise, and pinning keeps this file testing 001+002 in
+isolation regardless of what later migrations add. tests/
+test_evidence_identity_migration.py is what tests 003 specifically.
+
 Run: python3 property_intelligence_v2/tests/test_schema_hardening.py
 """
 import sqlite3
@@ -28,7 +34,7 @@ NOW = datetime(2026, 1, 1, tzinfo=timezone.utc).isoformat()
 def _fresh_conn() -> sqlite3.Connection:
     conn = sqlite3.connect(":memory:")
     conn.execute("PRAGMA foreign_keys = ON")
-    apply_schema(conn)  # applies 001 then 002, in order, via the one shared code path
+    apply_schema(conn, target_version=2)  # 001 then 002 only, in order, via the one shared code path
     return conn
 
 
@@ -68,7 +74,7 @@ def test_migrations_001_and_002_apply_in_order():
     assert get_applied_version(conn) == 2
     versions = [r[0] for r in conn.execute("SELECT version FROM schema_migrations ORDER BY version").fetchall()]
     assert versions == [1, 2], f"expected migrations applied in order [1, 2], got {versions}"
-    print("PASS: migration 001 then 002 applied in order via the single apply_schema() path")
+    print("PASS: migration 001 then 002 applied in order via the single apply_schema() path (pinned to target_version=2)")
 
 
 # ── 1. Evidence and observation immutability ─────────────────────────────
