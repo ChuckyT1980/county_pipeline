@@ -36,6 +36,7 @@ sale date" signal (Lake is not in AUCTION_CALENDAR) -- this is left
 untouched, not overridden, since it is the honest current state.
 """
 import csv
+import json
 import sys
 
 sys.path.insert(0, "/mnt/c/Users/chuck/Downloads/county_pipeline")
@@ -43,6 +44,12 @@ import report_builder
 
 SRC = "/mnt/c/Users/chuck/Downloads/county_pipeline/lake/lake_still_defaulted_full.csv"
 EXCLUDE_APNS = {"032-042-330-000"}  # unresolved assessor/recorder doc-number discrepancy
+
+# Auction-Identity corrective implementation: lake_lien_classification_ALL.json
+# is a separate, richer artifact (clean status enum + full per-document array)
+# than SRC above - not currently read by this script at all, so joining it
+# here is additive, not a duplicate of any existing join.
+LIEN_CLASSIFICATION = "/mnt/c/Users/chuck/Downloads/county_pipeline/lake/lake_lien_classification_ALL.json"
 
 
 def clean_money(s):
@@ -61,8 +68,37 @@ def clean_situs(raw):
     return " ".join(raw.split())
 
 
+def load_lien_classification():
+    """Read-only load of lake_lien_classification_ALL.json, keyed by apn.
+    Returns {} if the file is missing rather than raising - this join is an
+    enrichment, not a hard requirement for dossier generation."""
+    try:
+        with open(LIEN_CLASSIFICATION, encoding="utf-8") as f:
+            rows = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+    return {r["apn"]: r for r in rows if r.get("apn")}
+
+
+def build_document_summary(docs):
+    """Deterministic, source-order-preserving summary of a docs_json array -
+    literal doc_number/doc_type/recording_date/grantor/grantee only, no
+    interpretation, no ownership/title conclusion. None if docs is empty."""
+    if not docs:
+        return None
+    parts = []
+    for d in docs:
+        parts.append(
+            f"{d.get('doc_number', 'UNKNOWN')} ({d.get('doc_type', 'UNKNOWN')}, recorded "
+            f"{d.get('recording_date', 'UNKNOWN')}, grantor={d.get('grantor', 'UNKNOWN')}, "
+            f"grantee={d.get('grantee', 'UNKNOWN')})"
+        )
+    return "; ".join(parts)
+
+
 def main():
     rows = list(csv.DictReader(open(SRC, encoding="utf-8")))
+    lien_by_apn = load_lien_classification()
     generated = []
     skipped = []
 
@@ -71,6 +107,13 @@ def main():
         if apn in EXCLUDE_APNS:
             skipped.append((apn, "unresolved assessor/recorder doc-number discrepancy"))
             continue
+
+        lien_rec = lien_by_apn.get(apn, {})
+        property_tax_status = lien_rec.get("status")
+        source_document_summary = build_document_summary(lien_rec.get("docs_json"))
+        status_source_artifact_ref = (
+            f"lake/lake_lien_classification_ALL.json:apn={apn}" if lien_rec else None
+        )
 
         net_val = clean_money(row.get("net_assessed_value"))
         situs = clean_situs(row.get("situs_addr")) or clean_situs(row.get("source_situs"))
@@ -129,6 +172,11 @@ def main():
                 f"the most recent public recorder evidence, not a same-day county "
                 f"confirmation."
             ),
+            "property_tax_status": property_tax_status,
+            "source_document_summary": source_document_summary,
+            "status_source_artifact_ref": status_source_artifact_ref,
+            "source_retrieval_timestamp": None,
+            "freshness_status": "retrieval_time_unknown",
         }
 
         try:

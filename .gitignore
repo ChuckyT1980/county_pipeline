@@ -37,3 +37,8 @@ data/raw/
 # reasoning as data/raw/ above: real scraped HTML, regenerable, not source material.
 tax_bills/
 */tax_bills/
+
+# Local AI agent configs & symlinks
+.claude/
+.agents/
+

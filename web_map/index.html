@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>California Interactive Parcel Map — 13.2M Parcels Local Edition</title>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Custom Vibrant Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Header Navigation -->
+  <header>
+    <div class="brand">
+      <span class="brand-icon">🗺️</span>
+      <h1>California <span>Parcel Engine</span></h1>
+    </div>
+
+    <!-- Real-time Local Search Bar -->
+    <div class="search-container">
+      <input type="text" id="search-input" class="search-input" placeholder="Search 13.2M Parcels by APN, Owner, Address, City..." autocomplete="off">
+      <div id="search-results" class="search-results"></div>
+    </div>
+
+    <div class="header-stats">
+      <div class="stat-badge" id="stat-counties">58 CA Counties</div>
+      <div class="stat-badge gold" id="stat-parcels">13.2M CA Parcels</div>
+    </div>
+  </header>
+
+  <!-- Main Workspace: Map + Side Inspector -->
+  <main>
+    <div id="map-container">
+      <!-- Breadcrumb Bar -->
+      <div class="breadcrumb-bar" id="breadcrumb-bar">
+        <span class="crumb active" id="crumb-state" onclick="resetToState()">California</span>
+        <span class="crumb-separator" id="sep-1" style="display:none;">&rsaquo;</span>
+        <span class="crumb" id="crumb-county" style="display:none;" onclick="resetToCounty()">County</span>
+        <span class="crumb-separator" id="sep-2" style="display:none;">&rsaquo;</span>
+        <span class="crumb" id="crumb-city" style="display:none;">City</span>
+        <span class="crumb-separator" id="sep-3" style="display:none;">&rsaquo;</span>
+        <span class="crumb" id="crumb-parcel" style="display:none;">Parcel</span>
+      </div>
+
+      <!-- Zoom Level Indicator -->
+      <div class="level-badge" id="level-badge">LEVEL 1: STATE VIEW</div>
+
+      <!-- Leaflet Map Instance -->
+      <div id="map"></div>
+
+      <!-- Vibrant Map Legend -->
+      <div class="map-legend" id="map-legend">
+        <div class="legend-title" id="legend-title">Regional Color Palette</div>
+        <div class="legend-items" id="legend-items">
+          <div class="legend-item"><div class="legend-color" style="background:#00f3ff; color:#00f3ff;"></div> Bay Area</div>
+          <div class="legend-item"><div class="legend-color" style="background:#ff007f; color:#ff007f;"></div> Southern CA</div>
+          <div class="legend-item"><div class="legend-color" style="background:#fb923c; color:#fb923c;"></div> Central Valley</div>
+          <div class="legend-item"><div class="legend-color" style="background:#38bdf8; color:#38bdf8;"></div> Central Coast</div>
+          <div class="legend-item"><div class="legend-color" style="background:#facc15; color:#facc15;"></div> Sacramento Valley</div>
+          <div class="legend-item"><div class="legend-color" style="background:#34d399; color:#34d399;"></div> Northern CA</div>
+          <div class="legend-item"><div class="legend-color" style="background:#a855f7; color:#a855f7;"></div> Sierra Region</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side Inspector Panel -->
+    <aside class="inspector-panel" id="inspector-panel">
+      <div class="inspector-header">
+        <h2>Property Inspector</h2>
+        <span id="inspect-status-badge" style="font-size:0.78rem; color:var(--accent-cyan); font-weight:700; text-transform:uppercase;">STATE VIEW</span>
+      </div>
+      <div class="inspector-body" id="inspector-body">
+        <div class="placeholder-msg">
+          👈 <strong>Click on any county</strong> to drill into cities.<br><br>
+          Click a <strong>city polygon</strong> to load parcel vectors.<br><br>
+          Click any <strong>parcel</strong> to inspect full assessor records across California's 13.2M parcels!
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Application JS -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -62,4 +62,31 @@
 - **Data Gap Audit**: {{data_gaps}}
 
 ---
+
+## 🧭 Auction Identity & Operational Status
+
+> ⚠️ This section reflects locally matched and/or historical source records only. It is **not** proof of a current, live, official auction listing unless `auction_identity_status` below is `live_confirmed`, and is never a title, ownership, lien-priority, or legal-status conclusion.
+
+**1. Auction Identity**
+- **Auction/Listing ID**: `{{auction_listing_id}}`
+- **Auction Identity Status**: {{auction_identity_status}}
+
+**2. Tax / Default / Reconciliation Status**
+- **Property Tax / Default Status**: {{property_tax_status}}
+- **Reconciliation / Exclusion Reason**: {{reconciliation_or_exclusion_reason}}
+- **Source Document Summary**: {{source_document_summary}}
+
+**3. Source Provenance**
+- **Source Artifact & Reference**: `{{status_source_artifact_ref}}`
+
+**4. Freshness**
+- **Retrieval / Last-Confirmed Timestamp**: {{source_retrieval_timestamp}}
+- **Freshness Status**: {{freshness_status}}
+
+**5. Timing**
+- **Auction Timing Type**: {{auction_timing_type}}
+- **Auction Window**: {{auction_window_labeled}}
+- **Exact Deadline**: {{auction_deadline}}
+
+---
 *Generated automatically by CA-UNIFY Engine | Verified Public Source Data*

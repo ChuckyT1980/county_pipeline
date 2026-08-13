@@ -1,0 +1,2387 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "001",
+        "name": "Alameda",
+        "county_name": "Alameda County",
+        "region": "Bay Area",
+        "color": "#00f3ff",
+        "parcel_count": 485000,
+        "state": "CA",
+        "lat": 37.6463,
+        "lon": -121.8929
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.3129,
+              37.2963
+            ],
+            [
+              -121.4729,
+              37.2963
+            ],
+            [
+              -121.4729,
+              37.9963
+            ],
+            [
+              -122.3129,
+              37.9963
+            ],
+            [
+              -122.3129,
+              37.2963
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "003",
+        "name": "Alpine",
+        "county_name": "Alpine County",
+        "region": "Sierra",
+        "color": "#a855f7",
+        "parcel_count": 3800,
+        "state": "CA",
+        "lat": 38.5968,
+        "lon": -119.8207
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -120.2407,
+              38.2468
+            ],
+            [
+              -119.4007,
+              38.2468
+            ],
+            [
+              -119.4007,
+              38.9468
+            ],
+            [
+              -120.2407,
+              38.9468
+            ],
+            [
+              -120.2407,
+              38.2468
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "005",
+        "name": "Amador",
+        "county_name": "Amador County",
+        "region": "Sierra",
+        "color": "#a855f7",
+        "parcel_count": 24000,
+        "state": "CA",
+        "lat": 38.4458,
+        "lon": -120.6523
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.0723,
+              38.0958
+            ],
+            [
+              -120.2323,
+              38.0958
+            ],
+            [
+              -120.2323,
+              38.7958
+            ],
+            [
+              -121.0723,
+              38.7958
+            ],
+            [
+              -121.0723,
+              38.0958
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "007",
+        "name": "Butte",
+        "county_name": "Butte County",
+        "region": "Northern CA",
+        "color": "#34d399",
+        "parcel_count": 98000,
+        "state": "CA",
+        "lat": 39.6672,
+        "lon": -121.6008
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.0208,
+              39.3172
+            ],
+            [
+              -121.1808,
+              39.3172
+            ],
+            [
+              -121.1808,
+              40.0172
+            ],
+            [
+              -122.0208,
+              40.0172
+            ],
+            [
+              -122.0208,
+              39.3172
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "009",
+        "name": "Calaveras",
+        "county_name": "Calaveras County",
+        "region": "Sierra",
+        "color": "#a855f7",
+        "parcel_count": 44000,
+        "state": "CA",
+        "lat": 38.2046,
+        "lon": -120.5541
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -120.9741,
+              37.8546
+            ],
+            [
+              -120.1341,
+              37.8546
+            ],
+            [
+              -120.1341,
+              38.5546
+            ],
+            [
+              -120.9741,
+              38.5546
+            ],
+            [
+              -120.9741,
+              37.8546
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "011",
+        "name": "Colusa",
+        "county_name": "Colusa County",
+        "region": "Sacramento Valley",
+        "color": "#facc15",
+        "parcel_count": 12500,
+        "state": "CA",
+        "lat": 39.1776,
+        "lon": -122.237
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.657,
+              38.8276
+            ],
+            [
+              -121.817,
+              38.8276
+            ],
+            [
+              -121.817,
+              39.5276
+            ],
+            [
+              -122.657,
+              39.5276
+            ],
+            [
+              -122.657,
+              38.8276
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "013",
+        "name": "Contra Costa",
+        "county_name": "Contra Costa County",
+        "region": "Bay Area",
+        "color": "#00f3ff",
+        "parcel_count": 375000,
+        "state": "CA",
+        "lat": 37.9192,
+        "lon": -121.9278
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.3478,
+              37.5692
+            ],
+            [
+              -121.5078,
+              37.5692
+            ],
+            [
+              -121.5078,
+              38.2692
+            ],
+            [
+              -122.3478,
+              38.2692
+            ],
+            [
+              -122.3478,
+              37.5692
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "015",
+        "name": "Del Norte",
+        "county_name": "Del Norte County",
+        "region": "Northern CA",
+        "color": "#34d399",
+        "parcel_count": 16000,
+        "state": "CA",
+        "lat": 41.7433,
+        "lon": -123.8972
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -124.3172,
+              41.3933
+            ],
+            [
+              -123.4772,
+              41.3933
+            ],
+            [
+              -123.4772,
+              42.0933
+            ],
+            [
+              -124.3172,
+              42.0933
+            ],
+            [
+              -124.3172,
+              41.3933
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "017",
+        "name": "El Dorado",
+        "county_name": "El Dorado County",
+        "region": "Sierra",
+        "color": "#a855f7",
+        "parcel_count": 110000,
+        "state": "CA",
+        "lat": 38.7787,
+        "lon": -120.5233
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -120.9433,
+              38.4287
+            ],
+            [
+              -120.1033,
+              38.4287
+            ],
+            [
+              -120.1033,
+              39.1287
+            ],
+            [
+              -120.9433,
+              39.1287
+            ],
+            [
+              -120.9433,
+              38.4287
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "019",
+        "name": "Fresno",
+        "county_name": "Fresno County",
+        "region": "Central Valley",
+        "color": "#fb923c",
+        "parcel_count": 310000,
+        "state": "CA",
+        "lat": 36.7577,
+        "lon": -119.6493
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -120.0693,
+              36.4077
+            ],
+            [
+              -119.2293,
+              36.4077
+            ],
+            [
+              -119.2293,
+              37.1077
+            ],
+            [
+              -120.0693,
+              37.1077
+            ],
+            [
+              -120.0693,
+              36.4077
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "021",
+        "name": "Glenn",
+        "county_name": "Glenn County",
+        "region": "Sacramento Valley",
+        "color": "#facc15",
+        "parcel_count": 15000,
+        "state": "CA",
+        "lat": 39.5987,
+        "lon": -122.3922
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.8122,
+              39.2487
+            ],
+            [
+              -121.9722,
+              39.2487
+            ],
+            [
+              -121.9722,
+              39.9487
+            ],
+            [
+              -122.8122,
+              39.9487
+            ],
+            [
+              -122.8122,
+              39.2487
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "023",
+        "name": "Humboldt",
+        "county_name": "Humboldt County",
+        "region": "Northern CA",
+        "color": "#34d399",
+        "parcel_count": 68000,
+        "state": "CA",
+        "lat": 40.6993,
+        "lon": -123.876
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -124.296,
+              40.3493
+            ],
+            [
+              -123.456,
+              40.3493
+            ],
+            [
+              -123.456,
+              41.0493
+            ],
+            [
+              -124.296,
+              41.0493
+            ],
+            [
+              -124.296,
+              40.3493
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "025",
+        "name": "Imperial",
+        "county_name": "Imperial County",
+        "region": "Southern CA",
+        "color": "#ff007f",
+        "parcel_count": 82000,
+        "state": "CA",
+        "lat": 33.0393,
+        "lon": -115.3666
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -115.7866,
+              32.6893
+            ],
+            [
+              -114.9466,
+              32.6893
+            ],
+            [
+              -114.9466,
+              33.3893
+            ],
+            [
+              -115.7866,
+              33.3893
+            ],
+            [
+              -115.7866,
+              32.6893
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "027",
+        "name": "Inyo",
+        "county_name": "Inyo County",
+        "region": "Eastern CA",
+        "color": "#ec4899",
+        "parcel_count": 19000,
+        "state": "CA",
+        "lat": 36.5111,
+        "lon": -117.4108
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -117.8308,
+              36.1611
+            ],
+            [
+              -116.9908,
+              36.1611
+            ],
+            [
+              -116.9908,
+              36.8611
+            ],
+            [
+              -117.8308,
+              36.8611
+            ],
+            [
+              -117.8308,
+              36.1611
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "029",
+        "name": "Kern",
+        "county_name": "Kern County",
+        "region": "Central Valley",
+        "color": "#fb923c",
+        "parcel_count": 420000,
+        "state": "CA",
+        "lat": 35.3433,
+        "lon": -118.7299
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.1499,
+              34.9933
+            ],
+            [
+              -118.3099,
+              34.9933
+            ],
+            [
+              -118.3099,
+              35.6933
+            ],
+            [
+              -119.1499,
+              35.6933
+            ],
+            [
+              -119.1499,
+              34.9933
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "031",
+        "name": "Kings",
+        "county_name": "Kings County",
+        "region": "Central Valley",
+        "color": "#fb923c",
+        "parcel_count": 46000,
+        "state": "CA",
+        "lat": 36.0754,
+        "lon": -119.8155
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -120.2355,
+              35.7254
+            ],
+            [
+              -119.3955,
+              35.7254
+            ],
+            [
+              -119.3955,
+              36.4254
+            ],
+            [
+              -120.2355,
+              36.4254
+            ],
+            [
+              -120.2355,
+              35.7254
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "033",
+        "name": "Lake",
+        "county_name": "Lake County",
+        "region": "Northern CA",
+        "color": "#34d399",
+        "parcel_count": 63000,
+        "state": "CA",
+        "lat": 39.0996,
+        "lon": -122.7532
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1732,
+              38.7496
+            ],
+            [
+              -122.3332,
+              38.7496
+            ],
+            [
+              -122.3332,
+              39.4496
+            ],
+            [
+              -123.1732,
+              39.4496
+            ],
+            [
+              -123.1732,
+              38.7496
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "035",
+        "name": "Lassen",
+        "county_name": "Lassen County",
+        "region": "Northern CA",
+        "color": "#34d399",
+        "parcel_count": 27000,
+        "state": "CA",
+        "lat": 40.6736,
+        "lon": -120.5959
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.0159,
+              40.3236
+            ],
+            [
+              -120.1759,
+              40.3236
+            ],
+            [
+              -120.1759,
+              41.0236
+            ],
+            [
+              -121.0159,
+              41.0236
+            ],
+            [
+              -121.0159,
+              40.3236
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "037",
+        "name": "Los Angeles",
+        "county_name": "Los Angeles County",
+        "region": "Southern CA",
+        "color": "#ff007f",
+        "parcel_count": 2380000,
+        "state": "CA",
+        "lat": 34.0522,
+        "lon": -118.2437
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -118.6637,
+              33.7022
+            ],
+            [
+              -117.8237,
+              33.7022
+            ],
+            [
+              -117.8237,
+              34.4022
+            ],
+            [
+              -118.6637,
+              34.4022
+            ],
+            [
+              -118.6637,
+              33.7022
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "039",
+        "name": "Madera",
+        "county_name": "Madera County",
+        "region": "Central Valley",
+        "color": "#fb923c",
+        "parcel_count": 57000,
+        "state": "CA",
+        "lat": 37.218,
+        "lon": -119.7627
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -120.1827,
+              36.868
+            ],
+            [
+              -119.3427,
+              36.868
+            ],
+            [
+              -119.3427,
+              37.568
+            ],
+            [
+              -120.1827,
+              37.568
+            ],
+            [
+              -120.1827,
+              36.868
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "041",
+        "name": "Marin",
+        "county_name": "Marin County",
+        "region": "Bay Area",
+        "color": "#00f3ff",
+        "parcel_count": 94000,
+        "state": "CA",
+        "lat": 38.0718,
+        "lon": -122.6972
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.1172,
+              37.7218
+            ],
+            [
+              -122.2772,
+              37.7218
+            ],
+            [
+              -122.2772,
+              38.4218
+            ],
+            [
+              -123.1172,
+              38.4218
+            ],
+            [
+              -123.1172,
+              37.7218
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "043",
+        "name": "Mariposa",
+        "county_name": "Mariposa County",
+        "region": "Sierra",
+        "color": "#a855f7",
+        "parcel_count": 17000,
+        "state": "CA",
+        "lat": 37.4938,
+        "lon": -119.9664
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -120.3864,
+              37.1438
+            ],
+            [
+              -119.5464,
+              37.1438
+            ],
+            [
+              -119.5464,
+              37.8438
+            ],
+            [
+              -120.3864,
+              37.8438
+            ],
+            [
+              -120.3864,
+              37.1438
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "045",
+        "name": "Mendocino",
+        "county_name": "Mendocino County",
+        "region": "Northern CA",
+        "color": "#34d399",
+        "parcel_count": 54000,
+        "state": "CA",
+        "lat": 39.4381,
+        "lon": -123.3908
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.8108,
+              39.0881
+            ],
+            [
+              -122.9708,
+              39.0881
+            ],
+            [
+              -122.9708,
+              39.7881
+            ],
+            [
+              -123.8108,
+              39.7881
+            ],
+            [
+              -123.8108,
+              39.0881
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "047",
+        "name": "Merced",
+        "county_name": "Merced County",
+        "region": "Central Valley",
+        "color": "#fb923c",
+        "parcel_count": 86000,
+        "state": "CA",
+        "lat": 37.1917,
+        "lon": -120.7183
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.1383,
+              36.8417
+            ],
+            [
+              -120.2983,
+              36.8417
+            ],
+            [
+              -120.2983,
+              37.5417
+            ],
+            [
+              -121.1383,
+              37.5417
+            ],
+            [
+              -121.1383,
+              36.8417
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "049",
+        "name": "Modoc",
+        "county_name": "Modoc County",
+        "region": "Northern CA",
+        "color": "#34d399",
+        "parcel_count": 23000,
+        "state": "CA",
+        "lat": 41.5898,
+        "lon": -120.7249
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.1449,
+              41.2398
+            ],
+            [
+              -120.3049,
+              41.2398
+            ],
+            [
+              -120.3049,
+              41.9398
+            ],
+            [
+              -121.1449,
+              41.9398
+            ],
+            [
+              -121.1449,
+              41.2398
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "051",
+        "name": "Mono",
+        "county_name": "Mono County",
+        "region": "Eastern CA",
+        "color": "#ec4899",
+        "parcel_count": 18000,
+        "state": "CA",
+        "lat": 37.939,
+        "lon": -118.887
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.307,
+              37.589
+            ],
+            [
+              -118.467,
+              37.589
+            ],
+            [
+              -118.467,
+              38.289
+            ],
+            [
+              -119.307,
+              38.289
+            ],
+            [
+              -119.307,
+              37.589
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "053",
+        "name": "Monterey",
+        "county_name": "Monterey County",
+        "region": "Central Coast",
+        "color": "#38bdf8",
+        "parcel_count": 142000,
+        "state": "CA",
+        "lat": 36.3136,
+        "lon": -121.3524
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.7724,
+              35.9636
+            ],
+            [
+              -120.9324,
+              35.9636
+            ],
+            [
+              -120.9324,
+              36.6636
+            ],
+            [
+              -121.7724,
+              36.6636
+            ],
+            [
+              -121.7724,
+              35.9636
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "055",
+        "name": "Napa",
+        "county_name": "Napa County",
+        "region": "Bay Area",
+        "color": "#00f3ff",
+        "parcel_count": 52000,
+        "state": "CA",
+        "lat": 38.5072,
+        "lon": -122.3283
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.7483,
+              38.1572
+            ],
+            [
+              -121.9083,
+              38.1572
+            ],
+            [
+              -121.9083,
+              38.8572
+            ],
+            [
+              -122.7483,
+              38.8572
+            ],
+            [
+              -122.7483,
+              38.1572
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "057",
+        "name": "Nevada",
+        "county_name": "Nevada County",
+        "region": "Sierra",
+        "color": "#a855f7",
+        "parcel_count": 67000,
+        "state": "CA",
+        "lat": 39.3014,
+        "lon": -120.7686
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.1886,
+              38.9514
+            ],
+            [
+              -120.3486,
+              38.9514
+            ],
+            [
+              -120.3486,
+              39.6514
+            ],
+            [
+              -121.1886,
+              39.6514
+            ],
+            [
+              -121.1886,
+              38.9514
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "059",
+        "name": "Orange",
+        "county_name": "Orange County",
+        "region": "Southern CA",
+        "color": "#ff007f",
+        "parcel_count": 650000,
+        "state": "CA",
+        "lat": 33.7175,
+        "lon": -117.8311
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -118.2511,
+              33.3675
+            ],
+            [
+              -117.4111,
+              33.3675
+            ],
+            [
+              -117.4111,
+              34.0675
+            ],
+            [
+              -118.2511,
+              34.0675
+            ],
+            [
+              -118.2511,
+              33.3675
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "061",
+        "name": "Placer",
+        "county_name": "Placer County",
+        "region": "Sierra",
+        "color": "#a855f7",
+        "parcel_count": 165000,
+        "state": "CA",
+        "lat": 39.0634,
+        "lon": -120.7177
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.1377,
+              38.7134
+            ],
+            [
+              -120.2977,
+              38.7134
+            ],
+            [
+              -120.2977,
+              39.4134
+            ],
+            [
+              -121.1377,
+              39.4134
+            ],
+            [
+              -121.1377,
+              38.7134
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "063",
+        "name": "Plumas",
+        "county_name": "Plumas County",
+        "region": "Northern CA",
+        "color": "#34d399",
+        "parcel_count": 28000,
+        "state": "CA",
+        "lat": 39.9928,
+        "lon": -120.8268
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.2468,
+              39.6428
+            ],
+            [
+              -120.4068,
+              39.6428
+            ],
+            [
+              -120.4068,
+              40.3428
+            ],
+            [
+              -121.2468,
+              40.3428
+            ],
+            [
+              -121.2468,
+              39.6428
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "065",
+        "name": "Riverside",
+        "county_name": "Riverside County",
+        "region": "Southern CA",
+        "color": "#ff007f",
+        "parcel_count": 820000,
+        "state": "CA",
+        "lat": 33.7432,
+        "lon": -115.9938
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -116.4138,
+              33.3932
+            ],
+            [
+              -115.5738,
+              33.3932
+            ],
+            [
+              -115.5738,
+              34.0932
+            ],
+            [
+              -116.4138,
+              34.0932
+            ],
+            [
+              -116.4138,
+              33.3932
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "067",
+        "name": "Sacramento",
+        "county_name": "Sacramento County",
+        "region": "Sacramento Valley",
+        "color": "#facc15",
+        "parcel_count": 470000,
+        "state": "CA",
+        "lat": 38.4747,
+        "lon": -121.3542
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.7742,
+              38.1247
+            ],
+            [
+              -120.9342,
+              38.1247
+            ],
+            [
+              -120.9342,
+              38.8247
+            ],
+            [
+              -121.7742,
+              38.8247
+            ],
+            [
+              -121.7742,
+              38.1247
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "069",
+        "name": "San Benito",
+        "county_name": "San Benito County",
+        "region": "Central Coast",
+        "color": "#38bdf8",
+        "parcel_count": 21000,
+        "state": "CA",
+        "lat": 36.6032,
+        "lon": -121.074
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.494,
+              36.2532
+            ],
+            [
+              -120.654,
+              36.2532
+            ],
+            [
+              -120.654,
+              36.9532
+            ],
+            [
+              -121.494,
+              36.9532
+            ],
+            [
+              -121.494,
+              36.2532
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "071",
+        "name": "San Bernardino",
+        "county_name": "San Bernardino County",
+        "region": "Southern CA",
+        "color": "#ff007f",
+        "parcel_count": 860000,
+        "state": "CA",
+        "lat": 34.8405,
+        "lon": -116.1785
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -116.5985,
+              34.4905
+            ],
+            [
+              -115.7585,
+              34.4905
+            ],
+            [
+              -115.7585,
+              35.1905
+            ],
+            [
+              -116.5985,
+              35.1905
+            ],
+            [
+              -116.5985,
+              34.4905
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "073",
+        "name": "San Diego",
+        "county_name": "San Diego County",
+        "region": "Southern CA",
+        "color": "#ff007f",
+        "parcel_count": 1050000,
+        "state": "CA",
+        "lat": 32.7157,
+        "lon": -117.1611
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -117.5811,
+              32.3657
+            ],
+            [
+              -116.7411,
+              32.3657
+            ],
+            [
+              -116.7411,
+              33.0657
+            ],
+            [
+              -117.5811,
+              33.0657
+            ],
+            [
+              -117.5811,
+              32.3657
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "075",
+        "name": "San Francisco",
+        "county_name": "San Francisco County",
+        "region": "Bay Area",
+        "color": "#00f3ff",
+        "parcel_count": 210000,
+        "state": "CA",
+        "lat": 37.7749,
+        "lon": -122.4194
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.8394,
+              37.4249
+            ],
+            [
+              -121.9994,
+              37.4249
+            ],
+            [
+              -121.9994,
+              38.1249
+            ],
+            [
+              -122.8394,
+              38.1249
+            ],
+            [
+              -122.8394,
+              37.4249
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "077",
+        "name": "San Joaquin",
+        "county_name": "San Joaquin County",
+        "region": "Central Valley",
+        "color": "#fb923c",
+        "parcel_count": 245000,
+        "state": "CA",
+        "lat": 37.9358,
+        "lon": -121.2722
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.6922,
+              37.5858
+            ],
+            [
+              -120.8522,
+              37.5858
+            ],
+            [
+              -120.8522,
+              38.2858
+            ],
+            [
+              -121.6922,
+              38.2858
+            ],
+            [
+              -121.6922,
+              37.5858
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "079",
+        "name": "San Luis Obispo",
+        "county_name": "San Luis Obispo County",
+        "region": "Central Coast",
+        "color": "#38bdf8",
+        "parcel_count": 118000,
+        "state": "CA",
+        "lat": 35.3102,
+        "lon": -120.5233
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -120.9433,
+              34.9602
+            ],
+            [
+              -120.1033,
+              34.9602
+            ],
+            [
+              -120.1033,
+              35.6602
+            ],
+            [
+              -120.9433,
+              35.6602
+            ],
+            [
+              -120.9433,
+              34.9602
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "081",
+        "name": "San Mateo",
+        "county_name": "San Mateo County",
+        "region": "Bay Area",
+        "color": "#00f3ff",
+        "parcel_count": 225000,
+        "state": "CA",
+        "lat": 37.4337,
+        "lon": -122.3131
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.7331,
+              37.0837
+            ],
+            [
+              -121.8931,
+              37.0837
+            ],
+            [
+              -121.8931,
+              37.7837
+            ],
+            [
+              -122.7331,
+              37.7837
+            ],
+            [
+              -122.7331,
+              37.0837
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "083",
+        "name": "Santa Barbara",
+        "county_name": "Santa Barbara County",
+        "region": "Central Coast",
+        "color": "#38bdf8",
+        "parcel_count": 132000,
+        "state": "CA",
+        "lat": 34.6593,
+        "lon": -120.0886
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -120.5086,
+              34.3093
+            ],
+            [
+              -119.6686,
+              34.3093
+            ],
+            [
+              -119.6686,
+              35.0093
+            ],
+            [
+              -120.5086,
+              35.0093
+            ],
+            [
+              -120.5086,
+              34.3093
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "085",
+        "name": "Santa Clara",
+        "county_name": "Santa Clara County",
+        "region": "Bay Area",
+        "color": "#00f3ff",
+        "parcel_count": 540000,
+        "state": "CA",
+        "lat": 37.231,
+        "lon": -121.695
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.115,
+              36.881
+            ],
+            [
+              -121.275,
+              36.881
+            ],
+            [
+              -121.275,
+              37.581
+            ],
+            [
+              -122.115,
+              37.581
+            ],
+            [
+              -122.115,
+              36.881
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "087",
+        "name": "Santa Cruz",
+        "county_name": "Santa Cruz County",
+        "region": "Central Coast",
+        "color": "#38bdf8",
+        "parcel_count": 98000,
+        "state": "CA",
+        "lat": 37.0558,
+        "lon": -121.9926
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.4126,
+              36.7058
+            ],
+            [
+              -121.5726,
+              36.7058
+            ],
+            [
+              -121.5726,
+              37.4058
+            ],
+            [
+              -122.4126,
+              37.4058
+            ],
+            [
+              -122.4126,
+              36.7058
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "089",
+        "name": "Shasta",
+        "county_name": "Shasta County",
+        "region": "Northern CA",
+        "color": "#34d399",
+        "parcel_count": 115000,
+        "state": "CA",
+        "lat": 40.7637,
+        "lon": -122.0405
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.4605,
+              40.4137
+            ],
+            [
+              -121.6205,
+              40.4137
+            ],
+            [
+              -121.6205,
+              41.1137
+            ],
+            [
+              -122.4605,
+              41.1137
+            ],
+            [
+              -122.4605,
+              40.4137
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "091",
+        "name": "Sierra",
+        "county_name": "Sierra County",
+        "region": "Sierra",
+        "color": "#a855f7",
+        "parcel_count": 5200,
+        "state": "CA",
+        "lat": 39.5772,
+        "lon": -120.5202
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -120.9402,
+              39.2272
+            ],
+            [
+              -120.1002,
+              39.2272
+            ],
+            [
+              -120.1002,
+              39.9272
+            ],
+            [
+              -120.9402,
+              39.9272
+            ],
+            [
+              -120.9402,
+              39.2272
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "093",
+        "name": "Siskiyou",
+        "county_name": "Siskiyou County",
+        "region": "Northern CA",
+        "color": "#34d399",
+        "parcel_count": 52000,
+        "state": "CA",
+        "lat": 41.594,
+        "lon": -122.5401
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.9601,
+              41.244
+            ],
+            [
+              -122.1201,
+              41.244
+            ],
+            [
+              -122.1201,
+              41.944
+            ],
+            [
+              -122.9601,
+              41.944
+            ],
+            [
+              -122.9601,
+              41.244
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "095",
+        "name": "Solano",
+        "county_name": "Solano County",
+        "region": "Bay Area",
+        "color": "#00f3ff",
+        "parcel_count": 152000,
+        "state": "CA",
+        "lat": 38.27,
+        "lon": -121.9326
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.3526,
+              37.92
+            ],
+            [
+              -121.5126,
+              37.92
+            ],
+            [
+              -121.5126,
+              38.62
+            ],
+            [
+              -122.3526,
+              38.62
+            ],
+            [
+              -122.3526,
+              37.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "097",
+        "name": "Sonoma",
+        "county_name": "Sonoma County",
+        "region": "Bay Area",
+        "color": "#00f3ff",
+        "parcel_count": 188000,
+        "state": "CA",
+        "lat": 38.5346,
+        "lon": -122.9234
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.3434,
+              38.1846
+            ],
+            [
+              -122.5034,
+              38.1846
+            ],
+            [
+              -122.5034,
+              38.8846
+            ],
+            [
+              -123.3434,
+              38.8846
+            ],
+            [
+              -123.3434,
+              38.1846
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "099",
+        "name": "Stanislaus",
+        "county_name": "Stanislaus County",
+        "region": "Central Valley",
+        "color": "#fb923c",
+        "parcel_count": 178000,
+        "state": "CA",
+        "lat": 37.5091,
+        "lon": -120.9876
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.4076,
+              37.1591
+            ],
+            [
+              -120.5676,
+              37.1591
+            ],
+            [
+              -120.5676,
+              37.8591
+            ],
+            [
+              -121.4076,
+              37.8591
+            ],
+            [
+              -121.4076,
+              37.1591
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "101",
+        "name": "Sutter",
+        "county_name": "Sutter County",
+        "region": "Sacramento Valley",
+        "color": "#facc15",
+        "parcel_count": 38000,
+        "state": "CA",
+        "lat": 39.0346,
+        "lon": -121.6946
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.1146,
+              38.6846
+            ],
+            [
+              -121.2746,
+              38.6846
+            ],
+            [
+              -121.2746,
+              39.3846
+            ],
+            [
+              -122.1146,
+              39.3846
+            ],
+            [
+              -122.1146,
+              38.6846
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "103",
+        "name": "Tehama",
+        "county_name": "Tehama County",
+        "region": "Northern CA",
+        "color": "#34d399",
+        "parcel_count": 41000,
+        "state": "CA",
+        "lat": 40.1256,
+        "lon": -122.237
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.657,
+              39.7756
+            ],
+            [
+              -121.817,
+              39.7756
+            ],
+            [
+              -121.817,
+              40.4756
+            ],
+            [
+              -122.657,
+              40.4756
+            ],
+            [
+              -122.657,
+              39.7756
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "105",
+        "name": "Trinity",
+        "county_name": "Trinity County",
+        "region": "Northern CA",
+        "color": "#34d399",
+        "parcel_count": 18500,
+        "state": "CA",
+        "lat": 40.6517,
+        "lon": -123.1147
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -123.5347,
+              40.3017
+            ],
+            [
+              -122.6947,
+              40.3017
+            ],
+            [
+              -122.6947,
+              41.0017
+            ],
+            [
+              -123.5347,
+              41.0017
+            ],
+            [
+              -123.5347,
+              40.3017
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "107",
+        "name": "Tulare",
+        "county_name": "Tulare County",
+        "region": "Central Valley",
+        "color": "#fb923c",
+        "parcel_count": 162000,
+        "state": "CA",
+        "lat": 36.2202,
+        "lon": -118.8023
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.2223,
+              35.8702
+            ],
+            [
+              -118.3823,
+              35.8702
+            ],
+            [
+              -118.3823,
+              36.5702
+            ],
+            [
+              -119.2223,
+              36.5702
+            ],
+            [
+              -119.2223,
+              35.8702
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "109",
+        "name": "Tuolumne",
+        "county_name": "Tuolumne County",
+        "region": "Sierra",
+        "color": "#a855f7",
+        "parcel_count": 34000,
+        "state": "CA",
+        "lat": 37.9942,
+        "lon": -119.936
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -120.356,
+              37.6442
+            ],
+            [
+              -119.516,
+              37.6442
+            ],
+            [
+              -119.516,
+              38.3442
+            ],
+            [
+              -120.356,
+              38.3442
+            ],
+            [
+              -120.356,
+              37.6442
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "111",
+        "name": "Ventura",
+        "county_name": "Ventura County",
+        "region": "Southern CA",
+        "color": "#ff007f",
+        "parcel_count": 255000,
+        "state": "CA",
+        "lat": 34.3705,
+        "lon": -119.1391
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.5591,
+              34.0205
+            ],
+            [
+              -118.7191,
+              34.0205
+            ],
+            [
+              -118.7191,
+              34.7205
+            ],
+            [
+              -119.5591,
+              34.7205
+            ],
+            [
+              -119.5591,
+              34.0205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "113",
+        "name": "Yolo",
+        "county_name": "Yolo County",
+        "region": "Sacramento Valley",
+        "color": "#facc15",
+        "parcel_count": 74000,
+        "state": "CA",
+        "lat": 38.682,
+        "lon": -121.9018
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -122.3218,
+              38.332
+            ],
+            [
+              -121.4818,
+              38.332
+            ],
+            [
+              -121.4818,
+              39.032
+            ],
+            [
+              -122.3218,
+              39.032
+            ],
+            [
+              -122.3218,
+              38.332
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fips": "115",
+        "name": "Yuba",
+        "county_name": "Yuba County",
+        "region": "Sacramento Valley",
+        "color": "#facc15",
+        "parcel_count": 31000,
+        "state": "CA",
+        "lat": 39.2673,
+        "lon": -121.3514
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -121.7714,
+              38.9173
+            ],
+            [
+              -120.9314,
+              38.9173
+            ],
+            [
+              -120.9314,
+              39.6173
+            ],
+            [
+              -121.7714,
+              39.6173
+            ],
+            [
+              -121.7714,
+              38.9173
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "total_parcels": 12184000,
+    "total_counties": 58
+  }
+}

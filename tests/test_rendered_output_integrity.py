@@ -158,6 +158,35 @@ def test_f_redeemed_parcel_blocked_via_deprecated_script():
     print("PASS (f.3): deprecated script fails closed both as a subprocess and when imported and called directly")
 
 
+def test_g_no_unconditional_auction_live_now_without_dual_confirmation():
+    """(g) Auction-Identity corrective implementation: 'AUCTION LIVE NOW' may
+    only render when BOTH auction_list_membership_verified is True AND
+    auction_identity_status=='live_confirmed'. This does not scan the real
+    corpus (the real 104 Butte dossiers predate this fix and are not
+    regenerated here) - it proves the gate itself, synthetically, via
+    report_builder.compute_priority_signal_display() (a pure function, no
+    file I/O). See tests/test_operational_status_fields.py for the fuller
+    synthetic coverage of the whole typed operational-status model."""
+    import report_builder
+    signal = {"signal_type": "AUCTION_LIVE", "priority_label": "AUCTION LIVE NOW (through 2026-08-10)"}
+
+    unconfirmed_status = report_builder.build_operational_status(
+        {"auction_identity_status": "locally_matched_not_live_reconfirmed"}, county="butte", signal=signal,
+    )
+    display = report_builder.compute_priority_signal_display(
+        signal=signal, status=unconfirmed_status, auction_list_membership_verified=False,
+        window_display="2026-08-07 to 2026-08-10",
+    )
+    assert "AUCTION LIVE NOW" not in display
+    assert "currently open" not in display.lower()
+    assert display == (
+        "Tax-default / power-to-sell public-record indicator. A county-wide auction window is "
+        "recorded as 2026-08-07 to 2026-08-10; this parcel's current official listing "
+        "status has not been independently confirmed."
+    )
+    print("PASS (g): 'AUCTION LIVE NOW' cannot render without both auction_list_membership_verified=True and auction_identity_status=='live_confirmed'; the required fallback wording renders exactly instead")
+
+
 def _run_redeemed_fixture_through(tmp: Path, call):
     """Shared fixture setup: build a minimal, real-shaped source CSV pair
     with one redeemed parcel and one clean parcel, monkeypatch every

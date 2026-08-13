@@ -118,6 +118,25 @@ def main():
             # report_builder.py's own safety check renders the honest
             # "parcel-specific auction status not verified" wording rather
             # than an overclaimed "GOING TO AUCTION" signal.
+            #
+            # Auction-Identity corrective implementation: `src` (already
+            # computed above from this same kern_REAL_AUCTION_PARCELS_CLEAN.csv
+            # join - not re-read, no duplicate join) carries a real, unique
+            # Auction_ID per parcel. That is genuine local-match evidence,
+            # but it is still the same historical-snapshot file discussed
+            # above - it does NOT independently confirm live/current
+            # auction-list membership, so auction_list_membership_verified
+            # is still never set True here. The match is instead surfaced
+            # honestly as "locally_matched_not_live_reconfirmed".
+            "auction_listing_id": (str(src.get("Auction_ID")).strip() or None) if src.get("Auction_ID") else None,
+            "auction_identity_status": (
+                "locally_matched_not_live_reconfirmed" if src.get("Auction_ID") else "not_matched"
+            ),
+            "status_source_artifact_ref": (
+                f"kern/kern_REAL_AUCTION_PARCELS_CLEAN.csv:Parcel_Number={apn}" if src else None
+            ),
+            "source_retrieval_timestamp": None,
+            "freshness_status": "retrieval_time_unknown",
             "verification_status": (
                 f"VERIFIED — BOTH SITES (assessed value/tax-default status and recorder document/owner only - "
                 f"the assessor parcel number itself is NOT independently verified, see Assessor APN Verification "

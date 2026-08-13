@@ -23,6 +23,136 @@ OUTPUT_DASHBOARD = ROOT / "output" / "dashboard"
 FEED_FILE = OUTPUT_DASHBOARD / "dashboard_feed.json"
 
 
+# ── Typed operational-status model (Auction-Identity corrective implementation) ──
+# Small, validated field set only - no ORM, no database, no migration. Every
+# field is optional/nullable; a caller supplying none of them gets honest
+# "unknown"/"unavailable" defaults, never a blank that could be misread as
+# confirmed. See build_operational_status()'s docstring for the mandatory
+# live_confirmed invariant.
+
+VALID_AUCTION_IDENTITY_STATUSES = {
+    "locally_matched_not_live_reconfirmed",
+    "live_confirmed",
+    "not_matched",
+    "unavailable",
+    "unknown",
+}
+VALID_FRESHNESS_STATUSES = {"current", "stale", "retrieval_time_unknown", "conflicting", "unknown"}
+VALID_AUCTION_TIMING_TYPES = {"exact_deadline", "county_window", "unknown"}
+
+
+class OperationalStatus:
+    """Typed, validated operational-status fields for one parcel. Constructed
+    only via build_operational_status() - never instantiated directly by
+    callers - so the live_confirmed invariant is always enforced."""
+
+    __slots__ = (
+        "auction_listing_id", "auction_identity_status", "auction_list_membership_verified",
+        "property_tax_status", "status_source_artifact_ref", "source_retrieval_timestamp",
+        "freshness_status", "auction_timing_type", "auction_deadline", "auction_window",
+        "reconciliation_or_exclusion_reason", "source_document_summary",
+    )
+
+    def __init__(self, **kwargs: Any) -> None:
+        for k in self.__slots__:
+            setattr(self, k, kwargs[k])
+
+
+def build_operational_status(parcel_data: dict[str, Any], *, county: str, signal: dict[str, Any]) -> OperationalStatus:
+    """Builds and validates the typed operational-status fields from whatever
+    the caller put in parcel_data.
+
+    INVARIANT (mandatory): auction_identity_status="live_confirmed" is valid
+    only when auction_list_membership_verified is True. A caller supplying
+    live_confirmed without the boolean set True has made an inconsistent
+    claim - safely downgraded to "unknown" here rather than rejected, since
+    raising would abort dossier generation for a real record over a caller
+    bug. This mirrors the conservative-downgrade pattern already used above
+    in this file (the completeness gate forces UNVERIFIED rather than
+    raising when owner/assessed_value is missing).
+
+    auction_list_membership_verified keeps its pre-existing meaning
+    (independently confirmed live/current parcel membership) exactly as
+    before - this function never sets it; it only reads whatever the caller
+    already supplied."""
+    membership_verified = bool(parcel_data.get("auction_list_membership_verified"))
+
+    identity_status = parcel_data.get("auction_identity_status") or "unknown"
+    if identity_status not in VALID_AUCTION_IDENTITY_STATUSES:
+        identity_status = "unknown"
+    if identity_status == "live_confirmed" and not membership_verified:
+        identity_status = "unknown"
+
+    retrieval_ts = parcel_data.get("source_retrieval_timestamp") or None
+    freshness = parcel_data.get("freshness_status") or "unknown"
+    if freshness not in VALID_FRESHNESS_STATUSES:
+        freshness = "unknown"
+    if retrieval_ts is None:
+        freshness = "retrieval_time_unknown"
+
+    timing_type = "unknown" if signal["signal_type"] == "NO_SCHEDULED_AUCTION" else "county_window"
+
+    return OperationalStatus(
+        auction_listing_id=parcel_data.get("auction_listing_id") or None,
+        auction_identity_status=identity_status,
+        auction_list_membership_verified=membership_verified,
+        property_tax_status=parcel_data.get("property_tax_status") or None,
+        status_source_artifact_ref=parcel_data.get("status_source_artifact_ref") or None,
+        source_retrieval_timestamp=retrieval_ts,
+        freshness_status=freshness,
+        auction_timing_type=timing_type,
+        auction_deadline=parcel_data.get("auction_deadline") or None,
+        auction_window=get_auction_window_display(county),
+        reconciliation_or_exclusion_reason=parcel_data.get("reconciliation_or_exclusion_reason") or None,
+        source_document_summary=parcel_data.get("source_document_summary") or None,
+    )
+
+
+def compute_priority_signal_display(
+    *, signal: dict[str, Any], status: OperationalStatus,
+    auction_list_membership_verified: bool, window_display: str,
+) -> str:
+    """Pure function - no real-clock dependency, no file I/O - so it can be
+    tested deterministically with a hand-built `signal` dict instead of
+    relying on signal_priority.get_signal()'s real-`today` behavior.
+
+    Auction-confirmation wording (DOSSIER_QA finding, 2026-08-08): the
+    county-level auction CALENDAR (signal_priority.AUCTION_CALENDAR) only
+    confirms a county-wide auction DATE, not that any specific parcel is
+    actually on that auction's real, current, published parcel list. Kern's
+    dossiers were stating "GOING TO AUCTION in N days" for every parcel from
+    a historical snapshot, before the real Sept 2026 list was even published
+    - overclaiming parcel-specific confirmation. Only display the
+    auction-imminent wording when the caller explicitly confirms this exact
+    parcel was matched against a real, current, official parcel-level
+    auction list.
+
+    Auction-Identity corrective implementation: the same overclaim risk
+    exists for AUCTION_LIVE's "AUCTION LIVE NOW" wording - a county-wide
+    window being live is not proof any given parcel is still on the
+    county's real, current listing (it may have redeemed, sold, or been
+    withdrawn). A live/current claim requires BOTH
+    auction_list_membership_verified=True AND
+    auction_identity_status=="live_confirmed" - a local historical-file
+    match (auction_identity_status="locally_matched_not_live_reconfirmed")
+    is explicitly NOT sufficient on its own, by design."""
+    if signal["signal_type"] == "PRE_AUCTION_PRIORITY_1" and not auction_list_membership_verified:
+        return (
+            "Tax-default / Power-to-Sell public-record indicator; parcel-specific auction status not verified "
+            f"(county auction window confirmed {window_display}, but this parcel's presence "
+            "on the current, official parcel-level auction list has not been independently confirmed)"
+        )
+    if signal["signal_type"] == "AUCTION_LIVE" and not (
+        status.auction_list_membership_verified and status.auction_identity_status == "live_confirmed"
+    ):
+        return (
+            "Tax-default / power-to-sell public-record indicator. A county-wide auction window is "
+            f"recorded as {window_display}; this parcel's current official listing "
+            "status has not been independently confirmed."
+        )
+    return signal["priority_label"]
+
+
 def build_excess_proceeds_report(claim_data: dict[str, Any], county: str) -> Path:
     """Generate an Excess Proceeds & Heir Claim report from template."""
     scores = score_excess_proceeds(claim_data)
@@ -218,25 +348,13 @@ def build_property_intelligence_dossier(parcel_data: dict[str, Any], county: str
         data_gaps_val = "None found"
 
     signal = get_signal(county)
-
-    # Auction-confirmation wording (DOSSIER_QA finding, 2026-08-08): the
-    # county-level auction CALENDAR (signal_priority.AUCTION_CALENDAR) only
-    # confirms a county-wide auction DATE, not that any specific parcel is
-    # actually on that auction's real, current, published parcel list.
-    # Kern's dossiers were stating "GOING TO AUCTION in N days" for every
-    # parcel from a historical snapshot, before the real Sept 2026 list was
-    # even published - overclaiming parcel-specific confirmation. Only
-    # display the auction-imminent wording when the caller explicitly
-    # confirms this exact parcel was matched against a real, current,
-    # official parcel-level auction list.
-    if signal["signal_type"] == "PRE_AUCTION_PRIORITY_1" and not parcel_data.get("auction_list_membership_verified"):
-        priority_signal_display = (
-            "Tax-default / Power-to-Sell public-record indicator; parcel-specific auction status not verified "
-            f"(county auction window confirmed {get_auction_window_display(county)}, but this parcel's presence "
-            "on the current, official parcel-level auction list has not been independently confirmed)"
-        )
-    else:
-        priority_signal_display = signal["priority_label"]
+    status = build_operational_status(parcel_data, county=county, signal=signal)
+    priority_signal_display = compute_priority_signal_display(
+        signal=signal,
+        status=status,
+        auction_list_membership_verified=bool(parcel_data.get("auction_list_membership_verified")),
+        window_display=get_auction_window_display(county),
+    )
 
     replacements = {
         "{{county_name}}": county_name,
@@ -278,6 +396,21 @@ def build_property_intelligence_dossier(parcel_data: dict[str, Any], county: str
         "{{source_url_or_file}}": parcel_data.get("source_url") or parcel_data.get("source_file") or "UNKNOWN — SOURCE NOT RECORDED",
         "{{verification_status}}": verification_status_val,
         "{{data_gaps}}": data_gaps_val,
+        "{{auction_listing_id}}": status.auction_listing_id or "None available",
+        "{{auction_identity_status}}": status.auction_identity_status,
+        "{{property_tax_status}}": status.property_tax_status or "Unknown",
+        "{{status_source_artifact_ref}}": status.status_source_artifact_ref or "Not recorded",
+        "{{source_retrieval_timestamp}}": status.source_retrieval_timestamp or "Unknown",
+        "{{freshness_status}}": status.freshness_status,
+        "{{auction_timing_type}}": status.auction_timing_type,
+        "{{auction_deadline}}": status.auction_deadline or "None",
+        "{{auction_window_labeled}}": (
+            f"{status.auction_window} (county-wide window, not parcel-specific)"
+            if status.auction_window and status.auction_window != "Not yet scheduled"
+            else status.auction_window
+        ),
+        "{{reconciliation_or_exclusion_reason}}": status.reconciliation_or_exclusion_reason or "None",
+        "{{source_document_summary}}": status.source_document_summary or "No source documents recorded",
     }
 
     for k, v in replacements.items():
@@ -315,6 +448,18 @@ def build_property_intelligence_dossier(parcel_data: dict[str, Any], county: str
         "days_until_auction": signal["days_until_auction"],
         "report_path": str(out_file.resolve()),
         "timestamp": datetime.now().isoformat(),
+        "auction_listing_id": status.auction_listing_id,
+        "auction_identity_status": status.auction_identity_status,
+        "auction_list_membership_verified": status.auction_list_membership_verified,
+        "property_tax_status": status.property_tax_status,
+        "status_source_artifact_ref": status.status_source_artifact_ref,
+        "source_retrieval_timestamp": status.source_retrieval_timestamp,
+        "freshness_status": status.freshness_status,
+        "auction_timing_type": status.auction_timing_type,
+        "auction_deadline": status.auction_deadline,
+        "auction_window": status.auction_window,
+        "reconciliation_or_exclusion_reason": status.reconciliation_or_exclusion_reason,
+        "source_document_summary": status.source_document_summary,
     })
 
     print(f"[report_builder] Saved Property Intelligence Dossier to {out_file.resolve()}", file=sys.stderr)
