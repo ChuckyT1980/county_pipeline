@@ -42,3 +42,8 @@ tax_bills/
 .claude/
 .agents/
 
+
+# Security & Credential Hygiene
+client_secret*.json
+*_cookies.json
+*_tokens.txt
