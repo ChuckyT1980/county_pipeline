@@ -1,4 +1,4 @@
-﻿"""
+"""
 Pure In-Memory Validation Module for San Joaquin ArcGIS MapServer Adapter
 Run Label: CA_SJC_ARCGIS_FINAL_STATIC_REMEDIATION_2026_WAVE_01
 

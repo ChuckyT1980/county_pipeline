@@ -1,4 +1,4 @@
-﻿"""
+"""
 Synthetic Unit Test Suite for San Joaquin ArcGIS Adapter Validation Logic
 Run Label: CA_SJC_ARCGIS_FINAL_STATIC_REMEDIATION_2026_WAVE_01
 
@@ -24,7 +24,6 @@ from san_joaquin.sjc_arcgis_test_validator import (
     MALFORMED_RESPONSE,
     METADATA_CHANGED,
     PENDING_PARCEL_EVIDENCE,
-    TEST_FIXTURE_APN_ALLOWLIST,
     build_test_only_request_contract,
     normalize_test_apn,
     validate_mock_feature_response,
